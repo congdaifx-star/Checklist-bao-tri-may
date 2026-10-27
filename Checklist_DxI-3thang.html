@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Checklist DxI</title>
+
+<style>
+body {
+    font-family: "Times New Roman";
+    width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-input {
+    border: none;
+    border-bottom: 1px dotted black;
+    padding: 2px;
+}
+
+.section {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.item {
+    margin-left: 20px;
+}
+
+.note {
+    border-bottom: 1px dotted black;
+    height: 25px;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 8px 12px;
+}
+
+@media print {
+    button { display: none; }
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>PHIẾU KIỂM TRA ĐỊNH KỲ MÁY MIỄN DỊCH UNICEL DXI - 3 THÁNG</h2>
+
+<div class="row">
+    <div>
+        Tên khách hàng:
+        <input class="line-input" style="width: 250px;">
+    </div>
+    <div>
+        Số Serial:
+        <input class="line-input" style="width: 250px;">
+    </div>
+</div>
+
+<p>
+Số Run Hours/Test Count:
+<input class="line-input" style="width: 500px;">
+</p>
+
+<div class="section">I. Kiểm tra tổng thể máy trước khi bảo dưỡng</div>
+
+<div class="item"><input type="checkbox"> Kiểm tra các lỗi xảy ra trong mục Evenlog</div>
+<div class="item"><input type="checkbox"> Kiểm tra nhiệt độ</div>
+<div class="item"><input type="checkbox"> Kiểm tra hoạt động của quạt</div>
+<div class="item"><input type="checkbox"> Kiểm tra hệ thống hơi 20 psi, 32 – 35 psi</div>
+<div class="item"><input type="checkbox"> Kiểm tra Operators Log và Maintenance Log PM (5,000 và 10,000 test)</div>
+
+<div class="section">II. Tiến hành vệ sinh bảo dưỡng</div>
+
+<div class="item"><b>1. Power Supply</b></div>
+<div class="item"><input type="checkbox"> Vệ sinh Air filter</div>
+
+<div class="item"><b>2. Reagent Module</b></div>
+<div class="item"><input type="checkbox"> Vệ sinh Reagent Wash Towers</div>
+<div class="item"><input type="checkbox"> Vệ sinh Reagent Pipettor Probe tips</div>
+
+<div class="item"><b>3. Substrate load area</b></div>
+<div class="item"><input type="checkbox"> Vệ sinh Substrate probe bằng cồn</div>
+
+<div class="item"><b>4. Sample</b></div>
+<div class="item"><input type="checkbox"> Vệ sinh Sample Probe Wash Tower</div>
+<div class="item"><input type="checkbox"> Vệ sinh Sample Probe</div>
+
+<div class="item"><b>5. SPU</b></div>
+<div class="item"><input type="checkbox"> Vệ sinh On–Load, Presentation, Off-Load</div>
+<div class="item"><input type="checkbox"> Vệ sinh trục di chuyển</div>
+
+<div class="item"><b>6. Analytical Module</b></div>
+<div class="item"><input type="checkbox"> Vệ sinh Aspirate probe,sử dụng que thông chuyên dụng</div>
+
+<div class="item"><b>7. Fluidics Module</b></div>
+<div class="item"><input type="checkbox"> Thay thế 2 dây bơm Bulk Fluid Pumps nếu đến hạn 30.000 test (9 inch long tubing for each pump)</div>
+<div class="item"><input type="checkbox"> Thay thế 5 dây bơm Wash Tower (DxI800 only) nếu đến hạn 60.000 test (7.5 inch long for each pump)</div>
+<div class="item"><input type="checkbox"> Thay thế Duckbill valve nếu đến hạn 5000 test</div>
+<div class="item"><input type="checkbox"> Thay thế hoặc đảo đầu 3 Peristatic Pump Tubes nếu đến hạn 60.000 test (30.000 test đảo đầu dây bơm)</div>
+
+<div class="section">III. Chạy chương trình kiểm tra tổng thể máy sau bảo dưỡng</div>
+
+<div class="item"><input type="checkbox"> Kiểm tra quy trình Backup Data</div>
+<div class="item"><input type="checkbox"> Chạy System Check để kiểm tra toàn bộ hệ thống dịch, quang</div>
+<div class="item"><input type="checkbox"> Dán tem bảo dưỡng</div>
+
+<br>
+
+<div>Khuyến cáo:</div>
+<div class="note"></div>
+<div class="note"></div>
+<div class="note"></div>
+
+<div class="footer">
+    <div>
+        Kỹ sư thực hiện:
+        <input class="line-input" style="width: 200px;">
+    </div>
+    <div>
+        Ngày:
+        <input type="date">
+    </div>
+</div>
+
+<div style="text-align:center; margin-bottom: 40px;">
+    <button class="btn" onclick="window.print()">🖨 In / Xuất PDF</button>
+    <button class="btn" onclick="location.reload()">🔄 Làm mới</button>
+</div>
+
+</body>
+</html>

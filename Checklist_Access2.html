@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="vi" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phiếu Kiểm Tra Máy Miễn Dịch</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+            font-family: 'Times New Roman', 'DejaVu Serif', serif;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 12px;
+        }
+        
+        .custom-checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #64748b;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            flex-shrink: 0;
+            margin-top: 2px;
+            transition: all 0.2s ease;
+        }
+        
+        .custom-checkbox:hover {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+        
+        .custom-checkbox.checked {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+        }
+        
+        .custom-checkbox.checked::after {
+            content: '✓';
+            position: absolute;
+            top: -3px;
+            left: 2px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .input-field {
+            border-bottom: 1px solid #cbd5e1;
+            background: transparent;
+            padding: 2px 4px;
+            min-width: 100px;
+            outline: none;
+        }
+        
+        .input-field:focus {
+            border-bottom-color: #3b82f6;
+            background-color: #f8fafc;
+        }
+        
+        .section-title {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+        
+        .sub-item {
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+        
+        @media print {
+            .no-print { display: none; }
+            body { 
+                background: white;
+                font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            * {
+                font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif !important;
+            }
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-gray-50 p-4">
+  <main class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+   <header class="text-center mb-6 border-b pb-4">
+    <h1 id="form-title" class="text-2xl font-bold text-blue-800 mb-4">PHIẾU KIỂM TRA ĐỊNH KỲ MÁY MIỄN DỊCH</h1>
+    <div class="flex justify-between items-center text-sm">
+     <div><span id="customer-label">Khách hàng:</span> <input type="text" class="input-field ml-2" placeholder="Nhập tên khách hàng" style="width: 300px;">
+     </div>
+     <div><span id="model-label">Model: ACCESS 2</span>
+     </div>
+    </div>
+   </header>
+   <div class="space-y-4"><!-- Mục 1 -->
+    <div class="checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1"><span class="section-title">1. Kiểm tra alarm log xem các lỗi bất thường và xử lý nếu có</span>
+     </div>
+    </div><!-- Mục 2 -->
+    <div class="mb-2"><span class="section-title">2. Khối nạp mẫu/ hóa chất</span>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Nhiệt độ khay hóa chất: <input type="text" class="input-field" style="width: 60px;"> Duty cycle = <input type="text" class="input-field" style="width: 60px;"> ( Nếu bằng 1.0 thì khuyến cáo sắp phải thay Peltier)
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      - Vệ sinh bên trong khay hóa chất
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Vệ sinh bộ đọc mã vạch, Sensor nhận biết ống mẫu
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Vệ sinh phần quạt tản nhiệt cho Peltier
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Vệ sinh của trượt khay hóa chất
+     </div>
+    </div><!-- Mục 3 -->
+    <div class="mb-2"><span class="section-title">3. Bộ đo quang</span>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Giá trị bộ đo quang không bật LED: <input type="text" class="input-field" style="width: 250px;">
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Giá trị bộ đo quang có bật LED: <input type="text" class="input-field" style="width: 250px;">
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Điều chỉnh bộ đo quang ( High Voltage ) để giá trị khi bật LED về LED Target
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Vệ sinh thấu kính bộ đo quang nếu máy quá bụi
+     </div>
+    </div><!-- Mục 4 -->
+    <div class="mb-2"><span class="section-title">4. Khối di chuyển RVs</span>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Thay toàn bộ RV Holder (1 lần/năm)
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Kiểm tra dây Incubator Belt, Mix Belt có bị mòn, mất răng không
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Tốc độ mix: 2500 ( Hiệu chỉnh = 2450 – 2550)
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Nhiệt độ: Incubator: <input type="text" class="input-field" style="width: 60px;"> Wash Carousel: <input type="text" class="input-field" style="width: 60px;"> Substrate: <input type="text" class="input-field" style="width: 60px;">
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Thực hiện chạy Exerciser: quan sát các hoạt động di chuyển , nếu có bất thường hay lệch vị trí thì tiến hành điều chỉnh lại bộ phận đó
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Vệ sinh 2 cảm biến RVs bằng gạc cồn, sau đó tiến hành điều chỉnh lại điện áp tham chiếu của 2 cảm biến RVs ( Khi không có RV, điện áp = 1.0 – 1.3V, khi có RV điện áp = 4.1 – 4.2V)<br>
+      <div class="mt-2">
+       Điện áp Sensor RV1 (sau khi vệ sinh): <input type="text" class="input-field" style="width: 150px;"><br>
+        Điện áp Sensor RV2 (sau khi vệ sinh): <input type="text" class="input-field" style="width: 150px;">
+      </div>
+     </div>
+    </div><!-- Mục 5 -->
+    <div class="mb-2"><span class="section-title">5. Khối nguồn</span>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Kiểm tra điện áp nguồn:<br>
+      <div class="mt-2" style="display: flex; flex-wrap: wrap; gap: 20px;">
+       <div>
+        Nguồn 12V: <input type="text" class="input-field" style="width: 60px;">
+       </div>
+       <div>
+        Nguồn -12V: <input type="text" class="input-field" style="width: 60px;">
+       </div>
+       <div>
+        Nguồn 24V: <input type="text" class="input-field" style="width: 60px;">
+       </div>
+      </div>
+      <div class="mt-2" style="display: flex; flex-wrap: wrap; gap: 20px;">
+       <div>
+        Nguồn 5V: <input type="text" class="input-field" style="width: 60px;">
+       </div>
+       <div>
+        Nguồn -5.2V: <input type="text" class="input-field" style="width: 60px;">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Vệ sinh khối nguồn
+     </div>
+    </div><!-- Mục 6 -->
+    <div class="mb-2"><span class="section-title">6. Khối đường dịch</span>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Thay dây bơm
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Đảo dây bơm – Khuyến cáo <input type="text" class="input-field" style="width: 350px;">
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Thực hiện lệnh mồi đường dịch để quan sát các bất thường
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Kiểm tra chân không
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Vặn chặt các van, đầu nối dịch
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Thông rửa 03 kim hút dịch rửa
+     </div>
+    </div><!-- Mục 7 -->
+    <div class="mb-2"><span class="section-title">7. Khối kim hút bệnh phẩm</span>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Tháo dịch khỏi Pipettor và kiểm tra điện áp ultrasonic Transducer:<br>
+       Sweep Voltage = 6+-0.5 VDC tại TP2. Tip displacement voltage = 197 +-3VDC tại TP14
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Tra mỡ trục di chuyển ngang và dọc
+     </div>
+    </div>
+    <div class="sub-item checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1">
+      Vệ sinh sensor
+     </div>
+    </div><!-- Mục 8-12 -->
+    <div class="checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1"><span class="section-title">8. Vệ sinh khối bảng mạch (dùng bóng bóp)</span>
+     </div>
+    </div>
+    <div class="checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1"><span class="section-title">9. Thực hiện chạy System Check để đánh giá tổng hệ thống</span>
+     </div>
+    </div>
+    <div class="checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1"><span class="section-title">10. Vệ sinh vỏ máy</span>
+     </div>
+    </div>
+    <div class="checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1"><span class="section-title">11. Vệ sinh bên trong case máy tính</span>
+     </div>
+    </div>
+    <div class="checkbox-item">
+     <div class="custom-checkbox" onclick="toggleCheckbox(this)"></div>
+     <div class="flex-1"><span class="section-title">12. Dán tem lịch bảo trì kế tiếp</span>
+     </div>
+    </div><!-- Khuyến cáo -->
+    <div class="mt-6 mb-4"><strong>Khuyến cáo:</strong> <input type="text" class="input-field w-full mt-2" style="border-bottom: 1px solid #cbd5e1; padding: 8px 0;" placeholder="Nhập khuyến cáo...">
+    </div>
+   </div><!-- Footer -->
+   <div class="mt-8 border-t pt-6">
+    <div class="flex justify-between items-center">
+     <div class="flex items-center"><strong>Kỹ&nbsp;sư:</strong> <input type="text" class="input-field ml-2" style="width: 180px;" placeholder="Tên kỹ sư">
+     </div>
+     <div class="flex items-center gap-1"><strong>Ngày</strong> <input type="text" class="input-field ml-1" style="width: 28px;" placeholder="dd"> <strong>Tháng</strong> <input type="text" class="input-field ml-1" style="width: 28px;" placeholder="mm"> <strong>Năm</strong> <input type="text" class="input-field ml-1" style="width: 45px;" placeholder="yyyy">
+     </div>
+    </div>
+   </div><!-- Action buttons -->
+   <div class="mt-6 text-center no-print space-x-4"><button onclick="printPage()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg"> 🖨️ In phiếu </button> <button onclick="resetForm()" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg"> 🔄 Làm mới </button>
+   </div>
+  </main>
+  <script>
+        const defaultConfig = {
+            form_title: "PHIẾU KIỂM TRA ĐỊNH KỲ MÁY MIỄN DỊCH",
+            customer_label: "Khách hàng:",
+            model_label: "Model: ACCESS 2"
+        };
+
+        function toggleCheckbox(checkbox) {
+            checkbox.classList.toggle('checked');
+        }
+
+        function printForm() {
+            // Hiển thị hướng dẫn in chi tiết
+            showPrintGuide();
+        }
+
+        function printPage() {
+            // Sử dụng phím tắt để in trực tiếp
+            if (navigator.userAgent.indexOf('Chrome') > -1) {
+                // Thử gọi window.print() cho Chrome
+                try {
+                    window.print();
+                } catch (e) {
+                    showPrintGuide();
+                }
+            } else {
+                showPrintGuide();
+            }
+        }
+
+        function showPrintGuide() {
+            // Tạo modal hướng dẫn in
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                font-family: Arial, sans-serif;
+            `;
+            
+            modal.innerHTML = `
+                <div style="background: white; padding: 30px; border-radius: 12px; max-width: 550px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                    <h3 style="color: #1e293b; margin-bottom: 25px; font-size: 22px; font-weight: bold;">📄 Hướng dẫn in và lưu PDF</h3>
+                    <div style="text-align: left; margin-bottom: 25px; line-height: 1.7; color: #374151;">
+                        <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                            <p style="margin: 0 0 10px 0; font-weight: bold; color: #059669;">🚀 Cách nhanh nhất:</p>
+                            <p style="margin: 0;">• Windows: <code style="background: #e5e7eb; padding: 3px 8px; border-radius: 4px; font-weight: bold;">Ctrl + P</code></p>
+                            <p style="margin: 5px 0 0 0;">• Mac: <code style="background: #e5e7eb; padding: 3px 8px; border-radius: 4px; font-weight: bold;">Cmd + P</code></p>
+                        </div>
+                        
+                        <div style="background: #fef3c7; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                            <p style="margin: 0 0 10px 0; font-weight: bold; color: #d97706;">📁 Để lưu thành PDF:</p>
+                            <p style="margin: 0;">1. Trong hộp thoại in, chọn <strong>"Save as PDF"</strong></p>
+                            <p style="margin: 5px 0 0 0;">2. Nhấn <strong>"Save"</strong> và chọn nơi lưu file</p>
+                        </div>
+                        
+                        <div style="background: #dbeafe; padding: 15px; border-radius: 8px;">
+                            <p style="margin: 0 0 10px 0; font-weight: bold; color: #2563eb;">🖱️ Cách khác:</p>
+                            <p style="margin: 0;">• Click chuột phải → chọn "Print"</p>
+                            <p style="margin: 5px 0 0 0;">• Hoặc Menu trình duyệt → File → Print</p>
+                        </div>
+                    </div>
+                    <button onclick="this.parentElement.parentElement.remove()" style="background: #3b82f6; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; transition: background 0.2s;">
+                        ✅ Đã hiểu
+                    </button>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            
+            // Đóng modal khi click bên ngoài
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.remove();
+                }
+            });
+            
+            // Thêm hiệu ứng hover cho nút
+            const button = modal.querySelector('button');
+            button.addEventListener('mouseenter', function() {
+                this.style.background = '#2563eb';
+            });
+            button.addEventListener('mouseleave', function() {
+                this.style.background = '#3b82f6';
+            });
+        }
+
+        function resetForm() {
+            // Reset all checkboxes
+            const checkboxes = document.querySelectorAll('.custom-checkbox');
+            checkboxes.forEach(checkbox => {
+                checkbox.classList.remove('checked');
+            });
+            
+            // Reset all input fields
+            const inputs = document.querySelectorAll('.input-field');
+            inputs.forEach(input => {
+                input.value = '';
+            });
+            
+            // Reset textarea
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach(textarea => {
+                textarea.value = '';
+            });
+        }
+
+        function deleteCheckedItems() {
+            const checkboxes = document.querySelectorAll('.custom-checkbox.checked');
+            checkboxes.forEach(checkbox => {
+                // Find the parent checkbox-item and remove it
+                const checkboxItem = checkbox.closest('.checkbox-item');
+                if (checkboxItem) {
+                    checkboxItem.remove();
+                }
+            });
+        }
+
+        async function onConfigChange(config) {
+            const formTitle = document.getElementById('form-title');
+            const customerLabel = document.getElementById('customer-label');
+            const modelLabel = document.getElementById('model-label');
+            
+            if (formTitle) {
+                formTitle.textContent = config.form_title || defaultConfig.form_title;
+            }
+            if (customerLabel) {
+                customerLabel.textContent = config.customer_label || defaultConfig.customer_label;
+            }
+            if (modelLabel) {
+                modelLabel.textContent = config.model_label || defaultConfig.model_label;
+            }
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.background_color || "#f9fafb",
+                        set: (value) => {
+                            config.background_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.checkbox_color || "#3b82f6",
+                        set: (value) => {
+                            config.checkbox_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ checkbox_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.text_color || "#1e293b",
+                        set: (value) => {
+                            config.text_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: {
+                    get: () => config.font_family || "Arial",
+                    set: (value) => {
+                        config.font_family = value;
+                        if (window.elementSdk) {
+                            window.elementSdk.setConfig({ font_family: value });
+                        }
+                    }
+                },
+                fontSizeable: {
+                    get: () => config.font_size || 14,
+                    set: (value) => {
+                        config.font_size = value;
+                        if (window.elementSdk) {
+                            window.elementSdk.setConfig({ font_size: value });
+                        }
+                    }
+                }
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["form_title", config.form_title || defaultConfig.form_title],
+                ["customer_label", config.customer_label || defaultConfig.customer_label],
+                ["model_label", config.model_label || defaultConfig.model_label]
+            ]);
+        }
+
+        // Initialize Element SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'998acb2ba5c6e2ff',t:'MTc2MjE2MTYwNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
