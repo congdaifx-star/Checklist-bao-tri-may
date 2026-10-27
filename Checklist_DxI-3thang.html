@@ -125,10 +125,22 @@ Số Run Hours/Test Count:
 
 <br>
 
-<div>Khuyến cáo:</div>
-<div class="note"></div>
-<div class="note"></div>
-<div class="note"></div>
+<!-- PHẦN KHUYẾN CÁO DẠNG DÒNG KẺ ĐÃ SỬA CHO IPHONE -->
+<div style="margin-top: 15px;">
+    <div style="font-weight: bold; margin-bottom: 5px;">Khuyến cáo:</div>
+    
+    <!-- Dòng kẻ 1 -->
+    <div contenteditable="true" placeholder="Chạm vào đây để nhập dòng 1..." 
+         style="border-bottom: 1px solid #333; min-height: 28px; line-height: 28px; font-size: 16px; outline: none; padding-left: 5px; -webkit-user-select: text; user-select: text;"></div>
+    
+    <!-- Dòng kẻ 2 -->
+    <div contenteditable="true" placeholder="Nhập dòng 2..." 
+         style="border-bottom: 1px solid #333; min-height: 28px; line-height: 28px; font-size: 16px; outline: none; padding-left: 5px; -webkit-user-select: text; user-select: text;"></div>
+    
+    <!-- Dòng kẻ 3 -->
+    <div contenteditable="true" placeholder="Nhập dòng 3..." 
+         style="border-bottom: 1px solid #333; min-height: 28px; line-height: 28px; font-size: 16px; outline: none; padding-left: 5px; -webkit-user-select: text; user-select: text;"></div>
+</div>
 
 <div class="footer">
     <div>
@@ -141,10 +153,25 @@ Số Run Hours/Test Count:
     </div>
 </div>
 
+<!-- ĐOẠN NÚT BẤM VÀ CƠ CHẾ SỬA LỖI IN TRÊN IPHONE -->
 <div style="text-align:center; margin-bottom: 40px;">
-    <button class="btn" onclick="window.print()">🖨 In / Xuất PDF</button>
-    <button class="btn" onclick="location.reload()">🔄 Làm mới</button>
+    <button class="btn" onclick="triggerPrint()">🖨 In / Xuất PDF</button>
+    <button class="btn" onclick="if(confirm('Bạn có chắc chắn muốn xóa dữ liệu để làm mới?')) window.location.reload();">🔄 Làm mới</button>
 </div>
+
+<script>
+function triggerPrint() {
+    // 1. Ép ẩn bàn phím ảo trên iPhone/Android nếu người dùng đang gõ dở
+    if (document.activeElement) {
+        document.activeElement.blur();
+    }
+    
+    // 2. Tạo độ trễ 300 mili-giây để giao diện điện thoại ổn định rồi mới gọi lệnh in
+    setTimeout(function() {
+        window.print();
+    }, 300);
+}
+</script>
 
 </body>
 </html>
