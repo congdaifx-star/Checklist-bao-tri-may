@@ -2,50 +2,42 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phiếu Kiểm Tra Định Kỳ Máy Miễn Dịch</title>
+    <!-- Đã gỡ bỏ dòng viewport ép di động để trang hiển thị toàn bộ dạng phẳng chuẩn như DxI -->
+    <title>Phiếu Kiểm Tra Định Kỳ Máy Miễn Dịch Access 2</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.4; margin: 0; padding: 20px; background-color: #fff; color: #000; }
-        .container { max-width: 800px; margin: 0 auto; padding: 0 10px; }
-        h1 { text-align: center; color: #0056b3; text-transform: uppercase; font-size: 20px; font-weight: bold; margin-bottom: 20px; }
+        body { font-family: Arial, sans-serif; line-height: 1.5; margin: 0; padding: 30px; background-color: #fff; color: #000; }
+        .container { max-width: 850px; margin: 0 auto; }
+        h1 { text-align: center; color: #0056b3; text-transform: uppercase; font-size: 22px; font-weight: bold; margin-bottom: 25px; }
         
-        /* Phần Header thông tin chung */
-        .info-header { display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 15px; gap: 10px; font-size: 15px; }
-        .info-header-item { display: flex; align-items: center; min-width: 260px; flex: 1; }
-        .info-header-item input[type="text"] { flex: 1; border: none; border-bottom: 1px solid #999; padding: 0px 5px; font-size: 15px; outline: none; margin-left: 5px; background: transparent; }
+        /* Cấu hình phần Header thông tin khách hàng nằm ngang phẳng */
+        .info-header { width: 100%; margin-bottom: 20px; font-size: 15px; }
+        .info-header td { padding: 4px 0; vertical-align: middle; }
+        .info-header input[type="text"] { width: 85%; border: none; border-bottom: 1px solid #999; padding: 2px 5px; font-size: 15px; outline: none; background: transparent; }
         
-        .section-title { font-weight: bold; font-size: 15px; margin-top: 12px; margin-bottom: 6px; }
+        .section-title { font-weight: bold; font-size: 15px; margin-top: 15px; margin-bottom: 8px; }
         
-        /* Cấu trúc hàng dữ liệu có ô nhập text */
-        .data-row { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-left: 28px; margin-bottom: 4px; font-size: 14px; }
-        .data-row input[type="text"] { border: none; border-bottom: 1px solid #999; padding: 0px 3px; font-size: 14px; outline: none; background: transparent; }
-        
-        /* Cấu trúc nhóm nhỏ xếp ngang (ví dụ phần Nguồn, Nhiệt độ) */
-        .grid-row { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-left: 28px; margin-bottom: 4px; font-size: 14px; }
-        .grid-item { display: flex; align-items: center; min-width: 140px; }
-        .grid-item input[type="text"] { border: none; border-bottom: 1px solid #999; padding: 0px 3px; font-size: 14px; outline: none; flex: 1; margin-left: 4px; background: transparent; }
+        /* Cấu hình hàng dữ liệu kèm ô nhập nằm ngang liên tục không bị nhảy dòng */
+        .inline-row { display: block; margin-left: 30px; margin-bottom: 6px; font-size: 14px; }
+        .inline-row input[type="text"] { border: none; border-bottom: 1px solid #999; padding: 0 4px; font-size: 14px; outline: none; background: transparent; }
 
-        /* Cấu trúc Checkbox chuẩn mẫu gốc */
-        .checkbox-item { display: flex; align-items: flex-start; margin-bottom: 5px; font-size: 14px; cursor: pointer; }
-        .checkbox-item input[type="checkbox"] { margin-top: 2px; margin-right: 10px; width: 15px; height: 15px; flex-shrink: 0; cursor: pointer; }
-        .checkbox-item label { cursor: pointer; line-height: 1.3; }
-        .indent { margin-left: 28px; }
+        /* Khung Checkbox vuông vắn chuẩn mẫu gốc */
+        .checkbox-item { display: block; margin-left: 30px; margin-bottom: 6px; font-size: 14px; }
+        .checkbox-item input[type="checkbox"] { margin-right: 8px; width: 14px; height: 14px; vertical-align: middle; cursor: pointer; }
+        .checkbox-item label { vertical-align: middle; cursor: pointer; }
+        .double-indent { margin-left: 55px; }
         
         /* Phần ký tên cuối trang */
-        .footer-info { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 15px; margin-top: 20px; font-size: 15px; }
-        .footer-item { display: flex; align-items: center; min-width: 180px; }
-        .footer-item input { border: none; border-bottom: 1px solid #999; padding: 0px 4px; font-size: 15px; outline: none; margin-left: 4px; background: transparent; }
+        .footer-info { width: 100%; margin-top: 30px; font-size: 15px; }
+        .footer-info td { padding: 5px 0; }
+        .footer-info input[type="text"], .footer-info input[type="date"] { width: 80%; border: none; border-bottom: 1px solid #999; padding: 2px 5px; font-size: 15px; outline: none; background: transparent; }
         
         /* Nút bấm */
-        .btn-group { text-align: center; margin-top: 30px; margin-bottom: 30px; }
-        .btn { padding: 8px 20px; font-size: 15px; font-weight: bold; cursor: pointer; margin: 5px; border-radius: 4px; border: 1px solid #ccc; background-color: #f8f9fa; color: #333; }
+        .btn-group { text-align: center; margin-top: 40px; margin-bottom: 20px; }
+        .btn { padding: 8px 22px; font-size: 15px; font-weight: bold; cursor: pointer; margin: 5px; border-radius: 4px; border: 1px solid #ccc; background-color: #f8f9fa; color: #333; }
         
-        /* Thiết lập bản in sạch đẹp */
         @media print {
-            body { padding: 0; margin: 0; }
-            .container { max-width: 100%; }
-            .btn-group { display: none; }
-            input[type="text"] { border-bottom: 1px solid #000 !important; }
+            .btn-group { display: none !important; }
+            input[type="text"], input[type="date"] { border-bottom: 1px solid #000 !important; }
             ::placeholder { color: transparent; }
         }
     </style>
@@ -55,121 +47,101 @@
 <div class="container">
     <h1>PHIẾU KIỂM TRA ĐỊNH KỲ MÁY MIỄN DỊCH</h1>
     
-    <!-- Thông tin chung khách hàng -->
-    <div class="info-header">
-        <div class="info-header-item">
+       <!-- Phần thông tin chung đã sửa đưa ô nhập Khách hàng lên cùng một dòng -->
+    <div class="info-header" style="margin-bottom: 20px; font-size: 15px; width: 100%;">
+        <div style="display: inline-block; width: 65%; vertical-align: middle;">
             <span>Khách hàng:</span>
-            <input type="text" id="customer" placeholder="Nhập tên khách hàng">
+            <input type="text" id="customer" placeholder="Nhập tên khách hàng" style="border: none; border-bottom: 1px solid #999; padding: 0 5px; font-size: 15px; outline: none; width: 75%; background: transparent;">
         </div>
-        <div class="info-header-item" style="max-width: 200px; flex: none; justify-content: flex-end;">
+        <div style="display: inline-block; width: 30%; text-align: right; vertical-align: middle; font-weight: bold;">
             <span>Model: ACCESS 2</span>
         </div>
     </div>
 
     <!-- 1. Alarm log -->
-    <div class="checkbox-item">
+    <div class="checkbox-item" style="margin-left: 0; font-weight: bold;">
         <input type="checkbox" id="c1">
-        <label for="c1"><b>1. Kiểm tra alarm log xem các lỗi bất thường và xử lý nếu có</b></label>
+        <label for="c1">1. Kiểm tra alarm log xem các lỗi bất thường và xử lý nếu có</label>
     </div>
 
     <!-- 2. Khối nạp mẫu/ hóa chất -->
     <div class="section-title">2. Khối nạp mẫu/ hóa chất</div>
-    <div class="checkbox-item indent">
-        <input type="checkbox" id="c2_1">
-        <label for="c2_1">Nhiệt độ khay hóa chất:</label>
+    <div class="inline-row">
+        <input type="checkbox" id="c2_1" style="margin-right: 8px; width: 14px; height: 14px; vertical-align: middle;"><label for="c2_1" style="vertical-<input type="checkbox" id="c2_1">
+<label for="c2_1" style="display: inline-flex; align-items: center; flex-wrap: wrap; gap: 5px; line-height: 1.3;">
+    <span>Nhiệt độ khay hóa chất:</span>
+    <input type="text" style="border: none; border-bottom: 1px solid #999; padding: 0 5px; font-size: 14px; outline: none; width: 80px; text-align: center; background: transparent;">
+    <span>Duty cycle =</span>
+    <input type="text" style="border: none; border-bottom: 1px solid #999; padding: 0 5px; font-size: 14px; outline: none; width: 80px; text-align: center; background: transparent;">
+    <span>( Nếu bằng 1.0 thì khuyến cáo sắp phải thay Peltier)</span>
+</label>
     </div>
-    <div class="data-row" style="margin-left: 56px;">
-        <span>Duty cycle =</span>
-        <input type="text" style="width: 80px;">
-        <span>( Nếu bằng 1.0 thì khuyến cáo sắp phải thay Peltier)</span>
-    </div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c2_2"><label for="c2_2">- Vệ sinh bên trong khay hóa chất</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c2_3"><label for="c2_3">Vệ sinh bộ đọc mã vạch, Sensor nhận biết ống mẫu</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c2_4"><label for="c2_4">Vệ sinh phần quạt tản nhiệt cho Peltier</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c2_5"><label for="c2_5">Vệ sinh của trượt khay hóa chất</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c2_2"><label for="c2_2">Vệ sinh bên trong khay hóa chất</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c2_3"><label for="c2_3">Vệ sinh bộ đọc mã vạch, Sensor nhận biết ống mẫu</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c2_4"><label for="c2_4">Vệ sinh phần quạt tản nhiệt cho Peltier</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c2_5"><label for="c2_5">Vệ sinh của trượt khay hóa chất</label></div>
 
-       <!-- 3. Bộ đo quang (Đã sửa đưa ô nhập liệu lên cùng một dòng) -->
+    <!-- 3. Bộ đo quang -->
     <div class="section-title">3. Bộ đo quang</div>
-    
-    <div class="checkbox-item indent" style="display: flex; flex-wrap: wrap; align-items: center; gap: 5px;">
-        <input type="checkbox" id="c3_1">
-        <label for="c3_1" style="display: inline-flex; align-items: center; flex-wrap: wrap; gap: 5px;">
-            <span>Giá trị bộ đo quang không bật LED:</span>
-            <input type="text" style="border: none; border-bottom: 1px solid #999; padding: 0 5px; font-size: 14px; outline: none; width: 250px; background: transparent;">
-        </label>
+    <div class="inline-row">
+        <input type="checkbox" id="c3_1" style="margin-right: 8px; width: 14px; height: 14px; vertical-align: middle;"><label for="c3_1" style="vertical-align: middle;">Giá trị bộ đo quang không bật LED:</label>
+        <input type="text" style="width: 250px;">
     </div>
-    
-    <div class="checkbox-item indent" style="display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-top: 5px;">
-        <input type="checkbox" id="c3_2">
-        <label for="c3_2" style="display: inline-flex; align-items: center; flex-wrap: wrap; gap: 5px;">
-            <span>Giá trị bộ đo quang có bật LED:</span>
-            <input type="text" style="border: none; border-bottom: 1px solid #999; padding: 0 5px; font-size: 14px; outline: none; width: 250px; background: transparent;">
-        </label>
+    <div class="inline-row" style="margin-top: 5px;">
+        <input type="checkbox" id="c3_2" style="margin-right: 8px; width: 14px; height: 14px; vertical-align: middle;"><label for="c3_2" style="vertical-align: middle;">Giá trị bộ đo quang có bật LED:</label>
+        <input type="text" style="width: 272px;">
     </div>
-    
-    <div class="checkbox-item indent" style="margin-top: 5px;">
-        <input type="checkbox" id="c3_3">
-        <label for="c3_3">Điều chỉnh bộ đo quang (High Voltage ) để giá trị khi bật LED về LED Target</label>
-    </div>
-    
-    <div class="checkbox-item indent">
-        <input type="checkbox" id="c3_4">
-        <label for="c3_4">Vệ sinh thấu kính bộ đo quang nếu máy quá bụi</label>
-    </div>
+    <div class="checkbox-item" style="margin-top: 5px;"><input type="checkbox" id="c3_3"><label for="c3_3">Điều chỉnh bộ đo quang (High Voltage ) để giá trị khi bật LED về LED Target</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c3_4"><label for="c3_4">Vệ sinh thấu kính bộ đo quang nếu máy quá bụi</label></div>
 
     <!-- 4. Khối di chuyển RVs -->
     <div class="section-title">4. Khối di chuyển RVs</div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c4_1"><label for="c4_1">Thay toàn bộ RV Holder (1 lần/năm)</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c4_2"><label for="c4_2">Kiểm tra dây Incubator Belt, Mix Belt có bị mòn, mất răng không</label></div>
-    <div class="checkbox-item indent">
-        <input type="checkbox" id="c4_3">
-        <label for="c4_3">Tốc độ mix: 2500 ( Hiệu chỉnh = 2450 – 2550)</label>
+    <div class="checkbox-item"><input type="checkbox" id="c4_1"><label for="c4_1">Thay toàn bộ RV Holder (1 lần/năm)</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c4_2"><label for="c4_2">Kiểm tra dây Incubator Belt, Mix Belt có bị mòn, mất răng không</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c4_3"><label for="c4_3">Tốc độ mix: 2500 ( Hiệu chỉnh = 2450 – 2550)</label></div>
+    <div class="inline-row">
+        <input type="checkbox" id="c4_4" style="margin-right: 8px; width: 14px; height: 14px; vertical-align: middle;"><label for="c4_4" style="vertical-align: middle;">Nhiệt độ: Incubator:</label>
+        <input type="text" style="width: 100px;">
+        <span>Wash Carousel:</span>
+        <input type="text" style="width: 100px;">
+        <span>Substrate:</span>
+        <input type="text" style="width: 100px;">
     </div>
-    <div class="checkbox-item indent">
-        <input type="checkbox" id="c4_4">
-        <label for="c4_4">Nhiệt độ:</label>
-    </div>
-    <div class="grid-row" style="margin-left: 56px;">
-        <div class="grid-item"><span>Incubator:</span><input type="text"></div>
-        <div class="grid-item"><span>Wash Carousel:</span><input type="text"></div>
-        <div class="grid-item"><span>Substrate:</span><input type="text"></div>
-    </div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c4_5"><label for="c4_5">Thực hiện chạy Exerciser: quan sát các hoạt động di chuyển , nếu có bất thường hay lệch vị trí thì tiến hành điều chỉnh lại bộ phận đó</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c4_6"><label for="c4_6">Vệ sinh 2 cảm biến RVs bằng gạc cồn, sau đó tiến hành điều chỉnh lại điện áp tham chiếu của 2 cảm biến RVs ( Khi không có RV, điện áp = 1.0 – 1.3V, khi có RV điện áp = 4.1 – 4.2V)</label></div>
-    <div class="data-row" style="margin-left: 56px;">
+    <div class="checkbox-item"><input type="checkbox" id="c4_5"><label for="c4_5">Thực hiện chạy Exerciser: quan sát các hoạt động di chuyển , nếu có bất thường hay lệch vị trí thì tiến hành điều chỉnh lại bộ phận đó</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c4_6"><label for="c4_6">Vệ sinh 2 cảm biến RVs bằng gạc cồn, sau đó tiến hành điều chỉnh lại điện áp tham chiếu của 2 cảm biến RVs ( Khi không có RV, điện áp = 1.0 – 1.3V, khi có RV điện áp = 3.9 – 4.2V)</label></div>
+    <div class="inline-row" style="margin-left: 55px;">
         <span>Điện áp Sensor RV1 (sau khi vệ sinh):</span>
-        <input type="text" style="width: 200px;">
+        <input type="text" style="width: 250px;">
     </div>
-    <div class="data-row" style="margin-left: 56px;">
+    <div class="inline-row" style="margin-left: 55px; margin-top: 4px;">
         <span>Điện áp Sensor RV2 (sau khi vệ sinh):</span>
-        <input type="text" style="width: 200px;">
+        <input type="text" style="width: 250px;">
     </div>
 
     <!-- 5. Khối nguồn -->
     <div class="section-title">5. Khối nguồn</div>
-    <div class="checkbox-item indent">
-        <input type="checkbox" id="c5_1">
-        <label for="c5_1">Kiểm tra điện áp nguồn:</label>
+    <div class="inline-row">
+        <input type="checkbox" id="c5_1" style="margin-right: 8px; width: 14px; height: 14px; vertical-align: middle;"><label for="c5_1" style="vertical-align: middle;">Kiểm tra điện áp nguồn:</label>
     </div>
-    <div class="grid-row" style="margin-left: 56px;">
-        <div class="grid-item"><span>Nguồn 12V:</span><input type="text"></div>
-        <div class="grid-item"><span>Nguồn -12V:</span><input type="text"></div>
-        <div class="grid-item"><span>Nguồn 24V:</span><input type="text"></div>
+    <div class="inline-row" style="margin-left: 55px;">
+        <span>Nguồn 12V:</span><input type="text" style="width: 110px; margin-right: 15px;">
+        <span>Nguồn -12V:</span><input type="text" style="width: 110px; margin-right: 15px;">
+        <span>Nguồn 24V:</span><input type="text" style="width: 110px;">
     </div>
-    <div class="grid-row" style="margin-left: 56px; margin-top: 4px;">
-        <div class="grid-item"><span>Nguồn 5V:</span><input type="text"></div>
-        <div class="grid-item"><span>Nguồn -5.2V:</span><input type="text"></div>
+    <div class="inline-row" style="margin-left: 55px; margin-top: 5px;">
+        <span>Nguồn 5V:</span><input type="text" style="width: 110px; margin-right: 15px;">
+        <span>Nguồn -5.2V:</span><input type="text" style="width: 110px;">
     </div>
-    <div class="checkbox-item indent" style="margin-top: 5px;"><input type="checkbox" id="c5_2"><label for="c5_2">Vệ sinh khối nguồn</label></div>
+    <div class="checkbox-item" style="margin-top: 5px;"><input type="checkbox" id="c5_2"><label for="c5_2">Vệ sinh khối nguồn</label></div>
 
     <!-- 6. Khối đường dịch -->
     <div class="section-title">6. Khối đường dịch</div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c6_1"><label for="c6_1">Thay dây bơm</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c6_2"><label for="c6_2">Đảo dây bơm – Khuyến cáo</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c6_3"><label for="c6_3">Thực hiện lệnh mồi đường dịch để quan sát các bất thường</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c6_4"><label for="c6_4">Kiểm tra chân không</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c6_5"><label for="c6_5">Vặn chặt các van, đầu nối dịch</label></div>
-    <div class="checkbox-item indent"><input type="checkbox" id="c6_6"><label for="c6_6">Thông rửa 03 kim hút dịch rửa</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c6_1"><label for="c6_1">Thay dây bơm</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c6_2"><label for="c6_2">Đảo dây bơm – Khuyến cáo</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c6_3"><label for="c6_3">Thực hiện lệnh mồi đường dịch để quan sát các bất thường</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c6_4"><label for="c6_4">Kiểm tra chân không</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c6_5"><label for="c6_5">Vặn chặt các van, đầu nối dịch</label></div>
+    <div class="checkbox-item"><input type="checkbox" id="c6_6"><label for="c6_6">Thông rửa 03 kim hút dịch rửa</label></div>
 
        <!-- 7. Khối kim hút bệnh phẩm -->
     <div class="section-title">7. Khối kim hút bệnh phẩm</div>
@@ -177,8 +149,8 @@
         <input type="checkbox" id="c7_1">
         <label for="c7_1">Tháo dịch khỏi Pipettor và kiểm tra điện áp ultrasonic Transducer:</label>
     </div>
-    <div class="data-row" style="margin-left: 56px; color: #555; font-size: 13.5px; margin-bottom: 8px;">
-        <span>Sweep Voltage = 6+-0.5 VDC tại TP2. Tip displacement voltage = 197 +-3VDC tại TP14</span>
+    <div class="checkbox-item" style="margin-left: 56px; font-size: 14px; margin-bottom: 5px;">
+        <label>Sweep Voltage = 6+-0.5 VDC tại TP2. Tip displacement voltage = 197 +-3VDC tại TP14</label>
     </div>
     <div class="checkbox-item indent">
         <input type="checkbox" id="c7_2">
@@ -189,72 +161,67 @@
         <label for="c7_3">Vệ sinh sensor</label>
     </div>
 
-    <!-- 8. Vệ sinh khối bảng mạch -->
-    <div class="checkbox-item" style="margin-top: 10px;">
+        <!-- 8. Vệ sinh khối bảng mạch (Đã sửa có ô checkbox bọc ngoài chữ đậm giống mục 1) -->
+    <div class="checkbox-item" style="margin-left: 0px; margin-top: 12px; display: flex; align-items: flex-start; margin-bottom: 5px; font-size: 14px;">
         <input type="checkbox" id="c8">
-        <label for="c8"><b>8. Vệ sinh khối bảng mạch (dùng bóng bóp)</b></label>
+        <label for="c8"><b>8. Vệ sinh khối bảng mạch (dùng máy hút bụi)</b></label>
     </div>
 
-    <!-- 9. Chạy System Check -->
-    <div class="checkbox-item">
+    <!-- 9. Thực hiện chạy System Check -->
+    <div class="checkbox-item" style="margin-left: 0px; display: flex; align-items: flex-start; margin-bottom: 5px; font-size: 14px;">
         <input type="checkbox" id="c9">
         <label for="c9"><b>9. Thực hiện chạy System Check để đánh giá tổng hệ thống</b></label>
     </div>
 
     <!-- 10. Vệ sinh vỏ máy -->
-    <div class="checkbox-item">
+    <div class="checkbox-item" style="margin-left: 0px; display: flex; align-items: flex-start; margin-bottom: 5px; font-size: 14px;">
         <input type="checkbox" id="c10">
         <label for="c10"><b>10. Vệ sinh vỏ máy</b></label>
     </div>
 
     <!-- 11. Vệ sinh bên trong case máy tính -->
-    <div class="checkbox-item">
+    <div class="checkbox-item" style="margin-left: 0px; display: flex; align-items: flex-start; margin-bottom: 5px; font-size: 14px;">
         <input type="checkbox" id="c11">
         <label for="c11"><b>11. Vệ sinh bên trong case máy tính</b></label>
     </div>
 
-    <!-- 12. Dán tem lịch -->
-    <div class="checkbox-item">
+    <!-- 12. Dán tem lịch bảo trì kế tiếp -->
+    <div class="checkbox-item" style="margin-left: 0px; display: flex; align-items: flex-start; margin-bottom: 5px; font-size: 14px;">
         <input type="checkbox" id="c12">
         <label for="c12"><b>12. Dán tem lịch bảo trì kế tiếp</b></label>
     </div>
 
-    <!-- Khuyến cáo dạng dòng kẻ truyền thống, nhập dữ liệu được trên iPhone -->
-    <div style="margin-top: 15px;">
+    <!-- Khuyến cáo dạng dòng kẻ -->
+    <div style="margin-top: 20px; page-break-inside: avoid;">
         <div style="font-weight: bold; font-size: 15px; margin-bottom: 3px;">Khuyến cáo:</div>
-        <div contenteditable="true" placeholder="Nhập khuyến cáo dòng 1..." style="border-bottom: 1px solid #000; min-height: 26px; line-height: 26px; font-size: 14px; outline: none; padding-left: 5px; -webkit-user-select: text; user-select: text;"></div>
-        <div contenteditable="true" placeholder="Nhập khuyến cáo dòng 2..." style="border-bottom: 1px solid #000; min-height: 26px; line-height: 26px; font-size: 14px; outline: none; padding-left: 5px; -webkit-user-select: text; user-select: text;"></div>
-        <div contenteditable="true" placeholder="Nhập khuyến cáo dòng 3..." style="border-bottom: 1px solid #000; min-height: 26px; line-height: 26px; font-size: 14px; outline: none; padding-left: 5px; -webkit-user-select: text; user-select: text;"></div>
+        <div contenteditable="true" style="border-bottom: 1px solid #000; min-height: 28px; line-height: 28px; font-size: 14px; outline: none; padding-left: 5px; -webkit-user-select: text; user-select: text;"></div>
+        <div contenteditable="true" style="border-bottom: 1px solid #000; min-height: 28px; line-height: 28px; font-size: 14px; outline: none; padding-left: 5px; -webkit-user-select: text; user-select: text;"></div>
+        <div contenteditable="true" style="border-bottom: 1px solid #000; min-height: 28px; line-height: 28px; font-size: 14px; outline: none; padding-left: 5px; -webkit-user-select: text; user-select: text;"></div>
     </div>
 
-           <!-- Thông tin kỹ sư và ngày tháng đã thu ngắn dòng kẻ, tách xa nhau cân đối -->
-    <div class="footer-info" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin-top: 35px; font-size: 15px;">
-        <!-- Ô Kỹ sư bên trái, khống chế dòng kẻ dài tối đa 250px -->
-        <div class="footer-item" style="display: flex; align-items: center; width: 100%; max-width: 250px;">
+    <!-- Thông tin Kỹ sư và Ngày tháng -->
+    <div class="info-header" style="margin-top: 35px; page-break-inside: avoid; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+        <div class="info-header-item" style="display: flex; align-items: center; width: 100%; max-width: 250px;">
             <span style="white-space: nowrap;">Kỹ sư:</span>
-            <input type="text" id="eng_name" placeholder="Tên kỹ sư" style="flex: 1; border: none; border-bottom: 1px solid #999; padding: 2px 5px; font-size: 15px; outline: none; margin-left: 5px; background: transparent;">
+            <input type="text" id="eng_name" placeholder="Tên kỹ sư" style="flex: 1; border: none; border-bottom: 1px solid #999; padding: 2px 5px; font-size: 15px; outline: none; background: transparent; margin-left: 5px;">
         </div>
-        
-        <!-- Ô Ngày kiểm tra bên phải, khống chế dòng kẻ dài tối đa 250px -->
-        <div class="footer-item" style="display: flex; align-items: center; width: 100%; max-width: 250px;">
-            <span style="white-space: nowrap;">Ngày:</span>
-            <input type="date" id="chk_date" style="flex: 1; border: none; border-bottom: 1px solid #999; font-size: 15px; padding: 2px 5px; outline: none; margin-left: 5px; background: transparent;">
+        <div class="info-header-item" style="display: flex; align-items: center; width: 100%; max-width: 250px;">
+            <span style="white-space: nowrap;">Ngày kiểm tra:</span>
+            <input type="date" id="chk_date" style="flex: 1; border: none; border-bottom: 1px solid #999; font-size: 15px; padding: 2px 5px; outline: none; background: transparent; margin-left: 5px;">
         </div>
     </div>
 
-    <!-- Cụm nút bấm điều khiển tối ưu hóa cho di động -->
+    <!-- Cụm nút chức năng -->
     <div class="btn-group" style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
         <button class="btn" onclick="triggerPrint()">🖨 In / Xuất PDF</button>
         <button class="btn" onclick="if(confirm('Bạn có chắc chắn muốn làm mới phiếu này không?')) window.location.reload();">🔄 Làm mới</button>
     </div>
 </div>
 
-<!-- Phần cấu hình in ấn tinh gọn -->
 <style>
 @media print {
     .btn-group { display: none !important; }
     input[type="text"], input[type="date"] { border-bottom: 1px solid #000 !important; }
-    /* Ẩn biểu tượng lịch của trình duyệt khi in ra giấy cho đẹp */
     input[type="date"]::-webkit-calendar-picker-indicator { display: none; -webkit-appearance: none; }
     ::placeholder { color: transparent; }
 }
