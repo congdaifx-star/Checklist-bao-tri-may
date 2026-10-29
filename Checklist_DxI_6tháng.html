@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Phiếu Kiểm Tra Định Kỳ Máy Miễn Dịch UniCel DxI - 6 Tháng</title>
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --text-color: #000000;
+            --input-focus-bg: #faffbd;
+        }
+        body {
+            font-family: "Times New Roman", Times, serif, Arial, sans-serif;
+            line-height: 1.35;
+            color: var(--text-color);
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f6f7;
+            -webkit-text-size-adjust: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: transform 0.25s ease-in-out;
+        }
+        h1 {
+            text-align: center;
+            font-size: 15px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+        .info-section {
+            margin-bottom: 10px;
+        }
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 5px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            min-width: 200px;
+        }
+        .info-item label {
+            margin-right: 5px;
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .info-item input[type="text"],
+        .info-item input[type="date"],
+        .recommendation-section input[type="text"] {
+            border: none;
+            border-bottom: 1px dashed #000;
+            width: 100%;
+            padding: 1px 4px;
+            font-family: inherit;
+            font-size: 13px;
+            outline: none;
+            background: transparent;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+        }
+        
+        .info-item input:focus,
+        .recommendation-section input:focus {
+            border-bottom: 2px solid var(--primary-color);
+            background-color: var(--input-focus-bg);
+        }
+
+        .mobile-zoom {
+            transform: scale(1.2);
+            transform-origin: top center;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 3px;
+            font-size: 13.5px;
+            text-transform: uppercase;
+        }
+        .sub-section-title {
+            font-weight: bold;
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-bottom: 1px;
+            font-size: 13px;
+            color: #2c3e50;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin-left: 20px;
+            margin-bottom: 2.5px;
+            font-size: 12.5px;
+        }
+        .checklist-item input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+            margin-top: 1.5px;
+        }
+        .checklist-item span {
+            word-break: break-word;
+        }
+        .recommendation-section {
+            margin-top: 12px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .recommendation-section label {
+            font-weight: bold;
+            margin-right: 5px;
+            white-space: nowrap;
+            font-size: 13px;
+        }
+        .footer-section {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .btn {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 5px 16px;
+            font-size: 12.5px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 5px; }
+            .container { padding: 10px; }
+            h1 { font-size: 12.5px; }
+            .section-title { font-size: 11px; }
+            .sub-section-title { font-size: 10.5px; }
+            .checklist-item { font-size: 10px; margin-bottom: 1px; }
+            .info-item label, .recommendation-section label { font-size: 10.5px; }
+            .info-item input[type="text"], .recommendation-section input[type="text"] { font-size: 10.5px; }
+        }
+
+        @media print {
+            body { background-color: #fff; padding: 0; margin: 0; }
+            .container { box-shadow: none; padding: 0; max-width: 100%; transform: none !important; }
+            .actions { display: none !important; }
+            .checklist-item { margin-bottom: 1px; font-size: 11.5px; }
+            .section-title { margin-top: 6px; font-size: 12px; }
+            .sub-section-title { margin-top: 3px; font-size: 12px; }
+            input[type="date"]::-webkit-calendar-picker-indicator { display: none; -webkit-appearance: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>PHIẾU KIỂM TRA ĐỊNH KỲ MÁY MIỄN DỊCH UNICEL DXI - 6 THÁNG / 60.000 TEST</h1>
+
+    <!-- Thông tin hành chính -->
+    <div class="info-section">
+        <div class="info-row">
+            <div class="info-item" style="flex: 1.5;">
+                <label>Tên khách hàng:</label>
+                <input type="text" placeholder="…………………………………………………………………………">
+            </div>
+            <div class="info-item" style="flex: 1;">
+                <label>Số Serial:</label>
+                <input type="text" placeholder="…………………………………………………………………………">
+            </div>
+        </div>
+        <div class="info-row">
+            <div class="info-item">
+                <label>Số Run Hours/ Test Count:</label>
+                <input type="text" placeholder="………………………………………………………………………………………………………………………………">
+            </div>
+        </div>
+    </div>
+
+    <!-- Kiểm tra tổng thể máy trước khi bảo dưỡng -->
+    <div class="section-title">Kiểm tra tổng thể máy trước khi bảo dưỡng</div>
+    
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra các lỗi xảy ra trong mục Evenlog</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra nhiệt độ</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra hoạt động của quạt</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra hệ thống hơi 20 psi, 32 – 35 psi</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra phần Operators Log and Maintenance Log PM (5,000 và 10,000 test)</span>
+    </div>
+
+    <!-- Tiến hành vệ sinh bảo dưỡng -->
+    <div class="section-title">Tiến hành vệ sinh bảo dưỡng</div>
+
+    <!-- 1. Power Supply -->
+    <div class="sub-section-title">1. Power Supply</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Air filter</span>
+    </div>
+
+    <!-- 2. Bulk Supplies -->
+    <div class="sub-section-title">2. Bulk Supplies</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Wash Buffer</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Waste drawer</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Solid Waste area</span>
+    </div>
+
+    <!-- 3. Bulk Feeder -->
+    <div class="sub-section-title">3. Bulk Feeder</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Vessel Dispenser</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Vessel Ejecter</span>
+    </div>
+
+    <!-- 4. Reagent Module -->
+    <div class="sub-section-title">4. Reagent Module</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Reagent Wash Towers.</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Reagent Pipettor Probe tips (thay thế nếu đến hạn 60.000 test)</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Reagent Loader, kiểm tra chỉ số % BC 1 Field của các vị trí Tray Bar code 1, 2, 3, 4</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Reagent Storage</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Reagent Gripper</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra hoạt động các quạt pelter</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh, tra dầu trục dẫn hướng và di chuyển</span>
+    </div>
+
+    <!-- 5. Substrate load area -->
+    <div class="sub-section-title">5. Substrate load area</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Substrate Loader Door and Drawers</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Substrate Cap Gaskets</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Substrate probe bằng cồn</span>
+    </div>
+    <!-- 6. Sample -->
+    <div class="sub-section-title">6. Sample</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Sample Probe Wash Tower</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Sample Probe</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Sample Tray</span>
+    </div>
+
+    <!-- 7. SPU -->
+    <div class="sub-section-title">7. SPU</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh On – Load, Presentation and Off-Load</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh trục di chuyển</span>
+    </div>
+
+    <!-- 8. PnP -->
+    <div class="sub-section-title">8. PnP</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Sample PnP, Incubator PnP, Wash PnP</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh các trục dẫn hướng và di chuyển</span>
+    </div>
+
+    <!-- 9. Analytical Module -->
+    <div class="sub-section-title">9. Analytical Module.</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Aspirate probe que thông kim chuyên dụng</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Incubation tray</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Wash Carosel.</span>
+    </div>
+
+    <!-- 10. Fluidics Module -->
+    <div class="sub-section-title">10. Fluidics Module</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Precision Pumps</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Sample pump</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Wash Pump</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Thay thế 2 Bulk Fluid Transfer Pumps nếu đến hạn thay thế 60.000 test (9 inch long tubing for each pump)</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Thay thế 5 Wash Tower (DxI800 only) nếu đến hạn thay thế 60.000 test (7.5 inch long for each pump)</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Thay thế Duckbill valve nếu đến hạn thay thế 5000 test</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Thay thế 3 Peristalic Pump Tubes nếu đến hạn thay thế 30.000 test (15.000 test đảo đầu)</span>
+    </div>
+
+    <!-- 11. Carriage -->
+    <div class="sub-section-title">11. Carriage</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra RV carriage</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Reagent carriage</span>
+    </div>
+
+    <!-- 12. Electronic Modul, Upper Right -->
+    <div class="sub-section-title">12. Electronic Modul, Upper Right</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh các bảng mạch, quạt tản nhiệt nếu cần</span>
+    </div>
+
+    <!-- Chạy chương trình kiểm tra tổng thể sau bảo dưỡng -->
+    <div class="section-title">Chạy chương trình kiểm tra tổng thể sau bảo dưỡng</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra quy trình Backup Data</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra, hiệu chuẩn nhiệt độ tranducers và điện áp ultrasonics (dán tem hiệu chuẩn ulstrasonics)</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Chạy Excercier mỗi loại 50 times để kiểm tra hoạt động phần cơ khí</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Xóa dữ liệu log file, maintenance data nếu cần và thực hiện Database Maintenance</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Chạy System check để kiểm tra toàn bộ hệ thống dịch, quang</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Chạy Verify Matching/ Pipettor Matching để kiểm tra/hiệu chuẩn hệ số các bơm</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Chạy CarryOver để kiểm tra lây nhiễm chéo</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Chạy QC các xét nghiệm</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Dán tem bảo dưỡng</span>
+    </div>
+
+    <!-- Khuyến cáo -->
+    <div class="recommendation-section">
+        <label>Khuyến cáo:</label>
+        <input type="text" placeholder="Nhập các khuyến cáo kỹ thuật tại đây...">
+    </div>
+
+    <!-- Chân trang cố định -->
+    <div class="footer-section">
+        <div class="info-item" style="flex: 1; min-width: 140px;">
+            <label>Kỹ sư thực hiện:</label>
+            <input type="text" placeholder="Tên kỹ sư">
+        </div>
+        <div class="info-item" style="flex: 1; min-width: 160px;">
+            <label>Ngày:</label>
+            <input type="date">
+        </div>
+    </div>
+
+    <!-- Thanh nút tiện ích dạng phẳng -->
+    <div class="actions">
+        <button class="btn" onclick="window.print()" ontouchstart="window.print()">🖨 In / Xuất PDF</button>
+        <button class="btn" style="background-color: #7f8c8d; margin-left: 10px;" onclick="if(confirm('Bạn có chắc chắn muốn xóa hết dữ liệu để làm mới không?')) window.location.reload();">🔄 Làm mới</button>
+    </div>
+</div>
+
+<!-- Script tự động phóng to (zoom) khi chạm gõ trên điện thoại -->
+<script>
+    const inputs = document.querySelectorAll('input[type="text"], input[type="date"]');
+    const container = document.querySelector('.container');
+
+    inputs.forEach(input => {
+        input.addEventListener('focus', () => {
+            if (window.innerWidth <= 600) {
+                container.classList.add('mobile-zoom');
+            }
+        });
+
+        input.addEventListener('blur', () => {
+            container.classList.remove('mobile-zoom');
+        });
+    });
+</script>
+
+</body>
+</html>
