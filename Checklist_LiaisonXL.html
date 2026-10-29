@@ -286,7 +286,7 @@
         <span>Vệ sinh, kiểm tra cảm biến vị trí pack hóa chất</span>
     </div>
 
-       <!-- 6. Starter Reagent Module -->
+        <!-- 6. Starter Reagent Module -->
     <div class="sub-section-title">6. Starter Reagent Module</div>
     <div class="checklist-item">
         <input type="checkbox">
@@ -445,9 +445,9 @@
 
     <!-- Thanh nút tiện ích dạng phẳng -->
     <div class="actions">
-<button class="btn" onclick="window.print()" ontouchstart="window.print()">🖨 In / Xuất PDF</button>
-
-        <button class="btn" style="background-color: #7f8c8d; margin-left: 10px;" onclick="window.location.reload()">🔄 Làm mới</button>
+        <button class="btn" onclick="window.print()" ontouchstart="window.print()">🖨 In / Xuất PDF</button>
+        <!-- Tính năng xác nhận an toàn đã được cập nhật ở dòng dưới -->
+        <button class="btn" style="background-color: #7f8c8d; margin-left: 10px;" onclick="if(confirm('Bạn có chắc chắn muốn xóa hết dữ liệu để làm mới không?')) window.location.reload();">🔄 Làm mới</button>
     </div>
 </div>
 
@@ -456,14 +456,12 @@
     const container = document.querySelector('.container');
 
     inputs.forEach(input => {
-        // Khi người dùng bấm vào ô nhập liệu -> Kích hoạt hiệu ứng phóng to biểu mẫu
         input.addEventListener('focus', () => {
             if (window.innerWidth <= 600) {
                 container.classList.add('mobile-zoom');
             }
         });
 
-        // Khi người dùng bấm ra ngoài -> Thu nhỏ lại trạng thái ban đầu để xem tổng thể phẳng
         input.addEventListener('blur', () => {
             container.classList.remove('mobile-zoom');
         });
