@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Phiếu Kiểm Tra Định Kỳ Máy Miễn Dịch LIAISON XL</title>
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --text-color: #000000;
+            --input-focus-bg: #faffbd;
+        }
+        body {
+            font-family: "Times New Roman", Times, serif, Arial, sans-serif;
+            line-height: 1.4;
+            color: var(--text-color);
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f6f7;
+            -webkit-text-size-adjust: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: transform 0.25s ease-in-out; /* Tạo hiệu ứng zoom mượt mà không bị giật hình */
+        }
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .info-section {
+            margin-bottom: 15px;
+        }
+        .info-row {
+            display: flex;
+            flex-wrap: wrap; /* Tự động bẻ dòng linh hoạt trên mobile để không bị đè chữ */
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            min-width: 200px;
+        }
+        .info-item label {
+            margin-right: 5px;
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .info-item input[type="text"],
+        .info-item input[type="date"],
+        .recommendation-section input[type="text"] {
+            border: none;
+            border-bottom: 1px dashed #000;
+            width: 100%;
+            padding: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            outline: none;
+            background: transparent;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+        }
+        
+        /* Hiệu ứng làm nổi bật ô nhập liệu đang chọn */
+        .info-item input:focus,
+        .recommendation-section input:focus {
+            border-bottom: 2px solid var(--primary-color);
+            background-color: var(--input-focus-bg);
+        }
+
+        /* Lớp kích hoạt phóng to toàn bộ khu vực khi người dùng tương tác trên di động */
+        .mobile-zoom {
+            transform: scale(1.25);
+            transform-origin: top center;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-size: 14.5px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 2px;
+        }
+        .sub-section-title {
+            font-weight: bold;
+            margin-left: 10px;
+            margin-top: 8px;
+            margin-bottom: 4px;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start; /* Căn chỉnh ô vuông thẳng hàng kể cả khi chữ dài */
+            margin-left: 20px;
+            margin-bottom: 4px;
+            font-size: 13.5px;
+        }
+        .checklist-item input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            flex-shrink: 0; /* Ép ô vuông định dạng không bao giờ bị méo khi chữ dài xuống hàng */
+            margin-top: 2px;
+        }
+        .checklist-item span {
+            word-break: break-word; /* Tự động xuống dòng từ dài để tránh tràn ngang màn hình */
+        }
+        .recommendation-section {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .recommendation-section label {
+            font-weight: bold;
+            margin-right: 5px;
+            white-space: nowrap;
+            font-size: 14px;
+        }
+        .footer-section {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .btn {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* TỰ ĐỘNG THU NHỎ TRÊN DI ĐỘNG ĐỂ GIỮ NGUYÊN DÒNG PHẲNG GIỐNG HÌNH 1 */
+        @media (max-width: 600px) {
+            body { padding: 5px; }
+            .container { padding: 10px; }
+            h1 { font-size: 14px; }
+            .section-title { font-size: 12px; }
+            .sub-section-title { font-size: 11.5px; }
+            .checklist-item { font-size: 11px; margin-bottom: 2px; }
+            .info-item label, .recommendation-section label { font-size: 11.5px; }
+            .info-item input[type="text"], .recommendation-section input[type="text"] { font-size: 11.5px; }
+        }
+
+        /* Định dạng tối ưu ép phông vừa khít 2 trang khi in ra giấy */
+        @media print {
+            body { background-color: #fff; padding: 0; margin: 0; }
+            .container { box-shadow: none; padding: 0; max-width: 100%; transform: none !important; }
+            .actions { display: none !important; }
+            .checklist-item { margin-bottom: 2px; font-size: 13px; }
+            .section-title { margin-top: 10px; font-size: 13.5px; }
+            .sub-section-title { margin-top: 6px; font-size: 13.5px; }
+            input[type="date"]::-webkit-calendar-picker-indicator { display: none; -webkit-appearance: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>PHIẾU KIỂM TRA ĐỊNH KỲ MÁY MIỄN DỊCH</h1>
+
+    <!-- Thông tin hành chính -->
+    <div class="info-section">
+        <div class="info-row">
+            <div class="info-item" style="flex: 2;">
+                <label>Tên khách hàng:</label>
+                <input type="text" placeholder="…………………………………………………………………………">
+            </div>
+            <div class="info-item" style="flex: 1; margin-left: 20px;">
+                <label>Model:</label>
+                <input type="text" value="LIAISON XL" readonly style="font-weight: bold; border-bottom: none;">
+            </div>
+        </div>
+    </div>
+
+    <!-- I. Kiểm tra tổng thể máy trước khi bảo dưỡng -->
+    <div class="section-title">I. Kiểm tra tổng thể máy trước khi bảo dưỡng</div>
+    
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra sơ bộ các lỗi xảy ra trong mục Evenlog</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra sơ bộ nhiệt độ</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra hoạt động của quạt</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Test Statistics để biết số test/ ngày và phụ kiện cần thay thế</span>
+    </div>
+
+    <!-- II. Tiến hành vệ sinh bảo dưỡng -->
+    <div class="section-title">II. Tiến hành vệ sinh bảo dưỡng</div>
+
+    <!-- 1. Power Supply -->
+    <div class="sub-section-title">1. Power Supply</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh đường lấy khí tản nhiệt cho máy.</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra nguồn điện và hoạt động của atomat.</span>
+    </div>
+
+    <!-- 2. H20, Wash, Waste Supplies -->
+    <div class="sub-section-title">2. H20, Wash, Waste Supplies</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh bình cấp H2O</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh bình Wash</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Solid Waste area</span>
+    </div>
+
+    <!-- 3. Cuvette Feeder -->
+    <div class="sub-section-title">3. Cuvette Feeder</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh, kiểm tra hoạt động của Auger</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh, kiểm tra hoạt động của Sorter</span>
+    </div>
+
+    <!-- 4. Incubator Module -->
+    <div class="sub-section-title">4. Incubator Module</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Cuvette Chute, Cuvette Supply.</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Incubator.</span>
+    </div>
+
+    <!-- 5. Reagent Module -->
+    <div class="sub-section-title">5. Reagent Module</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Reagent area</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra chức năng đọc RF ID của pack hóa chất</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh, kiểm tra bộ phận lắc hạt từ.</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh, kiểm tra cảm biến vị trí pack hóa chất</span>
+    </div>
+
+       <!-- 6. Starter Reagent Module -->
+    <div class="sub-section-title">6. Starter Reagent Module</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Starter Reagent Module</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra hoạt động đọc RF ID của lọ Stater</span>
+    </div>
+
+    <!-- 7. Sample Pipettor Module -->
+    <div class="sub-section-title">7. Sample Pipettor Module</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Sample Probe</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh các trục dẫn hướng</span>
+    </div>
+
+    <!-- 8. Reagent Pipettor Module -->
+    <div class="sub-section-title">8. Reagent Pipettor Module</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Reagent Pipettor</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh các trục dẫn hướng</span>
+    </div>
+
+    <!-- 9. Sample Module -->
+    <div class="sub-section-title">9. Sample Module</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Sample Module</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh, kiểm tra hoạt động đọc mã vạch Rack và ống bệnh phẩm của Barcode Reader.</span>
+    </div>
+
+    <!-- 10. Washer Module -->
+    <div class="sub-section-title">10. Washer Module</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh các kim rửa</span>
+    </div>
+
+    <!-- 11. Reader Module -->
+    <div class="sub-section-title">11. Reader Module.</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Starter Aspirate Probe</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh mắt kính của PMT (nếu cần)</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh Spindle</span>
+    </div>
+
+    <!-- 12. Pumps -->
+    <div class="sub-section-title">12. Pumps</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra và vệ sinh Aspiration Stater Pump 1, 2</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra và vệ sinh Syringe Reagent Pump</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra và vệ sinh Washer Dispense Pump</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra và vệ sinh Wash Probe Rinsing Pump</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra và vệ sinh Wash Aspirate Pump</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra và vệ sinh Wash Probe Aspiration Pump</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra và vệ sinh Reagent Probe Rinsing Pump</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra và vệ sinh Liquid Waste Pump</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Thay thế 3 Wash Probe Rinsing Pump Tubes (nếu cần)</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Thay thế Syringe Reagent Pump (nếu cần)</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Thay thế Syringe Reagent Pump Valve (nếu cần)</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Thay thế Wash Aspirate Pump Tubes (nếu cần)</span>
+    </div>
+
+    <!-- 13. Electronic -->
+    <div class="sub-section-title">13. Electronic</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Vệ sinh các bảng mạch nếu cần</span>
+    </div>
+
+    <!-- III. Chạy chương trình kiểm tra tổng thể sau bảo dưỡng -->
+    <div class="section-title">III. Chạy chương trình kiểm tra tổng thể sau bảo dưỡng</div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Kiểm tra Backup Data</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Chạy Light check để kiểm tra toàn bộ hệ thống dịch, quang</span>
+    </div>
+    <div class="checklist-item">
+        <input type="checkbox">
+        <span>Dán tem bảo dưỡng</span>
+    </div>
+
+    <!-- Khuyến cáo -->
+    <div class="recommendation-section">
+        <label>Khuyến cáo:</label>
+        <input type="text" placeholder="Nhập các khuyến cáo kỹ thuật tại đây...">
+    </div>
+
+    <!-- Chân trang -->
+    <div class="footer-section">
+        <div class="info-item" style="flex: 1; min-width: 140px;">
+            <label>Kỹ sư:</label>
+            <input type="text" placeholder="Tên kỹ sư">
+        </div>
+        <div class="info-item" style="flex: 1; min-width: 160px;">
+            <label>Ngày:</label>
+            <input type="date">
+        </div>
+    </div>
+
+    <!-- Thanh nút tiện ích dạng phẳng -->
+    <div class="actions">
+<button class="btn" onclick="window.print()" ontouchstart="window.print()">🖨 In / Xuất PDF</button>
+
+        <button class="btn" style="background-color: #7f8c8d; margin-left: 10px;" onclick="window.location.reload()">🔄 Làm mới</button>
+    </div>
+</div>
+
+<script>
+    const inputs = document.querySelectorAll('input[type="text"], input[type="date"]');
+    const container = document.querySelector('.container');
+
+    inputs.forEach(input => {
+        // Khi người dùng bấm vào ô nhập liệu -> Kích hoạt hiệu ứng phóng to biểu mẫu
+        input.addEventListener('focus', () => {
+            if (window.innerWidth <= 600) {
+                container.classList.add('mobile-zoom');
+            }
+        });
+
+        // Khi người dùng bấm ra ngoài -> Thu nhỏ lại trạng thái ban đầu để xem tổng thể phẳng
+        input.addEventListener('blur', () => {
+            container.classList.remove('mobile-zoom');
+        });
+    });
+</script>
+
+</body>
+</html>
