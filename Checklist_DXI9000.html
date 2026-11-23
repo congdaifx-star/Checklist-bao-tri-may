@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>Phiếu Bảo Dưỡng Định Kỳ Máy Miễn Dịch DXI 9000</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    width: 100%;
+    background-color: #eef1f5;
+    font-family: "Times New Roman", Times, serif;
+    color: #111;
+    line-height: 1.45;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Khung chứa toàn trang A4 để tự động thu nhỏ vừa màn hình điện thoại */
+  #viewport-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0 30px 0;
+    overflow-x: auto;
+  }
+
+  #sheet {
+    width: 820px;
+    min-width: 820px;
+    background: #ffffff;
+    padding: 32px 42px 36px 42px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transform-origin: top left;
+    transition: transform 0.25s ease;
+  }
+
+  /* Tiêu đề chính 1 dòng duy nhất, không gạch chân */
+  .doc-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    margin-bottom: 22px;
+    color: #000;
+  }
+
+  /* Thông tin chung đầu phiếu với dòng kẻ chấm */
+  .header-info {
+    margin-bottom: 18px;
+    font-size: 16px;
+  }
+
+  .info-row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+    gap: 18px;
+  }
+
+  .field-group {
+    display: flex;
+    align-items: baseline;
+    flex: 1;
+  }
+
+  .field-group label {
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 6px;
+  }
+
+  .dotted-input {
+    flex: 1;
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px dotted #333;
+    background: transparent;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #000;
+    padding: 1px 4px;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .dotted-input:focus {
+    border-bottom: 1.5px solid #0056b3;
+    background-color: rgba(0, 86, 179, 0.05);
+  }
+
+  /* Đầu mục lớn I, II, III, IV */
+  .major-section {
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-size: 16.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  /* Đầu mục con 1, 2, 3... */
+  .sub-section {
+    margin-top: 11px;
+    margin-bottom: 4px;
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* Danh sách checkbox */
+  .check-list {
+    list-style: none;
+    margin-left: 34px;
+  }
+
+  .check-list.direct-list {
+    margin-left: 18px;
+  }
+
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    font-size: 15.5px;
+  }
+
+  .check-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    border: 1.2px solid #444;
+    border-radius: 2px;
+    margin-right: 9px;
+    margin-top: 4px;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+  }
+
+  .check-item input[type="checkbox"]:checked {
+    background-color: #1f2937;
+    border-color: #1f2937;
+  }
+
+  .check-item input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    left: 2px;
+    top: -1px;
+  }
+
+  .check-item label {
+    cursor: pointer;
+    flex: 1;
+  }
+
+  /* Phần hệ thống hơi nằm ngang */
+  .inline-pressure {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 14px;
+    margin-left: 6px;
+  }
+
+  .pressure-pair {
+    display: inline-flex;
+    align-items: baseline;
+    white-space: nowrap;
+  }
+
+  .pressure-input {
+    width: 64px;
+    border: none;
+    border-bottom: 1.5px dotted #333;
+    background: transparent;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15.5px;
+    text-align: center;
+    padding: 0 3px;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .pressure-input:focus {
+    border-bottom: 1.5px solid #0056b3;
+    background-color: rgba(0, 86, 179, 0.05);
+  }
+
+  /* Phần cuối phiếu: Khuyến cáo, Kỹ sư, Ngày */
+  .footer-section {
+    margin-top: 22px;
+    font-size: 16px;
+  }
+
+  .recommendation-block {
+    margin-bottom: 18px;
+  }
+
+  .rec-line-1 {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+
+  .rec-line-1 label {
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 8px;
+  }
+
+  .rec-line-2 {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px dotted #333;
+    background: transparent;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    padding: 1px 4px;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .rec-line-2:focus {
+    border-bottom: 1.5px solid #0056b3;
+    background-color: rgba(0, 86, 179, 0.05);
+  }
+
+  .sign-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 16px;
+  }
+
+  .sign-col {
+    display: flex;
+    align-items: baseline;
+    flex: 1;
+  }
+
+  .sign-col label {
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 8px;
+  }
+
+  .date-input {
+    flex: 1;
+    border: none;
+    border-bottom: 1.5px dotted #333;
+    background: transparent;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #000;
+    padding: 1px 4px;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .date-input:focus {
+    border-bottom: 1.5px solid #0056b3;
+    background-color: rgba(0, 86, 179, 0.05);
+  }
+
+  /* Nút chức năng ở cuối trang */
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14.5px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+  .btn-print {
+    background-color: #2c3e50;
+    color: #ffffff;
+  }
+
+  .btn-reset {
+    background-color: #6c757d;
+    color: #ffffff;
+  }
+
+  /* Thanh thông báo nhỏ hỗ trợ thu phóng trên di động */
+  #zoom-hint {
+    display: none;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    z-index: 999;
+    background: rgba(31, 41, 55, 0.88);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    cursor: pointer;
+    border: none;
+  }
+
+  @media print {
+    html, body {
+      background: #fff !important;
+      overflow: visible !important;
+    }
+    #viewport-wrapper {
+      padding: 0 !important;
+      display: block !important;
+    }
+    #sheet {
+      width: 100% !important;
+      min-width: 0 !important;
+      padding: 10mm 12mm !important;
+      box-shadow: none !important;
+      transform: none !important;
+      margin: 0 !important;
+    }
+    .action-buttons, #zoom-hint {
+      display: none !important;
+    }
+    .dotted-input:focus, .pressure-input:focus, .rec-line-2:focus, .date-input:focus {
+      background: transparent !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div id="viewport-wrapper">
+  <div id="sheet">
+    <div class="doc-title">PHIẾU BẢO DƯỠNG ĐỊNH KỲ MÁY MIỄN DỊCH DXI 9000</div>
+
+    <!-- Thông tin khách hàng -->
+    <div class="header-info">
+      <div class="info-row">
+        <div class="field-group">
+          <label for="customer">Tên khách hàng:</label>
+          <input type="text" id="customer" class="dotted-input">
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="field-group">
+          <label for="serial">Số Serial:</label>
+          <input type="text" id="serial" class="dotted-input">
+        </div>
+        <div class="field-group">
+          <label for="test_count">Test Count:</label>
+          <input type="text" id="test_count" class="dotted-input">
+        </div>
+      </div>
+    </div>
+
+    <!-- MỤC I -->
+    <div class="major-section">I. CHUẨN BỊ HỆ THỐNG VÀ ĐÁNH GIÁ SƠ BỘ</div>
+    <ul class="check-list direct-list">
+      <li class="check-item"><input type="checkbox" id="c1"><label for="c1">Unload toàn bộ pack hóa chất</label></li>
+      <li class="check-item"><input type="checkbox" id="c2"><label for="c2">Kiểm tra hoạt động các quạt</label></li>
+      <li class="check-item">
+        <input type="checkbox" id="c3">
+        <label for="c3">
+          Kiểm tra hệ thống hơi:
+          <span class="inline-pressure">
+            <span class="pressure-pair">12 psi = <input type="text" class="pressure-input"></span>
+            <span class="pressure-pair">20 psi = <input type="text" class="pressure-input"></span>
+            <span class="pressure-pair">32 – 35 psi = <input type="text" class="pressure-input"></span>
+          </span>
+        </label>
+      </li>
+      <li class="check-item"><input type="checkbox" id="c4"><label for="c4">Kiểm tra Audit Log xem các lỗi lặp lại cần xử lý</label></li>
+    </ul>
+
+    <!-- MỤC II -->
+    <div class="major-section">II. TIẾN HÀNH VỆ SINH BẢO DƯỠNG</div>
+
+    <div class="sub-section">1. Tip Supply</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c5"><label for="c5">Loại bỏ các đầu côn bị rơi</label></li>
+      <li class="check-item"><input type="checkbox" id="c6"><label for="c6">Vệ sinh nếu cần</label></li>
+    </ul>
+
+    <div class="sub-section">2. Sample Pipettors</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c7"><label for="c7">Kiểm tra, vệ sinh Sample Pipettor Mandrels</label></li>
+      <li class="check-item"><input type="checkbox" id="c8"><label for="c8">Kiểm tra, vệ sinh Sample Pipettor Camera Cover</label></li>
+      <li class="check-item"><input type="checkbox" id="c9"><label for="c9">Kiểm tra, vệ sinh Aliquot Sample Pipettor Backlight</label></li>
+      <li class="check-item"><input type="checkbox" id="c10"><label for="c10">Kiểm tra, vệ sinh Colision Detection Sensor Flag</label></li>
+    </ul>
+
+    <div class="sub-section">3. Bulk Feeder and Supply Shuttle</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c11"><label for="c11">Kiểm tra Bulk Vessel Feeder</label></li>
+      <li class="check-item"><input type="checkbox" id="c12"><label for="c12">Kiểm tra Supply Carriage, vệ sinh Aligment Jump Pin</label></li>
+      <li class="check-item"><input type="checkbox" id="c13"><label for="c13">Loại bỏ các RV rơi</label></li>
+    </ul>
+
+    <div class="sub-section">4. Sample Presentation Unit</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c14"><label for="c14">Kiểm tra, vệ sinh khu vực Onload</label></li>
+      <li class="check-item"><input type="checkbox" id="c15"><label for="c15">Kiểm tra, vệ sinh khu vực Presentation Tray</label></li>
+      <li class="check-item"><input type="checkbox" id="c16"><label for="c16">Kiểm tra, vệ sinh khu vực Offload</label></li>
+      <li class="check-item"><input type="checkbox" id="c17"><label for="c17">Kiểm tra, vệ sinh mặt kính Camera</label></li>
+    </ul>
+
+    <div class="sub-section">5. Reagent Pipettor and Wash Tower</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c18"><label for="c18">Vệ sinh wash tower nozzles</label></li>
+      <li class="check-item"><input type="checkbox" id="c19"><label for="c19">Thay thế O-rings (60.000 test)</label></li>
+      <li class="check-item"><input type="checkbox" id="c20"><label for="c20">Thay thế Probe Tips (120.000 test)</label></li>
+    </ul>
+
+    <div class="sub-section">6. Substrate Loader</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c21"><label for="c21">Kiểm tra, vệ sinh khối Substrate Loader</label></li>
+      <li class="check-item"><input type="checkbox" id="c22"><label for="c22">Kiểm tra vệ sinh mặt kính Camera</label></li>
+    </ul>
+
+    <div class="sub-section">7. Reagent Storage</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c23"><label for="c23">Vệ sinh phần đế mô đun, loại bỏ các pack rơi, đổ nếu có</label></li>
+      <li class="check-item"><input type="checkbox" id="c24"><label for="c24">Vệ sinh nắp che vị trí hút hóa chất</label></li>
+      <li class="check-item"><input type="checkbox" id="c25"><label for="c25">Vệ sinh các vị trí đặt pack</label></li>
+      <li class="check-item"><input type="checkbox" id="c26"><label for="c26">Kiểm tra lực đàn hồi lò so trước, sau tại 4 vị trí hút hóa chất</label></li>
+      <li class="check-item"><input type="checkbox" id="c27"><label for="c27">Vệ sinh, tra dầu mỡ các trục chuyển động</label></li>
+    </ul>
+
+    <div class="sub-section">8. Solid Waste Drawer</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c28"><label for="c28">Vệ sinh khu vực thải rắn</label></li>
+      <li class="check-item"><input type="checkbox" id="c29"><label for="c29">Kiểm tra cửa sổ nhận túi thải rắn</label></li>
+      <li class="check-item"><input type="checkbox" id="c30"><label for="c30">Vệ sinh gương phản xạ</label></li>
+    </ul>
+
+    <div class="sub-section">9. Wash Buffer Supply Drawer</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c31"><label for="c31">Kiểm tra Wash Buffer Supply Pump</label></li>
+      <li class="check-item"><input type="checkbox" id="c32"><label for="c32">Vệ sinh Wash Buffer Supply Drawer nếu cần</label></li>
+    </ul>
+
+    <div class="sub-section">10. Fluidics Module</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c33"><label for="c33">Vệ sinh Air Filter</label></li>
+      <li class="check-item"><input type="checkbox" id="c34"><label for="c34">Kiểm tra rò rỉ dịch, vệ sinh khay dịch nếu cần</label></li>
+    </ul>
+
+    <div class="sub-section">11. Wash Wheel and Pumps</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c35"><label for="c35">Thay thế bộ dây bơm nhu động (60.000 test)</label></li>
+      <li class="check-item"><input type="checkbox" id="c36"><label for="c36">Kiểm tra Y-Fittings và các kim Aspiration</label></li>
+      <li class="check-item"><input type="checkbox" id="c37"><label for="c37">Thay thế kim Aspiration (60.000 test)</label></li>
+      <li class="check-item"><input type="checkbox" id="c38"><label for="c38">Kiểm tra, vệ sinh Wash Carousel</label></li>
+      <li class="check-item"><input type="checkbox" id="c39"><label for="c39">Kiểm tra Ejector Plate</label></li>
+      <li class="check-item"><input type="checkbox" id="c40"><label for="c40">Kiểm tra bộ Mixer</label></li>
+      <li class="check-item"><input type="checkbox" id="c41"><label for="c41">Kiểm tra các cụm Gipper, Spinner và Ejector</label></li>
+      <li class="check-item"><input type="checkbox" id="c42"><label for="c42">Vệ sinh các kim QS, D1, D2</label></li>
+      <li class="check-item"><input type="checkbox" id="c43"><label for="c43">Kiểm tra, vệ sinh Wash Wheel Camera</label></li>
+      <li class="check-item"><input type="checkbox" id="c44"><label for="c44">Vệ sinh, tra mỡ trục bơm Wash Wheel Syringe (120.000 test)</label></li>
+    </ul>
+
+    <div class="sub-section">12. Reagent Syringe Pumps</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c45"><label for="c45">Kiểm tra, vệ sinh pumps</label></li>
+      <li class="check-item"><input type="checkbox" id="c46"><label for="c46">Tra mỡ trục (120.000 test)</label></li>
+    </ul>
+
+    <div class="sub-section">13. Pick and Place</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c47"><label for="c47">Kiểm tra Sample PnP, Incubator PnP, Analytical PnP (vệ sinh nếu cần)</label></li>
+    </ul>
+
+    <div class="sub-section">14. Incubator Wheel</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c48"><label for="c48">Vệ sinh Incubator Wheel và Alignment Jumper Pins</label></li>
+    </ul>
+
+    <div class="sub-section">15. Luminometer</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c49"><label for="c49">Vệ sinh Alignment Jumper Pins</label></li>
+    </ul>
+
+    <div class="sub-section">16. Solid Waste Chute</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c50"><label for="c50">Kiểm tra, vệ sinh ống thải Tip và RV</label></li>
+    </ul>
+
+    <div class="sub-section">17. Reagent Shuttle</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c51"><label for="c51">Kiểm tra vệ sinh Reagent Shuttle (bao gồm Alignment Jumper Pins)</label></li>
+    </ul>
+
+    <div class="sub-section">18. Pneumatics</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c52"><label for="c52">Kiểm tra bơm nén khí</label></li>
+      <li class="check-item"><input type="checkbox" id="c53"><label for="c53">Kiểm tra bình nén khí</label></li>
+      <li class="check-item"><input type="checkbox" id="c54"><label for="c54">Kiểm tra van xả dịch ngưng tụ</label></li>
+    </ul>
+
+    <div class="sub-section">19. Sample Wheel</div>
+    <ul class="check-list">
+      <li class="check-item"><input type="checkbox" id="c55"><label for="c55">Vệ sinh Sample Wheel (bao gồm Aligment Jumper Pins)</label></li>
+    </ul>
+
+    <!-- MỤC III -->
+    <div class="major-section">III. CĂN CHỈNH, HIỆU CHUẨN, BACK UP DỮ LIỆU</div>
+    <ul class="check-list direct-list">
+      <li class="check-item"><input type="checkbox" id="c56"><label for="c56">Hiệu chỉnh Ultrasonics</label></li>
+      <li class="check-item"><input type="checkbox" id="c57"><label for="c57">Căn chỉnh Reagent Pipettors, Aliquot và Precision Pipettor, Dispo Tip Stock Tray Gripper, Wash Wheel (120.000 test)</label></li>
+      <li class="check-item"><input type="checkbox" id="c58"><label for="c58">Thực hiện RMS Gripper Timing Calibration</label></li>
+      <li class="check-item"><input type="checkbox" id="c59"><label for="c59">Nạp lại Pack và thực hiện Remap</label></li>
+      <li class="check-item"><input type="checkbox" id="c60"><label for="c60">Thực hiện Calibration pressure sensor và Camera (nếu thay thế)</label></li>
+      <li class="check-item"><input type="checkbox" id="c61"><label for="c61">Thực hiện Back up Alignment and Configuration Data</label></li>
+      <li class="check-item"><input type="checkbox" id="c62"><label for="c62">Thực hiện Back up Database Using Service App</label></li>
+      <li class="check-item"><input type="checkbox" id="c63"><label for="c63">Xóa các Backup quá 6 tháng trong D:\Backups</label></li>
+    </ul>
+
+    <!-- MỤC IV -->
+    <div class="major-section">IV. CHẠY ASD TEST</div>
+    <ul class="check-list direct-list">
+      <li class="check-item"><input type="checkbox" id="c64"><label for="c64">Luminometer Linearity</label></li>
+      <li class="check-item"><input type="checkbox" id="c65"><label for="c65">Substrate Blank</label></li>
+      <li class="check-item"><input type="checkbox" id="c66"><label for="c66">Wash Efficiency</label></li>
+      <li class="check-item"><input type="checkbox" id="c67"><label for="c67">Low Volume Reagent Pipetting</label></li>
+      <li class="check-item"><input type="checkbox" id="c68"><label for="c68">System CarryOver</label></li>
+      <li class="check-item"><input type="checkbox" id="c69"><label for="c69">Precision Sample Pipetting</label></li>
+    </ul>
+
+    <!-- Phần cuối: Khuyến cáo, Kỹ sư, Ngày -->
+    <div class="footer-section">
+      <div class="recommendation-block">
+        <div class="rec-line-1">
+          <label for="rec1">Khuyến cáo:</label>
+          <input type="text" id="rec1" class="dotted-input">
+        </div>
+        <input type="text" id="rec2" class="rec-line-2">
+      </div>
+
+      <div class="sign-row">
+        <div class="sign-col">
+          <label for="engineer">Kỹ sư:</label>
+          <input type="text" id="engineer" class="dotted-input">
+        </div>
+        <div class="sign-col">
+          <label for="check_date">Ngày:</label>
+          <input type="date" id="check_date" class="date-input">
+        </div>
+      </div>
+    </div>
+
+    <!-- Nút In và Làm mới -->
+    <div class="action-buttons">
+      <button type="button" class="btn btn-print" onclick="window.print()">🖨️ In / Xuất PDF</button>
+      <button type="button" class="btn btn-reset" onclick="resetForm()">🔄 Làm mới</button>
+    </div>
+  </div>
+</div>
+
+<button type="button" id="zoom-hint" onclick="fitToScreen()">🔍 Thu nhỏ toàn phiếu</button>
+
+<script>
+  const sheet = document.getElementById('sheet');
+  const wrapper = document.getElementById('viewport-wrapper');
+  const zoomHint = document.getElementById('zoom-hint');
+  let isZoomedIn = false;
+
+  // Tự động thu nhỏ phiếu để vừa khít chiều ngang màn hình điện thoại
+  function fitToScreen() {
+    isZoomedIn = false;
+    zoomHint.style.display = 'none';
+    const screenWidth = window.innerWidth;
+    const targetWidth = 820;
+
+    if (screenWidth < targetWidth + 16) {
+      const scale = (screenWidth - 12) / targetWidth;
+      sheet.style.transform = `scale(${scale})`;
+      sheet.style.marginLeft = '6px';
+      // Cập nhật chiều cao wrapper để không bị thừa khoảng trắng bên dưới
+      wrapper.style.height = (sheet.offsetHeight * scale + 24) + 'px';
+      wrapper.style.justifyContent = 'flex-start';
+    } else {
+      sheet.style.transform = 'none';
+      sheet.style.marginLeft = '0';
+      wrapper.style.height = 'auto';
+      wrapper.style.justifyContent = 'center';
+    }
+  }
+
+  // Khi chạm/focus vào bất kỳ ô nhập liệu nào trên điện thoại -> tự động phóng to 100% và cuộn tới đúng vị trí đó
+  const inputs = document.querySelectorAll('input[type="text"], input[type="date"]');
+  inputs.forEach(input => {
+    input.addEventListener('focus', function() {
+      if (window.innerWidth < 836) {
+        isZoomedIn = true;
+        sheet.style.transform = 'scale(1)';
+        sheet.style.marginLeft = '0';
+        wrapper.style.height = 'auto';
+        wrapper.style.justifyContent = 'flex-start';
+        zoomHint.style.display = 'block';
+
+        setTimeout(() => {
+          this.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+        }, 120);
+      }
+    });
+  });
+
+  // Khi người dùng chạm ra vùng trống (không phải ô nhập hay nút bấm) thì thu nhỏ lại toàn phiếu
+  sheet.addEventListener('click', function(e) {
+    if (isZoomedIn && e.target.tagName !== 'INPUT' && e.target.tagName !== 'BUTTON' && e.target.tagName !== 'LABEL') {
+      fitToScreen();
+    }
+  });
+
+  window.addEventListener('load', fitToScreen);
+  window.addEventListener('resize', function() {
+    if (!isZoomedIn) fitToScreen();
+  });
+
+  function resetForm() {
+    if (confirm('Bạn có chắc muốn xóa toàn bộ dữ liệu đã nhập để làm phiếu mới?')) {
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+      document.querySelectorAll('input[type="text"], input[type="date"]').forEach(inp => inp.value = '');
+      fitToScreen();
+    }
+  }
+</script>
+
+</body>
+</html>
