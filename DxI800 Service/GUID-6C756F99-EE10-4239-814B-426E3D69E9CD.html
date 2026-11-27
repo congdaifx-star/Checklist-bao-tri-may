@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to use the NS Utility to restore factory settings on a DxI system." name="description" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.6.18 Restoring Factory Settings Using NS Utility (Mfg Cleanup)</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-9189BBED-474F-420C-9923-6C8BEE82F328.html" rel="prev" /><link href="GUID-26DDEADC-FE23-4747-B116-A67A52577B4D.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e2711" data-relpath="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD" role="article"> 
+  <h1 class="title topictitle1" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Restoring Factory Settings Using NS Utility (Mfg Cleanup)</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to use the NS Utility to restore factory settings on a DxI system. 
+  </p> 
+	 <section class="section context" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">Use the NS Utility to restore factory settings on a DxI system when other software or database troubleshooting procedures have been unable to resolve errors. 
+		<div class="p"> 
+		  <div class="note warning note_warning" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-861026B7-CBCB-4EE5-B012-F58D20F32DB6"><span class="note__title">Warning:</span> The NS Utility application was provided by manufacturing, to erase the instrument data easily after completing manufacturing tests. The utility was made for Windows NT systems. It may fail to work properly on a Windows XP console PC unless the specific applications listed are exited before running the utility. 
+		</div> 
+		  <div class="note warning note_warning" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-32457C49-B489-4BB9-B4D1-A81C44F22A1C"><span class="note__title">Warning:</span> Use of the NS Utility application is not advised. The actions performed by the NS Utility can be performed individually as part of other troubleshooting procedures. 
+		</div> 
+		  <div class="note warning note_warning" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-E2195899-9F71-45B4-941F-A63DF40FCD95"><span class="note__title">Warning:</span> When installing software, the software installation looks for a registry entry called &quot;PrimaryConsoleIPAddress&quot; to help identify the network port that will be communicating with the Analytical Unit. The NS Utility may delete this registry entry, and then the software installation may choose a random network port for the PC or AU address. After loading software, ensure that the expected port settings (192.168.2.1) are present on the PCs primary network port, and that the secondary port addresses do not conflict with the primary port. Corrections to the port addresses and the workgroup entries in the registry may be needed. Generally, the corrective steps are: 1) correct the network port addresses, 2) correct the workgroup IP address entries in the registry, and 3) reboot the PC to launch the user interface. Similar network port address issues may occur on the AU. 
+		</div> 
+		</div> 
+		<div class="p"> 
+		  <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-0A323EB1-31E1-482F-9DEE-6046645FE09D"><span class="note__title">Note:</span> For systems that run IVD software andneed to revert to an older version of the released software, refer to the 
+			 <samp class="ph msgph" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DC8CE29B-2EE1-4481-8EF5-83089716795C">Current version of the console software is newer than the version on the installation disk</samp> error message in troubleshooting. Refer to the 
+			 <a class="xref" href="GUID-ECD13B75-C209-4878-A0E3-FFFA2CBC590A.html">Software: Troubleshoot Software Error Messages</a> procedure. 
+		  </div> 
+		</div> 
+		<div class="p">Manufacturing cleanup: 
+		<ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_6873F16ED74448609692CBFD3A99EFF6"> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_B68532E40508400CA7880A1FF9B446AD">Removes software from the PC and AU. 
+		  </li> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_96FA939574CC4DB69CC64076249BE507">Removes the user interface database from the PC including: 
+			 <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_9D661443BCD24600AA0605449AF7D2E2"> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_B2581C77BE7A4DC2B4F24BD2766C3161">Reagent information - all punctured packs must be unloaded and discarded. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_B9A0C00D337A42E9A32B9CC38285E8CA">Substrate information - onboard substrate must be discarded. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_700529AC56374822B3CE01A0D18117AB">Solid Waste information - solid waste container must be emptied and reset. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_AD648B1DC1D44ABDB433CC31ECB16CED">Onboard vessel information - all vessels must be removed from the instrument (except the vessels in the bulk feeder). 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_E21C9371BB09450997DB609A875E64BD">User configuration and configured tests. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_5CE6C14D29A04AC294ABD463802F9A5D">Calibrations. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_C0156F75586D48ACB8E703B9DBF970DA">APF information. 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_EAAA208DC8D44B2190D749331A24B5FB">Erases the AU NVRAM (run hours, test counts, reagent pack counts, and substrate counts). 
+			 <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-200E7651-38DF-425C-B181-3E9E10F202EA"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-0D53118E-AFA3-4B84-BB12-795F5440A53D.html" title="This procedure describes how to modify the run time and test counts using NVMEditor.exe.">Software: Modifying Run Time and Test Counts from Database</a> procedure for details on restoring the test count and run time information. 
+			 </div> 
+		  </li> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_C42D11B7CEFF4DD3BF10C0A5090BBBC5">Resets the IP addresses on the PC (to 192.168.2.1) and AU (to 192.168.2.2). 
+		  </li> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_7BDD0C1715DA42FD9967C44088FD0A64">Does not remove the instrument alignment information (specific.ini). 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-7F4585A7-36B6-420D-97C3-2CB92EA06EC2"> 
+		  <span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e20">Use Task Manager to view and end specific processes. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e29">For Windows 8: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e34" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e36"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e38">Press<span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e40"> [Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e43">Access2Support</kbd> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e48"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e50">Press 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e52">Ctrl + Alt + Delete 
+				  </strong>keys together and select 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e55">Task Manager</strong> or press 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e58">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e61">Task Manager</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e66"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e68">From the Task Manager window, select the 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e70">Processes</span> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e75"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e77">Determine if any of these processes are running in the Task Manager. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e82"> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e84">NexGenUI MFC Application or NexStepUI MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e87">AUCommunicator DLL 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e90">DbMaintenance DLL 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e93">InstrumentModel Module 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e96">LISService MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e100">PostOffice DLL 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e103">Reduce MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e106">Screen TransitionTool MFC Application 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e113"><span class="figcap">Figure 419: Windows 8 Task Manager: DxI System </span> 
+					 <img class="image" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e117" src="GUID-2B03CC46-A514-4C43-989A-C034E6CC3FF9-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e122"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e124">For each process that is running, select the process, and then select 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e126">End Task</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e132"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e134">Close the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e136">Task Manager</span> window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e148">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e153" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e155"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e157">Press<span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e159"> [Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e162">Access2Support</kbd> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e167"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e169">Select 
+				  <span class="ph menucascade" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e171"><span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e172">Start</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e174">Run</span></span>, type 
+				  <kbd class="ph userinput" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e177">taskmgr</kbd> in the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e180">Run</span> dialog box, and then select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e183">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e188"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e190">From the Task Manager window, select the 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e192">Processes</span> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e197"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e199">Determine if any of these processes are running in the Task Manager. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e204"> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e206">DbMaintenanceUD 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e209">AUCOMM~.EXE 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e212">INSTRU~.EXE 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e215">LISServiceUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e218">NexGenUIUD.exe or NexStepUIUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e222">ReduceUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e225">NSWGSVUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e228">POSTOF~.EXE 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e235"><span class="figcap">Figure 420: Windows XP Task Manager: DxI System</span> 
+					 <img class="image" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e239" src="GUID-5D188721-B28B-47F7-A7BA-2389661D93F7-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e244"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e246">For each process that is running, select the process, and then select 
+				  <span class="ph menucascade" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e248"><span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e249">End Process</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e251">Yes</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e257"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e259">Close the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e261">Task Manager</span> window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Run the Mfg Cleanup utility. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-06C9AFAC-7BE5-45F9-989B-36FD4060F055"><span class="note__title">Note:</span> The PC must be able to communicate with the instrument in order for the cleanup to be successful. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-8DBCE11A-D853-422D-A9B6-00C47EDDD52B">For Windows XP System with Software 5.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEPS_E23C6511D00F4BD29EE163D8AF216362" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_4DD52A880F1F476AAC90D104D05179B5"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-CFC3464A-F706-4616-B2F7-0B9689CC1CC8">Select 
+				  <span class="ph menucascade" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-99E97483-685E-4BB9-A279-7002FA9DD413"><span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-EF84BA37-38CF-46AA-B610-0F759F6DA950">Start</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DB57DD7D-01A3-4057-B532-60FD7FC56731">Programs</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-F30D821A-8AEA-4056-8F94-25942B009134">NexGen</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-A8D230AA-E74F-4B93-8E06-7457F5BB4B3E">NS Utility</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_71B9073961B045109195DAB3D2787C13"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-2D845DF4-EE4A-480B-92DF-63B0D72A8C65">Select the 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-E2F664DD-6A81-493F-93D4-969D080A3487">MFG Cleanup</span> button in the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-2AC482E6-3714-4AA9-8FB8-6BB87696F368">NexStep Utilities</span> dialog box. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_A17C8150C7E64037B87A8AC371F69F92"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-21208081-0A64-465F-A902-C7F18245E1BF">Select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-2D8E57B8-7B40-400A-932F-56E256F9FA6D">Yes</span> to the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-2B21F98C-FDCF-4216-93D2-02BD104D6D5E">Warning</span> dialog box. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DD6D5B21-AF5B-4E58-BD7B-EF6270F02D6F"><span class="note__title">Note:</span>  Status messages are displayed at the bottom of the 
+					 <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-C701BC83-AED9-47FD-B536-46D23AF2A7E6">NexStep Utilities</span> dialog box. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_BE62D5A5F2E5478292FD178458A1B5F7"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-961DEF6D-2B22-4AE4-8005-A2BE0E4AC7D9">Select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-32967F27-7CA8-4376-9507-30FC582718B1">Exit</span> when the cleanup is complete. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_811AA0B9861D4BE7B0371FCB747A0850"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-08D080D4-7961-4E2F-BBB8-889CBCB354C7">Power down the instrument. 
+				</span> 
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_4F2D5F5BE48740B0918DFE08E7569185">
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-8EF3ADAA-B67C-4E2E-BD57-4024FB42946E">Shut down the console PC. 
+				</span>
+				<div class="itemgroup stepresult">
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_93FC07A6159F40F6832DE635709E2054">
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_323844C6AA1E4530B8E45F28498BA905">Select 
+						<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-42113407-ADFC-45F6-9F84-7633C7F1BB61">Start &gt; Shut Down</strong>. 
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-33075656-CAB2-4CD5-84F7-B2295DA3E81A">For Windows 8 System with Software 5.3.1 and above: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEPS_2478A00FEA94440EA37715831F9CA38D" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_7F129D1B22CF42B8A44E304FFF5707A7"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-AB8FFB43-E7BC-44B3-8C5B-31D07F279C80">Press 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-3921293E-1994-41C2-AA9D-9C99EFFDD045">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-640BF43C-96D2-40E0-9ABB-196357302A8E">NS Utility</strong> icon or type 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-04131E66-65F7-4F7A-A160-D798D03EA53B">ns</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_F11FF0914BC54F31A83D17C861B6226A"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-D5B01F1A-FC1E-4C54-93CF-D01DA2363B6B">Select the 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-30146710-206F-461F-948E-DB77A5466BD2">MFG Cleanup</span> button in the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-1FB67852-FD09-4988-88AC-8FF999EA8556">NexStep Utilities</span> dialog box. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_6B4EE71A19CE4A1DBD0F850B56225509"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-9C2BACAB-4823-4106-8506-F8A84EC91D4B">Select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-51947DA9-A5C4-40EF-A748-0FB1AA903BBC">Yes</span> to the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DE6A984C-64B9-4805-998E-29D02F0D1C83">Warning</span> dialog box. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-F554C42E-179D-4326-A197-C2E9CBD4E5CD"><span class="note__title">Note:</span>  Status messages are displayed at the bottom of the 
+					 <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-35FF3C5E-8CCD-4340-8589-94AD0040D90C">NexStep Utilities</span> dialog box. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_B0A6EC8055174CE6B5ACDFE851586538"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-08765647-CA88-414C-8613-1337475725E1">Select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DFC4C88F-0E95-4DCB-80A2-21E58690F043">Exit</span> when the cleanup is complete. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_1C622AD6A456409F9FDEDA80CB1DA627"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-34070250-256E-4ED8-A7E0-F56711B8ECA8">Power down the instrument. 
+				</span> 
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_85A70392BFEF4AD1927A5607A821C670">
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-123118E4-454A-4FC6-A7C6-B0716C7940B5">Shut down the console PC. 
+				</span>
+				<div class="itemgroup stepresult">
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_574988FABA074D829664CA6BC2A09772">
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_173BCBDA0D1349B1B299625B6B97CD68">Press 
+						<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-E3455520-EEFF-4134-97FE-77084CCFF0B9">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DEC72AB9-49BF-48BC-80C3-36A21C289529">turn off</strong> and select 
+						<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-6A03E752-F701-42AF-8A44-669F4E523FFF">Settings &gt; Turn off your PC &gt; Power &gt; Shut down</strong>.
+						<div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-A9CEAFDD-2272-47E4-9373-B3F21897E34B"><span class="note__title">Note:</span> The PC can also be shut down using Command Prompt application. 
+						</div>
+						<ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_626D1769827C4BF9B68C35FFDDCA474E">
+						  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_F6CA2E642BEF48F2AA0A70B792823E0B">Press 
+							 <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-8DA819D0-D4A8-4C1B-BB34-DF22361CC0D6">Windows</strong> key, open<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-5290F4F9-0E2C-47AC-9658-D8198C36CA7F"> Command Prompt</strong> icon or type 
+							 <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-725E84D9-C81D-44BE-A7A5-81234A89A37A">command prompt</strong> and open the program. 
+						  </li>
+						  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_D72ABA87C5A5489299A0AA8030DA4D0A"> Type 
+							 <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-33591E0E-4A2B-4415-9610-BAAFC4F7D877">shutdown.exe /s /t 00</strong> and hit 
+							 <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-98D9E010-25D8-4D19-AF88-C71AFAC64FB9">Enter</strong>. 
+						  </li>
+						</ul>
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__STEP_108DAB97BBEE43508FFDCE1FAB6469E4"> 
+		  <span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-238D96E6-BBF2-4508-A952-18C2B7F6E3F5">Remove the supplies from the instrument. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEPS_B483197095EE44F1AE6E675AFC65BA3E" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_8DC664C03D934883B0F1C4DF656EF789"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-4EB6D5FF-CA8E-4AFA-9544-E0C19C3B4FB8">Manually remove all the reagent packs from the reagent storage module and discard all the punctured packs. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-F5A4EAFE-EEB1-42FE-BC5C-D0EE458591C6"><span class="note__title">Caution:</span> Because the system supply information has been erased, all onboard packs, even empty ones, will be identified as full when scanned during initialization with remap selected. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_B616D4EEE9124CAC81CA69EB1A6E22AC"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-E5A15AC0-33A6-4D0C-840F-80F00FBB65DB">Remove and discard both bottles of substrate. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-294F928A-7552-4D84-8AD6-C932EB21010A"><span class="note__title">Caution:</span> Because the system supply information has been erased, all substrate bottles, even empty ones, will be identified as full when scanned during loading. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_BCA976B4B70245C4ADEF2D48A282D339"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-AA4742F8-2166-4224-932A-A6D79D32E4A8">Empty the solid waste and liquid waste containers. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_FB4A5EB5A665407F8F56A0E31D32CD10"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-48605AB3-79C9-436A-BF3A-55CD7B7A63B0">Remove all vessels from: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_6825B97B7AD34F1DB6251767C4D485CF"> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_8669950F3AA94E30BA70A8121EA22A54">Sample wheel 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_777F560BA394479390B29C6F7293997B">Carriages 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_229E61D585B74BB09D08C3B46EB24165">Incubator wheel 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_57E65A40F5D54BA5AB28307D81AAADBA">Wash carousel 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_061E15DF2928442399CEC4BA6870ED12">Pick-and-place collets 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD.html" lang="en-US" title="23.6.18 Restoring Factory Settings Using NS Utility (Mfg Cleanup)"><div><span class="ph num-prefix">23.6.18 </span>Restoring Factory Settings Using NS Utility (Mfg Cleanup)</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD" role="article"> 
+  <h1 class="title topictitle1" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Restoring Factory Settings Using NS Utility (Mfg Cleanup)</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to use the NS Utility to restore factory settings on a DxI system. 
+  </p> 
+	 <section class="section context" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">Use the NS Utility to restore factory settings on a DxI system when other software or database troubleshooting procedures have been unable to resolve errors. 
+		<div class="p"> 
+		  <div class="note warning note_warning" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-861026B7-CBCB-4EE5-B012-F58D20F32DB6"><span class="note__title">Warning:</span> The NS Utility application was provided by manufacturing, to erase the instrument data easily after completing manufacturing tests. The utility was made for Windows NT systems. It may fail to work properly on a Windows XP console PC unless the specific applications listed are exited before running the utility. 
+		</div> 
+		  <div class="note warning note_warning" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-32457C49-B489-4BB9-B4D1-A81C44F22A1C"><span class="note__title">Warning:</span> Use of the NS Utility application is not advised. The actions performed by the NS Utility can be performed individually as part of other troubleshooting procedures. 
+		</div> 
+		  <div class="note warning note_warning" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-E2195899-9F71-45B4-941F-A63DF40FCD95"><span class="note__title">Warning:</span> When installing software, the software installation looks for a registry entry called &quot;PrimaryConsoleIPAddress&quot; to help identify the network port that will be communicating with the Analytical Unit. The NS Utility may delete this registry entry, and then the software installation may choose a random network port for the PC or AU address. After loading software, ensure that the expected port settings (192.168.2.1) are present on the PCs primary network port, and that the secondary port addresses do not conflict with the primary port. Corrections to the port addresses and the workgroup entries in the registry may be needed. Generally, the corrective steps are: 1) correct the network port addresses, 2) correct the workgroup IP address entries in the registry, and 3) reboot the PC to launch the user interface. Similar network port address issues may occur on the AU. 
+		</div> 
+		</div> 
+		<div class="p"> 
+		  <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-0A323EB1-31E1-482F-9DEE-6046645FE09D"><span class="note__title">Note:</span> For systems that run IVD software andneed to revert to an older version of the released software, refer to the 
+			 <samp class="ph msgph" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DC8CE29B-2EE1-4481-8EF5-83089716795C">Current version of the console software is newer than the version on the installation disk</samp> error message in troubleshooting. Refer to the 
+			 <a class="xref" href="GUID-ECD13B75-C209-4878-A0E3-FFFA2CBC590A.html">Software: Troubleshoot Software Error Messages</a> procedure. 
+		  </div> 
+		</div> 
+		<div class="p">Manufacturing cleanup: 
+		<ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_6873F16ED74448609692CBFD3A99EFF6"> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_B68532E40508400CA7880A1FF9B446AD">Removes software from the PC and AU. 
+		  </li> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_96FA939574CC4DB69CC64076249BE507">Removes the user interface database from the PC including: 
+			 <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_9D661443BCD24600AA0605449AF7D2E2"> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_B2581C77BE7A4DC2B4F24BD2766C3161">Reagent information - all punctured packs must be unloaded and discarded. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_B9A0C00D337A42E9A32B9CC38285E8CA">Substrate information - onboard substrate must be discarded. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_700529AC56374822B3CE01A0D18117AB">Solid Waste information - solid waste container must be emptied and reset. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_AD648B1DC1D44ABDB433CC31ECB16CED">Onboard vessel information - all vessels must be removed from the instrument (except the vessels in the bulk feeder). 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_E21C9371BB09450997DB609A875E64BD">User configuration and configured tests. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_5CE6C14D29A04AC294ABD463802F9A5D">Calibrations. 
+				</li> 
+				<li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_C0156F75586D48ACB8E703B9DBF970DA">APF information. 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_EAAA208DC8D44B2190D749331A24B5FB">Erases the AU NVRAM (run hours, test counts, reagent pack counts, and substrate counts). 
+			 <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-200E7651-38DF-425C-B181-3E9E10F202EA"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-0D53118E-AFA3-4B84-BB12-795F5440A53D.html" title="This procedure describes how to modify the run time and test counts using NVMEditor.exe.">Software: Modifying Run Time and Test Counts from Database</a> procedure for details on restoring the test count and run time information. 
+			 </div> 
+		  </li> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_C42D11B7CEFF4DD3BF10C0A5090BBBC5">Resets the IP addresses on the PC (to 192.168.2.1) and AU (to 192.168.2.2). 
+		  </li> 
+		  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_7BDD0C1715DA42FD9967C44088FD0A64">Does not remove the instrument alignment information (specific.ini). 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-7F4585A7-36B6-420D-97C3-2CB92EA06EC2"> 
+		  <span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e20">Use Task Manager to view and end specific processes. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e29">For Windows 8: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e34" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e36"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e38">Press<span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e40"> [Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e43">Access2Support</kbd> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e48"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e50">Press 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e52">Ctrl + Alt + Delete 
+				  </strong>keys together and select 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e55">Task Manager</strong> or press 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e58">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e61">Task Manager</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e66"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e68">From the Task Manager window, select the 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e70">Processes</span> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e75"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e77">Determine if any of these processes are running in the Task Manager. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e82"> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e84">NexGenUI MFC Application or NexStepUI MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e87">AUCommunicator DLL 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e90">DbMaintenance DLL 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e93">InstrumentModel Module 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e96">LISService MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e100">PostOffice DLL 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e103">Reduce MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e106">Screen TransitionTool MFC Application 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e113"><span class="figcap">Figure 419: Windows 8 Task Manager: DxI System </span> 
+					 <img class="image" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e117" src="GUID-2B03CC46-A514-4C43-989A-C034E6CC3FF9-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e122"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e124">For each process that is running, select the process, and then select 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e126">End Task</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e132"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e134">Close the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e136">Task Manager</span> window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e148">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e153" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e155"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e157">Press<span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e159"> [Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e162">Access2Support</kbd> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e167"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e169">Select 
+				  <span class="ph menucascade" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e171"><span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e172">Start</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e174">Run</span></span>, type 
+				  <kbd class="ph userinput" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e177">taskmgr</kbd> in the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e180">Run</span> dialog box, and then select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e183">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e188"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e190">From the Task Manager window, select the 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e192">Processes</span> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e197"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e199">Determine if any of these processes are running in the Task Manager. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e204"> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e206">DbMaintenanceUD 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e209">AUCOMM~.EXE 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e212">INSTRU~.EXE 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e215">LISServiceUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e218">NexGenUIUD.exe or NexStepUIUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e222">ReduceUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e225">NSWGSVUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e228">POSTOF~.EXE 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e235"><span class="figcap">Figure 420: Windows XP Task Manager: DxI System</span> 
+					 <img class="image" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e239" src="GUID-5D188721-B28B-47F7-A7BA-2389661D93F7-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e244"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e246">For each process that is running, select the process, and then select 
+				  <span class="ph menucascade" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e248"><span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e249">End Process</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e251">Yes</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e257"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e259">Close the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__d161e261">Task Manager</span> window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Run the Mfg Cleanup utility. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-06C9AFAC-7BE5-45F9-989B-36FD4060F055"><span class="note__title">Note:</span> The PC must be able to communicate with the instrument in order for the cleanup to be successful. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-8DBCE11A-D853-422D-A9B6-00C47EDDD52B">For Windows XP System with Software 5.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEPS_E23C6511D00F4BD29EE163D8AF216362" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_4DD52A880F1F476AAC90D104D05179B5"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-CFC3464A-F706-4616-B2F7-0B9689CC1CC8">Select 
+				  <span class="ph menucascade" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-99E97483-685E-4BB9-A279-7002FA9DD413"><span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-EF84BA37-38CF-46AA-B610-0F759F6DA950">Start</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DB57DD7D-01A3-4057-B532-60FD7FC56731">Programs</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-F30D821A-8AEA-4056-8F94-25942B009134">NexGen</span> &gt; <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-A8D230AA-E74F-4B93-8E06-7457F5BB4B3E">NS Utility</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_71B9073961B045109195DAB3D2787C13"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-2D845DF4-EE4A-480B-92DF-63B0D72A8C65">Select the 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-E2F664DD-6A81-493F-93D4-969D080A3487">MFG Cleanup</span> button in the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-2AC482E6-3714-4AA9-8FB8-6BB87696F368">NexStep Utilities</span> dialog box. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_A17C8150C7E64037B87A8AC371F69F92"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-21208081-0A64-465F-A902-C7F18245E1BF">Select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-2D8E57B8-7B40-400A-932F-56E256F9FA6D">Yes</span> to the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-2B21F98C-FDCF-4216-93D2-02BD104D6D5E">Warning</span> dialog box. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DD6D5B21-AF5B-4E58-BD7B-EF6270F02D6F"><span class="note__title">Note:</span>  Status messages are displayed at the bottom of the 
+					 <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-C701BC83-AED9-47FD-B536-46D23AF2A7E6">NexStep Utilities</span> dialog box. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_BE62D5A5F2E5478292FD178458A1B5F7"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-961DEF6D-2B22-4AE4-8005-A2BE0E4AC7D9">Select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-32967F27-7CA8-4376-9507-30FC582718B1">Exit</span> when the cleanup is complete. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_811AA0B9861D4BE7B0371FCB747A0850"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-08D080D4-7961-4E2F-BBB8-889CBCB354C7">Power down the instrument. 
+				</span> 
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_4F2D5F5BE48740B0918DFE08E7569185">
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-8EF3ADAA-B67C-4E2E-BD57-4024FB42946E">Shut down the console PC. 
+				</span>
+				<div class="itemgroup stepresult">
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_93FC07A6159F40F6832DE635709E2054">
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_323844C6AA1E4530B8E45F28498BA905">Select 
+						<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-42113407-ADFC-45F6-9F84-7633C7F1BB61">Start &gt; Shut Down</strong>. 
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-33075656-CAB2-4CD5-84F7-B2295DA3E81A">For Windows 8 System with Software 5.3.1 and above: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEPS_2478A00FEA94440EA37715831F9CA38D" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_7F129D1B22CF42B8A44E304FFF5707A7"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-AB8FFB43-E7BC-44B3-8C5B-31D07F279C80">Press 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-3921293E-1994-41C2-AA9D-9C99EFFDD045">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-640BF43C-96D2-40E0-9ABB-196357302A8E">NS Utility</strong> icon or type 
+				  <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-04131E66-65F7-4F7A-A160-D798D03EA53B">ns</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_F11FF0914BC54F31A83D17C861B6226A"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-D5B01F1A-FC1E-4C54-93CF-D01DA2363B6B">Select the 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-30146710-206F-461F-948E-DB77A5466BD2">MFG Cleanup</span> button in the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-1FB67852-FD09-4988-88AC-8FF999EA8556">NexStep Utilities</span> dialog box. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_6B4EE71A19CE4A1DBD0F850B56225509"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-9C2BACAB-4823-4106-8506-F8A84EC91D4B">Select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-51947DA9-A5C4-40EF-A748-0FB1AA903BBC">Yes</span> to the 
+				  <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DE6A984C-64B9-4805-998E-29D02F0D1C83">Warning</span> dialog box. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-F554C42E-179D-4326-A197-C2E9CBD4E5CD"><span class="note__title">Note:</span>  Status messages are displayed at the bottom of the 
+					 <span class="keyword wintitle" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-35FF3C5E-8CCD-4340-8589-94AD0040D90C">NexStep Utilities</span> dialog box. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_B0A6EC8055174CE6B5ACDFE851586538"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-08765647-CA88-414C-8613-1337475725E1">Select 
+				  <span class="ph uicontrol" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DFC4C88F-0E95-4DCB-80A2-21E58690F043">Exit</span> when the cleanup is complete. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_1C622AD6A456409F9FDEDA80CB1DA627"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-34070250-256E-4ED8-A7E0-F56711B8ECA8">Power down the instrument. 
+				</span> 
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_85A70392BFEF4AD1927A5607A821C670">
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-123118E4-454A-4FC6-A7C6-B0716C7940B5">Shut down the console PC. 
+				</span>
+				<div class="itemgroup stepresult">
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_574988FABA074D829664CA6BC2A09772">
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_173BCBDA0D1349B1B299625B6B97CD68">Press 
+						<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-E3455520-EEFF-4134-97FE-77084CCFF0B9">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-DEC72AB9-49BF-48BC-80C3-36A21C289529">turn off</strong> and select 
+						<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-6A03E752-F701-42AF-8A44-669F4E523FFF">Settings &gt; Turn off your PC &gt; Power &gt; Shut down</strong>.
+						<div class="note note note_note" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-A9CEAFDD-2272-47E4-9373-B3F21897E34B"><span class="note__title">Note:</span> The PC can also be shut down using Command Prompt application. 
+						</div>
+						<ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_626D1769827C4BF9B68C35FFDDCA474E">
+						  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_F6CA2E642BEF48F2AA0A70B792823E0B">Press 
+							 <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-8DA819D0-D4A8-4C1B-BB34-DF22361CC0D6">Windows</strong> key, open<strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-5290F4F9-0E2C-47AC-9658-D8198C36CA7F"> Command Prompt</strong> icon or type 
+							 <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-725E84D9-C81D-44BE-A7A5-81234A89A37A">command prompt</strong> and open the program. 
+						  </li>
+						  <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_D72ABA87C5A5489299A0AA8030DA4D0A"> Type 
+							 <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-33591E0E-4A2B-4415-9610-BAAFC4F7D877">shutdown.exe /s /t 00</strong> and hit 
+							 <strong class="ph b" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-98D9E010-25D8-4D19-AF88-C71AFAC64FB9">Enter</strong>. 
+						  </li>
+						</ul>
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__STEP_108DAB97BBEE43508FFDCE1FAB6469E4"> 
+		  <span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-238D96E6-BBF2-4508-A952-18C2B7F6E3F5">Remove the supplies from the instrument. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEPS_B483197095EE44F1AE6E675AFC65BA3E" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_8DC664C03D934883B0F1C4DF656EF789"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-4EB6D5FF-CA8E-4AFA-9544-E0C19C3B4FB8">Manually remove all the reagent packs from the reagent storage module and discard all the punctured packs. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-F5A4EAFE-EEB1-42FE-BC5C-D0EE458591C6"><span class="note__title">Caution:</span> Because the system supply information has been erased, all onboard packs, even empty ones, will be identified as full when scanned during initialization with remap selected. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_B616D4EEE9124CAC81CA69EB1A6E22AC"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-E5A15AC0-33A6-4D0C-840F-80F00FBB65DB">Remove and discard both bottles of substrate. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-294F928A-7552-4D84-8AD6-C932EB21010A"><span class="note__title">Caution:</span> Because the system supply information has been erased, all substrate bottles, even empty ones, will be identified as full when scanned during loading. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_BCA976B4B70245C4ADEF2D48A282D339"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-AA4742F8-2166-4224-932A-A6D79D32E4A8">Empty the solid waste and liquid waste containers. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__SUBSTEP_FB4A5EB5A665407F8F56A0E31D32CD10"> 
+				<span class="ph cmd" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__GUID-48605AB3-79C9-436A-BF3A-55CD7B7A63B0">Remove all vessels from: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__UL_6825B97B7AD34F1DB6251767C4D485CF"> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_8669950F3AA94E30BA70A8121EA22A54">Sample wheel 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_777F560BA394479390B29C6F7293997B">Carriages 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_229E61D585B74BB09D08C3B46EB24165">Incubator wheel 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_57E65A40F5D54BA5AB28307D81AAADBA">Wash carousel 
+					 </li> 
+					 <li class="li" id="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD__LI_061E15DF2928442399CEC4BA6870ED12">Pick-and-place collets 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD.html" lang="en-US" title="23.6.18 Restoring Factory Settings Using NS Utility (Mfg Cleanup)"><div><span class="ph num-prefix">23.6.18 </span>Restoring Factory Settings Using NS Utility (Mfg Cleanup)</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

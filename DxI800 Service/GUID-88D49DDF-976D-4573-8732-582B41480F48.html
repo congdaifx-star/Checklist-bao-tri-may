@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to delete maintenance data from the database using Poet/Fast Developer or Poet/Fast Administrator." name="description" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-88D49DDF-976D-4573-8732-582B41480F48" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.6.6 Database- Deleting Maintenance Data</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-B7CE09B5-3D78-452B-884B-0B142C104FA2.html" rel="prev" /><link href="GUID-16A0A239-F064-412E-AD32-D9B35E062D1A.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3725" data-relpath="GUID-88D49DDF-976D-4573-8732-582B41480F48.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-88D49DDF-976D-4573-8732-582B41480F48" role="article"> 
+  <h1 class="title topictitle1" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Database- Deleting Maintenance Data</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to delete maintenance data from the database using Poet/Fast Developer or Poet/Fast Administrator. 
+  </p> 
+	 <section class="section context" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="p"> This procedure provides instructions for deleting Maintenance sample data from the database. 
+		  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-8E8A5AEB-6D9E-47E9-8A3B-18416A65C2F9"><span class="note__title">Note:</span> The procedure steps are the same whether using Poet/Fast Developer or Poet/Fast Administrator 
+		  </div> 
+		</div> 
+		<p class="p"> Use this procedure to remove data that is interfering with repetitively running a specific sample name through an LXi CTA or UCTA, or to remove data to reduce the size of the database. 
+		</p> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-A6067035-F82C-4ABF-ACAC-A985FD161616"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e23">Create the local copy of the database. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e28"><span class="note__title">Note:</span> Poet Object Server (DxI Software 5.2 and below or Access2 Software 3.4.2 and below ) and Fast Objects Server (DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above) are the same objects server running the database. Fast Objects Server replaces Poet Object Server on the latest DxI and Access2 system software. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e38">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e43" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e45"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e47">From the 
+				  <span class="keyword wintitle" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e49">Main Menu</span> in the user interface, select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e52">[Alt] + [F4]</span> 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e57"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e59">Enter the password 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e61">Access2Support</kbd> observing upper and lower case. The PC will exit to the Windows desktop. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e66"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e68">Select the poet server icon near the clock at the bottom right corner of the display. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e72"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e74">Select the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e76">X</span> at the upper right corner of the poet server window and 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e79">OK</span> to the shutdown server pop-up. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e84"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e86"> Select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e88">Start</span><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e90">&gt; Programs</span><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e92">&gt; Windows Explorer</span> to open Windows Explorer. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e98"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e100">Navigate to the 
+				  <span class="ph filepath" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e102">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e105">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e110"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e112">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e114">DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e117">Copy</span>. 
+				</span> 
+				<div class="itemgroup info">If errors occur during the copy, then: 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e123"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e125">Use the Task Manager to end any applications which may prevent copying the database. 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e128">A software error may have locked the database. Select the Poet Object Server icon at the bottom right corner of the display near the system clock. Shut down the server and close any error messages. Restart the server by selecting 
+						<span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e130"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e131">Start</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e133">Run</span></span>, typing 
+						<kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e136">ptserv32.exe</kbd> on the text line, and selecting 
+						<span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e139">OK</span>. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e146"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e148">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e150">Console</span> (DxI) or 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e153">PC</span> (Access2) folder, and select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e156">Paste</span> to make a Copy of the DRW folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e161"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e163">Close Windows Explorer when finished making the copy. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e174">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e178"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to make a copy of the database. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e183" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e185"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e187"> From the Main Menu, press 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e189">[Alt] + [F4]</strong> and then enter 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e192">Access2Support</strong> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e197"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e199">Shut down the Fast Objects Server. 
+				</span> 
+				<div class="itemgroup stepxmp"> 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e204"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e206">Press 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e208">Ctrl + Alt + Delete</strong> and select 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e211">Task Manager</strong> or right click on the task bar and select 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e214">Task Manager</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e218">In the 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e220">Task Manager</strong> box, click on 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e223">Processes</strong>, select 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e226">FastObjects Server</strong> and click on 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e229">End Task</strong> in the bottom corner of the box. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e236"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e238">Press 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e240">Windows</strong> key and select 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e243">File Explorer</strong> icon or type 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e246">file explorer</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e251"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e253">Navigate to the 
+				  <span class="ph filepath" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e255">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e258">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e263"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e265">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e267">DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e270">Copy</span>. 
+				</span> 
+				<div class="itemgroup info">If errors occur during the copy, then: 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e276"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e278">Use the Task Manager to end any applications which may prevent copying the database. 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e281">A software error may have locked the database. Shut down the Fast Objects Server and close any error messages. Restart the server by pressing 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e283">Windows</strong> key and select the 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e286">Fast Objects Server</strong> icon or type 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e289">run</strong>, open the Run program, typing 
+						<kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e292">ptserv32.exe</kbd> on the text line, and selecting 
+						<span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e295">OK</span>. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e303"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e305">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e307">Console</span> (DxI) or 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e310">PC</span> (Access2) folder, and select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e313">Paste</span> to make a 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e316">Copy of the DRW</strong> folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e321"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e323">Close File Explorer when finished making the copy. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-215D8E7B-91CA-4D88-B3B8-E90A2A47E63E"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e23">Open the Poet or Fast database application. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e32">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e37" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e39"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e41">From the 
+				  <span class="keyword wintitle" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e43">Windows Desktop</span> on the console PC, select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e46"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e47">Start</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e49">Programs</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e51">NexGen (or Access2)</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e53">Poet Developer or Poet Administrator</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e58"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e60">In Poet browser, select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e62"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e63">File</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e65">Open Database</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e70"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e72">In the Host field, enter 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e74">LOCALHOST</kbd>. In the Database field, enter 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e77">NexStepBase</kbd>. Select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e80">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e86"><br /><img class="image" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e87" src="GUID-EB0900E2-FD29-4662-8279-2D0C6BB87767-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e93"><span class="note__title">Note:</span> NexStepBase is case-sensitive. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e98"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e100">Select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e102"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e103">Objects</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e105">Browse Extent</span></span>. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e117">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e121"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to launch Fast database application. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e125" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e127"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e129">Press 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e131">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e134">Fast Developer</strong> or 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e137">Fast Administrator</strong> icon or type 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e140">developer</strong> or 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e143">administrator</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e148"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e150">In Fast browser, select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e152"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e153">File</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e155">Open Database</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e160"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e162">In the Host field, enter 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e164">LOCALHOST</kbd>. In the Database field, enter 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e167">NexStepBase</kbd>. Select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e170">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e179"><img class="image" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e180" src="GUID-EBC4A24E-6A42-40CA-A2ED-40A481F8DCC7-default.png" /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e186"><span class="note__title">Note:</span> NexStepBase is case-sensitive. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e191"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e193">Select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e195"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e196">Objects</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e198">Browse Extent</span></span>. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__STEP_183EE2EF3EB344BFB8CE54A925A59AB8"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-1EA9CC4D-7910-4D1B-94C0-6CCD2150CD9C">Edit the database to remove all maintenance test results. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-DCB82CC1-CDBA-43C7-8E4A-4A76BFA5BAAC">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <div class="itemgroup info"><br /><img class="image" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__IMAGE_899B5C0E3B2541E88DC16837916874BB" src="GUID-E09084F0-D305-4AA2-B462-732EA6AF60EE-default.gif" /><br /> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEPS_686B56146B9C46FDA68347468997D09B" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_6CAF265234C940CCA54E4CB3849C68D0"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-136A2ECD-936C-440D-92C9-B911224F23F4">In the extent browser window, scan down to and highlight the 
+				  <samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-5D913DE5-AF61-4C98-B5B4-E553B2D9102C">BPtMaint Rep Result</samp> line of text. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-5834D842-2DBE-411D-86D3-EFD91AEB896F"><span class="note__title">Note:</span> The right side of the Poet Browser window displays text for the maintenance results. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_A79BE51700CA42A5A21B54464883BEBB"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-28CF16F8-518B-4B3A-8227-8B8C86890CE7">Highlight the top line of text on the right side of the window, right-click the text, and select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-4548AEE8-E908-4D18-8C3D-758706AFB719"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-172C16EC-D9EA-429C-A415-09DFECEA63F8">Delete all BPtMaint Rep Result</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2CEF0969-A960-466D-B770-CDAF4694D7E7">Flat</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_BB3CF781EB994B9484B454D82DDF06F2"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2A7346A3-8DB7-4449-847E-1C248B8BE779">Repeat the process for: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__UL_41675629839607441675629839607541"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_41675629839607741675629839607841"> 
+						<samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-092EECAE-12F7-46A5-B27E-E6E6811317C6">BPt Maintenance Request</samp> 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_41675629839608041675629839608141"><samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-FB8860E4-7FA4-4F3F-BC86-181382B8384F"> BPt Maintenance Sample 
+						</samp> 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_41675629839608341675629839608441"><samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-CEE84F34-C451-40C8-9E79-F531FA105866"> BPt Maintenance Sample Tube</samp> 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-AA41804C-74C6-4530-B076-5B748F17316E"><span class="note__title">Note:</span> Do not delete the 
+					 <samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2FECB002-890B-40DD-BB2F-DD05231C2AE0">Bpt Maintenance Request Allset</samp>. Delete the data from the four subtiles (Cal, Carryover, MultiRack, and PipettorMatching). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_AF995C8938E94173BBAF3A732346F387"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-06949821-F1AB-41E1-8E5C-8B8CC8D0CD7A">Exit the Poet browser. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-0B18515A-B91F-4F86-9E6A-D70804D44D2C">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-E572E8D9-55F5-457F-BCF7-EA7E78718B26"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to launch Fast database application. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+		  </div> 
+		  <div class="itemgroup info"><img class="image" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__IMAGE_AF6F42916E924769B6BA7E7956A07EC6" src="GUID-42A1EBC4-D461-4892-8563-4D9C23C06F1F-default.png" /> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEPS_2F806632D51D4DF6816AC7BA4D8181B7" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_34B28DBF2C98490DB237E1D7850AD3EB"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-ED6FFE25-DF3C-4CB2-9320-08F867D1116F">In the extent browser window, scan down to and highlight the 
+				  <samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-99815B68-E1D3-40AF-886F-5A91179181CA">BPtMaint Rep Result</samp> line of text. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2A8B8AA2-18AA-48F7-8AFB-CC3601BDCAEF"><span class="note__title">Note:</span> The right side of the Fast Browser window displays text for the maintenance results. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_1BC367B6844C44FEA58BFC3F7F4CDF7B"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2A3C456A-0C6B-42A6-8F0C-26CB125EFA8D">Highlight the top line of text on the right side of the window, right-click the text, and select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-13A048F3-D5E5-482F-BE38-ED4BBCC94B1C"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-3EE3CE49-46DF-4216-A7C7-43878510D714">Delete all BPtMaint Rep Result</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-FB8A0106-2EF8-4464-ACAA-378CB5389C0C">Flat</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_E3FE8ADF6F124FA7907E34151295FC9A"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-25494429-FF01-4088-B8C8-89B9C87A7066">Repeat the process for: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__UL_FF29761F47E443F382CCB069914E210B"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_5C8AC36036CB425B88177D15A3A10781"> 
+						<samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-53385707-BCC6-4247-A370-8E80B6E3D26D">BPt Maintenance Request</samp> 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_E3CF989D56324AF4BBF4469BECE81B8B"><samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-F5A7EB37-53B4-4559-93AB-E935373563CD"> BPt Maintenance Sample 
+						</samp> 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_23DE5DC26036488C9E2BE0A4BB092802"><samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-235E33CE-6473-4F03-888E-700A6CDBF446"> BPt Maintenance Sample Tube</samp> 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-CD747D05-7221-4D96-B0E8-AE9021F03FAB"><span class="note__title">Note:</span> Do not delete the 
+					 <samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-EE06DB1F-C702-4DBA-971C-0902CE1846EA">Bpt Maintenance Request Allset</samp>. Delete the data from the four subtiles (Cal, Carryover, MultiRack, and PipettorMatching). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_CE1AE7D0474040A98F50673A89703D75"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-48F03AA6-01DF-4AF3-8478-D7084EC33F09">Exit the Fast browser. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__STEP_38BB83A9E6104F28A1CF6524CCE01EC7"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-30D835C0-1AD6-437F-B1C8-7C236F454288">Perform the Database Consistency Check. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-C04B7AAA-DD7B-46ED-BF59-8D4F80E8DAC5"><span class="note__title">Note:</span> The consistency check fails the first time and passes the second time. 
+			 </div> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-19E44AC3-6A79-45ED-A523-08969FE95913"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" title="This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure.">Software: Database - Performing Database Consistency Check (DxI and Access2)</a> procedure. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__STEP_88B7536A8D1F4997A31D2102262AF498"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-F0172A06-9742-4B1D-85C5-3E05A8DC2964">Relaunch the user interface. 
+		  </span> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__STEP_48412881977E4A959EF9112567A86528"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-A646D92C-6F57-465A-80AC-49F4C0675B5C">Initialize the system. 
+		  </span> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-88D49DDF-976D-4573-8732-582B41480F48.html" lang="en-US" title="23.6.6 Database- Deleting Maintenance Data"><div><span class="ph num-prefix">23.6.6 </span>Database- Deleting Maintenance Data</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-88D49DDF-976D-4573-8732-582B41480F48" role="article"> 
+  <h1 class="title topictitle1" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Database- Deleting Maintenance Data</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to delete maintenance data from the database using Poet/Fast Developer or Poet/Fast Administrator. 
+  </p> 
+	 <section class="section context" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="p"> This procedure provides instructions for deleting Maintenance sample data from the database. 
+		  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-8E8A5AEB-6D9E-47E9-8A3B-18416A65C2F9"><span class="note__title">Note:</span> The procedure steps are the same whether using Poet/Fast Developer or Poet/Fast Administrator 
+		  </div> 
+		</div> 
+		<p class="p"> Use this procedure to remove data that is interfering with repetitively running a specific sample name through an LXi CTA or UCTA, or to remove data to reduce the size of the database. 
+		</p> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-A6067035-F82C-4ABF-ACAC-A985FD161616"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e23">Create the local copy of the database. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e28"><span class="note__title">Note:</span> Poet Object Server (DxI Software 5.2 and below or Access2 Software 3.4.2 and below ) and Fast Objects Server (DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above) are the same objects server running the database. Fast Objects Server replaces Poet Object Server on the latest DxI and Access2 system software. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e38">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e43" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e45"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e47">From the 
+				  <span class="keyword wintitle" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e49">Main Menu</span> in the user interface, select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e52">[Alt] + [F4]</span> 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e57"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e59">Enter the password 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e61">Access2Support</kbd> observing upper and lower case. The PC will exit to the Windows desktop. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e66"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e68">Select the poet server icon near the clock at the bottom right corner of the display. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e72"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e74">Select the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e76">X</span> at the upper right corner of the poet server window and 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e79">OK</span> to the shutdown server pop-up. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e84"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e86"> Select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e88">Start</span><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e90">&gt; Programs</span><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e92">&gt; Windows Explorer</span> to open Windows Explorer. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e98"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e100">Navigate to the 
+				  <span class="ph filepath" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e102">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e105">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e110"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e112">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e114">DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e117">Copy</span>. 
+				</span> 
+				<div class="itemgroup info">If errors occur during the copy, then: 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e123"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e125">Use the Task Manager to end any applications which may prevent copying the database. 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e128">A software error may have locked the database. Select the Poet Object Server icon at the bottom right corner of the display near the system clock. Shut down the server and close any error messages. Restart the server by selecting 
+						<span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e130"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e131">Start</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e133">Run</span></span>, typing 
+						<kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e136">ptserv32.exe</kbd> on the text line, and selecting 
+						<span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e139">OK</span>. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e146"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e148">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e150">Console</span> (DxI) or 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e153">PC</span> (Access2) folder, and select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e156">Paste</span> to make a Copy of the DRW folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e161"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e163">Close Windows Explorer when finished making the copy. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e174">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e178"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to make a copy of the database. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e183" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e185"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e187"> From the Main Menu, press 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e189">[Alt] + [F4]</strong> and then enter 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e192">Access2Support</strong> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e197"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e199">Shut down the Fast Objects Server. 
+				</span> 
+				<div class="itemgroup stepxmp"> 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e204"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e206">Press 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e208">Ctrl + Alt + Delete</strong> and select 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e211">Task Manager</strong> or right click on the task bar and select 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e214">Task Manager</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e218">In the 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e220">Task Manager</strong> box, click on 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e223">Processes</strong>, select 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e226">FastObjects Server</strong> and click on 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e229">End Task</strong> in the bottom corner of the box. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e236"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e238">Press 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e240">Windows</strong> key and select 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e243">File Explorer</strong> icon or type 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e246">file explorer</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e251"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e253">Navigate to the 
+				  <span class="ph filepath" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e255">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e258">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e263"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e265">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e267">DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e270">Copy</span>. 
+				</span> 
+				<div class="itemgroup info">If errors occur during the copy, then: 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e276"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e278">Use the Task Manager to end any applications which may prevent copying the database. 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e281">A software error may have locked the database. Shut down the Fast Objects Server and close any error messages. Restart the server by pressing 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e283">Windows</strong> key and select the 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e286">Fast Objects Server</strong> icon or type 
+						<strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e289">run</strong>, open the Run program, typing 
+						<kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e292">ptserv32.exe</kbd> on the text line, and selecting 
+						<span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e295">OK</span>. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e303"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e305">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e307">Console</span> (DxI) or 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e310">PC</span> (Access2) folder, and select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e313">Paste</span> to make a 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e316">Copy of the DRW</strong> folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e321"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d91e323">Close File Explorer when finished making the copy. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-215D8E7B-91CA-4D88-B3B8-E90A2A47E63E"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e23">Open the Poet or Fast database application. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e32">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e37" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e39"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e41">From the 
+				  <span class="keyword wintitle" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e43">Windows Desktop</span> on the console PC, select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e46"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e47">Start</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e49">Programs</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e51">NexGen (or Access2)</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e53">Poet Developer or Poet Administrator</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e58"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e60">In Poet browser, select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e62"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e63">File</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e65">Open Database</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e70"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e72">In the Host field, enter 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e74">LOCALHOST</kbd>. In the Database field, enter 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e77">NexStepBase</kbd>. Select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e80">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e86"><br /><img class="image" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e87" src="GUID-EB0900E2-FD29-4662-8279-2D0C6BB87767-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e93"><span class="note__title">Note:</span> NexStepBase is case-sensitive. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e98"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e100">Select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e102"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e103">Objects</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e105">Browse Extent</span></span>. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e117">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e121"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to launch Fast database application. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e125" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e127"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e129">Press 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e131">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e134">Fast Developer</strong> or 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e137">Fast Administrator</strong> icon or type 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e140">developer</strong> or 
+				  <strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e143">administrator</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e148"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e150">In Fast browser, select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e152"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e153">File</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e155">Open Database</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e160"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e162">In the Host field, enter 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e164">LOCALHOST</kbd>. In the Database field, enter 
+				  <kbd class="ph userinput" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e167">NexStepBase</kbd>. Select 
+				  <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e170">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e179"><img class="image" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e180" src="GUID-EBC4A24E-6A42-40CA-A2ED-40A481F8DCC7-default.png" /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e186"><span class="note__title">Note:</span> NexStepBase is case-sensitive. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e191"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e193">Select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e195"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e196">Objects</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__d194e198">Browse Extent</span></span>. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__STEP_183EE2EF3EB344BFB8CE54A925A59AB8"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-1EA9CC4D-7910-4D1B-94C0-6CCD2150CD9C">Edit the database to remove all maintenance test results. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-DCB82CC1-CDBA-43C7-8E4A-4A76BFA5BAAC">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <div class="itemgroup info"><br /><img class="image" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__IMAGE_899B5C0E3B2541E88DC16837916874BB" src="GUID-E09084F0-D305-4AA2-B462-732EA6AF60EE-default.gif" /><br /> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEPS_686B56146B9C46FDA68347468997D09B" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_6CAF265234C940CCA54E4CB3849C68D0"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-136A2ECD-936C-440D-92C9-B911224F23F4">In the extent browser window, scan down to and highlight the 
+				  <samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-5D913DE5-AF61-4C98-B5B4-E553B2D9102C">BPtMaint Rep Result</samp> line of text. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-5834D842-2DBE-411D-86D3-EFD91AEB896F"><span class="note__title">Note:</span> The right side of the Poet Browser window displays text for the maintenance results. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_A79BE51700CA42A5A21B54464883BEBB"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-28CF16F8-518B-4B3A-8227-8B8C86890CE7">Highlight the top line of text on the right side of the window, right-click the text, and select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-4548AEE8-E908-4D18-8C3D-758706AFB719"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-172C16EC-D9EA-429C-A415-09DFECEA63F8">Delete all BPtMaint Rep Result</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2CEF0969-A960-466D-B770-CDAF4694D7E7">Flat</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_BB3CF781EB994B9484B454D82DDF06F2"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2A7346A3-8DB7-4449-847E-1C248B8BE779">Repeat the process for: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__UL_41675629839607441675629839607541"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_41675629839607741675629839607841"> 
+						<samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-092EECAE-12F7-46A5-B27E-E6E6811317C6">BPt Maintenance Request</samp> 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_41675629839608041675629839608141"><samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-FB8860E4-7FA4-4F3F-BC86-181382B8384F"> BPt Maintenance Sample 
+						</samp> 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_41675629839608341675629839608441"><samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-CEE84F34-C451-40C8-9E79-F531FA105866"> BPt Maintenance Sample Tube</samp> 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-AA41804C-74C6-4530-B076-5B748F17316E"><span class="note__title">Note:</span> Do not delete the 
+					 <samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2FECB002-890B-40DD-BB2F-DD05231C2AE0">Bpt Maintenance Request Allset</samp>. Delete the data from the four subtiles (Cal, Carryover, MultiRack, and PipettorMatching). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_AF995C8938E94173BBAF3A732346F387"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-06949821-F1AB-41E1-8E5C-8B8CC8D0CD7A">Exit the Poet browser. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-0B18515A-B91F-4F86-9E6A-D70804D44D2C">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-E572E8D9-55F5-457F-BCF7-EA7E78718B26"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to launch Fast database application. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+		  </div> 
+		  <div class="itemgroup info"><img class="image" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__IMAGE_AF6F42916E924769B6BA7E7956A07EC6" src="GUID-42A1EBC4-D461-4892-8563-4D9C23C06F1F-default.png" /> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEPS_2F806632D51D4DF6816AC7BA4D8181B7" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_34B28DBF2C98490DB237E1D7850AD3EB"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-ED6FFE25-DF3C-4CB2-9320-08F867D1116F">In the extent browser window, scan down to and highlight the 
+				  <samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-99815B68-E1D3-40AF-886F-5A91179181CA">BPtMaint Rep Result</samp> line of text. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2A8B8AA2-18AA-48F7-8AFB-CC3601BDCAEF"><span class="note__title">Note:</span> The right side of the Fast Browser window displays text for the maintenance results. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_1BC367B6844C44FEA58BFC3F7F4CDF7B"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-2A3C456A-0C6B-42A6-8F0C-26CB125EFA8D">Highlight the top line of text on the right side of the window, right-click the text, and select 
+				  <span class="ph menucascade" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-13A048F3-D5E5-482F-BE38-ED4BBCC94B1C"><span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-3EE3CE49-46DF-4216-A7C7-43878510D714">Delete all BPtMaint Rep Result</span> &gt; <span class="ph uicontrol" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-FB8A0106-2EF8-4464-ACAA-378CB5389C0C">Flat</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_E3FE8ADF6F124FA7907E34151295FC9A"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-25494429-FF01-4088-B8C8-89B9C87A7066">Repeat the process for: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__UL_FF29761F47E443F382CCB069914E210B"> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_5C8AC36036CB425B88177D15A3A10781"> 
+						<samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-53385707-BCC6-4247-A370-8E80B6E3D26D">BPt Maintenance Request</samp> 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_E3CF989D56324AF4BBF4469BECE81B8B"><samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-F5A7EB37-53B4-4559-93AB-E935373563CD"> BPt Maintenance Sample 
+						</samp> 
+					 </li> 
+					 <li class="li" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__LI_23DE5DC26036488C9E2BE0A4BB092802"><samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-235E33CE-6473-4F03-888E-700A6CDBF446"> BPt Maintenance Sample Tube</samp> 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-CD747D05-7221-4D96-B0E8-AE9021F03FAB"><span class="note__title">Note:</span> Do not delete the 
+					 <samp class="ph msgph" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-EE06DB1F-C702-4DBA-971C-0902CE1846EA">Bpt Maintenance Request Allset</samp>. Delete the data from the four subtiles (Cal, Carryover, MultiRack, and PipettorMatching). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__SUBSTEP_CE1AE7D0474040A98F50673A89703D75"> 
+				<span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-48F03AA6-01DF-4AF3-8478-D7084EC33F09">Exit the Fast browser. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__STEP_38BB83A9E6104F28A1CF6524CCE01EC7"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-30D835C0-1AD6-437F-B1C8-7C236F454288">Perform the Database Consistency Check. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-C04B7AAA-DD7B-46ED-BF59-8D4F80E8DAC5"><span class="note__title">Note:</span> The consistency check fails the first time and passes the second time. 
+			 </div> 
+			 <div class="note note note_note" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-19E44AC3-6A79-45ED-A523-08969FE95913"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" title="This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure.">Software: Database - Performing Database Consistency Check (DxI and Access2)</a> procedure. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__STEP_88B7536A8D1F4997A31D2102262AF498"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-F0172A06-9742-4B1D-85C5-3E05A8DC2964">Relaunch the user interface. 
+		  </span> 
+		</li><li class="li step stepexpand" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__STEP_48412881977E4A959EF9112567A86528"> 
+		  <span class="ph cmd" id="GUID-88D49DDF-976D-4573-8732-582B41480F48__GUID-A646D92C-6F57-465A-80AC-49F4C0675B5C">Initialize the system. 
+		  </span> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-88D49DDF-976D-4573-8732-582B41480F48.html" lang="en-US" title="23.6.6 Database- Deleting Maintenance Data"><div><span class="ph num-prefix">23.6.6 </span>Database- Deleting Maintenance Data</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

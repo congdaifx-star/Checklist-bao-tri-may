@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to test motor slippage for the wash carousel, incubator wheel, and probe plate drive motors." name="description" /><meta content="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E10E1D85-E4A1-46F1-906F-92F8C4C4D6F9.html" name="DC.Relation" scheme="URI" /><meta content="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>5.6.7 Testing Analytical Module Motor Slippage</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-49B67286-11C9-4128-BB1E-E2F89A3F8882.html" rel="prev" /><link href="GUID-AD05413F-A05A-4E54-9D0F-95CEDF0A57C3.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1740" data-relpath="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE" role="article"> 
+  <h1 class="title topictitle1" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Testing Analytical Module Motor Slippage</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to test motor slippage for the wash carousel, incubator wheel, and probe plate drive motors. 
+  </p> 
+	 <section class="section context" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__CONTEXT_EEA8519886B64590B1BFF1EDF1EFA1C4"> 
+		<div class="note warning note_warning" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-5BAF594F-8A13-40B1-ACC9-2C7BB7678750"><span class="note__title">Warning:</span> The photomultiplier tube (PMT) is a very sensitive photon measuring device. Any background or extraneous light coming into contact with a powered PMT can saturate the PMT and reduce the gain. This reduces the performance of the PMT, and it can take a long time for the PMT to recover or it might never recover fully. A magnetic field close to a powered PMT also reduces the performance of the PMT. The magnetic field causes the electrons to follow a curved path instead of moving in a straight line. When you are performing service in the area of the luminometer, observe the following rules. 
+		<ul class="ul" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e27"> 
+		  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e29">Never shine a flashlight around the luminometer while the PMT is powered on. 
+		  </li> 
+		  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e32">Never bring a strong magnetic field close to the luminometer while the luminometer is powered on. 
+		  </li> 
+		  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e35">Before removing the covers on the analytical module, turn off the power to the PMT. 
+		  </li> 
+		  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e38">Cap the PMT whenever it is removed from the analytical module. 
+		  </li> 
+		</ul> 
+	 </div> 
+		<p class="p">This table lists the acceptable motor slippage for the analytical module drive motors. 
+		</p>
+		<div class="p">
+		<table class="table" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1"> Device 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2"> Allowable Slippage 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1 "> Incubator Wheel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2 "> 5 Steps 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1 "> Wash Wheel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2 "> 5 Steps 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1 "> Aspirate Arm 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2 "> 12 Steps 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1 "> Dispense Arm 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2 "> 12 Steps 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__STEP_3F2FF3C371B545808335BE9BAF14DFCD"> 
+		  <span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-9E8C0EF1-01A0-46E8-9267-885D01E975D1">Remove the analytical module cover. 
+		  </span> 
+		</li><li class="li step stepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Perform these steps to test for motor slippage in any of the analytical module motors. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-34C2E944-03A3-4CC6-A481-29D61E64E776"><span class="note__title">Note:</span>  
+				<ul class="ul" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__UL_41528802825494741528802825494841"> 
+				  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__LI_41528802825495041528802825495141"> Wash carousel motor slippage errors occur most often during the maintenance assay because the carousel reverses direction. Slippage errors during the maintenance assay can indicate a loose motor drive gear. 
+				  </li> 
+				  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__LI_41528802825495341528802825495441"> The dispense and aspirate arms move together during operation. The aspirate arm moves down first, followed by the dispense arm. The dispense arm moves up first, followed by the aspirate arm 
+				  </li> 
+				</ul> 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEPS_FA3F54F5C3F046C99A057DF9E037FD59" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_84AD55BE0A02449BA3763205011FF3CE"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-FB1898D7-3B54-40AE-B138-F80361F2B0AA">Exit the User Interface using the steps in the &quot;Exit - Console to Windows Desktop&quot; procedure. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_556268123AA34E0A8D8ABBA24AF67826"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-7B9490C9-1B7F-473F-A125-B2BFCF969C93">Connect to the AU using Desktop Sharing. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_57302AED6D64432B98427B5CB6987298"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-5CA9DFF0-9ABA-4155-BDBB-F46972E85B32">Open the SMC test program by double clicking the SMCTest.exe shortcut in the AU desktop or by selecting 
+				  <span class="ph menucascade" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-E840E88C-E618-4EA9-BA04-6657CF6B554C"><span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-C4200023-52F5-450B-B2B2-470192948E4C">Start</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-A3BF5362-F3D8-4E30-81BC-5473B1150029">All Programs</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-29A345EB-EB62-422E-9F17-C001176C71A9">Windows Explorer</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-2AC32E10-2237-49CF-BA47-F952779F82AC">C:\</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-FAF27226-0279-458A-A390-4D7F22777A80">AU</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-3A8A690E-1E4D-447A-ACA9-7BCFA147B3F6">SMCTest.exe 
+					 </span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_DFD05E94DAE2413F9811E9767DCF6ACD"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-40DDE546-3E8B-4AF0-97A1-CAA25A14EF4C">In SMCTest, select the motor for the suspect device, (ie. WashWheel.Motor) and then select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-3D90FE22-D0FE-4ED8-AA53-4BEC65EC19B9"> Enable</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__FIG_49F6521D977F4ED9B9CAC0501F96621A"><br /><img class="image" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__IMAGE_2CE7334A63D3456888E8907640648355" src="GUID-94936151-D2A8-4DFD-BFA9-EB5E162FAD04-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_07E27BA4309E4DC28C0FB84E61EA57EB"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-22D09E6B-3161-40C0-8961-BDE3DEF5ED8F">Enter a numerical value in the text box, then select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-CE5CF6BA-E953-4B9A-B334-EE90E67A2862">+</span> to advance the device motor. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_F31956A493BF4DF7AFD423DB0FC47540"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-EDEB450F-F339-481B-989A-31F06F8319B4">Select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-CFA3E304-7597-46DD-A517-7107BFC053F5">Home</span> to home the device motor. Repeat homing and advancing in the + and - directions several times and look at the Home Slippage value. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-F8B9F976-D0C8-4176-957F-ECA296207428"><span class="note__title">Note:</span>  For maximum allowable slippage, refer to the Allowable Slippage table. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_91EDAE9F2C68431BA03FEF719ED5F22E"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-B0186C42-50F3-4899-8856-7175DDE6336B">Reinitialize the system by selecting 
+				  <span class="ph menucascade" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-E512A149-4FD4-4B0D-AFF3-D314BF4E62C4"><span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-D56DEE6D-CFDC-476B-8938-CF11D9A60BD2">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-7A07C469-FB44-4EA3-84DD-00F7BB6B5309">Initialize System</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-B68BF5BB-C418-4117-A18E-EF4AD8077E5C">Start</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_076305D6498F49C695881DA03320AC7E"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-40148FDF-A036-4846-83C5-4AD615C7E110">If repair is needed, then perform the necessary repair and retest. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__STEP_A1AB7EC284DE49588381133591BF536C"> 
+		  <span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-A01C4CFA-EACB-4AF9-9083-EEE5EF8C783D">Perform these steps if receiving multiple pick and place errors along with dispense arm motion errors. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-AF31ADD4-739B-45E0-9380-3C426D93AE72"><span class="note__title">Note:</span> Test for wash wheel runout, if you are receiving multiple pick-and-place errors along with dispense arm motion errors. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEPS_240B724635A748AB8A74A2456367E276" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_B5E51D5D79A2427994DA0CA12CEB2379"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-5275A934-0FDC-4C5E-A4AF-F3447ED583A4">Select 
+				  <span class="ph menucascade" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-B433F9B8-6E33-411C-B86E-CE01D140EDDD"><span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-6F7A044A-0BD6-4DCA-B12A-CD111CF2D40E">WashWheel.Motor</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-34D5738B-00E2-4E2A-9330-10390EDEA103">Enable</span></span>. 
+				</span> 
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-DE8A00A7-BB05-4EFB-AFF0-18A51A9CF8F3"><span class="note__title">Note:</span> Confirm that the dispense plate and aspirate plate are raised and clear of the wash carousel. 
+				  </div>
+				</div>
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__FIG_BF0BED128B2E42A59CE85AA18560D50E"><br /><img class="image" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__IMAGE_E13FB45E760E498AA38CDF786D390882" src="GUID-3C563FFE-737C-4990-9F32-62AA45C63BCB-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_1DAD5552313C423BBD4A66565BFF7711"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-D9359CC4-29EA-4081-8524-CE99C265499F">Select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-BAEE5236-D073-41B0-A357-6320EEE7823F">Home</span> until a Home Slippage value of 0 is achieved. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_5237A4FD579C49408A8CF698282C7313"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-E992D596-A6CF-4EFA-976F-A18BC5F8C667">Enter 
+				  <kbd class="ph userinput" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-552CC222-ECC7-4019-A8B8-F398D77572E0">5800</kbd> in the window above the 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-DEC717E4-3504-455E-A76D-F4E923EF5ADA">Enable</span> button, and then select the 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-6F8D7831-0D5F-415B-8B67-9614EF6CDA43">+</span> button to rotate the carousel 180°. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_8D61CA15AB114B79A50256BDE53B7865"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-2A3DFA33-F72E-4F05-93EB-CA5609E9D389">Select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-44B278F2-2F0B-433A-9158-9B68325ADDE9">Home</span> and note the Home Slippage. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <table class="table" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+						  <tr class="row"> 
+							 <th class="entry" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__1">If the Home Slippage is 
+							 </th> 
+							 <th class="entry" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__2">Then the motor runout is 
+							 </th> 
+						  </tr></thead><tbody class="tbody"> 
+						  <tr class="row"> 
+							 <td class="entry" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__1 "> within two steps of 0 or 11600, 
+							 </td> 
+							 <td class="entry" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__2 "> 
+								<div class="p"> acceptable. Repeat the steps several times for confirmation. 
+								<ul class="ul" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__UL_41528802837071441528802837071541"> 
+								  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__LI_41528802837072041528802837072141"> If the drive gear has been rotated 90° and the Home Slippage is less than 2, then motor runout is acceptable. 
+								  </li> 
+								  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__LI_41528802837071741528802837071841"> If the drive gear has not been rotated 90°, then proceed to the next step. 
+								  </li> 
+								</ul> 
+								</div> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__1 "> greater than two steps from 0 or less than two steps from 11600, 
+							 </td> 
+							 <td class="entry" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__2 "> 
+								<p class="p"> unacceptable. Replace the motor. 
+								</p> 
+							 </td> 
+						  </tr> 
+						</tbody></table> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_08640E5EC55C47B18045B074FAC44B44"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-4920219B-0C77-462D-A279-D599DEEFB56E">Remove the substrate probe from the dispense arm. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_6D2C9E3D87634845AAC4682D18622B6D"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-EFA182F6-80CC-4242-9008-04722C9A9BDB">Remove the analytical module cover and the light shield. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_D9442D30683A479791E3DAFE2406D38E"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-25461301-BE99-4678-9E98-AEE485D6AC59">Select the 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-C1DEC5B3-2983-4F57-AA19-3E258B1DD9C3">Disable</span> button, and then manually rotate the carousel to clear the home tab from the home sensor. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_C637C7E032194C5AAA5ADA2AEC8D66CF"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-3D37754B-99AE-4802-8588-103821021F7F">Mark the intersection of the wash wheel teeth and the drive gear teeth. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_CA7D288D495645C1B0E8A9F19FF20507"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-1415657A-7908-47F7-82E3-4F9C39EBE966">Lift the wash wheel slightly, manually rotate the drive gear 90° relative to the wheel position, and then reseat the wheel. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_A03F40840EF2482DB1097146A577D2B7"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-80370FBA-27D5-4B39-BA95-8E545B234D28">Repeat the Test for Wash Wheel Runout with the drive gear in this new position. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__STEP_EBF38D414C704F4FBE72016F761EFD39"> 
+		  <span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-F6842E31-4F12-4607-9287-F38D91AA9258">If the wash wheel motor was replaced, then perform system verification as stated in the 
+			 <a class="xref" href="GUID-6984F1A6-0851-4BBD-820E-4E55BED61588.html">Admin: Verification of Service Repair</a> document. 
+		  </span> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E10E1D85-E4A1-46F1-906F-92F8C4C4D6F9.html" title="5 Analytical Module"><div><span class="ph num-prefix">5 </span>Analytical Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html" title="5.6 Troubleshooting / Testing"><div><span class="ph num-prefix">5.6 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE.html" lang="en-US" title="5.6.7 Testing Analytical Module Motor Slippage"><div><span class="ph num-prefix">5.6.7 </span>Testing Analytical Module Motor Slippage</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE" role="article"> 
+  <h1 class="title topictitle1" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Testing Analytical Module Motor Slippage</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to test motor slippage for the wash carousel, incubator wheel, and probe plate drive motors. 
+  </p> 
+	 <section class="section context" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__CONTEXT_EEA8519886B64590B1BFF1EDF1EFA1C4"> 
+		<div class="note warning note_warning" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-5BAF594F-8A13-40B1-ACC9-2C7BB7678750"><span class="note__title">Warning:</span> The photomultiplier tube (PMT) is a very sensitive photon measuring device. Any background or extraneous light coming into contact with a powered PMT can saturate the PMT and reduce the gain. This reduces the performance of the PMT, and it can take a long time for the PMT to recover or it might never recover fully. A magnetic field close to a powered PMT also reduces the performance of the PMT. The magnetic field causes the electrons to follow a curved path instead of moving in a straight line. When you are performing service in the area of the luminometer, observe the following rules. 
+		<ul class="ul" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e27"> 
+		  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e29">Never shine a flashlight around the luminometer while the PMT is powered on. 
+		  </li> 
+		  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e32">Never bring a strong magnetic field close to the luminometer while the luminometer is powered on. 
+		  </li> 
+		  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e35">Before removing the covers on the analytical module, turn off the power to the PMT. 
+		  </li> 
+		  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__d16e38">Cap the PMT whenever it is removed from the analytical module. 
+		  </li> 
+		</ul> 
+	 </div> 
+		<p class="p">This table lists the acceptable motor slippage for the analytical module drive motors. 
+		</p>
+		<div class="p">
+		<table class="table" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1"> Device 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2"> Allowable Slippage 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1 "> Incubator Wheel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2 "> 5 Steps 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1 "> Wash Wheel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2 "> 5 Steps 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1 "> Aspirate Arm 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2 "> 12 Steps 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__1 "> Dispense Arm 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE6_13D6F4B3A28871A48625701A004405E8__entry__2 "> 12 Steps 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__STEP_3F2FF3C371B545808335BE9BAF14DFCD"> 
+		  <span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-9E8C0EF1-01A0-46E8-9267-885D01E975D1">Remove the analytical module cover. 
+		  </span> 
+		</li><li class="li step stepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Perform these steps to test for motor slippage in any of the analytical module motors. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-34C2E944-03A3-4CC6-A481-29D61E64E776"><span class="note__title">Note:</span>  
+				<ul class="ul" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__UL_41528802825494741528802825494841"> 
+				  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__LI_41528802825495041528802825495141"> Wash carousel motor slippage errors occur most often during the maintenance assay because the carousel reverses direction. Slippage errors during the maintenance assay can indicate a loose motor drive gear. 
+				  </li> 
+				  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__LI_41528802825495341528802825495441"> The dispense and aspirate arms move together during operation. The aspirate arm moves down first, followed by the dispense arm. The dispense arm moves up first, followed by the aspirate arm 
+				  </li> 
+				</ul> 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEPS_FA3F54F5C3F046C99A057DF9E037FD59" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_84AD55BE0A02449BA3763205011FF3CE"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-FB1898D7-3B54-40AE-B138-F80361F2B0AA">Exit the User Interface using the steps in the &quot;Exit - Console to Windows Desktop&quot; procedure. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_556268123AA34E0A8D8ABBA24AF67826"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-7B9490C9-1B7F-473F-A125-B2BFCF969C93">Connect to the AU using Desktop Sharing. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_57302AED6D64432B98427B5CB6987298"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-5CA9DFF0-9ABA-4155-BDBB-F46972E85B32">Open the SMC test program by double clicking the SMCTest.exe shortcut in the AU desktop or by selecting 
+				  <span class="ph menucascade" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-E840E88C-E618-4EA9-BA04-6657CF6B554C"><span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-C4200023-52F5-450B-B2B2-470192948E4C">Start</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-A3BF5362-F3D8-4E30-81BC-5473B1150029">All Programs</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-29A345EB-EB62-422E-9F17-C001176C71A9">Windows Explorer</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-2AC32E10-2237-49CF-BA47-F952779F82AC">C:\</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-FAF27226-0279-458A-A390-4D7F22777A80">AU</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-3A8A690E-1E4D-447A-ACA9-7BCFA147B3F6">SMCTest.exe 
+					 </span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_DFD05E94DAE2413F9811E9767DCF6ACD"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-40DDE546-3E8B-4AF0-97A1-CAA25A14EF4C">In SMCTest, select the motor for the suspect device, (ie. WashWheel.Motor) and then select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-3D90FE22-D0FE-4ED8-AA53-4BEC65EC19B9"> Enable</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__FIG_49F6521D977F4ED9B9CAC0501F96621A"><br /><img class="image" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__IMAGE_2CE7334A63D3456888E8907640648355" src="GUID-94936151-D2A8-4DFD-BFA9-EB5E162FAD04-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_07E27BA4309E4DC28C0FB84E61EA57EB"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-22D09E6B-3161-40C0-8961-BDE3DEF5ED8F">Enter a numerical value in the text box, then select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-CE5CF6BA-E953-4B9A-B334-EE90E67A2862">+</span> to advance the device motor. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_F31956A493BF4DF7AFD423DB0FC47540"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-EDEB450F-F339-481B-989A-31F06F8319B4">Select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-CFA3E304-7597-46DD-A517-7107BFC053F5">Home</span> to home the device motor. Repeat homing and advancing in the + and - directions several times and look at the Home Slippage value. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-F8B9F976-D0C8-4176-957F-ECA296207428"><span class="note__title">Note:</span>  For maximum allowable slippage, refer to the Allowable Slippage table. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_91EDAE9F2C68431BA03FEF719ED5F22E"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-B0186C42-50F3-4899-8856-7175DDE6336B">Reinitialize the system by selecting 
+				  <span class="ph menucascade" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-E512A149-4FD4-4B0D-AFF3-D314BF4E62C4"><span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-D56DEE6D-CFDC-476B-8938-CF11D9A60BD2">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-7A07C469-FB44-4EA3-84DD-00F7BB6B5309">Initialize System</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-B68BF5BB-C418-4117-A18E-EF4AD8077E5C">Start</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_076305D6498F49C695881DA03320AC7E"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-40148FDF-A036-4846-83C5-4AD615C7E110">If repair is needed, then perform the necessary repair and retest. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__STEP_A1AB7EC284DE49588381133591BF536C"> 
+		  <span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-A01C4CFA-EACB-4AF9-9083-EEE5EF8C783D">Perform these steps if receiving multiple pick and place errors along with dispense arm motion errors. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-AF31ADD4-739B-45E0-9380-3C426D93AE72"><span class="note__title">Note:</span> Test for wash wheel runout, if you are receiving multiple pick-and-place errors along with dispense arm motion errors. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEPS_240B724635A748AB8A74A2456367E276" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_B5E51D5D79A2427994DA0CA12CEB2379"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-5275A934-0FDC-4C5E-A4AF-F3447ED583A4">Select 
+				  <span class="ph menucascade" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-B433F9B8-6E33-411C-B86E-CE01D140EDDD"><span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-6F7A044A-0BD6-4DCA-B12A-CD111CF2D40E">WashWheel.Motor</span> &gt; <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-34D5738B-00E2-4E2A-9330-10390EDEA103">Enable</span></span>. 
+				</span> 
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-DE8A00A7-BB05-4EFB-AFF0-18A51A9CF8F3"><span class="note__title">Note:</span> Confirm that the dispense plate and aspirate plate are raised and clear of the wash carousel. 
+				  </div>
+				</div>
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__FIG_BF0BED128B2E42A59CE85AA18560D50E"><br /><img class="image" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__IMAGE_E13FB45E760E498AA38CDF786D390882" src="GUID-3C563FFE-737C-4990-9F32-62AA45C63BCB-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_1DAD5552313C423BBD4A66565BFF7711"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-D9359CC4-29EA-4081-8524-CE99C265499F">Select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-BAEE5236-D073-41B0-A357-6320EEE7823F">Home</span> until a Home Slippage value of 0 is achieved. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_5237A4FD579C49408A8CF698282C7313"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-E992D596-A6CF-4EFA-976F-A18BC5F8C667">Enter 
+				  <kbd class="ph userinput" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-552CC222-ECC7-4019-A8B8-F398D77572E0">5800</kbd> in the window above the 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-DEC717E4-3504-455E-A76D-F4E923EF5ADA">Enable</span> button, and then select the 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-6F8D7831-0D5F-415B-8B67-9614EF6CDA43">+</span> button to rotate the carousel 180°. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_8D61CA15AB114B79A50256BDE53B7865"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-2A3DFA33-F72E-4F05-93EB-CA5609E9D389">Select 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-44B278F2-2F0B-433A-9158-9B68325ADDE9">Home</span> and note the Home Slippage. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <table class="table" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+						  <tr class="row"> 
+							 <th class="entry" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__1">If the Home Slippage is 
+							 </th> 
+							 <th class="entry" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__2">Then the motor runout is 
+							 </th> 
+						  </tr></thead><tbody class="tbody"> 
+						  <tr class="row"> 
+							 <td class="entry" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__1 "> within two steps of 0 or 11600, 
+							 </td> 
+							 <td class="entry" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__2 "> 
+								<div class="p"> acceptable. Repeat the steps several times for confirmation. 
+								<ul class="ul" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__UL_41528802837071441528802837071541"> 
+								  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__LI_41528802837072041528802837072141"> If the drive gear has been rotated 90° and the Home Slippage is less than 2, then motor runout is acceptable. 
+								  </li> 
+								  <li class="li" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__LI_41528802837071741528802837071841"> If the drive gear has not been rotated 90°, then proceed to the next step. 
+								  </li> 
+								</ul> 
+								</div> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__1 "> greater than two steps from 0 or less than two steps from 11600, 
+							 </td> 
+							 <td class="entry" headers="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__TABLE_5E1B459577784A229C281D5D7477D6BB__entry__2 "> 
+								<p class="p"> unacceptable. Replace the motor. 
+								</p> 
+							 </td> 
+						  </tr> 
+						</tbody></table> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_08640E5EC55C47B18045B074FAC44B44"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-4920219B-0C77-462D-A279-D599DEEFB56E">Remove the substrate probe from the dispense arm. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_6D2C9E3D87634845AAC4682D18622B6D"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-EFA182F6-80CC-4242-9008-04722C9A9BDB">Remove the analytical module cover and the light shield. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_D9442D30683A479791E3DAFE2406D38E"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-25461301-BE99-4678-9E98-AEE485D6AC59">Select the 
+				  <span class="ph uicontrol" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-C1DEC5B3-2983-4F57-AA19-3E258B1DD9C3">Disable</span> button, and then manually rotate the carousel to clear the home tab from the home sensor. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_C637C7E032194C5AAA5ADA2AEC8D66CF"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-3D37754B-99AE-4802-8588-103821021F7F">Mark the intersection of the wash wheel teeth and the drive gear teeth. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_CA7D288D495645C1B0E8A9F19FF20507"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-1415657A-7908-47F7-82E3-4F9C39EBE966">Lift the wash wheel slightly, manually rotate the drive gear 90° relative to the wheel position, and then reseat the wheel. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__SUBSTEP_A03F40840EF2482DB1097146A577D2B7"> 
+				<span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-80370FBA-27D5-4B39-BA95-8E545B234D28">Repeat the Test for Wash Wheel Runout with the drive gear in this new position. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__STEP_EBF38D414C704F4FBE72016F761EFD39"> 
+		  <span class="ph cmd" id="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE__GUID-F6842E31-4F12-4607-9287-F38D91AA9258">If the wash wheel motor was replaced, then perform system verification as stated in the 
+			 <a class="xref" href="GUID-6984F1A6-0851-4BBD-820E-4E55BED61588.html">Admin: Verification of Service Repair</a> document. 
+		  </span> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E10E1D85-E4A1-46F1-906F-92F8C4C4D6F9.html" title="5 Analytical Module"><div><span class="ph num-prefix">5 </span>Analytical Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html" title="5.6 Troubleshooting / Testing"><div><span class="ph num-prefix">5.6 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-26A5CBB3-774D-4798-A639-6C944C8E23BE.html" lang="en-US" title="5.6.7 Testing Analytical Module Motor Slippage"><div><span class="ph num-prefix">5.6.7 </span>Testing Analytical Module Motor Slippage</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

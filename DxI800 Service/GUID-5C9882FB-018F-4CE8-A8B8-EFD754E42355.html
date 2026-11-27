@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to install the event log analysis tool LogHelper." name="description" /><meta content="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.4.3 Installing LogHelper</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-C48D8D5F-AC5C-4CF0-83EA-4CE2B78B2A13.html" rel="prev" /><link href="GUID-A6B29552-8C6A-4847-960B-8806D947D6E9.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3857" data-relpath="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355" role="article"> 
+  <h1 class="title topictitle1" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Installing LogHelper</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to install the event log analysis tool LogHelper. 
+  </p> 
+	 <section class="section context" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">Use the event log analysis tool LogHelper to: 
+		<ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_4B991CA57DBD4FA09AFFE9EF541D2030"> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_5EFC9A8D4F114816A49788536E4724E2">Analyze DxI instrument event log messages 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_815CE5F0857D4F97855F456C3C9DC7DD">Provide a historical summary of system errors 
+		  </li> 
+		</ul> 
+		<div class="p">Event log errors are categorized and summarized for the user under their respective subsystem module. The following summary details are displayed: 
+		<ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_1EA74BEDEDD84E7D8C6798B5722CCBF1"> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_80BBBF9F27E543F8952481E03F79036A">Date and time 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_C077E51667614DD19506901DEBD2B716">Severity level 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_CD7414CD15BF4B678B47490299D2E849">Operation mode 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_961DC52D9AE745B28880958C6AA298CF">Occurrence frequency 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_1701CE664EE8498C909992112C61E1E7">Total Event Log period 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_662B3644492A48F9AFF47919C91AF518">Total tests counts 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_22C01CF35C2C4A43B31C54F7579B3E06">Test counts (per year) 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">Two slightly different versions of LogHelper are available. 
+		<ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_5206A0A6485647CAB29772B1269C97D1"> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_F7A5F6E7C99A44178C0D5B21DCBE0EDA">Laptop or desktop PC version 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_BF3ECE50D5034660A01D9B07E26EBB8A">UniCel DxI console PC version 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="note caution note_caution" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-2440B7F7-570C-459D-B3B0-7AD0D6346A88"><span class="note__title">Caution:</span> If the UniCel DxI 600 or 800 instrument is running software V4.0, do not use LogHelper. LogHelper is not validated for DxI instrument software V4.0. 
+		</div>
+		<table class="table" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98"><caption><span class="title" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-5C957BE1-913B-4E57-AD78-617CD7F9325D">Table 86: Attachment Table for Laptop or Desktop PC Users</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+			 <tr class="row">
+				<th class="entry" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1">Description
+				</th>
+				<th class="entry" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2">Attachment
+				</th>
+			 </tr></thead><tbody class="tbody">
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">This is the main LogHelper executable file used when viewing previously exported Event Log files on a laptop or desktop computer.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/LogHelperU_Laptop.exe" target="_blank"> LogHelperU_Laptop.exe 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">This file is used internally by LogHelper.
+				  <div class="note caution note_caution" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-DFD13033-1960-4722-9108-C25B142B7F8F"><span class="note__title">Caution:</span> This file should never be modified by the user.
+				  </div>
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/ErrorTextInfo.csv" target="_blank"> ErrorTextInfo.csv 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">This file is used internally by LogHelper for keeping changes that the LogHelper user makes to any one of these: primary subsystem, secondary subsystem, severity, category and troubleshooting text tagged to specific event long entries.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/EventLogInfo.csv" target="_blank"> EventLogInfo.csv 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">
+				  <p class="p">This file is used internally by LogHelper to store these user configurable parameters:
+				  </p>
+				  <ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_238EFC2C7ACD4E9194BF972C6D820E62">
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_5BA25842DCE04B718AA67D5EF2444C56">minimum displayed severity.
+					 </li>
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_025F2B70199E4720A0FDB0EFBF7F4784">whether to display error counts by total or by frequency.
+					 </li>
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_47AFDA69AC49418F99FBE3F00A0B3E5C">the number of days to use for the calculation.
+					 </li>
+				  </ul>
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/LogHelper.ini" target="_blank"> LogHelper.ini 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">These are the POET Dynamic Link libraries that (although not used) must be present in the installation directory for the LogHelper Laptop version to function properly.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/pt6kn60.dll" target="_blank"> pt6kn60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6sn60.dll" target="_blank"> pt6sn60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6tn60.dll" target="_blank"> pt6tn60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6in60.dll" target="_blank"> pt6in60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6en60.dll" target="_blank"> pt6en60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6bn60.dll" target="_blank"> pt6bn60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6mn60.dll" target="_blank"> pt6mn60.dll 
+				  </a>
+				</td>
+			 </tr>
+		  </tbody></table> 
+		<p class="p"> 
+		</p>
+		<table class="table" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9"><caption><span class="title" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-1D504AE5-1661-44BD-BB5A-ECA1ECE4850C">Table 87: Atttachment Table for the DxI Console User</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+			 <tr class="row">
+				<th class="entry" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1">Description
+				</th>
+				<th class="entry" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2">Attachment
+				</th>
+			 </tr></thead><tbody class="tbody">
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1 ">This is the main LogHelper executable file used when viewing previously exported Event Log files on a laptop or desktop computer.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2 "><a class="xref" href="./Attachments/LogHelperUD_ConsolePC.exe" target="_blank"> LogHelperUD_ConsolePC.exe 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1 ">This file is used internally by LogHelper.
+				  <div class="note caution note_caution" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-B635042C-408D-4710-8CBC-270962A28510"><span class="note__title">Caution:</span> This file should never be modified by the user.
+				  </div>
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2 "><a class="xref" href="./Attachments/ErrorTextInfo.csv" target="_blank"> ErrorTextInfo.csv 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1 ">This file is used internally by LogHelper for keeping changes that the LogHelper user makes to any one of these: primary subsystem, secondary subsystem, severity, category and troubleshooting text tagged to specific event long entries.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2 "><a class="xref" href="./Attachments/EventLogInfo.csv" target="_blank"> EventLogInfo.csv 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1 ">
+				  <p class="p">This file is used internally by LogHelper to store these user configurable parameters:
+				  </p>
+				  <ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_6B96FAF13626406EB877D7EC20F9092C">
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_C5900DD926EE420F8D8CCAB3B505D32A">minimum displayed severity.
+					 </li>
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_32B09901325548AFB5AE7E583906CCA1">whether to display error counts by total or by frequency.
+					 </li>
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_2A0B57ACFCB14EFF9DFDCA260581C6E1">the number of days to use for the calculation.
+					 </li>
+				  </ul>
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2 "><a class="xref" href="./Attachments/LogHelper.ini" target="_blank"> LogHelper.ini 
+				  </a>
+				</td>
+			 </tr>
+		  </tbody></table> 
+	 </section> 
+	 <div class="li step p" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__STEP_611F9E4F17A041408FCA6475AD18A93C"> 
+		  <span class="ph cmd" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-C2022D65-E7BF-4304-8BDF-5207070C1526">Install LogHelper. 
+		  </span> 
+		  <ul class="ul choices" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__CHOICES_97B6C969169749F5871C4D4780E6A6F1"> 
+			 <li class="li choice" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__CHOICE_064FFFB1E37E4481BD31E839681D9FD7">For users of a laptop or desktop PC: 
+				<div class="note note note_note" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-91A1C6B6-DB9F-47FA-BEA7-89939EF969BD"><span class="note__title">Note:</span> This version requires exported event log files using the EventTestUD application. 
+				  <p class="p">Refer to the 
+					 <a class="xref" href="GUID-CB00F540-BE2F-42BC-AC7F-2CA5CBDC3878.html" title="This procedure describes how to transfer event log files.">Software: Transferring Event Log Files</a> procedure. 
+				  </p> 
+				</div> 
+				<ol class="ol" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__OL_A66D3BA33B9348ACA29395FED0C9E2BE" type="a"> 
+				  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_2A083783626941BC81549F742248BFD4">Create a folder on the laptop or desktop PC hard drive and name the folder LogHelper. 
+				  </li> 
+				  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_AB5EEF9EDCDE44C5BD118B2844236BBE">Right click on each file in the Attachment Table and select 
+					 <span class="ph uicontrol" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-95F02F0C-5790-4DDC-B532-7DF33FFDC04B">Save</span> to save these files into the LogHelper folder. 
+					 <div class="note caution note_caution" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-C5FD591A-96FF-4B12-A5A2-FB88364831B0"><span class="note__title">Caution:</span> If any of the attachment files are not installed, LogHelper is unusable 
+					 </div> 
+				  </li> 
+				</ol> 
+			 </li> 
+			 <li class="li choice" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__CHOICE_49B7A37D0E114E3BB9D8EF1DBDABA6F1">For users of a UniCel DxI console PC: 
+				<div class="note note note_note" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-88A7C13C-885D-405D-A322-6DDDDD951174"><span class="note__title">Note:</span>  This version can automatically read the event log files located in the POET database. Event log files do not need to be exported. 
+				</div> 
+				<ol class="ol" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__OL_754F985E32C545B59364DF0E6F8F61A8" type="a"> 
+				  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_BAB3FE50B55A4A32AEADB6A81A7EE4A0">Right click on each file, and select 
+					 <span class="ph uicontrol" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-2B728B2B-1EA0-44F1-9D3F-9FCD225ED77E">Save</span> to save these files into the LogHelper folder. 
+					 <div class="note note note_note" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-05DF1BB5-11DD-4B75-BE08-A39B4ECC3612"><span class="note__title">Note:</span> If any of the attachment files are not installed, LogHelper is unusable. 
+					 </div> 
+				  </li> 
+				</ol> 
+			 </li> 
+		  </ul> 
+		</div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html">Installing / Removing / Replacing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html" title="23.4 Installing / Removing / Replacing"><div><span class="ph num-prefix">23.4 </span>Installing / Removing / Replacing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355.html" lang="en-US" title="23.4.3 Installing LogHelper"><div><span class="ph num-prefix">23.4.3 </span>Installing LogHelper</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355" role="article"> 
+  <h1 class="title topictitle1" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Installing LogHelper</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to install the event log analysis tool LogHelper. 
+  </p> 
+	 <section class="section context" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">Use the event log analysis tool LogHelper to: 
+		<ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_4B991CA57DBD4FA09AFFE9EF541D2030"> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_5EFC9A8D4F114816A49788536E4724E2">Analyze DxI instrument event log messages 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_815CE5F0857D4F97855F456C3C9DC7DD">Provide a historical summary of system errors 
+		  </li> 
+		</ul> 
+		<div class="p">Event log errors are categorized and summarized for the user under their respective subsystem module. The following summary details are displayed: 
+		<ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_1EA74BEDEDD84E7D8C6798B5722CCBF1"> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_80BBBF9F27E543F8952481E03F79036A">Date and time 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_C077E51667614DD19506901DEBD2B716">Severity level 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_CD7414CD15BF4B678B47490299D2E849">Operation mode 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_961DC52D9AE745B28880958C6AA298CF">Occurrence frequency 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_1701CE664EE8498C909992112C61E1E7">Total Event Log period 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_662B3644492A48F9AFF47919C91AF518">Total tests counts 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_22C01CF35C2C4A43B31C54F7579B3E06">Test counts (per year) 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">Two slightly different versions of LogHelper are available. 
+		<ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_5206A0A6485647CAB29772B1269C97D1"> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_F7A5F6E7C99A44178C0D5B21DCBE0EDA">Laptop or desktop PC version 
+		  </li> 
+		  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_BF3ECE50D5034660A01D9B07E26EBB8A">UniCel DxI console PC version 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="note caution note_caution" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-2440B7F7-570C-459D-B3B0-7AD0D6346A88"><span class="note__title">Caution:</span> If the UniCel DxI 600 or 800 instrument is running software V4.0, do not use LogHelper. LogHelper is not validated for DxI instrument software V4.0. 
+		</div>
+		<table class="table" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98"><caption><span class="title" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-5C957BE1-913B-4E57-AD78-617CD7F9325D">Table 86: Attachment Table for Laptop or Desktop PC Users</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+			 <tr class="row">
+				<th class="entry" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1">Description
+				</th>
+				<th class="entry" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2">Attachment
+				</th>
+			 </tr></thead><tbody class="tbody">
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">This is the main LogHelper executable file used when viewing previously exported Event Log files on a laptop or desktop computer.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/LogHelperU_Laptop.exe" target="_blank"> LogHelperU_Laptop.exe 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">This file is used internally by LogHelper.
+				  <div class="note caution note_caution" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-DFD13033-1960-4722-9108-C25B142B7F8F"><span class="note__title">Caution:</span> This file should never be modified by the user.
+				  </div>
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/ErrorTextInfo.csv" target="_blank"> ErrorTextInfo.csv 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">This file is used internally by LogHelper for keeping changes that the LogHelper user makes to any one of these: primary subsystem, secondary subsystem, severity, category and troubleshooting text tagged to specific event long entries.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/EventLogInfo.csv" target="_blank"> EventLogInfo.csv 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">
+				  <p class="p">This file is used internally by LogHelper to store these user configurable parameters:
+				  </p>
+				  <ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_238EFC2C7ACD4E9194BF972C6D820E62">
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_5BA25842DCE04B718AA67D5EF2444C56">minimum displayed severity.
+					 </li>
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_025F2B70199E4720A0FDB0EFBF7F4784">whether to display error counts by total or by frequency.
+					 </li>
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_47AFDA69AC49418F99FBE3F00A0B3E5C">the number of days to use for the calculation.
+					 </li>
+				  </ul>
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/LogHelper.ini" target="_blank"> LogHelper.ini 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__1 ">These are the POET Dynamic Link libraries that (although not used) must be present in the installation directory for the LogHelper Laptop version to function properly.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_B21CE2300CD34F709063C9FB234F7B98__entry__2 "><a class="xref" href="./Attachments/pt6kn60.dll" target="_blank"> pt6kn60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6sn60.dll" target="_blank"> pt6sn60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6tn60.dll" target="_blank"> pt6tn60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6in60.dll" target="_blank"> pt6in60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6en60.dll" target="_blank"> pt6en60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6bn60.dll" target="_blank"> pt6bn60.dll 
+				  </a>
+				  <p class="p">
+				  </p><a class="xref" href="./Attachments/pt6mn60.dll" target="_blank"> pt6mn60.dll 
+				  </a>
+				</td>
+			 </tr>
+		  </tbody></table> 
+		<p class="p"> 
+		</p>
+		<table class="table" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9"><caption><span class="title" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-1D504AE5-1661-44BD-BB5A-ECA1ECE4850C">Table 87: Atttachment Table for the DxI Console User</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+			 <tr class="row">
+				<th class="entry" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1">Description
+				</th>
+				<th class="entry" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2">Attachment
+				</th>
+			 </tr></thead><tbody class="tbody">
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1 ">This is the main LogHelper executable file used when viewing previously exported Event Log files on a laptop or desktop computer.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2 "><a class="xref" href="./Attachments/LogHelperUD_ConsolePC.exe" target="_blank"> LogHelperUD_ConsolePC.exe 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1 ">This file is used internally by LogHelper.
+				  <div class="note caution note_caution" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-B635042C-408D-4710-8CBC-270962A28510"><span class="note__title">Caution:</span> This file should never be modified by the user.
+				  </div>
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2 "><a class="xref" href="./Attachments/ErrorTextInfo.csv" target="_blank"> ErrorTextInfo.csv 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1 ">This file is used internally by LogHelper for keeping changes that the LogHelper user makes to any one of these: primary subsystem, secondary subsystem, severity, category and troubleshooting text tagged to specific event long entries.
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2 "><a class="xref" href="./Attachments/EventLogInfo.csv" target="_blank"> EventLogInfo.csv 
+				  </a>
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__1 ">
+				  <p class="p">This file is used internally by LogHelper to store these user configurable parameters:
+				  </p>
+				  <ul class="ul" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__UL_6B96FAF13626406EB877D7EC20F9092C">
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_C5900DD926EE420F8D8CCAB3B505D32A">minimum displayed severity.
+					 </li>
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_32B09901325548AFB5AE7E583906CCA1">whether to display error counts by total or by frequency.
+					 </li>
+					 <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_2A0B57ACFCB14EFF9DFDCA260581C6E1">the number of days to use for the calculation.
+					 </li>
+				  </ul>
+				</td>
+				<td class="entry" headers="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__TABLE_19FD39AE6C8845DFA189F0FF0D6E35C9__entry__2 "><a class="xref" href="./Attachments/LogHelper.ini" target="_blank"> LogHelper.ini 
+				  </a>
+				</td>
+			 </tr>
+		  </tbody></table> 
+	 </section> 
+	 <div class="li step p" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__STEP_611F9E4F17A041408FCA6475AD18A93C"> 
+		  <span class="ph cmd" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-C2022D65-E7BF-4304-8BDF-5207070C1526">Install LogHelper. 
+		  </span> 
+		  <ul class="ul choices" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__CHOICES_97B6C969169749F5871C4D4780E6A6F1"> 
+			 <li class="li choice" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__CHOICE_064FFFB1E37E4481BD31E839681D9FD7">For users of a laptop or desktop PC: 
+				<div class="note note note_note" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-91A1C6B6-DB9F-47FA-BEA7-89939EF969BD"><span class="note__title">Note:</span> This version requires exported event log files using the EventTestUD application. 
+				  <p class="p">Refer to the 
+					 <a class="xref" href="GUID-CB00F540-BE2F-42BC-AC7F-2CA5CBDC3878.html" title="This procedure describes how to transfer event log files.">Software: Transferring Event Log Files</a> procedure. 
+				  </p> 
+				</div> 
+				<ol class="ol" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__OL_A66D3BA33B9348ACA29395FED0C9E2BE" type="a"> 
+				  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_2A083783626941BC81549F742248BFD4">Create a folder on the laptop or desktop PC hard drive and name the folder LogHelper. 
+				  </li> 
+				  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_AB5EEF9EDCDE44C5BD118B2844236BBE">Right click on each file in the Attachment Table and select 
+					 <span class="ph uicontrol" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-95F02F0C-5790-4DDC-B532-7DF33FFDC04B">Save</span> to save these files into the LogHelper folder. 
+					 <div class="note caution note_caution" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-C5FD591A-96FF-4B12-A5A2-FB88364831B0"><span class="note__title">Caution:</span> If any of the attachment files are not installed, LogHelper is unusable 
+					 </div> 
+				  </li> 
+				</ol> 
+			 </li> 
+			 <li class="li choice" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__CHOICE_49B7A37D0E114E3BB9D8EF1DBDABA6F1">For users of a UniCel DxI console PC: 
+				<div class="note note note_note" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-88A7C13C-885D-405D-A322-6DDDDD951174"><span class="note__title">Note:</span>  This version can automatically read the event log files located in the POET database. Event log files do not need to be exported. 
+				</div> 
+				<ol class="ol" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__OL_754F985E32C545B59364DF0E6F8F61A8" type="a"> 
+				  <li class="li" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__LI_BAB3FE50B55A4A32AEADB6A81A7EE4A0">Right click on each file, and select 
+					 <span class="ph uicontrol" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-2B728B2B-1EA0-44F1-9D3F-9FCD225ED77E">Save</span> to save these files into the LogHelper folder. 
+					 <div class="note note note_note" id="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355__GUID-05DF1BB5-11DD-4B75-BE08-A39B4ECC3612"><span class="note__title">Note:</span> If any of the attachment files are not installed, LogHelper is unusable. 
+					 </div> 
+				  </li> 
+				</ol> 
+			 </li> 
+		  </ul> 
+		</div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html">Installing / Removing / Replacing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html" title="23.4 Installing / Removing / Replacing"><div><span class="ph num-prefix">23.4 </span>Installing / Removing / Replacing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-5C9882FB-018F-4CE8-A8B8-EFD754E42355.html" lang="en-US" title="23.4.3 Installing LogHelper"><div><span class="ph num-prefix">23.4.3 </span>Installing LogHelper</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

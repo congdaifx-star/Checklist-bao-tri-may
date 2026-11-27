@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to troubleshoot substrate contamination issues that may cause elevated RLUs in the substrate portion of the System Check test." name="description" /><meta content="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" name="DC.Relation" scheme="URI" /><meta content="GUID-B284539A-0CBF-4B19-8B6A-EA778B77A193.html" name="DC.Relation" scheme="URI" /><meta content="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>12.6.5 Confirming Contamination During Substrate Troubleshooting</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-99B61D1F-0A50-4327-AB1F-7795315AA766.html" rel="prev" /><link href="GUID-16979557-4EDA-4FBA-AF4C-1AE992FBCC03.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3491" data-relpath="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2" role="article"> 
+  <h1 class="title topictitle1" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Confirming Contamination During Substrate Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to troubleshoot substrate contamination issues that may cause elevated RLUs in the substrate portion of the System Check test. 
+  </p> 
+	 <section class="section context" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="note caution note_caution" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-606FEB85-4AD4-4563-8ECE-5774045D3E13"><span class="note__title">Caution:</span> Do not adjust the system to compensate for high or low substrate RLUs without confirming that the substrate system is functioning properly. 
+		</div>
+		<div class="p">Substrate RLUs are affected by: 
+		<ul class="ul" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__UL_41528807873112541528807873112641"> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873112841528807873112941"> Contamination. 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873113141528807873113241"> Dilution immediately after decontamination. 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873113441528807873113541"> Dispense volume (substrate valve, loose fittings, worn pump belt or seals, damaged probe). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873113741528807873113841"> Luminometer sensitivity adjustment (LED target value). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873114041528807873114141"> Substrate storage and handling (contaminated, hot, cold, equilibrated, radioactive). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873114341528807873114441"> Lot-to-lot variability in the substrate (refer to QC release values). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873114641528807873114741"> Temperature. 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873114941528807873115041"> Stray light ( increases dark counts). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873115241528807873115341"> D1, D2, and D3 probes not properly dispensing wash buffer (causes high Washed System Check RLUs ). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873115541528807873115641"> Peri-pump not aspirating (tubing, pump, or aspirate probes) may cause low Washed System Check RLUs and low patient results. 
+		  </li> 
+		</ul>
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__STEP_C6332D69355F4842BF19ABEA1B73DCB3"> 
+		  <span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-9F322BA9-8826-4942-85D5-272B0C65300C">Obtain several vessels of system-dispensed substrate. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEPS_28242EDF252A4A39A705C813B51DBD4C" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_92DC560260E64DDDA08FAA9A1ADC89CE"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-DDFE9D83-0798-4712-864D-45130CA3493C">From the 
+				  <span class="keyword wintitle" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-123225BA-7372-4FB3-A834-C6563AD03DE7">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-C74A4612-D2C5-4F44-A407-E50968BD4DC4"><span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-6AC19D1E-E1A4-4781-B055-87DBC6911A31">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-2F063E37-0831-436A-B261-C8ECE1B1BE98">Subsystem Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-BA048461-B036-4D1B-BAA1-3D2BF2D1346B">Volume Checks</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_33D9BF8541DB48339CEDB56D51751383"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-BB4EF5D2-44B2-440F-B47E-25521F5F3200">Select 
+				  <span class="ph menucascade" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-B6794576-7402-4CAA-9D8C-7C21EF1A22F3"><span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-8FA56C28-3C1E-4CC5-AA29-7A9808C7602B">Substrate Probe</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-D3D7B6E2-76BB-4387-8919-DFFC3A642A25">Start Test</span></span><span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-CF8E879B-6F2D-4A6D-A50E-5956ACE6AD7F"></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_A6638369792C4018AAC9997B8F59E749"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-727C52DD-403C-4852-B180-D0149DEE5F0E">Load ten vessels into the highlighted locations on the drawing. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__FIG_F9561C094E3F4E538025C5B9682D7B1C"> 
+					 <br /><img class="image" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__IMAGE_DC75A7BFB77049659E5B776F4ECB80ED" src="GUID-7B65F373-8B0F-48EF-B640-96FA3C20FC47-default.jpg" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-4C08DFC0-F9C1-44D9-A355-04B94E320496"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__UL_41528806125087441528806125087541"> 
+						<li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873116441528807873116541"> The positions used are normally under the module cover, which may need to be removed. 
+						</li> 
+						<li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873116741528807873116841"> The two-dot load area will be at the front until you select 
+						  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-5CA7636E-79ED-4839-B255-7C52403C29B9">Start</span>, and then the two-dot load area rotates to the rear. 
+						</li> 
+						<li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873117041528807873117141"> The system will dispense 200 µl of substrate into the loaded vessels and then put the loaded vessels back on the sample storage wheel. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_949589D5F1CA4554BD5F01D03A1595C1"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-31576F3F-74B2-4D0E-B787-C3419E92862E">Select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-64CE0848-5A79-4F2C-9EF1-B8341CEED3D7">OK</span> to begin the test. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_608606C748724DCF9C18527FB13F8CFA"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-10215437-21A7-4A49-BD1A-2638E98364C3">Manually remove several of the substrate vessels, and then select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-DE06A234-E259-423C-9AA9-C698B2380E50">Done</span>. 
+				</span> 
+				<div class="itemgroup info">This will cause the sample pick-and-place to discard the remainder of the substrate vessels and the user interface to exit the 
+				  <span class="keyword wintitle" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-47331079-1FB0-456F-B07B-78D120A9DBF9">Volume Check</span> window. 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__STEP_8308E41D94224907B071D47594E1E65D"> 
+		  <span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-E2CD6CC8-0ED9-45C1-A11B-06A5719B2193">Measure the RLU output of the system-dispensed substrate and hand-dispensed substrate. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEPS_BB83BB598018495F879414E6539F3A43" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_071CBBDD9C474F728AA7D3FCCC9EB402"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-0A4FE373-402E-43AB-9483-3DB6FD08AD36">From the 
+				  <span class="keyword wintitle" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-29A87509-856C-49C9-950C-F1E5EE7CF4C5">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-0CB3EDE1-E405-4525-8C5B-D1C0256923FF"><span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-9555C044-3337-42C9-B761-9C21BDA3714A">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-16D91249-FFD9-4436-9247-A491B96A3259">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-5C1BC643-A138-44E2-8428-42AD445A75E3">Luminometer</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-482C6BB9-92EB-4F29-A019-8CB47D7FF84F">Load/Read Vessel</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_6657FF2EED394FD092E3E081546A2ACD"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-DF54F85B-DB71-4536-BFE2-8B167A6C1670">Place one of the system-dispensed substrate vessels into the wash carousel at the wash pick-and-place location, and then select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-5D4A5C48-535F-4D16-ADB4-3AC656CFE5BA">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_F207560A61F34A848C6EACF6036B7C28"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-C4533171-613C-498B-BFFA-2A66540CB5E1">Allow the sample to incubate for six minutes, and then record the RLU value. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-1DB624D0-6592-4C56-B90C-A685DC02CAD4"><span class="note__title">Note:</span> The RLU readings displayed in Luminometer Diagnostics are raw RLUs and will be approximately 1/4 of the result RLUs. The approximate, normal value for substrate RLUs is 1800 to 2200. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_C77B245D7E0C455FA755109EA494D1F0"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-7367D3A8-8944-458D-B976-D73F305790AC">Select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-B958CF90-5AA1-4E8C-BB51-F415607A01F3">Done</span>, and remove the substrate vessel from the wash carousel. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_D1A29AFAEC1F4E5A8CECAE7065D1C7FD"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-2E91DE0D-67C5-4B7E-A777-EE360AB7398D">Hand-dispense 200 µl of fresh, equilibrated substrate from a new substrate bottle into an RV. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_3DDF41726F6A49008D0B10CDD90E9420"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-4FB40EE9-042E-46DF-899C-92275A065660">Select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-08BA7C61-75D6-4AAC-85B8-A85C0A0D38FF">Load/Read Vessel</span>, place the hand-dispensed vessel into the wash carousel at the wash pick-and-place location, and select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-DCFA57B1-38D3-46CE-8433-F79FA6BDF4FD">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_034DD24292B24062922599B092C467FD"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-EDE188C2-FBA9-43B1-9124-97A65599C3AD">Allow the sample to incubate for six minutes, and then record the RLU value. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_96843CE2C0254AEDB08417D84871EEA3"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-FD595418-FDEF-4D73-ABD9-318458D3C12A">Select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-FEC6BC9A-3DA6-463B-B044-C1FEC4DB4C50">Done</span>, and remove the substrate vessel from the wash carousel. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__STEP_C1C4990D446D40ABBBBD737225C0038F"> 
+		  <span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-3EF8F364-2B1C-4186-B124-CC17014F65A0">Compare the RLU reading from the system-dispensed substrate to the RLU reading from the hand-dispensed substrate to determine if the substrate system is contaminated. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <table class="table" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30"><caption></caption><colgroup><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /></colgroup><thead class="thead"> 
+					 <tr class="row"> 
+						<th class="entry align-left valign-top" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__1"> If values are 
+						</th> 
+						<th class="entry align-left valign-top" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__2"> Then contamination is 
+						</th> 
+						<th class="entry align-left valign-top" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__3"> Action 
+						</th> 
+						<th class="entry align-left valign-top" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__4"> Reference Document 
+						</th> 
+					 </tr></thead><tbody class="tbody"> 
+					 <tr class="row"> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__1 "> more than 200 RLUs apart. 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__2 "> confirmed 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__3 "> Decontaminate the substrate system. 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__4 "> 
+						  <a class="xref" href="GUID-CF5C3B54-D885-479D-B4F6-FE16147F31DB.html" title="This procedure describes how to decontaminate the substrate system using the Decontaminate Substrate routine included in the DxI user interface and how to decontaminate the substrate system when elevated RLUs return after performing the Decontaminate Substrate routine.">Fluidics: Decontaminating Substrate</a> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__1 "> within 200 RLUs 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__2 "> not confirmed 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__3 "> Perform a Dark Count Read. 
+						  <p class="p"> If the Dark Count Read passes, then adjust the Luminometer RLU sensitivity. 
+						  </p>Refer to the<a class="xref" href="GUID-C9EE0429-0AC0-4B07-B073-6B9888EB6F23.html" title="This procedure describes how to adjust the luminometer so that the RLU for substrate is within specification.">AU: Adjusting Luminometer Substrate RLU</a> procedure. 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__4 "> 
+						  <a class="xref" href="GUID-FC9242F8-DAE4-4924-A08A-D085FE075333.html">AU: Troubleshoot Elevated Dark Count</a> 
+						</td> 
+					 </tr> 
+				  </tbody></table> 
+		  </div> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html">Troubleshooting / Testing / Cleaning</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-B284539A-0CBF-4B19-8B6A-EA778B77A193.html" title="12 Fluidics Module"><div><span class="ph num-prefix">12 </span>Fluidics Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" title="12.6 Troubleshooting / Testing / Cleaning"><div><span class="ph num-prefix">12.6 </span>Troubleshooting / Testing / Cleaning</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2.html" lang="en-US" title="12.6.5 Confirming Contamination During Substrate Troubleshooting"><div><span class="ph num-prefix">12.6.5 </span>Confirming Contamination During Substrate Troubleshooting</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2" role="article"> 
+  <h1 class="title topictitle1" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Confirming Contamination During Substrate Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to troubleshoot substrate contamination issues that may cause elevated RLUs in the substrate portion of the System Check test. 
+  </p> 
+	 <section class="section context" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="note caution note_caution" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-606FEB85-4AD4-4563-8ECE-5774045D3E13"><span class="note__title">Caution:</span> Do not adjust the system to compensate for high or low substrate RLUs without confirming that the substrate system is functioning properly. 
+		</div>
+		<div class="p">Substrate RLUs are affected by: 
+		<ul class="ul" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__UL_41528807873112541528807873112641"> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873112841528807873112941"> Contamination. 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873113141528807873113241"> Dilution immediately after decontamination. 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873113441528807873113541"> Dispense volume (substrate valve, loose fittings, worn pump belt or seals, damaged probe). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873113741528807873113841"> Luminometer sensitivity adjustment (LED target value). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873114041528807873114141"> Substrate storage and handling (contaminated, hot, cold, equilibrated, radioactive). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873114341528807873114441"> Lot-to-lot variability in the substrate (refer to QC release values). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873114641528807873114741"> Temperature. 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873114941528807873115041"> Stray light ( increases dark counts). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873115241528807873115341"> D1, D2, and D3 probes not properly dispensing wash buffer (causes high Washed System Check RLUs ). 
+		  </li> 
+		  <li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873115541528807873115641"> Peri-pump not aspirating (tubing, pump, or aspirate probes) may cause low Washed System Check RLUs and low patient results. 
+		  </li> 
+		</ul>
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__STEP_C6332D69355F4842BF19ABEA1B73DCB3"> 
+		  <span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-9F322BA9-8826-4942-85D5-272B0C65300C">Obtain several vessels of system-dispensed substrate. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEPS_28242EDF252A4A39A705C813B51DBD4C" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_92DC560260E64DDDA08FAA9A1ADC89CE"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-DDFE9D83-0798-4712-864D-45130CA3493C">From the 
+				  <span class="keyword wintitle" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-123225BA-7372-4FB3-A834-C6563AD03DE7">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-C74A4612-D2C5-4F44-A407-E50968BD4DC4"><span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-6AC19D1E-E1A4-4781-B055-87DBC6911A31">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-2F063E37-0831-436A-B261-C8ECE1B1BE98">Subsystem Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-BA048461-B036-4D1B-BAA1-3D2BF2D1346B">Volume Checks</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_33D9BF8541DB48339CEDB56D51751383"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-BB4EF5D2-44B2-440F-B47E-25521F5F3200">Select 
+				  <span class="ph menucascade" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-B6794576-7402-4CAA-9D8C-7C21EF1A22F3"><span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-8FA56C28-3C1E-4CC5-AA29-7A9808C7602B">Substrate Probe</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-D3D7B6E2-76BB-4387-8919-DFFC3A642A25">Start Test</span></span><span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-CF8E879B-6F2D-4A6D-A50E-5956ACE6AD7F"></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_A6638369792C4018AAC9997B8F59E749"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-727C52DD-403C-4852-B180-D0149DEE5F0E">Load ten vessels into the highlighted locations on the drawing. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__FIG_F9561C094E3F4E538025C5B9682D7B1C"> 
+					 <br /><img class="image" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__IMAGE_DC75A7BFB77049659E5B776F4ECB80ED" src="GUID-7B65F373-8B0F-48EF-B640-96FA3C20FC47-default.jpg" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-4C08DFC0-F9C1-44D9-A355-04B94E320496"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__UL_41528806125087441528806125087541"> 
+						<li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873116441528807873116541"> The positions used are normally under the module cover, which may need to be removed. 
+						</li> 
+						<li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873116741528807873116841"> The two-dot load area will be at the front until you select 
+						  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-5CA7636E-79ED-4839-B255-7C52403C29B9">Start</span>, and then the two-dot load area rotates to the rear. 
+						</li> 
+						<li class="li" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__LI_41528807873117041528807873117141"> The system will dispense 200 µl of substrate into the loaded vessels and then put the loaded vessels back on the sample storage wheel. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_949589D5F1CA4554BD5F01D03A1595C1"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-31576F3F-74B2-4D0E-B787-C3419E92862E">Select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-64CE0848-5A79-4F2C-9EF1-B8341CEED3D7">OK</span> to begin the test. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_608606C748724DCF9C18527FB13F8CFA"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-10215437-21A7-4A49-BD1A-2638E98364C3">Manually remove several of the substrate vessels, and then select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-DE06A234-E259-423C-9AA9-C698B2380E50">Done</span>. 
+				</span> 
+				<div class="itemgroup info">This will cause the sample pick-and-place to discard the remainder of the substrate vessels and the user interface to exit the 
+				  <span class="keyword wintitle" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-47331079-1FB0-456F-B07B-78D120A9DBF9">Volume Check</span> window. 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__STEP_8308E41D94224907B071D47594E1E65D"> 
+		  <span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-E2CD6CC8-0ED9-45C1-A11B-06A5719B2193">Measure the RLU output of the system-dispensed substrate and hand-dispensed substrate. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEPS_BB83BB598018495F879414E6539F3A43" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_071CBBDD9C474F728AA7D3FCCC9EB402"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-0A4FE373-402E-43AB-9483-3DB6FD08AD36">From the 
+				  <span class="keyword wintitle" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-29A87509-856C-49C9-950C-F1E5EE7CF4C5">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-0CB3EDE1-E405-4525-8C5B-D1C0256923FF"><span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-9555C044-3337-42C9-B761-9C21BDA3714A">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-16D91249-FFD9-4436-9247-A491B96A3259">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-5C1BC643-A138-44E2-8428-42AD445A75E3">Luminometer</span> &gt; <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-482C6BB9-92EB-4F29-A019-8CB47D7FF84F">Load/Read Vessel</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_6657FF2EED394FD092E3E081546A2ACD"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-DF54F85B-DB71-4536-BFE2-8B167A6C1670">Place one of the system-dispensed substrate vessels into the wash carousel at the wash pick-and-place location, and then select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-5D4A5C48-535F-4D16-ADB4-3AC656CFE5BA">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_F207560A61F34A848C6EACF6036B7C28"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-C4533171-613C-498B-BFFA-2A66540CB5E1">Allow the sample to incubate for six minutes, and then record the RLU value. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-1DB624D0-6592-4C56-B90C-A685DC02CAD4"><span class="note__title">Note:</span> The RLU readings displayed in Luminometer Diagnostics are raw RLUs and will be approximately 1/4 of the result RLUs. The approximate, normal value for substrate RLUs is 1800 to 2200. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_C77B245D7E0C455FA755109EA494D1F0"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-7367D3A8-8944-458D-B976-D73F305790AC">Select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-B958CF90-5AA1-4E8C-BB51-F415607A01F3">Done</span>, and remove the substrate vessel from the wash carousel. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_D1A29AFAEC1F4E5A8CECAE7065D1C7FD"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-2E91DE0D-67C5-4B7E-A777-EE360AB7398D">Hand-dispense 200 µl of fresh, equilibrated substrate from a new substrate bottle into an RV. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_3DDF41726F6A49008D0B10CDD90E9420"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-4FB40EE9-042E-46DF-899C-92275A065660">Select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-08BA7C61-75D6-4AAC-85B8-A85C0A0D38FF">Load/Read Vessel</span>, place the hand-dispensed vessel into the wash carousel at the wash pick-and-place location, and select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-DCFA57B1-38D3-46CE-8433-F79FA6BDF4FD">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_034DD24292B24062922599B092C467FD"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-EDE188C2-FBA9-43B1-9124-97A65599C3AD">Allow the sample to incubate for six minutes, and then record the RLU value. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__SUBSTEP_96843CE2C0254AEDB08417D84871EEA3"> 
+				<span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-FD595418-FDEF-4D73-ABD9-318458D3C12A">Select 
+				  <span class="ph uicontrol" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-FEC6BC9A-3DA6-463B-B044-C1FEC4DB4C50">Done</span>, and remove the substrate vessel from the wash carousel. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__STEP_C1C4990D446D40ABBBBD737225C0038F"> 
+		  <span class="ph cmd" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__GUID-3EF8F364-2B1C-4186-B124-CC17014F65A0">Compare the RLU reading from the system-dispensed substrate to the RLU reading from the hand-dispensed substrate to determine if the substrate system is contaminated. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <table class="table" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30"><caption></caption><colgroup><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /></colgroup><thead class="thead"> 
+					 <tr class="row"> 
+						<th class="entry align-left valign-top" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__1"> If values are 
+						</th> 
+						<th class="entry align-left valign-top" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__2"> Then contamination is 
+						</th> 
+						<th class="entry align-left valign-top" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__3"> Action 
+						</th> 
+						<th class="entry align-left valign-top" id="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__4"> Reference Document 
+						</th> 
+					 </tr></thead><tbody class="tbody"> 
+					 <tr class="row"> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__1 "> more than 200 RLUs apart. 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__2 "> confirmed 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__3 "> Decontaminate the substrate system. 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__4 "> 
+						  <a class="xref" href="GUID-CF5C3B54-D885-479D-B4F6-FE16147F31DB.html" title="This procedure describes how to decontaminate the substrate system using the Decontaminate Substrate routine included in the DxI user interface and how to decontaminate the substrate system when elevated RLUs return after performing the Decontaminate Substrate routine.">Fluidics: Decontaminating Substrate</a> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__1 "> within 200 RLUs 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__2 "> not confirmed 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__3 "> Perform a Dark Count Read. 
+						  <p class="p"> If the Dark Count Read passes, then adjust the Luminometer RLU sensitivity. 
+						  </p>Refer to the<a class="xref" href="GUID-C9EE0429-0AC0-4B07-B073-6B9888EB6F23.html" title="This procedure describes how to adjust the luminometer so that the RLU for substrate is within specification.">AU: Adjusting Luminometer Substrate RLU</a> procedure. 
+						</td> 
+						<td class="entry align-left valign-top" headers="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2__TABLE11_E7AB7B2A37A4170B862570F4006F7B30__entry__4 "> 
+						  <a class="xref" href="GUID-FC9242F8-DAE4-4924-A08A-D085FE075333.html">AU: Troubleshoot Elevated Dark Count</a> 
+						</td> 
+					 </tr> 
+				  </tbody></table> 
+		  </div> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html">Troubleshooting / Testing / Cleaning</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-B284539A-0CBF-4B19-8B6A-EA778B77A193.html" title="12 Fluidics Module"><div><span class="ph num-prefix">12 </span>Fluidics Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" title="12.6 Troubleshooting / Testing / Cleaning"><div><span class="ph num-prefix">12.6 </span>Troubleshooting / Testing / Cleaning</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-BB6EEF67-4670-4233-ADEA-75735A71C8F2.html" lang="en-US" title="12.6.5 Confirming Contamination During Substrate Troubleshooting"><div><span class="ph num-prefix">12.6.5 </span>Confirming Contamination During Substrate Troubleshooting</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

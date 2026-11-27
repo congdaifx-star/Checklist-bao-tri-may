@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to use LogHelper software to troubleshoot Event Log errors." name="description" /><meta content="GUID-6E3CFF3A-30B3-4C52-B11A-14DD196121E8.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-6E3CFF3A-30B3-4C52-B11A-14DD196121E8.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.9.3 Using LogHelper</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-6E9A478E-CB2D-4A32-8A22-D9FD96B4F69A.html" rel="prev" /><link href="GUID-40868DBD-FF56-434D-A2A3-154E6A6695FE.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1906" data-relpath="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60" role="article"> 
+  <h1 class="title topictitle1" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Using LogHelper</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to use LogHelper software to troubleshoot Event Log errors. 
+  </p> 
+	 <section class="section context" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">
+		<div class="note note note_note" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-834E5380-79E3-4ACA-A3ED-A25B9049976F"><span class="note__title">Note:</span> For detailed information on LogHelper screens, refer to the 
+		  <a class="xref" href="GUID-40868DBD-FF56-434D-A2A3-154E6A6695FE.html">Software: LogHelper Screen Details</a> document. 
+		</div> 
+	 </section> 
+	 <div class="li step p" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Perform the steps for the type of PC and Event Log files to open and use LogHelper. 
+		  </span> 
+		  <ul class="ul choices" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__CHOICES_239182C654AC44F0B1DBBB8B899C0A60"> 
+			 <li class="li choice" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__CHOICE_FCC0A13AA7A443B19A632E7F36850AFE">Laptop or desktop PC user with both TERSE and VERBOSE Event Log files: 
+				<ol class="ol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__OL_0F9C7BE886334ED7A0EF57A5676109B9" type="a"> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_F7BC99F85CA7403D96142A5E1AF8CE51">Navigate to the LogHelper folder on the hard drive of your laptop or desktop PC. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_192158091ECA4610BC893216F9342FAF">Double-click the file 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-046349AD-D047-429C-B0D1-F0C23F42C48E">LogHelperU_Laptop.exe</span> to launch the program. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_4AD8B6FC71D348C5BB5E03A1149B91FD">Select the 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-BD73B167-72A4-444C-8D6D-F364B0E0FC5B">Open</span> button next to Open Exported Terse and Verbose Event Logs under Exported Terse/Verbose Reader. 
+					 <div class="note note note_note" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-927FDD28-FC1D-49E5-8CDA-33EF8625FE9B"><span class="note__title">Note:</span> Refer to the 
+						<a class="xref" href="GUID-CB00F540-BE2F-42BC-AC7F-2CA5CBDC3878.html" title="This procedure describes how to transfer event log files.">Software: Transferring Event Log Files</a> procedure. 
+					 </div> 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_EB9D7690F01148D18E7F822CEED819A3">At the pop-up requesting the exported TERSE and VERBOSE event log files, select 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-FCE904A8-73DF-45C3-AD90-2E1FED5DD256">Open</span> and browse to the location of the TERSE and VERBOSE Event Log files. The pop-up remains open until both files are provided. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_416C3E05488B4688B7C4E79DF1939090">The LogHelper tool analyzes the Event Log errors and displays the data for interpretation. 
+				  </li> 
+				</ol> 
+			 </li> 
+			 <li class="li choice" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__CHOICE_E3DBE2E808F847A6B047CA8343999975">Laptop or desktop PC user with only a TERSE Event Log file: 
+				<ol class="ol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__OL_0E9ABA1D564B45ECBAC9DA5F2413DE67" type="a"> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_5F3A63BD16F64DA29315A607E02E8BF3">Navigate to the LogHelper folder on the hard drive of your laptop or desktop PC. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_8893793470FF4F598F1BFBA25003FE7E">Double-click the file 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-7FF745B7-465B-47E5-8972-1D7A7B5B018B">LogHelperU_Laptop.exe</span> to launch the program. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_5436F25D097E4BECA97A3D38272C11C9">Select the 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-9874C75F-AC25-41BF-971B-CD7A7C1B95A4">Open</span> button next to Open Exported Terse Logs under Exported Terse Reader. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_A8A4A5C7F0A94A0FABDA49318C1E3DAF">At the pop-up requesting the exported TERSE Event Log file, select 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-793D3F67-974B-41FB-BEFB-B511A4607CDD">Open</span> and browse to the location of the TERSE Event Log file. The pop-up remains open until the requested file is provided. 
+					 <div class="note note note_note" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-8FC275D6-C7D7-4275-A39C-02D348DF0428"><span class="note__title">Note:</span> If there are multiple TERSE Event Log files to analyze, use the 
+						<span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-7B66660B-6646-4237-B30D-AD23577D79DD">[Shift]</span> key to select all the files or the 
+						<span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-64B7AAFD-CE8A-460A-976F-D20748847286">[Ctrl]</span> key to select these specific files: 
+						<figure class="fig fignone" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__FIG_FE1909643D894DF2ACE9BD4D8ED2C1F3"><br /><img class="image" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__IMAGE_9DE6A12D6A8B4569A80B90AD7E1FF175" src="GUID-8C568298-A37B-4F81-A902-771C2CA62810-default.gif" /><br />
+						</figure> 
+					 </div> 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_B7E7EC94BA6F493AA136F7A57F7524B0">The LogHelper tool analyzes the Event Log errors and displays the data for interpretation. 
+				  </li> 
+				</ol> 
+			 </li> 
+			 <li class="li choice" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__CHOICE_70BBA953FCAA4052B9E9BF54AFCFA983">For UniCel DxI console user: 
+				<ol class="ol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__OL_E02CAEAAA8D44F6CA2EB0CD9714849CE" type="a"> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_B19D9E016C1E44D88BF5E896DC0D251A">Insert the floppy disk containing LogHelper into the desired DxI UniCel console PC floppy A:\ drive. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_1CCC6DB178604B9DA9BAE92BB2BE9132">Press the 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-A810A07A-CA07-423B-98C2-22DF9D7DFFB6">[Windows]</span> key or press 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-2B0EC2BC-FE10-4B85-AEC3-2740707887CA">[Ctrl] + [Esc]</span>. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_7F0305247D604BF882ED26AA97A83291">Select 
+					 <span class="ph menucascade" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-E91F8B7E-8A7E-4A3C-A856-EEA2E03D9D07"><span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-EF321D4A-D6D5-4C55-8F08-F36D4D48FE68">Start</span> &gt; <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-76B2DC17-6486-44C9-85D1-679C6C139EBC">Programs</span> &gt; <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-F1B58B88-D76A-42A7-8072-8B42434022E2">Windows NT Explorer</span></span>. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_448547F0B6E2440B956E8D3BE65D3A8F">Double-click on the 3.5-inch floppy A:\ drive. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_2F15FDBCD5714764B57FAD86391315DA">Double-click the file 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-3A2AB46E-D519-480D-9087-998AB5556D7B">LogHelperUD_ConsolePC.exe</span> to launch the program. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_8C34B4FCA4E74102B2BD8D596E64FE41"> Select the 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-F7E62004-AD47-46A2-8EF0-FBADBD13A438">Open</span> button next to the Open Poet Database under DxI Console PC Reader. 
+					 <figure class="fig fignone" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__FIG_3C14B804951F43DBA7EE7B57129821BE"><br /><img class="image" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__IMAGE_05FC6EC142E44DAE9944C9A40F371592" src="GUID-4CE89421-23C7-45DF-8DBA-D584FBDD22DC-default.gif" /><br />
+					 </figure> 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_08E8CFB826B74779A5496A4B18853B4F">LogHelper opens and reads the POET Event Log database. The LogHelper tool analyzes the Event Log errors and displays the data for interpretation. 
+				  </li> 
+				</ol> 
+			 </li> 
+		  </ul> 
+		</div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-6E3CFF3A-30B3-4C52-B11A-14DD196121E8.html">Troubleshooting</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-6E3CFF3A-30B3-4C52-B11A-14DD196121E8.html" title="23.9 Troubleshooting"><div><span class="ph num-prefix">23.9 </span>Troubleshooting</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60.html" lang="en-US" title="23.9.3 Using LogHelper"><div><span class="ph num-prefix">23.9.3 </span>Using LogHelper</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60" role="article"> 
+  <h1 class="title topictitle1" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Using LogHelper</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to use LogHelper software to troubleshoot Event Log errors. 
+  </p> 
+	 <section class="section context" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">
+		<div class="note note note_note" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-834E5380-79E3-4ACA-A3ED-A25B9049976F"><span class="note__title">Note:</span> For detailed information on LogHelper screens, refer to the 
+		  <a class="xref" href="GUID-40868DBD-FF56-434D-A2A3-154E6A6695FE.html">Software: LogHelper Screen Details</a> document. 
+		</div> 
+	 </section> 
+	 <div class="li step p" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Perform the steps for the type of PC and Event Log files to open and use LogHelper. 
+		  </span> 
+		  <ul class="ul choices" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__CHOICES_239182C654AC44F0B1DBBB8B899C0A60"> 
+			 <li class="li choice" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__CHOICE_FCC0A13AA7A443B19A632E7F36850AFE">Laptop or desktop PC user with both TERSE and VERBOSE Event Log files: 
+				<ol class="ol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__OL_0F9C7BE886334ED7A0EF57A5676109B9" type="a"> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_F7BC99F85CA7403D96142A5E1AF8CE51">Navigate to the LogHelper folder on the hard drive of your laptop or desktop PC. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_192158091ECA4610BC893216F9342FAF">Double-click the file 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-046349AD-D047-429C-B0D1-F0C23F42C48E">LogHelperU_Laptop.exe</span> to launch the program. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_4AD8B6FC71D348C5BB5E03A1149B91FD">Select the 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-BD73B167-72A4-444C-8D6D-F364B0E0FC5B">Open</span> button next to Open Exported Terse and Verbose Event Logs under Exported Terse/Verbose Reader. 
+					 <div class="note note note_note" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-927FDD28-FC1D-49E5-8CDA-33EF8625FE9B"><span class="note__title">Note:</span> Refer to the 
+						<a class="xref" href="GUID-CB00F540-BE2F-42BC-AC7F-2CA5CBDC3878.html" title="This procedure describes how to transfer event log files.">Software: Transferring Event Log Files</a> procedure. 
+					 </div> 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_EB9D7690F01148D18E7F822CEED819A3">At the pop-up requesting the exported TERSE and VERBOSE event log files, select 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-FCE904A8-73DF-45C3-AD90-2E1FED5DD256">Open</span> and browse to the location of the TERSE and VERBOSE Event Log files. The pop-up remains open until both files are provided. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_416C3E05488B4688B7C4E79DF1939090">The LogHelper tool analyzes the Event Log errors and displays the data for interpretation. 
+				  </li> 
+				</ol> 
+			 </li> 
+			 <li class="li choice" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__CHOICE_E3DBE2E808F847A6B047CA8343999975">Laptop or desktop PC user with only a TERSE Event Log file: 
+				<ol class="ol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__OL_0E9ABA1D564B45ECBAC9DA5F2413DE67" type="a"> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_5F3A63BD16F64DA29315A607E02E8BF3">Navigate to the LogHelper folder on the hard drive of your laptop or desktop PC. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_8893793470FF4F598F1BFBA25003FE7E">Double-click the file 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-7FF745B7-465B-47E5-8972-1D7A7B5B018B">LogHelperU_Laptop.exe</span> to launch the program. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_5436F25D097E4BECA97A3D38272C11C9">Select the 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-9874C75F-AC25-41BF-971B-CD7A7C1B95A4">Open</span> button next to Open Exported Terse Logs under Exported Terse Reader. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_A8A4A5C7F0A94A0FABDA49318C1E3DAF">At the pop-up requesting the exported TERSE Event Log file, select 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-793D3F67-974B-41FB-BEFB-B511A4607CDD">Open</span> and browse to the location of the TERSE Event Log file. The pop-up remains open until the requested file is provided. 
+					 <div class="note note note_note" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-8FC275D6-C7D7-4275-A39C-02D348DF0428"><span class="note__title">Note:</span> If there are multiple TERSE Event Log files to analyze, use the 
+						<span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-7B66660B-6646-4237-B30D-AD23577D79DD">[Shift]</span> key to select all the files or the 
+						<span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-64B7AAFD-CE8A-460A-976F-D20748847286">[Ctrl]</span> key to select these specific files: 
+						<figure class="fig fignone" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__FIG_FE1909643D894DF2ACE9BD4D8ED2C1F3"><br /><img class="image" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__IMAGE_9DE6A12D6A8B4569A80B90AD7E1FF175" src="GUID-8C568298-A37B-4F81-A902-771C2CA62810-default.gif" /><br />
+						</figure> 
+					 </div> 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_B7E7EC94BA6F493AA136F7A57F7524B0">The LogHelper tool analyzes the Event Log errors and displays the data for interpretation. 
+				  </li> 
+				</ol> 
+			 </li> 
+			 <li class="li choice" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__CHOICE_70BBA953FCAA4052B9E9BF54AFCFA983">For UniCel DxI console user: 
+				<ol class="ol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__OL_E02CAEAAA8D44F6CA2EB0CD9714849CE" type="a"> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_B19D9E016C1E44D88BF5E896DC0D251A">Insert the floppy disk containing LogHelper into the desired DxI UniCel console PC floppy A:\ drive. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_1CCC6DB178604B9DA9BAE92BB2BE9132">Press the 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-A810A07A-CA07-423B-98C2-22DF9D7DFFB6">[Windows]</span> key or press 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-2B0EC2BC-FE10-4B85-AEC3-2740707887CA">[Ctrl] + [Esc]</span>. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_7F0305247D604BF882ED26AA97A83291">Select 
+					 <span class="ph menucascade" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-E91F8B7E-8A7E-4A3C-A856-EEA2E03D9D07"><span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-EF321D4A-D6D5-4C55-8F08-F36D4D48FE68">Start</span> &gt; <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-76B2DC17-6486-44C9-85D1-679C6C139EBC">Programs</span> &gt; <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-F1B58B88-D76A-42A7-8072-8B42434022E2">Windows NT Explorer</span></span>. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_448547F0B6E2440B956E8D3BE65D3A8F">Double-click on the 3.5-inch floppy A:\ drive. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_2F15FDBCD5714764B57FAD86391315DA">Double-click the file 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-3A2AB46E-D519-480D-9087-998AB5556D7B">LogHelperUD_ConsolePC.exe</span> to launch the program. 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_8C34B4FCA4E74102B2BD8D596E64FE41"> Select the 
+					 <span class="ph uicontrol" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__GUID-F7E62004-AD47-46A2-8EF0-FBADBD13A438">Open</span> button next to the Open Poet Database under DxI Console PC Reader. 
+					 <figure class="fig fignone" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__FIG_3C14B804951F43DBA7EE7B57129821BE"><br /><img class="image" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__IMAGE_05FC6EC142E44DAE9944C9A40F371592" src="GUID-4CE89421-23C7-45DF-8DBA-D584FBDD22DC-default.gif" /><br />
+					 </figure> 
+				  </li> 
+				  <li class="li" id="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60__LI_08E8CFB826B74779A5496A4B18853B4F">LogHelper opens and reads the POET Event Log database. The LogHelper tool analyzes the Event Log errors and displays the data for interpretation. 
+				  </li> 
+				</ol> 
+			 </li> 
+		  </ul> 
+		</div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-6E3CFF3A-30B3-4C52-B11A-14DD196121E8.html">Troubleshooting</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-6E3CFF3A-30B3-4C52-B11A-14DD196121E8.html" title="23.9 Troubleshooting"><div><span class="ph num-prefix">23.9 </span>Troubleshooting</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-349191C3-60B7-4EDE-B1DE-7C2A76175C60.html" lang="en-US" title="23.9.3 Using LogHelper"><div><span class="ph num-prefix">23.9.3 </span>Using LogHelper</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

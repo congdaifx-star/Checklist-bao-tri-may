@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="A list of known bugs or behaviors for system software versions 1.17/1.17.2, and countermeasures for recovery." name="description" /><meta content="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="July 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BK" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="10/07/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="C65079" name="FBCPARTNUM" /><meta content="None" name="FBCMANUFACTUREDBY" /><meta content="Service" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="16/06/2026 18:37:18" name="FISHPUBREVIEWENDDATE" /><meta content="10/07/2026 16:28:15" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4" name="FMAPID" /><meta content="07/07/2026 18:25:47" name="MODIFIED-ON" /><meta content="16/06/2026 20:29:13" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-E0B2E065-B380-4B5E-AC7F-13F39D148EBC" name="FISHMASTERREF" /><meta content="DxI 9000 Service Manual-v37-GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4-20260616 20:29:13" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BK" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="37" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI 9000 Service Manual" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="yes" name="print" /><meta content="no" name="printAll" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>25.5.2.5 Software 1.17/1.17.2 Known Bugs and Behaviors</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-2A3548AA-931E-481A-A630-08A2BE07C9E0.html" rel="prev" /><link href="GUID-9978F587-C06B-4DBF-8B96-359A702E1A67.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1571" data-relpath="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI 9000 Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI 9000 Service Manual</span><span id="emailpub">Publication: DxI 9000 Service Manual</span><span id="emailpartnum">Part Number: C65079</span><span id="emailrev">Revision: BK</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-53071AEF-7D6B-4BDD-BA57-6DBE28822242" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7" role="article"> 
+  <h1 class="title topictitle1" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-53071AEF-7D6B-4BDD-BA57-6DBE28822242"><a id="GUID-53071AEF-7D6B-4BDD-BA57-6DBE28822242"></a>Software 1.17/1.17.2 Known Bugs and Behaviors</h1> 
+   
+  <div class="body conbody"><p class="shortdesc">A list of known bugs or behaviors for system software versions 1.17/1.17.2, and countermeasures for recovery. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Bug/Behavior:</strong> Summary of the software bug or system behavior. 
+		</li> 
+		<li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details:</strong> Explanation of the bug/behavior and how it may impact the system/user. 
+		</li> 
+		<li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_84FFD9541F4D4ADFB828455CD74C731A"><strong class="ph b" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-C972260E-1848-47E9-A5BB-282CA0EB0015">Countermeasure:</strong> If applicable, countermeasure to resolve the condition inflicted by the bug/behavior. 
+		</li> 
+	 </ul> 
+	 <table class="table frame-all" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1">Bug/Behavior 
+				</th> 
+				<th class="entry" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2">Details 
+				</th> 
+				<th class="entry" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3">Countermeasure 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Thousands of warning system events with no events displayed in log. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Run-up System Events warnings with no data displayed in log: SQL Data-base needs to be updated. You can clear the events by updating the database by running script to set the active events to 0. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Shutdown Machine Control to ensure no new events are added. 
+				  </p> 
+				  <ol class="ol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__OL_9C1CF7543468414AAB9FDD2236686F1D"> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_85285F795DB6423FB4678F8DAA2FEA2C">In Windows, open The SQL database connection. 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_859E89BC70264475AB625677F965AB89">Copy, paste, and execute this script in SQL: 
+						<kbd class="ph userinput" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-8D9C112C-878F-4259-BB95-425845C8B0C4">update ice_db.dbo.events set active = 0</kbd> 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_1E17D96E90A0407AA1C7A629F2873F4D">Close the SQL database connection. 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_5CB4284C5AE34CA48E254F8AA56007D0">Start Machine Control and verify it initializes or send us the log of new errors. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Cannot Initialize Due To Logical Error in Event Reporting. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system can appear to initialize indefinitely when event DAC communication fails repeatedly. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Note that cache file reconciliation occurs at software startup, NOT initialization. So reinitializing without restarting the software will not help. 
+				  </p> 
+				  <ol class="ol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-DC17EB40-CD23-43C3-8837-1453B01F4B1F"> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_93255EFE82204762B26E7BD1D76DAB56"> 
+						<p class="p">Resolve the underlying DAC issue, perhaps by rebooting the instrument computer or freeing up disk space. 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_788B03EDA3F4403CB94585FDD28F3737"> 
+						<p class="p">If the issue continues, then delete the event cache file (PendingEvents.json) from 
+						  <em class="ph i" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-13FE8564-3666-4D0B-B6D7-8EA81154AC91"><span class="ph uicontrol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-1A2477AB-CF9F-413A-BA2B-4E760603345A">D:\ProgramData\Beckman Coulter\Falcon</span></em> 
+						</p> 
+					 </li> 
+				  </ol> 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Passenger Consolidation Fails For RSM During Initialization After Software Upgrade. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After software upgrade, the instrument failed to initialize during passenger reconciliation stage. While reagent packs were being restored from ReagentPack.data, a pack was unable to be placed in slot 0 because it appeared to already be occupied (in reality, gripper was empty, only logical passenger was present). 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Use script in Service Application to remove invalid pack. 
+				  </p> 
+				  <ol class="ol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-4174B5B1-1D9B-4147-AEC1-A3C83E6EDCCE"> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_75AD014EF8BE4CC4926A622E53759722"> 
+						<p class="p">Service app 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_F111D55709574C9DAFCCFF2BE3E9B521"> 
+						<p class="p">Scripting 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_0A662655CDA443F99518B4C69A4DB359"> 
+						<p class="p">Go to 
+						  <span class="ph uicontrol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-0BCD07BD-FAFF-4557-973D-23E0127979C1">Remove Invalid Pack</span> 
+						</p> 
+					 </li> 
+				  </ol> 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Unable to Store Alignment Data Error Display. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">System displays an error indicating that the analyzer cannot process samples and was unable to store configuration or alignment data, but the system indicates that it is ready to run. This alignment feature is used only by service technicians. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Close (if open) the prototype alignment page; re-open the prototype alignment page. This appears to reset the status of the alignment data. 
+				  </p> 
+				  <p class="p">Restarting Machine Control will also clear this condition. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Stops With An Error After Canceling An In Progress ASD Request. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">System fails to cancel an Automated System Diagnostic test request when tasks are running in background. The system can be re-initialized to clear the issue. ASD tests are only performed by service engineers. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Reinitialize instrument to clear error. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Date and Time Do Not Appear in DxI 9000 CSV file When Viewed in Excel. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When exporting results to csv, the date/time data are not correctly formatted to automatically be displayed correctly by excel. The data and time can still be viewed, but it requires the user to double click on each cell in Excel or manually format columns in Excel. This file is generally used by the Beckman Coulter applications teams. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">The data and time can still be viewed, but it requires the user to double click on each cell in Excel or manually format columns in Excel. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Empty Reagent Packs for Combination Tests are Not Discarded 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">For combination style tests (HBsAg, HIVCombo), the system will retain a reagent pack onboard even after it has been depleted and no longer has enough for both constituents. The user can still manually discard or onload the pack. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Manually discard the depleted pack and load new packs. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">No Reasons Provided for Not Running Tests when Reagent Storage Temperature is Out of Limits. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">User is not notified why tests are not running when system is in a temperature out of control condition in the reagent storage module. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Check temperature for deviation if tests do not start. 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Tests Will Not Start In Enhanced Test Order After RAPIDs Install via RSU (Remote Software Update). 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After a new APF is installed, the Enhanced test order screen will not work until the system is restarted. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. Do not update RSU while tests are in progress. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Changing the User Interface (UI) Language May Not Refresh All UI Text. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Due to the instrument software not changing languages when the user interface does, certain events may not be translated until the whole system is rebooted. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Wash Wheel Error When Running ASD Tests. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">On some occasions, ASD tests may stop unexpectedly due to a wash wheel error. The user can recover by re-initializing and reordering the diagnostic. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">The user can recover by re-initializing and reordering the diagnostic. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Event Displays Wrong Rack ID. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Failed calibration event displays incorrect rack ID when calibration is rerun using a different rack than the prior calibration failure event. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Handling Incorrectly Persisted Data in the &quot;.data&quot; Files. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After a severe system error during a system software upgrade attempt, the instrument passenger data can be out of date. This will result in &quot;invalid passenger&quot; messages that will not allow the instrument to initialize. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Close machine control and close applications. Delete data files in 
+				  <span class="ph uicontrol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-41B6AC38-DB1F-4AE8-AAA8-26434876AF2C">d:\programdata\beckman coulter\Falcon.</span> Restart the PC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Single Disabled Reagent Pipettor Blocks Test Execution. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system will be unable to process tests if a pipettor is disabled and the system automatic substrate prime is due. The pipettor must be re-enabled to allow the system to complete priming before resuming operation. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Don’t prime or run diagnostics with pipettors disabled. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Reagent Pipettor Pressure Monitoring Fails with Non-English System Configuration. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Communication between machine control and the model evaluator application is done via text strings. The decimal values passed back and forth are therefore subject to number-formatting localization. Since machine control always runs in English regardless of the system setting, but the evaluator runs in whatever language is selected, decimal values cannot be parsed on the other side for languages that are incompatible with English formatting (e.g. period vs comma separator). 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Set Windows language/region settings to US English. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">SampleIntakeErrorHandler does not Unlock Sample Wheel. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "><em class="ph i" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-6ABA86A8-F7B2-4E8C-A7B9-15929655C238">SampleIntakeErrorHandler</em> does not unlock Sample Wheel if it was locked as a part of failed aliquot process. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize instrument. 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Tests not aliquoted from sample vessels on Sample Wheel. Instrument not restarting after Lumi Drift Check (Red System Event) Re-Initialization. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">There may be a delay to return the system into a running state if the ASD Luminometer Drift Check is completed sooner than expected. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Wait 15 minutes after ASD completion. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">SPU presentation action timeout after SPU load button was used. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If the user attempts to load a rack while another rack in the presentation area, there is a short time window in which if the SPU door closes, a timeout error can occur. &quot;The sample handler is jammed&quot; system event is displayed and user is not able to load additional racks until the instrument is reinitialized. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Do not close the cover when the rack is operating. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Single dark count read out of range during initialization should fail. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If the instrument&#39;s luminometer reads a dark count value of greater than 300, the instrument should throw an error and prevent the user from running. The luminometer is compromised and needs to be cleaned before use. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Clean the luminometer, refer to 
+					 <a class="xref" href="GUID-D509AF4F-283D-4B2C-B30F-6B7C713B98EE.html">Cleaning the Luminometer</a>. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Slot occupied condition due to incorrect sample vessel cancelation during error handling. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After some Incubate Pick and Place failures, a sample vessel may fail to be cleaned out from the reaction build carriage, resulting in &quot;slot occupied&quot; error. The instrument will need to be reinitialized in order for the sample vessel to be cleared. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Reinitialize instrument. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Weekly cleaning routine reports confusing software error message. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If there is a system error during the weekly clean routine (e.g. pipettor detects a leak) the system will report an ambiguous error message about a &quot;Boolean Disposing Error&quot; instead of the actual failure, making the issue difficult to troubleshoot for service. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Add-on order accepted even though sample was already expired and offboard. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Add-on order accepted even though sample was already expired and offboard. The order cannot be processed and stuck in embedded memory until process restarts. This is shown in the service view, but not visible to the customer. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">TnI 186 version not updating calibration volumes when multiple lots are loaded or unloaded from system. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">For TnI test, the calibration edit order view may not show the calibrator volume in the load guide if multiple reagent lots are available. Customers should refer to the assay IFU. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Customer should manually calculate the required volume(s) based on the reagent and calibrator IFU and add the dead volume based on the container type. 
+				  </p> 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Consolidate passengers when gripper does not detect a tray. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After removing a pack of trays from stocker, the system does not consolidate the removal and counting of passengers is corrupted. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Reinitialize instrument and restart PC. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">The tray exerciser processing is not aligned with tip supply controller state. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If an error occurs in the tray exerciser, the function is terminated without processing the rest of the tip supply handling controller state, resulting in an error that prevents it from starting the next time the exerciser is executed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Refer to 
+					 <a class="xref" href="GUID-7FDAF741-A42F-4854-9E6B-4A3A9A53B3A0.html">Troubleshooting DispoTip Stocker</a>. Restart PC. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Subsystems motion error event information incorrect 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If the reagent pipettor has a motion error, the detailed error information available to service does not correctly display the final position of the device, which can make trouble-shooting the error more difficult. This does not affect the correct behavior of the device itself. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Missing sample event for sample rack ID cannot be read in other languages and only invoked with single rack error 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When the system cannot read a rack barcode the event about the missing/unreadable barcode does not display in non-English languages. For the test case with a rack ID without a barcode in a mix of racks, there is no event displayed at all. Machine Control log files do indicate what the issue is from a service troubleshooting standpoint, but the customer will have to rely on the sample list screen showing the sample requested is still pending rather than waiting for the event until this anomaly is fixed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Erroneous QNS reported when there is enough sample to run base test but not add-ons if total volume requires multiple aliquots 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">A QNS event is reported when there is enough sample on board to run the base test but not the add-on tests if the total volume requires multiple aliquots. The aliquot for the base sample does not occur despite there being enough for the base test. The base test or primary test should always run if there is enough volume and should not be dependent on if there is enough sample volume for any add-on orders. This only applies if the total sample volume exceeds the amount that can be handled by a single disposable tip (250 microliters). 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Sample mismatch error nullifying target vessel and provoking hard stop 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When sample tubes got swapped during aliquot, a protection check detects the issue and raises an aliquot error. This will cancel all non completed aliquots including one being processed. When canceling aliquots, target vessels must be unlinked which causes target slots to be null. A system error occurs when a null slot is detected. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Initialize system after a hard stop. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">System displays a misleading reagent serial number on calibration orders created from reagent details screen 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When you order a calibration from the reagent details screen and review it on the calibration order details view it appears that it will run on the specific pack. In fact, the system will only honor the lot, not the serial number. They system may run the curve on any available pack of that lot. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">When multiple user create calculated result test are saved in configuration that prevents application from restarting 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system will only allow a maximum of one calculated result to be configured. If the user attempts to create more than one, the instrument software will not start the next time the system is rebooted. The user must then remove all but one calculated result to get the system to start up. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Results to disk limits access to current year 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The Results to Disk date picker only allows you to pick the current calendar year. Users will not be able to export a date range that includes the prior year. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Increase &#39;MinimumDaysBack&#39; in falcon.settings and restart instrument. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">LAS: an invalid GetTube is being sent in the sequence and interrupts sample processing 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When the system is creating aliquots via an automation line track, &quot;TubeBypass&quot; may occur and the transfer may stop. This is due to an unnecessary &quot;GetTube&quot; message is being sent from the DxI 9000 system to the LAS track. This can result in the system failing to process additional tubes from the track without manual intervention. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Rack &quot;Stuck&quot; in Instrument After SPU Presentation Jam 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After the SPU error and following recovery, instrument needs to eject the sample rack, so SPU may be used again. Instead, the instrument keeps the sample pack inside, creating user confusion about further SPU usage.SPU would be operational again after user open/close the SPU cover. But user usually unaware of this and waits for rack being rejected. The user can recover by initializing the system. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Reinitialize instrument. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">RSU (Remote Software Update) RAPID Update Clears Test Menu 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When a system does a test menu update from version A (manifest generated with RDM 3.6) to version B (manifest also generated with RDM 3.6) the test menu of the system is cleared. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">In the short term, manifests should be manually wrapped to ensure version data are part of the .rapid file name in the package. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Luminometer Drift Scheduling Deadlock 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">In some conditions a deadlock can occur between the automated luminometer drift detection and sample processing that causes neither activity to be completed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Pause the instrument and run drift manually. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Not Restarting Test Processing after Aliquot Pipettor Error Automatic Recovery 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Aliquot Pipettor error caused instrument to finish in progress tests. At the same time, the Aliquot Pipettor auto recovered. However new tests were not scheduled until an initialization was performed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize instrument. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Reagent Pipettor Fluid Heater Temperature Data- Increase Sampling Frequency to Reduce TRP Overflagging 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The software can produce excessive TRP flags when the reagent volumes for a test are high and system is running a lot of tests. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Rack Commit Failure when Ordering Multiple Racks Through Enhanced Test Order 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When a user attempts to order multiple tests racks through the Enhanced Test Order screen, only a few of the racks are committed while others are rejected, reporting&quot;There are no tests ordered for the tube&quot;. Committing each rack individually allowed for all racks to be committed successfully. Note, that the Enhanced Test Order screen should only be available for internal users. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Apply the latest build. 
+				  </p> 
+				  <p class="p">Set the order only with &quot;Test Order Info&quot; without selecting the tube in the rack on the screen. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Result to Disk Throws Error When Only Start Date/Time is Edited 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Users may see an error &quot;Start data must be earlier than end data&quot; when attempting to use the result to disk function even though the dates are valid. If the user enters a custom start date, they must also adjust the end date to avoid the erroneous error message. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Need to manually change the end date time. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Imported Test Definitions Can Be Configured to Act as Calculated Results 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The &quot;Is Calculated Result&quot; option is visible on the test definition details view for tests that are configured via the APF when it should not be an option since it is a &quot;closed&quot; definition and cannot be used as a calculated result name. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Dont check the box to mark a test as calculated result 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">ASD Low Volume Reagent Pipetting Passed With Failing Results 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Pass/Fail is overwritten each time the software evaluates an acceptance criteria, it overrides the pass/fail evaluation from the previous check, so if the last processed data (20μL) is Pass, it will appear to be Pass even if 10μL is Fail. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Error Sending Results for Tests using Diluent Packs to IntelliServe 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">System attempts to report a default DateTime value for the Dilution Pack Expiration field in the Normalized result. This results in an error in converting the date time for the expiration field when IntelliServe connected instruments attempt to send the associated result data resulting in failure to send the results. This only affects results for assays that use a dilution pack for the processing of that specific result. No known workaround for issue. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Customer-initiated Emergency Stop Recovery Requires Software Restart 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After a user-initiated emergency stop command from the user interface, the system cannot be returned to an operational state simply by re-initializing the system. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Restart the Console PC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Fails to Reinitialization after Emergency Stop 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system may fail to re-initialize after a user-initiated emergency stop. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Restart the Console PC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Secondary Error From Interlock Hard Stop Persists After Re-Initialization 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Opening and closing the instrument covers while the tray gripper is attempting to move can cause the instrument to get stuck in an error mode. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Close the covers and perform a full initialization via the Diagnostics menu or restart the instrument and initialize. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Bad Reagent Storage Module Alignments Can Prevent Software From Starting 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If RSM gripper alignment in nest 37 and nest 50 are the same value, the RSM will fail and cause the software to stop accepting requests. When the software is restarted on the instrument, an error dialog showing &quot;Failed to load Machine configuration&quot; and the application will close. This closure of the application will prevent access to the alignments screen in the machine control database. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">The PnP Vessel Lost Condition is not Properly Handled, followed by Instrument Hard Stop 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The error handling is not performed correctly for cases when vessel is lost while on-route from one location to another. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Stops when Running at Maximum Capacity and Fills Incubate Wheel 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the test volume is very high and running tests with long incubation times, the incubate may fill up. This can cause the system to stop processing tests and report a red event with an &quot;IndexOutOfRange&quot; error. The system must then be re-initialized to resume operation. This error has only occurred under during BEC verification testing conditions and not under normal operation conditions. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Tests Not Aliquoted From SVs on Sample Wheel Not Restarting After Lumi Drift Check Missed (Red System Event) Re-initialization 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> There may be a delay to return the system into a Running state if the ASD Luminometer Drift Check is completed sooner than expected. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Not Invalidating Reagent Packs for Tests with Pack Descriptor File Changes 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The instrument should invalidate reagent packs that were previously onboard if a Rapid Test (APF) Definition is updated with pack file changes. The reagent pack should be marked as unusable and discarded upon a test menu update. When testing this workflow, it was found that when loading a pack revision file the reagent pack was not marked as unusable. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibrations in Result to Disk CSV Does Not Display &quot;NaN&quot; for Dose Values Below Zero 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When XML calibration file is reviewed from the results for replicates that display an &quot;NaN&quot; value for either one or both replicates, the &quot;NaN&quot; is not being transmitted to the CSV file export. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Temperature Diagnostics Screen Highlights Reagents Storage Coolers For No Reason 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> On the instrument&#39;s temperature diagnostic screen, there was an indication that there was an issue with the reagent storage coolers despite there actually not being any issue. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Result File to Disk - Does Not Serialize CurveValidationOuputs 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Calibration result to disk is exporting the data type instead of data values. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">RV Supply Elevator Jam Recovery Early Exit 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When the instrument attempts to recover during a bulk feeder RV elevator jam, the recovery routine exits early if an index sensor is found regardless of whether encoder shows a motor slippage. The next pusher movement results in a hard stop. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Substrate Lot Expired Event Requires Proper Description 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The event description for expired substrate barcode event states the substrate bottle is &#39;unknown&#39;, which is misleading and may cause customer confusion. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Volume Not Displayed For All The Level And The Volume Differs Every Time Based On Other Test Which is Placed Together 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The volume required to perform calibration is not displayed until the page is refreshed however, there are times even after a page refresh some of the calibration levels do not display the volume required. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Qualitative Tests and the Calibration Curve Details Page 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Due to an unimplemented feature, the calibration details page displays &quot;0.00&quot; in the expected column for assays that use a cutoff based math model. These should instead be displayed as N/A. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Missing Translations for ASD Screens 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The user interface contains several untranslated strings, particularly on the automated system diagnostics pages. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Test Order Errror through Enhanced Test Order Screen When Changing Sample&#39;s Test Orders 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> While ordering through the Enhanced Test Order screen it is possible to receive a &quot;No tests ordered for sample tube&quot; error message after clicking Commit even though tests are requested for that Sample ID. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p"> After registering a tube and selecting another one, error can be avoided by returning to the original tube and not adding any more tests. 
+				  </p> 
+				  <p class="p"> Alternatively, when an update is needed, select the tube to update, create a new test order, and add it to the same container location. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Reagent Pipettor Pressure Monitor Does Not Clean Up Propertly on System Initialization 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After a primary unrelated failure occurs, the pressure monitoring software used by reagent pipettors did not fully reset when an error occurred during the evaluation step, resulting in subsequent initialization failures. The system must be rebooted to recover. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reboot the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Reagent Pipettor Fluid Heater Temperature Data - Increase Sampling Frequency to Reduce TRP Overflagging 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The software can produce excessive TRP flags when the reagent volumes for a test are high and system is running a lot of tests. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Slot Occupied Condition Due To Incorrect SV Cancellation During Error Handling 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After some Incubate Pick and Place failures, a sample vessel may fail to be cleaned out from the reaction build carriage, resulting in &quot;slot occupied&quot; error. The instrument will need to be reinitialized in order for the sample vessel to be cleared. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system and perform Incubate Pick and Place alignments. Refer to 
+				  <a class="xref" href="GUID-5E5E481D-32D6-4C31-8AC7-CDC65632AE6F.html">Adjust/Align: Incubate PnP</a> procedure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Existing Troubleshooting Workflow Not Shown for &quot;SPUNotSecured&quot; System Error 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system error that is generated when the SPU is not secured is not correctly attributed to the existing 
+				  <em class="ph i" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-4A245785-3967-4101-9694-8911275FF195">SPUNotInPlaceEvent</em> troubleshooting wizard steps. Instead, the generic troubleshooting steps are shown which ask the user to initialize the instrument. Initialization would fail due to the SPU not being secured. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">A rack is stuck inside the analyzer 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After the SPU error and following recovery, instrument needs to eject the sample rack, so SPU may be used again. Instead, the instrument keeps the sample pack inside, creating user confusion about further SPU usage. SPU would be operational again after user open/close the SPU cover. But user usually unaware of this and waits for rack being rejected. The user can recover by initializing the system. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Exception Thrown When {} Are Used in Sample Barcodes 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Currently the instrument cannot read barcodes that use &quot;{&quot; or &quot;}&quot; symbol. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Sarstedt 10 mL tube may be misidentified as a Sarstedt 7.5 mL primpary tube 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The Sarstedt screw-top tube (product number 60.610.013) is mistakenly identified as Sarstedt 7.5 mL tube. These tubes have the same dimensions, so there is no risk of pipetting issues. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Combo Replicates From The Same Sample Container Complete All At Once 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If multiple replicates of a combo test are ordered for a single sample container, then none of the replicates report results until they all complete. This is unlike non-combo tests where each individual replicate reports results as soon as it finishes. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Combo Parent Test Not Included in Results to Disk 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The file discussed below is only for BEC Field Service Engineers. End users will not be looking at this file. When generating results using &quot;Results to Disk&quot;, only the constituents are contained. cHIV parent result is not present. For cHIV the consistent results can be used to infer the parent result with knowledge of the basic logic, but this may not be valid for all combo tests in the future. There is no ability to export combo parent results for analysis without an LIS or middleware solution other than a manual transcription. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">APF Diagnostics Page is not Tracking with RAPIDS Folder When RAPIDS are Loaded Through RSU (Remote Software Update) 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Installing multiple RSU updates with add-on RAPID packages fails to update the test configuration correctly when the only changes are the RAPID packages&#39; revision and tests have been removed compared to the previous add-on RAPID package. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">RAPID Version is Missing in Message to IntelliServe 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The RAPID revision is missing in the system data sent to IntelliServe. This data is only available to technical support for troubleshooting purposes. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Incubate Pick and Place Pneumatics Failure Error Handling Does Not Start Pending Tests 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the pneumatics supply becomes disconnected or otherwise compromised, the system will not be able to automatically recover from errors. A complete system initialization is required to detect the pneumatics issue as the source of the problem. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Date and time must be specified for the start and end points when saving results to disk 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Users may see an error &quot;Start data must be earlier than end data&quot; when attempting to use the result to disk function even though the dates are valid. If the user enters a custom start date, they must also adjust the end date to avoid the erroneous error message. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Need to manually change the end date time. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">A Calculated Result checkbox is erroneously displayed when configuring tests 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The &quot;Is Calculated Result&quot; option is visible on the test definition details view for tests that are configured via the APF when it should not be an option since it is a &quot;closed&quot; definition and cannot be used as a calculated result name. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Don&#39;t check the box to mark a test as calculated result. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Sample racks without a barcode label might not generate a sample event when the user interface is configured for a language other than English 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When the system cannot read a rack barcode the event about the missing/unreadable barcode does not display in non-english languages. For the test case with a rack ID without a barcode in a mix of racks, there is no event displayed at all. Machine Control log files do indicate what the issue is from a service troubleshooting standpoint, but the customer will have to rely on the sample list screen showing the sample requested is still pending rather than waiting for the event until this anomaly is fixed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">QNS Event Description Incorrectly Identifies Number of Replicates for Each Assay 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> QNS event description reports a replicate count that double counts the base test and includes the count of all potential rerun tests. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Log Transform Curve Details Incorrect 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Any calibration that requires a Log Transform Offset (i.e. a Spline Fit Log10 Transform Model) cannot be calculated correctly. There are no tests currently using this parameter/math model. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Precision Sample Pipettor Cannot Calculate Height for Negative Volume and Causes System Hard Stop 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Despite the QNS reported during sample aliquot, still empty SV was declared ready for test scheduling. The &quot;negative volume&quot; error was declared as Precision sample pipettor attempted to aspirate from empty SV. The system will not attempt to use the empty SV, but the system will stop processing. This issue has not been observed on any released assays. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Reflex Test Does Not Complete When Prep Type of Reflexed Test Doesn&#39;t Match Prep Type of Original Test 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If a reflex rule specifies a test that has a prep type (neat or dilute) different from the reflex test ordered, the reflex test will not run. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">An incorrect reagent serial number may be associated with calibration orders 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When user orders a calibration from the reagent details screen and review it on the calibration order details view; it appears that it will run on the specific pack. In fact, the system will only honor the lot, not the serial number. The system may run the curve on any available pack of that lot. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">The analyzer will not return to a green Running state after a computer restart if the system configuration includes two or more calculated results 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system will only allow a maximum of one calculated result to be configured. If the user attempts to create more than one, the instrument software will not start the next time the system is rebooted. The user must then remove all but one calculated result to get the system to start up. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Remove the one calculated result or reboot the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">The data range for Results to Disk files must be within the current year 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The Results to Disk date picker only allows you to pick the current calendar year. Users will not be able to export a date range that includes the prior year. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Increase &#39;MinimumDaysBack&#39; in falcon.settings and restart instrument. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">When the Clean Routine maintenance task fails, the maintenance workflow may remain on the user interface indefinitely 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the weekly clean routine fails, the maintenance wizard displays the text &quot;Redirecting&quot; instead of exiting the wizard or offering a next step. The user must close this tab and re-initialize. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Test Menu Update With Same Package File Name Clears Test Menu 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When a system does a test menu update from version A (manifest generated with RDM 3.6) to version B (manifest also generated with RDM 3.6) the test menu of the system is cleared. This will only occur for APFs that do not have the version information appended in the *.rapid file name. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> In the short term, manifests should be manually wrapped to ensure version data are part of the .rapid file name in the package. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">When Locking a Pipettor to a Specific Lot of Reagent, the Instrument Does Not Recognize the Presence of a Sample Diluent A Pack 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If a user attempts to use the Enhanced Test Order screen to direct the system to use a specific reagent lot for an onboard dilution area, the system will not process the request. Enhanced Test Order screen is for internal use only. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Excessive Lumi Drift Events in Audit Log 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the system is unable to perform the luminometer drift routine at the scheduled time, there will be an excessive number of events logged to the audit log about being unable to schedule this routine. This has no impact on the use of the system. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Result Processing Error when Processing QC run as Patient 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Results may not get assigned on samples that are frequently repeated and/or have a high number of tests requested. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Update settings file to set SampleIDReuse = -1 and restart the PC. This prevents aggregation of sample data so the data never grows past the 30MB size limit. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Allows to Use the Same Rack ID Among Different Sample Types (Patient/DC/Calibrator) 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the user swaps assigned rack IDs for pending calibration orders after they are initially assigned and saved, then the system does not prevent the user from programming patient samples or QC orders. If this rack is loaded, the system will attempt to process the patient or QC order on any unbarcoded tubes and the calibration order will remain in the ordered state. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Aliquoted Some Calibrator Levels Even Though All Containers Were Not Detected 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system attempts to aliquot calibrator material even though tubes aren&#39;t detected in all positions. The situation is corrected when the user loads the missing calibrator levels. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Make sure to use only known containers when building a rack. Ensure the SPU camera is calibrated correctly. Refer to 
+				  <a class="xref" href="GUID-622AE7FC-997F-4455-B82B-4281C3097192.html">Troubleshooting: Sample Container Detection</a> procedure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Wrong QC Order May Be Created After Calibration 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system should create a QC order after a calibration is performed for any available pack for the calibrated analyte. Instead, it is assigning the QC order to a specific onboard pack. If that specific pack is not available when the system attempts to run the test, the QC test could be cancelled. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Wait for the QC orders to expire and hope the patient samples can still be processed; or if available reload the missing pack(s). 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Invalid Cast Error when System Attempts to Cancel Scheduling Cleanout Operation 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Instrument goes offline as a result of incorrect cast operation after errors with pick and place sensor verification. A system initialization will return the system to normal operation. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Stops Scheduling New Tests after 25 days of Continuous Operation 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After 25 days of the system software being continuously active (system is powered on, but does not need to be running tests continuously), running tests, the system will fail to schedule new tests. The system can be rebooted to correct the problem. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reboot the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Scheduler-Generated Calibration Event Not Translated in Set Console Language 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The event indicating that the scheduler needs a particular reagent pack to be loaded may be displayed in English instead of the user-configured language. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Incorrect Pack Delivery Time Estimation Causes System Hard Stop 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system estimates the time needed to transfer a reagent pack to the pipetting subsystems. The reagent pack exchange time is miscalculated, leading to incidents of &#39;Reagent pack is not at the pipettor nest&#39; errors, which stop system processing. The system can be returned to operation with a system initialization. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Mini Chart on Reagent Details Screen Displays in Default Unit Rather than User Unit 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The calibration mini chart on the reagent details screen is always shown in the assay&#39;s default unit, even if the user configured a different unit. The full calibration details screen always shows the curve in user unit, so this chart should be synchronized to match. This does not affect the calibration curve status in any way. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Duplicate Test Order Send Result in Cancelled Tests 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system may send in the test list to the instrument of a reflex add on order some orders from the primary request that have already been acknowledged and aspirated by the system. When the system receives these orders in the addon list it does not recognize that they are samples already running on the system and ends up cancelling them and reporting a sample action for Sample Not Onboard. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">&quot;Calibration&quot; Priority Text Not Localized on Samples List Page 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The priority text for &quot;Calibration&quot; is not localized on the samples list page for a calibration sample when the console application is changed to a different language from English. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Wash Wheel Generic Failure (Boolean) 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> On occasion, utility assays that do not do washing may stop unexpectedly due to a wash wheel error. This can occur when a service assay is requested directly, such as ASD substrate blank, or during a pre-run prime. In the latter case, the user requests normal assay(s), but the system queues up one or more substrate prime vessels to run before the normal assay(s). If the error occurs in this case, in-progress tests will be cancelled. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> The user can recover by re-initializing the system and attempting the same requests again. 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html">Known Bugs and Behaviors</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" title="25.5.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2 </span>Known Bugs and Behaviors</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7.html" lang="en-US" title="25.5.2.5 Software 1.17/1.17.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2.5 </span>Software 1.17/1.17.2 Known Bugs and Behaviors</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">C65079BK</div></li><li><div id="date">July 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-53071AEF-7D6B-4BDD-BA57-6DBE28822242" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7" role="article"> 
+  <h1 class="title topictitle1" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-53071AEF-7D6B-4BDD-BA57-6DBE28822242"><a id="GUID-53071AEF-7D6B-4BDD-BA57-6DBE28822242"></a>Software 1.17/1.17.2 Known Bugs and Behaviors</h1> 
+   
+  <div class="body conbody"><p class="shortdesc">A list of known bugs or behaviors for system software versions 1.17/1.17.2, and countermeasures for recovery. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Bug/Behavior:</strong> Summary of the software bug or system behavior. 
+		</li> 
+		<li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details:</strong> Explanation of the bug/behavior and how it may impact the system/user. 
+		</li> 
+		<li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_84FFD9541F4D4ADFB828455CD74C731A"><strong class="ph b" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-C972260E-1848-47E9-A5BB-282CA0EB0015">Countermeasure:</strong> If applicable, countermeasure to resolve the condition inflicted by the bug/behavior. 
+		</li> 
+	 </ul> 
+	 <table class="table frame-all" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1">Bug/Behavior 
+				</th> 
+				<th class="entry" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2">Details 
+				</th> 
+				<th class="entry" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3">Countermeasure 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Thousands of warning system events with no events displayed in log. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Run-up System Events warnings with no data displayed in log: SQL Data-base needs to be updated. You can clear the events by updating the database by running script to set the active events to 0. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Shutdown Machine Control to ensure no new events are added. 
+				  </p> 
+				  <ol class="ol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__OL_9C1CF7543468414AAB9FDD2236686F1D"> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_85285F795DB6423FB4678F8DAA2FEA2C">In Windows, open The SQL database connection. 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_859E89BC70264475AB625677F965AB89">Copy, paste, and execute this script in SQL: 
+						<kbd class="ph userinput" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-8D9C112C-878F-4259-BB95-425845C8B0C4">update ice_db.dbo.events set active = 0</kbd> 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_1E17D96E90A0407AA1C7A629F2873F4D">Close the SQL database connection. 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_5CB4284C5AE34CA48E254F8AA56007D0">Start Machine Control and verify it initializes or send us the log of new errors. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Cannot Initialize Due To Logical Error in Event Reporting. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system can appear to initialize indefinitely when event DAC communication fails repeatedly. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Note that cache file reconciliation occurs at software startup, NOT initialization. So reinitializing without restarting the software will not help. 
+				  </p> 
+				  <ol class="ol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-DC17EB40-CD23-43C3-8837-1453B01F4B1F"> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_93255EFE82204762B26E7BD1D76DAB56"> 
+						<p class="p">Resolve the underlying DAC issue, perhaps by rebooting the instrument computer or freeing up disk space. 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_788B03EDA3F4403CB94585FDD28F3737"> 
+						<p class="p">If the issue continues, then delete the event cache file (PendingEvents.json) from 
+						  <em class="ph i" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-13FE8564-3666-4D0B-B6D7-8EA81154AC91"><span class="ph uicontrol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-1A2477AB-CF9F-413A-BA2B-4E760603345A">D:\ProgramData\Beckman Coulter\Falcon</span></em> 
+						</p> 
+					 </li> 
+				  </ol> 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Passenger Consolidation Fails For RSM During Initialization After Software Upgrade. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After software upgrade, the instrument failed to initialize during passenger reconciliation stage. While reagent packs were being restored from ReagentPack.data, a pack was unable to be placed in slot 0 because it appeared to already be occupied (in reality, gripper was empty, only logical passenger was present). 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Use script in Service Application to remove invalid pack. 
+				  </p> 
+				  <ol class="ol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-4174B5B1-1D9B-4147-AEC1-A3C83E6EDCCE"> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_75AD014EF8BE4CC4926A622E53759722"> 
+						<p class="p">Service app 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_F111D55709574C9DAFCCFF2BE3E9B521"> 
+						<p class="p">Scripting 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__LI_0A662655CDA443F99518B4C69A4DB359"> 
+						<p class="p">Go to 
+						  <span class="ph uicontrol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-0BCD07BD-FAFF-4557-973D-23E0127979C1">Remove Invalid Pack</span> 
+						</p> 
+					 </li> 
+				  </ol> 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Unable to Store Alignment Data Error Display. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">System displays an error indicating that the analyzer cannot process samples and was unable to store configuration or alignment data, but the system indicates that it is ready to run. This alignment feature is used only by service technicians. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Close (if open) the prototype alignment page; re-open the prototype alignment page. This appears to reset the status of the alignment data. 
+				  </p> 
+				  <p class="p">Restarting Machine Control will also clear this condition. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Stops With An Error After Canceling An In Progress ASD Request. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">System fails to cancel an Automated System Diagnostic test request when tasks are running in background. The system can be re-initialized to clear the issue. ASD tests are only performed by service engineers. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Reinitialize instrument to clear error. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Date and Time Do Not Appear in DxI 9000 CSV file When Viewed in Excel. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When exporting results to csv, the date/time data are not correctly formatted to automatically be displayed correctly by excel. The data and time can still be viewed, but it requires the user to double click on each cell in Excel or manually format columns in Excel. This file is generally used by the Beckman Coulter applications teams. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">The data and time can still be viewed, but it requires the user to double click on each cell in Excel or manually format columns in Excel. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Empty Reagent Packs for Combination Tests are Not Discarded 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">For combination style tests (HBsAg, HIVCombo), the system will retain a reagent pack onboard even after it has been depleted and no longer has enough for both constituents. The user can still manually discard or onload the pack. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Manually discard the depleted pack and load new packs. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">No Reasons Provided for Not Running Tests when Reagent Storage Temperature is Out of Limits. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">User is not notified why tests are not running when system is in a temperature out of control condition in the reagent storage module. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Check temperature for deviation if tests do not start. 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Tests Will Not Start In Enhanced Test Order After RAPIDs Install via RSU (Remote Software Update). 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After a new APF is installed, the Enhanced test order screen will not work until the system is restarted. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. Do not update RSU while tests are in progress. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Changing the User Interface (UI) Language May Not Refresh All UI Text. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Due to the instrument software not changing languages when the user interface does, certain events may not be translated until the whole system is rebooted. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Wash Wheel Error When Running ASD Tests. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">On some occasions, ASD tests may stop unexpectedly due to a wash wheel error. The user can recover by re-initializing and reordering the diagnostic. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">The user can recover by re-initializing and reordering the diagnostic. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Event Displays Wrong Rack ID. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Failed calibration event displays incorrect rack ID when calibration is rerun using a different rack than the prior calibration failure event. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Handling Incorrectly Persisted Data in the &quot;.data&quot; Files. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After a severe system error during a system software upgrade attempt, the instrument passenger data can be out of date. This will result in &quot;invalid passenger&quot; messages that will not allow the instrument to initialize. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Close machine control and close applications. Delete data files in 
+				  <span class="ph uicontrol" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-41B6AC38-DB1F-4AE8-AAA8-26434876AF2C">d:\programdata\beckman coulter\Falcon.</span> Restart the PC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Single Disabled Reagent Pipettor Blocks Test Execution. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system will be unable to process tests if a pipettor is disabled and the system automatic substrate prime is due. The pipettor must be re-enabled to allow the system to complete priming before resuming operation. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Don’t prime or run diagnostics with pipettors disabled. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Reagent Pipettor Pressure Monitoring Fails with Non-English System Configuration. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Communication between machine control and the model evaluator application is done via text strings. The decimal values passed back and forth are therefore subject to number-formatting localization. Since machine control always runs in English regardless of the system setting, but the evaluator runs in whatever language is selected, decimal values cannot be parsed on the other side for languages that are incompatible with English formatting (e.g. period vs comma separator). 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Set Windows language/region settings to US English. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">SampleIntakeErrorHandler does not Unlock Sample Wheel. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "><em class="ph i" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-6ABA86A8-F7B2-4E8C-A7B9-15929655C238">SampleIntakeErrorHandler</em> does not unlock Sample Wheel if it was locked as a part of failed aliquot process. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize instrument. 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Tests not aliquoted from sample vessels on Sample Wheel. Instrument not restarting after Lumi Drift Check (Red System Event) Re-Initialization. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">There may be a delay to return the system into a running state if the ASD Luminometer Drift Check is completed sooner than expected. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Wait 15 minutes after ASD completion. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">SPU presentation action timeout after SPU load button was used. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If the user attempts to load a rack while another rack in the presentation area, there is a short time window in which if the SPU door closes, a timeout error can occur. &quot;The sample handler is jammed&quot; system event is displayed and user is not able to load additional racks until the instrument is reinitialized. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Do not close the cover when the rack is operating. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Single dark count read out of range during initialization should fail. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If the instrument&#39;s luminometer reads a dark count value of greater than 300, the instrument should throw an error and prevent the user from running. The luminometer is compromised and needs to be cleaned before use. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Clean the luminometer, refer to 
+					 <a class="xref" href="GUID-D509AF4F-283D-4B2C-B30F-6B7C713B98EE.html">Cleaning the Luminometer</a>. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Slot occupied condition due to incorrect sample vessel cancelation during error handling. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After some Incubate Pick and Place failures, a sample vessel may fail to be cleaned out from the reaction build carriage, resulting in &quot;slot occupied&quot; error. The instrument will need to be reinitialized in order for the sample vessel to be cleared. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Reinitialize instrument. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Weekly cleaning routine reports confusing software error message. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If there is a system error during the weekly clean routine (e.g. pipettor detects a leak) the system will report an ambiguous error message about a &quot;Boolean Disposing Error&quot; instead of the actual failure, making the issue difficult to troubleshoot for service. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Add-on order accepted even though sample was already expired and offboard. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Add-on order accepted even though sample was already expired and offboard. The order cannot be processed and stuck in embedded memory until process restarts. This is shown in the service view, but not visible to the customer. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">TnI 186 version not updating calibration volumes when multiple lots are loaded or unloaded from system. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">For TnI test, the calibration edit order view may not show the calibrator volume in the load guide if multiple reagent lots are available. Customers should refer to the assay IFU. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Customer should manually calculate the required volume(s) based on the reagent and calibrator IFU and add the dead volume based on the container type. 
+				  </p> 
+				  <p class="p"></p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Consolidate passengers when gripper does not detect a tray. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After removing a pack of trays from stocker, the system does not consolidate the removal and counting of passengers is corrupted. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Reinitialize instrument and restart PC. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">The tray exerciser processing is not aligned with tip supply controller state. 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If an error occurs in the tray exerciser, the function is terminated without processing the rest of the tip supply handling controller state, resulting in an error that prevents it from starting the next time the exerciser is executed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Refer to 
+					 <a class="xref" href="GUID-7FDAF741-A42F-4854-9E6B-4A3A9A53B3A0.html">Troubleshooting DispoTip Stocker</a>. Restart PC. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Subsystems motion error event information incorrect 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If the reagent pipettor has a motion error, the detailed error information available to service does not correctly display the final position of the device, which can make trouble-shooting the error more difficult. This does not affect the correct behavior of the device itself. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Missing sample event for sample rack ID cannot be read in other languages and only invoked with single rack error 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When the system cannot read a rack barcode the event about the missing/unreadable barcode does not display in non-English languages. For the test case with a rack ID without a barcode in a mix of racks, there is no event displayed at all. Machine Control log files do indicate what the issue is from a service troubleshooting standpoint, but the customer will have to rely on the sample list screen showing the sample requested is still pending rather than waiting for the event until this anomaly is fixed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Erroneous QNS reported when there is enough sample to run base test but not add-ons if total volume requires multiple aliquots 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">A QNS event is reported when there is enough sample on board to run the base test but not the add-on tests if the total volume requires multiple aliquots. The aliquot for the base sample does not occur despite there being enough for the base test. The base test or primary test should always run if there is enough volume and should not be dependent on if there is enough sample volume for any add-on orders. This only applies if the total sample volume exceeds the amount that can be handled by a single disposable tip (250 microliters). 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Sample mismatch error nullifying target vessel and provoking hard stop 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When sample tubes got swapped during aliquot, a protection check detects the issue and raises an aliquot error. This will cancel all non completed aliquots including one being processed. When canceling aliquots, target vessels must be unlinked which causes target slots to be null. A system error occurs when a null slot is detected. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Initialize system after a hard stop. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">System displays a misleading reagent serial number on calibration orders created from reagent details screen 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When you order a calibration from the reagent details screen and review it on the calibration order details view it appears that it will run on the specific pack. In fact, the system will only honor the lot, not the serial number. They system may run the curve on any available pack of that lot. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">When multiple user create calculated result test are saved in configuration that prevents application from restarting 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system will only allow a maximum of one calculated result to be configured. If the user attempts to create more than one, the instrument software will not start the next time the system is rebooted. The user must then remove all but one calculated result to get the system to start up. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Results to disk limits access to current year 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The Results to Disk date picker only allows you to pick the current calendar year. Users will not be able to export a date range that includes the prior year. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Increase &#39;MinimumDaysBack&#39; in falcon.settings and restart instrument. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">LAS: an invalid GetTube is being sent in the sequence and interrupts sample processing 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When the system is creating aliquots via an automation line track, &quot;TubeBypass&quot; may occur and the transfer may stop. This is due to an unnecessary &quot;GetTube&quot; message is being sent from the DxI 9000 system to the LAS track. This can result in the system failing to process additional tubes from the track without manual intervention. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Rack &quot;Stuck&quot; in Instrument After SPU Presentation Jam 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">After the SPU error and following recovery, instrument needs to eject the sample rack, so SPU may be used again. Instead, the instrument keeps the sample pack inside, creating user confusion about further SPU usage.SPU would be operational again after user open/close the SPU cover. But user usually unaware of this and waits for rack being rejected. The user can recover by initializing the system. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Reinitialize instrument. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">RSU (Remote Software Update) RAPID Update Clears Test Menu 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When a system does a test menu update from version A (manifest generated with RDM 3.6) to version B (manifest also generated with RDM 3.6) the test menu of the system is cleared. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">In the short term, manifests should be manually wrapped to ensure version data are part of the .rapid file name in the package. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Luminometer Drift Scheduling Deadlock 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">In some conditions a deadlock can occur between the automated luminometer drift detection and sample processing that causes neither activity to be completed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Pause the instrument and run drift manually. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Not Restarting Test Processing after Aliquot Pipettor Error Automatic Recovery 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Aliquot Pipettor error caused instrument to finish in progress tests. At the same time, the Aliquot Pipettor auto recovered. However new tests were not scheduled until an initialization was performed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize instrument. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Reagent Pipettor Fluid Heater Temperature Data- Increase Sampling Frequency to Reduce TRP Overflagging 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The software can produce excessive TRP flags when the reagent volumes for a test are high and system is running a lot of tests. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Rack Commit Failure when Ordering Multiple Racks Through Enhanced Test Order 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">When a user attempts to order multiple tests racks through the Enhanced Test Order screen, only a few of the racks are committed while others are rejected, reporting&quot;There are no tests ordered for the tube&quot;. Committing each rack individually allowed for all racks to be committed successfully. Note, that the Enhanced Test Order screen should only be available for internal users. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">Apply the latest build. 
+				  </p> 
+				  <p class="p">Set the order only with &quot;Test Order Info&quot; without selecting the tube in the rack on the screen. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Result to Disk Throws Error When Only Start Date/Time is Edited 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Users may see an error &quot;Start data must be earlier than end data&quot; when attempting to use the result to disk function even though the dates are valid. If the user enters a custom start date, they must also adjust the end date to avoid the erroneous error message. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Need to manually change the end date time. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Imported Test Definitions Can Be Configured to Act as Calculated Results 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The &quot;Is Calculated Result&quot; option is visible on the test definition details view for tests that are configured via the APF when it should not be an option since it is a &quot;closed&quot; definition and cannot be used as a calculated result name. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Dont check the box to mark a test as calculated result 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">ASD Low Volume Reagent Pipetting Passed With Failing Results 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Pass/Fail is overwritten each time the software evaluates an acceptance criteria, it overrides the pass/fail evaluation from the previous check, so if the last processed data (20μL) is Pass, it will appear to be Pass even if 10μL is Fail. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> 
+				  <p class="p">Error Sending Results for Tests using Diluent Packs to IntelliServe 
+				  </p> 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">System attempts to report a default DateTime value for the Dilution Pack Expiration field in the Normalized result. This results in an error in converting the date time for the expiration field when IntelliServe connected instruments attempt to send the associated result data resulting in failure to send the results. This only affects results for assays that use a dilution pack for the processing of that specific result. No known workaround for issue. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p">No countermeasure. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Customer-initiated Emergency Stop Recovery Requires Software Restart 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After a user-initiated emergency stop command from the user interface, the system cannot be returned to an operational state simply by re-initializing the system. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Restart the Console PC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Fails to Reinitialization after Emergency Stop 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system may fail to re-initialize after a user-initiated emergency stop. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Restart the Console PC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Secondary Error From Interlock Hard Stop Persists After Re-Initialization 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Opening and closing the instrument covers while the tray gripper is attempting to move can cause the instrument to get stuck in an error mode. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Close the covers and perform a full initialization via the Diagnostics menu or restart the instrument and initialize. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Bad Reagent Storage Module Alignments Can Prevent Software From Starting 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If RSM gripper alignment in nest 37 and nest 50 are the same value, the RSM will fail and cause the software to stop accepting requests. When the software is restarted on the instrument, an error dialog showing &quot;Failed to load Machine configuration&quot; and the application will close. This closure of the application will prevent access to the alignments screen in the machine control database. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">The PnP Vessel Lost Condition is not Properly Handled, followed by Instrument Hard Stop 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The error handling is not performed correctly for cases when vessel is lost while on-route from one location to another. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Stops when Running at Maximum Capacity and Fills Incubate Wheel 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the test volume is very high and running tests with long incubation times, the incubate may fill up. This can cause the system to stop processing tests and report a red event with an &quot;IndexOutOfRange&quot; error. The system must then be re-initialized to resume operation. This error has only occurred under during BEC verification testing conditions and not under normal operation conditions. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Tests Not Aliquoted From SVs on Sample Wheel Not Restarting After Lumi Drift Check Missed (Red System Event) Re-initialization 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> There may be a delay to return the system into a Running state if the ASD Luminometer Drift Check is completed sooner than expected. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Not Invalidating Reagent Packs for Tests with Pack Descriptor File Changes 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The instrument should invalidate reagent packs that were previously onboard if a Rapid Test (APF) Definition is updated with pack file changes. The reagent pack should be marked as unusable and discarded upon a test menu update. When testing this workflow, it was found that when loading a pack revision file the reagent pack was not marked as unusable. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibrations in Result to Disk CSV Does Not Display &quot;NaN&quot; for Dose Values Below Zero 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When XML calibration file is reviewed from the results for replicates that display an &quot;NaN&quot; value for either one or both replicates, the &quot;NaN&quot; is not being transmitted to the CSV file export. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Temperature Diagnostics Screen Highlights Reagents Storage Coolers For No Reason 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> On the instrument&#39;s temperature diagnostic screen, there was an indication that there was an issue with the reagent storage coolers despite there actually not being any issue. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Result File to Disk - Does Not Serialize CurveValidationOuputs 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Calibration result to disk is exporting the data type instead of data values. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">RV Supply Elevator Jam Recovery Early Exit 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When the instrument attempts to recover during a bulk feeder RV elevator jam, the recovery routine exits early if an index sensor is found regardless of whether encoder shows a motor slippage. The next pusher movement results in a hard stop. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Substrate Lot Expired Event Requires Proper Description 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The event description for expired substrate barcode event states the substrate bottle is &#39;unknown&#39;, which is misleading and may cause customer confusion. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Volume Not Displayed For All The Level And The Volume Differs Every Time Based On Other Test Which is Placed Together 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The volume required to perform calibration is not displayed until the page is refreshed however, there are times even after a page refresh some of the calibration levels do not display the volume required. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Qualitative Tests and the Calibration Curve Details Page 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Due to an unimplemented feature, the calibration details page displays &quot;0.00&quot; in the expected column for assays that use a cutoff based math model. These should instead be displayed as N/A. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Missing Translations for ASD Screens 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The user interface contains several untranslated strings, particularly on the automated system diagnostics pages. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Test Order Errror through Enhanced Test Order Screen When Changing Sample&#39;s Test Orders 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> While ordering through the Enhanced Test Order screen it is possible to receive a &quot;No tests ordered for sample tube&quot; error message after clicking Commit even though tests are requested for that Sample ID. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> 
+				  <p class="p"> After registering a tube and selecting another one, error can be avoided by returning to the original tube and not adding any more tests. 
+				  </p> 
+				  <p class="p"> Alternatively, when an update is needed, select the tube to update, create a new test order, and add it to the same container location. 
+				  </p> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Reagent Pipettor Pressure Monitor Does Not Clean Up Propertly on System Initialization 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After a primary unrelated failure occurs, the pressure monitoring software used by reagent pipettors did not fully reset when an error occurred during the evaluation step, resulting in subsequent initialization failures. The system must be rebooted to recover. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reboot the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Reagent Pipettor Fluid Heater Temperature Data - Increase Sampling Frequency to Reduce TRP Overflagging 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The software can produce excessive TRP flags when the reagent volumes for a test are high and system is running a lot of tests. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Slot Occupied Condition Due To Incorrect SV Cancellation During Error Handling 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After some Incubate Pick and Place failures, a sample vessel may fail to be cleaned out from the reaction build carriage, resulting in &quot;slot occupied&quot; error. The instrument will need to be reinitialized in order for the sample vessel to be cleared. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system and perform Incubate Pick and Place alignments. Refer to 
+				  <a class="xref" href="GUID-5E5E481D-32D6-4C31-8AC7-CDC65632AE6F.html">Adjust/Align: Incubate PnP</a> procedure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Existing Troubleshooting Workflow Not Shown for &quot;SPUNotSecured&quot; System Error 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system error that is generated when the SPU is not secured is not correctly attributed to the existing 
+				  <em class="ph i" id="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__GUID-4A245785-3967-4101-9694-8911275FF195">SPUNotInPlaceEvent</em> troubleshooting wizard steps. Instead, the generic troubleshooting steps are shown which ask the user to initialize the instrument. Initialization would fail due to the SPU not being secured. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">A rack is stuck inside the analyzer 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After the SPU error and following recovery, instrument needs to eject the sample rack, so SPU may be used again. Instead, the instrument keeps the sample pack inside, creating user confusion about further SPU usage. SPU would be operational again after user open/close the SPU cover. But user usually unaware of this and waits for rack being rejected. The user can recover by initializing the system. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Exception Thrown When {} Are Used in Sample Barcodes 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Currently the instrument cannot read barcodes that use &quot;{&quot; or &quot;}&quot; symbol. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Sarstedt 10 mL tube may be misidentified as a Sarstedt 7.5 mL primpary tube 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The Sarstedt screw-top tube (product number 60.610.013) is mistakenly identified as Sarstedt 7.5 mL tube. These tubes have the same dimensions, so there is no risk of pipetting issues. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Combo Replicates From The Same Sample Container Complete All At Once 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If multiple replicates of a combo test are ordered for a single sample container, then none of the replicates report results until they all complete. This is unlike non-combo tests where each individual replicate reports results as soon as it finishes. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Combo Parent Test Not Included in Results to Disk 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The file discussed below is only for BEC Field Service Engineers. End users will not be looking at this file. When generating results using &quot;Results to Disk&quot;, only the constituents are contained. cHIV parent result is not present. For cHIV the consistent results can be used to infer the parent result with knowledge of the basic logic, but this may not be valid for all combo tests in the future. There is no ability to export combo parent results for analysis without an LIS or middleware solution other than a manual transcription. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">APF Diagnostics Page is not Tracking with RAPIDS Folder When RAPIDS are Loaded Through RSU (Remote Software Update) 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Installing multiple RSU updates with add-on RAPID packages fails to update the test configuration correctly when the only changes are the RAPID packages&#39; revision and tests have been removed compared to the previous add-on RAPID package. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">RAPID Version is Missing in Message to IntelliServe 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The RAPID revision is missing in the system data sent to IntelliServe. This data is only available to technical support for troubleshooting purposes. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Incubate Pick and Place Pneumatics Failure Error Handling Does Not Start Pending Tests 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the pneumatics supply becomes disconnected or otherwise compromised, the system will not be able to automatically recover from errors. A complete system initialization is required to detect the pneumatics issue as the source of the problem. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Date and time must be specified for the start and end points when saving results to disk 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Users may see an error &quot;Start data must be earlier than end data&quot; when attempting to use the result to disk function even though the dates are valid. If the user enters a custom start date, they must also adjust the end date to avoid the erroneous error message. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Need to manually change the end date time. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">A Calculated Result checkbox is erroneously displayed when configuring tests 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The &quot;Is Calculated Result&quot; option is visible on the test definition details view for tests that are configured via the APF when it should not be an option since it is a &quot;closed&quot; definition and cannot be used as a calculated result name. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Don&#39;t check the box to mark a test as calculated result. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Sample racks without a barcode label might not generate a sample event when the user interface is configured for a language other than English 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When the system cannot read a rack barcode the event about the missing/unreadable barcode does not display in non-english languages. For the test case with a rack ID without a barcode in a mix of racks, there is no event displayed at all. Machine Control log files do indicate what the issue is from a service troubleshooting standpoint, but the customer will have to rely on the sample list screen showing the sample requested is still pending rather than waiting for the event until this anomaly is fixed. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">QNS Event Description Incorrectly Identifies Number of Replicates for Each Assay 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> QNS event description reports a replicate count that double counts the base test and includes the count of all potential rerun tests. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Log Transform Curve Details Incorrect 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Any calibration that requires a Log Transform Offset (i.e. a Spline Fit Log10 Transform Model) cannot be calculated correctly. There are no tests currently using this parameter/math model. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Precision Sample Pipettor Cannot Calculate Height for Negative Volume and Causes System Hard Stop 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Despite the QNS reported during sample aliquot, still empty SV was declared ready for test scheduling. The &quot;negative volume&quot; error was declared as Precision sample pipettor attempted to aspirate from empty SV. The system will not attempt to use the empty SV, but the system will stop processing. This issue has not been observed on any released assays. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Reflex Test Does Not Complete When Prep Type of Reflexed Test Doesn&#39;t Match Prep Type of Original Test 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If a reflex rule specifies a test that has a prep type (neat or dilute) different from the reflex test ordered, the reflex test will not run. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">An incorrect reagent serial number may be associated with calibration orders 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When user orders a calibration from the reagent details screen and review it on the calibration order details view; it appears that it will run on the specific pack. In fact, the system will only honor the lot, not the serial number. The system may run the curve on any available pack of that lot. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">The analyzer will not return to a green Running state after a computer restart if the system configuration includes two or more calculated results 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system will only allow a maximum of one calculated result to be configured. If the user attempts to create more than one, the instrument software will not start the next time the system is rebooted. The user must then remove all but one calculated result to get the system to start up. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Remove the one calculated result or reboot the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">The data range for Results to Disk files must be within the current year 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The Results to Disk date picker only allows you to pick the current calendar year. Users will not be able to export a date range that includes the prior year. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Increase &#39;MinimumDaysBack&#39; in falcon.settings and restart instrument. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">When the Clean Routine maintenance task fails, the maintenance workflow may remain on the user interface indefinitely 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the weekly clean routine fails, the maintenance wizard displays the text &quot;Redirecting&quot; instead of exiting the wizard or offering a next step. The user must close this tab and re-initialize. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Test Menu Update With Same Package File Name Clears Test Menu 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When a system does a test menu update from version A (manifest generated with RDM 3.6) to version B (manifest also generated with RDM 3.6) the test menu of the system is cleared. This will only occur for APFs that do not have the version information appended in the *.rapid file name. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> In the short term, manifests should be manually wrapped to ensure version data are part of the .rapid file name in the package. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">When Locking a Pipettor to a Specific Lot of Reagent, the Instrument Does Not Recognize the Presence of a Sample Diluent A Pack 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If a user attempts to use the Enhanced Test Order screen to direct the system to use a specific reagent lot for an onboard dilution area, the system will not process the request. Enhanced Test Order screen is for internal use only. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Excessive Lumi Drift Events in Audit Log 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the system is unable to perform the luminometer drift routine at the scheduled time, there will be an excessive number of events logged to the audit log about being unable to schedule this routine. This has no impact on the use of the system. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Result Processing Error when Processing QC run as Patient 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Results may not get assigned on samples that are frequently repeated and/or have a high number of tests requested. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Update settings file to set SampleIDReuse = -1 and restart the PC. This prevents aggregation of sample data so the data never grows past the 30MB size limit. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Allows to Use the Same Rack ID Among Different Sample Types (Patient/DC/Calibrator) 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> If the user swaps assigned rack IDs for pending calibration orders after they are initially assigned and saved, then the system does not prevent the user from programming patient samples or QC orders. If this rack is loaded, the system will attempt to process the patient or QC order on any unbarcoded tubes and the calibration order will remain in the ordered state. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Aliquoted Some Calibrator Levels Even Though All Containers Were Not Detected 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system attempts to aliquot calibrator material even though tubes aren&#39;t detected in all positions. The situation is corrected when the user loads the missing calibrator levels. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Make sure to use only known containers when building a rack. Ensure the SPU camera is calibrated correctly. Refer to 
+				  <a class="xref" href="GUID-622AE7FC-997F-4455-B82B-4281C3097192.html">Troubleshooting: Sample Container Detection</a> procedure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Wrong QC Order May Be Created After Calibration 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system should create a QC order after a calibration is performed for any available pack for the calibrated analyte. Instead, it is assigning the QC order to a specific onboard pack. If that specific pack is not available when the system attempts to run the test, the QC test could be cancelled. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Wait for the QC orders to expire and hope the patient samples can still be processed; or if available reload the missing pack(s). 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Invalid Cast Error when System Attempts to Cancel Scheduling Cleanout Operation 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Instrument goes offline as a result of incorrect cast operation after errors with pick and place sensor verification. A system initialization will return the system to normal operation. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">System Stops Scheduling New Tests after 25 days of Continuous Operation 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> After 25 days of the system software being continuously active (system is powered on, but does not need to be running tests continuously), running tests, the system will fail to schedule new tests. The system can be rebooted to correct the problem. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reboot the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Scheduler-Generated Calibration Event Not Translated in Set Console Language 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The event indicating that the scheduler needs a particular reagent pack to be loaded may be displayed in English instead of the user-configured language. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Incorrect Pack Delivery Time Estimation Causes System Hard Stop 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system estimates the time needed to transfer a reagent pack to the pipetting subsystems. The reagent pack exchange time is miscalculated, leading to incidents of &#39;Reagent pack is not at the pipettor nest&#39; errors, which stop system processing. The system can be returned to operation with a system initialization. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Calibration Mini Chart on Reagent Details Screen Displays in Default Unit Rather than User Unit 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The calibration mini chart on the reagent details screen is always shown in the assay&#39;s default unit, even if the user configured a different unit. The full calibration details screen always shows the curve in user unit, so this chart should be synchronized to match. This does not affect the calibration curve status in any way. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Duplicate Test Order Send Result in Cancelled Tests 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system may send in the test list to the instrument of a reflex add on order some orders from the primary request that have already been acknowledged and aspirated by the system. When the system receives these orders in the addon list it does not recognize that they are samples already running on the system and ends up cancelling them and reporting a sample action for Sample Not Onboard. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">&quot;Calibration&quot; Priority Text Not Localized on Samples List Page 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The priority text for &quot;Calibration&quot; is not localized on the samples list page for a calibration sample when the console application is changed to a different language from English. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Wash Wheel Generic Failure (Boolean) 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> On occasion, utility assays that do not do washing may stop unexpectedly due to a wash wheel error. This can occur when a service assay is requested directly, such as ASD substrate blank, or during a pre-run prime. In the latter case, the user requests normal assay(s), but the system queues up one or more substrate prime vessels to run before the normal assay(s). If the error occurs in this case, in-progress tests will be cancelled. 
+				</td> 
+				<td class="entry" headers="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> The user can recover by re-initializing the system and attempting the same requests again. 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html">Known Bugs and Behaviors</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" title="25.5.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2 </span>Known Bugs and Behaviors</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-0A82D0D7-CEB2-4E16-A9D7-2B6E166119A7.html" lang="en-US" title="25.5.2.5 Software 1.17/1.17.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2.5 </span>Software 1.17/1.17.2 Known Bugs and Behaviors</div></a></div></article></main></div></noscript><script src="static/body.js?rJAUfFpk" type="text/javascript"></script></body></html>

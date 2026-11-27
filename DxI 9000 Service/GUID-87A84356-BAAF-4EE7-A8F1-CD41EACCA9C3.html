@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="A list of known bugs or behaviors and countermeasures for recovery for system software version 1.24." name="description" /><meta content="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="July 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BK" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="10/07/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="C65079" name="FBCPARTNUM" /><meta content="None" name="FBCMANUFACTUREDBY" /><meta content="Service" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="16/06/2026 18:37:18" name="FISHPUBREVIEWENDDATE" /><meta content="10/07/2026 16:28:15" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4" name="FMAPID" /><meta content="07/07/2026 18:25:47" name="MODIFIED-ON" /><meta content="16/06/2026 20:29:13" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-E0B2E065-B380-4B5E-AC7F-13F39D148EBC" name="FISHMASTERREF" /><meta content="DxI 9000 Service Manual-v37-GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4-20260616 20:29:13" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BK" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="37" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI 9000 Service Manual" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="yes" name="print" /><meta content="no" name="printAll" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>25.5.2.8 Software 1.24 Known Bugs and Behaviors</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-8CCBD405-E05D-4A01-8AC4-2F6EB68424D6.html" rel="prev" /><link href="GUID-D85446AC-9539-4A38-8D9F-6E30E86AE9C7.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e252" data-relpath="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI 9000 Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI 9000 Service Manual</span><span id="emailpub">Publication: DxI 9000 Service Manual</span><span id="emailpartnum">Part Number: C65079</span><span id="emailrev">Revision: BK</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-5CE76F6C-C0CF-48EC-ABD1-486235680CB3" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3" role="article"> 
+  <h1 class="title topictitle1" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-5CE76F6C-C0CF-48EC-ABD1-486235680CB3"><a id="GUID-5CE76F6C-C0CF-48EC-ABD1-486235680CB3"></a>Software 1.24 Known Bugs and Behaviors</h1> 
+   
+  <div class="body conbody"><p class="shortdesc">A list of known bugs or behaviors and countermeasures for recovery for system software version 1.24. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Bug/Behavior:</strong> Summary of the software bug or system behavior. 
+		</li> 
+		<li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details:</strong> Explanation of the bug/behavior and how it may impact the system/user. 
+		</li> 
+		<li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_84FFD9541F4D4ADFB828455CD74C731A"><strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-C972260E-1848-47E9-A5BB-282CA0EB0015">Countermeasure:</strong> If applicable, countermeasure to resolve the condition inflicted by the bug/behavior. 
+		</li> 
+	 </ul> 
+	 </div> 
+	 <table class="table" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead">
+			 <tr class="row"> 
+				<th class="entry" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1"> 
+				  <strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-29E9731F-F403-42B2-B335-4E1B5E5302AF">Bug/Behavior</strong> 
+				</th> 
+				<th class="entry" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2"> 
+				  <strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-7DF3AD6D-D95F-4F60-8C01-C64E3CCE2A77">Details</strong> 
+				</th> 
+				<th class="entry" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3"> 
+				  <strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-2235A6F0-95BA-42C3-BB25-5A728FA34EFD">Countermeasure</strong> 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> When Logged In as LabUser, Some Overlays in Machine Control May Be Improperly Displayed with Red Text 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The Machine Control application contains a view of installed overlays, and is supposed to show unreleased overlays in a red color to warn service if the system is out of configuration. When logged into the LabUser account, some valid overlays will be erroneously shown in red. They are displayed correctly in the Administrator Account. Machine Control application is hidden by default unless enabled by a service engineer. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> An incorrect reagent serial number may be associated with calibration orders 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When you order a calibration from the reagent details screen and review it on the calibration order details view it appears that it will run on the specific pack. In fact, the system will only honor the lot, not the serial number. They system may run the curve on any available pack of that lot. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Error Handling Events Do Not Match Instrument Status 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Red system events from some errors state that &quot;The analyzer cannot process samples.&quot;, but for error handling conditions where the recovery is successful, the instrument returns to a running state and will accept new samples, but the red system event isn&#39;t dismissed. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Semi-Quantitative and Quantitative QC mean calculation is incorrect when units are changed 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The QC statistics values will not be calculated correctly if the data points use different units. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The summary statistics on the control cannot be used if it contains values of mixed units. The user must create a new control if they want to change the unit. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Default Save Directory Errors When Exporting Data Files 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When there are errors trying to export data for offline review to the pre-configured export destination the messages reported to the user are unhelpful in resolving the issue. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> LIS code and Test Code Mismatch Causes Test to not Show on Enhanced Test Order Screen 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If LIS code is configured to be different from default test code, Enhanced Test Order screen will not display the test. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. This screen is for internal users only. Customers are not directed to use this screen. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> User Unable to Save Changes to On-board QC Orders Intermittently 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Sometimes when trying to manually order QC or cancel QC the user is unable to save the changes and is shown an error dialog that says &quot;An unexpected error occurred.&quot; The user must attempt to save the order multiple times or modify the order in multiple smaller steps for the update to be saved successfully. This occurs mostly on high volume systems that run a lot of controls across their workday. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. The order can still eventually be saved. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Results Stuck in Transmitting State if LIS Configuration is Changed or Software is Restarted While they are Waiting to Send 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Some results in the &quot;Transmitting&quot; state may not get transmitted if the LIS Configuration is changed or the software is restarted. When this happens, then only 10-20 samples are transmitted when the LIS connection is re-established. The rest stay in the &quot;Transmitting&quot; state. There are only two types of results transmission scenarios where this is occurring: * The results were reruns * The results were requested for re-transmission by clicking the &quot;Resend to LIS&quot; button on the result review page This scenario would likely only occur if the LIS connection is being setup for the first time or the lab is experiencing LIS connectivity issues that requires a configuration change or a software restart. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> To recover and have the remaining transmitted, either the LIS Configuration can be changed again or the console software can be restarted again and the next approximately 10 samples will be sent. Repeat this process until all samples are sent. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Calibration Auto Order Placed for MeMed Child Assays with Active Curve from Edit Order Screen 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When reagent lots are loaded for all MeMed child assays and calibrated with an active curve, then new reagent lot is loaded only for one of the tests, e.g. the CRP child assay, an auto order is placed for the newly loaded lot. However, after navigating back to the Edit Order screen, snoozing the order, and then unsnoozing it, calibration orders are placed for the other two child assays, Trail and IP10, which already have active curves, along with the newly loaded CRP reagent lot. This only applies to the MeMed assay due to it&#39;s unique design. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The system could over-use calibrator and reagents since technically only one of the calibrations due and this will re-calibrate all constituents. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Calibration Time Until Due Incorrectly Displayed as N/A 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When an assay has a valid calibration and a new calibration is run, the Calibration Time Until Due is Incorrectly Displayed as &quot;N/A&quot; instead of the &quot;Days&quot; or &quot;Hours&quot; left on the valid calibration. This occurs on the Calibration Impact tiles on the user interface in the Calibration Due Now -&gt; All Calibrations Page. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The remaining calibration time for the valid calibration is not shown while the new calibration is in progress. Users can see the actual calibration curve expiration date by selecting the &quot;Details&quot; view from the &quot;All Calibrations&quot; page. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Hourly cyclic interval of QC not work after you changing from 24 to 8 and change back to 24 again before expected due time 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Hourly cyclic interval of QC does not auto order at daily start time, after user changing from 24 to 8 and change back to 24 again before expected due time. In an unlikely scenario where the user changes the QC auto due frequency multiple times before the daily start time, the QC becomes auto due at incorrect time (there is no issue in the frequency only issue with the due time). 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Lumi LED Voltage Search for RLU Targets (Stitching RLUs) Failed but No Message to Retry LED Voltage Search and Reschedule LumiDrift 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> An unexpected failure mode was found on an internal instrument and prevented the Luminometer drift check diagnostic from completing. Due to the unexpected failure, the performance of the instrument was not verified. However, the failure was not correctly handled and the instrument continued to run samples without fully notifying the user of the problem. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The instrument ran samples with a luminometer calibration that was not verified to be within the expected performance range. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> RSU package download hangs due to intermittent connection 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When the RSU package is sent from IntelliServe, it may not arrive at the system and the download hangs. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. Currently installations are only performed by field service. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> New test can begin while Software Installation is going via RSU 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If a sample starts processing in the very small window after the installer checks, but before the installer shuts down the applications, a test could start. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. Currently installations are only performed by field service and they will not begin until tests are completed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Substrate Unload Workflow Error when Unloading Both Bottles 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> An unexpected error was reported to the user when attempting to unload both bottles of substrate without a replacement. The user was able to restore instrument operation with basic troubleshooting and loading new bottles of substrate. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User can recover by either restarting software or pausing and unpausing system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> System Initialize Race Condition Leaves Instrument in Paused Mode - Trouble Shooting Wizard(s) 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> There is a small opportunity for the system to become stuck in a paused state while a troubleshooting wizard workflow is in progress. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The user should avoid pushing the buttons in rapid succession if possible. If this occurs, the user will need to restart the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Patient Sample Loaded and not Processed for Non-Barcoded Samples 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> In rare cases, the test order for a non-barcoded tube may not be processed when loaded even though there is a pending manual order. No sample will be aspirated and the order will remain pending. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User will be confused why the sample was not processed. The user can cancel the test, reorder and re-present the sample. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Tests Can Become Stuck in Progress if LIS Sends Test Orders Using Multiple &quot;O&quot; Order Records 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If the LIS sends a host-query response for a sample that contains multiple order records, a software deadlock can occur that results in the sample remaining stuck in progress. The tests will eventually be cancelled after the 5-hour limit expires. This does not affect Remisol-connected systems, as Remisol always communicates multiple test requests within a single order record. As a workaround, if possible the customer LIS should be configured to send multiple orders within a single order record. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Samples can be stuck in progress for up to 5 hours and flagged NRT. As a countermeasure, if possible the customer LIS should be configured to send multiple orders within a single order record. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Calibration Orders Screen Showing Orders for Inactive Calibration Lots 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When a new calibration lot is set active, the system removes any existing order for the current calibration lot and places an order for the new lot. When this bug occurs, there is an order for the newly active calibration lot, and the previous (now inactive) lot. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. The customer may modify the auto-ordered calibrations. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Old Completed QC Sample Stuck in Result Processing Step, Delaying the Processing of New Results 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The control test result may remain in running status after the projected completion time, not reporting results until minutes later. While this test result is being processed, other new results (patients, controls, calibrators) may also have prolonged processing time. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User is unable to immediately review test results until the prolonged processing is completed. Service can also correct with a script. See 
+				  <a class="xref" href="GUID-41481ACD-C644-4F90-9A72-585361E0CC40.html">Executing Scripts Using the Service App</a> for more information. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Opening DxS IntelliServe Configuration Screen Freezes UI for up to 1 minute 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The IntelliServe Connection page takes an unusually long time to load (approximately 1 minute). No action is needed, the service engineer simply needs to wait longer. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Substrate Loader Mechanical Initialize Timeout 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> System initialization could fail if the system is unable to retrieve supply information from the database within a time limit. This has only been observed in software automated testing, and is unlikely to occur on real systems. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User may need to repeat initialization. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Disabled Pipettors Prevent Probe Cleaning and Test Scheduling 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If pipettors have been disabled by service and support, probe cleaning cannot occur and new tests will not start and there is not a clear indication on the user interface why that is the case. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. Users are directed in the IFU to use this screen only under supervision of technical support. 
+				  <ol class="ol" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__OL_48E983DDC7754F7099F7D4E117BBD294">
+					 <li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_2A712675727F4D6F9FB1B4ACAED5A240">Ensure all pipettors are enabled
+					 </li> 
+					 <li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_62D499C062704FA693C482BB89591380">Initialize the instrument
+					 </li> 
+					 <li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_372ED4644A55432CB0A0391877E77D9B">Either allow the system to automatically run priming, or manually trigger the priming
+					 </li> 
+					 <li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_710EF63650944CFD91B4911F87A56B5E">After priming completion, disable pipettors are needed to prevent hard stops
+					 </li>
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Events Show Incorrect Reagent Pack Position After Barcode Reading Failure 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When an issue occurs loading a reagent pack, an event is created and the position is shown on screen to facilitate troubleshooting. The slot number displayed is off-by-one. They are labeled 1-4 but software considers these positions 0-3. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. The user can identify the problem pack by loading them one at a time. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> SPU Auto-Recovery: Critical Event and Red Light Bar Remain On 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> After a successful SPU auto-recovery from an error, the system status will remain red until the user initializes the system. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Initialize the instrument. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> &#39;Time Remaining&#39; Display Issue At The Bottom Of The Screen For &#39;Lumi Drift&#39; diagnostics 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> No &#39;Time Remaining&#39; is shown in the user interface task bar for &#39;Lumi Drift&#39; diagnostic. It may be hard to predict for the user when the instrument will be available again for normal use. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. User will not be able to predict how long until the luminometer drift diagnostic is going to take to finish. System will return to normal operation as soon as the diagnostic is completed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Unintended Multiple Aliquots for Tests in Pending State When Rack is Represented 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The system incorrectly performs duplicate aliquots when a previously introduced sample is re-presented while its associated tests remain in the &#39;Queued&#39; state. In this scenario, Falcon&#39;s logic misinterprets the re-presentation as a need for additional sample volume, leading to redundant aliquoting. This behavior deviates from the expected single-aliquot process and contrasts with the correct handling of re-presented samples when tests are in the &#39;Scheduled&#39; state, where no further aliquoting occurs. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. The system may aliquot more sample than is required. Tests will be run normally. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> If Reflex and Rerun Rule are Both Triggered, Only One Is Ordered Successfully 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When multiple rule actions are configured for the same rule condition for example: * If the test is A, Rerun A. * If the test is A, Reflex B. And when a calculated test is configured (the calculated test expression should contain the tests that are being ordered as part of the rule actions) for example: CalTest = A+B Then sometimes due to a race condition, the rule action to create the reflex test may fail. As a workaround, user can create a single rule that reflexes test A &amp; test B to achieve the same outcome. For example: If the test is A, reflex A &amp; Reflex B with suppress checkbox uncheck. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Rerun and Reflex actions should not be used together in the same rule. Only use the Reflex rule action with the Suppress option disabled if both Rerun and Reflex tests are needed for a single rule. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Reserve Volume Not Aliquoted for Combo tests when Default Reserve is Enabled for Parent Test but Not Constituent Tests 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The new reserve volume setup screen does not group combo test constituents (e.g. HIVCombo = HIVAg &amp; HIVAb), which allows users to enable default reserve for the parent test without also enabling the constituent tests. If not enabled for all constituents, reserve volume will not be drawn. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The user must individually check all test components when configuring reserve volume. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Manual Dilution Factor Not Applied to Addon Test When Ordered Before All Tests on Tube Complete 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Result processing is applying the manual dilution factor listed on the tube order instead of the dilution factor listed on each of the test order requests. This can be encountered when an additional order is placed for the same sample ID before all tests on the sample have been completed. In this situation, it allows the user to order a new test request with their configured dilution factor, but does not actually apply this dilution factor to the calculated result, although it will still show a label indicate a dilution factor was applied. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Potential exists for the wrong dilution factor to be applied. Only the dilute and rerun button should be used for rerunning samples. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> &#39;Finish In Progress Tests&#39; During Error Handling Preventing Instrument Pause 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> In rare cases, the system may be stuck in Paused mode after a hardware error. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact, system is already disabled by hardware error. User can recover with routine troubleshooting (reboot). 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Hard Stop during Cancelation of Already Started Aliquot from Automation 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If the aliquot sample pipettor fails to rendezvous with the track to the sample wheel during sample dispense, the system handles this error poorly and causes the system to stop processing. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The user must re-initialize the system to resume operation. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Don&#39;t Cancel Already Started Aliquot on AutomationTubeReleaseTimer Timeout 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If a system is completely out of tips, but then tips are loaded just before the automation tube timeout occurs, the aliquot can fail and the system will hard stop. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User must reinitialize the system. Proactively add more tip trays before the system runs out completely. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Duplicate Menu Plugin Registration Leads to Fatal Startup Error 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Occasionally after switching PC users, the Console app fails to startup with a fatal error popup with the message &quot;Menu is already registered&quot;. This appears to be due to an issue in the console code where duplicate menu plugins could potentially be registered. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> This only affects service users who may be performing tasks in the administrator profile. Restarting the PC can resolve the issue. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Test Requests Stack Indefinitely in Queued State after Vessel Manual Removal 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Under some conditions when a vessel is unexpectedly removed from the system (e.g. by a service engineer performing a recovery), or falls out of a pick and place, the system is unable to recover and schedule new tests. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User must reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Precision Sample Pipettor Reserved Indefinitely after PnP Error, Preventing Running Further Tests 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> After one of APnP failures, system recovers to the green Running state, but stopped running any samples. The investigation showed that Precision SP was indefinitely reserved, preventing running any tests. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> System may not recover optimally after a pick and place error. User can re-initialize the system to restore normal operation. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Instrument in Indefinite Pausing while WW Rotating and Washing Indefinitely 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> After APnP error, the Wash Wheel rotated indefinitely, preventing running any tests. After operator pushed the Paused button, the instrument stack in &quot;Pausing&quot; state. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> System may not recover optimally after a pick and place error. User can re-initialize the system to restore normal operation. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Samples Not Released at Track Direct Track Sampling (DTS) queue 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> In rare cases, the DxI 9000 may fail to send a &quot;Get Tube&quot; to the track system, causing in samples to remain at the DTS location without notifying the user. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Samples will remain queued at the DxI 9000 until a user notifies the problem and manually resets the queue. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Add-on Tests Don&#39;t Release the Rack when using Reserve Volume 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> A sample rack can become locked to a specific sample after an add-on order is created when using reserve volume. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The user can load and unload the problem rack to clear the issue. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> LIS Download Status is not Reset to Pending when a Custom Reserve Add On is Canceled 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When the instrument is configured to use a Custom Reserve volume and receives add-on orders for a sample with insufficient volume to process the order, the instrument sends a cancellation message for part or all of the order. However, this message may not be understood by all LIS systems and the LIS may show the order as incomplete. This may cause user confusion. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Not Able to Perform Service Login After Midnight UTC 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The service authentication tool cannot be used after UTC midnight, affecting ability to perform certain tasks protected by service password at certain times of day depending on system location. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Audit Log Does Not Show All Entries 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Some software update log entries are not displayed on the audit log screen, but are still included in the audit log export. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Export can be used to display the missing entries. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Set Calibration Inactive Fails to Update Disabled Combo Tests 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The luminometer service procedure may fail to fully update all assay calibrations after service. This could be detected by controls performed by Service or by the lab; but it may be missed and allow the lab to run samples on the system without recalibrating the assays. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. Activity can only be performed by service. Resetting Dift Targets procedure requires recalibration of all assays. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> RSU Allows Arbitrary Version Install on First Update Post-Standalone 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The initial remote software update (RSU) of system software update on an instrument, after a standalone install in manufacturing, is allowed to be any version. This means it is possible to initiate an update for a previous software version. This only impacts the first install after the standalone install, since all RSU updates are tracked in the RSU database and downgrades are not allowed. An RSU installation is any installation that uses the &quot;.bec&quot; version of the installer. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. After leaving manufacturing, system must still be installed at customer site, during which the installation team will have control of the initial software version of the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Message Frequency Text Value Displayed is Not Updated Dynamically After User Changes It 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> On the LIS configuration screen, clicking on the text box for the message frequency will pop open an input field and the on-screen keyboard. When the user changes the value in the pop up field and presses the &#39;Done&#39; button, the main text box does not update even though the new value is saved. The correct new value is displayed properly if you close and re-open the configuration screen. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. Close and reopen the configuration screen after changing this value. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Tests not Started after Pick and Place Error Followed by Successful Recovery 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> After some pick and place failures, the system recovers to the green Running state but stops running any samples. The software is not clearing the reservations on the subsystems, which causes scheduling of new tests to be blocked. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Tests will not resume processing after an error recovery is attempted after pick and place errors. If this occurs, the system must be stopped and re-initialized to resume normal operations. 
+				</td> 
+			 </tr> 
+		  </tbody></table>
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html">Known Bugs and Behaviors</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" title="25.5.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2 </span>Known Bugs and Behaviors</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3.html" lang="en-US" title="25.5.2.8 Software 1.24 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2.8 </span>Software 1.24 Known Bugs and Behaviors</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">C65079BK</div></li><li><div id="date">July 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-5CE76F6C-C0CF-48EC-ABD1-486235680CB3" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3" role="article"> 
+  <h1 class="title topictitle1" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-5CE76F6C-C0CF-48EC-ABD1-486235680CB3"><a id="GUID-5CE76F6C-C0CF-48EC-ABD1-486235680CB3"></a>Software 1.24 Known Bugs and Behaviors</h1> 
+   
+  <div class="body conbody"><p class="shortdesc">A list of known bugs or behaviors and countermeasures for recovery for system software version 1.24. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Bug/Behavior:</strong> Summary of the software bug or system behavior. 
+		</li> 
+		<li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details:</strong> Explanation of the bug/behavior and how it may impact the system/user. 
+		</li> 
+		<li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_84FFD9541F4D4ADFB828455CD74C731A"><strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-C972260E-1848-47E9-A5BB-282CA0EB0015">Countermeasure:</strong> If applicable, countermeasure to resolve the condition inflicted by the bug/behavior. 
+		</li> 
+	 </ul> 
+	 </div> 
+	 <table class="table" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead">
+			 <tr class="row"> 
+				<th class="entry" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1"> 
+				  <strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-29E9731F-F403-42B2-B335-4E1B5E5302AF">Bug/Behavior</strong> 
+				</th> 
+				<th class="entry" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2"> 
+				  <strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-7DF3AD6D-D95F-4F60-8C01-C64E3CCE2A77">Details</strong> 
+				</th> 
+				<th class="entry" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3"> 
+				  <strong class="ph b" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__GUID-2235A6F0-95BA-42C3-BB25-5A728FA34EFD">Countermeasure</strong> 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> When Logged In as LabUser, Some Overlays in Machine Control May Be Improperly Displayed with Red Text 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The Machine Control application contains a view of installed overlays, and is supposed to show unreleased overlays in a red color to warn service if the system is out of configuration. When logged into the LabUser account, some valid overlays will be erroneously shown in red. They are displayed correctly in the Administrator Account. Machine Control application is hidden by default unless enabled by a service engineer. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> An incorrect reagent serial number may be associated with calibration orders 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When you order a calibration from the reagent details screen and review it on the calibration order details view it appears that it will run on the specific pack. In fact, the system will only honor the lot, not the serial number. They system may run the curve on any available pack of that lot. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Error Handling Events Do Not Match Instrument Status 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Red system events from some errors state that &quot;The analyzer cannot process samples.&quot;, but for error handling conditions where the recovery is successful, the instrument returns to a running state and will accept new samples, but the red system event isn&#39;t dismissed. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Semi-Quantitative and Quantitative QC mean calculation is incorrect when units are changed 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The QC statistics values will not be calculated correctly if the data points use different units. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The summary statistics on the control cannot be used if it contains values of mixed units. The user must create a new control if they want to change the unit. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Default Save Directory Errors When Exporting Data Files 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When there are errors trying to export data for offline review to the pre-configured export destination the messages reported to the user are unhelpful in resolving the issue. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> LIS code and Test Code Mismatch Causes Test to not Show on Enhanced Test Order Screen 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If LIS code is configured to be different from default test code, Enhanced Test Order screen will not display the test. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. This screen is for internal users only. Customers are not directed to use this screen. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> User Unable to Save Changes to On-board QC Orders Intermittently 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Sometimes when trying to manually order QC or cancel QC the user is unable to save the changes and is shown an error dialog that says &quot;An unexpected error occurred.&quot; The user must attempt to save the order multiple times or modify the order in multiple smaller steps for the update to be saved successfully. This occurs mostly on high volume systems that run a lot of controls across their workday. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. The order can still eventually be saved. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Results Stuck in Transmitting State if LIS Configuration is Changed or Software is Restarted While they are Waiting to Send 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Some results in the &quot;Transmitting&quot; state may not get transmitted if the LIS Configuration is changed or the software is restarted. When this happens, then only 10-20 samples are transmitted when the LIS connection is re-established. The rest stay in the &quot;Transmitting&quot; state. There are only two types of results transmission scenarios where this is occurring: * The results were reruns * The results were requested for re-transmission by clicking the &quot;Resend to LIS&quot; button on the result review page This scenario would likely only occur if the LIS connection is being setup for the first time or the lab is experiencing LIS connectivity issues that requires a configuration change or a software restart. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> To recover and have the remaining transmitted, either the LIS Configuration can be changed again or the console software can be restarted again and the next approximately 10 samples will be sent. Repeat this process until all samples are sent. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Calibration Auto Order Placed for MeMed Child Assays with Active Curve from Edit Order Screen 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When reagent lots are loaded for all MeMed child assays and calibrated with an active curve, then new reagent lot is loaded only for one of the tests, e.g. the CRP child assay, an auto order is placed for the newly loaded lot. However, after navigating back to the Edit Order screen, snoozing the order, and then unsnoozing it, calibration orders are placed for the other two child assays, Trail and IP10, which already have active curves, along with the newly loaded CRP reagent lot. This only applies to the MeMed assay due to it&#39;s unique design. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The system could over-use calibrator and reagents since technically only one of the calibrations due and this will re-calibrate all constituents. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Calibration Time Until Due Incorrectly Displayed as N/A 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When an assay has a valid calibration and a new calibration is run, the Calibration Time Until Due is Incorrectly Displayed as &quot;N/A&quot; instead of the &quot;Days&quot; or &quot;Hours&quot; left on the valid calibration. This occurs on the Calibration Impact tiles on the user interface in the Calibration Due Now -&gt; All Calibrations Page. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The remaining calibration time for the valid calibration is not shown while the new calibration is in progress. Users can see the actual calibration curve expiration date by selecting the &quot;Details&quot; view from the &quot;All Calibrations&quot; page. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Hourly cyclic interval of QC not work after you changing from 24 to 8 and change back to 24 again before expected due time 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Hourly cyclic interval of QC does not auto order at daily start time, after user changing from 24 to 8 and change back to 24 again before expected due time. In an unlikely scenario where the user changes the QC auto due frequency multiple times before the daily start time, the QC becomes auto due at incorrect time (there is no issue in the frequency only issue with the due time). 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Lumi LED Voltage Search for RLU Targets (Stitching RLUs) Failed but No Message to Retry LED Voltage Search and Reschedule LumiDrift 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> An unexpected failure mode was found on an internal instrument and prevented the Luminometer drift check diagnostic from completing. Due to the unexpected failure, the performance of the instrument was not verified. However, the failure was not correctly handled and the instrument continued to run samples without fully notifying the user of the problem. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The instrument ran samples with a luminometer calibration that was not verified to be within the expected performance range. No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> RSU package download hangs due to intermittent connection 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When the RSU package is sent from IntelliServe, it may not arrive at the system and the download hangs. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. Currently installations are only performed by field service. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> New test can begin while Software Installation is going via RSU 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If a sample starts processing in the very small window after the installer checks, but before the installer shuts down the applications, a test could start. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. No countermeasure. Currently installations are only performed by field service and they will not begin until tests are completed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Substrate Unload Workflow Error when Unloading Both Bottles 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> An unexpected error was reported to the user when attempting to unload both bottles of substrate without a replacement. The user was able to restore instrument operation with basic troubleshooting and loading new bottles of substrate. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User can recover by either restarting software or pausing and unpausing system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> System Initialize Race Condition Leaves Instrument in Paused Mode - Trouble Shooting Wizard(s) 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> There is a small opportunity for the system to become stuck in a paused state while a troubleshooting wizard workflow is in progress. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The user should avoid pushing the buttons in rapid succession if possible. If this occurs, the user will need to restart the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Patient Sample Loaded and not Processed for Non-Barcoded Samples 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> In rare cases, the test order for a non-barcoded tube may not be processed when loaded even though there is a pending manual order. No sample will be aspirated and the order will remain pending. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User will be confused why the sample was not processed. The user can cancel the test, reorder and re-present the sample. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Tests Can Become Stuck in Progress if LIS Sends Test Orders Using Multiple &quot;O&quot; Order Records 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If the LIS sends a host-query response for a sample that contains multiple order records, a software deadlock can occur that results in the sample remaining stuck in progress. The tests will eventually be cancelled after the 5-hour limit expires. This does not affect Remisol-connected systems, as Remisol always communicates multiple test requests within a single order record. As a workaround, if possible the customer LIS should be configured to send multiple orders within a single order record. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Samples can be stuck in progress for up to 5 hours and flagged NRT. As a countermeasure, if possible the customer LIS should be configured to send multiple orders within a single order record. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Calibration Orders Screen Showing Orders for Inactive Calibration Lots 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When a new calibration lot is set active, the system removes any existing order for the current calibration lot and places an order for the new lot. When this bug occurs, there is an order for the newly active calibration lot, and the previous (now inactive) lot. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. The customer may modify the auto-ordered calibrations. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Old Completed QC Sample Stuck in Result Processing Step, Delaying the Processing of New Results 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The control test result may remain in running status after the projected completion time, not reporting results until minutes later. While this test result is being processed, other new results (patients, controls, calibrators) may also have prolonged processing time. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User is unable to immediately review test results until the prolonged processing is completed. Service can also correct with a script. See 
+				  <a class="xref" href="GUID-41481ACD-C644-4F90-9A72-585361E0CC40.html">Executing Scripts Using the Service App</a> for more information. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Opening DxS IntelliServe Configuration Screen Freezes UI for up to 1 minute 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The IntelliServe Connection page takes an unusually long time to load (approximately 1 minute). No action is needed, the service engineer simply needs to wait longer. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Substrate Loader Mechanical Initialize Timeout 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> System initialization could fail if the system is unable to retrieve supply information from the database within a time limit. This has only been observed in software automated testing, and is unlikely to occur on real systems. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User may need to repeat initialization. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Disabled Pipettors Prevent Probe Cleaning and Test Scheduling 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If pipettors have been disabled by service and support, probe cleaning cannot occur and new tests will not start and there is not a clear indication on the user interface why that is the case. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. Users are directed in the IFU to use this screen only under supervision of technical support. 
+				  <ol class="ol" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__OL_48E983DDC7754F7099F7D4E117BBD294">
+					 <li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_2A712675727F4D6F9FB1B4ACAED5A240">Ensure all pipettors are enabled
+					 </li> 
+					 <li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_62D499C062704FA693C482BB89591380">Initialize the instrument
+					 </li> 
+					 <li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_372ED4644A55432CB0A0391877E77D9B">Either allow the system to automatically run priming, or manually trigger the priming
+					 </li> 
+					 <li class="li" id="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__LI_710EF63650944CFD91B4911F87A56B5E">After priming completion, disable pipettors are needed to prevent hard stops
+					 </li>
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Events Show Incorrect Reagent Pack Position After Barcode Reading Failure 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When an issue occurs loading a reagent pack, an event is created and the position is shown on screen to facilitate troubleshooting. The slot number displayed is off-by-one. They are labeled 1-4 but software considers these positions 0-3. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. The user can identify the problem pack by loading them one at a time. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> SPU Auto-Recovery: Critical Event and Red Light Bar Remain On 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> After a successful SPU auto-recovery from an error, the system status will remain red until the user initializes the system. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Initialize the instrument. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> &#39;Time Remaining&#39; Display Issue At The Bottom Of The Screen For &#39;Lumi Drift&#39; diagnostics 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> No &#39;Time Remaining&#39; is shown in the user interface task bar for &#39;Lumi Drift&#39; diagnostic. It may be hard to predict for the user when the instrument will be available again for normal use. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. User will not be able to predict how long until the luminometer drift diagnostic is going to take to finish. System will return to normal operation as soon as the diagnostic is completed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Unintended Multiple Aliquots for Tests in Pending State When Rack is Represented 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The system incorrectly performs duplicate aliquots when a previously introduced sample is re-presented while its associated tests remain in the &#39;Queued&#39; state. In this scenario, Falcon&#39;s logic misinterprets the re-presentation as a need for additional sample volume, leading to redundant aliquoting. This behavior deviates from the expected single-aliquot process and contrasts with the correct handling of re-presented samples when tests are in the &#39;Scheduled&#39; state, where no further aliquoting occurs. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. The system may aliquot more sample than is required. Tests will be run normally. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> If Reflex and Rerun Rule are Both Triggered, Only One Is Ordered Successfully 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When multiple rule actions are configured for the same rule condition for example: * If the test is A, Rerun A. * If the test is A, Reflex B. And when a calculated test is configured (the calculated test expression should contain the tests that are being ordered as part of the rule actions) for example: CalTest = A+B Then sometimes due to a race condition, the rule action to create the reflex test may fail. As a workaround, user can create a single rule that reflexes test A &amp; test B to achieve the same outcome. For example: If the test is A, reflex A &amp; Reflex B with suppress checkbox uncheck. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Rerun and Reflex actions should not be used together in the same rule. Only use the Reflex rule action with the Suppress option disabled if both Rerun and Reflex tests are needed for a single rule. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Reserve Volume Not Aliquoted for Combo tests when Default Reserve is Enabled for Parent Test but Not Constituent Tests 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The new reserve volume setup screen does not group combo test constituents (e.g. HIVCombo = HIVAg &amp; HIVAb), which allows users to enable default reserve for the parent test without also enabling the constituent tests. If not enabled for all constituents, reserve volume will not be drawn. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The user must individually check all test components when configuring reserve volume. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Manual Dilution Factor Not Applied to Addon Test When Ordered Before All Tests on Tube Complete 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Result processing is applying the manual dilution factor listed on the tube order instead of the dilution factor listed on each of the test order requests. This can be encountered when an additional order is placed for the same sample ID before all tests on the sample have been completed. In this situation, it allows the user to order a new test request with their configured dilution factor, but does not actually apply this dilution factor to the calculated result, although it will still show a label indicate a dilution factor was applied. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Potential exists for the wrong dilution factor to be applied. Only the dilute and rerun button should be used for rerunning samples. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> &#39;Finish In Progress Tests&#39; During Error Handling Preventing Instrument Pause 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> In rare cases, the system may be stuck in Paused mode after a hardware error. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact, system is already disabled by hardware error. User can recover with routine troubleshooting (reboot). 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Hard Stop during Cancelation of Already Started Aliquot from Automation 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If the aliquot sample pipettor fails to rendezvous with the track to the sample wheel during sample dispense, the system handles this error poorly and causes the system to stop processing. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The user must re-initialize the system to resume operation. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Don&#39;t Cancel Already Started Aliquot on AutomationTubeReleaseTimer Timeout 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> If a system is completely out of tips, but then tips are loaded just before the automation tube timeout occurs, the aliquot can fail and the system will hard stop. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User must reinitialize the system. Proactively add more tip trays before the system runs out completely. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Duplicate Menu Plugin Registration Leads to Fatal Startup Error 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Occasionally after switching PC users, the Console app fails to startup with a fatal error popup with the message &quot;Menu is already registered&quot;. This appears to be due to an issue in the console code where duplicate menu plugins could potentially be registered. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> This only affects service users who may be performing tasks in the administrator profile. Restarting the PC can resolve the issue. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Test Requests Stack Indefinitely in Queued State after Vessel Manual Removal 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Under some conditions when a vessel is unexpectedly removed from the system (e.g. by a service engineer performing a recovery), or falls out of a pick and place, the system is unable to recover and schedule new tests. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> User must reinitialize the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Precision Sample Pipettor Reserved Indefinitely after PnP Error, Preventing Running Further Tests 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> After one of APnP failures, system recovers to the green Running state, but stopped running any samples. The investigation showed that Precision SP was indefinitely reserved, preventing running any tests. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> System may not recover optimally after a pick and place error. User can re-initialize the system to restore normal operation. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Instrument in Indefinite Pausing while WW Rotating and Washing Indefinitely 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> After APnP error, the Wash Wheel rotated indefinitely, preventing running any tests. After operator pushed the Paused button, the instrument stack in &quot;Pausing&quot; state. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> System may not recover optimally after a pick and place error. User can re-initialize the system to restore normal operation. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Samples Not Released at Track Direct Track Sampling (DTS) queue 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> In rare cases, the DxI 9000 may fail to send a &quot;Get Tube&quot; to the track system, causing in samples to remain at the DTS location without notifying the user. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Samples will remain queued at the DxI 9000 until a user notifies the problem and manually resets the queue. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Add-on Tests Don&#39;t Release the Rack when using Reserve Volume 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> A sample rack can become locked to a specific sample after an add-on order is created when using reserve volume. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> The user can load and unload the problem rack to clear the issue. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> LIS Download Status is not Reset to Pending when a Custom Reserve Add On is Canceled 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> When the instrument is configured to use a Custom Reserve volume and receives add-on orders for a sample with insufficient volume to process the order, the instrument sends a cancellation message for part or all of the order. However, this message may not be understood by all LIS systems and the LIS may show the order as incomplete. This may cause user confusion. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Not Able to Perform Service Login After Midnight UTC 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The service authentication tool cannot be used after UTC midnight, affecting ability to perform certain tasks protected by service password at certain times of day depending on system location. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No countermeasure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Audit Log Does Not Show All Entries 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> Some software update log entries are not displayed on the audit log screen, but are still included in the audit log export. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Export can be used to display the missing entries. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Set Calibration Inactive Fails to Update Disabled Combo Tests 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The luminometer service procedure may fail to fully update all assay calibrations after service. This could be detected by controls performed by Service or by the lab; but it may be missed and allow the lab to run samples on the system without recalibrating the assays. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. Activity can only be performed by service. Resetting Dift Targets procedure requires recalibration of all assays. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> RSU Allows Arbitrary Version Install on First Update Post-Standalone 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> The initial remote software update (RSU) of system software update on an instrument, after a standalone install in manufacturing, is allowed to be any version. This means it is possible to initiate an update for a previous software version. This only impacts the first install after the standalone install, since all RSU updates are tracked in the RSU database and downgrades are not allowed. An RSU installation is any installation that uses the &quot;.bec&quot; version of the installer. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. After leaving manufacturing, system must still be installed at customer site, during which the installation team will have control of the initial software version of the system. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Message Frequency Text Value Displayed is Not Updated Dynamically After User Changes It 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> On the LIS configuration screen, clicking on the text box for the message frequency will pop open an input field and the on-screen keyboard. When the user changes the value in the pop up field and presses the &#39;Done&#39; button, the main text box does not update even though the new value is saved. The correct new value is displayed properly if you close and re-open the configuration screen. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> No impact. Close and reopen the configuration screen after changing this value. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__1 "> Tests not Started after Pick and Place Error Followed by Successful Recovery 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__2 "> After some pick and place failures, the system recovers to the green Running state but stops running any samples. The software is not clearing the reservations on the subsystems, which causes scheduling of new tests to be blocked. 
+				</td> 
+				<td class="entry" headers="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3__TABLE_797E174759EA4A7A9ACA8F0047B6E2B0__entry__3 "> Tests will not resume processing after an error recovery is attempted after pick and place errors. If this occurs, the system must be stopped and re-initialized to resume normal operations. 
+				</td> 
+			 </tr> 
+		  </tbody></table>
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html">Known Bugs and Behaviors</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" title="25.5.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2 </span>Known Bugs and Behaviors</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-87A84356-BAAF-4EE7-A8F1-CD41EACCA9C3.html" lang="en-US" title="25.5.2.8 Software 1.24 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2.8 </span>Software 1.24 Known Bugs and Behaviors</div></a></div></article></main></div></noscript><script src="static/body.js?rJAUfFpk" type="text/javascript"></script></body></html>

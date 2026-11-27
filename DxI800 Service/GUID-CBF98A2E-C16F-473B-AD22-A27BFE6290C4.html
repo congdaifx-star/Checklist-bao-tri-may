@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to inspect the substrate loader for loose or missing parts during substrate system troubleshooting." name="description" /><meta content="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" name="DC.Relation" scheme="URI" /><meta content="GUID-B284539A-0CBF-4B19-8B6A-EA778B77A193.html" name="DC.Relation" scheme="URI" /><meta content="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>12.6.10 Inspecting Substrate Loader During Troubleshooting</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-F9DA6AD0-ACBE-4990-A9E3-D391208D8A26.html" rel="prev" /><link href="GUID-1B998814-00E1-4FCE-BD68-57084804A200.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3844" data-relpath="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4" role="article"> 
+  <h1 class="title topictitle1" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Inspecting Substrate Loader During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to inspect the substrate loader for loose or missing parts during substrate system troubleshooting. 
+  </p> 
+	 <ol class="ol steps" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Prepare the substrate loader. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEPS_B6076DB41C6041E9A1DFA108608A8D84" type="a"> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_B1B475A67F28420A9EAD7364F467ADB3"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-C863E1AE-6FF7-4F01-8322-48A34F976FB3">Remove power by using the switch on the Power Distribution PCB labeled &quot;All DC power (except CPU and reagent coolers)&quot;. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_9D619151F8084AE7B490AB4BD62FE5C5"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-F14F89C3-D274-4540-BDD0-E0FA49C558D8">Remove the top air line from one of the substrate loader air cylinders to release air pressure from the system. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_917B05A20C61425ABD6782700D3E6717"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-1F9A71AB-617A-4D46-B9A3-E20E9C30A75E">Reattach the air line. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_258387D27D8F4A7E84275889B02FC2A4"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-05CD45BD-71C9-457F-BD1E-DC474A745E9F">Loosen, but do not remove, the six screws on the top plate of the substrate loader by two turns. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_D5241895B137454F8778963CF8EBAE15"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-AA00E6D8-9C6E-474C-A3E2-7D16FBFACC27">Remove the two screws that attach the substrate doors to the substrate loader. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_59C540F760784DDC980C4EA7E5F0FE57"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-4C1FC592-3C08-4D79-BF42-0633C80B2C23">Lift one door and spread the side walls enough to remove the door. Leave the substrate bottles in place. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_D6357EBAFAA140098C7CC265A62F8AD2"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-A38B8A0C-119D-4422-9D7D-EBD3B0FA013A">Lift the second door and spread the side walls enough to remove the door. Leave the substrate bottles in place. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_9CDB36D58228451EA63B6A815BBCBE60"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-4D775FDC-BD11-47CB-91B2-AA4D97313AB4">Remove both LED masks by removing the two screws in each. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__STEP_E1C968CE4F804CCBA6BDD98DD8FDA771"> 
+		  <span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-D84B9115-4E77-4E26-81EA-8590ED5CC9A2">Inspect the substrate loader. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEPS_FA979897FD68442F92E3B77D3C27BAB4" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_C2280FB3F41047679496231408047971"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-95CB7A0E-08B0-4270-ABF4-ACBFCCF8121B">Verify that the gasket is on the substrate cap. 
+				</span> 
+				<div class="itemgroup info">
+				  <figure class="fig fignone" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__FIG_DBB7D1B934C84F07AFB84139C6661AF3"><br /><img class="image" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__IMAGE_A4D11C695AB748AEB745C83D8DE5DEFE" src="GUID-267B2A69-0AA9-4E45-9BBD-BC07BBE47521-default.jpg" /><br />
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_63603AA8567E42D1B898348DB4DB9556"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-1426C4FA-05C9-4336-B7F0-513B5AFB460C">Verify that both the front and rear springs are under the cap bracket. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-0C59B62D-EF83-4BF2-BBD1-2D0B32062216"><span class="note__title">Caution:</span>  A small number of new installs have found that the front and rear springs were installed incorrectly (above the cap bracket) on the substrate cap bracket screws. Confirm that the springs are installed correctly (under the cap bracket). 
+				  </div> 
+				</div> 
+				<div class="itemgroup info">
+				  <figure class="fig fignone" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__FIG_306022BE84CA4DD086C1398C7C6677BD"><br /><img class="image" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__IMAGE_51BC9EB545E345CBB21391A30AD1EACD" src="GUID-047A5731-2381-485F-AE6A-F63AB1D79235-default.jpg" /><br />
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_98741476CFFA43A380AB07C7699C18E9"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-503C393F-E5EE-44A2-84E1-F2676A5DF43F">Reattach the two LED masks. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_01AF99925835443EABD224C930F37760"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-D9820AB6-D03C-4E04-A795-4F22FCAE3396">Spread the side walls to insert and attach each substrate door. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_871A64C6FF1E43508DE2D835281EE4B6"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-A6CE5A30-26CD-4B28-BBB9-F631507522D9">Tighten the six screws on the top plate of the substrate loader. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_A039C5A62D51406AA28FD59BE1AA45CD"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-26FA0013-E518-4935-8E58-123285C51BBE">Restore power by using the switch on the Power Distribution PCB labeled &quot;All DC power (except CPU and reagent coolers)&quot;. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html">Troubleshooting / Testing / Cleaning</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-B284539A-0CBF-4B19-8B6A-EA778B77A193.html" title="12 Fluidics Module"><div><span class="ph num-prefix">12 </span>Fluidics Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" title="12.6 Troubleshooting / Testing / Cleaning"><div><span class="ph num-prefix">12.6 </span>Troubleshooting / Testing / Cleaning</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4.html" lang="en-US" title="12.6.10 Inspecting Substrate Loader During Troubleshooting"><div><span class="ph num-prefix">12.6.10 </span>Inspecting Substrate Loader During Troubleshooting</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4" role="article"> 
+  <h1 class="title topictitle1" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Inspecting Substrate Loader During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to inspect the substrate loader for loose or missing parts during substrate system troubleshooting. 
+  </p> 
+	 <ol class="ol steps" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Prepare the substrate loader. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEPS_B6076DB41C6041E9A1DFA108608A8D84" type="a"> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_B1B475A67F28420A9EAD7364F467ADB3"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-C863E1AE-6FF7-4F01-8322-48A34F976FB3">Remove power by using the switch on the Power Distribution PCB labeled &quot;All DC power (except CPU and reagent coolers)&quot;. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_9D619151F8084AE7B490AB4BD62FE5C5"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-F14F89C3-D274-4540-BDD0-E0FA49C558D8">Remove the top air line from one of the substrate loader air cylinders to release air pressure from the system. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_917B05A20C61425ABD6782700D3E6717"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-1F9A71AB-617A-4D46-B9A3-E20E9C30A75E">Reattach the air line. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_258387D27D8F4A7E84275889B02FC2A4"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-05CD45BD-71C9-457F-BD1E-DC474A745E9F">Loosen, but do not remove, the six screws on the top plate of the substrate loader by two turns. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_D5241895B137454F8778963CF8EBAE15"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-AA00E6D8-9C6E-474C-A3E2-7D16FBFACC27">Remove the two screws that attach the substrate doors to the substrate loader. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_59C540F760784DDC980C4EA7E5F0FE57"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-4C1FC592-3C08-4D79-BF42-0633C80B2C23">Lift one door and spread the side walls enough to remove the door. Leave the substrate bottles in place. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_D6357EBAFAA140098C7CC265A62F8AD2"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-A38B8A0C-119D-4422-9D7D-EBD3B0FA013A">Lift the second door and spread the side walls enough to remove the door. Leave the substrate bottles in place. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_9CDB36D58228451EA63B6A815BBCBE60"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-4D775FDC-BD11-47CB-91B2-AA4D97313AB4">Remove both LED masks by removing the two screws in each. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__STEP_E1C968CE4F804CCBA6BDD98DD8FDA771"> 
+		  <span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-D84B9115-4E77-4E26-81EA-8590ED5CC9A2">Inspect the substrate loader. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEPS_FA979897FD68442F92E3B77D3C27BAB4" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_C2280FB3F41047679496231408047971"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-95CB7A0E-08B0-4270-ABF4-ACBFCCF8121B">Verify that the gasket is on the substrate cap. 
+				</span> 
+				<div class="itemgroup info">
+				  <figure class="fig fignone" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__FIG_DBB7D1B934C84F07AFB84139C6661AF3"><br /><img class="image" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__IMAGE_A4D11C695AB748AEB745C83D8DE5DEFE" src="GUID-267B2A69-0AA9-4E45-9BBD-BC07BBE47521-default.jpg" /><br />
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_63603AA8567E42D1B898348DB4DB9556"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-1426C4FA-05C9-4336-B7F0-513B5AFB460C">Verify that both the front and rear springs are under the cap bracket. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-0C59B62D-EF83-4BF2-BBD1-2D0B32062216"><span class="note__title">Caution:</span>  A small number of new installs have found that the front and rear springs were installed incorrectly (above the cap bracket) on the substrate cap bracket screws. Confirm that the springs are installed correctly (under the cap bracket). 
+				  </div> 
+				</div> 
+				<div class="itemgroup info">
+				  <figure class="fig fignone" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__FIG_306022BE84CA4DD086C1398C7C6677BD"><br /><img class="image" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__IMAGE_51BC9EB545E345CBB21391A30AD1EACD" src="GUID-047A5731-2381-485F-AE6A-F63AB1D79235-default.jpg" /><br />
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_98741476CFFA43A380AB07C7699C18E9"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-503C393F-E5EE-44A2-84E1-F2676A5DF43F">Reattach the two LED masks. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_01AF99925835443EABD224C930F37760"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-D9820AB6-D03C-4E04-A795-4F22FCAE3396">Spread the side walls to insert and attach each substrate door. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_871A64C6FF1E43508DE2D835281EE4B6"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-A6CE5A30-26CD-4B28-BBB9-F631507522D9">Tighten the six screws on the top plate of the substrate loader. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__SUBSTEP_A039C5A62D51406AA28FD59BE1AA45CD"> 
+				<span class="ph cmd" id="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4__GUID-26FA0013-E518-4935-8E58-123285C51BBE">Restore power by using the switch on the Power Distribution PCB labeled &quot;All DC power (except CPU and reagent coolers)&quot;. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html">Troubleshooting / Testing / Cleaning</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-B284539A-0CBF-4B19-8B6A-EA778B77A193.html" title="12 Fluidics Module"><div><span class="ph num-prefix">12 </span>Fluidics Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" title="12.6 Troubleshooting / Testing / Cleaning"><div><span class="ph num-prefix">12.6 </span>Troubleshooting / Testing / Cleaning</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-CBF98A2E-C16F-473B-AD22-A27BFE6290C4.html" lang="en-US" title="12.6.10 Inspecting Substrate Loader During Troubleshooting"><div><span class="ph num-prefix">12.6.10 </span>Inspecting Substrate Loader During Troubleshooting</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

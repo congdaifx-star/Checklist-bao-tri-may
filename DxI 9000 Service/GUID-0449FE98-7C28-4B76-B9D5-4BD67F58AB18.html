@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="A list of known bugs or behaviors for system software versions 1.14, and countermeasures for recovery." name="description" /><meta content="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="July 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BK" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="10/07/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="C65079" name="FBCPARTNUM" /><meta content="None" name="FBCMANUFACTUREDBY" /><meta content="Service" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="16/06/2026 18:37:18" name="FISHPUBREVIEWENDDATE" /><meta content="10/07/2026 16:28:15" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4" name="FMAPID" /><meta content="07/07/2026 18:25:47" name="MODIFIED-ON" /><meta content="16/06/2026 20:29:13" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-E0B2E065-B380-4B5E-AC7F-13F39D148EBC" name="FISHMASTERREF" /><meta content="DxI 9000 Service Manual-v37-GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4-20260616 20:29:13" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BK" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="37" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI 9000 Service Manual" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="yes" name="print" /><meta content="no" name="printAll" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>25.5.2.2 Software 1.14 Known Bugs and Behaviors</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC.html" rel="prev" /><link href="GUID-6D47CB8F-D2C1-4AEB-A5E9-8E3708B28F6F.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e538" data-relpath="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI 9000 Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI 9000 Service Manual</span><span id="emailpub">Publication: DxI 9000 Service Manual</span><span id="emailpartnum">Part Number: C65079</span><span id="emailrev">Revision: BK</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-F0D858EE-B68E-40F5-B261-F9C036B7F718" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18" role="article"> 
+  <h1 class="title topictitle1" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-F0D858EE-B68E-40F5-B261-F9C036B7F718"><a id="GUID-F0D858EE-B68E-40F5-B261-F9C036B7F718"></a>Software 1.14 Known Bugs and Behaviors</h1> 
+   
+  <div class="body conbody"><p class="shortdesc">A list of known bugs or behaviors for system software versions 1.14, and countermeasures for recovery. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Bug/Behavior:</strong> Summary of the software bug or system behavior. 
+		</li> 
+		<li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details:</strong> Explanation of the bug/behavior and how it may impact the system/user. 
+		</li> 
+		<li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_84FFD9541F4D4ADFB828455CD74C731A"><strong class="ph b" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-C972260E-1848-47E9-A5BB-282CA0EB0015">Countermeasure:</strong> If applicable, countermeasure to resolve the condition inflicted by the bug/behavior. 
+		</li> 
+	 </ul> 
+	 <table class="table" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1">Bug/Behavior 
+				</th> 
+				<th class="entry" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2">Details 
+				</th> 
+				<th class="entry" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3">Countermeasure 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Exception on Navigating to Curve Details from Completed QC and Patient Records for Assays with Shared Curves 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> For FOLW &amp; RBCW, there is an exception on navigating to the Calibration Curve Details page from a completed QC or Patient Result Details page. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">This error message may be dismissed with no further issue. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Inaccurate reagent lot availability with automatic calibration orders 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">System inaccurately displays that there are no &quot;Active&quot; reagent lots on board despite packs physically being present. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">At this time the resolution si to load a different lot of reagent. A countermeasure to resolve with service intervention is being investigated and will be released as soon as available. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Tests that share a reagent pack with other tests may not run when sufficient reagent is onboard the analyzer 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Tests that utilize the same reagent packs but may consume different volumes (this is most commonly found in ASD/service diagnostic tests) may display sufficient reagent but not allow tests to start. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Un-load the partially used reagent pack and repeat the testing. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> SPU Camera Calibration Does Not Complete if Unable to Read Barcode on Rack without Message 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> In the event of a camera mechanical issue with the rack barcode itself, the field service engineer is unable to complete the SPU camera calibration with no indication of why the operation was unable to complete. A message will post in the Sample Events menu, but not the System Events. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Check the Sample Events menu and review any events posted here. Inspect the rack/try a different rack and repeat the calibration. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Initial Test Menu Update Can Silently Fail 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">On a new system, loading RAPID files may fail without notice. This occurs due to a lack of the 
+				  <span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-280B8D36-66C5-4C36-BC4F-47B106DE50FF">RAPID</span> folder being present in 
+				  <span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-9B1F4384-6743-46AE-A96F-64332498A83A">D:\Program Data\Beckman Coulter\Falcon</span> filepath. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Create a folder named 
+				  <span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-9C14ECC5-37E1-4CCC-839A-103921E90491">RAPID</span> in the directory 
+				  <span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-715D40B4-DB32-4578-AD44-DD94413BFAD7">D:\Program Data\Beckman Coulter\Falcon</span> and paste the RAPID file from the USB into it. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Cancelling ASD While Utilities Are in Progress Results in System Error 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Cancelling an ASD routine and attempting to re-start before it has fully recovered will result in error. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Re-initialize the instrument and re-start the ASD routine. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Tray Gripper Tries to Throw Away a Non-Existent Tray Causing System to Stop Processing 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system expects to see an empty tip tray after completing initialization, but when the tray is not found the system enters an error state. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Avoid removing empty trays by hand as this will cause an error with the tip stocker. If the errors are observed, reinitialize/reboot. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Maintenance Due Notification is Removed Prematurely if Weekly Clean Routine Fails 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If there is an error that prevents the clean routine from running the &quot;due now&quot; notification will clear despite not successfully completing the clean routine. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Open the maintenance log and request the routine to run it again. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Errors during the Clean Routine may strand the sample rack inside the analyzer 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If an error occurs during the clean routine, the clean rack may not be ejected from the SPU presentation and will appear &quot;stuck&quot;. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">For customer resolution, have the user power off the system, open the covers, and manually retrieve the rack. Service may also consider using alignment commands to home the SPU and retrieve the rack. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Substrate lot expiration may lock the substrate door and prevent bottle replacement 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The user is unable to load substrate bottles when the system starts with two invalid bottles. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">The workaround is for a service user or customer (with remote assistance from Beckman support) to use the alignments access to open the door and then force an initialization. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Reagent Pipettor Auto-alignment Procedure Throws Exception at some Alignment Values 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The RP auto-alignment procedure throws the exception and terminates the procedure without notifying the user at certain alignment values. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Attempt repeating the alignment. Consider inspecting/adjusting the home sensor. Alignment can be accomplished manually as a workaround. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Reflex tests may not complete when additional tests are added to a sample that has already started processing 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> In the event that the system rejects an add-on test for a sample due to insufficient reserve volume, any subsequent reflex tests triggered on that same sample will not run to completion. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Re-load the sample and manually request the tests which would be ordered by the reflex condition. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> System Cannot Initialize Due To Logical Error in Event Reporting 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">In rare instances the system may get stuck in an infinite loop, failing to report stalled event. The system will not initialize even after a full reboot. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Perform the following steps to clear the condition:
+				  <div class="note caution note_caution" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-99544362-1FDC-4694-AD81-CB1BEA7C9D14"><span class="note__title">Caution:</span> It is recommended to perform these steps with assistance from technical support to ensure the database is not corrupted.
+				  </div>
+				  <ol class="ol" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__OL_69072794126B4869A1C2C3CB1E9675C3">
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_0639C04DB62C422C8423A917B2A8B116">Shut down 
+						<span class="ph uicontrol" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-225C09CE-0E1F-4B2B-961C-7084F6C39060">Machine Control</span> and 
+						<span class="ph uicontrol" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-6F38FAA3-FEB6-4E15-A989-2E366DE62052">DxI 9000</span> applications.
+					 </li>
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_9CDE6C9DA11648ED96FBAD43D0F6A80E">Navigate to 
+						<span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-DC5A611C-5DE7-4847-B175-08AEA9817AB4">D:\ProgramData\Beckman Coulter\Falcon</span>.
+					 </li>
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_25DE31FBFCFB41289B0AB1D6B393BF10">Delete all files that end in 
+						<span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-A934B89D-17EA-417B-833A-160266AE4740">.data</span>
+					 </li>
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_89D07B9A4EFA46B5B5B91F3112C7715B">Restart the system. The system will fail auto-initialization upon first start-up.
+					 </li>
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_0577AB9B4D9941A9BDDBB78861246898"><a class="xref" href="GUID-5C82468D-C694-4616-B1A3-90DB49F4CB08.html">Initialize</a> the system with 
+						<strong class="ph b" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-64D43784-BD78-4043-9092-1E9F7B753A80">all options</strong> selected (Force, Consolidation, Cleanout, and Remap).
+					 </li>
+				  </ol>
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Low Volume Reagent Pipettor (ASD) Failure Wording Incorrect 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When the median result is below the lower limit, the message that is reported in the diagnostic test message is &quot;Median is over the lower limit&quot;. It should say &quot;Median is below the lower limit&quot;. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No action needed, informational only. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Sample Container May Not Be Released to Automation after Errors with Tips 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If the system connected to an automation line fails to pick up a tip and does not recover, the sample tube at the aspiration point will not be released to the automation track, potentially causing a queue of samples awaiting aspiration. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Re-initializing the system will clear the error and release the &quot;stuck&quot; sample tube. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Service Log In Locks Console If PHI Is Open When Logging In 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If any tabs with PHI (i.e. patient results) are open when logging in to Service Login, the system will &quot;lock&quot; with error message(s). 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">DxI 9000 Console Application must be force closed via Windows Task Manager and re-launched (or system rebooted) to clear the condition. Suggest users close any tabs containing potential PHI prior to attempting Service Login. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> High Number of Results Ordered on a Single Sample Causes System to Stop Processing 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">This typically occurs on low-volume service assay (i.e. AP5) when requesting a large amount of replicates on the same sample tube (i.e. 400) in an attempt to &quot;stress test&quot; the system for troubleshooting. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Avoid ordering severely high quantities of replicates on a single sample container (suggestion: do not exceed 150 replicates per container). If intending to &quot;stress test&quot; the system, see the 
+				  <a class="xref" href="GUID-F8BF79C1-6350-4035-9BB8-8855C012F625.html#GUID-F8BF79C1-6350-4035-9BB8-8855C012F625">Stress Testing the System</a> procedure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Tests Stuck In Progress when Instrument Reports Results after Result Timeout Triggered 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system will &#39;time out&#39; results if a completed result is not received from the system after a pre-configured unit of time. In rare cases where a test result takes more than three hours to complete, this timeout is triggered prematurely and the affected test result(s) will be stuck in an in-progress state. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Users will need to reorder affected tests and re-present the sample. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Report Destination Text Box in Detailed Report Settings Screen Only Works when Clicked on By Mouse 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">In the Detailed Report Settings screen, the user cannot select the &quot;Report Destination&quot; field by using the touch screen. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Utilize the &quot;virtual mouse&quot; built in to Windows or a physical mouse if connected via USB. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Report Is Not Printing to Network Printer in Windows 10 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Reports are not printing when using a network printer in the Windows 10 OS environment. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Network printers have not yet been validated for use with the system. Suggest printing to PDF and exporting via external storage device for printing from another PC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Sample Search Result Does Not Show New Sample When Sample ID Reuse Is Set to Immediate 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When the Sample ID Reuse setting is set to &quot;immediate&quot; (value of -1), the software is unable to show the newly created sample in the sample search results. Sample ID reuse is off by default. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No action needed, informational only. See 
+				  <a class="xref" href="GUID-619E1FC1-B950-489D-A280-EA4E9B585AE3.html#GUID-619E1FC1-B950-489D-A280-EA4E9B585AE3">Enabling the Reuse of Sample IDs</a> for details on configuring Sample ID re-use. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Poor UI Performance When Ordering Large Numbers of Samples in Batch Order Entry 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When user tries to place a batch order from the batch order entry screen by entering the number of samples and then the starting sample ID, the performance of the application is slow. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">As a workaround, suggest the user can enter the starting sample ID first and then the number of samples. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> An Error Message Is Not Shown When the User Loads an Existing Sample for Editing in Manual Test Order Entry and Changes the Sample ID 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> An appropriate error message is not shown when the user loads an existing sample for editing in manual test order entry screen, and changes the sample ID. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Load the sample using the same rack number and position, and/or suggest user avoid using duplicate RackID for multiple requests. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> &quot;WaitForInputIdle failed&quot; Pop-Up Was Shown When Loading The On-Screen Keyboard 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">In rare instances &quot;WaitForInputIdle&quot; error may show on screen when the system is trying to load the on-screen-keyboard. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">User can select &quot;OK&quot; to the error and resume normal operation. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Unable to Calibrate Onboard Reagent Lots / Calibration Ordered for Reagent Lots No Longer Onboard 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Two items have been identified regarding calibration of specific reagent lots: 
+				  <ul class="ul" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__UL_9DB54A582D26441C89FF04A27E6408B7"> 
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_2324B5CA764D42369423168537545320">Inaccurate reagent lot availability with automatic calibration orders: Onboard reagent lots not recognized. 
+					 </li> 
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_6097FFF4D4D6423E9900940151ABA859">Inaccurate reagent lot availability with automatic calibration orders: Calibration ordered for reagent lots that are no longer onboard. 
+					 </li> 
+				  </ul> 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Further details are called out in the 
+				  <a class="xref" href="./Attachments/C94497AD%20DxI%209000%20Release%20Notes.pdf" target="_blank"> Release Notes for Version 1.14.1</a>. 
+				  <ul class="ul" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__UL_57DB78BD38C84F99AEE10A8D9EB63061"> 
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_B66D944AE18C41B78AE25ABFDDB7663B">Manually calibrate the reagent lot, load a pack from another lot not already onboard and manually calibrate both, or load a new lot and unload the lot onboard when the error occurred and manually calibrate the new lot. 
+					 </li> 
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_A8C0902D7E7D4D54968C35514774505D">Load a pack of this lot if available, calibrate the test, or contact support for additional assistance if the issue persists. 
+					 </li> 
+				  </ul> 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html">Known Bugs and Behaviors</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" title="25.5.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2 </span>Known Bugs and Behaviors</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18.html" lang="en-US" title="25.5.2.2 Software 1.14 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2.2 </span>Software 1.14 Known Bugs and Behaviors</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">C65079BK</div></li><li><div id="date">July 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-F0D858EE-B68E-40F5-B261-F9C036B7F718" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18" role="article"> 
+  <h1 class="title topictitle1" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-F0D858EE-B68E-40F5-B261-F9C036B7F718"><a id="GUID-F0D858EE-B68E-40F5-B261-F9C036B7F718"></a>Software 1.14 Known Bugs and Behaviors</h1> 
+   
+  <div class="body conbody"><p class="shortdesc">A list of known bugs or behaviors for system software versions 1.14, and countermeasures for recovery. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Bug/Behavior:</strong> Summary of the software bug or system behavior. 
+		</li> 
+		<li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details:</strong> Explanation of the bug/behavior and how it may impact the system/user. 
+		</li> 
+		<li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_84FFD9541F4D4ADFB828455CD74C731A"><strong class="ph b" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-C972260E-1848-47E9-A5BB-282CA0EB0015">Countermeasure:</strong> If applicable, countermeasure to resolve the condition inflicted by the bug/behavior. 
+		</li> 
+	 </ul> 
+	 <table class="table" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1">Bug/Behavior 
+				</th> 
+				<th class="entry" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2">Details 
+				</th> 
+				<th class="entry" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3">Countermeasure 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Exception on Navigating to Curve Details from Completed QC and Patient Records for Assays with Shared Curves 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> For FOLW &amp; RBCW, there is an exception on navigating to the Calibration Curve Details page from a completed QC or Patient Result Details page. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">This error message may be dismissed with no further issue. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Inaccurate reagent lot availability with automatic calibration orders 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">System inaccurately displays that there are no &quot;Active&quot; reagent lots on board despite packs physically being present. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">At this time the resolution si to load a different lot of reagent. A countermeasure to resolve with service intervention is being investigated and will be released as soon as available. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Tests that share a reagent pack with other tests may not run when sufficient reagent is onboard the analyzer 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Tests that utilize the same reagent packs but may consume different volumes (this is most commonly found in ASD/service diagnostic tests) may display sufficient reagent but not allow tests to start. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Un-load the partially used reagent pack and repeat the testing. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> SPU Camera Calibration Does Not Complete if Unable to Read Barcode on Rack without Message 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> In the event of a camera mechanical issue with the rack barcode itself, the field service engineer is unable to complete the SPU camera calibration with no indication of why the operation was unable to complete. A message will post in the Sample Events menu, but not the System Events. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Check the Sample Events menu and review any events posted here. Inspect the rack/try a different rack and repeat the calibration. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Initial Test Menu Update Can Silently Fail 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">On a new system, loading RAPID files may fail without notice. This occurs due to a lack of the 
+				  <span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-280B8D36-66C5-4C36-BC4F-47B106DE50FF">RAPID</span> folder being present in 
+				  <span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-9B1F4384-6743-46AE-A96F-64332498A83A">D:\Program Data\Beckman Coulter\Falcon</span> filepath. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Create a folder named 
+				  <span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-9C14ECC5-37E1-4CCC-839A-103921E90491">RAPID</span> in the directory 
+				  <span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-715D40B4-DB32-4578-AD44-DD94413BFAD7">D:\Program Data\Beckman Coulter\Falcon</span> and paste the RAPID file from the USB into it. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Cancelling ASD While Utilities Are in Progress Results in System Error 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Cancelling an ASD routine and attempting to re-start before it has fully recovered will result in error. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Re-initialize the instrument and re-start the ASD routine. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Tray Gripper Tries to Throw Away a Non-Existent Tray Causing System to Stop Processing 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">The system expects to see an empty tip tray after completing initialization, but when the tray is not found the system enters an error state. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Avoid removing empty trays by hand as this will cause an error with the tip stocker. If the errors are observed, reinitialize/reboot. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Maintenance Due Notification is Removed Prematurely if Weekly Clean Routine Fails 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If there is an error that prevents the clean routine from running the &quot;due now&quot; notification will clear despite not successfully completing the clean routine. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Open the maintenance log and request the routine to run it again. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Errors during the Clean Routine may strand the sample rack inside the analyzer 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If an error occurs during the clean routine, the clean rack may not be ejected from the SPU presentation and will appear &quot;stuck&quot;. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">For customer resolution, have the user power off the system, open the covers, and manually retrieve the rack. Service may also consider using alignment commands to home the SPU and retrieve the rack. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Substrate lot expiration may lock the substrate door and prevent bottle replacement 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The user is unable to load substrate bottles when the system starts with two invalid bottles. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">The workaround is for a service user or customer (with remote assistance from Beckman support) to use the alignments access to open the door and then force an initialization. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Reagent Pipettor Auto-alignment Procedure Throws Exception at some Alignment Values 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The RP auto-alignment procedure throws the exception and terminates the procedure without notifying the user at certain alignment values. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Attempt repeating the alignment. Consider inspecting/adjusting the home sensor. Alignment can be accomplished manually as a workaround. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Reflex tests may not complete when additional tests are added to a sample that has already started processing 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> In the event that the system rejects an add-on test for a sample due to insufficient reserve volume, any subsequent reflex tests triggered on that same sample will not run to completion. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Re-load the sample and manually request the tests which would be ordered by the reflex condition. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> System Cannot Initialize Due To Logical Error in Event Reporting 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">In rare instances the system may get stuck in an infinite loop, failing to report stalled event. The system will not initialize even after a full reboot. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Perform the following steps to clear the condition:
+				  <div class="note caution note_caution" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-99544362-1FDC-4694-AD81-CB1BEA7C9D14"><span class="note__title">Caution:</span> It is recommended to perform these steps with assistance from technical support to ensure the database is not corrupted.
+				  </div>
+				  <ol class="ol" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__OL_69072794126B4869A1C2C3CB1E9675C3">
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_0639C04DB62C422C8423A917B2A8B116">Shut down 
+						<span class="ph uicontrol" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-225C09CE-0E1F-4B2B-961C-7084F6C39060">Machine Control</span> and 
+						<span class="ph uicontrol" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-6F38FAA3-FEB6-4E15-A989-2E366DE62052">DxI 9000</span> applications.
+					 </li>
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_9CDE6C9DA11648ED96FBAD43D0F6A80E">Navigate to 
+						<span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-DC5A611C-5DE7-4847-B175-08AEA9817AB4">D:\ProgramData\Beckman Coulter\Falcon</span>.
+					 </li>
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_25DE31FBFCFB41289B0AB1D6B393BF10">Delete all files that end in 
+						<span class="ph filepath" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-A934B89D-17EA-417B-833A-160266AE4740">.data</span>
+					 </li>
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_89D07B9A4EFA46B5B5B91F3112C7715B">Restart the system. The system will fail auto-initialization upon first start-up.
+					 </li>
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_0577AB9B4D9941A9BDDBB78861246898"><a class="xref" href="GUID-5C82468D-C694-4616-B1A3-90DB49F4CB08.html">Initialize</a> the system with 
+						<strong class="ph b" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__GUID-64D43784-BD78-4043-9092-1E9F7B753A80">all options</strong> selected (Force, Consolidation, Cleanout, and Remap).
+					 </li>
+				  </ol>
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Low Volume Reagent Pipettor (ASD) Failure Wording Incorrect 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When the median result is below the lower limit, the message that is reported in the diagnostic test message is &quot;Median is over the lower limit&quot;. It should say &quot;Median is below the lower limit&quot;. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No action needed, informational only. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Sample Container May Not Be Released to Automation after Errors with Tips 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If the system connected to an automation line fails to pick up a tip and does not recover, the sample tube at the aspiration point will not be released to the automation track, potentially causing a queue of samples awaiting aspiration. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Re-initializing the system will clear the error and release the &quot;stuck&quot; sample tube. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Service Log In Locks Console If PHI Is Open When Logging In 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">If any tabs with PHI (i.e. patient results) are open when logging in to Service Login, the system will &quot;lock&quot; with error message(s). 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">DxI 9000 Console Application must be force closed via Windows Task Manager and re-launched (or system rebooted) to clear the condition. Suggest users close any tabs containing potential PHI prior to attempting Service Login. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> High Number of Results Ordered on a Single Sample Causes System to Stop Processing 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">This typically occurs on low-volume service assay (i.e. AP5) when requesting a large amount of replicates on the same sample tube (i.e. 400) in an attempt to &quot;stress test&quot; the system for troubleshooting. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Avoid ordering severely high quantities of replicates on a single sample container (suggestion: do not exceed 150 replicates per container). If intending to &quot;stress test&quot; the system, see the 
+				  <a class="xref" href="GUID-F8BF79C1-6350-4035-9BB8-8855C012F625.html#GUID-F8BF79C1-6350-4035-9BB8-8855C012F625">Stress Testing the System</a> procedure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Tests Stuck In Progress when Instrument Reports Results after Result Timeout Triggered 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> The system will &#39;time out&#39; results if a completed result is not received from the system after a pre-configured unit of time. In rare cases where a test result takes more than three hours to complete, this timeout is triggered prematurely and the affected test result(s) will be stuck in an in-progress state. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 "> Users will need to reorder affected tests and re-present the sample. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Report Destination Text Box in Detailed Report Settings Screen Only Works when Clicked on By Mouse 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">In the Detailed Report Settings screen, the user cannot select the &quot;Report Destination&quot; field by using the touch screen. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Utilize the &quot;virtual mouse&quot; built in to Windows or a physical mouse if connected via USB. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Report Is Not Printing to Network Printer in Windows 10 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> Reports are not printing when using a network printer in the Windows 10 OS environment. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Network printers have not yet been validated for use with the system. Suggest printing to PDF and exporting via external storage device for printing from another PC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Sample Search Result Does Not Show New Sample When Sample ID Reuse Is Set to Immediate 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When the Sample ID Reuse setting is set to &quot;immediate&quot; (value of -1), the software is unable to show the newly created sample in the sample search results. Sample ID reuse is off by default. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">No action needed, informational only. See 
+				  <a class="xref" href="GUID-619E1FC1-B950-489D-A280-EA4E9B585AE3.html#GUID-619E1FC1-B950-489D-A280-EA4E9B585AE3">Enabling the Reuse of Sample IDs</a> for details on configuring Sample ID re-use. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> Poor UI Performance When Ordering Large Numbers of Samples in Batch Order Entry 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> When user tries to place a batch order from the batch order entry screen by entering the number of samples and then the starting sample ID, the performance of the application is slow. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">As a workaround, suggest the user can enter the starting sample ID first and then the number of samples. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> An Error Message Is Not Shown When the User Loads an Existing Sample for Editing in Manual Test Order Entry and Changes the Sample ID 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 "> An appropriate error message is not shown when the user loads an existing sample for editing in manual test order entry screen, and changes the sample ID. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Load the sample using the same rack number and position, and/or suggest user avoid using duplicate RackID for multiple requests. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 "> &quot;WaitForInputIdle failed&quot; Pop-Up Was Shown When Loading The On-Screen Keyboard 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">In rare instances &quot;WaitForInputIdle&quot; error may show on screen when the system is trying to load the on-screen-keyboard. 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">User can select &quot;OK&quot; to the error and resume normal operation. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__1 ">Unable to Calibrate Onboard Reagent Lots / Calibration Ordered for Reagent Lots No Longer Onboard 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__2 ">Two items have been identified regarding calibration of specific reagent lots: 
+				  <ul class="ul" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__UL_9DB54A582D26441C89FF04A27E6408B7"> 
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_2324B5CA764D42369423168537545320">Inaccurate reagent lot availability with automatic calibration orders: Onboard reagent lots not recognized. 
+					 </li> 
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_6097FFF4D4D6423E9900940151ABA859">Inaccurate reagent lot availability with automatic calibration orders: Calibration ordered for reagent lots that are no longer onboard. 
+					 </li> 
+				  </ul> 
+				</td> 
+				<td class="entry" headers="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__TABLE_4DB74E7B87FE4137AB4CEB8324F5C681__entry__3 ">Further details are called out in the 
+				  <a class="xref" href="./Attachments/C94497AD%20DxI%209000%20Release%20Notes.pdf" target="_blank"> Release Notes for Version 1.14.1</a>. 
+				  <ul class="ul" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__UL_57DB78BD38C84F99AEE10A8D9EB63061"> 
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_B66D944AE18C41B78AE25ABFDDB7663B">Manually calibrate the reagent lot, load a pack from another lot not already onboard and manually calibrate both, or load a new lot and unload the lot onboard when the error occurred and manually calibrate the new lot. 
+					 </li> 
+					 <li class="li" id="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18__LI_A8C0902D7E7D4D54968C35514774505D">Load a pack of this lot if available, calibrate the test, or contact support for additional assistance if the issue persists. 
+					 </li> 
+				  </ul> 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html">Known Bugs and Behaviors</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" title="25.5.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2 </span>Known Bugs and Behaviors</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18.html" lang="en-US" title="25.5.2.2 Software 1.14 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2.2 </span>Software 1.14 Known Bugs and Behaviors</div></a></div></article></main></div></noscript><script src="static/body.js?rJAUfFpk" type="text/javascript"></script></body></html>

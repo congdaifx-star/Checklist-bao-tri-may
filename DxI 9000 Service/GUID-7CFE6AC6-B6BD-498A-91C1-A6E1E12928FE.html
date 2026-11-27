@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" name="DC.Relation" scheme="URI" /><meta content="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" name="DC.Relation" scheme="URI" /><meta content="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="July 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BK" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="10/07/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="C65079" name="FBCPARTNUM" /><meta content="None" name="FBCMANUFACTUREDBY" /><meta content="Service" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="16/06/2026 18:37:18" name="FISHPUBREVIEWENDDATE" /><meta content="10/07/2026 16:28:15" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4" name="FMAPID" /><meta content="07/07/2026 18:25:47" name="MODIFIED-ON" /><meta content="16/06/2026 20:29:13" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-E0B2E065-B380-4B5E-AC7F-13F39D148EBC" name="FISHMASTERREF" /><meta content="DxI 9000 Service Manual-v37-GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4-20260616 20:29:13" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BK" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="37" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI 9000 Service Manual" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="yes" name="print" /><meta content="no" name="printAll" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>25.3.10 Backing Up the Databases Using Microsoft SQL Server Management Studio</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-C87486CE-088A-4FEE-BD00-B18F44D8D3F8.html" rel="prev" /><link href="GUID-BD4D2DF0-6434-45CB-A6C8-622CF6FFAFCD.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e707" data-relpath="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI 9000 Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI 9000 Service Manual</span><span id="emailpub">Publication: DxI 9000 Service Manual</span><span id="emailpartnum">Part Number: C65079</span><span id="emailrev">Revision: BK</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-89F37701-22C1-42A5-943D-69D8FCBBD998" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE" role="article"> 
+  <h1 class="title topictitle1" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-89F37701-22C1-42A5-943D-69D8FCBBD998"><a id="GUID-89F37701-22C1-42A5-943D-69D8FCBBD998"></a>Backing Up the Databases Using Microsoft SQL Server Management Studio</h1> 
+  <div class="body conbody"> 
+	 <div class="p">This topic includes information about how to back up the databases using Microsoft SQL Server Management Studio. 
+		<div class="note note note_note" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-89F9DE44-B5B2-48EB-A386-995D55CB0223"><span class="note__title">Note:</span> The primary method for backing up the databases is to use the Service App. See 
+		  <a class="xref" href="GUID-C87486CE-088A-4FEE-BD00-B18F44D8D3F8.html">Backing Up the Databases Using the Service App</a> for more information. 
+		</div> 
+	 </div> 
+	 <section class="section" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__SECTION_5DC48B3D4E54467AB4F6AFCDA6FBDFA7"> 
+		<ol class="ol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__OL_AE83ABF90DCF4EA6834293C4D1FF4DF3"> 
+		  <li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_C3E923DF114F4F55827F2D71FD737603">Connect to the databases. See 
+			 <a class="xref" href="GUID-C9B8308A-1CD3-4689-9850-7CDF8B5D4B88.html">Connecting to the Databases</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_078315A419914DEF9DF8351CE0FAA5C4">In the Object Explorer window, expand Databases. The object will include the following databases. 
+			 <ul class="ul" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__UL_318E7C27F8A54C87B5A2A86F0378793B"> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_B3453ED3E5984D94A1BDEC11501F80A6">ICE_DB 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_D6A6DB66701B4B24A69CFF4E2A46CF03">ICE_QC_DB 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_B247A4C8E006427C87BB2DF5A3896EEF">ICE_SAMPLES_DB 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_2361F928F6C740D18493F95F280E5A2E">ICE_RMS_DB 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_E86E30CBAA7D40B18CC2C1A49FDEAEFC">Alignments_DB 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_E0B715BEBBF44D6E91C57BA2E282BA52">For each database, complete the following steps: 
+			 <ol class="ol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__OL_4DA0C90580A84714BBB67CBA65A5F6C8" type="a"> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_1DCE82BB451A4D71BCAFC05E016A59A8">Right-click the database and go to 
+				  <span class="ph menucascade" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-CAE2C40D-B076-4D89-B519-9B4380AF6880"><span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-CAEA4F3A-2732-4856-BB5D-C340F1A9EC88">Tasks</span> &gt; <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-0F8AA6ED-6F05-437F-BDDC-E4580977A1BE">Back Up</span></span> to open the Back Up Database dialog. 
+				  <p class="p">
+				  </p>
+				  <figure class="fig fignone" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__FIG_541DBB7E942B4E53B27572272E84050A"><img alt="" class="image" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__IMAGE_B499282BAB3D404983B4C4218FFB8B4E" src="GUID-D0D2DA5C-D63A-42F4-8B4D-71885F92096E-default.png" />
+				  </figure>
+				  <p class="p">
+				  </p>
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_EB1E234BD8574B7EB92C5DA91CEAF1C1">In the Back Up Database dialog, in the Destination section, select all destinations and select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-4156848C-B01B-4DB8-AE5B-4BCB7FB5856E">Remove</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_1DF0AE587F83415B8091DE0DCE1A7A8F">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-B35EFEFC-0958-4BAE-A109-FDC3A77B5F11">Add</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_8A8F4C3F22154F6DAFAC012EB4D7C6FF">In the 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-48574E7C-6FFF-41CC-9F14-4E1E5251ADAF">File name</span> box type the name of the database. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_43A3D75134224DEABBC309ABCED3D6F5">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-5D2DA3DB-0A2F-440A-A3CA-805C798734D7">OK</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_D4A0DCB3B43A4BE1AA5347AF1E39D6C9">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-11385D41-B1AB-4869-B130-D1A70BB2BBF7">OK</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_5B6650FBCB484C29B183DE02D1C0A638">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-035844B9-EE0D-4ED1-90B0-362A8F33BC9D">OK</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_4E9296D549EA4CAFB642BE9143260071">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-D42D8B34-D1D9-4B92-BD31-0635E4CCE126">OK</span>. A notification will be displayed saying that the backup was completed successfully.
+				  <p class="p">
+				  </p> 
+				  <figure class="fig fignone" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__FIG_E16A906E1AE6407B805FA08569EC3869"><img alt="" class="image" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__IMAGE_8DE988FF8FAE453DA3798812B271ACDC" src="GUID-84AD86F1-8575-48E7-BA3C-DA0859520750-default.png" />
+				  </figure>
+				  <p class="p">
+				  </p>
+				</li>
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_630449CC09D6477EAEA362D424475761">Go to 
+				  <span class="ph filepath" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-1BD91A11-FDAB-45CF-B480-469C9962D783">D:\Backups\db_backups</span> to confirm the backup saved successfully.
+				  <p class="p">
+				  </p>
+				  <figure class="fig fignone" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__FIG_C6D908ECA7794C2DA849095E8388CC97"><img alt="" class="image" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__IMAGE_13296262B6C4489F9DB8306140606656" src="GUID-5040D095-2F3C-4470-A631-674A9BB1C27B-default.png" />
+				  </figure>
+				</li> 
+			 </ol> 
+		  </li> 
+		</ol> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" title="This section includes information about procedures for servicing software.">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" title="25.3 Procedures"><div><span class="ph num-prefix">25.3 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE.html" lang="en-US" title="25.3.10 Backing Up the Databases Using Microsoft SQL Server Management Studio"><div><span class="ph num-prefix">25.3.10 </span>Backing Up the Databases Using Microsoft SQL Server Management Studio</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">C65079BK</div></li><li><div id="date">July 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-89F37701-22C1-42A5-943D-69D8FCBBD998" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE" role="article"> 
+  <h1 class="title topictitle1" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-89F37701-22C1-42A5-943D-69D8FCBBD998"><a id="GUID-89F37701-22C1-42A5-943D-69D8FCBBD998"></a>Backing Up the Databases Using Microsoft SQL Server Management Studio</h1> 
+  <div class="body conbody"> 
+	 <div class="p">This topic includes information about how to back up the databases using Microsoft SQL Server Management Studio. 
+		<div class="note note note_note" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-89F9DE44-B5B2-48EB-A386-995D55CB0223"><span class="note__title">Note:</span> The primary method for backing up the databases is to use the Service App. See 
+		  <a class="xref" href="GUID-C87486CE-088A-4FEE-BD00-B18F44D8D3F8.html">Backing Up the Databases Using the Service App</a> for more information. 
+		</div> 
+	 </div> 
+	 <section class="section" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__SECTION_5DC48B3D4E54467AB4F6AFCDA6FBDFA7"> 
+		<ol class="ol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__OL_AE83ABF90DCF4EA6834293C4D1FF4DF3"> 
+		  <li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_C3E923DF114F4F55827F2D71FD737603">Connect to the databases. See 
+			 <a class="xref" href="GUID-C9B8308A-1CD3-4689-9850-7CDF8B5D4B88.html">Connecting to the Databases</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_078315A419914DEF9DF8351CE0FAA5C4">In the Object Explorer window, expand Databases. The object will include the following databases. 
+			 <ul class="ul" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__UL_318E7C27F8A54C87B5A2A86F0378793B"> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_B3453ED3E5984D94A1BDEC11501F80A6">ICE_DB 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_D6A6DB66701B4B24A69CFF4E2A46CF03">ICE_QC_DB 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_B247A4C8E006427C87BB2DF5A3896EEF">ICE_SAMPLES_DB 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_2361F928F6C740D18493F95F280E5A2E">ICE_RMS_DB 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_E86E30CBAA7D40B18CC2C1A49FDEAEFC">Alignments_DB 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_E0B715BEBBF44D6E91C57BA2E282BA52">For each database, complete the following steps: 
+			 <ol class="ol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__OL_4DA0C90580A84714BBB67CBA65A5F6C8" type="a"> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_1DCE82BB451A4D71BCAFC05E016A59A8">Right-click the database and go to 
+				  <span class="ph menucascade" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-CAE2C40D-B076-4D89-B519-9B4380AF6880"><span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-CAEA4F3A-2732-4856-BB5D-C340F1A9EC88">Tasks</span> &gt; <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-0F8AA6ED-6F05-437F-BDDC-E4580977A1BE">Back Up</span></span> to open the Back Up Database dialog. 
+				  <p class="p">
+				  </p>
+				  <figure class="fig fignone" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__FIG_541DBB7E942B4E53B27572272E84050A"><img alt="" class="image" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__IMAGE_B499282BAB3D404983B4C4218FFB8B4E" src="GUID-D0D2DA5C-D63A-42F4-8B4D-71885F92096E-default.png" />
+				  </figure>
+				  <p class="p">
+				  </p>
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_EB1E234BD8574B7EB92C5DA91CEAF1C1">In the Back Up Database dialog, in the Destination section, select all destinations and select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-4156848C-B01B-4DB8-AE5B-4BCB7FB5856E">Remove</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_1DF0AE587F83415B8091DE0DCE1A7A8F">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-B35EFEFC-0958-4BAE-A109-FDC3A77B5F11">Add</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_8A8F4C3F22154F6DAFAC012EB4D7C6FF">In the 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-48574E7C-6FFF-41CC-9F14-4E1E5251ADAF">File name</span> box type the name of the database. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_43A3D75134224DEABBC309ABCED3D6F5">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-5D2DA3DB-0A2F-440A-A3CA-805C798734D7">OK</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_D4A0DCB3B43A4BE1AA5347AF1E39D6C9">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-11385D41-B1AB-4869-B130-D1A70BB2BBF7">OK</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_5B6650FBCB484C29B183DE02D1C0A638">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-035844B9-EE0D-4ED1-90B0-362A8F33BC9D">OK</span>. 
+				</li> 
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_4E9296D549EA4CAFB642BE9143260071">Select 
+				  <span class="ph uicontrol" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-D42D8B34-D1D9-4B92-BD31-0635E4CCE126">OK</span>. A notification will be displayed saying that the backup was completed successfully.
+				  <p class="p">
+				  </p> 
+				  <figure class="fig fignone" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__FIG_E16A906E1AE6407B805FA08569EC3869"><img alt="" class="image" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__IMAGE_8DE988FF8FAE453DA3798812B271ACDC" src="GUID-84AD86F1-8575-48E7-BA3C-DA0859520750-default.png" />
+				  </figure>
+				  <p class="p">
+				  </p>
+				</li>
+				<li class="li" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__LI_630449CC09D6477EAEA362D424475761">Go to 
+				  <span class="ph filepath" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__GUID-1BD91A11-FDAB-45CF-B480-469C9962D783">D:\Backups\db_backups</span> to confirm the backup saved successfully.
+				  <p class="p">
+				  </p>
+				  <figure class="fig fignone" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__FIG_C6D908ECA7794C2DA849095E8388CC97"><img alt="" class="image" id="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE__IMAGE_13296262B6C4489F9DB8306140606656" src="GUID-5040D095-2F3C-4470-A631-674A9BB1C27B-default.png" />
+				  </figure>
+				</li> 
+			 </ol> 
+		  </li> 
+		</ol> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" title="This section includes information about procedures for servicing software.">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" title="25.3 Procedures"><div><span class="ph num-prefix">25.3 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-7CFE6AC6-B6BD-498A-91C1-A6E1E12928FE.html" lang="en-US" title="25.3.10 Backing Up the Databases Using Microsoft SQL Server Management Studio"><div><span class="ph num-prefix">25.3.10 </span>Backing Up the Databases Using Microsoft SQL Server Management Studio</div></a></div></article></main></div></noscript><script src="static/body.js?rJAUfFpk" type="text/javascript"></script></body></html>

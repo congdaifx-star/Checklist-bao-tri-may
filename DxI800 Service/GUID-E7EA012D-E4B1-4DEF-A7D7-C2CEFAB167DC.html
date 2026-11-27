@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="reference" name="DC.Type" /><meta content="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html" name="DC.Relation" scheme="URI" /><meta content="GUID-A5665163-1B1C-4CA9-9580-81C8E5C11110.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>4.7.22 Motor Channels in SMC Test</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8.html" rel="prev" /><link href="GUID-7859D126-8487-40E2-B0F9-6BCBFC8AB1C3.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3663" data-relpath="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-2A46E94F-8043-44B3-86B5-343767884B12" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-2A46E94F-8043-44B3-86B5-343767884B12"><a id="GUID-2A46E94F-8043-44B3-86B5-343767884B12"></a>Motor Channels in SMC Test </h1> 
+  <div class="body refbody"> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_7F1EC906160E48C0AF418EF500E2C728"><h2 class="title sectiontitle">Analytical Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1"> Analytical Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCTest.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Aspirate Arm 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> WashWheel.AspirateArm.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Dispense Arm 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> WashWheel.DispenseArm.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Incubator Wheel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> IncubateWheel.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Substrate Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Substrate.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Wash Carousel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> WashWheel.Motor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_F954A0F040E04788B386EF654625285D"><h2 class="title sectiontitle">Bulk Feeder Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82__entry__1"> Bulk Feeder Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCTest.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Bulk Feeder 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82__entry__2 "> RVSupply.Motor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_F62E69DB523243DF978372862E8B2522"><h2 class="title sectiontitle">Carriage Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1"> Carriage Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCtest.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> RV Supply Carriage 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> RVSupplyShuttle.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Carriage 1 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> ReagentShuttle1.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Carriage 2 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> ReagentShuttle2.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Carriage 3 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> ReagentShuttle3.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Carriage 4 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> ReagentShuttle4.Motor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_D12A3D98D4844E569E55797EA224D7B7"><h2 class="title sectiontitle">Fluidics Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__1"> Location 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2"> Fluidics Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" colspan="2" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3"> SMCtest.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Analytical Module 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Substrate Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Substrate.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="6"> Fluidics Drawer 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Liquid Waste Transfer pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 " rowspan="6"> 
+					 <div class="note caution note_caution" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-DE0F8F4E-3FA1-420E-A763-50B0717F6099"><span class="note__title">Caution:</span> To avoid crashing the SMCTest.exe program, do not home the fluidics drawer pumps in SMCTest.exe. Instead move the pump using the 
+						<span class="ph uicontrol" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-52D93A12-1DD1-4380-8268-775516717E6B">Go To</span> box and the 
+						<span class="ph uicontrol" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-6689955E-59DC-4303-A5BD-4C4C17648826"> +</span> and 
+						<span class="ph uicontrol" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-F2E3D40B-D70F-4BCB-8C57-70116E1ABF81">-</span> buttons. 
+					 </div> 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> LiquidWasteControl.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 1 Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentWash1.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 2 Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentWash2.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 3 Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentWash3.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 4 Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentWash4.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Buffer Transfer Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> FluidLevelControl.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="14"> Wash Buffer Reservoir 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 1 Pump Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor1.PumpPMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 1 Valve Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor1.PumpVMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 2 Pump Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor2.PumpPMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 2 Valve Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor2.PumpVMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 3 Pump Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor3.PumpPMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 3 Valve Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor3.PumpVMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 4 Pump Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor4.PumpPMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 4 Valve Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor4.PumpVMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Sample Pipettor Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> SampleWash.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Sample Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> SamplePump.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Pump 1 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashWheel.WashPump1.PMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Valve 1 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashWheel.WashPump1.VMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Pump 2 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashWheel.WashPump2.Pmotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Valve 2 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashWheel.WashPump2.VMotor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_4F4F91728A5147F2AE8E5AEFC6B53FC3"><h2 class="title sectiontitle">Pick-and-place Motor Channels</h2> 
+		 
+		<div class="p">
+		  <div class="note note note_note" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-B0B902A9-4683-4579-9299-439CD7662507"><span class="note__title">Note:</span>  The Motor.Fast is a faster motor speed that the DxI uses for movements when splashing within a vessel is not a risk. 
+		  </div>
+		</div> 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1"> Pick-and-Place Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2"> Direction 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Dual-Gantry Pick-and-Place (integrated only) 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> DualGantryPnp.XMotor 
+					 <p class="p"> DualGantryPnp.XMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> DualGantryPnP.ZMotor 
+					 <p class="p"> DualGantryPnp.ZMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Incubator Pick-and-Place 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> IncubatePnP.Xmotor 
+					 <p class="p"> IncubatePnP.Xmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> IncubatePnP.Zmotor 
+					 <p class="p"> IncubatePnp.Zmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Wash Pick-and-Place 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashPnp.Xmotor 
+					 <p class="p"> WashPnP.Xmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashPnP.Zmotor 
+					 <p class="p"> WashPnP.ZMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Sample Pick-and-Place 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> SamplePnp.Xmotor 
+					 <p class="p"> SamplePnP.Xmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> SamplePnP.Zmotor 
+					 <p class="p"> SamplePnP.Zmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_EE7CE6D809844BFAA70DEAE6F8D4A2BC"><h2 class="title sectiontitle">Reagent Pipettors Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1"> Reagent Pipettor Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2"> Direction 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Pipettor 1 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor1.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor1.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Pipettor 2 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor2.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor2.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Pipettor 3 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor3.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor3.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Pipettor 4 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor4.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor4.ZMotor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_85615164AF494F72B2E98A8380AF22EF"><h2 class="title sectiontitle">Reagent Storage Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__1"> Reagent Storage Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__2"> Direction 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__3"> SMCtext.exeName 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Gripper 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentSupply.Xmotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagenSupply.Zmotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Reagent Load Tray 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__2 "> N/A 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentSupply.TrayMotor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_3E49F3872CDD4227B829157326928F58"><h2 class="title sectiontitle">Sample pipettor motor channels</h2> 
+		 
+		<div class="p">
+		  <div class="note note note_note" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-A8A7E51B-250E-41BF-986A-FD9B8270362D"><span class="note__title">Note:</span> The Motor.Fast is a faster motor speed that the DxI uses for movements when splashing within a vessel is not a risk. 
+		  </div>
+		</div> 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__1"> Sample Pipettor Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2"> Instrument 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3"> Direction 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="6"> Sample Pipettor 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2 " rowspan="2"> Stand alone DxI 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2 " rowspan="2"> Integrated 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.DualGangry.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.DualGangry.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2 " rowspan="2"> Automation 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.LongXMotor 
+					 <p class="p"> SamplePipettor.FastLong.XMotor 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.Long.ZMotor 
+					 <p class="p"> SamplePipettor.FastLong.ZMotor 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Dual-Gantry Pick-and-Place (integrated only) 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2 " rowspan="2"> Integrated 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> DualGantryPnp.XMotor 
+					 <p class="p"> DualGantryPnp.XMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> DualGantryPnP.ZMotor 
+					 <p class="p"> DualGantryPnp.ZMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_5909341A544C42EB8BE8D4D487AEC06B"><h2 class="title sectiontitle">SPU Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__1"> SPU Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__1 "> SPU On-load 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__2 "> SPU.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__1 "> SPU Off-load 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__2 "> SPU.OffLoadMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__1 "> SPU Presentation Tray 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__2 "> SPU.PresUnitMotor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_84D75380F56F4D2999D79105A0462847"><h2 class="title sectiontitle">Sample Storage Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82__entry__1"> Sample Storage Module Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Sample Storage Wheel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82__entry__2 "> SampleWheel.Motor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-A5665163-1B1C-4CA9-9580-81C8E5C11110.html" title="4 Instrument / System"><div><span class="ph num-prefix">4 </span>Instrument / System</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html" title="4.7 Troubleshooting / Testing"><div><span class="ph num-prefix">4.7 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC.html" lang="en-US" title="4.7.22 Motor Channels in SMC Test "><div><span class="ph num-prefix">4.7.22 </span>Motor Channels in SMC Test </div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-2A46E94F-8043-44B3-86B5-343767884B12" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-2A46E94F-8043-44B3-86B5-343767884B12"><a id="GUID-2A46E94F-8043-44B3-86B5-343767884B12"></a>Motor Channels in SMC Test </h1> 
+  <div class="body refbody"> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_7F1EC906160E48C0AF418EF500E2C728"><h2 class="title sectiontitle">Analytical Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1"> Analytical Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCTest.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Aspirate Arm 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> WashWheel.AspirateArm.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Dispense Arm 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> WashWheel.DispenseArm.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Incubator Wheel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> IncubateWheel.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Substrate Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Substrate.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Wash Carousel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE6_3287EAD67C827BA4862578BD0068FD82__entry__2 "> WashWheel.Motor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_F954A0F040E04788B386EF654625285D"><h2 class="title sectiontitle">Bulk Feeder Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82__entry__1"> Bulk Feeder Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCTest.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Bulk Feeder 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE7_3287EAD67C827BA4862578BD0068FD82__entry__2 "> RVSupply.Motor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_F62E69DB523243DF978372862E8B2522"><h2 class="title sectiontitle">Carriage Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1"> Carriage Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCtest.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> RV Supply Carriage 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> RVSupplyShuttle.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Carriage 1 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> ReagentShuttle1.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Carriage 2 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> ReagentShuttle2.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Carriage 3 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> ReagentShuttle3.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Carriage 4 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE8_3287EAD67C827BA4862578BD0068FD82__entry__2 "> ReagentShuttle4.Motor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_D12A3D98D4844E569E55797EA224D7B7"><h2 class="title sectiontitle">Fluidics Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__1"> Location 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2"> Fluidics Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" colspan="2" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3"> SMCtest.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Analytical Module 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Substrate Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Substrate.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="6"> Fluidics Drawer 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Liquid Waste Transfer pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 " rowspan="6"> 
+					 <div class="note caution note_caution" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-DE0F8F4E-3FA1-420E-A763-50B0717F6099"><span class="note__title">Caution:</span> To avoid crashing the SMCTest.exe program, do not home the fluidics drawer pumps in SMCTest.exe. Instead move the pump using the 
+						<span class="ph uicontrol" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-52D93A12-1DD1-4380-8268-775516717E6B">Go To</span> box and the 
+						<span class="ph uicontrol" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-6689955E-59DC-4303-A5BD-4C4C17648826"> +</span> and 
+						<span class="ph uicontrol" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-F2E3D40B-D70F-4BCB-8C57-70116E1ABF81">-</span> buttons. 
+					 </div> 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> LiquidWasteControl.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 1 Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentWash1.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 2 Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentWash2.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 3 Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentWash3.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 4 Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentWash4.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Buffer Transfer Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> FluidLevelControl.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="14"> Wash Buffer Reservoir 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 1 Pump Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor1.PumpPMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 1 Valve Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor1.PumpVMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 2 Pump Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor2.PumpPMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 2 Valve Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor2.PumpVMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 3 Pump Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor3.PumpPMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 3 Valve Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor3.PumpVMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 4 Pump Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor4.PumpPMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Reagent Pipettor 4 Valve Motor 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor4.PumpVMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Sample Pipettor Wash Tower Peristaltic Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> SampleWash.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Sample Pump 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> SamplePump.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Pump 1 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashWheel.WashPump1.PMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Valve 1 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashWheel.WashPump1.VMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Pump 2 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashWheel.WashPump2.Pmotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Wash Valve 2 
+				  </td> 
+				  <td class="entry align-left valign-top" colspan="2" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE9_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashWheel.WashPump2.VMotor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_4F4F91728A5147F2AE8E5AEFC6B53FC3"><h2 class="title sectiontitle">Pick-and-place Motor Channels</h2> 
+		 
+		<div class="p">
+		  <div class="note note note_note" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-B0B902A9-4683-4579-9299-439CD7662507"><span class="note__title">Note:</span>  The Motor.Fast is a faster motor speed that the DxI uses for movements when splashing within a vessel is not a risk. 
+		  </div>
+		</div> 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1"> Pick-and-Place Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2"> Direction 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Dual-Gantry Pick-and-Place (integrated only) 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> DualGantryPnp.XMotor 
+					 <p class="p"> DualGantryPnp.XMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> DualGantryPnP.ZMotor 
+					 <p class="p"> DualGantryPnp.ZMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Incubator Pick-and-Place 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> IncubatePnP.Xmotor 
+					 <p class="p"> IncubatePnP.Xmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> IncubatePnP.Zmotor 
+					 <p class="p"> IncubatePnp.Zmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Wash Pick-and-Place 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashPnp.Xmotor 
+					 <p class="p"> WashPnP.Xmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> WashPnP.Zmotor 
+					 <p class="p"> WashPnP.ZMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Sample Pick-and-Place 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> SamplePnp.Xmotor 
+					 <p class="p"> SamplePnP.Xmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE10_3287EAD67C827BA4862578BD0068FD82__entry__3 "> SamplePnP.Zmotor 
+					 <p class="p"> SamplePnP.Zmotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_EE7CE6D809844BFAA70DEAE6F8D4A2BC"><h2 class="title sectiontitle">Reagent Pipettors Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1"> Reagent Pipettor Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2"> Direction 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Pipettor 1 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor1.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor1.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Pipettor 2 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor2.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor2.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Pipettor 3 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor3.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor3.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Pipettor 4 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor4.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE11_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentPipettor4.ZMotor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_85615164AF494F72B2E98A8380AF22EF"><h2 class="title sectiontitle">Reagent Storage Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__1"> Reagent Storage Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__2"> Direction 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__3"> SMCtext.exeName 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Reagent Gripper 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__2 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentSupply.Xmotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__2 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagenSupply.Zmotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Reagent Load Tray 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__2 "> N/A 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE12_3287EAD67C827BA4862578BD0068FD82__entry__3 "> ReagentSupply.TrayMotor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_3E49F3872CDD4227B829157326928F58"><h2 class="title sectiontitle">Sample pipettor motor channels</h2> 
+		 
+		<div class="p">
+		  <div class="note note note_note" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__GUID-A8A7E51B-250E-41BF-986A-FD9B8270362D"><span class="note__title">Note:</span> The Motor.Fast is a faster motor speed that the DxI uses for movements when splashing within a vessel is not a risk. 
+		  </div>
+		</div> 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__1"> Sample Pipettor Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2"> Instrument 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3"> Direction 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="6"> Sample Pipettor 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2 " rowspan="2"> Stand alone DxI 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2 " rowspan="2"> Integrated 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.DualGangry.XMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.DualGangry.ZMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2 " rowspan="2"> Automation 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.LongXMotor 
+					 <p class="p"> SamplePipettor.FastLong.XMotor 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> SamplePipettor.Long.ZMotor 
+					 <p class="p"> SamplePipettor.FastLong.ZMotor 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__1 " rowspan="2"> Dual-Gantry Pick-and-Place (integrated only) 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__2 " rowspan="2"> Integrated 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> X 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> DualGantryPnp.XMotor 
+					 <p class="p"> DualGantryPnp.XMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__3 "> Z 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE13_3287EAD67C827BA4862578BD0068FD82__entry__4 "> DualGantryPnP.ZMotor 
+					 <p class="p"> DualGantryPnp.ZMotor.Fast 
+					 </p> 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_5909341A544C42EB8BE8D4D487AEC06B"><h2 class="title sectiontitle">SPU Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__1"> SPU Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__1 "> SPU On-load 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__2 "> SPU.Motor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__1 "> SPU Off-load 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__2 "> SPU.OffLoadMotor 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__1 "> SPU Presentation Tray 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE14_3287EAD67C827BA4862578BD0068FD82__entry__2 "> SPU.PresUnitMotor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__SECTION_84D75380F56F4D2999D79105A0462847"><h2 class="title sectiontitle">Sample Storage Motor Channels</h2> 
+		 
+		<div class="p">
+		<table class="table" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82__entry__1"> Sample Storage Module Motor 
+				  </th> 
+				  <th class="entry align-left valign-top" id="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82__entry__2"> SMCtext.exe Name 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82__entry__1 "> Sample Storage Wheel 
+				  </td> 
+				  <td class="entry align-left valign-top" headers="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC__TABLE15_3287EAD67C827BA4862578BD0068FD82__entry__2 "> SampleWheel.Motor 
+				  </td> 
+				</tr> 
+			 </tbody></table>
+		</div> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-A5665163-1B1C-4CA9-9580-81C8E5C11110.html" title="4 Instrument / System"><div><span class="ph num-prefix">4 </span>Instrument / System</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html" title="4.7 Troubleshooting / Testing"><div><span class="ph num-prefix">4.7 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC.html" lang="en-US" title="4.7.22 Motor Channels in SMC Test "><div><span class="ph num-prefix">4.7.22 </span>Motor Channels in SMC Test </div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

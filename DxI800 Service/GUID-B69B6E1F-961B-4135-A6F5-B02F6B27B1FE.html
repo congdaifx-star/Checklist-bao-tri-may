@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to ping the AU and identify the IP address that the system software will use to communicate with the AU." name="description" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.6.22 Pinging AU</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493.html" rel="prev" /><link href="GUID-382184C2-FEB3-4F27-ADE8-3AD19C8B6ED4.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e2174" data-relpath="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE" role="article"> 
+  <h1 class="title topictitle1" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Pinging AU</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to ping the AU and identify the IP address that the system software will use to communicate with the AU. 
+  </p> 
+	 <ol class="ol steps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Identify the IP address that the system software will use to communicate with the AU. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-CF015BB1-F17C-40D3-B869-FA1361E2379F">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEPS_0344B923589944A0A7BE050AAF31841E" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_BA634C01EF5349699079A67ECD4309A7"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-41599010-EBF5-4D19-99D0-531B9843A129">Press the 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-CD87B2A8-84FB-48F0-AE6E-30A9E0937D5F">[Windows]</span> key. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_34E1DCD14B6C4F929DF48DE2A755B64C"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-76B8A893-325F-455A-BCA2-DE5DA20A71A9">Select 
+				  <span class="ph menucascade" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-ADFE90CD-80D8-4D64-81EF-99462012A69A"><span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-DB412EA0-30CF-4EC3-A270-9292F80CFB26">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-EF8C207F-E8C5-49A6-8ACA-4DE191C4F07C">Programs</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A8D2F063-DF39-4F9B-9EAF-435AA81384CF">NexGen</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A8235C0F-BDE7-4B2C-9927-EACDBCA2894F">dbTestUD</span></span>The dbTest will open; but only after the system software is successfully installed. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_8B4B1467517647399F1E84A3F101ED51"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-2D42CBC8-860A-4016-8355-EA8220BB335C">Select 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-264B3606-F900-4CC6-AFD0-06C3EC548178">System Info</span> in the<span class="keyword wintitle" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-59243BA0-7ADB-4F06-A0F5-71ED9BD46454"> DbTest</span> window to display the console IP address and the IP address that is expected for the AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-C25BC2ED-CE3A-483A-BE7C-A3778205A6C5"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_003DAA6ACFBE45D1B0F1C7857D70CA72"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_4D9415E3F83A46F4B34CAAED8E0D7F7A">The AU IP address that is listed is the address that was stored in the PC registry and is not necessarily the actual address of the instrument. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_E1200C6B7F5B4F94BBBC302F9B58C4A2">If the address listed does not match the actual address, then the user interface will not be able to communicate with the AU. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_21EC3A6B3CF94D9FBF86E71D2B41FA0D">The entry can be edited using regedit or the 
+					 <span class="keyword option" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-989CA325-E7DF-4918-AAB0-9AAE8359B975">Reconfigure workgroup server</span> option of the Restore Utility. 
+					 </li> 
+					 <li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_91CC70D73AB443A09CA13EAF4C5B85F1">The address is stored in the PC registry at 
+						<span class="ph menucascade" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-79AA358F-473B-4DD2-8D1D-95C353E228BF"><span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-1A13084E-4611-4FCC-B57C-2603E5671373">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-53C56167-5C7E-4D58-AFAE-291A464280A1">Software</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-E95156EF-E8D1-413C-BA17-E3778235EBFC">Beckman</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-7255AE66-9ED3-4F32-8DA1-44520D48FDDA">Nexstep</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-C83B2DFB-08A4-48A9-8F1F-822DF3FF06C5"> Workgroup</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A4E42115-6B25-4190-8946-4E471FA3A839">AuIp</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_33131D0E07AF4C319DB6FE569C427CB2">In order for the user interface to accept messages from the AU, the address must also agree with the entry stored in the NexStepBase database. Refer to the 
+						<a class="xref" href="GUID-BC95E6BB-9523-4189-9E28-037597CFB973.html" title="This procedure describes how to clear jammed messages between the DxI AU and the Windows XP or Windows 8 console PC.">Software: Clearing Jammed Critical Events</a> procedure. 
+					 </li> 
+					 </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_247566DF241442A8AF3D9EFF1147ACC8"><br /><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_392612CF05F84CB6A9D090196C689D76" src="GUID-BE6669FB-FBA2-4A1C-84CD-C8122E636D46-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_B2FD94D9FD5744C8B35C8A49A22F696A"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-C9564ADC-7C73-4C22-8C3B-38D90B5739D6">Select 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A4D66337-7E56-4A3A-BB3C-67563549FE35">OK</span> to close the 
+				  <span class="keyword wintitle" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-AF7328B9-7FD5-4501-BC47-8546A129F945">System Info</span> window, and then exit 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B9B3830E-3407-478B-9058-58126C7B5ECF">dbTest</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <p class="p"><strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-32B497D6-15AA-43EB-80A1-96C4B87E5383">For Windows 8: 
+					 </strong> 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <ol class="ol substeps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEPS_49D96A08C9BD461783552854E87E9A88" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_4AAF1A8755D34B0C8880F2C864FA2018"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A3612B19-B73C-4DFC-AF87-E1986A4C18FF">Press 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F7632326-7C8E-4202-AA73-690568FC9F37">Windows</strong> key, open 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F33D4E00-5F32-4E33-8BB2-BE51C970CB3D">DBTest UD</strong> icon. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_E71A0EE5C50349C09BF2399435D77143"><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_E6C8EE5096E94BFEB0C179D14E9C79A2" src="GUID-03AAC6F7-EE49-48CA-8B99-FC75C2CE8F63-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_BE6DCD6A94FB4C38AB5BD7DBBFD8D8F0"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F1F88CB7-7ACF-4883-ABD0-A4BB13FAEF07">Select 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B2C2B93E-6310-47AA-86D7-2C2605E48E4E">System Info</strong> in the DBTest window to display the console IP address and the IP address that is expected for the AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_FB0B010BEC25412FB521471124DBC9AF"><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_A9301DAB67BA463E99EF542F1079FE3B" src="GUID-13CF427F-133B-47E0-A280-752DCB2CF17E-default.png" /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-C6F31B1A-433A-47E0-A9C2-E7AF0FCD7983"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_15606619012548B0BCD2BBE436EB288A"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_88CE6C95F26A483792BEFE40B9F1249D">The AU IP address that is listed is the address that was stored in the PC registry and is not necessarily the actual address of the instrument. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_0FCC8772FB9849878C4A4B0A7C9209BD">If the address listed does not match the actual address, then the user interface will not be able to communicate with the AU. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_E94C4C073DDD4ACAA64A61293EA22809">The entry can be edited using regedit or the Reconfigure workgroup server option of the Restore Utility. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_E5AD8DDD05BB47BFA81B2DB1000A4034">The address is stored in the PC registry at 
+						  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-9112D87A-AEDB-49BA-9475-933DC01B424F">HKEY_LOCAL_MACHINE &gt; Software &gt; Beckman &gt; Nexstep &gt; Workgroup &gt; AuIp.</strong> 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_B26AD1F9F791413583915BCADD2813AF">In order for the user interface to accept messages from the AU, the address must also agree with the entry stored in the NexStepBase database. Refer to the 
+						  <a class="xref" href="GUID-BC95E6BB-9523-4189-9E28-037597CFB973.html" title="This procedure describes how to clear jammed messages between the DxI AU and the Windows XP or Windows 8 console PC.">Software: Database - Clearing Jammed Critical Events</a> procedure. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_B1A915CA921B42D8A6C910368A7EE6F1"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-AA70BA82-DD4D-4795-BA01-18621B7AB7C3">Select 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-9F954261-F8D7-4171-B8B8-9927C1165AE5">OK 
+				  </strong>to close the System Info window, and then 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B37DC5F8-4CEB-4031-AB20-70818222587D">exit 
+				  </strong>DBTest. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__STEP_A770A8C6138B4A07AA15DF69155A9C9F"> 
+		  <span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F799DEA3-01B9-4CC6-B2E9-B6B47E45B42F">Ping the AU. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-270FBC25-3463-4975-AAA3-98CCD7A1B9F6">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEPS_E6761FC8B8B64CDAADD1B655631856B2" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_A7ACEAF783BF4AFE97E549E4DFC8C346"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A888DFC8-0D9A-4D1C-A1E2-CE48A37DA2A3">Select the 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F0E9067F-80C8-4547-B4A4-32ADA63C16D3">[Windows]</span> key, and then select 
+				  <span class="ph menucascade" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-3CA07E78-B228-45EC-8042-36BD8E10DD4C"><span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-22E9BDA5-D006-4904-AC8B-125773075CFA">Start</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-E18BE886-CBA6-4BDF-8856-C027B2E316B1">Run</span></span> to open a run dialog box on the console. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_C270A44DA9DE4503831DBD66CACF4C2B"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-3001956F-8606-44C2-892C-E9CDA4B66925">Enter 
+				  <kbd class="ph userinput" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-2F04B181-1168-41A7-A7C7-FDA96BAA6ADC">cmd</kbd> and select 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-D3C9B22C-32DA-45D0-9D49-A6D22B6C6748">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_EA7824A2BFA74570902EF9536364B305"><br /><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_BC7D02647E5240B0B26C6F80EFFFEB98" src="GUID-BC14FEA6-8DCC-4DB4-A95C-6B029FC6D4B0-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_DA05DDFC2D6242DB9F076E3940A2D183"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-5C170128-E59A-40A5-B30E-006870AD7716">In the 
+				  <span class="keyword wintitle" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A99369A9-31BF-49EE-B9A3-A64B7B17067D">CMD</span> window, enter 
+				  <kbd class="ph userinput" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-D36C8233-470F-46B4-8D34-B10FD0B7DEE8">ping 192.168.2.4</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-8BD1E8E9-D1BB-4C51-ACA0-46C6FA1DD1C3">Enter</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-94EFBB43-D606-4E79-B264-8EEA1512CBAE"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_A68BDE6722BF49109EAF0375EE168DC1"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_A083D41DE370487F8DC04E360F2241C7">The instrument IP address is normally 192.168.2.2 for a new AU, and 192.168.2.4 for an AU with DxI software installed. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_84C7ABDE534D4C0D9E1F4CFCFA3E1DB3">The console PC IP address is normally 192.168.2.1 for a new PC and 192.168.2.3 for a PC with DxI software installed. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_977FFE2318274A15904859C1ED150921">Try pinging 2.1 through 2.10, if not successful at 2.4. or 2.2. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_574AA633E305451EAAB137B69A9ED1EF"><br /><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_00774DD37FD345D184DAC86F98BBEBDC" src="GUID-6DFCABDA-6F14-4F6B-AE41-88E056FE2257-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_77D5B07B0393413385E430C36914D51F"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-9B44CD0D-6463-482A-917F-EEB30762D53D">Verify that the PC receives a reply from the AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-EBA5DCA6-48F7-4BFD-A615-D1D24EFA1704"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_94EF90401D704AC386B8463039FA1200"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_4671CF7114454FC3ACDF79F8FF929656">If a<samp class="ph msgph" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-332EA459-D495-4E32-840A-AC2F7251F2D9"> Destination Host Unreachable</samp> message is displayed, then check that the IP address was entered correctly. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_B39B5B189AF142EF947F97399FBE3D76">For Windows XP consoles not connected to a working network, an error message of 
+						  <samp class="ph msgph" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-6D276DA2-C534-470C-8F5C-CA445D51375B">Destination Host Unreachable</samp> is generated when pinging any address (even the address of the PC). 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_11982E780D664F1EB531A4B508043B41">If the AU and PC are given the same IP address, then there is a network conflict and no communication occurs. To resolve the conflict, change the PC IP address to 2.1, reboot the instrument and the PC, and then ping addresses 1 to 10 again. Refer to the configuring network settings section of the 
+						  <a class="xref" href="GUID-C67E08C4-6CE8-45EB-86F4-E6177F2E3804.html" title="This procedure describes how to replace the console PC or the PC hard drive on a DxI system.">Peripherals: Replacing Console PC or PC Hard Drive</a>. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_AB1329F3DF8A4BB0BE9A8254D0165C0E">The network connection on the PC is near the mouse connector. The dual NIC ports on the PC are for the RMS and LAS and do not work for the AU connection. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_931102F2F2CF438EA16FB5876C8C3611">The DxI instrument has two network connectors, identified as PC and UCTA. If unsure of the port, try both, connect to the spare port on the underside of the SPU, or connect directly to the AU hub. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <p class="p"><strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A98E0763-45D1-4319-978B-A89D09288C3F">For Windows 8: 
+					 </strong> 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <ol class="ol substeps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEPS_4C8C279345A048FA8E06332AE3238CD6" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_D42099C72CD043169891FAB2A237C2EB"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-DE67A28E-8D96-4031-9D13-8D3D805BFCD2">Press 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-BC21DA5C-D2B1-4478-8581-2F46E8595CC1">Windows</strong> key, open the 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-D280AC80-4F6D-4AE1-8001-56E8DE1A7BB6">Command Prompt</strong> icon or type 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-6DFFC203-46A3-47EB-9D9F-DDDCB9DE6457">command prompt</strong> and open the program. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_198A84B9B6324BA79D541D28D074AFFA"><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_9760FE9B55EF4648A601956E46F79B1C" src="GUID-8122356F-4350-428D-B0C4-74BE4997AE76-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_0D80FFE6C4A74A5F90FF97967372F198"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-9B56FB9D-F15B-495A-8059-43E57C59270F">In the CMD window, enter 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B9214C0B-6624-4D5E-A6DF-7746A88EFB4A">ping 192.168.2.4</strong>, and then select Enter. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-FCA464CD-B482-43CD-B9E8-3900ED94D52E"><span class="note__title">Note:</span> For Windows 8, the default console IP address is 192.168.2.3 and the AU IP address is 192.168.2.4. Neither IP address changes during the software load process. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_1168FA0A384B4E2B8CD62D40B748355A"><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_858EC33503364D398BF5B67E69EF33E6" src="GUID-89D8E479-DD1D-42C8-9C4A-AB8D25FB24A3-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_0A0C230B7432408BB1F31936A7D00EE3"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A0FB1FB0-4610-4D1F-AD01-0FE977E1B018"> Verify that the PC receives a reply from the AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-71BE2EFD-6CF9-4DD8-ABB6-1FC27DC482A6"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_375001E0D5AA4C8DBA69F93DF1567680"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_D0972F8071B54D5AB808B1A0E9BEFABC">If a Destination Host Unreachable message is displayed, then check that the IP address was entered correctly. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_77748E07551E48F5B287F59A28CA48C6">For Windows 8 consoles not connected to a working network, an error message of Destination Host Unreachable is generated when pinging any address (even the address of the PC). 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_1199F2B1644E4E3BABB82E9C5679EF60">If the AU and PC are given the same IP address, then there is a network conflict and no communication occurs. To resolve the conflict, change the PC IP address to 2.1, reboot the instrument and the PC, and then ping addresses 1 to 10 again. Refer to the configuring network settings section of the 
+						  <a class="xref" href="GUID-C67E08C4-6CE8-45EB-86F4-E6177F2E3804.html" title="This procedure describes how to replace the console PC or the PC hard drive on a DxI system.">Peripherals: Replacing Console PC or PC Hard Drive</a>. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_F008A852D43B4A8CB63C89AFBDB4867E">The network connection on the PC is located between the USB 3.0 connections and the Video connection. The dual NIC ports on the PC are for the RMS and LAS and do not work for the AU connection. Refer to 
+						  <a class="xref" href="GUID-917A1921-0C4D-4702-8C86-7129BBF0BB23.html">Console PC Connector Identification (DxI and Access2)</a> or 
+						  <a class="xref" href="GUID-BF468614-5C8F-40FA-8E54-E0D204A447C1.html" title="This procedure describes how to install a DxI Immunoassay System. Perform this procedure if a DxI Immunoassay System has not been installed previously at this site.">Installing DxI Instrument</a> procedures for the PC diagram. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_3E99E445DD9D4CB09D4DB814F8F16F75">The DxI instrument has two network connectors, identified as PC and UCTA. If unsure of the port, try both, connect to the spare port on the underside of the SPU, or connect directly to the AU hub. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE.html" lang="en-US" title="23.6.22 Pinging AU"><div><span class="ph num-prefix">23.6.22 </span>Pinging AU</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE" role="article"> 
+  <h1 class="title topictitle1" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Pinging AU</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to ping the AU and identify the IP address that the system software will use to communicate with the AU. 
+  </p> 
+	 <ol class="ol steps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Identify the IP address that the system software will use to communicate with the AU. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-CF015BB1-F17C-40D3-B869-FA1361E2379F">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEPS_0344B923589944A0A7BE050AAF31841E" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_BA634C01EF5349699079A67ECD4309A7"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-41599010-EBF5-4D19-99D0-531B9843A129">Press the 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-CD87B2A8-84FB-48F0-AE6E-30A9E0937D5F">[Windows]</span> key. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_34E1DCD14B6C4F929DF48DE2A755B64C"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-76B8A893-325F-455A-BCA2-DE5DA20A71A9">Select 
+				  <span class="ph menucascade" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-ADFE90CD-80D8-4D64-81EF-99462012A69A"><span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-DB412EA0-30CF-4EC3-A270-9292F80CFB26">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-EF8C207F-E8C5-49A6-8ACA-4DE191C4F07C">Programs</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A8D2F063-DF39-4F9B-9EAF-435AA81384CF">NexGen</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A8235C0F-BDE7-4B2C-9927-EACDBCA2894F">dbTestUD</span></span>The dbTest will open; but only after the system software is successfully installed. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_8B4B1467517647399F1E84A3F101ED51"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-2D42CBC8-860A-4016-8355-EA8220BB335C">Select 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-264B3606-F900-4CC6-AFD0-06C3EC548178">System Info</span> in the<span class="keyword wintitle" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-59243BA0-7ADB-4F06-A0F5-71ED9BD46454"> DbTest</span> window to display the console IP address and the IP address that is expected for the AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-C25BC2ED-CE3A-483A-BE7C-A3778205A6C5"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_003DAA6ACFBE45D1B0F1C7857D70CA72"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_4D9415E3F83A46F4B34CAAED8E0D7F7A">The AU IP address that is listed is the address that was stored in the PC registry and is not necessarily the actual address of the instrument. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_E1200C6B7F5B4F94BBBC302F9B58C4A2">If the address listed does not match the actual address, then the user interface will not be able to communicate with the AU. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_21EC3A6B3CF94D9FBF86E71D2B41FA0D">The entry can be edited using regedit or the 
+					 <span class="keyword option" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-989CA325-E7DF-4918-AAB0-9AAE8359B975">Reconfigure workgroup server</span> option of the Restore Utility. 
+					 </li> 
+					 <li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_91CC70D73AB443A09CA13EAF4C5B85F1">The address is stored in the PC registry at 
+						<span class="ph menucascade" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-79AA358F-473B-4DD2-8D1D-95C353E228BF"><span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-1A13084E-4611-4FCC-B57C-2603E5671373">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-53C56167-5C7E-4D58-AFAE-291A464280A1">Software</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-E95156EF-E8D1-413C-BA17-E3778235EBFC">Beckman</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-7255AE66-9ED3-4F32-8DA1-44520D48FDDA">Nexstep</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-C83B2DFB-08A4-48A9-8F1F-822DF3FF06C5"> Workgroup</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A4E42115-6B25-4190-8946-4E471FA3A839">AuIp</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_33131D0E07AF4C319DB6FE569C427CB2">In order for the user interface to accept messages from the AU, the address must also agree with the entry stored in the NexStepBase database. Refer to the 
+						<a class="xref" href="GUID-BC95E6BB-9523-4189-9E28-037597CFB973.html" title="This procedure describes how to clear jammed messages between the DxI AU and the Windows XP or Windows 8 console PC.">Software: Clearing Jammed Critical Events</a> procedure. 
+					 </li> 
+					 </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_247566DF241442A8AF3D9EFF1147ACC8"><br /><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_392612CF05F84CB6A9D090196C689D76" src="GUID-BE6669FB-FBA2-4A1C-84CD-C8122E636D46-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_B2FD94D9FD5744C8B35C8A49A22F696A"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-C9564ADC-7C73-4C22-8C3B-38D90B5739D6">Select 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A4D66337-7E56-4A3A-BB3C-67563549FE35">OK</span> to close the 
+				  <span class="keyword wintitle" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-AF7328B9-7FD5-4501-BC47-8546A129F945">System Info</span> window, and then exit 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B9B3830E-3407-478B-9058-58126C7B5ECF">dbTest</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <p class="p"><strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-32B497D6-15AA-43EB-80A1-96C4B87E5383">For Windows 8: 
+					 </strong> 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <ol class="ol substeps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEPS_49D96A08C9BD461783552854E87E9A88" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_4AAF1A8755D34B0C8880F2C864FA2018"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A3612B19-B73C-4DFC-AF87-E1986A4C18FF">Press 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F7632326-7C8E-4202-AA73-690568FC9F37">Windows</strong> key, open 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F33D4E00-5F32-4E33-8BB2-BE51C970CB3D">DBTest UD</strong> icon. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_E71A0EE5C50349C09BF2399435D77143"><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_E6C8EE5096E94BFEB0C179D14E9C79A2" src="GUID-03AAC6F7-EE49-48CA-8B99-FC75C2CE8F63-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_BE6DCD6A94FB4C38AB5BD7DBBFD8D8F0"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F1F88CB7-7ACF-4883-ABD0-A4BB13FAEF07">Select 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B2C2B93E-6310-47AA-86D7-2C2605E48E4E">System Info</strong> in the DBTest window to display the console IP address and the IP address that is expected for the AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_FB0B010BEC25412FB521471124DBC9AF"><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_A9301DAB67BA463E99EF542F1079FE3B" src="GUID-13CF427F-133B-47E0-A280-752DCB2CF17E-default.png" /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-C6F31B1A-433A-47E0-A9C2-E7AF0FCD7983"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_15606619012548B0BCD2BBE436EB288A"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_88CE6C95F26A483792BEFE40B9F1249D">The AU IP address that is listed is the address that was stored in the PC registry and is not necessarily the actual address of the instrument. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_0FCC8772FB9849878C4A4B0A7C9209BD">If the address listed does not match the actual address, then the user interface will not be able to communicate with the AU. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_E94C4C073DDD4ACAA64A61293EA22809">The entry can be edited using regedit or the Reconfigure workgroup server option of the Restore Utility. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_E5AD8DDD05BB47BFA81B2DB1000A4034">The address is stored in the PC registry at 
+						  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-9112D87A-AEDB-49BA-9475-933DC01B424F">HKEY_LOCAL_MACHINE &gt; Software &gt; Beckman &gt; Nexstep &gt; Workgroup &gt; AuIp.</strong> 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_B26AD1F9F791413583915BCADD2813AF">In order for the user interface to accept messages from the AU, the address must also agree with the entry stored in the NexStepBase database. Refer to the 
+						  <a class="xref" href="GUID-BC95E6BB-9523-4189-9E28-037597CFB973.html" title="This procedure describes how to clear jammed messages between the DxI AU and the Windows XP or Windows 8 console PC.">Software: Database - Clearing Jammed Critical Events</a> procedure. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_B1A915CA921B42D8A6C910368A7EE6F1"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-AA70BA82-DD4D-4795-BA01-18621B7AB7C3">Select 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-9F954261-F8D7-4171-B8B8-9927C1165AE5">OK 
+				  </strong>to close the System Info window, and then 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B37DC5F8-4CEB-4031-AB20-70818222587D">exit 
+				  </strong>DBTest. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__STEP_A770A8C6138B4A07AA15DF69155A9C9F"> 
+		  <span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F799DEA3-01B9-4CC6-B2E9-B6B47E45B42F">Ping the AU. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-270FBC25-3463-4975-AAA3-98CCD7A1B9F6">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEPS_E6761FC8B8B64CDAADD1B655631856B2" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_A7ACEAF783BF4AFE97E549E4DFC8C346"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A888DFC8-0D9A-4D1C-A1E2-CE48A37DA2A3">Select the 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-F0E9067F-80C8-4547-B4A4-32ADA63C16D3">[Windows]</span> key, and then select 
+				  <span class="ph menucascade" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-3CA07E78-B228-45EC-8042-36BD8E10DD4C"><span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-22E9BDA5-D006-4904-AC8B-125773075CFA">Start</span> &gt; <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-E18BE886-CBA6-4BDF-8856-C027B2E316B1">Run</span></span> to open a run dialog box on the console. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_C270A44DA9DE4503831DBD66CACF4C2B"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-3001956F-8606-44C2-892C-E9CDA4B66925">Enter 
+				  <kbd class="ph userinput" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-2F04B181-1168-41A7-A7C7-FDA96BAA6ADC">cmd</kbd> and select 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-D3C9B22C-32DA-45D0-9D49-A6D22B6C6748">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_EA7824A2BFA74570902EF9536364B305"><br /><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_BC7D02647E5240B0B26C6F80EFFFEB98" src="GUID-BC14FEA6-8DCC-4DB4-A95C-6B029FC6D4B0-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_DA05DDFC2D6242DB9F076E3940A2D183"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-5C170128-E59A-40A5-B30E-006870AD7716">In the 
+				  <span class="keyword wintitle" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A99369A9-31BF-49EE-B9A3-A64B7B17067D">CMD</span> window, enter 
+				  <kbd class="ph userinput" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-D36C8233-470F-46B4-8D34-B10FD0B7DEE8">ping 192.168.2.4</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-8BD1E8E9-D1BB-4C51-ACA0-46C6FA1DD1C3">Enter</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-94EFBB43-D606-4E79-B264-8EEA1512CBAE"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_A68BDE6722BF49109EAF0375EE168DC1"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_A083D41DE370487F8DC04E360F2241C7">The instrument IP address is normally 192.168.2.2 for a new AU, and 192.168.2.4 for an AU with DxI software installed. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_84C7ABDE534D4C0D9E1F4CFCFA3E1DB3">The console PC IP address is normally 192.168.2.1 for a new PC and 192.168.2.3 for a PC with DxI software installed. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_977FFE2318274A15904859C1ED150921">Try pinging 2.1 through 2.10, if not successful at 2.4. or 2.2. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_574AA633E305451EAAB137B69A9ED1EF"><br /><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_00774DD37FD345D184DAC86F98BBEBDC" src="GUID-6DFCABDA-6F14-4F6B-AE41-88E056FE2257-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_77D5B07B0393413385E430C36914D51F"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-9B44CD0D-6463-482A-917F-EEB30762D53D">Verify that the PC receives a reply from the AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-EBA5DCA6-48F7-4BFD-A615-D1D24EFA1704"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_94EF90401D704AC386B8463039FA1200"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_4671CF7114454FC3ACDF79F8FF929656">If a<samp class="ph msgph" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-332EA459-D495-4E32-840A-AC2F7251F2D9"> Destination Host Unreachable</samp> message is displayed, then check that the IP address was entered correctly. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_B39B5B189AF142EF947F97399FBE3D76">For Windows XP consoles not connected to a working network, an error message of 
+						  <samp class="ph msgph" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-6D276DA2-C534-470C-8F5C-CA445D51375B">Destination Host Unreachable</samp> is generated when pinging any address (even the address of the PC). 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_11982E780D664F1EB531A4B508043B41">If the AU and PC are given the same IP address, then there is a network conflict and no communication occurs. To resolve the conflict, change the PC IP address to 2.1, reboot the instrument and the PC, and then ping addresses 1 to 10 again. Refer to the configuring network settings section of the 
+						  <a class="xref" href="GUID-C67E08C4-6CE8-45EB-86F4-E6177F2E3804.html" title="This procedure describes how to replace the console PC or the PC hard drive on a DxI system.">Peripherals: Replacing Console PC or PC Hard Drive</a>. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_AB1329F3DF8A4BB0BE9A8254D0165C0E">The network connection on the PC is near the mouse connector. The dual NIC ports on the PC are for the RMS and LAS and do not work for the AU connection. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_931102F2F2CF438EA16FB5876C8C3611">The DxI instrument has two network connectors, identified as PC and UCTA. If unsure of the port, try both, connect to the spare port on the underside of the SPU, or connect directly to the AU hub. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <p class="p"><strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A98E0763-45D1-4319-978B-A89D09288C3F">For Windows 8: 
+					 </strong> 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <ol class="ol substeps" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEPS_4C8C279345A048FA8E06332AE3238CD6" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_D42099C72CD043169891FAB2A237C2EB"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-DE67A28E-8D96-4031-9D13-8D3D805BFCD2">Press 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-BC21DA5C-D2B1-4478-8581-2F46E8595CC1">Windows</strong> key, open the 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-D280AC80-4F6D-4AE1-8001-56E8DE1A7BB6">Command Prompt</strong> icon or type 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-6DFFC203-46A3-47EB-9D9F-DDDCB9DE6457">command prompt</strong> and open the program. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_198A84B9B6324BA79D541D28D074AFFA"><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_9760FE9B55EF4648A601956E46F79B1C" src="GUID-8122356F-4350-428D-B0C4-74BE4997AE76-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_0D80FFE6C4A74A5F90FF97967372F198"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-9B56FB9D-F15B-495A-8059-43E57C59270F">In the CMD window, enter 
+				  <strong class="ph b" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-B9214C0B-6624-4D5E-A6DF-7746A88EFB4A">ping 192.168.2.4</strong>, and then select Enter. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-FCA464CD-B482-43CD-B9E8-3900ED94D52E"><span class="note__title">Note:</span> For Windows 8, the default console IP address is 192.168.2.3 and the AU IP address is 192.168.2.4. Neither IP address changes during the software load process. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__FIG_1168FA0A384B4E2B8CD62D40B748355A"><img class="image" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__IMAGE_858EC33503364D398BF5B67E69EF33E6" src="GUID-89D8E479-DD1D-42C8-9C4A-AB8D25FB24A3-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__SUBSTEP_0A0C230B7432408BB1F31936A7D00EE3"> 
+				<span class="ph cmd" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-A0FB1FB0-4610-4D1F-AD01-0FE977E1B018"> Verify that the PC receives a reply from the AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__GUID-71BE2EFD-6CF9-4DD8-ABB6-1FC27DC482A6"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__UL_375001E0D5AA4C8DBA69F93DF1567680"> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_D0972F8071B54D5AB808B1A0E9BEFABC">If a Destination Host Unreachable message is displayed, then check that the IP address was entered correctly. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_77748E07551E48F5B287F59A28CA48C6">For Windows 8 consoles not connected to a working network, an error message of Destination Host Unreachable is generated when pinging any address (even the address of the PC). 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_1199F2B1644E4E3BABB82E9C5679EF60">If the AU and PC are given the same IP address, then there is a network conflict and no communication occurs. To resolve the conflict, change the PC IP address to 2.1, reboot the instrument and the PC, and then ping addresses 1 to 10 again. Refer to the configuring network settings section of the 
+						  <a class="xref" href="GUID-C67E08C4-6CE8-45EB-86F4-E6177F2E3804.html" title="This procedure describes how to replace the console PC or the PC hard drive on a DxI system.">Peripherals: Replacing Console PC or PC Hard Drive</a>. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_F008A852D43B4A8CB63C89AFBDB4867E">The network connection on the PC is located between the USB 3.0 connections and the Video connection. The dual NIC ports on the PC are for the RMS and LAS and do not work for the AU connection. Refer to 
+						  <a class="xref" href="GUID-917A1921-0C4D-4702-8C86-7129BBF0BB23.html">Console PC Connector Identification (DxI and Access2)</a> or 
+						  <a class="xref" href="GUID-BF468614-5C8F-40FA-8E54-E0D204A447C1.html" title="This procedure describes how to install a DxI Immunoassay System. Perform this procedure if a DxI Immunoassay System has not been installed previously at this site.">Installing DxI Instrument</a> procedures for the PC diagram. 
+						</li> 
+						<li class="li" id="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE__LI_3E99E445DD9D4CB09D4DB814F8F16F75">The DxI instrument has two network connectors, identified as PC and UCTA. If unsure of the port, try both, connect to the spare port on the underside of the SPU, or connect directly to the AU hub. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE.html" lang="en-US" title="23.6.22 Pinging AU"><div><span class="ph num-prefix">23.6.22 </span>Pinging AU</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

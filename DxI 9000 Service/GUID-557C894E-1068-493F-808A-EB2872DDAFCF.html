@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="GUID-BD3DD764-C2FC-49D8-8ACF-964FB0609F8B.html" name="DC.Relation" scheme="URI" /><meta content="GUID-3809C61A-1288-4685-A57F-5876F8BF2D8B.html" name="DC.Relation" scheme="URI" /><meta content="GUID-BD3DD764-C2FC-49D8-8ACF-964FB0609F8B.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="July 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BK" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="10/07/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="C65079" name="FBCPARTNUM" /><meta content="None" name="FBCMANUFACTUREDBY" /><meta content="Service" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="16/06/2026 18:37:18" name="FISHPUBREVIEWENDDATE" /><meta content="10/07/2026 16:28:15" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4" name="FMAPID" /><meta content="07/07/2026 18:25:47" name="MODIFIED-ON" /><meta content="16/06/2026 20:29:13" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-E0B2E065-B380-4B5E-AC7F-13F39D148EBC" name="FISHMASTERREF" /><meta content="DxI 9000 Service Manual-v37-GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4-20260616 20:29:13" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BK" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="37" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI 9000 Service Manual" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="yes" name="print" /><meta content="no" name="printAll" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-557C894E-1068-493F-808A-EB2872DDAFCF" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>5.4.13 Installing OpenVPN for Encrypted Laboratory Information System (LIS) Connections</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-B5905CA8-7147-4B42-9014-5B128FC21585.html" rel="prev" /><link href="GUID-E664E330-E39E-4DE1-A4A1-D97D58C67B12.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1306" data-relpath="GUID-557C894E-1068-493F-808A-EB2872DDAFCF.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI 9000 Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI 9000 Service Manual</span><span id="emailpub">Publication: DxI 9000 Service Manual</span><span id="emailpartnum">Part Number: C65079</span><span id="emailrev">Revision: BK</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-36A603F8-9725-4607-AAB5-028631DA9723" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF" role="article"> 
+  <h1 class="title topictitle1" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-36A603F8-9725-4607-AAB5-028631DA9723"><a id="GUID-36A603F8-9725-4607-AAB5-028631DA9723"></a>Installing OpenVPN for Encrypted Laboratory Information System (LIS) Connections</h1> 
+  <div class="body conbody"> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4A0EA0868D8A489BAAD265C10037566B"> 
+		<div class="p"> This topic includes information about how to install and configure OpenVPN software to allow encrypted communication between the laboratory information system (LIS) and the DxI 9000 instrument. 
+		  <div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-EB10E8F3-E998-4B79-B224-111F7E8EB3DF"><span class="note__title">Note:</span> Before you can install OpenVPN onto DxI 9000 instrument clients, you must first obtain OpenVPN certificates and download the OpenVPN software. See 
+			 <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_A8946F28EFFC4B44B80807E83E8C236A">Obtaining OpenVPN Certificates</a> and 
+			 <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_B49B2BFFB7C94DCD927281A4F8D44197">Downloading the OpenVPN Software</a> for more information. 
+		  </div> 
+		  <div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C953459F-0B40-4476-BFB9-40563B1F94D2"><span class="note__title">Important:</span>  Before you install OpenVPN software onto DxI 9000 instruments as clients connected to the LIS server, the customer&#39;s IT group or LIS vendor must first install OpenVPN onto the LIS server. See 
+			 <em class="ph i" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-519218DA-999A-48AB-A13E-8958FE379537">C87147 - Host Manual for DxI 9000, DxC 500 AU, and DxC 500i Analyzers</em> on the Beckman Coulter website for more information about how to install OpenVPN onto the LIS server. 
+		  </div> 
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_A8946F28EFFC4B44B80807E83E8C236A"><h2 class="title sectiontitle">Obtaining OpenVPN Certificates</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_125DAABA5F1F46DE9C0D92CFAA25824E"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_8BF90B7A8A664280BC41C10268BEA99A">Obtain the following information from the customer&#39;s IT group or LIS vendor. 
+			 <table class="table" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029"><caption></caption><colgroup><col style="width:46.08294930875576%" /><col style="width:53.91705069124424%" /></colgroup><thead class="thead"> 
+					 <tr class="row"> 
+						<th class="entry" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1"> Information Requested 
+						</th> 
+						<th class="entry" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2"> Information Provided 
+						</th> 
+					 </tr></thead><tbody class="tbody"> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> Is this a New or Existing OpenVPN Installation 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> Instance number of each DxI 9000 instrument being connected 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> Customer Name 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> Customer Account Number/ID 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> IP address of the LIS (server) 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> LIS Port ID (default is 1194) 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+				  </tbody></table> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_C154676A766A4E598A8604D85B285986">Send an email to 
+			 <a class="xref" href="mailto:CCIACertificateSupport@beckman.com" target="_blank">CCIACertificateSupport@beckman.com</a> and request certificates for OpenVPN. 
+			 <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_FB10DB6EB3844F6D8186F8CDBEEC1AC9"> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_CA5C755F60B4495D9363139A21FAFE0F">Type one of the following statements into the 
+				  <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-4F7DA32E-F995-47CE-A361-0D73A9D2419D">Subject</span> of the email message. 
+				  <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_420BB800594246CB9F36E34CB26A3E3B"> 
+					 <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6236157C0BA54D37B6B74B29BFAEC6D0">OpenVPN Certificates Required for New Customer Installation 
+					 </li> 
+					 <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_60480CD3D1D5455A91C754EF96E377F5">OpenVPN Certificates Required for Existing Customer Installation 
+					 </li> 
+				  </ul> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_46EDDA22AF354CF9B5D0F7C89AA73F3D">In the 
+				  <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-80E9684B-BFF8-488E-93C3-437A199EE42F">Body</span> of the email message, include the information you obtained from the customer using the table above. 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_88C7F3E65D6443999A8A061B18B8723B">You will receive certificates for the server and the clients. 
+			 <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_0891C431CE124A6992431EC4C937B557"> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_F600A45009E24230964544C44941373C">Send the server certificates to the customer. The customer&#39;s IT group or LIS vendor will need the server certificates to set up OpenVPN on the LIS server. 
+				  <div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-538DBDBB-BE33-4C3F-B575-5E0D56CF5C4B"><span class="note__title">Important:</span> Before you schedule a service visit to install and configure OpenVPN onto the DxI 9000 instruments, confirm that the customer IT group or LIS vendor has installed the server certificates. 
+				  </div> 
+				  <p class="p"> 
+				  </p> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_77BBFD3F91164E7A891E424B0F9AF4BF">Copy the client certificate folders to a USB drive and bring the client certificates with you to the service visit. See 
+				  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_AA996302ADEA43EDB6E0917507F84568">About Client Certificate Folder and File Numbering</a> for more information about client certificates. 
+				  <div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7295A303-9417-4F4F-83C7-B298163A5F56"><span class="note__title">Important:</span> Before you use the USB drive, be sure to scan it for malware. See 
+					 <a class="xref" href="GUID-09FFCAE1-308C-4B9A-B884-E1139AFA876E.html">Detecting and Removing Malware from USB Drives</a> for more information. 
+				  </div> 
+				</li> 
+			 </ul> 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_AA996302ADEA43EDB6E0917507F84568"><h2 class="title sectiontitle">About Client Certificate Folder and File Numbering</h2> 
+		 
+		<p class="p">If you will be installing and configuring OpenVPN onto a single DxI 9000 instrument, you will receive one folder containing client certificates named 
+		  <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-505E2FD2-529B-4548-98E4-F5FE8D920FB1">Client_DxI90001</span>. 
+		</p> 
+		<p class="p">If you will be installing and configuring OpenVPN onto multiple DxI 9000 instruments, you will receive multiple folders containing client certificates. For example, if you will be installing and configuring OpenVPN onto four DxI 9000 instruments, you will receive four folders, each ending with a separate digit, one folder for each instrument. 
+		</p> 
+		<ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_2BC7BF1097D14B029E8629467FF762A3"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_FD42B2EFA8454698807E40FFBA710630"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-11F38E70-ABC7-461D-BE21-14444A0C25A6">Client_DxI90001</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_40AE9A6B30224648AD95773087D368D5"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6ACE5A65-8C5F-427F-B8F7-A23992065C24">Client_DxI90002</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9999176AA6054D90B35290C5C2CA7D5F"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-634821B8-BE2F-4363-B4C4-523786FFCA2F">Client_DxI90003</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_7483EDFDAD8B4CF4AA25FB844303A446"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B1374C56-8A13-47F3-A802-93FA1037A224">Client_DxI90004</span> 
+		  </li> 
+		</ul> 
+		<div class="p">Likewise, each folder will contain files with numbers (before the filetype extensions) that correspond with the folder&#39;s ending digit. For example, the folder 
+		  <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6FAD6742-CCC1-47B7-9E84-88F431A1DB8C">Client_DxI90001</span> will include the following files numbered in the manner mentioned above. 
+		<ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_8DD01342949D4DC4A0D61BE7C6486BD9"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9E7DB633FF99444DA6F5DC28C34E9DD9"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-3494FBCE-DE32-42CB-B694-8BA46C2B87CF">Password_For_dxi90001.txt</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_7660412D311F4252B74D686004B4B818"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-0FBA6AF5-5BEE-4194-8C51-C69B3078FCD9">dxi9000client1.p12</span> 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">In total, each client certificate folder will contain the following four files, including the two files numbered in the manner mentioned above. 
+		<ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_C3529F81DEB840A6A49768E50971AF50"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_91CD716F8AA34A9F869C74B56472CCD9"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-88A8EBB9-CC6B-4C8E-913A-E6F18F23C185">root-ca.crt</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_5D21DF436B1248F880A6D6CA549174A1"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-AD58AB4B-9D4D-41CD-9DDF-D7C21AFB9D95">Password_For_dxi90001.txt</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_F3CAB476D6294E62B4BE4BA1DD91F90B"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-EA8FF9F2-C3FC-49BE-918E-B5C028C50F5D">dxi9000client1.p12</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_07B77CE117C04F20B997A4190E8B3B24"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C58EA363-3475-4E99-811A-72A43FC3DDBE">ta.key</span> 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_B49B2BFFB7C94DCD927281A4F8D44197"><h2 class="title sectiontitle">Downloading the OpenVPN Software</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_AD4AFB6631834257A3126889F4516093"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2E1EBBFBF5D8453CA536C19D2B8A09EB">On your service laptop, in Box go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-DB893CEE-F349-4D3A-82CE-B3238B341EA6">Service Documentation - Dx\Immunoassay\DxI 9000\Software\OpenVPN Software</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_8014884F033A4A4494BCC6DEE263C327">Download the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-0109A4A6-8497-44CF-808F-41C4B23344CC">DxI 9000 OpenVPN Software Configuration</span> folder and save it to a USB drive. 
+			 <div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A45A8890-9457-4468-96C1-1BAC845786E8"><span class="note__title">Important:</span> Before you use the USB drive, be sure to scan it for malware. See 
+				<a class="xref" href="GUID-09FFCAE1-308C-4B9A-B884-E1139AFA876E.html">Detecting and Removing Malware from USB Drives</a> for more information. 
+			 </div> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3038AB1E8376454C9682756C542C846F">Confirm the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-4B907FF4-C95B-4C15-BDE9-D43AC5FE6676">DxI 9000 OpenVPN Software Configuration</span> folder contains the following folders containing files. 
+			 <pre class="pre codeblock"><code>DxI 9000 OpenVPN Software Configuration\
+└─ Configuration\
+   └─ OpenVPNClient\
+   └─ OpenVPNServer\
+└─ Installer\</code></pre> 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_940727BE735042A6815308A2F8170C56"> 
+		<table class="table" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0"><caption></caption><colgroup><col style="width:100%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1">Installing OpenVPN for Encrypted Laboratory Information System (LIS) Connections 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1EE07B87F20D4DC28342BAD67736ABC7">Step 1: Install the OpenVPN Software onto the DxI 9000</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8A203ED14315461185E9ADE0CF346F99">Step 2: Configure OpenVPN on the DxI 9000</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_EE87CC4626D646958DE3935BFCABA6BE">Step 3: Update the Certificate Thumbprint and ta.key</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4A086067F3574A1EB97A422A93A47E43">Step 4: Confirm the OpenVPN Connection from the Client to the Server</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8C417E06D052477BB774392A33C8E5D8">Step 5: Configure OpenVPN to Automatically Connect on System Startup</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1B3C02036FD2474AA24462A2A52C269E">Step 6: Delete OpenVPN Configuration Files</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_FF91276EC54646F7831D939FC0560C54">Step 7: Configure LIS Communication Settings</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4345928660F14E36ADC93E7430F3BEB1">Step 8: Install OpenVPN on Remaining DxI 9000 Clients</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1EE07B87F20D4DC28342BAD67736ABC7"><h2 class="title sectiontitle">Step 1: Install the OpenVPN Software onto the DxI 9000</h2> 
+		 
+		<div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-73FFA7BF-52B1-4BC2-87AF-6C9C01A0DC8B"><span class="note__title">Note:</span> Before you can install OpenVPN onto DxI 9000 instrument clients, you must first obtain OpenVPN certificates and download the OpenVPN software. See 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_A8946F28EFFC4B44B80807E83E8C236A">Obtaining OpenVPN Certificates</a> and 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_B49B2BFFB7C94DCD927281A4F8D44197">Downloading the OpenVPN Software</a> for more information. 
+		</div> 
+		<div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-0D3E9F6B-4133-47B9-9073-1D3FB340B8E4"><span class="note__title">Important:</span> Before you install OpenVPN onto DxI 9000 instrument clients, confirm that the customer IT group or LIS vendor has installed the server certificates. See 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_A8946F28EFFC4B44B80807E83E8C236A">Obtaining OpenVPN Certificates</a> for more information about how to obtain the server certificates. 
+		</div> 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_1D3D2E0199DE427CB6B0AA4BD8A34762"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_A34DD5399F3D415385E3D69B1B8AE70F">Insert the USB drive with the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-63F9C49B-70EA-4D79-9C2B-EDD35B3370A2">DxI 9000 OpenVPN Software Configuration</span> folder into a spare port on the DxI 9000. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_93469443219C4976821F82CFD639B1BB">Sign in to use the BeckmanAdmin account. See 
+			 <a class="xref" href="GUID-23B0238E-5162-4D9A-AC55-C46074B8D526.html">Signing In to Use the BeckmanAdmin Account</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2048803C466D43B2B6EB3C49547BAA41">On the USB drive go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-42ED002D-1ADF-4419-87A5-65DCB17218E4">DxI 9000 OpenVPN Software Configuration\Installer</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_71894B1C24224D858BA34FB5B1CD3BE0">Copy 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9D458B22-9C25-4775-B1FE-FA89E40E217B">OpenVPN-2.6.14-I001-amd64 (Signed).msi</span> to the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C913D42A-057C-49AE-B740-A670B04299C6">C:</span> drive on the instrument. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_A666DF3FE9D1413D9ACC79914418A38D">Open 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9C23A005-0EC2-4F14-93F0-97A70EFB5191">OpenVPN-2.6.14-I001-amd64 (Signed).msi</span> to start the installation. A CMD window will display information about the progress of the installation and will close when installation is complete. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_E78D034307D849C095AC761D90D4A8FF"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_FA1008333A01471A88C4AF46F16B673F" src="GUID-71A6EF8D-E2DD-4BE6-B23F-ED4A1A81D85E-default.png" /> 
+			 </figure> 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8A203ED14315461185E9ADE0CF346F99"><h2 class="title sectiontitle">Step 2: Configure OpenVPN on the DxI 9000</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_263DC7F86FEE46559B1271AA12519CD8"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_569BAAE920404CDDBA6E37FB02691B2D">On the USB drive go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-EAE17ACC-E1B0-4493-9383-342EC3A1F295">DxI 9000 OpenVPN Software Configuration\Configuration\OpenVPNClient\TCP</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_7062BE3F334D47929A461FAB8ABC7866">Copy 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7CBEE124-3908-4122-98E1-52D3A53964F4">Client-Config-TCP.ovpn</span> to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-D083D083-22F8-459D-AB5B-2D2C23349130">C:\Program Files\OpenVPN\config</span> on the instrument. 
+			 <div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-2D6B3001-107D-42F5-8F87-431759A8D5DE"><span class="note__title">Note:</span> Create the 
+				<span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-AE751961-0179-4E53-A154-0D42E0079AE3">C:\Program Files\OpenVPN\config</span> folder if it does not exist. 
+			 </div> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9E6DDABBED0041BC870459E1BEB960D0">Open 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-413FD2EF-3473-4A04-9361-40F970CA6668">Client-Config-TCP.ovpn</span> in Notepad. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_960B0F5F7E714EF1BDD6D58BE0705609">In the file find 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-52BDA71E-9AEC-4765-9307-77D7A5DC637E">remote LIS_SERVER_IP_ADDRESS 1194</samp> and type the IP address and port number on this line. 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p">For example, if the IP address for the server is 
+				<samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A14AD114-DFBC-4253-98AE-583B2D59D490">10.100.23.54</samp> and the server port number is 
+				<samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-F96A714B-D5A2-4DFA-B4EB-A345C36C5D64">1194</samp>, type 
+				<kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-8157B844-4F90-46BF-B904-AB329A7790B9">remote 10.100.23.54 1194</kbd> as shown in the illustration below. 
+			 </p> 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_864620E5854E45C78E74FD1AA9397FFF"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_5172403BC3604B8B963BADB54346EDA5" src="GUID-EC735EF3-51DF-44C3-8CCE-6AE2E2CF0402-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_465D79286CE04BDBBF5FDDDF3643F538">Save and close 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-644195A5-36F7-4A11-9F74-E52DD9B2F9CA">Client-Config-TCP.ovpn</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_186D6E9777A540F5B0F6E2C3E89AFCA6">Insert the USB drive that includes the certificate folders that you received from 
+			 <a class="xref" href="mailto:CCIACertificateSupport@beckman.com" target="_blank">CCIACertificateSupport@beckman.com</a> into a spare port on the DxI 9000. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_35057C5CC2914A91AD8B2EF44099088B">Copy the following four files from the client certificate folder to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6FED2B9E-1D70-4339-9228-22A1445A6C23">C:\Program Files\OpenVPN\config</span> on the DxI 9000 instrument. 
+			 <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_9983B868576042DDB93D7A8E493979FC"> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_95D66AF2AA2C4EFDA2414EFEFD527D68"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-E26E115D-96FF-4608-B70A-7DE126A582A3">root-ca.crt</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_B1CE6E33FE4E4724BB29329218019EE3"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1E1036A7-1CE9-41D7-9C71-B0525A47BABC">Password_For_dxi90001.txt</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2069BC9557D3487994DA329105839357"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-088391E1-03FB-4B36-8FE3-D8588233524B">dxi9000client1.p12</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6928FD2AB9354133B899E3344D89EDB0"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-8EDCA5AB-F04E-4285-A557-19000FB907AE">ta.key</span> 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_CEE7F2B43EDA4782B7473213FBE71D26">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A2EED70E-809A-4BE5-9AA6-665B32AA9465">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_93585CCF7AA44A99A8149ADA326CE982">Open 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-76314C75-02CD-458A-A104-CCC61FEADC8E">dxi9000client1.p12</span> to start the Certificate Import Wizard. The Welcome to the Certificate Import Wizard page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_59366A19595C4B9085BCACA0B46CBCA2"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_E9615E5A4ED04185ADE2B9EC33BD5D24" src="GUID-90E38F8E-9EED-4385-A6F0-334CCDDF2883-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2D723F5054474747A084BFE91447106B">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1EAA5ED6-85C4-4E5B-B72A-E13025E1F759">Current User</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_18D3F6521D114E6CADF9EF8C58642BFC">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-4B84F130-40B0-451F-AEE6-07E9B784617E">Next</span>. The File to Import page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_45F6833DB58047E1807750B2A41CE9E1"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_AC3226A1F1574781AFCA28F58434B3B0" src="GUID-0DEA69FE-9FBC-48A4-84FB-A03B7B6AE4D4-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_FF2C738BDB0E4294990AAC17F4B325EC">On the File to Import page, be sure the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-BB0B6ED2-D3DC-49F2-86F8-EAA5FE8361A2">File name:</span> box includes the path to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B1A9E249-08C9-4FB0-BC72-6E4855B482F6">dxi9000client1.p12</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_EA58A5C62CB84FD0B1125FA56EDFAB15">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-27747D36-9BE5-429F-9983-3CD5A09E3E53">Next</span>. The Private key protection page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_CA4CC1C004E447C0A181CE4BF63F617C"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_E4015B6D96714B44A92E4DCC33B1CE1D" src="GUID-1BDD05EA-3E89-4BB0-9395-2BD6FF88C540-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_396E4E4B7D8346169C4527A22D6DA465">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-38C0067B-3B49-4721-96A5-699A9698C7BD">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_E457A82AF7D240D8A73ED6391488977F">Open 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5A6283FA-6582-48D5-A74D-5344217602EB">Password_For_dxi90001.txt</span> in Notepad. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_DECF0E9C51A04866A4511B1AC504DD4C">Copy the password. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_E208B64D16204374A50E17B4C3246F66">Paste the password into the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1A0422EF-4A98-42DA-BFC1-DBB5360239DC">Password:</span> box. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_EF69EFDBB0054004A0F1D89BDD356553">Be sure 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1CACCF98-994C-4020-8C4E-B802DA7B0725">Include all extended properties</span> is the only option selected. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3F12C1FC92434C828774F7C0A0E9670C">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-F63F1FF3-12DB-4B8E-9116-E994C502710D">Next</span>. The Certificate Store page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_F776747834D749D8B5F1606377318310"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_566233818F5E431AAB3B61ABA041D6F2" src="GUID-C864DC8B-18FC-496C-90A1-CFCF458515CD-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_F1C9DB7B8EF9414695DEAF2F3B1DB235">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-CD216A60-E41F-435A-A96B-2CAA76D481EB">Place all certificates in the following store</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_94A6983003D74C31B1B5483EC6809DCF">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-8EB1F82C-9D4E-4B16-B257-72CFDE311C55">Browse...</span> to open the Select Certificate Store dialog. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_F5B12BE347FD4C68B4B6A5411958A444">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-DFCD801D-6BD5-4A70-B6AC-05920EAB727F">Personal</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_8E3836FED64F45209C75F82AE163BA68">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-3C1EC466-FB50-4D00-A3CD-E85D71E1BD48">OK</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9D3625C1FAAE450AA4DDFF43D2AB772D">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-43E57CF5-7B33-4C56-8623-018EE94C6622">Next</span>. The Completing the Certificate Import Wizard page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_732C89DC5E1C47C7B43F348029EC3B44"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_C0F4455A5B474AE69858F00B6485ABA7" src="GUID-1072089A-DE20-4FBF-AAF7-765E9F569FA0-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_5415D93ECCDD4A6896C5028DE7BA7042">Confirm the setting for Certificate Store Selected by User is Personal. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_4E731BFAB70546DB978069D5A72D8F11">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-2D7F2525-F9BD-4F15-AF32-4132D92FF9A1">Finish</span>. The Certificate Import Wizard dialog will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_A78F27BEE03247C8B2C3DC3A2269479D"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_27CBD23652004D09B9635CB03DAB2D47" src="GUID-3B27350A-E848-4B7E-99D7-2C16D7CA95C0-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_34B30F156EAE446BAA44C92A953F26B6">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-483A5533-919B-40C8-A899-38180028F56E">OK</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_493F9CF05836401C8D77813BBDC449D9">Sign out of the BeckmanAdmin account. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_310727DA69974E1CAB73038A1C4BF37D">Sign in to use the LabUser account. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_0F82CAA911114185B7076B74A3ED3A99">Repeat this procedure, 
+			 <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8A203ED14315461185E9ADE0CF346F99">Step 2: Configure OpenVPN on the DxI 9000</a>, for the LabUser account. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_EE87CC4626D646958DE3935BFCABA6BE"><h2 class="title sectiontitle">Step 3: Update the Certificate Thumbprint and ta.key</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_728F3B2039664939AE0E7CA10A391FE4"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_58A1B35959CA49C29386B64AA2235CEB">Sign in to use the BeckmanAdmin account. See 
+			 <a class="xref" href="GUID-23B0238E-5162-4D9A-AC55-C46074B8D526.html">Signing In to Use the BeckmanAdmin Account</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_BB25B7EDF04244369AB540F64885E0F4">Press the 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5F02EF4E-E561-474E-9638-0DB4CA9CF5A2">Windows</strong> key, type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7629CCF0-F5FD-4CD5-9F70-B8762D728550">cert</kbd>, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A5624C51-6651-4D7A-9E76-03F28D6DEDFE">Manage user certificates</span> to open the certmgr control panel. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_C4DA4C3DECF44538BE7D952D84201C1F">Go to 
+			 <span class="ph menucascade" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-54DFE180-007F-44AB-9D7D-FC9A4DF5C3FF"><span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1529D8EF-A4A8-4F0C-B8B4-D4A2BE5D2056">Personal</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-67251CB2-8D5E-4F7C-A07F-0357671B6BAE">Certificates</span></span> to display certificates. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_BF890BFFCC7143F89749B77583291C05"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_144788D27621469E97C774BEACA9A516" src="GUID-8A8D7656-EB31-452E-851F-BA2AF5A35EB6-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_A3B616F292A34A22933C774DADDD9C67">Double-click 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-CCB7E541-2EA2-4183-AB79-B4D39066B46A">dxi9000device1</span> to open the Certificate dialog. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_49BB42486BBB44DBBABC5C5B0749A2FF">Select the Details tab. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_6AAB0F6719E34CAC827CE2496B91C893"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_F10188450645486899ABFC74A4A54323" src="GUID-52596ED0-C60F-49BC-ABE0-AA6F4AE1FBC7-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3FBFA0CDB81F4D3DBF600964C3211CAE">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-8B82A207-9725-41AD-B75F-4296C903BD95">Thumbprint</span> to display the code. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_ED53C0587F6E40FDBEDDEAB9F93DB318">Select the code, right-click, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-81E41886-57A1-4CAE-987B-BDC08FEA237F">Copy</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_74402CDF93C241109FBE8A9BA5D53AB9">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-DD2B2A5D-484A-4751-841A-5C4C2AF5C163">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_738400B23AF642819417A33E331108AD">Select 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-86F55DDE-8184-452E-97A7-367669057309">Client-Config-TCP.ovpn</span> and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A50FB2C1-122E-44BA-9243-38427D9874A4">Edit in Notepad</span> to open the file in Notepad. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_A007B28302244966A17CFF5C829E4BE5">Find the line that begins with 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7B00EF6D-33EB-4D37-AC6D-11B19A2E36C9">cryptoapicert &quot;THUMB:</samp> 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_52B412FE49CA43F8B0D1B205833EADBD"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_6B4B4988B17646428371B3AF7DF67AB6" src="GUID-95807F2C-A196-4D90-9B5C-A8E854DE7BB8-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9B998B0039DF4F2CB210EA97448228B3">Replace the code with the code you copied from the Certificate dialog. (Select the existing code in Notepad, right-click, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7C47B385-1AA1-4F9D-B76E-2D57EF782029">Paste</span> to paste in the new code.) 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6EC01FA3CFA842589DC8BC1E9E935086">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-579E7325-8EC5-4473-B89A-67917FC3645D">File</span> and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-536F089D-D725-431E-92A7-2BAEF4B0F1ED">Save</span> to save 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-62F390A8-12BF-4652-B268-B603A61560E3">Client-Config-TCP.ovpn</span>, but do not close the file. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_D2CF943AC3D345BA93F907C7B4611791">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9BE24157-29DB-467A-B44F-1D73FE232633">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_B1EDA26FB43A4DA88ECBC8E8648C606F">Select 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-AF40E529-E7C8-434A-9CF3-15961F63642A">ta.key</span> and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-D867D058-33E5-4E82-8811-09E6E4D843E6">Edit in Notepad</span> to open the file in Notepad. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_345920D0602D49099F0F238CC4DA40A1"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_C5A38BC9781A48D7AD7E2738CAF32ABD" src="GUID-CECE05C2-479B-4070-8C3A-49EB15550CF0-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_1D7778E8750E414484B4BFCB85FD9B71">Select all the text in the file, right-click, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B2A4F3A2-8773-441D-BAE7-775C17B1A058">Copy</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3BCD820CC5D64EB2AE4712118DBD27A2">In 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-50B3D6B8-75C8-4810-AAB9-523893651D88">Client-Config-TCP.ovpn</span> find the line that begins with 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-51270168-64B8-421E-88EA-818A3D515CF6">&lt;tls-auth&gt;</samp>. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_1095A0A80BBF4C7082E92D3914A74969"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_C8D69C1CE25441CF971EABE2C91A6058" src="GUID-F9160540-C2AA-489E-8277-52E7D16E48E5-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_04AA24A375A148529D206962DD20FB08">In the lines after the first line that displays the 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5BFD29FE-6491-48C9-A0B4-FAB132B9A5C7">&lt;tls-auth&gt;</samp> tag and before the second line that displays the 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A4A58127-B997-4DE2-9427-38A67BCBE3DC">&lt;tls-auth&gt;</samp> tag, replace the text with the text you copied from the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-53F85369-E4E9-46C5-8CCC-8277FFD1D378">ta.key</span> file. (Select the existing text, right-click, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C0645565-28BF-4C7B-AEC5-6D432BE43375">Paste</span> to paste in the new text.) 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_5D99B36FCFE249AC90864DD6B43439F1">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-E1AB1A37-F873-4876-B23C-97AA9FB1C6E5">File</span> and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-E9F730D1-C6D1-4400-BFC8-94ED2916D35A">Save</span> to save 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5ACCB8C3-08FB-412B-BA80-8EDB8B17EB81">Client-Config-TCP.ovpn</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6C1499D6DFBC4476B756C8542D2AE100">Close the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5C24A76C-EB7F-4C59-9085-DAF9791D5AB4">Client-Config-TCP.ovpn</span> file, the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B47ADDF7-BA69-4B4E-A41B-DF2C61A62160">ta.key</span> file, and the certmgr control panel dialogs and windows. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4A086067F3574A1EB97A422A93A47E43"><h2 class="title sectiontitle">Step 4: Confirm the OpenVPN Connection from the Client to the Server</h2> 
+		 
+		<div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C2440816-2933-44B3-AF13-D47BCF8ED96E"><span class="note__title">Note:</span> Before you perform this procedure, you must obtain the IP address for the laboratory information system (LIS) from the customer&#39;s IT group or LIS vendor. 
+		</div> 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_BAEED7E949FF4414BA468CDB1A6E582A"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_69775AB479264A1A8D562998E215C5C6">Press the 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9FE95431-E0A1-48ED-B0F0-0D3BA7C67D5E">Windows</strong> key, type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-54432E7D-65D2-4378-93F8-1FCDAFF76BCD">OpenVPN GUI</kbd>, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5BF8DD03-F744-40C7-92E6-8D5358534F1C">OpenVPN GUI</span>. A new icon for OpenVPN will be displayed in the system tray on the Windows taskbar, illustrated below. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_8C7B6E8A762440969278A21F88DF129B"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_F381438FBCE549B0B200206CFA3E8F9E" src="GUID-4857BBF4-48E5-49D1-AB06-30FA2982532D-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_32ABA7F5B7344D41BC01827D7CB79CEB">Right-click the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6718CE99-B5CC-4756-9DCF-F95D2A5F55E5">OpenVPN icon</span> in the system tray and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7E04B826-D87C-48D9-8267-F1D910FB8A4F">Connect</span>. The 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-AE7912EF-632B-4E68-B3E6-ECBF94826B08">OpenVPN icon</span> icon in the system tray will change to 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6224CC16-831E-4E95-9FDE-E1FC826217A9">GREEN</strong> (Connected), illustrated below. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_A5A58F9EA764445E8B2FB23A1F15A362"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_5F8077E705F246DABE74ECDAA6517E2C" src="GUID-B0BC275A-1F47-4F81-A262-DEFCF8B21752-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2E2A5464B8E645D3A2E2A8ABD2E50A89">Double click the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-61AD9801-1942-4EDC-B459-8D51DC620280">OpenVPN icon</span> to open the Open VPN Connection window. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_CCF784164C8B428DBB71260BA5AD599E"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_CDC5B3590B3C4ABFA9F06EAECE4760F6" src="GUID-C6D573F9-217D-4D93-863A-D6792F17B037-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3655EE67CFFB4174AB41C6BE6843716C"> Confirm that the Current State is Connected and that there is an IP address displayed for the Assigned IP. Close the window. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_0580B735C7574A89AD344583172D9810"> Press the 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-02123061-CE77-4573-947F-D3FBEA796978">Windows</strong> key, type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A285514D-4A4F-41D4-859D-ED28BABA0AED">cmd</kbd>, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-22888547-203E-4B7C-80E9-AAEC7D758EAF">Command Prompt</span> to open the Command Prompt window. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_1B4A4A1A86114F4A90B5172676C7F4F1">Type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-85C01523-6702-42D3-BD70-011D346BCBA4">ping XXX.XXX.XXX.X</kbd> where 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-BD725B4B-A709-4C47-893A-4C0E48EACFF2">XXX.XXX.XXX.X</kbd> represents the IP address for the LIS. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_33ADBFCA371B405896CB08651EE500E8">Press 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-F0F37383-CCF5-4B6F-BF9A-F47D41E2A3EE">Enter</strong>. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_8F2FB1CC769A4F2DAA1134D92C79BC0F"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_14AC4AF56D594C6AA6CE85705F87B30D" src="GUID-873F8A66-612F-46C8-8CA1-2B841E263CEF-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6AED26218CDC4B8E8F6D0CF8E58F5FA1">Confirm that the ping statistics for the IP address include 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A777DE6A-E5F6-4AC3-91F9-36E013AB39B0">Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)</samp>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_85FAF03E75354937A22B268332DFA795">Close the window. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8C417E06D052477BB774392A33C8E5D8"><h2 class="title sectiontitle">Step 5: Configure OpenVPN to Automatically Connect on System Startup</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_85B0C9CCCF9D421F996DFC4A2AA06AA0"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_ADF12D8151D24FB99D6CFF5EC7C584B1">Restart the PC. See 
+			 <a class="xref" href="GUID-AF9F7BF9-4D00-4977-B99E-6A675A410777.html">Restarting the Console PC</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_941D5E594EEC4452B0E12E01AD0727F4">Sign in to use the BeckmanAdmin account. See 
+			 <a class="xref" href="GUID-23B0238E-5162-4D9A-AC55-C46074B8D526.html">Signing In to Use the BeckmanAdmin Account</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_484DE6B943D84992BA8A33DAC070E4B8"> Press the 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-EDD69517-1ED7-4B1F-8562-BBE2CEA021AF">Windows</strong> key and type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-354D5B05-8BEA-4BD6-B90A-D06ABB71F8A7">regedit</kbd> to show 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-F3DCB5F2-A3FB-4E86-8665-4E1A6B46EE89">Registry Editor</span> options in search box results. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_BDD3EF9E552A48208EBBC6C19C33FA40">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9D6F1238-3428-4985-8D4B-AA5AB8F3A974">Run as administrator</span> to open Registry Editor. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_0F7F6A5959884D58AFFAB0B34AD84856">Go to 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1ABB9176-68E1-422E-9267-1FD14B395DC3">HKEY_USERS</span> and select the folder that ends with 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-792E5B19-9856-4CBE-9610-A77635C05005">1004</span>. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_A746A52A489B41F9BD9382E183AD034E"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_55F62EE4E6834448A732395B08119F9B" src="GUID-2ACE1322-358E-41DC-86BF-7A65FF23AABA-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_AADC2C0D35F74102AF9E5B079E54B15B">In the folder that ends with 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-426BDBBF-F033-466B-9760-70A48A1842A4">1004</span> go to 
+			 <span class="ph menucascade" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-67B69DE0-9B48-43BB-AC60-91F2EA60E320"><span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-BA623CF8-2C7C-45BC-9122-3BD4D2D10CC6">Software</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7F0BCF62-9E65-4A5B-A44A-478E1E77CECA">Microsoft</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1F59013C-1217-4043-BCCB-5612554C489B">Windows</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-56B0AB1E-4712-4D1A-BD0B-2FF007844A45">CurrentVersion</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-D58FC0CC-769C-4E31-8764-CFE948ACAEC7">Run</span></span> to display the registry key values. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_786E4712B8C3444AA090297928BF4C50"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_936A66C7E26D4337B62120FF7185435B" src="GUID-86177656-E00F-43F6-BA3C-0900D890515B-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_941B8639D506403C83913A27ACF84FDA"> Double-click 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A3BF49A6-A5F3-4071-ABB5-4BB61BFB478F">OPENVPN-GUI</strong> to open the Edit String dialog. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_18319BEA308B47C79258B8C46E09450C"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_E17FC6FDE60D48EDB406980BD0CE3DBB" src="GUID-B53E8D7E-913B-4F53-9B32-F76E6602BAAD-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_38FF16D8A7F143BD950C98082CD6CB31">Edit the text in the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-31652FE5-929F-41A9-90AC-7A7400267520">Value data:</span> box to be 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-92936905-800B-4DA4-8E8F-5E28C867718B">&quot;C:\Program Files\OpenVPN\bin\openvpn-gui.exe&quot; --connect Client-config-TCP.ovpn --silent_connection 1 --show_balloon 0</kbd> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_E4414BC01B7D49D3B2EC64EB751DB88D">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A3CEA028-7CBF-4E36-991B-32379C775339">OK</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_C19A5355FEFE4B70B65265BBA488C233">Close Registry Editor. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1B3C02036FD2474AA24462A2A52C269E"><h2 class="title sectiontitle">Step 6: Delete OpenVPN Configuration Files</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_79FA3766291447A59C3F812EE8FBC432"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_098DE22E413540A3B8DE0385CD7AC95E">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-87C02B76-FE30-4648-B281-D472C55B6BE4">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_B2AE1CF162BF4BBF8D8BB80DA935F776">Delete the following files. 
+			 <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_757F1B1E127F49929BCBAC7776BE1564"> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_C8EB52A45A724E7BB78523210F723246"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-BD20C7A2-B4DD-4BA4-A389-048F75D5B65E">dxI9000client1.p12</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_E2F5745F8F5745C9A1A6CED72327D5D4"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-4FC4C8D1-30C9-4BB6-8F5D-136FEA05254C">Password_For_dxi90001.txt</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_90B51648427A4F43B208C73302DB1FC1"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9D111CFC-4CFB-478F-BF67-933A189DEF82">ta.key</span> 
+				</li> 
+			 </ul> 
+			 <div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-46FAE1DC-2067-4AFA-8C7C-11C1E312949D"><span class="note__title">Note:</span> After you delete these files, the only remaining files in the folder should be 
+				<span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C75FC476-E91D-440D-AB1D-2206B8591CC6">Client-Config-TCP.ovpn</span> and 
+				<span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C09CE233-F845-455B-BD3A-77C63290DCE7">root-ca.crt</span>. 
+			 </div> 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_FF91276EC54646F7831D939FC0560C54"><h2 class="title sectiontitle">Step 7: Configure LIS Communication Settings</h2> 
+		 
+		<div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-E6D3DF8F-7364-4BDB-BC71-4F000BFCD671"><span class="note__title">Note:</span> To perform this procedure, you will need to obtain the TCP port and IP address for the laboratory information system (LIS) server from the customer&#39;s IT group or LIS vendor. 
+		</div> 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_8353B49A514F41D7AAB47F07FB89D760"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_44CC4A2C43CA423189BFF8064F39F5CC">Open the Machine Control App. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_451E86408C364A1DA9176734DFAEB01D">Open the Console App. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_B4C5F4370F6F4D6D9A8CE4F13FBBE019">In the Console App go to 
+			 <span class="ph menucascade" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9D27391F-2924-4074-A059-2EA50CEB4713"><span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5D2CF5B1-2BB9-4A15-A352-346742936777">MENU</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A27DFB2C-5E77-46DD-8207-04CB050A6F66">System Configuration</span></span> to open the System Configuration window. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_14C20CC2BBAC4541860CEA98CD88E614">On the System Configuration page go to 
+			 <span class="ph menucascade" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6D01AB18-D6D2-4AF3-88B4-CDE18BB71EEA"><span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B2325746-7811-4A7A-AC14-2808E74FFBB0">External Interface Configuration</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-FDA91479-C626-406A-AEA4-353C15C21C0D">LIS</span></span>. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_C4D709B5257C47E59BC94AC2F19661D0"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_A5F846D9190D40A5B76C9DD1AE1E573C" src="GUID-B5C85103-1AA3-4813-A9CD-ABD3768A12A5-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_67D12742212245CCADECA9C1C20E7742">Enter the TCP port and IP address for the LIS server. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_256E0C2473A2470E8075493DEB4478AB">Go to 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-06029923-7FCD-42A2-B8B0-14251463F9B8">System Configuration</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_FB7798538D0443BF912A9F3FE6951D8C">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1ACCCDF9-EA1C-4AA1-82BA-3AA070733990">Activate</span>. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4345928660F14E36ADC93E7430F3BEB1"><h2 class="title sectiontitle">Step 8: Install OpenVPN on Remaining DxI 9000 Clients</h2> 
+		 
+		<p class="p"> Repeat 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1EE07B87F20D4DC28342BAD67736ABC7">Step 1: Install the OpenVPN Software onto the DxI 9000</a> through 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_FF91276EC54646F7831D939FC0560C54">Step 7: Configure LIS Communication Settings</a> for the remaining DxI 9000 clients. 
+		</p> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-BD3DD764-C2FC-49D8-8ACF-964FB0609F8B.html" title="This section includes procedures for servicing instrument connectivity.">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-3809C61A-1288-4685-A57F-5876F8BF2D8B.html" title="5 Connectivity (DxS, LAS, LIS, Peripherals)"><div><span class="ph num-prefix">5 </span>Connectivity (DxS, LAS, LIS, Peripherals)</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-BD3DD764-C2FC-49D8-8ACF-964FB0609F8B.html" title="5.4 Procedures"><div><span class="ph num-prefix">5.4 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-557C894E-1068-493F-808A-EB2872DDAFCF.html" lang="en-US" title="5.4.13 Installing OpenVPN for Encrypted Laboratory Information System (LIS) Connections"><div><span class="ph num-prefix">5.4.13 </span>Installing OpenVPN for Encrypted Laboratory Information System (LIS) Connections</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">C65079BK</div></li><li><div id="date">July 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-36A603F8-9725-4607-AAB5-028631DA9723" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF" role="article"> 
+  <h1 class="title topictitle1" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-36A603F8-9725-4607-AAB5-028631DA9723"><a id="GUID-36A603F8-9725-4607-AAB5-028631DA9723"></a>Installing OpenVPN for Encrypted Laboratory Information System (LIS) Connections</h1> 
+  <div class="body conbody"> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4A0EA0868D8A489BAAD265C10037566B"> 
+		<div class="p"> This topic includes information about how to install and configure OpenVPN software to allow encrypted communication between the laboratory information system (LIS) and the DxI 9000 instrument. 
+		  <div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-EB10E8F3-E998-4B79-B224-111F7E8EB3DF"><span class="note__title">Note:</span> Before you can install OpenVPN onto DxI 9000 instrument clients, you must first obtain OpenVPN certificates and download the OpenVPN software. See 
+			 <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_A8946F28EFFC4B44B80807E83E8C236A">Obtaining OpenVPN Certificates</a> and 
+			 <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_B49B2BFFB7C94DCD927281A4F8D44197">Downloading the OpenVPN Software</a> for more information. 
+		  </div> 
+		  <div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C953459F-0B40-4476-BFB9-40563B1F94D2"><span class="note__title">Important:</span>  Before you install OpenVPN software onto DxI 9000 instruments as clients connected to the LIS server, the customer&#39;s IT group or LIS vendor must first install OpenVPN onto the LIS server. See 
+			 <em class="ph i" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-519218DA-999A-48AB-A13E-8958FE379537">C87147 - Host Manual for DxI 9000, DxC 500 AU, and DxC 500i Analyzers</em> on the Beckman Coulter website for more information about how to install OpenVPN onto the LIS server. 
+		  </div> 
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_A8946F28EFFC4B44B80807E83E8C236A"><h2 class="title sectiontitle">Obtaining OpenVPN Certificates</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_125DAABA5F1F46DE9C0D92CFAA25824E"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_8BF90B7A8A664280BC41C10268BEA99A">Obtain the following information from the customer&#39;s IT group or LIS vendor. 
+			 <table class="table" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029"><caption></caption><colgroup><col style="width:46.08294930875576%" /><col style="width:53.91705069124424%" /></colgroup><thead class="thead"> 
+					 <tr class="row"> 
+						<th class="entry" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1"> Information Requested 
+						</th> 
+						<th class="entry" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2"> Information Provided 
+						</th> 
+					 </tr></thead><tbody class="tbody"> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> Is this a New or Existing OpenVPN Installation 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> Instance number of each DxI 9000 instrument being connected 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> Customer Name 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> Customer Account Number/ID 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> IP address of the LIS (server) 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+					 <tr class="row"> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__1 "> LIS Port ID (default is 1194) 
+						</td> 
+						<td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_A369E07D1D3E46E797B9860D329A8029__entry__2 "> 
+						</td> 
+					 </tr> 
+				  </tbody></table> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_C154676A766A4E598A8604D85B285986">Send an email to 
+			 <a class="xref" href="mailto:CCIACertificateSupport@beckman.com" target="_blank">CCIACertificateSupport@beckman.com</a> and request certificates for OpenVPN. 
+			 <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_FB10DB6EB3844F6D8186F8CDBEEC1AC9"> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_CA5C755F60B4495D9363139A21FAFE0F">Type one of the following statements into the 
+				  <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-4F7DA32E-F995-47CE-A361-0D73A9D2419D">Subject</span> of the email message. 
+				  <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_420BB800594246CB9F36E34CB26A3E3B"> 
+					 <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6236157C0BA54D37B6B74B29BFAEC6D0">OpenVPN Certificates Required for New Customer Installation 
+					 </li> 
+					 <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_60480CD3D1D5455A91C754EF96E377F5">OpenVPN Certificates Required for Existing Customer Installation 
+					 </li> 
+				  </ul> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_46EDDA22AF354CF9B5D0F7C89AA73F3D">In the 
+				  <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-80E9684B-BFF8-488E-93C3-437A199EE42F">Body</span> of the email message, include the information you obtained from the customer using the table above. 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_88C7F3E65D6443999A8A061B18B8723B">You will receive certificates for the server and the clients. 
+			 <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_0891C431CE124A6992431EC4C937B557"> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_F600A45009E24230964544C44941373C">Send the server certificates to the customer. The customer&#39;s IT group or LIS vendor will need the server certificates to set up OpenVPN on the LIS server. 
+				  <div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-538DBDBB-BE33-4C3F-B575-5E0D56CF5C4B"><span class="note__title">Important:</span> Before you schedule a service visit to install and configure OpenVPN onto the DxI 9000 instruments, confirm that the customer IT group or LIS vendor has installed the server certificates. 
+				  </div> 
+				  <p class="p"> 
+				  </p> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_77BBFD3F91164E7A891E424B0F9AF4BF">Copy the client certificate folders to a USB drive and bring the client certificates with you to the service visit. See 
+				  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_AA996302ADEA43EDB6E0917507F84568">About Client Certificate Folder and File Numbering</a> for more information about client certificates. 
+				  <div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7295A303-9417-4F4F-83C7-B298163A5F56"><span class="note__title">Important:</span> Before you use the USB drive, be sure to scan it for malware. See 
+					 <a class="xref" href="GUID-09FFCAE1-308C-4B9A-B884-E1139AFA876E.html">Detecting and Removing Malware from USB Drives</a> for more information. 
+				  </div> 
+				</li> 
+			 </ul> 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_AA996302ADEA43EDB6E0917507F84568"><h2 class="title sectiontitle">About Client Certificate Folder and File Numbering</h2> 
+		 
+		<p class="p">If you will be installing and configuring OpenVPN onto a single DxI 9000 instrument, you will receive one folder containing client certificates named 
+		  <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-505E2FD2-529B-4548-98E4-F5FE8D920FB1">Client_DxI90001</span>. 
+		</p> 
+		<p class="p">If you will be installing and configuring OpenVPN onto multiple DxI 9000 instruments, you will receive multiple folders containing client certificates. For example, if you will be installing and configuring OpenVPN onto four DxI 9000 instruments, you will receive four folders, each ending with a separate digit, one folder for each instrument. 
+		</p> 
+		<ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_2BC7BF1097D14B029E8629467FF762A3"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_FD42B2EFA8454698807E40FFBA710630"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-11F38E70-ABC7-461D-BE21-14444A0C25A6">Client_DxI90001</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_40AE9A6B30224648AD95773087D368D5"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6ACE5A65-8C5F-427F-B8F7-A23992065C24">Client_DxI90002</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9999176AA6054D90B35290C5C2CA7D5F"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-634821B8-BE2F-4363-B4C4-523786FFCA2F">Client_DxI90003</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_7483EDFDAD8B4CF4AA25FB844303A446"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B1374C56-8A13-47F3-A802-93FA1037A224">Client_DxI90004</span> 
+		  </li> 
+		</ul> 
+		<div class="p">Likewise, each folder will contain files with numbers (before the filetype extensions) that correspond with the folder&#39;s ending digit. For example, the folder 
+		  <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6FAD6742-CCC1-47B7-9E84-88F431A1DB8C">Client_DxI90001</span> will include the following files numbered in the manner mentioned above. 
+		<ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_8DD01342949D4DC4A0D61BE7C6486BD9"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9E7DB633FF99444DA6F5DC28C34E9DD9"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-3494FBCE-DE32-42CB-B694-8BA46C2B87CF">Password_For_dxi90001.txt</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_7660412D311F4252B74D686004B4B818"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-0FBA6AF5-5BEE-4194-8C51-C69B3078FCD9">dxi9000client1.p12</span> 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">In total, each client certificate folder will contain the following four files, including the two files numbered in the manner mentioned above. 
+		<ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_C3529F81DEB840A6A49768E50971AF50"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_91CD716F8AA34A9F869C74B56472CCD9"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-88A8EBB9-CC6B-4C8E-913A-E6F18F23C185">root-ca.crt</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_5D21DF436B1248F880A6D6CA549174A1"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-AD58AB4B-9D4D-41CD-9DDF-D7C21AFB9D95">Password_For_dxi90001.txt</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_F3CAB476D6294E62B4BE4BA1DD91F90B"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-EA8FF9F2-C3FC-49BE-918E-B5C028C50F5D">dxi9000client1.p12</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_07B77CE117C04F20B997A4190E8B3B24"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C58EA363-3475-4E99-811A-72A43FC3DDBE">ta.key</span> 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_B49B2BFFB7C94DCD927281A4F8D44197"><h2 class="title sectiontitle">Downloading the OpenVPN Software</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_AD4AFB6631834257A3126889F4516093"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2E1EBBFBF5D8453CA536C19D2B8A09EB">On your service laptop, in Box go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-DB893CEE-F349-4D3A-82CE-B3238B341EA6">Service Documentation - Dx\Immunoassay\DxI 9000\Software\OpenVPN Software</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_8014884F033A4A4494BCC6DEE263C327">Download the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-0109A4A6-8497-44CF-808F-41C4B23344CC">DxI 9000 OpenVPN Software Configuration</span> folder and save it to a USB drive. 
+			 <div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A45A8890-9457-4468-96C1-1BAC845786E8"><span class="note__title">Important:</span> Before you use the USB drive, be sure to scan it for malware. See 
+				<a class="xref" href="GUID-09FFCAE1-308C-4B9A-B884-E1139AFA876E.html">Detecting and Removing Malware from USB Drives</a> for more information. 
+			 </div> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3038AB1E8376454C9682756C542C846F">Confirm the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-4B907FF4-C95B-4C15-BDE9-D43AC5FE6676">DxI 9000 OpenVPN Software Configuration</span> folder contains the following folders containing files. 
+			 <pre class="pre codeblock"><code>DxI 9000 OpenVPN Software Configuration\
+└─ Configuration\
+   └─ OpenVPNClient\
+   └─ OpenVPNServer\
+└─ Installer\</code></pre> 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_940727BE735042A6815308A2F8170C56"> 
+		<table class="table" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0"><caption></caption><colgroup><col style="width:100%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1">Installing OpenVPN for Encrypted Laboratory Information System (LIS) Connections 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1EE07B87F20D4DC28342BAD67736ABC7">Step 1: Install the OpenVPN Software onto the DxI 9000</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8A203ED14315461185E9ADE0CF346F99">Step 2: Configure OpenVPN on the DxI 9000</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_EE87CC4626D646958DE3935BFCABA6BE">Step 3: Update the Certificate Thumbprint and ta.key</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4A086067F3574A1EB97A422A93A47E43">Step 4: Confirm the OpenVPN Connection from the Client to the Server</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8C417E06D052477BB774392A33C8E5D8">Step 5: Configure OpenVPN to Automatically Connect on System Startup</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1B3C02036FD2474AA24462A2A52C269E">Step 6: Delete OpenVPN Configuration Files</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_FF91276EC54646F7831D939FC0560C54">Step 7: Configure LIS Communication Settings</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__TABLE_DBB03AE502C447738C2678229AA6D0B0__entry__1 "><a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4345928660F14E36ADC93E7430F3BEB1">Step 8: Install OpenVPN on Remaining DxI 9000 Clients</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1EE07B87F20D4DC28342BAD67736ABC7"><h2 class="title sectiontitle">Step 1: Install the OpenVPN Software onto the DxI 9000</h2> 
+		 
+		<div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-73FFA7BF-52B1-4BC2-87AF-6C9C01A0DC8B"><span class="note__title">Note:</span> Before you can install OpenVPN onto DxI 9000 instrument clients, you must first obtain OpenVPN certificates and download the OpenVPN software. See 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_A8946F28EFFC4B44B80807E83E8C236A">Obtaining OpenVPN Certificates</a> and 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_B49B2BFFB7C94DCD927281A4F8D44197">Downloading the OpenVPN Software</a> for more information. 
+		</div> 
+		<div class="note important note_important" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-0D3E9F6B-4133-47B9-9073-1D3FB340B8E4"><span class="note__title">Important:</span> Before you install OpenVPN onto DxI 9000 instrument clients, confirm that the customer IT group or LIS vendor has installed the server certificates. See 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_A8946F28EFFC4B44B80807E83E8C236A">Obtaining OpenVPN Certificates</a> for more information about how to obtain the server certificates. 
+		</div> 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_1D3D2E0199DE427CB6B0AA4BD8A34762"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_A34DD5399F3D415385E3D69B1B8AE70F">Insert the USB drive with the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-63F9C49B-70EA-4D79-9C2B-EDD35B3370A2">DxI 9000 OpenVPN Software Configuration</span> folder into a spare port on the DxI 9000. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_93469443219C4976821F82CFD639B1BB">Sign in to use the BeckmanAdmin account. See 
+			 <a class="xref" href="GUID-23B0238E-5162-4D9A-AC55-C46074B8D526.html">Signing In to Use the BeckmanAdmin Account</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2048803C466D43B2B6EB3C49547BAA41">On the USB drive go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-42ED002D-1ADF-4419-87A5-65DCB17218E4">DxI 9000 OpenVPN Software Configuration\Installer</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_71894B1C24224D858BA34FB5B1CD3BE0">Copy 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9D458B22-9C25-4775-B1FE-FA89E40E217B">OpenVPN-2.6.14-I001-amd64 (Signed).msi</span> to the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C913D42A-057C-49AE-B740-A670B04299C6">C:</span> drive on the instrument. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_A666DF3FE9D1413D9ACC79914418A38D">Open 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9C23A005-0EC2-4F14-93F0-97A70EFB5191">OpenVPN-2.6.14-I001-amd64 (Signed).msi</span> to start the installation. A CMD window will display information about the progress of the installation and will close when installation is complete. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_E78D034307D849C095AC761D90D4A8FF"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_FA1008333A01471A88C4AF46F16B673F" src="GUID-71A6EF8D-E2DD-4BE6-B23F-ED4A1A81D85E-default.png" /> 
+			 </figure> 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8A203ED14315461185E9ADE0CF346F99"><h2 class="title sectiontitle">Step 2: Configure OpenVPN on the DxI 9000</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_263DC7F86FEE46559B1271AA12519CD8"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_569BAAE920404CDDBA6E37FB02691B2D">On the USB drive go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-EAE17ACC-E1B0-4493-9383-342EC3A1F295">DxI 9000 OpenVPN Software Configuration\Configuration\OpenVPNClient\TCP</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_7062BE3F334D47929A461FAB8ABC7866">Copy 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7CBEE124-3908-4122-98E1-52D3A53964F4">Client-Config-TCP.ovpn</span> to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-D083D083-22F8-459D-AB5B-2D2C23349130">C:\Program Files\OpenVPN\config</span> on the instrument. 
+			 <div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-2D6B3001-107D-42F5-8F87-431759A8D5DE"><span class="note__title">Note:</span> Create the 
+				<span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-AE751961-0179-4E53-A154-0D42E0079AE3">C:\Program Files\OpenVPN\config</span> folder if it does not exist. 
+			 </div> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9E6DDABBED0041BC870459E1BEB960D0">Open 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-413FD2EF-3473-4A04-9361-40F970CA6668">Client-Config-TCP.ovpn</span> in Notepad. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_960B0F5F7E714EF1BDD6D58BE0705609">In the file find 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-52BDA71E-9AEC-4765-9307-77D7A5DC637E">remote LIS_SERVER_IP_ADDRESS 1194</samp> and type the IP address and port number on this line. 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p">For example, if the IP address for the server is 
+				<samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A14AD114-DFBC-4253-98AE-583B2D59D490">10.100.23.54</samp> and the server port number is 
+				<samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-F96A714B-D5A2-4DFA-B4EB-A345C36C5D64">1194</samp>, type 
+				<kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-8157B844-4F90-46BF-B904-AB329A7790B9">remote 10.100.23.54 1194</kbd> as shown in the illustration below. 
+			 </p> 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_864620E5854E45C78E74FD1AA9397FFF"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_5172403BC3604B8B963BADB54346EDA5" src="GUID-EC735EF3-51DF-44C3-8CCE-6AE2E2CF0402-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_465D79286CE04BDBBF5FDDDF3643F538">Save and close 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-644195A5-36F7-4A11-9F74-E52DD9B2F9CA">Client-Config-TCP.ovpn</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_186D6E9777A540F5B0F6E2C3E89AFCA6">Insert the USB drive that includes the certificate folders that you received from 
+			 <a class="xref" href="mailto:CCIACertificateSupport@beckman.com" target="_blank">CCIACertificateSupport@beckman.com</a> into a spare port on the DxI 9000. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_35057C5CC2914A91AD8B2EF44099088B">Copy the following four files from the client certificate folder to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6FED2B9E-1D70-4339-9228-22A1445A6C23">C:\Program Files\OpenVPN\config</span> on the DxI 9000 instrument. 
+			 <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_9983B868576042DDB93D7A8E493979FC"> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_95D66AF2AA2C4EFDA2414EFEFD527D68"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-E26E115D-96FF-4608-B70A-7DE126A582A3">root-ca.crt</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_B1CE6E33FE4E4724BB29329218019EE3"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1E1036A7-1CE9-41D7-9C71-B0525A47BABC">Password_For_dxi90001.txt</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2069BC9557D3487994DA329105839357"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-088391E1-03FB-4B36-8FE3-D8588233524B">dxi9000client1.p12</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6928FD2AB9354133B899E3344D89EDB0"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-8EDCA5AB-F04E-4285-A557-19000FB907AE">ta.key</span> 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_CEE7F2B43EDA4782B7473213FBE71D26">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A2EED70E-809A-4BE5-9AA6-665B32AA9465">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_93585CCF7AA44A99A8149ADA326CE982">Open 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-76314C75-02CD-458A-A104-CCC61FEADC8E">dxi9000client1.p12</span> to start the Certificate Import Wizard. The Welcome to the Certificate Import Wizard page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_59366A19595C4B9085BCACA0B46CBCA2"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_E9615E5A4ED04185ADE2B9EC33BD5D24" src="GUID-90E38F8E-9EED-4385-A6F0-334CCDDF2883-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2D723F5054474747A084BFE91447106B">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1EAA5ED6-85C4-4E5B-B72A-E13025E1F759">Current User</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_18D3F6521D114E6CADF9EF8C58642BFC">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-4B84F130-40B0-451F-AEE6-07E9B784617E">Next</span>. The File to Import page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_45F6833DB58047E1807750B2A41CE9E1"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_AC3226A1F1574781AFCA28F58434B3B0" src="GUID-0DEA69FE-9FBC-48A4-84FB-A03B7B6AE4D4-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_FF2C738BDB0E4294990AAC17F4B325EC">On the File to Import page, be sure the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-BB0B6ED2-D3DC-49F2-86F8-EAA5FE8361A2">File name:</span> box includes the path to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B1A9E249-08C9-4FB0-BC72-6E4855B482F6">dxi9000client1.p12</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_EA58A5C62CB84FD0B1125FA56EDFAB15">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-27747D36-9BE5-429F-9983-3CD5A09E3E53">Next</span>. The Private key protection page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_CA4CC1C004E447C0A181CE4BF63F617C"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_E4015B6D96714B44A92E4DCC33B1CE1D" src="GUID-1BDD05EA-3E89-4BB0-9395-2BD6FF88C540-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_396E4E4B7D8346169C4527A22D6DA465">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-38C0067B-3B49-4721-96A5-699A9698C7BD">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_E457A82AF7D240D8A73ED6391488977F">Open 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5A6283FA-6582-48D5-A74D-5344217602EB">Password_For_dxi90001.txt</span> in Notepad. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_DECF0E9C51A04866A4511B1AC504DD4C">Copy the password. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_E208B64D16204374A50E17B4C3246F66">Paste the password into the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1A0422EF-4A98-42DA-BFC1-DBB5360239DC">Password:</span> box. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_EF69EFDBB0054004A0F1D89BDD356553">Be sure 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1CACCF98-994C-4020-8C4E-B802DA7B0725">Include all extended properties</span> is the only option selected. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3F12C1FC92434C828774F7C0A0E9670C">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-F63F1FF3-12DB-4B8E-9116-E994C502710D">Next</span>. The Certificate Store page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_F776747834D749D8B5F1606377318310"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_566233818F5E431AAB3B61ABA041D6F2" src="GUID-C864DC8B-18FC-496C-90A1-CFCF458515CD-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_F1C9DB7B8EF9414695DEAF2F3B1DB235">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-CD216A60-E41F-435A-A96B-2CAA76D481EB">Place all certificates in the following store</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_94A6983003D74C31B1B5483EC6809DCF">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-8EB1F82C-9D4E-4B16-B257-72CFDE311C55">Browse...</span> to open the Select Certificate Store dialog. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_F5B12BE347FD4C68B4B6A5411958A444">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-DFCD801D-6BD5-4A70-B6AC-05920EAB727F">Personal</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_8E3836FED64F45209C75F82AE163BA68">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-3C1EC466-FB50-4D00-A3CD-E85D71E1BD48">OK</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9D3625C1FAAE450AA4DDFF43D2AB772D">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-43E57CF5-7B33-4C56-8623-018EE94C6622">Next</span>. The Completing the Certificate Import Wizard page will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_732C89DC5E1C47C7B43F348029EC3B44"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_C0F4455A5B474AE69858F00B6485ABA7" src="GUID-1072089A-DE20-4FBF-AAF7-765E9F569FA0-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_5415D93ECCDD4A6896C5028DE7BA7042">Confirm the setting for Certificate Store Selected by User is Personal. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_4E731BFAB70546DB978069D5A72D8F11">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-2D7F2525-F9BD-4F15-AF32-4132D92FF9A1">Finish</span>. The Certificate Import Wizard dialog will be displayed. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_A78F27BEE03247C8B2C3DC3A2269479D"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_27CBD23652004D09B9635CB03DAB2D47" src="GUID-3B27350A-E848-4B7E-99D7-2C16D7CA95C0-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_34B30F156EAE446BAA44C92A953F26B6">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-483A5533-919B-40C8-A899-38180028F56E">OK</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_493F9CF05836401C8D77813BBDC449D9">Sign out of the BeckmanAdmin account. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_310727DA69974E1CAB73038A1C4BF37D">Sign in to use the LabUser account. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_0F82CAA911114185B7076B74A3ED3A99">Repeat this procedure, 
+			 <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8A203ED14315461185E9ADE0CF346F99">Step 2: Configure OpenVPN on the DxI 9000</a>, for the LabUser account. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_EE87CC4626D646958DE3935BFCABA6BE"><h2 class="title sectiontitle">Step 3: Update the Certificate Thumbprint and ta.key</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_728F3B2039664939AE0E7CA10A391FE4"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_58A1B35959CA49C29386B64AA2235CEB">Sign in to use the BeckmanAdmin account. See 
+			 <a class="xref" href="GUID-23B0238E-5162-4D9A-AC55-C46074B8D526.html">Signing In to Use the BeckmanAdmin Account</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_BB25B7EDF04244369AB540F64885E0F4">Press the 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5F02EF4E-E561-474E-9638-0DB4CA9CF5A2">Windows</strong> key, type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7629CCF0-F5FD-4CD5-9F70-B8762D728550">cert</kbd>, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A5624C51-6651-4D7A-9E76-03F28D6DEDFE">Manage user certificates</span> to open the certmgr control panel. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_C4DA4C3DECF44538BE7D952D84201C1F">Go to 
+			 <span class="ph menucascade" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-54DFE180-007F-44AB-9D7D-FC9A4DF5C3FF"><span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1529D8EF-A4A8-4F0C-B8B4-D4A2BE5D2056">Personal</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-67251CB2-8D5E-4F7C-A07F-0357671B6BAE">Certificates</span></span> to display certificates. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_BF890BFFCC7143F89749B77583291C05"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_144788D27621469E97C774BEACA9A516" src="GUID-8A8D7656-EB31-452E-851F-BA2AF5A35EB6-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_A3B616F292A34A22933C774DADDD9C67">Double-click 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-CCB7E541-2EA2-4183-AB79-B4D39066B46A">dxi9000device1</span> to open the Certificate dialog. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_49BB42486BBB44DBBABC5C5B0749A2FF">Select the Details tab. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_6AAB0F6719E34CAC827CE2496B91C893"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_F10188450645486899ABFC74A4A54323" src="GUID-52596ED0-C60F-49BC-ABE0-AA6F4AE1FBC7-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3FBFA0CDB81F4D3DBF600964C3211CAE">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-8B82A207-9725-41AD-B75F-4296C903BD95">Thumbprint</span> to display the code. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_ED53C0587F6E40FDBEDDEAB9F93DB318">Select the code, right-click, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-81E41886-57A1-4CAE-987B-BDC08FEA237F">Copy</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_74402CDF93C241109FBE8A9BA5D53AB9">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-DD2B2A5D-484A-4751-841A-5C4C2AF5C163">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_738400B23AF642819417A33E331108AD">Select 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-86F55DDE-8184-452E-97A7-367669057309">Client-Config-TCP.ovpn</span> and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A50FB2C1-122E-44BA-9243-38427D9874A4">Edit in Notepad</span> to open the file in Notepad. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_A007B28302244966A17CFF5C829E4BE5">Find the line that begins with 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7B00EF6D-33EB-4D37-AC6D-11B19A2E36C9">cryptoapicert &quot;THUMB:</samp> 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_52B412FE49CA43F8B0D1B205833EADBD"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_6B4B4988B17646428371B3AF7DF67AB6" src="GUID-95807F2C-A196-4D90-9B5C-A8E854DE7BB8-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_9B998B0039DF4F2CB210EA97448228B3">Replace the code with the code you copied from the Certificate dialog. (Select the existing code in Notepad, right-click, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7C47B385-1AA1-4F9D-B76E-2D57EF782029">Paste</span> to paste in the new code.) 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6EC01FA3CFA842589DC8BC1E9E935086">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-579E7325-8EC5-4473-B89A-67917FC3645D">File</span> and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-536F089D-D725-431E-92A7-2BAEF4B0F1ED">Save</span> to save 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-62F390A8-12BF-4652-B268-B603A61560E3">Client-Config-TCP.ovpn</span>, but do not close the file. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_D2CF943AC3D345BA93F907C7B4611791">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9BE24157-29DB-467A-B44F-1D73FE232633">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_B1EDA26FB43A4DA88ECBC8E8648C606F">Select 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-AF40E529-E7C8-434A-9CF3-15961F63642A">ta.key</span> and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-D867D058-33E5-4E82-8811-09E6E4D843E6">Edit in Notepad</span> to open the file in Notepad. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_345920D0602D49099F0F238CC4DA40A1"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_C5A38BC9781A48D7AD7E2738CAF32ABD" src="GUID-CECE05C2-479B-4070-8C3A-49EB15550CF0-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_1D7778E8750E414484B4BFCB85FD9B71">Select all the text in the file, right-click, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B2A4F3A2-8773-441D-BAE7-775C17B1A058">Copy</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3BCD820CC5D64EB2AE4712118DBD27A2">In 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-50B3D6B8-75C8-4810-AAB9-523893651D88">Client-Config-TCP.ovpn</span> find the line that begins with 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-51270168-64B8-421E-88EA-818A3D515CF6">&lt;tls-auth&gt;</samp>. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_1095A0A80BBF4C7082E92D3914A74969"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_C8D69C1CE25441CF971EABE2C91A6058" src="GUID-F9160540-C2AA-489E-8277-52E7D16E48E5-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_04AA24A375A148529D206962DD20FB08">In the lines after the first line that displays the 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5BFD29FE-6491-48C9-A0B4-FAB132B9A5C7">&lt;tls-auth&gt;</samp> tag and before the second line that displays the 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A4A58127-B997-4DE2-9427-38A67BCBE3DC">&lt;tls-auth&gt;</samp> tag, replace the text with the text you copied from the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-53F85369-E4E9-46C5-8CCC-8277FFD1D378">ta.key</span> file. (Select the existing text, right-click, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C0645565-28BF-4C7B-AEC5-6D432BE43375">Paste</span> to paste in the new text.) 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_5D99B36FCFE249AC90864DD6B43439F1">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-E1AB1A37-F873-4876-B23C-97AA9FB1C6E5">File</span> and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-E9F730D1-C6D1-4400-BFC8-94ED2916D35A">Save</span> to save 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5ACCB8C3-08FB-412B-BA80-8EDB8B17EB81">Client-Config-TCP.ovpn</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6C1499D6DFBC4476B756C8542D2AE100">Close the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5C24A76C-EB7F-4C59-9085-DAF9791D5AB4">Client-Config-TCP.ovpn</span> file, the 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B47ADDF7-BA69-4B4E-A41B-DF2C61A62160">ta.key</span> file, and the certmgr control panel dialogs and windows. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4A086067F3574A1EB97A422A93A47E43"><h2 class="title sectiontitle">Step 4: Confirm the OpenVPN Connection from the Client to the Server</h2> 
+		 
+		<div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C2440816-2933-44B3-AF13-D47BCF8ED96E"><span class="note__title">Note:</span> Before you perform this procedure, you must obtain the IP address for the laboratory information system (LIS) from the customer&#39;s IT group or LIS vendor. 
+		</div> 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_BAEED7E949FF4414BA468CDB1A6E582A"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_69775AB479264A1A8D562998E215C5C6">Press the 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9FE95431-E0A1-48ED-B0F0-0D3BA7C67D5E">Windows</strong> key, type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-54432E7D-65D2-4378-93F8-1FCDAFF76BCD">OpenVPN GUI</kbd>, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5BF8DD03-F744-40C7-92E6-8D5358534F1C">OpenVPN GUI</span>. A new icon for OpenVPN will be displayed in the system tray on the Windows taskbar, illustrated below. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_8C7B6E8A762440969278A21F88DF129B"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_F381438FBCE549B0B200206CFA3E8F9E" src="GUID-4857BBF4-48E5-49D1-AB06-30FA2982532D-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_32ABA7F5B7344D41BC01827D7CB79CEB">Right-click the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6718CE99-B5CC-4756-9DCF-F95D2A5F55E5">OpenVPN icon</span> in the system tray and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7E04B826-D87C-48D9-8267-F1D910FB8A4F">Connect</span>. The 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-AE7912EF-632B-4E68-B3E6-ECBF94826B08">OpenVPN icon</span> icon in the system tray will change to 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6224CC16-831E-4E95-9FDE-E1FC826217A9">GREEN</strong> (Connected), illustrated below. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_A5A58F9EA764445E8B2FB23A1F15A362"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_5F8077E705F246DABE74ECDAA6517E2C" src="GUID-B0BC275A-1F47-4F81-A262-DEFCF8B21752-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_2E2A5464B8E645D3A2E2A8ABD2E50A89">Double click the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-61AD9801-1942-4EDC-B459-8D51DC620280">OpenVPN icon</span> to open the Open VPN Connection window. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_CCF784164C8B428DBB71260BA5AD599E"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_CDC5B3590B3C4ABFA9F06EAECE4760F6" src="GUID-C6D573F9-217D-4D93-863A-D6792F17B037-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_3655EE67CFFB4174AB41C6BE6843716C"> Confirm that the Current State is Connected and that there is an IP address displayed for the Assigned IP. Close the window. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_0580B735C7574A89AD344583172D9810"> Press the 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-02123061-CE77-4573-947F-D3FBEA796978">Windows</strong> key, type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A285514D-4A4F-41D4-859D-ED28BABA0AED">cmd</kbd>, and select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-22888547-203E-4B7C-80E9-AAEC7D758EAF">Command Prompt</span> to open the Command Prompt window. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_1B4A4A1A86114F4A90B5172676C7F4F1">Type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-85C01523-6702-42D3-BD70-011D346BCBA4">ping XXX.XXX.XXX.X</kbd> where 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-BD725B4B-A709-4C47-893A-4C0E48EACFF2">XXX.XXX.XXX.X</kbd> represents the IP address for the LIS. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_33ADBFCA371B405896CB08651EE500E8">Press 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-F0F37383-CCF5-4B6F-BF9A-F47D41E2A3EE">Enter</strong>. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_8F2FB1CC769A4F2DAA1134D92C79BC0F"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_14AC4AF56D594C6AA6CE85705F87B30D" src="GUID-873F8A66-612F-46C8-8CA1-2B841E263CEF-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_6AED26218CDC4B8E8F6D0CF8E58F5FA1">Confirm that the ping statistics for the IP address include 
+			 <samp class="ph systemoutput sysout" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A777DE6A-E5F6-4AC3-91F9-36E013AB39B0">Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)</samp>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_85FAF03E75354937A22B268332DFA795">Close the window. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_8C417E06D052477BB774392A33C8E5D8"><h2 class="title sectiontitle">Step 5: Configure OpenVPN to Automatically Connect on System Startup</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_85B0C9CCCF9D421F996DFC4A2AA06AA0"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_ADF12D8151D24FB99D6CFF5EC7C584B1">Restart the PC. See 
+			 <a class="xref" href="GUID-AF9F7BF9-4D00-4977-B99E-6A675A410777.html">Restarting the Console PC</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_941D5E594EEC4452B0E12E01AD0727F4">Sign in to use the BeckmanAdmin account. See 
+			 <a class="xref" href="GUID-23B0238E-5162-4D9A-AC55-C46074B8D526.html">Signing In to Use the BeckmanAdmin Account</a> for more information. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_484DE6B943D84992BA8A33DAC070E4B8"> Press the 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-EDD69517-1ED7-4B1F-8562-BBE2CEA021AF">Windows</strong> key and type 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-354D5B05-8BEA-4BD6-B90A-D06ABB71F8A7">regedit</kbd> to show 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-F3DCB5F2-A3FB-4E86-8665-4E1A6B46EE89">Registry Editor</span> options in search box results. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_BDD3EF9E552A48208EBBC6C19C33FA40">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9D6F1238-3428-4985-8D4B-AA5AB8F3A974">Run as administrator</span> to open Registry Editor. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_0F7F6A5959884D58AFFAB0B34AD84856">Go to 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1ABB9176-68E1-422E-9267-1FD14B395DC3">HKEY_USERS</span> and select the folder that ends with 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-792E5B19-9856-4CBE-9610-A77635C05005">1004</span>. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_A746A52A489B41F9BD9382E183AD034E"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_55F62EE4E6834448A732395B08119F9B" src="GUID-2ACE1322-358E-41DC-86BF-7A65FF23AABA-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_AADC2C0D35F74102AF9E5B079E54B15B">In the folder that ends with 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-426BDBBF-F033-466B-9760-70A48A1842A4">1004</span> go to 
+			 <span class="ph menucascade" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-67B69DE0-9B48-43BB-AC60-91F2EA60E320"><span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-BA623CF8-2C7C-45BC-9122-3BD4D2D10CC6">Software</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-7F0BCF62-9E65-4A5B-A44A-478E1E77CECA">Microsoft</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1F59013C-1217-4043-BCCB-5612554C489B">Windows</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-56B0AB1E-4712-4D1A-BD0B-2FF007844A45">CurrentVersion</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-D58FC0CC-769C-4E31-8764-CFE948ACAEC7">Run</span></span> to display the registry key values. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_786E4712B8C3444AA090297928BF4C50"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_936A66C7E26D4337B62120FF7185435B" src="GUID-86177656-E00F-43F6-BA3C-0900D890515B-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_941B8639D506403C83913A27ACF84FDA"> Double-click 
+			 <strong class="ph b" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A3BF49A6-A5F3-4071-ABB5-4BB61BFB478F">OPENVPN-GUI</strong> to open the Edit String dialog. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_18319BEA308B47C79258B8C46E09450C"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_E17FC6FDE60D48EDB406980BD0CE3DBB" src="GUID-B53E8D7E-913B-4F53-9B32-F76E6602BAAD-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_38FF16D8A7F143BD950C98082CD6CB31">Edit the text in the 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-31652FE5-929F-41A9-90AC-7A7400267520">Value data:</span> box to be 
+			 <kbd class="ph userinput" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-92936905-800B-4DA4-8E8F-5E28C867718B">&quot;C:\Program Files\OpenVPN\bin\openvpn-gui.exe&quot; --connect Client-config-TCP.ovpn --silent_connection 1 --show_balloon 0</kbd> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_E4414BC01B7D49D3B2EC64EB751DB88D">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A3CEA028-7CBF-4E36-991B-32379C775339">OK</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_C19A5355FEFE4B70B65265BBA488C233">Close Registry Editor. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1B3C02036FD2474AA24462A2A52C269E"><h2 class="title sectiontitle">Step 6: Delete OpenVPN Configuration Files</h2> 
+		 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_79FA3766291447A59C3F812EE8FBC432"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_098DE22E413540A3B8DE0385CD7AC95E">Go to 
+			 <span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-87C02B76-FE30-4648-B281-D472C55B6BE4">C:\Program Files\OpenVPN\config</span> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_B2AE1CF162BF4BBF8D8BB80DA935F776">Delete the following files. 
+			 <ul class="ul" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__UL_757F1B1E127F49929BCBAC7776BE1564"> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_C8EB52A45A724E7BB78523210F723246"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-BD20C7A2-B4DD-4BA4-A389-048F75D5B65E">dxI9000client1.p12</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_E2F5745F8F5745C9A1A6CED72327D5D4"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-4FC4C8D1-30C9-4BB6-8F5D-136FEA05254C">Password_For_dxi90001.txt</span> 
+				</li> 
+				<li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_90B51648427A4F43B208C73302DB1FC1"><span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9D111CFC-4CFB-478F-BF67-933A189DEF82">ta.key</span> 
+				</li> 
+			 </ul> 
+			 <div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-46FAE1DC-2067-4AFA-8C7C-11C1E312949D"><span class="note__title">Note:</span> After you delete these files, the only remaining files in the folder should be 
+				<span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C75FC476-E91D-440D-AB1D-2206B8591CC6">Client-Config-TCP.ovpn</span> and 
+				<span class="ph filepath" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-C09CE233-F845-455B-BD3A-77C63290DCE7">root-ca.crt</span>. 
+			 </div> 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_FF91276EC54646F7831D939FC0560C54"><h2 class="title sectiontitle">Step 7: Configure LIS Communication Settings</h2> 
+		 
+		<div class="note note note_note" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-E6D3DF8F-7364-4BDB-BC71-4F000BFCD671"><span class="note__title">Note:</span> To perform this procedure, you will need to obtain the TCP port and IP address for the laboratory information system (LIS) server from the customer&#39;s IT group or LIS vendor. 
+		</div> 
+		<ol class="ol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__OL_8353B49A514F41D7AAB47F07FB89D760"> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_44CC4A2C43CA423189BFF8064F39F5CC">Open the Machine Control App. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_451E86408C364A1DA9176734DFAEB01D">Open the Console App. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_B4C5F4370F6F4D6D9A8CE4F13FBBE019">In the Console App go to 
+			 <span class="ph menucascade" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-9D27391F-2924-4074-A059-2EA50CEB4713"><span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-5D2CF5B1-2BB9-4A15-A352-346742936777">MENU</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-A27DFB2C-5E77-46DD-8207-04CB050A6F66">System Configuration</span></span> to open the System Configuration window. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_14C20CC2BBAC4541860CEA98CD88E614">On the System Configuration page go to 
+			 <span class="ph menucascade" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-6D01AB18-D6D2-4AF3-88B4-CDE18BB71EEA"><span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-B2325746-7811-4A7A-AC14-2808E74FFBB0">External Interface Configuration</span> &gt; <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-FDA91479-C626-406A-AEA4-353C15C21C0D">LIS</span></span>. 
+			 <p class="p"> 
+			 </p> 
+			 <figure class="fig fignone" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__FIG_C4D709B5257C47E59BC94AC2F19661D0"><img alt="" class="image" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__IMAGE_A5F846D9190D40A5B76C9DD1AE1E573C" src="GUID-B5C85103-1AA3-4813-A9CD-ABD3768A12A5-default.png" /> 
+			 </figure> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_67D12742212245CCADECA9C1C20E7742">Enter the TCP port and IP address for the LIS server. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_256E0C2473A2470E8075493DEB4478AB">Go to 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-06029923-7FCD-42A2-B8B0-14251463F9B8">System Configuration</span>. 
+		  </li> 
+		  <li class="li" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__LI_FB7798538D0443BF912A9F3FE6951D8C">Select 
+			 <span class="ph uicontrol" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__GUID-1ACCCDF9-EA1C-4AA1-82BA-3AA070733990">Activate</span>. 
+		  </li> 
+		</ol> 
+	 </section> 
+	 <section class="section" id="GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_4345928660F14E36ADC93E7430F3BEB1"><h2 class="title sectiontitle">Step 8: Install OpenVPN on Remaining DxI 9000 Clients</h2> 
+		 
+		<p class="p"> Repeat 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_1EE07B87F20D4DC28342BAD67736ABC7">Step 1: Install the OpenVPN Software onto the DxI 9000</a> through 
+		  <a class="xref" href="#GUID-557C894E-1068-493F-808A-EB2872DDAFCF__SECTION_FF91276EC54646F7831D939FC0560C54">Step 7: Configure LIS Communication Settings</a> for the remaining DxI 9000 clients. 
+		</p> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-BD3DD764-C2FC-49D8-8ACF-964FB0609F8B.html" title="This section includes procedures for servicing instrument connectivity.">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-3809C61A-1288-4685-A57F-5876F8BF2D8B.html" title="5 Connectivity (DxS, LAS, LIS, Peripherals)"><div><span class="ph num-prefix">5 </span>Connectivity (DxS, LAS, LIS, Peripherals)</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-BD3DD764-C2FC-49D8-8ACF-964FB0609F8B.html" title="5.4 Procedures"><div><span class="ph num-prefix">5.4 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-557C894E-1068-493F-808A-EB2872DDAFCF.html" lang="en-US" title="5.4.13 Installing OpenVPN for Encrypted Laboratory Information System (LIS) Connections"><div><span class="ph num-prefix">5.4.13 </span>Installing OpenVPN for Encrypted Laboratory Information System (LIS) Connections</div></a></div></article></main></div></noscript><script src="static/body.js?rJAUfFpk" type="text/javascript"></script></body></html>

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to reorganize the Access2 database." name="description" /><meta content="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" name="DC.Relation" scheme="URI" /><meta content="GUID-504FF1CA-E20E-4B39-B92A-991098A09952.html" name="DC.Relation" scheme="URI" /><meta content="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="February 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BN" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="03/09/2014 19:00:00" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="23/02/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13860" name="FBCPARTNUM" /><meta content="Manufactured for" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="19/11/2025 19:56:48" name="FISHPUBREVIEWENDDATE" /><meta content="23/02/2026 14:39:32" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-D5163292-63FA-449B-AC80-6E4FB4F92F44" name="FMAPID" /><meta content="19/11/2025 20:16:00" name="MODIFIED-ON" /><meta content="19/11/2025 20:15:33" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-7F93B284-E572-4BED-8BE7-6E14611D6699" name="FISHMASTERREF" /><meta content="Access Service Manual PN B13860-v45-GUID-D5163292-63FA-449B-AC80-6E4FB4F92F44-2025/11/19 20:15:33" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BN" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="45" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="Service Documentation" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="Access Service Manual PN B13860" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-439848CA-2460-46A0-BA94-F5E0964298CB" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>10.10.1.12 Database - Reorganizing Database</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-A1DBBD38-37D1-4677-A618-76AE5ED77018.html" rel="prev" /><link href="GUID-135608A4-9F48-4B33-A35B-AB28819E8AF8.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1227" data-relpath="GUID-439848CA-2460-46A0-BA94-F5E0964298CB.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>Access Service Manual PN B13860</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for Access Service Manual PN B13860</span><span id="emailpub">Publication: Access Service Manual PN B13860</span><span id="emailpartnum">Part Number: B13860</span><span id="emailrev">Revision: BN</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB" role="article"> 
+  <h1 class="title topictitle1" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Database - Reorganizing Database</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to reorganize the Access2 database. 
+  </p> 
+	 <section class="section context" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="p">Reorganize the database when: 
+		<ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_780A7C2BA02E4F75AE49E4D477C417A8"> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_7A19AE5E66D1492C92EE07B19AEAFD62">The user interface is unresponsive. 
+		  </li> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_E9DD1E4099BC46F6B7ADAA3C5782EDC3">Clearing jammed critical events. 
+		  </li> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_5E81F19D839045078A00B2BEB7F16E0A">Detecting checksum errors in the database. 
+		  </li> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_48E071D8D219459B85D82923643BB9C1">Compressing the database to reduce the size of the database and improve the performance of the user interface. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-43035A8F-6143-42DF-96FC-51C607F095F9">Prerequisites:</strong> 
+		<ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_E31C5674E6F444CBB90EAAA385D010D0"> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_592FB8D6EAED4173A187B0ABBF17AE0A">Create a local copy of the database. Refer to 
+			 <a class="xref" href="GUID-A1DBBD38-37D1-4677-A618-76AE5ED77018.html" title="This procedure describes how to create of copy of the DxI or Access 2 database on the console PC hard drive.">Creating Local Copy of Database</a>. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p"> 
+		<table class="table" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__1">For the following action... 
+				  </th> 
+				  <th class="entry" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__2">Refer to... 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__1 "> Reorganize the database on 
+					 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-5EE24202-8618-46B5-AA6E-8FD2BFA96899">Windows XP console PC with Access2 Software 3.4.2 and below</strong> 
+				  </td> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__2 "><a class="xref" href="#GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_D68D8D76AB5C409AAAAA1AC158850717">Step 1</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__1 "> Reorganize the database on 
+					 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-25747295-1376-404A-95D2-29D04E5C3150">Windows 8 Mini PC with Access2 Software 3.4.3 and above</strong> 
+				  </td> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__2 "><a class="xref" href="#GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_A4BAA507543E42D4B6CD8D4F224191F2">Step 2</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__1 "> Reorganize the database on 
+					 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-FD6F69F8-A8A1-4072-8D3F-71EE19E683E2">Windows 10 Mini PC with Access2 Software 3.7.0 and above</strong> 
+				  </td> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__2 "><a class="xref" href="#GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_263F466976F24809AE03A21258747053">Step 3</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_D68D8D76AB5C409AAAAA1AC158850717"> 
+		  <span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-C5ED5204-9B1F-415E-8DF1-AB413245AAF9"> Reorganize the database on 
+			 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-4CFD0AC0-BED3-4BCF-A7F0-A50C8E66E70D">Windows XP console PC with Access2 Software 3.4.2 and below</strong>. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEPS_B8D707465D474D9AA2C7FF7D3DFF67FA" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_2ED49903B93E425BB5DECA9287F44D85"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-3EF08FB4-86AA-4224-8379-C12D943F2374">Open the database application, select 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_645D070465394687ACAAB3FCD6A4D8BB">Start &gt; Programs &gt; Access2 &gt; Poet Developer or Poet Administrator</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_2F773E283A3D409ABCA9F7846221215C"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_B098B092740C4A6B857FCF30446944EC">In the 
+				  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_2CB7D5A4FC0B4241AFD65887051E1DC0">POET Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_1C66C3234AAC46819A430EA3F0DBCDCE"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_3302F0BAC9864F70A8C59DF5CA4FDE28">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_F74059491C644DF3924C13CAA38DC8C2">Reorganize</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_03D9756C47F9477FAC17E4FA10DDA344"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_59E1B37879324D06A84A73A099D51970"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-710DDBF1-19A5-43FE-A0E0-A5BD16A51974">To reorganize the NexStepBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_3CC28AF9819A4E04A8C4A92C283DEC2A">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_0D5B64DA5A0F4610A67A62C04FC11309">NexStepBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_037C8D0174E143D8A906BA977777F330"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_735C176D6DD2442E856C9017B320C266" src="GUID-3E78CA8E-3E5F-4F59-AE34-5DAE4F8E7E9A-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_2CB27AA46E73458AA1CC17E1DE1200B4"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_5F9C53E705CC465DBFB1E6A2CB881A2B">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_5F70048C33EB448D854525FA3459BA36">Reorganize</span>, and then 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_6728DDFA6BA84CA09D45CFBCEE948A53">Yes</span> to the message to begin the reorganization process. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_F889A83679884EA19827CEFF24DA5C0E"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_2979F6E5E81A4D14B587918A21D61417">If errors occur, then: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_5A83B77DC8AC46E991735D8F828CD117"> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_7F9CC421EDAD496EB40835B5BA9B3A6C"> Verify that the host name and database name were entered correctly. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_A948089EFECD4E52A8AF3C29D93D6D1D">If there is a File Permissions error, exit and relaunch the Poet Object Server application. Select the 
+						<span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_CEF53FA1207A42248A16433CC658E54B">Poet Object Server</span> icon at the bottom right corner of the display. Exit the POET application. Close any error messages. Restart the application by selecting 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_2F69667E443C4ABB81C7FA3706D5278A"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_BA1A986266014CF4806DCD0672427975">Start</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_9255AFF5CECA4C14B8127C26975A7698">Run</span></span>, type 
+						<kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_04C1790CCB034777A8E1CF9C09798DD1">ptserv32.exe</kbd> on the Open text line, and then select 
+						<span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_E7BA233878C046AF820BAD22F29106F9">OK</span>. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_2E595209BC4F432AA8A23C457ACF446C">If there is a No Partner error, make sure that the Poet Object Server application is running. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_90C0788D7F8A47FA9FB085550ABC1BDE">If there is a 
+						<samp class="ph msgph" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MSGPH_08A147E893C04755B596F298A8CD8A17">database already exists</samp> error, delete the 
+						<span class="ph filepath" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FILEPATH_0CE77FB35225400E9D7BC57148225444">c:\nexstep\pc\drw\objects.reo</span> file. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_F7F7ED69A899433D915BD5B3ED695AE9">If there is a Recovery is enabled error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_8BDAC0768D5649DA948C6BCF1885F3E7"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_A566D97785624FDE87382269C88BB6A5">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_3F75087552FC43DE84127CE72EDAD6B7">Force No Recovery</span></span> to delete a corrupt recovery database. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_089D0369C9B14E87A12D6C58A6FF26CF">If there is a Checksum error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_2A5EED7D18264199A32F6E2B59C4AA07"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_ECF0C24FD6A84FC98029C4C786D31CA0">Database 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_A2A5C41D61984A4AA56FCA5FAE3737AA">Repair</span></span>. In the 
+						<span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_633700AAE8B34F9689B457BB0A537160">Repair Menu</span>, select all the delete options for a corrupted record 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_0FD390C5C5DF44E590F333968DB48127"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_CC04844F62F146CDA3299F4917F3DF05"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_F7DF6D19407F408692F986523CF1C9E6"> Review the 
+						  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_18EF4EAB98734743AE834C34E8F7B3F3">Reorganization Messages</span> display for Checksum errors. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_D12A5D8496C947C6891BA9BDCFF5939E">Reorganization can take from 5 to 20 minutes depending on the size of the database. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_5BCE06379EEC408AB22CC963FBBA4361">A percent completion is displayed while the reorganization is running. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_59A704D1A9444EB99E2875CA3DE62C2B"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_54F232E437EB4413BB3D1EE111E1A1BC"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-137AC2A0-EEE1-48F0-9772-BE0D141A895C">To reorganize the EventBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_C8BE30CF51464E9083BB23F7B19C680B">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_B26ED9B3E44D4B8BA131C3A7DD1AA88A">EventBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_CC530CF0E8BA4C01BA07803AC3F643F2"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_6FD91FF232EC411EA6936F10AFE8ECEE" src="GUID-EAB7921B-5A3B-4765-99CF-0B12EB2CF759-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_420983F625CA4675AE72AB17549F19E9"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_62CB36693FBD469E86226E889A5DDB1C">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_7F01546D13B24DBFA1F5A4DF4A613EB4">Reorganize</span>, and then select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_9A7C7E9C7E88444B8A3B385120591E00">Yes</span> at the message to begin the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_2A013F3318344ED3A741D62AFA0616A3"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_4F4402CBAE2A4AC0B505F2940A01F69B"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_14C22DB45F1B4C85B8B73411F72E6374">Refer to the errors listed in the NexStepBase step. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_4CC54A714C794DA2A094C3223CF90266">If it has an unrecoverable error, the EventBase database can be deleted in Windows Explorer. A new EventBase database will be created the next time the user interface is launched. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_3F6B625C1C2D48CA95673456E8D5E950"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_E80D7DA89EDE4E7C8BFDA24F95C4ABA1">When complete, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_A486F06F29A5430690DCF8B290098AD7"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_F8BAB4D88D714C188971938C4BFEC882">File</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_47126A34968F4018B9B9044826615CE5">Exit</span></span> to exit the POET application. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_6BBD502BC73944EA81F187840501E053"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_15A29186B0534C5AAC94E8A3F63AC2B2">If the Repair or Force No Recovery processes have been performed, then perform a Database Consistency Check procedure after completing the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_3853C6C03FBF42D1AA5B74443F1A34E6"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" title="This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure.">Software: Performing Database Consistency Check</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_1D7BC07B70B54DF187955D7D1AE0E662"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_FED5E50ACD7A49B798388380494C58A8">Launch the user interface. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_BA14B97B1B9A4F4183BBE52C71D7B16E"><span class="note__title">Note:</span> If the database problem has been corrected, you can delete the copy of the database. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_A4BAA507543E42D4B6CD8D4F224191F2"> 
+		  <span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-A2309B9D-A262-4438-8DA8-D8FEAA95F722"> Reorganize the database on 
+			 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-F7D2C6DD-8E91-4B76-9CD8-245B5A5AA769">Windows 8 Mini PC with Access2 Software 3.4.3 and above</strong>. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_BA880D12059349FCA9F6903E1DF94DC3"><span class="note__title">Note:</span> Access2 Software 3.4.3 and above are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to launch Fast database application. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEPS_08AEF0A61C6B46B7A584126503C7B4FC" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_83C72FD42B8E4691B900BF87222F9F3C"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-C3D517C6-6AA9-46EC-B1C2-C205731CA158">Press 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_0151E8783D9840F59DFB3BB2B7D1DE05">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_F2153B9E9FB144E398346403C998952E">Fast Developer or Fast Administrator</strong> icon or type 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_B05A37B10BC44B2EAEFAD41521093CF6">developer</strong> or 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_F7305BE0A8C7414B97FC2891E5A1C04B">administrator</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_A5CC8F1052934FDC9643A535DCFC42B1"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_1C31C9F4195843BC817DCB52D0126E75">In the 
+				  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_67E92D1540C941AEBCB12641E97DBD89">Fast Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_9071885CDB24431685FF84A3947458BC"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_4CF5C3C8D5FE421885FDB41963EEFB14">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_2DF199F56C114FD8BB5D05E666D00EE9">Reorganize</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_5ABEC5570EDD4D249C01ECBEDD1F1DC5"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_C1F9532035AF439EA8EB05A2A3EC8B19"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-FB03AAD3-D1BE-41BC-9BE6-8FBBC1C6EE4F">To reorganize the NexStepBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_7039859C8F624E96A68E91E98EFFA1A7">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_9264EFA7CA02429387408C2F1BE9B695">NexStepBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_57A7BDB3712D4CFC992B6B77B900DCC8"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_FAF4AA7D36C84FC0B725CBC8AE989A05" src="GUID-3E78CA8E-3E5F-4F59-AE34-5DAE4F8E7E9A-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_44A425CCB3CD41B7A81A557938FC273B"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_6FB4814F01FF40CDBDE5C9A02B3463F2">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_D35F9DD4C6684A9A940F7515014BA201">Reorganize</span>, and then 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_5F6427BE098A49BABABDC5DFADA56072">Yes</span> to the message to begin the reorganization process. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_54BC45865E154C93966B72C548FD67AB"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_7BE1185BECDA484AB4151C7CD09B9F06">If errors occur, then: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_0F65ECAD13F447D093466C573724AC8A"> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_C05DF25F78E1407482F09EE6D5CD6983"> Verify that the host name and database name were entered correctly. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_DE35BE26D58E477EABDE5425D62A5AD2">If there is a File Permissions error, exit and relaunch the Fast Objects Server application. 
+						<ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_E95DF75A14D34C10A7B7638F33C7A870"> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_7D0E677C84FE4F2D87C7BD362027D9A6">Press 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_8D0931BFD8624DB6930F8A6907465816">Ctrl + Alt + Delete</strong> and select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_60A176B15462442895350EDD7B31459B">Task Manager</strong> or right click on the task bar and select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_33A7143F9EE540F5A2AF8D4C45818BA3">Task Manager</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_391A3E53D89740089EB1D3C4C6CD54C0">In the 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_EECD05F9200D49F1ADFAC5BE731B788A">Task Manager</strong> box, click on 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_34BF7BF20101429894821248082FDE98">Processes</strong>, select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_8496DE188D0D4101B0094310D4FAC88A">FastObjects Server</strong> and click on 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_D39FD06FF4944B6684F489EE8099A3E9">End Task</strong> in the bottom corner of the box. 
+						  </li> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_DCB2C91D959F44D18B80117FAAC7C983">Restart the server by pressing 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_73C2FBD73F4A4FD9AA5827532F693D9C">Windows</strong> key and select the 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_F4459E9F794B470DAF82FEE12C787B87">Fast Objects Server</strong> icon or type 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_A20A011EA7964E9293C7C3EB0EC8E596">run</strong>, open the Run program, typing 
+							 <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_40EAC4044CC84BB095E1D932195AC44E">ptserv32.exe</kbd> on the text line, and selecting 
+							 <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_643BFC2B03014E9994678C71E3C6DE2C">OK</span>. 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_8D4CA9C94C8E49848118F273D3E59F35">If there is a No Partner error, make sure that the Fast Objects Server application is running. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_22A3F3A5663A45EB8F0F136386479D73">If there is a 
+						<samp class="ph msgph" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MSGPH_9BCCCABEBC40484FAEE0BFE91A6588C1">database already exists</samp> error, delete the 
+						<span class="ph filepath" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FILEPATH_248675A611824D56A815815A734F762C">c:\nexstep\pc\drw\objects.reo</span> file. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_89F8458698A74CBC9F6BFAC3385CD18C">If there is a Recovery is enabled error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_F96A34277A8D4248956882DD0CCAD56B"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_B669B45A731A4D68BC5CDBD7D7ECCCFD">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_CE3780EE699243C6B028374CB275705A">Force No Recovery</span></span> to delete a corrupt recovery database. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_BA513A126CFE47BBB7610E728EC94342">If there is a Checksum error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_6390E508E93747CD87F66549DE84E52A"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_ACD3EA6FC70547E58B41EFD84D4C6210">Database 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_6EFB59EAE0F24B9CA5D839814129663F">Repair</span></span>. In the 
+						<span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_9FBF557DC7294F848D4FBE129511C94E">Repair Menu</span>, select all the delete options for a corrupted record 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_2D448E3063D7494BBB0FCCAF7E27E33E"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_8FBF093BB56B40E8AC1F6350F5E56784"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_DC9FA141247A4B87B748E0134227ECA3"> Review the 
+						  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_0E2144B8551C4313BA6C2DFAF9B5A070">Reorganization Messages</span> display for Checksum errors. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_284712AD5ED14582AEF5E78F0280B670">Reorganization can take from 5 to 20 minutes depending on the size of the database. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_E27D85B6E9B9497B82CDE3DB96694EFE">A percent completion is displayed while the reorganization is running. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_998B46FA4DFB41A4967BD3911495CFF4"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_D7F744EE4BEB4B7FB08562AAFD763AAD"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-2B1A180D-CEB1-4AC9-9557-9A6B8826F7A4">To reorganize the EventBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_AB8E6504DFF342ED9907245456CED4FD">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_ECA3F1037CB1481EA4DC12832F767A95">EventBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_4BAB7AEB47A84D7696E19A80CE41C3D3"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_461644157EC24EC2BC852C3E1B0850DB" src="GUID-EAB7921B-5A3B-4765-99CF-0B12EB2CF759-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_6FB15E0F1CB74BC1BE55AF61DA342F86"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_361D7DC6F6864D8C880B1FE39F1E720A">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_C46332A30AE14DC6A2B5A3A8BE484211">Reorganize</span>, and then select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_1F9782A1D986411A87EB7C0A678CAD12">Yes</span> at the message to begin the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_8A4C1EB5038A46048C2FD01E7F9191F2"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_5DA4266A9A2841648E0E02C31BB2407A"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_1411D7A00CF04B1194B8A9109DBF582D">Refer to the errors listed in the NexStepBase step. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_8ECD05EC0E7440879513DE7E8E53A3D9">If it has an unrecoverable error, the EventBase database can be deleted in Windows Explorer. A new EventBase database will be created the next time the user interface is launched. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_C1837FDC94864373AFD2DE2460C70B4A"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_17FA0674F4244C88890BA0947E39F0D5">When complete, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_AF4FFE57393C4F4894212C886BE31B65"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_33DAD9B11C4A41E0B1D474F8A89D554B">File</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_ED78615D0DF346B3B76D02437C97845F">Exit</span></span> to exit the Fast application. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_5F34A09249E74CDBBF4279C1701C6F4D"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_A9690FE523B642AEBDF5ED648AF8DFBA">If the Repair or Force No Recovery processes have been performed, then perform a Database Consistency Check procedure after completing the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_923039ECE6C04386BA91A0AF236D95C6"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" title="This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure.">Software: Performing Database Consistency Check</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_9D404DBCBA424B9BB70F2E7F5F1EDFC0"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_793DABF29E59466EB6ACF5F08CE82BAB">Launch the user interface. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_4B61AD976B5541669C0878F16FC93E12"><span class="note__title">Note:</span> If the database problem has been corrected, you can delete the copy of the database. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_263F466976F24809AE03A21258747053"> 
+		  <span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-8924AC51-B8D7-4C28-83E5-C86876CC0C32"> Reorganize the database on 
+			 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-3B2620C5-9928-4D26-9FFE-A8F687829536">Windows 10 Mini PC with Access2 Software 3.7.0 and above</strong>. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_C0BF277523B049E8A4E1BBE555CEFCA5"><span class="note__title">Note:</span> Access2 Software 3.7.0 and above are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to launch Fast database application. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEPS_B9FCBCAA2A194F5082E4C37591A9D175" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_CA42FDCF714C4A4ABFE2FB976C870C2F"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-1C9800E0-7A36-4C6B-A7B5-14E1A386CFA9">Press 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_1F4D14453ADB413EAE50DEA10D6CBA36">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_E71E1B978D3A4EBC9AAE4763F9ABC093">developer</strong> or 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_E4B8FA28F7A24B709882DD0433B6799A">administrator</strong> and open the 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_A153DC3D30F349F4A31645CACE86E9A6">Fast Developer or Fast Administrator</strong> program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_39E7F357BB2E4B8CB1B0E18402B5E61E"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_A24D2DF0CBEF43588E150871E61DB65F">In the 
+				  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_A05F0833660D4D36922E0B8208515AD3">Fast Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_CAB608AC178E416AB5D322E79FA09234"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_A1E870C044A84BF0BD5231C1C8A1A151">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_2672C591A3B944128D4D04AF7C21E947">Reorganize</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_D00C2F20769C423A8AC3BCBAC52BAEAF"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_BC8A54A1770843ED85ABB7358A700EB2"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-96174132-B88E-4AC3-8A43-ACADCA39845E">To reorganize the NexStepBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_C418110BAFBB4AF99267D3C53B99536F">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_57B0C53AAE6C4DBD98ABDC7D3A40CA17">NexStepBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_D4D062218CA44E07A226663BE7A815AE"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_5E10C5107CE94F4083238641DC21F7EE" src="GUID-3E78CA8E-3E5F-4F59-AE34-5DAE4F8E7E9A-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_41368022EE3A4A479C7A0D82F541A10A"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_BB242ED39E7E45BCA66CD0AA6097BDFE">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_B39F1B0CCC4743239B9C790B00BBA195">Reorganize</span>, and then 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_958C070953704035834353DD779BA9C0">Yes</span> to the message to begin the reorganization process. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_D6B26418542043909EB1EB110970C526"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_7DD4751ECB5B46CC9CCCAB167EF2B44D">If errors occur, then: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_5B062A9BFC10421DA3907FFDD78ECCC8"> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_E9CE8AFC4BD6403FA4C000FDEFAC9F47"> Verify that the host name and database name were entered correctly. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_36D0D4A1086C40C2A0C3071E549B7F04">If there is a File Permissions error, exit and relaunch the Fast Objects Server application. 
+						<ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_11A60946D5004E3FBC5AE26D122E8426"> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_EF4AEB6723E4454D9D24967BAA168F49">Press 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_CB8837690E4D425E993896655AB49296">Ctrl + Alt + Delete</strong> and select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_4C02F398CBE84ECF813C745B11583FE2">Task Manager</strong> or right click on the task bar and select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_839156DF4D7F4708B590BC7B21E11524">Task Manager</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_A2808CFB54284BAC8CBFB38A7F39F4B3">In the 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_61A10FB963FF431E97ADDA15F2720F2F">Task Manager</strong> box, click on 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_B8370EF10BEE49A4AE0EA807F7086EC4">Processes</strong>, select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_8DD1162F280E4B40AD97289E3E9D3789">FastObjects Server</strong> and click on 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_F9220A528AF643AFB9CAB6CB0BC21155">End Task</strong> in the bottom corner of the box. 
+						  </li> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_6C95E220C7CA48E498CF62242220F65D">Restart the server by pressing 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_A3261DAF34064584840EFA6EA067A8B0">Windows key + R</strong> to open the Run program, typing 
+							 <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_7AE5D587BCB3417AB393E36193FA4B5E">ptserv32.exe</kbd> on the text line, and selecting 
+							 <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_A18431E01AB94591A395AAC5F9DC2709">OK</span>. 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_642CA88197164B148F0E6DD1EDD55106">If there is a No Partner error, make sure that the Fast Objects Server application is running. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_BFE908E553454EDAA0CFDFCBEEDE6598">If there is a 
+						<samp class="ph msgph" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MSGPH_802B60A42A9B425EB17BF611CE0B5DC9">database already exists</samp> error, delete the 
+						<span class="ph filepath" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FILEPATH_BAA8EB56256C4EE3A93FE67624ACF42C">c:\nexstep\pc\drw\objects.reo</span> file. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_498DF21E7AA24716997EDCF55CE4F0E0">If there is a Recovery is enabled error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_B67810A53DF1460AA730678B2C705DD7"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_6863DAFE94084DAA81509A635210368A">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_9B1251E1729C4028B2C7F434F465E5F3">Force No Recovery</span></span> to delete a corrupt recovery database. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_85FA08162DE4419ABA442D70C2EB9F71">If there is a Checksum error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_436FF4FB51824BF8B4D0481B8476FFAD"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_DD2B435FD9BF49FCBF5380E829530223">Database 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_0C900E54BA4F492382824B6D7F2EEDEB">Repair</span></span>. In the 
+						<span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_6CEA560EDE3146CFBB82FB728675969C">Repair Menu</span>, select all the delete options for a corrupted record 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_9908484B94EE4B15833323FC023C23A6"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_A5C6697871B1462FAF17652C498D82C1"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_34BACE0257B044D781D2A2AEF7609873"> Review the 
+						  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_45EBC6A63A4E49F5853488F1BE37F787">Reorganization Messages</span> display for Checksum errors. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_79FF35ABFFE547F0B41FB27358E24A8C">Reorganization can take from 5 to 20 minutes depending on the size of the database. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_E2380C20D5F5458BB6A4BEA6327BE1FF">A percent completion is displayed while the reorganization is running. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_6046A05B387E4DB881B586130E6D7F81"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_E34C7B36FD0B49598E8DFF3BD833A597"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-247DF027-287C-47EB-8637-BD5F43BA1304">To reorganize the EventBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_85ED54919E974874A0805EEAC50F42F6">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_BACEC87A4C134F7E8A5BBF540798427F">EventBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_5C58D9A815D7436AA55D609C4DE717ED"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_8C32C7DE31C84A94B1B27B737087C975" src="GUID-EAB7921B-5A3B-4765-99CF-0B12EB2CF759-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_B1A125A455804205BC8774E81B2751DC"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_9829703961A845AFB3F3CEADE50EBE10">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_944EB46F89C740B78B2BB49B1DB7C880">Reorganize</span>, and then select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_DEF25764400A4ABDBADF5973A9D940F8">Yes</span> at the message to begin the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_53D1966A6C254B9EB2C477335AC4A959"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_C5D5E2828D5F42D192B676342B58CFC4"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_6FEB60D78B8E4EF591601EA14D4D7AA3">Refer to the errors listed in the NexStepBase step. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_83C7579AD98A4221BC22E16F6109785A">If it has an unrecoverable error, the EventBase database can be deleted in Windows Explorer. A new EventBase database will be created the next time the user interface is launched. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_8F3930BDC35343FAA2D7E4F1DDE03956"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_93E39A8000844F8AB7EAA722882BE3E9">When complete, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_5C8E23A16DA14B75A3CA9EF80F39404F"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_DD6008882075428D9C59C4BD56509BE6">File</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_9A8E933C50FC48E1A92B375DF6184561">Exit</span></span> to exit the Fast application. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_31DA6E4781EE466C9957F95024E71665"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_21C875104F45447598F8A2D33B4EEAAA">If the Repair or Force No Recovery processes have been performed, then perform a Database Consistency Check procedure after completing the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_3EF9B75F28024B94AF6031BDB14CD168"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" title="This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure.">Software: Performing Database Consistency Check</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_DA28CCD5519E4731BF1A7D12B2216A11"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_BECF71BCE5B7433987BB061935D966FD">Launch the user interface. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_50A60D67AC3C431696D511CED7C65810"><span class="note__title">Note:</span> If the database problem has been corrected, you can delete the copy of the database. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html">Database</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" title="10 Software "><div><span class="ph num-prefix">10 </span>Software </div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-504FF1CA-E20E-4B39-B92A-991098A09952.html" title="10.10 Troubleshooting"><div><span class="ph num-prefix">10.10 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html" title="10.10.1 Database"><div><span class="ph num-prefix">10.10.1 </span>Database</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-439848CA-2460-46A0-BA94-F5E0964298CB.html" lang="en-US" title="10.10.1.12 Database - Reorganizing Database"><div><span class="ph num-prefix">10.10.1.12 </span>Database - Reorganizing Database</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13860BN</div></li><li><div id="date">February 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB" role="article"> 
+  <h1 class="title topictitle1" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Database - Reorganizing Database</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to reorganize the Access2 database. 
+  </p> 
+	 <section class="section context" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="p">Reorganize the database when: 
+		<ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_780A7C2BA02E4F75AE49E4D477C417A8"> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_7A19AE5E66D1492C92EE07B19AEAFD62">The user interface is unresponsive. 
+		  </li> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_E9DD1E4099BC46F6B7ADAA3C5782EDC3">Clearing jammed critical events. 
+		  </li> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_5E81F19D839045078A00B2BEB7F16E0A">Detecting checksum errors in the database. 
+		  </li> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_48E071D8D219459B85D82923643BB9C1">Compressing the database to reduce the size of the database and improve the performance of the user interface. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-43035A8F-6143-42DF-96FC-51C607F095F9">Prerequisites:</strong> 
+		<ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_E31C5674E6F444CBB90EAAA385D010D0"> 
+		  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_592FB8D6EAED4173A187B0ABBF17AE0A">Create a local copy of the database. Refer to 
+			 <a class="xref" href="GUID-A1DBBD38-37D1-4677-A618-76AE5ED77018.html" title="This procedure describes how to create of copy of the DxI or Access 2 database on the console PC hard drive.">Creating Local Copy of Database</a>. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p"> 
+		<table class="table" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__1">For the following action... 
+				  </th> 
+				  <th class="entry" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__2">Refer to... 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__1 "> Reorganize the database on 
+					 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-5EE24202-8618-46B5-AA6E-8FD2BFA96899">Windows XP console PC with Access2 Software 3.4.2 and below</strong> 
+				  </td> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__2 "><a class="xref" href="#GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_D68D8D76AB5C409AAAAA1AC158850717">Step 1</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__1 "> Reorganize the database on 
+					 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-25747295-1376-404A-95D2-29D04E5C3150">Windows 8 Mini PC with Access2 Software 3.4.3 and above</strong> 
+				  </td> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__2 "><a class="xref" href="#GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_A4BAA507543E42D4B6CD8D4F224191F2">Step 2</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__1 "> Reorganize the database on 
+					 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-FD6F69F8-A8A1-4072-8D3F-71EE19E683E2">Windows 10 Mini PC with Access2 Software 3.7.0 and above</strong> 
+				  </td> 
+				  <td class="entry" headers="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__TABLE_B82804FDD050426794411111D9A96435__entry__2 "><a class="xref" href="#GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_263F466976F24809AE03A21258747053">Step 3</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_D68D8D76AB5C409AAAAA1AC158850717"> 
+		  <span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-C5ED5204-9B1F-415E-8DF1-AB413245AAF9"> Reorganize the database on 
+			 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-4CFD0AC0-BED3-4BCF-A7F0-A50C8E66E70D">Windows XP console PC with Access2 Software 3.4.2 and below</strong>. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEPS_B8D707465D474D9AA2C7FF7D3DFF67FA" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_2ED49903B93E425BB5DECA9287F44D85"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-3EF08FB4-86AA-4224-8379-C12D943F2374">Open the database application, select 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_645D070465394687ACAAB3FCD6A4D8BB">Start &gt; Programs &gt; Access2 &gt; Poet Developer or Poet Administrator</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_2F773E283A3D409ABCA9F7846221215C"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_B098B092740C4A6B857FCF30446944EC">In the 
+				  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_2CB7D5A4FC0B4241AFD65887051E1DC0">POET Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_1C66C3234AAC46819A430EA3F0DBCDCE"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_3302F0BAC9864F70A8C59DF5CA4FDE28">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_F74059491C644DF3924C13CAA38DC8C2">Reorganize</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_03D9756C47F9477FAC17E4FA10DDA344"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_59E1B37879324D06A84A73A099D51970"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-710DDBF1-19A5-43FE-A0E0-A5BD16A51974">To reorganize the NexStepBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_3CC28AF9819A4E04A8C4A92C283DEC2A">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_0D5B64DA5A0F4610A67A62C04FC11309">NexStepBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_037C8D0174E143D8A906BA977777F330"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_735C176D6DD2442E856C9017B320C266" src="GUID-3E78CA8E-3E5F-4F59-AE34-5DAE4F8E7E9A-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_2CB27AA46E73458AA1CC17E1DE1200B4"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_5F9C53E705CC465DBFB1E6A2CB881A2B">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_5F70048C33EB448D854525FA3459BA36">Reorganize</span>, and then 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_6728DDFA6BA84CA09D45CFBCEE948A53">Yes</span> to the message to begin the reorganization process. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_F889A83679884EA19827CEFF24DA5C0E"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_2979F6E5E81A4D14B587918A21D61417">If errors occur, then: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_5A83B77DC8AC46E991735D8F828CD117"> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_7F9CC421EDAD496EB40835B5BA9B3A6C"> Verify that the host name and database name were entered correctly. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_A948089EFECD4E52A8AF3C29D93D6D1D">If there is a File Permissions error, exit and relaunch the Poet Object Server application. Select the 
+						<span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_CEF53FA1207A42248A16433CC658E54B">Poet Object Server</span> icon at the bottom right corner of the display. Exit the POET application. Close any error messages. Restart the application by selecting 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_2F69667E443C4ABB81C7FA3706D5278A"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_BA1A986266014CF4806DCD0672427975">Start</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_9255AFF5CECA4C14B8127C26975A7698">Run</span></span>, type 
+						<kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_04C1790CCB034777A8E1CF9C09798DD1">ptserv32.exe</kbd> on the Open text line, and then select 
+						<span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_E7BA233878C046AF820BAD22F29106F9">OK</span>. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_2E595209BC4F432AA8A23C457ACF446C">If there is a No Partner error, make sure that the Poet Object Server application is running. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_90C0788D7F8A47FA9FB085550ABC1BDE">If there is a 
+						<samp class="ph msgph" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MSGPH_08A147E893C04755B596F298A8CD8A17">database already exists</samp> error, delete the 
+						<span class="ph filepath" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FILEPATH_0CE77FB35225400E9D7BC57148225444">c:\nexstep\pc\drw\objects.reo</span> file. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_F7F7ED69A899433D915BD5B3ED695AE9">If there is a Recovery is enabled error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_8BDAC0768D5649DA948C6BCF1885F3E7"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_A566D97785624FDE87382269C88BB6A5">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_3F75087552FC43DE84127CE72EDAD6B7">Force No Recovery</span></span> to delete a corrupt recovery database. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_089D0369C9B14E87A12D6C58A6FF26CF">If there is a Checksum error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_2A5EED7D18264199A32F6E2B59C4AA07"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_ECF0C24FD6A84FC98029C4C786D31CA0">Database 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_A2A5C41D61984A4AA56FCA5FAE3737AA">Repair</span></span>. In the 
+						<span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_633700AAE8B34F9689B457BB0A537160">Repair Menu</span>, select all the delete options for a corrupted record 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_0FD390C5C5DF44E590F333968DB48127"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_CC04844F62F146CDA3299F4917F3DF05"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_F7DF6D19407F408692F986523CF1C9E6"> Review the 
+						  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_18EF4EAB98734743AE834C34E8F7B3F3">Reorganization Messages</span> display for Checksum errors. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_D12A5D8496C947C6891BA9BDCFF5939E">Reorganization can take from 5 to 20 minutes depending on the size of the database. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_5BCE06379EEC408AB22CC963FBBA4361">A percent completion is displayed while the reorganization is running. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_59A704D1A9444EB99E2875CA3DE62C2B"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_54F232E437EB4413BB3D1EE111E1A1BC"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-137AC2A0-EEE1-48F0-9772-BE0D141A895C">To reorganize the EventBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_C8BE30CF51464E9083BB23F7B19C680B">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_B26ED9B3E44D4B8BA131C3A7DD1AA88A">EventBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_CC530CF0E8BA4C01BA07803AC3F643F2"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_6FD91FF232EC411EA6936F10AFE8ECEE" src="GUID-EAB7921B-5A3B-4765-99CF-0B12EB2CF759-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_420983F625CA4675AE72AB17549F19E9"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_62CB36693FBD469E86226E889A5DDB1C">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_7F01546D13B24DBFA1F5A4DF4A613EB4">Reorganize</span>, and then select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_9A7C7E9C7E88444B8A3B385120591E00">Yes</span> at the message to begin the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_2A013F3318344ED3A741D62AFA0616A3"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_4F4402CBAE2A4AC0B505F2940A01F69B"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_14C22DB45F1B4C85B8B73411F72E6374">Refer to the errors listed in the NexStepBase step. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_4CC54A714C794DA2A094C3223CF90266">If it has an unrecoverable error, the EventBase database can be deleted in Windows Explorer. A new EventBase database will be created the next time the user interface is launched. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_3F6B625C1C2D48CA95673456E8D5E950"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_E80D7DA89EDE4E7C8BFDA24F95C4ABA1">When complete, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_A486F06F29A5430690DCF8B290098AD7"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_F8BAB4D88D714C188971938C4BFEC882">File</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_47126A34968F4018B9B9044826615CE5">Exit</span></span> to exit the POET application. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_6BBD502BC73944EA81F187840501E053"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_15A29186B0534C5AAC94E8A3F63AC2B2">If the Repair or Force No Recovery processes have been performed, then perform a Database Consistency Check procedure after completing the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_3853C6C03FBF42D1AA5B74443F1A34E6"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" title="This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure.">Software: Performing Database Consistency Check</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_1D7BC07B70B54DF187955D7D1AE0E662"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_FED5E50ACD7A49B798388380494C58A8">Launch the user interface. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_BA14B97B1B9A4F4183BBE52C71D7B16E"><span class="note__title">Note:</span> If the database problem has been corrected, you can delete the copy of the database. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_A4BAA507543E42D4B6CD8D4F224191F2"> 
+		  <span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-A2309B9D-A262-4438-8DA8-D8FEAA95F722"> Reorganize the database on 
+			 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-F7D2C6DD-8E91-4B76-9CD8-245B5A5AA769">Windows 8 Mini PC with Access2 Software 3.4.3 and above</strong>. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_BA880D12059349FCA9F6903E1DF94DC3"><span class="note__title">Note:</span> Access2 Software 3.4.3 and above are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to launch Fast database application. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEPS_08AEF0A61C6B46B7A584126503C7B4FC" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_83C72FD42B8E4691B900BF87222F9F3C"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-C3D517C6-6AA9-46EC-B1C2-C205731CA158">Press 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_0151E8783D9840F59DFB3BB2B7D1DE05">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_F2153B9E9FB144E398346403C998952E">Fast Developer or Fast Administrator</strong> icon or type 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_B05A37B10BC44B2EAEFAD41521093CF6">developer</strong> or 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_F7305BE0A8C7414B97FC2891E5A1C04B">administrator</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_A5CC8F1052934FDC9643A535DCFC42B1"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_1C31C9F4195843BC817DCB52D0126E75">In the 
+				  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_67E92D1540C941AEBCB12641E97DBD89">Fast Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_9071885CDB24431685FF84A3947458BC"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_4CF5C3C8D5FE421885FDB41963EEFB14">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_2DF199F56C114FD8BB5D05E666D00EE9">Reorganize</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_5ABEC5570EDD4D249C01ECBEDD1F1DC5"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_C1F9532035AF439EA8EB05A2A3EC8B19"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-FB03AAD3-D1BE-41BC-9BE6-8FBBC1C6EE4F">To reorganize the NexStepBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_7039859C8F624E96A68E91E98EFFA1A7">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_9264EFA7CA02429387408C2F1BE9B695">NexStepBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_57A7BDB3712D4CFC992B6B77B900DCC8"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_FAF4AA7D36C84FC0B725CBC8AE989A05" src="GUID-3E78CA8E-3E5F-4F59-AE34-5DAE4F8E7E9A-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_44A425CCB3CD41B7A81A557938FC273B"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_6FB4814F01FF40CDBDE5C9A02B3463F2">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_D35F9DD4C6684A9A940F7515014BA201">Reorganize</span>, and then 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_5F6427BE098A49BABABDC5DFADA56072">Yes</span> to the message to begin the reorganization process. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_54BC45865E154C93966B72C548FD67AB"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_7BE1185BECDA484AB4151C7CD09B9F06">If errors occur, then: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_0F65ECAD13F447D093466C573724AC8A"> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_C05DF25F78E1407482F09EE6D5CD6983"> Verify that the host name and database name were entered correctly. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_DE35BE26D58E477EABDE5425D62A5AD2">If there is a File Permissions error, exit and relaunch the Fast Objects Server application. 
+						<ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_E95DF75A14D34C10A7B7638F33C7A870"> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_7D0E677C84FE4F2D87C7BD362027D9A6">Press 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_8D0931BFD8624DB6930F8A6907465816">Ctrl + Alt + Delete</strong> and select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_60A176B15462442895350EDD7B31459B">Task Manager</strong> or right click on the task bar and select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_33A7143F9EE540F5A2AF8D4C45818BA3">Task Manager</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_391A3E53D89740089EB1D3C4C6CD54C0">In the 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_EECD05F9200D49F1ADFAC5BE731B788A">Task Manager</strong> box, click on 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_34BF7BF20101429894821248082FDE98">Processes</strong>, select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_8496DE188D0D4101B0094310D4FAC88A">FastObjects Server</strong> and click on 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_D39FD06FF4944B6684F489EE8099A3E9">End Task</strong> in the bottom corner of the box. 
+						  </li> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_DCB2C91D959F44D18B80117FAAC7C983">Restart the server by pressing 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_73C2FBD73F4A4FD9AA5827532F693D9C">Windows</strong> key and select the 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_F4459E9F794B470DAF82FEE12C787B87">Fast Objects Server</strong> icon or type 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_A20A011EA7964E9293C7C3EB0EC8E596">run</strong>, open the Run program, typing 
+							 <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_40EAC4044CC84BB095E1D932195AC44E">ptserv32.exe</kbd> on the text line, and selecting 
+							 <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_643BFC2B03014E9994678C71E3C6DE2C">OK</span>. 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_8D4CA9C94C8E49848118F273D3E59F35">If there is a No Partner error, make sure that the Fast Objects Server application is running. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_22A3F3A5663A45EB8F0F136386479D73">If there is a 
+						<samp class="ph msgph" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MSGPH_9BCCCABEBC40484FAEE0BFE91A6588C1">database already exists</samp> error, delete the 
+						<span class="ph filepath" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FILEPATH_248675A611824D56A815815A734F762C">c:\nexstep\pc\drw\objects.reo</span> file. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_89F8458698A74CBC9F6BFAC3385CD18C">If there is a Recovery is enabled error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_F96A34277A8D4248956882DD0CCAD56B"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_B669B45A731A4D68BC5CDBD7D7ECCCFD">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_CE3780EE699243C6B028374CB275705A">Force No Recovery</span></span> to delete a corrupt recovery database. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_BA513A126CFE47BBB7610E728EC94342">If there is a Checksum error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_6390E508E93747CD87F66549DE84E52A"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_ACD3EA6FC70547E58B41EFD84D4C6210">Database 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_6EFB59EAE0F24B9CA5D839814129663F">Repair</span></span>. In the 
+						<span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_9FBF557DC7294F848D4FBE129511C94E">Repair Menu</span>, select all the delete options for a corrupted record 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_2D448E3063D7494BBB0FCCAF7E27E33E"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_8FBF093BB56B40E8AC1F6350F5E56784"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_DC9FA141247A4B87B748E0134227ECA3"> Review the 
+						  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_0E2144B8551C4313BA6C2DFAF9B5A070">Reorganization Messages</span> display for Checksum errors. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_284712AD5ED14582AEF5E78F0280B670">Reorganization can take from 5 to 20 minutes depending on the size of the database. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_E27D85B6E9B9497B82CDE3DB96694EFE">A percent completion is displayed while the reorganization is running. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_998B46FA4DFB41A4967BD3911495CFF4"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_D7F744EE4BEB4B7FB08562AAFD763AAD"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-2B1A180D-CEB1-4AC9-9557-9A6B8826F7A4">To reorganize the EventBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_AB8E6504DFF342ED9907245456CED4FD">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_ECA3F1037CB1481EA4DC12832F767A95">EventBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_4BAB7AEB47A84D7696E19A80CE41C3D3"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_461644157EC24EC2BC852C3E1B0850DB" src="GUID-EAB7921B-5A3B-4765-99CF-0B12EB2CF759-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_6FB15E0F1CB74BC1BE55AF61DA342F86"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_361D7DC6F6864D8C880B1FE39F1E720A">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_C46332A30AE14DC6A2B5A3A8BE484211">Reorganize</span>, and then select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_1F9782A1D986411A87EB7C0A678CAD12">Yes</span> at the message to begin the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_8A4C1EB5038A46048C2FD01E7F9191F2"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_5DA4266A9A2841648E0E02C31BB2407A"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_1411D7A00CF04B1194B8A9109DBF582D">Refer to the errors listed in the NexStepBase step. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_8ECD05EC0E7440879513DE7E8E53A3D9">If it has an unrecoverable error, the EventBase database can be deleted in Windows Explorer. A new EventBase database will be created the next time the user interface is launched. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_C1837FDC94864373AFD2DE2460C70B4A"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_17FA0674F4244C88890BA0947E39F0D5">When complete, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_AF4FFE57393C4F4894212C886BE31B65"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_33DAD9B11C4A41E0B1D474F8A89D554B">File</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_ED78615D0DF346B3B76D02437C97845F">Exit</span></span> to exit the Fast application. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_5F34A09249E74CDBBF4279C1701C6F4D"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_A9690FE523B642AEBDF5ED648AF8DFBA">If the Repair or Force No Recovery processes have been performed, then perform a Database Consistency Check procedure after completing the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_923039ECE6C04386BA91A0AF236D95C6"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" title="This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure.">Software: Performing Database Consistency Check</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_9D404DBCBA424B9BB70F2E7F5F1EDFC0"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_793DABF29E59466EB6ACF5F08CE82BAB">Launch the user interface. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_4B61AD976B5541669C0878F16FC93E12"><span class="note__title">Note:</span> If the database problem has been corrected, you can delete the copy of the database. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__STEP_263F466976F24809AE03A21258747053"> 
+		  <span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-8924AC51-B8D7-4C28-83E5-C86876CC0C32"> Reorganize the database on 
+			 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-3B2620C5-9928-4D26-9FFE-A8F687829536">Windows 10 Mini PC with Access2 Software 3.7.0 and above</strong>. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_C0BF277523B049E8A4E1BBE555CEFCA5"><span class="note__title">Note:</span> Access2 Software 3.7.0 and above are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to launch Fast database application. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEPS_B9FCBCAA2A194F5082E4C37591A9D175" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_CA42FDCF714C4A4ABFE2FB976C870C2F"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-1C9800E0-7A36-4C6B-A7B5-14E1A386CFA9">Press 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_1F4D14453ADB413EAE50DEA10D6CBA36">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_E71E1B978D3A4EBC9AAE4763F9ABC093">developer</strong> or 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_E4B8FA28F7A24B709882DD0433B6799A">administrator</strong> and open the 
+				  <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_A153DC3D30F349F4A31645CACE86E9A6">Fast Developer or Fast Administrator</strong> program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_39E7F357BB2E4B8CB1B0E18402B5E61E"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_A24D2DF0CBEF43588E150871E61DB65F">In the 
+				  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_A05F0833660D4D36922E0B8208515AD3">Fast Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_CAB608AC178E416AB5D322E79FA09234"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_A1E870C044A84BF0BD5231C1C8A1A151">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_2672C591A3B944128D4D04AF7C21E947">Reorganize</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_D00C2F20769C423A8AC3BCBAC52BAEAF"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_BC8A54A1770843ED85ABB7358A700EB2"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-96174132-B88E-4AC3-8A43-ACADCA39845E">To reorganize the NexStepBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_C418110BAFBB4AF99267D3C53B99536F">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_57B0C53AAE6C4DBD98ABDC7D3A40CA17">NexStepBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_D4D062218CA44E07A226663BE7A815AE"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_5E10C5107CE94F4083238641DC21F7EE" src="GUID-3E78CA8E-3E5F-4F59-AE34-5DAE4F8E7E9A-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_41368022EE3A4A479C7A0D82F541A10A"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_BB242ED39E7E45BCA66CD0AA6097BDFE">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_B39F1B0CCC4743239B9C790B00BBA195">Reorganize</span>, and then 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_958C070953704035834353DD779BA9C0">Yes</span> to the message to begin the reorganization process. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_D6B26418542043909EB1EB110970C526"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_7DD4751ECB5B46CC9CCCAB167EF2B44D">If errors occur, then: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_5B062A9BFC10421DA3907FFDD78ECCC8"> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_E9CE8AFC4BD6403FA4C000FDEFAC9F47"> Verify that the host name and database name were entered correctly. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_36D0D4A1086C40C2A0C3071E549B7F04">If there is a File Permissions error, exit and relaunch the Fast Objects Server application. 
+						<ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_11A60946D5004E3FBC5AE26D122E8426"> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_EF4AEB6723E4454D9D24967BAA168F49">Press 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_CB8837690E4D425E993896655AB49296">Ctrl + Alt + Delete</strong> and select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_4C02F398CBE84ECF813C745B11583FE2">Task Manager</strong> or right click on the task bar and select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_839156DF4D7F4708B590BC7B21E11524">Task Manager</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_A2808CFB54284BAC8CBFB38A7F39F4B3">In the 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_61A10FB963FF431E97ADDA15F2720F2F">Task Manager</strong> box, click on 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_B8370EF10BEE49A4AE0EA807F7086EC4">Processes</strong>, select 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_8DD1162F280E4B40AD97289E3E9D3789">FastObjects Server</strong> and click on 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_F9220A528AF643AFB9CAB6CB0BC21155">End Task</strong> in the bottom corner of the box. 
+						  </li> 
+						  <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_6C95E220C7CA48E498CF62242220F65D">Restart the server by pressing 
+							 <strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__B_A3261DAF34064584840EFA6EA067A8B0">Windows key + R</strong> to open the Run program, typing 
+							 <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_7AE5D587BCB3417AB393E36193FA4B5E">ptserv32.exe</kbd> on the text line, and selecting 
+							 <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_A18431E01AB94591A395AAC5F9DC2709">OK</span>. 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_642CA88197164B148F0E6DD1EDD55106">If there is a No Partner error, make sure that the Fast Objects Server application is running. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_BFE908E553454EDAA0CFDFCBEEDE6598">If there is a 
+						<samp class="ph msgph" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MSGPH_802B60A42A9B425EB17BF611CE0B5DC9">database already exists</samp> error, delete the 
+						<span class="ph filepath" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FILEPATH_BAA8EB56256C4EE3A93FE67624ACF42C">c:\nexstep\pc\drw\objects.reo</span> file. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_498DF21E7AA24716997EDCF55CE4F0E0">If there is a Recovery is enabled error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_B67810A53DF1460AA730678B2C705DD7"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_6863DAFE94084DAA81509A635210368A">Database</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_9B1251E1729C4028B2C7F434F465E5F3">Force No Recovery</span></span> to delete a corrupt recovery database. 
+					 </li> 
+					 <li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_85FA08162DE4419ABA442D70C2EB9F71">If there is a Checksum error, select 
+						<span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_436FF4FB51824BF8B4D0481B8476FFAD"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_DD2B435FD9BF49FCBF5380E829530223">Database 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_0C900E54BA4F492382824B6D7F2EEDEB">Repair</span></span>. In the 
+						<span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_6CEA560EDE3146CFBB82FB728675969C">Repair Menu</span>, select all the delete options for a corrupted record 
+					 </li> 
+				  </ul> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_9908484B94EE4B15833323FC023C23A6"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_A5C6697871B1462FAF17652C498D82C1"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_34BACE0257B044D781D2A2AEF7609873"> Review the 
+						  <span class="keyword wintitle" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__WINTITLE_45EBC6A63A4E49F5853488F1BE37F787">Reorganization Messages</span> display for Checksum errors. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_79FF35ABFFE547F0B41FB27358E24A8C">Reorganization can take from 5 to 20 minutes depending on the size of the database. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_E2380C20D5F5458BB6A4BEA6327BE1FF">A percent completion is displayed while the reorganization is running. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_6046A05B387E4DB881B586130E6D7F81"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_E34C7B36FD0B49598E8DFF3BD833A597"><strong class="ph b" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__GUID-247DF027-287C-47EB-8637-BD5F43BA1304">To reorganize the EventBase database</strong>, enter the Host name 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_85ED54919E974874A0805EEAC50F42F6">Localhost</kbd> and the Database 
+				  <kbd class="ph userinput" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__USERINPUT_BACEC87A4C134F7E8A5BBF540798427F">EventBase</kbd> (case sensitive). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__FIG_5C58D9A815D7436AA55D609C4DE717ED"><br /><img class="image" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__IMAGE_8C32C7DE31C84A94B1B27B737087C975" src="GUID-EAB7921B-5A3B-4765-99CF-0B12EB2CF759-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_B1A125A455804205BC8774E81B2751DC"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_9829703961A845AFB3F3CEADE50EBE10">Select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_944EB46F89C740B78B2BB49B1DB7C880">Reorganize</span>, and then select 
+				  <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_DEF25764400A4ABDBADF5973A9D940F8">Yes</span> at the message to begin the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_53D1966A6C254B9EB2C477335AC4A959"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UL_C5D5E2828D5F42D192B676342B58CFC4"> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_6FEB60D78B8E4EF591601EA14D4D7AA3">Refer to the errors listed in the NexStepBase step. 
+						</li> 
+						<li class="li" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__LI_83C7579AD98A4221BC22E16F6109785A">If it has an unrecoverable error, the EventBase database can be deleted in Windows Explorer. A new EventBase database will be created the next time the user interface is launched. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_8F3930BDC35343FAA2D7E4F1DDE03956"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_93E39A8000844F8AB7EAA722882BE3E9">When complete, select 
+				  <span class="ph menucascade" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__MENUCASCADE_5C8E23A16DA14B75A3CA9EF80F39404F"><span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_DD6008882075428D9C59C4BD56509BE6">File</span> &gt; <span class="ph uicontrol" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__UICONTROL_9A8E933C50FC48E1A92B375DF6184561">Exit</span></span> to exit the Fast application. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_31DA6E4781EE466C9957F95024E71665"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_21C875104F45447598F8A2D33B4EEAAA">If the Repair or Force No Recovery processes have been performed, then perform a Database Consistency Check procedure after completing the reorganization process. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_3EF9B75F28024B94AF6031BDB14CD168"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" title="This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure.">Software: Performing Database Consistency Check</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__SUBSTEP_DA28CCD5519E4731BF1A7D12B2216A11"> 
+				<span class="ph cmd" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__CMD_BECF71BCE5B7433987BB061935D966FD">Launch the user interface. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-439848CA-2460-46A0-BA94-F5E0964298CB__NOTE_50A60D67AC3C431696D511CED7C65810"><span class="note__title">Note:</span> If the database problem has been corrected, you can delete the copy of the database. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html">Database</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" title="10 Software "><div><span class="ph num-prefix">10 </span>Software </div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-504FF1CA-E20E-4B39-B92A-991098A09952.html" title="10.10 Troubleshooting"><div><span class="ph num-prefix">10.10 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html" title="10.10.1 Database"><div><span class="ph num-prefix">10.10.1 </span>Database</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-439848CA-2460-46A0-BA94-F5E0964298CB.html" lang="en-US" title="10.10.1.12 Database - Reorganizing Database"><div><span class="ph num-prefix">10.10.1.12 </span>Database - Reorganizing Database</div></a></div></article></main></div></noscript><script src="static/body.js?Ahtiv8QK" type="text/javascript"></script></body></html>

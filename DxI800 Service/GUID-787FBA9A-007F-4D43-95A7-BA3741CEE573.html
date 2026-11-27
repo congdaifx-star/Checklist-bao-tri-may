@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to troubleshoot the analytical unit for wash wheel slippage errors." name="description" /><meta content="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E10E1D85-E4A1-46F1-906F-92F8C4C4D6F9.html" name="DC.Relation" scheme="URI" /><meta content="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>5.6.5 Searching Wash Wheel Slippage Trace Files During Troubleshooting</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-0903396B-1EA3-4496-8BCD-240427F3B617.html" rel="prev" /><link href="GUID-49B67286-11C9-4128-BB1E-E2F89A3F8882.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e501" data-relpath="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573" role="article"> 
+  <h1 class="title topictitle1" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Searching Wash Wheel Slippage Trace Files During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to troubleshoot the analytical unit for wash wheel slippage errors. 
+  </p> 
+	 <ol class="ol steps" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C"> Save a section of the trace file. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-0F1E4B34-7ED9-4F31-A6AF-0456C08AC675"><span class="note__title">Note:</span> Since intermittent issues can not be apparent during exercisers or observation of the instrument, they can be difficult to troubleshoot. Searching the trace file helps direct troubleshooting efforts. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEPS_0ADCB18A73AA4D3FA44BF031E0245EB9" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_F6380B7AA5A6400B9B51E5073E9AA375"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-F523F267-6EBB-452D-A53B-0070031EFF03">Insert a floppy disk into the floppy drive of the console PC. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_E627C0A898994791BCDD6E568EDCD471"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-484E967D-BBC5-4B34-B201-C6D0A675306D">Select the 
+				  <samp class="ph msgph" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-DFCD0F59-9B63-436D-A2E3-D117D08C00D6">Excessive Slippage</samp> message in the event log. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-97D0A4FB-2D30-4A46-9C56-77EAB3C18445"><span class="note__title">Note:</span> If there are a series of slippage messages, select the earliest message. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_658D4644EE9445C9995B6EF6874E5E4A"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-9B08055F-7645-4C52-88AE-AAA66004B50B">Select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-48A4B96C-764F-4B5C-ACC2-9ECE23F22703">Copy to Disk</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_CAC06BB154004BF093D2B3BD8F852DC4"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-49CD13D9-D2C5-47FC-A40B-A645D543928F">In the 
+				  <span class="keyword wintitle" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-E6B6A188-1288-4D73-AAB0-4B7ED3B49422">Copy to Disk</span> screen, enter: 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_6057A943E57C4BF4937C3F16D1ED153D"> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_0262FB942EF84AEF93DD412EFB844376">Before Event (Sec): 30 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_EA3A2ABBE0B84182A63F08AD6C5829AA">After Event (Sec): 10 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_0A9CED8BC00943978C5860325911B7C2">Path: A: 
+					 </li> 
+				  </ul>
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-098D52D3-0E1E-48A6-B914-98A9FC0A506A"><span class="note__title">Note:</span> By default, the 
+					 <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-69D2F7C0-9E24-4228-8235-FE994892F84C">Include Details</span> option is active. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_1425C60CD86D49BB81B04A71241361C3"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-35E12D35-0C60-4B81-8E14-34C3E6E40A21">Select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-68D4B228-C6C5-491F-A533-322CC0505BCB">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_69DFE34F16EC44E58A18B227A53DA281"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-33E84FD7-CBA8-4385-A907-C703D8EC150B">Repeat the steps for any additional 
+				  <samp class="ph msgph" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-40B73B16-D6B6-4605-99D8-06C889F928B0">Excessive Slippage</samp> errors. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_C9ADBA3138FD440AB9B694F37C7503F7"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-9AED68B8-FFFB-422A-BD2C-DDDB3F2EE62C">If Oracle is available, attach these files to the Oracle Service Request for future reference. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_BBCD6083AA0541AAA13A0BA2764818D5"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-B0925859-69D3-4725-A520-1B766B671005">Open the saved trace files from the disk on either the console PC or another PC. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-FC4DFD2D-9B7A-4FE8-8CCE-D02ECC0C4AEC"><span class="note__title">Note:</span>  If the PC asks which program to use to open the file, select 
+					 <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-30596E85-8FD7-433F-8D49-77C4A49B8857">Notepad</span>. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__STEP_090046E0F77A4F42A24F59A4520AD765"> 
+		  <span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-39176BFD-AFAD-41B8-B518-753B6DB6B774">Search the trace file for wash wheel slippage. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEPS_7E44EA03F6ED42FCBBC5491EA40DF329" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_8C3878BB718C4B03B7344561DC1CC8F8"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-874778F3-F0C3-4FD6-9218-2F1796A44C18">Select 
+				  <span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-656336BF-A6B3-4EAD-B20E-BFDED977B404"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-5DF3563E-CC7D-43ED-B3A6-E24646628D5A">Edit</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-191B590E-41F4-4A76-BA0D-5F144E0428E6">Find</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_488686F75F064818A81619B632D0C07A"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-0491783C-5993-499C-9E1D-5A831F9F807A">Search down for the wash wheel exception: Type 
+				  <kbd class="ph userinput" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-08E73976-FBB1-4A75-9BE4-DDE4866B4893">x901442</kbd> in the Find What box, and then select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-323FCDA1-A4FD-4F82-BABE-FA7E17B05D91">Find Next</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-3A128C62-7649-46B6-B525-F17F2523170E"><span class="note__title">Note:</span> x901442 is part of the event descriptor code for wash wheel slippage. The code is the fastest way to locate the wash wheel slippage error in the trace file. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_F4695E0EF7F94E41B642D656D2E511BF"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-F7DC9E43-CF48-49A7-80A1-F5D1DD20A9C9">Search up for the encoder movement: Type 
+				  <kbd class="ph userinput" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-8E6C7BB5-EEAE-4EB4-B3BC-84E17F5DDBE1">mod</kbd> in the Find What box, select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-109A601D-7B54-4114-AE30-A7F01BB27AFD">Up</span> for Direction, and then select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-796C6FC0-8BB5-4872-891F-B0FE0FFF0596">Find Next</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_C0207317F5E842A4A8C15610C123278D"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-119E71D3-8B52-401A-AE58-CB87083FE780">Identify the encoder read of the movement from these lines of text. 
+				</span> 
+				<div class="itemgroup info">Perform the mathematical operation: last Encoder modulo position minus first Encoder modulo position. 
+				  <p class="p">Example: 3651 - 3573 = 78 steps. The wash wheel encoder measured 78 steps of movement. Normal slot-to-slot wash wheel movements are 168 - 169 steps. Priming routines or initialization can cause different step movements. 
+				  </p> 
+				  <p class="p">1447246271,(1271),WashWheel:T_Advance, SMC running position: 3573. 
+				  </p> 
+				  <p class="p">1447246271,(1271),WashWheel:T_Advance, SMC C/M position: 3573. 
+				  </p> 
+				  <p class="p">1447246271,(1271),WashWheel:T_Advance, Encoder&#39;s modulo position: 3573. 
+				  </p> 
+				  <p class="p">1447246274,(1274),WashWheel:T_Advance, Proximity of home CW WashWheel current position: 3573, relative move: 168, StepsAwayFromHome: 20, nAllowedSlippage: 5, fTolerance: 20.62 
+				  </p> 
+				  <p class="p">1447246539,(1539),WashWheel:T_Advance, SMC running position: 3741. 
+				  </p> 
+				  <p class="p">1447246539,(1539),WashWheel:T_Advance, SMC C/M position: 3741. 
+				  </p> 
+				  <p class="p">1447246539,(1539),WashWheel:T_Advance, Encoder&#39;s modulo position: 3651. 
+				  </p> 
+				  <p class="p">1447246539,(1539),WashWheel:T_Advance, WashWheel Corrected encoder error: -11510. 
+				  </p> 
+				  <p class="p">1447246542,(1542),WashWheel:T_Advance, ERROR WashWheel RotateToAngle failed, motor position: 3741, encoder position: 3651 
+				  </p> 
+				  <p class="p">System error code: 0x80004005 
+				  </p> 
+				  <p class="p">1447246542,AuObj, 09:06:35,1447246542,WashWheel has been disabled by WashWheel.Worker 
+				  </p> 
+				  <p class="p">1447246542,(1542),WashWheel:T_Advance, WARNING: Subsystem has been DISABLED 
+				  </p> 
+				  <p class="p">1447246542,(1542),WashWheel:T_Advance, Disabled 
+				  </p> 
+				  <p class="p">1447246542 Advance.WashWheel:T_Advance REPORT:1447246542 
+				  </p> 
+				  <p class="p">1447246570,Sequencer, 1447246542,Sequencer, CAUGHT EXCEPTION, 0x901442 from Subsystem WashWheel during T_Advance, dev Wash Wheel: &#39;Excessive motor slippage&#39;, 21150, C:\NexGen\Instrument\AU\WashWheel.cpp rev:$Revision: 1.566 $ line:4949, OtherSys:None 
+				  </p> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_C84971FE9BC94C268BB30CE189D9BF26"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-8AA0157E-90DD-41EF-A907-C680321F0FA7">Analyze the movements using this table. 
+				</span> 
+				<div class="itemgroup info">
+				  <table class="table" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+						  <tr class="row"> 
+							 <th class="entry align-left valign-top" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1"> If the expected motor (SMC) movement is 
+							 </th> 
+							 <th class="entry align-left valign-top" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2"> and the encoder read of the movement is 
+							 </th> 
+							 <th class="entry align-left valign-top" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3"> then 
+							 </th> 
+						  </tr></thead><tbody class="tbody"> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Positive 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Positive 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved forward, but not far enough. Proceed to the Search Trace File for RV Ejection step. 
+								</p> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Positive or Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Zero 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved zero steps or the encoder measured no change in movement. Refer to the table to troubleshoot Electrical Issues. 
+								</p> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Positive 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved backwards. Refer to the table to troubleshoot Electrical Issues. 
+								</p> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Positive 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved forward rather than the expected backwards movement (priming is the most common activity that this motion can occur). Refer to the table to troubleshoot Electrical Issues. 
+								</p> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved backwards as expected, but not far enough. Proceed to the Search Trace File for RV Ejection step. 
+								</p> 
+							 </td> 
+						  </tr> 
+						</tbody></table>
+				</div>
+				<div class="itemgroup info">
+				  <div class="p">
+					 <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-1C306367-375F-4FE5-AB9F-1B56CC60384C"><span class="note__title">Note:</span> Refer to the 
+						<a class="xref" href="GUID-AD05413F-A05A-4E54-9D0F-95CEDF0A57C3.html">AU: Troubleshooting Motor Motion Errors in Analytical Module</a> document. 
+					 </div>
+				  </div>
+				</div>
+				<div class="itemgroup info"> 
+				  <table class="table" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+						  <tr class="row"> 
+							 <th class="entry" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633__entry__1">Wash carousel slippage is caused by 
+							 </th> 
+							 <th class="entry" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633__entry__2">Then perform these troubleshooting steps... 
+							 </th> 
+						  </tr></thead><tbody class="tbody"> 
+						  <tr class="row"> 
+							 <td class="entry" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633__entry__1 "> Electrical issues: 
+								<ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_41528809412619741528809412619841"> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_41528809412620041528809412620141"> Loose electrical connections 
+								  </li> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_41528809412620341528809412620441"> Damaged cables 
+								  </li> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_41528809412620641528809412620741"> Defective MCC 7 PCB 
+								  </li> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_41528809412620941528809412621041">Damaged or defective sensor 
+								  </li> 
+								</ul> 
+							 </td> 
+							 <td class="entry" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633__entry__2 "> 
+								<ol class="ol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__OL_86394BB6EAAB40B7A7F546AC09EE92AE" type="i"> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_2A99A118F3DA4A53B9E792980A7B1821"> Reseat MCC 7 or swap MCC 4 and 7. 
+									 <strong class="ph b" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-BDA6EEAB-75D1-48F3-8E75-CCFFF3F6AD24">If 
+									 </strong> the issue is a bad MCC, 
+									 <strong class="ph b" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-1AC25AA8-8BBF-4755-9251-E9780151C041">then</strong> when MCC 4 and 7 are swapped, the failure is moved from the wash carousel to Reagent Pipettor 2 motion errors. 
+								  </li> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_D8586B4E13E44B53BB63BBFDEB9D7361"> Reseat and inspect these cables (replace if damage is seen or suspected): 
+									 <ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_218C9789E2484F2890AE3E7A3D4E28EE"> 
+										<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_E0CB85FC50C34AEC8119F36F6ACC0FBB"> Home sensor and encoder 
+										</li> 
+										<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_E6D7D11BDA434BC690E0E649BFBABC7C"> Analytical Interface PCB: J1, J2, J11, J14, J20 
+										</li> 
+										<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_40B60D46495441009532337402A24FB1"> MCC backplane: J71, JP71, J2, J3 
+										</li> 
+										<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_D9A2ACAF0D62444C926A459A64D6616C"> COMC PCB: J1, J2 
+										</li> 
+									 </ul> 
+								  </li> 
+								</ol> 
+							 </td> 
+						  </tr> 
+						</tbody></table> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__STEP_A6C8C0F5F8344C47A199319118911B47"> 
+		  <span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-404720DF-4703-4210-8E9E-94376F6B8627">Search the trace file for RV ejection. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEPS_044F333027D74DA984E64F2A80948029" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_43FDF6554D8C4A90B6AD53E33D765722"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-78781686-C6F0-49AB-9F25-578ACF18767B">Determine if the error occurred during priming. 
+				</span>
+				<div class="itemgroup info">
+				  <ol class="ol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__OL_98A1E61ADCCC48B7972F3EBA2BD33075" type="i"> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_E9541D4962E649B983BE8E008602240A">Select 
+						<span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-49998A87-A595-4313-8B95-DFEBB5B62D1E"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-980861BB-0B91-4C96-8719-7F1F45B1917B">Edit</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-C5868A84-160C-4A87-A205-D3B8128BF2DD">Find</span></span>, and type 
+						<kbd class="ph userinput" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-68637C5F-CA7B-4BA1-83A3-7E41ACB59005">x901442</kbd>. 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_9FD30AF989B643FBAFFFEF3797B252AA">Select 
+						<span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-7703817C-8C16-4C48-9421-3F126584579D">Down</span> for direction, and then select 
+						<span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-8BD26313-07CF-4126-B930-C03EA0D00953"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-81FA0566-C7DC-481B-9558-CE203DA2852C">Find</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-CC364991-236E-4815-A1CF-52DF201A7878">Next</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_9ADF57CEEEBE4F858EE24AD16CD74A74">Look at the words following the highlighted x901442 text. 
+						<ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_79C29169F4D141C78D51004B7E553592"> 
+						  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_115C985E182D45B9B680FDCDE24966A0"> If the text is 
+							 <samp class="ph msgph" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-732A1DDF-77FE-4568-BFB5-3F78690A2576">from Subsystem WashWheel during...M_Prime</samp>, then the error occurred during priming. Check other trace files for the same pattern of priming. If the errors occur during priming, troubleshoot the pick and place issues and RV ejection issues under causes of errors. 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ol>
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-60EB9624-57D0-4E12-A99E-C594FD94C071"><span class="note__title">Note:</span> Wash wheel slippage errors during priming do not report to the trace file if RVs were ejected from the gripper-spinner. Contact STS for further assistance with the trace file, searching multiple trace files, or troubleshooting both pick-and-places and gripper-spinners. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_0C33B80159F6406296B1C2002DE8336C"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-E6F378F4-793D-4BD0-84A3-4965E59DE57A">Determine if the error occurred after an RV ejection. 
+				</span>
+				<div class="itemgroup info">
+				  <ol class="ol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__OL_21B6D9F3A4394236A1D58F993A28962D" type="i"> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_AA8177F42E3D414894A7CE08A5D19F22">Select 
+						<span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-73064FD7-4587-4656-8A1F-70EC1514EADE"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-6E84C206-7B6F-4384-9D22-58C17DFE3C01">Edit</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-BB20C3D5-D96C-4B8D-AF74-28EF20A0AC28">Find</span></span>, and type 
+						<kbd class="ph userinput" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-6F723311-735F-46A9-B8B2-15CB13DA619F">D2</kbd>. 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_397AF92A8F734FB8BE87574D1AE981F4">Select the 
+				  <span class="keyword option" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-6928FF20-8A48-4243-88B2-39604203A90B">Up</span> option for Direction, and then select 
+				  <span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-B37CAD89-42AC-4201-BA14-9DB762A630E3"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-413515B3-A59C-4A57-9EE3-07E1340923CE">Find</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-50242C73-CDBB-4211-AA52-0E8F29FA9CC7">Next</span></span>. 
+				  </li> 
+				  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_6688243A1A774A17BB74FAA50DF39FA2">Look at the D2, D3, and SUB positions. 
+					 <ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_E1D67BF5811D41A883F293B60564B331"> 
+						<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_F0CFC531E3A2414687F7002099C4363F">A1 after the position indicates there was a vessel at that gripper-spinner. 
+						</li> 
+						<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_9A54F18CABD745CD99E321338927C051">A0 after the position indicates that there was no vessel at that gripper-spinner. 
+						</li> 
+						<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_13DC72A161514259A782FD66B7BE5E5D">Example: WashWheel:T_Advance, Active D1:1 D2:1 D3:0 SUB:1 
+						  <p class="p">A vessel was underneath D2 and at the substrate gripper-spinner. 
+						  </p> 
+						  <p class="p">A vessel was underneath D1, however there is no gripper-spinner at the D1 position. 
+						  </p> 
+						</li> 
+					 </ul> 
+				  </li> 
+				  </ol>
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_43702C29A9B24602B33F11A2E178D145"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-7CD1C01A-967C-4598-8A01-2BBA5C0BA44F">Search multiple trace files to determine if there is a pattern of vessel ejection issues. 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_56DAB6E6E531482EBC71645E908784B6"> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_8CAECCFFFCE7463B9353AD07F2999E3E">If one particular gripper-spinner always causes the issue, then troubleshoot that gripper-spinner. 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_79FA3D3B81184E3F99F8A9C447A019C3">If the error occurs on multiple gripper-spinners, then refer to the RV ejection issues under causes of errors, 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_B64827ED51474BAE93FACBFE5B123B8A">If the errors are occurring without vessels under the gripper-spinner, then refer to all the causes of error for the wash carousel, except for those for RV ejection issues. 
+					 </li> 
+				  </ul>
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E10E1D85-E4A1-46F1-906F-92F8C4C4D6F9.html" title="5 Analytical Module"><div><span class="ph num-prefix">5 </span>Analytical Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html" title="5.6 Troubleshooting / Testing"><div><span class="ph num-prefix">5.6 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573.html" lang="en-US" title="5.6.5 Searching Wash Wheel Slippage Trace Files During Troubleshooting"><div><span class="ph num-prefix">5.6.5 </span>Searching Wash Wheel Slippage Trace Files During Troubleshooting</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573" role="article"> 
+  <h1 class="title topictitle1" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Searching Wash Wheel Slippage Trace Files During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to troubleshoot the analytical unit for wash wheel slippage errors. 
+  </p> 
+	 <ol class="ol steps" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C"> Save a section of the trace file. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-0F1E4B34-7ED9-4F31-A6AF-0456C08AC675"><span class="note__title">Note:</span> Since intermittent issues can not be apparent during exercisers or observation of the instrument, they can be difficult to troubleshoot. Searching the trace file helps direct troubleshooting efforts. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEPS_0ADCB18A73AA4D3FA44BF031E0245EB9" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_F6380B7AA5A6400B9B51E5073E9AA375"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-F523F267-6EBB-452D-A53B-0070031EFF03">Insert a floppy disk into the floppy drive of the console PC. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_E627C0A898994791BCDD6E568EDCD471"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-484E967D-BBC5-4B34-B201-C6D0A675306D">Select the 
+				  <samp class="ph msgph" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-DFCD0F59-9B63-436D-A2E3-D117D08C00D6">Excessive Slippage</samp> message in the event log. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-97D0A4FB-2D30-4A46-9C56-77EAB3C18445"><span class="note__title">Note:</span> If there are a series of slippage messages, select the earliest message. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_658D4644EE9445C9995B6EF6874E5E4A"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-9B08055F-7645-4C52-88AE-AAA66004B50B">Select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-48A4B96C-764F-4B5C-ACC2-9ECE23F22703">Copy to Disk</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_CAC06BB154004BF093D2B3BD8F852DC4"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-49CD13D9-D2C5-47FC-A40B-A645D543928F">In the 
+				  <span class="keyword wintitle" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-E6B6A188-1288-4D73-AAB0-4B7ED3B49422">Copy to Disk</span> screen, enter: 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_6057A943E57C4BF4937C3F16D1ED153D"> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_0262FB942EF84AEF93DD412EFB844376">Before Event (Sec): 30 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_EA3A2ABBE0B84182A63F08AD6C5829AA">After Event (Sec): 10 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_0A9CED8BC00943978C5860325911B7C2">Path: A: 
+					 </li> 
+				  </ul>
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-098D52D3-0E1E-48A6-B914-98A9FC0A506A"><span class="note__title">Note:</span> By default, the 
+					 <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-69D2F7C0-9E24-4228-8235-FE994892F84C">Include Details</span> option is active. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_1425C60CD86D49BB81B04A71241361C3"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-35E12D35-0C60-4B81-8E14-34C3E6E40A21">Select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-68D4B228-C6C5-491F-A533-322CC0505BCB">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_69DFE34F16EC44E58A18B227A53DA281"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-33E84FD7-CBA8-4385-A907-C703D8EC150B">Repeat the steps for any additional 
+				  <samp class="ph msgph" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-40B73B16-D6B6-4605-99D8-06C889F928B0">Excessive Slippage</samp> errors. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_C9ADBA3138FD440AB9B694F37C7503F7"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-9AED68B8-FFFB-422A-BD2C-DDDB3F2EE62C">If Oracle is available, attach these files to the Oracle Service Request for future reference. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_BBCD6083AA0541AAA13A0BA2764818D5"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-B0925859-69D3-4725-A520-1B766B671005">Open the saved trace files from the disk on either the console PC or another PC. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-FC4DFD2D-9B7A-4FE8-8CCE-D02ECC0C4AEC"><span class="note__title">Note:</span>  If the PC asks which program to use to open the file, select 
+					 <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-30596E85-8FD7-433F-8D49-77C4A49B8857">Notepad</span>. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__STEP_090046E0F77A4F42A24F59A4520AD765"> 
+		  <span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-39176BFD-AFAD-41B8-B518-753B6DB6B774">Search the trace file for wash wheel slippage. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEPS_7E44EA03F6ED42FCBBC5491EA40DF329" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_8C3878BB718C4B03B7344561DC1CC8F8"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-874778F3-F0C3-4FD6-9218-2F1796A44C18">Select 
+				  <span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-656336BF-A6B3-4EAD-B20E-BFDED977B404"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-5DF3563E-CC7D-43ED-B3A6-E24646628D5A">Edit</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-191B590E-41F4-4A76-BA0D-5F144E0428E6">Find</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_488686F75F064818A81619B632D0C07A"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-0491783C-5993-499C-9E1D-5A831F9F807A">Search down for the wash wheel exception: Type 
+				  <kbd class="ph userinput" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-08E73976-FBB1-4A75-9BE4-DDE4866B4893">x901442</kbd> in the Find What box, and then select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-323FCDA1-A4FD-4F82-BABE-FA7E17B05D91">Find Next</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-3A128C62-7649-46B6-B525-F17F2523170E"><span class="note__title">Note:</span> x901442 is part of the event descriptor code for wash wheel slippage. The code is the fastest way to locate the wash wheel slippage error in the trace file. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_F4695E0EF7F94E41B642D656D2E511BF"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-F7DC9E43-CF48-49A7-80A1-F5D1DD20A9C9">Search up for the encoder movement: Type 
+				  <kbd class="ph userinput" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-8E6C7BB5-EEAE-4EB4-B3BC-84E17F5DDBE1">mod</kbd> in the Find What box, select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-109A601D-7B54-4114-AE30-A7F01BB27AFD">Up</span> for Direction, and then select 
+				  <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-796C6FC0-8BB5-4872-891F-B0FE0FFF0596">Find Next</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_C0207317F5E842A4A8C15610C123278D"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-119E71D3-8B52-401A-AE58-CB87083FE780">Identify the encoder read of the movement from these lines of text. 
+				</span> 
+				<div class="itemgroup info">Perform the mathematical operation: last Encoder modulo position minus first Encoder modulo position. 
+				  <p class="p">Example: 3651 - 3573 = 78 steps. The wash wheel encoder measured 78 steps of movement. Normal slot-to-slot wash wheel movements are 168 - 169 steps. Priming routines or initialization can cause different step movements. 
+				  </p> 
+				  <p class="p">1447246271,(1271),WashWheel:T_Advance, SMC running position: 3573. 
+				  </p> 
+				  <p class="p">1447246271,(1271),WashWheel:T_Advance, SMC C/M position: 3573. 
+				  </p> 
+				  <p class="p">1447246271,(1271),WashWheel:T_Advance, Encoder&#39;s modulo position: 3573. 
+				  </p> 
+				  <p class="p">1447246274,(1274),WashWheel:T_Advance, Proximity of home CW WashWheel current position: 3573, relative move: 168, StepsAwayFromHome: 20, nAllowedSlippage: 5, fTolerance: 20.62 
+				  </p> 
+				  <p class="p">1447246539,(1539),WashWheel:T_Advance, SMC running position: 3741. 
+				  </p> 
+				  <p class="p">1447246539,(1539),WashWheel:T_Advance, SMC C/M position: 3741. 
+				  </p> 
+				  <p class="p">1447246539,(1539),WashWheel:T_Advance, Encoder&#39;s modulo position: 3651. 
+				  </p> 
+				  <p class="p">1447246539,(1539),WashWheel:T_Advance, WashWheel Corrected encoder error: -11510. 
+				  </p> 
+				  <p class="p">1447246542,(1542),WashWheel:T_Advance, ERROR WashWheel RotateToAngle failed, motor position: 3741, encoder position: 3651 
+				  </p> 
+				  <p class="p">System error code: 0x80004005 
+				  </p> 
+				  <p class="p">1447246542,AuObj, 09:06:35,1447246542,WashWheel has been disabled by WashWheel.Worker 
+				  </p> 
+				  <p class="p">1447246542,(1542),WashWheel:T_Advance, WARNING: Subsystem has been DISABLED 
+				  </p> 
+				  <p class="p">1447246542,(1542),WashWheel:T_Advance, Disabled 
+				  </p> 
+				  <p class="p">1447246542 Advance.WashWheel:T_Advance REPORT:1447246542 
+				  </p> 
+				  <p class="p">1447246570,Sequencer, 1447246542,Sequencer, CAUGHT EXCEPTION, 0x901442 from Subsystem WashWheel during T_Advance, dev Wash Wheel: &#39;Excessive motor slippage&#39;, 21150, C:\NexGen\Instrument\AU\WashWheel.cpp rev:$Revision: 1.566 $ line:4949, OtherSys:None 
+				  </p> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_C84971FE9BC94C268BB30CE189D9BF26"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-8AA0157E-90DD-41EF-A907-C680321F0FA7">Analyze the movements using this table. 
+				</span> 
+				<div class="itemgroup info">
+				  <table class="table" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+						  <tr class="row"> 
+							 <th class="entry align-left valign-top" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1"> If the expected motor (SMC) movement is 
+							 </th> 
+							 <th class="entry align-left valign-top" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2"> and the encoder read of the movement is 
+							 </th> 
+							 <th class="entry align-left valign-top" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3"> then 
+							 </th> 
+						  </tr></thead><tbody class="tbody"> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Positive 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Positive 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved forward, but not far enough. Proceed to the Search Trace File for RV Ejection step. 
+								</p> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Positive or Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Zero 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved zero steps or the encoder measured no change in movement. Refer to the table to troubleshoot Electrical Issues. 
+								</p> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Positive 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved backwards. Refer to the table to troubleshoot Electrical Issues. 
+								</p> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Positive 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved forward rather than the expected backwards movement (priming is the most common activity that this motion can occur). Refer to the table to troubleshoot Electrical Issues. 
+								</p> 
+							 </td> 
+						  </tr> 
+						  <tr class="row"> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__1 "> 
+								<p class="p"> Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__2 "> 
+								<p class="p"> Negative 
+								</p> 
+							 </td> 
+							 <td class="entry align-left valign-top" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE12_32A057DCEB476D9E86256FA800730992__entry__3 "> 
+								<p class="p"> The wash wheel moved backwards as expected, but not far enough. Proceed to the Search Trace File for RV Ejection step. 
+								</p> 
+							 </td> 
+						  </tr> 
+						</tbody></table>
+				</div>
+				<div class="itemgroup info">
+				  <div class="p">
+					 <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-1C306367-375F-4FE5-AB9F-1B56CC60384C"><span class="note__title">Note:</span> Refer to the 
+						<a class="xref" href="GUID-AD05413F-A05A-4E54-9D0F-95CEDF0A57C3.html">AU: Troubleshooting Motor Motion Errors in Analytical Module</a> document. 
+					 </div>
+				  </div>
+				</div>
+				<div class="itemgroup info"> 
+				  <table class="table" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+						  <tr class="row"> 
+							 <th class="entry" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633__entry__1">Wash carousel slippage is caused by 
+							 </th> 
+							 <th class="entry" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633__entry__2">Then perform these troubleshooting steps... 
+							 </th> 
+						  </tr></thead><tbody class="tbody"> 
+						  <tr class="row"> 
+							 <td class="entry" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633__entry__1 "> Electrical issues: 
+								<ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_41528809412619741528809412619841"> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_41528809412620041528809412620141"> Loose electrical connections 
+								  </li> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_41528809412620341528809412620441"> Damaged cables 
+								  </li> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_41528809412620641528809412620741"> Defective MCC 7 PCB 
+								  </li> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_41528809412620941528809412621041">Damaged or defective sensor 
+								  </li> 
+								</ul> 
+							 </td> 
+							 <td class="entry" headers="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__TABLE_03844EDBBEEE46EDA48DABFFA1F83633__entry__2 "> 
+								<ol class="ol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__OL_86394BB6EAAB40B7A7F546AC09EE92AE" type="i"> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_2A99A118F3DA4A53B9E792980A7B1821"> Reseat MCC 7 or swap MCC 4 and 7. 
+									 <strong class="ph b" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-BDA6EEAB-75D1-48F3-8E75-CCFFF3F6AD24">If 
+									 </strong> the issue is a bad MCC, 
+									 <strong class="ph b" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-1AC25AA8-8BBF-4755-9251-E9780151C041">then</strong> when MCC 4 and 7 are swapped, the failure is moved from the wash carousel to Reagent Pipettor 2 motion errors. 
+								  </li> 
+								  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_D8586B4E13E44B53BB63BBFDEB9D7361"> Reseat and inspect these cables (replace if damage is seen or suspected): 
+									 <ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_218C9789E2484F2890AE3E7A3D4E28EE"> 
+										<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_E0CB85FC50C34AEC8119F36F6ACC0FBB"> Home sensor and encoder 
+										</li> 
+										<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_E6D7D11BDA434BC690E0E649BFBABC7C"> Analytical Interface PCB: J1, J2, J11, J14, J20 
+										</li> 
+										<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_40B60D46495441009532337402A24FB1"> MCC backplane: J71, JP71, J2, J3 
+										</li> 
+										<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_D9A2ACAF0D62444C926A459A64D6616C"> COMC PCB: J1, J2 
+										</li> 
+									 </ul> 
+								  </li> 
+								</ol> 
+							 </td> 
+						  </tr> 
+						</tbody></table> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__STEP_A6C8C0F5F8344C47A199319118911B47"> 
+		  <span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-404720DF-4703-4210-8E9E-94376F6B8627">Search the trace file for RV ejection. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEPS_044F333027D74DA984E64F2A80948029" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_43FDF6554D8C4A90B6AD53E33D765722"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-78781686-C6F0-49AB-9F25-578ACF18767B">Determine if the error occurred during priming. 
+				</span>
+				<div class="itemgroup info">
+				  <ol class="ol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__OL_98A1E61ADCCC48B7972F3EBA2BD33075" type="i"> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_E9541D4962E649B983BE8E008602240A">Select 
+						<span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-49998A87-A595-4313-8B95-DFEBB5B62D1E"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-980861BB-0B91-4C96-8719-7F1F45B1917B">Edit</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-C5868A84-160C-4A87-A205-D3B8128BF2DD">Find</span></span>, and type 
+						<kbd class="ph userinput" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-68637C5F-CA7B-4BA1-83A3-7E41ACB59005">x901442</kbd>. 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_9FD30AF989B643FBAFFFEF3797B252AA">Select 
+						<span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-7703817C-8C16-4C48-9421-3F126584579D">Down</span> for direction, and then select 
+						<span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-8BD26313-07CF-4126-B930-C03EA0D00953"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-81FA0566-C7DC-481B-9558-CE203DA2852C">Find</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-CC364991-236E-4815-A1CF-52DF201A7878">Next</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_9ADF57CEEEBE4F858EE24AD16CD74A74">Look at the words following the highlighted x901442 text. 
+						<ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_79C29169F4D141C78D51004B7E553592"> 
+						  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_115C985E182D45B9B680FDCDE24966A0"> If the text is 
+							 <samp class="ph msgph" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-732A1DDF-77FE-4568-BFB5-3F78690A2576">from Subsystem WashWheel during...M_Prime</samp>, then the error occurred during priming. Check other trace files for the same pattern of priming. If the errors occur during priming, troubleshoot the pick and place issues and RV ejection issues under causes of errors. 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ol>
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-60EB9624-57D0-4E12-A99E-C594FD94C071"><span class="note__title">Note:</span> Wash wheel slippage errors during priming do not report to the trace file if RVs were ejected from the gripper-spinner. Contact STS for further assistance with the trace file, searching multiple trace files, or troubleshooting both pick-and-places and gripper-spinners. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_0C33B80159F6406296B1C2002DE8336C"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-E6F378F4-793D-4BD0-84A3-4965E59DE57A">Determine if the error occurred after an RV ejection. 
+				</span>
+				<div class="itemgroup info">
+				  <ol class="ol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__OL_21B6D9F3A4394236A1D58F993A28962D" type="i"> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_AA8177F42E3D414894A7CE08A5D19F22">Select 
+						<span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-73064FD7-4587-4656-8A1F-70EC1514EADE"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-6E84C206-7B6F-4384-9D22-58C17DFE3C01">Edit</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-BB20C3D5-D96C-4B8D-AF74-28EF20A0AC28">Find</span></span>, and type 
+						<kbd class="ph userinput" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-6F723311-735F-46A9-B8B2-15CB13DA619F">D2</kbd>. 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_397AF92A8F734FB8BE87574D1AE981F4">Select the 
+				  <span class="keyword option" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-6928FF20-8A48-4243-88B2-39604203A90B">Up</span> option for Direction, and then select 
+				  <span class="ph menucascade" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-B37CAD89-42AC-4201-BA14-9DB762A630E3"><span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-413515B3-A59C-4A57-9EE3-07E1340923CE">Find</span> &gt; <span class="ph uicontrol" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-50242C73-CDBB-4211-AA52-0E8F29FA9CC7">Next</span></span>. 
+				  </li> 
+				  <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_6688243A1A774A17BB74FAA50DF39FA2">Look at the D2, D3, and SUB positions. 
+					 <ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_E1D67BF5811D41A883F293B60564B331"> 
+						<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_F0CFC531E3A2414687F7002099C4363F">A1 after the position indicates there was a vessel at that gripper-spinner. 
+						</li> 
+						<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_9A54F18CABD745CD99E321338927C051">A0 after the position indicates that there was no vessel at that gripper-spinner. 
+						</li> 
+						<li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_13DC72A161514259A782FD66B7BE5E5D">Example: WashWheel:T_Advance, Active D1:1 D2:1 D3:0 SUB:1 
+						  <p class="p">A vessel was underneath D2 and at the substrate gripper-spinner. 
+						  </p> 
+						  <p class="p">A vessel was underneath D1, however there is no gripper-spinner at the D1 position. 
+						  </p> 
+						</li> 
+					 </ul> 
+				  </li> 
+				  </ol>
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__SUBSTEP_43702C29A9B24602B33F11A2E178D145"> 
+				<span class="ph cmd" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__GUID-7CD1C01A-967C-4598-8A01-2BBA5C0BA44F">Search multiple trace files to determine if there is a pattern of vessel ejection issues. 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__UL_56DAB6E6E531482EBC71645E908784B6"> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_8CAECCFFFCE7463B9353AD07F2999E3E">If one particular gripper-spinner always causes the issue, then troubleshoot that gripper-spinner. 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_79FA3D3B81184E3F99F8A9C447A019C3">If the error occurs on multiple gripper-spinners, then refer to the RV ejection issues under causes of errors, 
+					 </li> 
+					 <li class="li" id="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573__LI_B64827ED51474BAE93FACBFE5B123B8A">If the errors are occurring without vessels under the gripper-spinner, then refer to all the causes of error for the wash carousel, except for those for RV ejection issues. 
+					 </li> 
+				  </ul>
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E10E1D85-E4A1-46F1-906F-92F8C4C4D6F9.html" title="5 Analytical Module"><div><span class="ph num-prefix">5 </span>Analytical Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-75741E45-864A-4283-B2D0-02FAC11610F9.html" title="5.6 Troubleshooting / Testing"><div><span class="ph num-prefix">5.6 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-787FBA9A-007F-4D43-95A7-BA3741CEE573.html" lang="en-US" title="5.6.5 Searching Wash Wheel Slippage Trace Files During Troubleshooting"><div><span class="ph num-prefix">5.6.5 </span>Searching Wash Wheel Slippage Trace Files During Troubleshooting</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

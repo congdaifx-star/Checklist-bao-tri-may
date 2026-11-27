@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to capture RS-232 serial communications data between the DxI and the connection unit." name="description" /><meta content="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html" name="DC.Relation" scheme="URI" /><meta content="GUID-0A38E0A8-5886-4340-B4C8-3B781C6452B0.html" name="DC.Relation" scheme="URI" /><meta content="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>14.3.5 Capturing RS-232 Communication Data During Troubleshooting</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC.html" rel="prev" /><link href="GUID-D77990B4-3824-4C2A-8717-EEFC5D470D47.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3007" data-relpath="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B" role="article"> 
+  <h1 class="title topictitle1" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Capturing RS-232 Communication Data During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to capture RS-232 serial communications data between the DxI and the connection unit. 
+  </p> 
+	 <section class="section context" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">Capture RS-232 serial communications data between the DxI and the connection unit when analysis of the communications data is required for troubleshooting. 
+		<p class="p"> A software utility program called LasUtilities.exe (resident in the DxI console PC) can capture the serial communications data (ASCII code) between the DxI and the connection unit. The program must be transferred to the AU to connect to the serial communications data. The captured data exchange can also be saved to a file and printed. 
+		</p> 
+		<div class="p">Operating Principles and Communication Protocol 
+		<ul class="ul" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__UL_EF00B16656C6475D82447B77875859B1"> 
+		  <li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_5F99391D3FC74B228DA2A1231547D2C6">For detailed explanations of the connection unit operating principles, refer to LAS - OP - Connection Unit. 
+		  </li> 
+		  <li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_846C7FBFEF53489D8153C1AA7456CEF6">For additional details of the RS-232 serial communications protocol, refer to LAS Vender Information. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">RS-232 Message Structure 
+		<ul class="ul" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__UL_3773AE3B6CD6486CB42F6CB449E80C6B"> 
+		  <li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_21E4F9E52785487286B12E8485DA6E23">For a description of major components, ASCII characters, and structure of the RS-232 messages between the DxI and the connection unit, refer to the 
+			 <a class="xref" href="GUID-C875CA5F-B9DF-4F2E-804B-4A90CA427363.html">LAS: Troubleshoot Communication Data</a> document. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">Example of Serial Communication 
+		<ul class="ul" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__UL_0ADB4A38624A44419D5C5217453DD378"> 
+		  <li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_2401E802B35C43BA918F98EE0CD4BAEB">For an example of an RS-232 communication sequence that occurs while processing two samples through the connection unit spur, refer to the 
+			 <a class="xref" href="GUID-C875CA5F-B9DF-4F2E-804B-4A90CA427363.html">LAS: Troubleshoot Communication Data</a> document. 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Start the data capture program. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A0753F7A-3329-4784-A0A4-5CB0C9D0EDAE">For Windows XP System with Software 5.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEPS_5C5DF02285074DE28A2627D348198CDF" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_6267D19F5037402985C4C4332AD06C07"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-FA1533B7-C8E4-4F5C-9C16-08A3B3836D3A">Select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-08EE89CD-B89F-4BEB-AA41-E06623FF0F5A"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-1BEEA80D-94B8-4136-A2FC-518BFBD62691">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-9CD5C5E8-382F-4EF8-A4D9-20CFDBF72168">Programs</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-3EEAB2C2-C577-4D9B-9190-709DA375210E">Window Explorer</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_4401C01FB48445EE8F9CB2B35EBA33DC"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-BDF4C6CA-0C65-437D-A4E8-40BF0753DE9D">Navigate to the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-D3FBFC8E-1BDC-4D8D-91E0-80669A39418F">C:\NexGen\Console\Bin</span> folder and open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_7DDA9420D07D4BA888C58494D4D28DEA"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-AAC4949F-9FF1-4CE1-9167-8D587AAAF8DA">Right-click on the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-49DDBBE4-2038-4CEB-9047-CC028897A071">LasUtilities.exe</span> file, and select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8B71D26B-D082-41FB-A1F3-E65344B7022F">Copy</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_0CC508FD6BF44904B72DD4349BADBB50"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-3030574A-C9DC-48FA-8055-361E7C57A16D">On the console PC, select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8520162A-66FD-4A29-A942-3C93C0CB87DA"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-719EF4B4-ABC5-4499-8DD5-EDF104847BF7">Start</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-4CE1DEEA-4C88-456E-93AE-6F2EF97F60E3">Run</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_2ADBBFA2518A4DF682D532B502580B96"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-76F0952B-32EE-410A-A33E-2B34853FD5BE">Enter 
+				  <kbd class="ph userinput" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-24BEF676-E9CB-4A8E-AF27-6755FF2D094D">\\192.168.2.4\C$\AU</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-58477CF1-92E5-4382-9154-711C323FB5D3">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_D734B14663E04A84B37EC44ADE02B0D7"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-ADED15F9-FE55-4054-B4D2-6C69C74B8F57">Right-click in the Explorer window that opens, and select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-93CC6518-4771-4E0B-9D87-76D90D31AA9A">Paste</span>. 
+				</span> 
+				<div class="itemgroup info">If a message 
+				  <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6D6B6C36-644F-4AAE-A5A9-F03D8DE89450">The folder already contains a file named...</samp> occurs, select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-31F60950-325F-45B0-8648-E9B4AE5B0185">No</span>, and skip the next step. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_C747B22F3953436FB3457D258775BA6B"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A3EC3390-27A5-47F9-ABA7-D39F9D57BCB5">Navigate to the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-EB8DF1B2-47E6-43BE-A9D8-FFD53A9A511B">C:\NexGen\Console\Bin</span> folder, and open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_4552712993F14E7A911139B8212948A6"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B7E67281-C091-435C-8379-FA07F2E84430">On the console PC, select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-E80A0D28-67B3-416A-845E-6D7D0CC53926"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-50811A57-84CC-4621-8ADC-98F4C2C5CDBC">Programs</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-198B8319-E3A7-400C-B097-1EF8E248EAF9">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-F63EAC7C-7BE8-40AB-8544-6DC9B3EEC981">Remote Desktop</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-ADF60EAA-D5CB-468E-8173-8FA8A85703B2">Connection to AU PC</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_2BB92D1B59744841B3A7DCD727E86096"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B30D1C14-F58E-4B91-BE15-04E130102E24">In Desktop Sharing, select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6F75425F-34C4-4E00-84BC-B03D013807EF"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-F8827F8F-33AF-45B3-9358-39AD1CFC9584">My Computer</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-094B9710-2743-482C-97FE-42672E2FF070">C: 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A700D8A9-3A1C-4663-87F1-05766F04B59E">AU</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_73947CF29A2547118BB10D4AABEF1E6F"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A1C8E3FA-98B8-499D-89F8-F39C6E0BA188">Double-click on the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-126BAD28-01AC-409F-B3DD-E3BCD4A576D1">LasUtilities.exe</span> file. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_DCF6799D20504998925BAABE1C27F9B6"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-E75DE2C9-8546-4C16-A5CB-6B9B8F0F8FC6">Enter 
+				  <kbd class="ph userinput" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-023640FE-A103-401E-B425-0DCA7593C133">192.168.2.4</kbd> in the Instrument IP. Leave the User, Password, and Domain lines blank. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-85410B91-FE15-49A0-B3F3-8BA55D82B93A"><span class="note__title">Caution:</span> Do not enter anything in the User line (not even a space character) or 
+					 <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-DBD4CAB7-1867-44B5-9AF0-02BD6FAEC1D3">Unable to find AU... 
+					 </samp> errors occur when connect is selected. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_4194476FFC9F4F14BCA68A75A402971E"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-897D57FF-ED92-4682-9838-2DFFE8367726">Select the 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A20DE961-AA36-4F19-B453-2F087C81D4EC">Connect</span> button to initiate the capture process. When the program detects a successful connection, the top bar displays 
+				  <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6EB951BA-E9C5-4419-AC1F-7045BFA83BB9">LAS Communication monitor Connected to: 192.168.2.4</samp>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-13DAAA75-5B91-44FF-BC01-331CC33568C7"><span class="note__title">Note:</span> The connection captures data for up to 30 minutes, then terminates. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-C066BA3B-BDAF-40E3-A40B-A5CFF988D329">For Windows 8 System with Software 5.3.1 and above:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEPS_F0A972B81AFE49E0B9EA8777D91C700F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_4C1374E358BC483CA3FA138605504C11"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B0A7B4EC-FAB7-44B8-93D8-0B45CB915B73">Press 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-98C2BB88-4E04-45A4-97FA-9FECFC2E6CFD">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-93368D4D-E274-419A-A62F-96406408DB32">File Explorer</strong> icon or type 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8101839C-09C2-4B08-AE86-84023B7C6146">file explorer</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_1AE1CDA8E6514B8BA4897F6A7BFE8DD7"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-3256E3AA-5EF0-46EF-92C3-4421D679533F">Navigate to the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-91BF42D8-DE84-41CF-952B-D336E83816A4">C:\NexGen\Console\Bin</span> folder and open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_508248B86D884B8A8157E5A15D451EA3"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-64102FB0-BAD8-4E30-8587-13FE98ACC27F">Right-click on the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-CB37B581-D62D-4B81-9F58-986EC35EBB56">LasUtilities.exe</span> file, and select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-127622F4-6988-4AEE-A962-9C44E81CD8F3">Copy</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_5E23ECFF060E42C5ADB03F17F22FD367"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-AEE8AF69-D522-43E8-938C-FF2D27E47208">On the console PC, press 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-213DBAAA-F73A-4316-942C-147982F1B4F7">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-982463DF-B549-4730-A052-772C900FEE04">run</strong> and open the 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-96C81905-EE6E-4EE9-9A4A-F00763CC0937">Run</strong> program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_DD8B9FDFAF9E4D6A8AEFB36A7DCD593C"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-2B445F30-A4DC-4676-867D-7D99AB63D2C8">Enter 
+				  <kbd class="ph userinput" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-F8036B11-9971-4298-BDFD-B7739268B112">\\192.168.2.4\C$\AU</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-1B666FA3-E004-4F56-9243-1A09DAE5DD87">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_0193D1858D914F69B2FE30D883A49C30"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B3996671-0368-4248-8737-95D0FD7108A6">Right-click in the Explorer window that opens, and select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6CE6F174-39B0-4CB6-B45A-0D613C063CAA">Paste</span>. 
+				</span> 
+				<div class="itemgroup info">If a message 
+				  <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-5D30D94B-D17E-4F71-BFA7-145BE6664724">The folder already contains a file named...</samp> occurs, select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-C286D83C-7177-4FD7-8BED-06681E2C794C">No</span>, and skip the next step. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_3651C78A23234809B8BD48B3472FCA4E"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-4C8C2AF0-57C1-4BDF-A85F-01781DC45B2D">Navigate to the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6FBD87F9-AB5C-458B-9A74-145513AE4C31">C:\NexGen\Console\Bin</span> folder, and open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_D1E278DC7AE844C6A760BE542E19356E"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-C85A7082-B390-4326-9F73-37E2E173C9C5">On the console PC, press 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-2868B5D0-BCF0-4B4D-82CE-56AB178F12D4">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-E21CCD03-73C2-4825-9700-6D71EF1A70EA">Remote Desktop Connection</strong> icon or type 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6D72C87D-5968-48A4-97F3-624417233521">remote</strong> and open the desktop connection program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_839DC0991B94427A915CDA533F0FE706"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-0E8017E1-3A25-4740-BFAC-20EAC828A3BE">In Desktop Sharing, select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-969186A8-0D68-4979-991E-808ADBBB4CFE"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-74355948-8D65-4577-B3C9-931A96DC882A">Computer</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-29D9C21F-5467-411E-B6A9-B1DA6CE29CFC">Local Disk (C: ) or AU_PC (C:) 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8572AF73-4EA9-4626-8538-B20F7FA4E04A">AU</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_CE35A7569F4E4C36AEE4EA3363369740"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-DB03525B-139E-4CE7-B723-1D2C6B1CD188">Double-click on the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8ED9723B-6E53-427D-B42C-3ED643026E75">LasUtilities.exe</span> file. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_EC969B73C8884195B4052A8C3B351D06"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-7CA8FE2D-3C3E-4B74-816E-1899E3696923">Enter 
+				  <kbd class="ph userinput" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-1838657B-D649-4948-B28A-0F856E12E294">192.168.2.4</kbd> in the Instrument IP. Leave the User, Password, and Domain lines blank. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A0E8C08F-B99A-44AB-91BE-406FAA02394B"><span class="note__title">Caution:</span> Do not enter anything in the User line (not even a space character) or 
+					 <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-EBDC5E82-604D-4128-A65F-B4892483CF7F">Unable to find AU... 
+					 </samp> errors occur when connect is selected. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_67A8E2518E44410DAF92B6DCF7721F73"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-BE981613-1120-475F-8661-34B1DD91BF58">Select the 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-7FD8D796-8331-4001-8DC3-D34A2254539B">Connect</span> button to initiate the capture process. When the program detects a successful connection, the top bar displays 
+				  <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-055CD78B-B17C-465F-A8F1-048964BE590A">LAS Communication monitor Connected to: 192.168.2.4</samp>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-0A480D44-0655-403E-B8E2-06E202877BF6"><span class="note__title">Note:</span> The connection captures data for up to 30 minutes, then terminates. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__STEP_9F87E5D953FC4DF6AC9343B4A5F6F15B"> 
+		  <span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-34A88371-2028-4A1A-850F-735FE4D75D32">Capture communications data and save the data to a file. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEPS_815F0931880647C7859960D50E0B697F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_E455A9E452EA4303827727C2680BE8B3"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-537CF79D-C10C-4218-A99A-DE5310C95149">Process tubes through the connection unit. 
+				</span> 
+				<div class="itemgroup info">The LAS Utilities program displays the data as it is being captured. 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-ADBC1CC0-ABAA-4FCC-8E51-F4156EA00223"><span class="note__title">Note:</span> Data generation starts when a tube arrives at the Query BCR. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_75611BFF1F0949069CC413114D7F4A89"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-7B0B05D8-D4CD-405A-AA14-6495DB92DA8E">Select the 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-0A6C2C44-B58D-4D80-AE8F-D9CC459AA1AC">Save...</span> button. In the 
+				  <span class="keyword wintitle" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-DA4A786E-345B-4FA4-9B32-D6DE94ECF8AB">Save As</span> window, select a file location and then select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A0171704-79CD-4504-AEF1-B8BAC8766AB8">Save</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-80D18647-3E46-48A5-95E7-B537EB586E7E"><span class="note__title">Note:</span> The data is saved with a file name in this format: 
+					 <p class="p">LAS_log_061005_1641.txt. The file name shows the date and time the data is saved. In this case, it is June 10, 2005 at 4:41 PM. 
+					 </p> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_5627B8ECD5D64CDEBEE0D9FC7CEDFDBA"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-65A6CCB9-BE44-4003-9B0C-1B849003749F">To display and print the saved data, locate the desired LAS_log file and double-click on the file to open it. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B801ABE9-FBC6-4432-A3E7-ECF8F0DA72EF"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__UL_62C0833115854197B149566775B75118"> 
+						<li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_510AFDD4F414455289C9687032A1122D">For Windows XP: If the default Save As location is not changed, the file is in the My Documents folder, or whatever folder is set as the default save folder. 
+						</li> 
+						<li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_77FEC2B99BAD490080F93FF7E95C6E41">For Windows 8: If the default Save As location is not changed, the file is in the Documents folder, or whatever folder is set as the default save folder. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_66F606718D97432CAB321636177F67E4"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-608BC2BE-30BA-4F1D-B42D-45D7E906F862">Close all Desktop Sharing and Windows or File Explorer windows. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A38E0A8-5886-4340-B4C8-3B781C6452B0.html" title="14 Lab Automation System (LAS)"><div><span class="ph num-prefix">14 </span>Lab Automation System (LAS)</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html" title="14.3 Troubleshooting / Testing"><div><span class="ph num-prefix">14.3 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B.html" lang="en-US" title="14.3.5 Capturing RS-232 Communication Data During Troubleshooting"><div><span class="ph num-prefix">14.3.5 </span>Capturing RS-232 Communication Data During Troubleshooting</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B" role="article"> 
+  <h1 class="title topictitle1" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Capturing RS-232 Communication Data During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to capture RS-232 serial communications data between the DxI and the connection unit. 
+  </p> 
+	 <section class="section context" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">Capture RS-232 serial communications data between the DxI and the connection unit when analysis of the communications data is required for troubleshooting. 
+		<p class="p"> A software utility program called LasUtilities.exe (resident in the DxI console PC) can capture the serial communications data (ASCII code) between the DxI and the connection unit. The program must be transferred to the AU to connect to the serial communications data. The captured data exchange can also be saved to a file and printed. 
+		</p> 
+		<div class="p">Operating Principles and Communication Protocol 
+		<ul class="ul" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__UL_EF00B16656C6475D82447B77875859B1"> 
+		  <li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_5F99391D3FC74B228DA2A1231547D2C6">For detailed explanations of the connection unit operating principles, refer to LAS - OP - Connection Unit. 
+		  </li> 
+		  <li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_846C7FBFEF53489D8153C1AA7456CEF6">For additional details of the RS-232 serial communications protocol, refer to LAS Vender Information. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">RS-232 Message Structure 
+		<ul class="ul" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__UL_3773AE3B6CD6486CB42F6CB449E80C6B"> 
+		  <li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_21E4F9E52785487286B12E8485DA6E23">For a description of major components, ASCII characters, and structure of the RS-232 messages between the DxI and the connection unit, refer to the 
+			 <a class="xref" href="GUID-C875CA5F-B9DF-4F2E-804B-4A90CA427363.html">LAS: Troubleshoot Communication Data</a> document. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">Example of Serial Communication 
+		<ul class="ul" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__UL_0ADB4A38624A44419D5C5217453DD378"> 
+		  <li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_2401E802B35C43BA918F98EE0CD4BAEB">For an example of an RS-232 communication sequence that occurs while processing two samples through the connection unit spur, refer to the 
+			 <a class="xref" href="GUID-C875CA5F-B9DF-4F2E-804B-4A90CA427363.html">LAS: Troubleshoot Communication Data</a> document. 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Start the data capture program. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A0753F7A-3329-4784-A0A4-5CB0C9D0EDAE">For Windows XP System with Software 5.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEPS_5C5DF02285074DE28A2627D348198CDF" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_6267D19F5037402985C4C4332AD06C07"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-FA1533B7-C8E4-4F5C-9C16-08A3B3836D3A">Select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-08EE89CD-B89F-4BEB-AA41-E06623FF0F5A"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-1BEEA80D-94B8-4136-A2FC-518BFBD62691">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-9CD5C5E8-382F-4EF8-A4D9-20CFDBF72168">Programs</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-3EEAB2C2-C577-4D9B-9190-709DA375210E">Window Explorer</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_4401C01FB48445EE8F9CB2B35EBA33DC"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-BDF4C6CA-0C65-437D-A4E8-40BF0753DE9D">Navigate to the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-D3FBFC8E-1BDC-4D8D-91E0-80669A39418F">C:\NexGen\Console\Bin</span> folder and open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_7DDA9420D07D4BA888C58494D4D28DEA"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-AAC4949F-9FF1-4CE1-9167-8D587AAAF8DA">Right-click on the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-49DDBBE4-2038-4CEB-9047-CC028897A071">LasUtilities.exe</span> file, and select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8B71D26B-D082-41FB-A1F3-E65344B7022F">Copy</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_0CC508FD6BF44904B72DD4349BADBB50"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-3030574A-C9DC-48FA-8055-361E7C57A16D">On the console PC, select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8520162A-66FD-4A29-A942-3C93C0CB87DA"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-719EF4B4-ABC5-4499-8DD5-EDF104847BF7">Start</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-4CE1DEEA-4C88-456E-93AE-6F2EF97F60E3">Run</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_2ADBBFA2518A4DF682D532B502580B96"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-76F0952B-32EE-410A-A33E-2B34853FD5BE">Enter 
+				  <kbd class="ph userinput" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-24BEF676-E9CB-4A8E-AF27-6755FF2D094D">\\192.168.2.4\C$\AU</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-58477CF1-92E5-4382-9154-711C323FB5D3">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_D734B14663E04A84B37EC44ADE02B0D7"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-ADED15F9-FE55-4054-B4D2-6C69C74B8F57">Right-click in the Explorer window that opens, and select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-93CC6518-4771-4E0B-9D87-76D90D31AA9A">Paste</span>. 
+				</span> 
+				<div class="itemgroup info">If a message 
+				  <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6D6B6C36-644F-4AAE-A5A9-F03D8DE89450">The folder already contains a file named...</samp> occurs, select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-31F60950-325F-45B0-8648-E9B4AE5B0185">No</span>, and skip the next step. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_C747B22F3953436FB3457D258775BA6B"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A3EC3390-27A5-47F9-ABA7-D39F9D57BCB5">Navigate to the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-EB8DF1B2-47E6-43BE-A9D8-FFD53A9A511B">C:\NexGen\Console\Bin</span> folder, and open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_4552712993F14E7A911139B8212948A6"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B7E67281-C091-435C-8379-FA07F2E84430">On the console PC, select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-E80A0D28-67B3-416A-845E-6D7D0CC53926"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-50811A57-84CC-4621-8ADC-98F4C2C5CDBC">Programs</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-198B8319-E3A7-400C-B097-1EF8E248EAF9">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-F63EAC7C-7BE8-40AB-8544-6DC9B3EEC981">Remote Desktop</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-ADF60EAA-D5CB-468E-8173-8FA8A85703B2">Connection to AU PC</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_2BB92D1B59744841B3A7DCD727E86096"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B30D1C14-F58E-4B91-BE15-04E130102E24">In Desktop Sharing, select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6F75425F-34C4-4E00-84BC-B03D013807EF"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-F8827F8F-33AF-45B3-9358-39AD1CFC9584">My Computer</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-094B9710-2743-482C-97FE-42672E2FF070">C: 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A700D8A9-3A1C-4663-87F1-05766F04B59E">AU</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_73947CF29A2547118BB10D4AABEF1E6F"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A1C8E3FA-98B8-499D-89F8-F39C6E0BA188">Double-click on the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-126BAD28-01AC-409F-B3DD-E3BCD4A576D1">LasUtilities.exe</span> file. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_DCF6799D20504998925BAABE1C27F9B6"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-E75DE2C9-8546-4C16-A5CB-6B9B8F0F8FC6">Enter 
+				  <kbd class="ph userinput" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-023640FE-A103-401E-B425-0DCA7593C133">192.168.2.4</kbd> in the Instrument IP. Leave the User, Password, and Domain lines blank. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-85410B91-FE15-49A0-B3F3-8BA55D82B93A"><span class="note__title">Caution:</span> Do not enter anything in the User line (not even a space character) or 
+					 <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-DBD4CAB7-1867-44B5-9AF0-02BD6FAEC1D3">Unable to find AU... 
+					 </samp> errors occur when connect is selected. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_4194476FFC9F4F14BCA68A75A402971E"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-897D57FF-ED92-4682-9838-2DFFE8367726">Select the 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A20DE961-AA36-4F19-B453-2F087C81D4EC">Connect</span> button to initiate the capture process. When the program detects a successful connection, the top bar displays 
+				  <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6EB951BA-E9C5-4419-AC1F-7045BFA83BB9">LAS Communication monitor Connected to: 192.168.2.4</samp>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-13DAAA75-5B91-44FF-BC01-331CC33568C7"><span class="note__title">Note:</span> The connection captures data for up to 30 minutes, then terminates. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-C066BA3B-BDAF-40E3-A40B-A5CFF988D329">For Windows 8 System with Software 5.3.1 and above:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEPS_F0A972B81AFE49E0B9EA8777D91C700F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_4C1374E358BC483CA3FA138605504C11"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B0A7B4EC-FAB7-44B8-93D8-0B45CB915B73">Press 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-98C2BB88-4E04-45A4-97FA-9FECFC2E6CFD">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-93368D4D-E274-419A-A62F-96406408DB32">File Explorer</strong> icon or type 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8101839C-09C2-4B08-AE86-84023B7C6146">file explorer</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_1AE1CDA8E6514B8BA4897F6A7BFE8DD7"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-3256E3AA-5EF0-46EF-92C3-4421D679533F">Navigate to the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-91BF42D8-DE84-41CF-952B-D336E83816A4">C:\NexGen\Console\Bin</span> folder and open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_508248B86D884B8A8157E5A15D451EA3"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-64102FB0-BAD8-4E30-8587-13FE98ACC27F">Right-click on the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-CB37B581-D62D-4B81-9F58-986EC35EBB56">LasUtilities.exe</span> file, and select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-127622F4-6988-4AEE-A962-9C44E81CD8F3">Copy</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_5E23ECFF060E42C5ADB03F17F22FD367"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-AEE8AF69-D522-43E8-938C-FF2D27E47208">On the console PC, press 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-213DBAAA-F73A-4316-942C-147982F1B4F7">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-982463DF-B549-4730-A052-772C900FEE04">run</strong> and open the 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-96C81905-EE6E-4EE9-9A4A-F00763CC0937">Run</strong> program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_DD8B9FDFAF9E4D6A8AEFB36A7DCD593C"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-2B445F30-A4DC-4676-867D-7D99AB63D2C8">Enter 
+				  <kbd class="ph userinput" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-F8036B11-9971-4298-BDFD-B7739268B112">\\192.168.2.4\C$\AU</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-1B666FA3-E004-4F56-9243-1A09DAE5DD87">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_0193D1858D914F69B2FE30D883A49C30"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B3996671-0368-4248-8737-95D0FD7108A6">Right-click in the Explorer window that opens, and select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6CE6F174-39B0-4CB6-B45A-0D613C063CAA">Paste</span>. 
+				</span> 
+				<div class="itemgroup info">If a message 
+				  <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-5D30D94B-D17E-4F71-BFA7-145BE6664724">The folder already contains a file named...</samp> occurs, select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-C286D83C-7177-4FD7-8BED-06681E2C794C">No</span>, and skip the next step. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_3651C78A23234809B8BD48B3472FCA4E"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-4C8C2AF0-57C1-4BDF-A85F-01781DC45B2D">Navigate to the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6FBD87F9-AB5C-458B-9A74-145513AE4C31">C:\NexGen\Console\Bin</span> folder, and open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_D1E278DC7AE844C6A760BE542E19356E"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-C85A7082-B390-4326-9F73-37E2E173C9C5">On the console PC, press 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-2868B5D0-BCF0-4B4D-82CE-56AB178F12D4">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-E21CCD03-73C2-4825-9700-6D71EF1A70EA">Remote Desktop Connection</strong> icon or type 
+				  <strong class="ph b" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-6D72C87D-5968-48A4-97F3-624417233521">remote</strong> and open the desktop connection program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_839DC0991B94427A915CDA533F0FE706"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-0E8017E1-3A25-4740-BFAC-20EAC828A3BE">In Desktop Sharing, select 
+				  <span class="ph menucascade" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-969186A8-0D68-4979-991E-808ADBBB4CFE"><span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-74355948-8D65-4577-B3C9-931A96DC882A">Computer</span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-29D9C21F-5467-411E-B6A9-B1DA6CE29CFC">Local Disk (C: ) or AU_PC (C:) 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8572AF73-4EA9-4626-8538-B20F7FA4E04A">AU</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_CE35A7569F4E4C36AEE4EA3363369740"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-DB03525B-139E-4CE7-B723-1D2C6B1CD188">Double-click on the 
+				  <span class="ph filepath" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-8ED9723B-6E53-427D-B42C-3ED643026E75">LasUtilities.exe</span> file. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_EC969B73C8884195B4052A8C3B351D06"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-7CA8FE2D-3C3E-4B74-816E-1899E3696923">Enter 
+				  <kbd class="ph userinput" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-1838657B-D649-4948-B28A-0F856E12E294">192.168.2.4</kbd> in the Instrument IP. Leave the User, Password, and Domain lines blank. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A0E8C08F-B99A-44AB-91BE-406FAA02394B"><span class="note__title">Caution:</span> Do not enter anything in the User line (not even a space character) or 
+					 <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-EBDC5E82-604D-4128-A65F-B4892483CF7F">Unable to find AU... 
+					 </samp> errors occur when connect is selected. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_67A8E2518E44410DAF92B6DCF7721F73"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-BE981613-1120-475F-8661-34B1DD91BF58">Select the 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-7FD8D796-8331-4001-8DC3-D34A2254539B">Connect</span> button to initiate the capture process. When the program detects a successful connection, the top bar displays 
+				  <samp class="ph msgph" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-055CD78B-B17C-465F-A8F1-048964BE590A">LAS Communication monitor Connected to: 192.168.2.4</samp>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-0A480D44-0655-403E-B8E2-06E202877BF6"><span class="note__title">Note:</span> The connection captures data for up to 30 minutes, then terminates. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__STEP_9F87E5D953FC4DF6AC9343B4A5F6F15B"> 
+		  <span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-34A88371-2028-4A1A-850F-735FE4D75D32">Capture communications data and save the data to a file. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEPS_815F0931880647C7859960D50E0B697F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_E455A9E452EA4303827727C2680BE8B3"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-537CF79D-C10C-4218-A99A-DE5310C95149">Process tubes through the connection unit. 
+				</span> 
+				<div class="itemgroup info">The LAS Utilities program displays the data as it is being captured. 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-ADBC1CC0-ABAA-4FCC-8E51-F4156EA00223"><span class="note__title">Note:</span> Data generation starts when a tube arrives at the Query BCR. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_75611BFF1F0949069CC413114D7F4A89"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-7B0B05D8-D4CD-405A-AA14-6495DB92DA8E">Select the 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-0A6C2C44-B58D-4D80-AE8F-D9CC459AA1AC">Save...</span> button. In the 
+				  <span class="keyword wintitle" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-DA4A786E-345B-4FA4-9B32-D6DE94ECF8AB">Save As</span> window, select a file location and then select 
+				  <span class="ph uicontrol" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-A0171704-79CD-4504-AEF1-B8BAC8766AB8">Save</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-80D18647-3E46-48A5-95E7-B537EB586E7E"><span class="note__title">Note:</span> The data is saved with a file name in this format: 
+					 <p class="p">LAS_log_061005_1641.txt. The file name shows the date and time the data is saved. In this case, it is June 10, 2005 at 4:41 PM. 
+					 </p> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_5627B8ECD5D64CDEBEE0D9FC7CEDFDBA"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-65A6CCB9-BE44-4003-9B0C-1B849003749F">To display and print the saved data, locate the desired LAS_log file and double-click on the file to open it. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-B801ABE9-FBC6-4432-A3E7-ECF8F0DA72EF"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__UL_62C0833115854197B149566775B75118"> 
+						<li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_510AFDD4F414455289C9687032A1122D">For Windows XP: If the default Save As location is not changed, the file is in the My Documents folder, or whatever folder is set as the default save folder. 
+						</li> 
+						<li class="li" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__LI_77FEC2B99BAD490080F93FF7E95C6E41">For Windows 8: If the default Save As location is not changed, the file is in the Documents folder, or whatever folder is set as the default save folder. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__SUBSTEP_66F606718D97432CAB321636177F67E4"> 
+				<span class="ph cmd" id="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B__GUID-608BC2BE-30BA-4F1D-B42D-45D7E906F862">Close all Desktop Sharing and Windows or File Explorer windows. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A38E0A8-5886-4340-B4C8-3B781C6452B0.html" title="14 Lab Automation System (LAS)"><div><span class="ph num-prefix">14 </span>Lab Automation System (LAS)</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html" title="14.3 Troubleshooting / Testing"><div><span class="ph num-prefix">14.3 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B.html" lang="en-US" title="14.3.5 Capturing RS-232 Communication Data During Troubleshooting"><div><span class="ph num-prefix">14.3.5 </span>Capturing RS-232 Communication Data During Troubleshooting</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

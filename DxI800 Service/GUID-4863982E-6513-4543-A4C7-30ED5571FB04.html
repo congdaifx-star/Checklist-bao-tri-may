@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to restore the database of a DxI console PC from a USB backup drive." name="description" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-4863982E-6513-4543-A4C7-30ED5571FB04" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.6.11 Database - Restoring Console PC from Backup</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-87A85845-1187-4BD1-8D82-2DBB18E1AD94.html" rel="prev" /><link href="GUID-135608A4-9F48-4B33-A35B-AB28819E8AF8.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3765" data-relpath="GUID-4863982E-6513-4543-A4C7-30ED5571FB04.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04" role="article"> 
+  <h1 class="title topictitle1" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Database - Restoring Console PC from Backup</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to restore the database of a DxI console PC from a USB backup drive. 
+  </p> 
+	 <div class="section prereq p" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__PREREQ_BE84BC2760A44C4F833907F93917B892"> 
+		<p class="p">DxI Software must be installed before performing the following procedure. 
+		</p> 
+	 </div> 
+	 <section class="section context" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="p"><strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9390FE24-672C-4311-9051-3BA057403A21">Restore the database of a Windows XP console PC with DxI Software 5.2 and below from a backup when: 
+		  </strong> 
+		<ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_2D4E68CD88B749D59FA0046BE6E00086"> 
+		  <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_68781C171EA646CEAB00D376218388A3"> Replacing a defective or corrupt hard drive. 
+		  </li> 
+		  <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_28F2D08704D94582B5B3791C8C689C10">Swapping a functioning, but suspect, PC with a new PC. 
+		  </li> 
+		  <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_D7C0006C617A4007A416C3C0607A5165">Restoring the database using a USB drive. 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Load the backup media. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEPS_94B25078AD764EF7ADDA4827B5648BDD" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_36136754518044CC9C3ADD0A15928D45"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B401654D-E823-4DA9-BF12-7309541E6156">In the 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-7CC941CF-B607-422B-B4A3-53EDA4D7E31F">Main Menu</span> screen, press 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9B2EE9C4-4591-4C19-9A04-530E755B4658">[Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0BC30801-74D5-4076-B341-4B7A2600D8C5">Access2Support</kbd> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_7431914204D3484386F5CBA81CABE5A8"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-6F69AE5C-D67A-4E92-8D63-EB222C270244">Exit the Poet Object Server, if present. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_778713E4C6174B52B45FCB9BC28179F7"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-72EE1DA2-832C-4535-AFE5-F2A7771EC3B7"> Insert the USB drive into a USB port on the PC. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-6BC41E4B-EC93-4354-ABD1-E5DB281542C0"><span class="note__title">Note:</span> If the database is not available for restoration from the USB drive, then attempt to copy the database from the hard drive of the old PC. 
+					 <p class="p">Refer to the 
+						<a class="xref" href="GUID-135608A4-9F48-4B33-A35B-AB28819E8AF8.html" title="This procedure describes how to transfer files from the old Console PC hard drive to a replacement Console PC hard drive.">Software: Transferring Files Between PC Hard Drives</a> procedure. 
+					 </p> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_74B05B6CA1AB49D29ECA6385DD71EE41"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-371D2645-2605-487C-B8D9-6EB327966DDB">Determine the files to use for backup. The two options are: 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_D7AE8A48CC954160BEB03A3A10056122"> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_41C6361DA2604C06A47700BC59055C89">Load files from the USB drive. 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_0455A95EE00B4E798CECDE543FC70415">Loads files from the old hard drive. 
+				</li> 
+			 </ul> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9589BFF2-2E24-45DE-AFFB-79E7FBA2CDA6"><span class="note__title">Note:</span>  The backup folder on the PC hard drive always contains the most recent backup file. If there is a backup folder, then copying the files from the USB backup drive might not be necessary. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-613434B3-005A-441D-9F75-CBAB050D75D6"><span class="note__title">Note:</span> If the database is not available for restoration from the USB drive, then attempt to copy the database from the hard drive of the old PC. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_699236B0872C48F8B6CFB16021194FFD"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-84E78AB7-40C3-4710-B014-085223269BE5"> To load files from the USB drive: 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEPS_08F5AEF784294956876302983DD3D844" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_4185117E989141D199346D2B3BCC66F1"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8EB76006-CF01-4D71-A60A-AF4C12FF5A72">Press 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-668F4A10-29D6-4E2C-AEB5-1EC25C4E4674">Start &gt; Programs &gt; Windows Explorer</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_09D2EE62A48A43CE9171942E8167E0A0"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-775FB420-A560-4C39-9893-94A0611FE16C">Browse to and open the USB BACKUPDRIVE. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_0D0FD50BEBCF4544981440C5B3E67B41"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8AF3BE55-6D90-4771-8AE2-A1A8F0B1D002">Copy the most recently saved backup folder found in the BACKUPDRIVE, and then paste the backup folder into the 
+				  <span class="ph filepath" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-973136E4-3D98-4135-B03D-D7F01AB13EEC">C:\NexGen\Console</span> folder on the PC hard drive (replace existing files). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_246EC34AFB5746F6819054DF99E1CFB7"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-30A15C63-9D72-4787-BE9C-35B76CEAE4FE">Exit Windows Explorer. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8D23001D-7865-4957-BC1E-8F36BFA5B2B1"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_D2EE4C81A8E74745B1512539C8DB9967"> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_387F43275E4446FAB8955A44A2D1D651">Windows XP is required for support of the USB drive. USB support must be enabled in the PC CMOS. 
+						</li> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_A90EBAC021664D1DA4049A0CF0DB87AC">The immediate or scheduled backup stores the previous five backups in the 
+						  <span class="ph filepath" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-C3635643-F8E3-4737-AEDE-E053D3AE4020">C:\NexGen\Console\</span> directory. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_6B9A41598C1D410FAEDC392CBC1ACFE7"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-EF3BA73D-616A-4AE8-91AD-2882B17C5F40">To load backup files from the old hard drive. 
+		  </span> 
+		  <div class="itemgroup info"> Refer to the 
+			 <a class="xref" href="GUID-135608A4-9F48-4B33-A35B-AB28819E8AF8.html" title="This procedure describes how to transfer files from the old Console PC hard drive to a replacement Console PC hard drive.">Software: Restoring Console PC Database from Files Transferred Between Hard Drives</a> procedure. 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_EA89A77948EB454A8A9F2539174BA35E"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-E211B0ED-588D-4CD7-A6B5-C635951E008D">Restore the backup files. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-DAACA94D-00E6-4909-A337-17C6F804BAC8">Option 1: Restore the database by manually replacing the database folders. 
+			 </strong> 
+			 <ol class="ol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__OL_C4C5992926C043998AB14CEE347C1964" type="a"> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_AABFE02F29E64058B4B1FFFA96925E4B"> Open 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-A6CE0891-568D-4B65-AB50-CA9061CC19FD">Windows Explorer</strong>. 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_5F94F84C313A4678B4F4F0372ABD58BD"> Browse to C:\NexGen\Console folder and open the 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-41E5F5E2-246E-45C4-B065-97FF594C82BE">Backup</strong> folder. 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-462031B8-DC45-436C-AC10-592FD0A11893"><span class="note__title">Note:</span>  Make sure the Backup folder was copied properly from the USB flash drive and has the latest data or information. 
+				  </div> 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_5F317BEC91B44E0F8FA2EE13B6208A21"> Open 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9A7D1A08-6C50-42FA-B1F8-E3C8D847EF00">DRW</strong> folder in the Backup folder and then 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B8440F41-1C92-4C8D-BEDD-37CF41996ED2">Copy NexStepBase</strong> and 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-147EE72A-D797-42AE-9214-4CB7B839681F">EventBase</strong> folders. 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_86CB00DDEE6048F5B883FE63F656B644"> Browse back to C:\NexGen\Console folder, open 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-78F9948A-1F1C-4CD3-830F-79A85CED053B">DRW</strong> folder, then 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-ED5394CF-D4A7-4CF4-81CF-153D8C00C01A">Paste NexStepBase 
+				  </strong>and 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-F2AA1310-19B2-4013-B94E-9EA10C3DF970">EventBase</strong> folders to replace the existing folders. 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_AF4351DE1B704639837C60DC3F192060"> Exit 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-755DDF5D-61F0-428F-BE80-A1CDF7B517A4">Windows Explorer</strong> and restart th user interface. 
+				</li> 
+			 </ol> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-094AA47F-9281-46BD-A44C-570C93445CFA"> Option 2: Restore the database using the Restore Utility.</strong> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEPS_2D2BDB525F0344A49561B2A4CC548B98" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_99B75526FB3E4723B2C952E576B38178"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-82C60C98-C869-41E9-A256-C8EFFFC012D6">Press 
+				  <span class="ph menucascade" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-74C99A3E-E924-4DBE-960B-DC659EF0CB2E"><span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-F4980346-2055-4EFB-BF55-49655769F0AB">Start</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-302B9472-0A8B-4E87-AC5B-264E3BD4A0E0">Programs</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-06438816-DF70-441F-A0B0-90E070A342C0">NexGen</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-2346AE04-A20C-4003-AA5A-A6455A6C8EF1">Restore Utility</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-19BB96DF-6B23-4E75-BD2B-A7E5036465C4"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_6F9F8CC1E2A64394BFECBD3E641FC309"> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_7350EE25FC0A476D95A093F552F48405">When restoring onto a new PC or a new PC hard drive, the software must be loaded first because the software contains the Restore Utility. 
+						</li> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_AE4A1EA18845492994D1BB101EAF9C8F">Before starting the restoration, exit the user interface. Keep the instrument powered on. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_2762FC674809430D9F4D43C203A82687"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-052F50AA-56CF-4503-A2EB-1612211F0736">In the Restore Utility, select 
+				  <span class="ph menucascade" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-C251BECD-2A1A-4A39-A6C5-21BCDEA93426"><span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-5855DEE4-8D6D-46F1-B4C4-724BC95AEBC0">Next</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0C10964E-F147-444A-B9D8-AAAFDD93DB90">Restore Console PC</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-33EEACA3-A414-4CC2-AC90-F39100B219ED">Next</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__FIG_92EC2AFCA7AB45EB8D44E9936A1EFD4A"><br /><img class="image" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__IMAGE_0953ADA27AA146058D3F37789082D6B9" src="GUID-C47D8122-AC59-44A2-9286-3C6E688AF859-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_4FD7047D1E5844A78989543088454943"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-198697C6-6267-4152-BE78-2A6DD0BF1CC0">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-ED14B1B8-581E-40F2-88A5-9367D58782A3">Restore Registry and Database</span>. Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-AA06056A-7AB5-46BB-97A0-9D5FEC655E9F">Next</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-C7652B97-7756-46DA-B2BB-36F011B75861"><span class="note__title">Note:</span> If there is an error copying the files, confirm that you have exited the Poet Object Server and then retry restoration. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_1227228DEA2E4263A7EBCAFB2ABA7B86"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-501E56E3-44A0-428D-AFD1-2F90B20152C6">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B591EC81-3FD9-4397-B320-9307FF334A83">Next</span> to the IP address information. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8CC6C859-7891-4935-A1C2-E7837A9E4343"><span class="note__title">Note:</span> Typically the IP address for the console is 192.168.2.3, the workgroup server is 192.168.2.3, and the analyzer is 192.168.2.4. For Windows XP systems, 127.0.0.1 is the typical workgroup server IP address. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_8843E60F36B14981A57D35FAD7C8B03D"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9F5C4463-D474-42CD-8362-3D4546FED8C4">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8D03CF3C-1508-4ADD-8FBE-5AF967FAEB0E">Restore Supplies From Analyzer</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-7713CE1B-9358-4159-AEFB-C32B7DC3C19C"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_B6BE20AEB1B14E01B190204F78942B60"> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_6CEC12D48DCD4BA5AAEF07001605B8E4">During restoration, the AU must be powered on and must be able to communicate on the TCP/IP network. 
+						</li> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_84DC54F378F24254BE9232B0DEE3C024">An incorrect AU or server IP address in the registry causes an error at this step. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_CEF6B7202EF94035B3F0E29E89E6A3F3"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-61D6DFC4-78E9-452B-A064-3467E8F2C6BA">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-6CB2DFF0-CEF2-4124-8DCA-01F1937D570E">Next</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_BB0C8F0D5E2B4F2199A88A1F635487F9"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-78B871E5-0448-487B-B3A4-450A2592B859">If a 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-1184604D-2356-4342-AE8F-885CEEEB85D8">Delete Reagent</span> dialog window is displayed (reagents are listed as off-board punctured or off-board unpunctured), select and then delete the off-board punctured reagents. Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-90C4AD3F-4117-40A7-B453-FAE0CB7667F8">Next</span>. Select and then delete any off-board confirmed unpunctured reagents (reagents that cannot be found and confirmed to be unpunctured). Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9808FBD9-BBDC-4DB1-99B6-426BE49B6FE0">Next</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-DFBDB097-D3F1-42A3-8053-CF3604F7418D"><span class="note__title">Caution:</span> Any punctured reagents that were used after the backup was made and that were not on-board during the restoration need to be identified and discarded. When reagents are off-board, their status is not stored in instrument memory. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_BA9B43E6E27C4BCC8D3CC217640CB9D0"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-86EEEE9C-1B84-4A6A-A3D6-31B944F9B462">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-778366B4-D9B4-4EAE-8974-0C63A2673E80">Finish 
+				  </span> with 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B4775D5C-3D5C-42ED-AE46-5DE16ABAB9BC">Reboot</span> selected. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-63E6F5A7-B6C4-4573-BC06-617C2734996E"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_8EAB0ACD6ABE41E8817CA1E21BCA982F"> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_228092BD5A4C4F2B941EC3FAFA2FB9B8">When restoration is complete, both the console PC and the AU reboot automatically. 
+						</li> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_6F75E1DD934C4A35B964ACADAAFF7CD2">The user interface launches. While the instrument reboots, it might not appear to communicate for up to 5 minutes. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_31B23ABDA8C14C73A4845CD6BCC56EB5"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0172ECF6-F7FF-471F-B6EA-D1B416BB9B0A">Verify instrument operation. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEPS_537BAD5E54D044D1AEC87211B687E256" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_EA286369AA6D47B7A5268AC1FD46E1CD"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-BBFB41E5-F16B-4D9E-A811-D6C337FF631D">Confirm that the software version shown at the bottom right of the 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-73398188-B488-4FA4-B237-9AE6CEBC3531">Main Menu</span> is the current version. 
+				</span> 
+				<div class="itemgroup info">If needed, update the software and the APF to the current version. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_601C4C3DDB034508884473C103C1FD94"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-11811FC0-F183-44FC-B393-A6B7FB2C72A7">In the 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-FA46E1AA-DF54-423B-B902-27F08532620E">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-2F9E1594-6868-4045-B7F7-038494F41B5C"><span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B724DD1C-D29F-47E3-8BFE-6F2E922DCF67">Supplies</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-A4F73D43-98D6-49A7-9D9C-4CC65632064E">Bulk Supplies</span></span>. Check the status of the supply inventory and load any required supplies. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0591DCF2-C940-4532-B603-F690D395CE18"><span class="note__title">Note:</span> The restore process identifies on-board expired or deleted reagent packs with question marks (???). Having one or two on-board packs with question marks might be normal. If the substrate supplies are empty and all on-board reagents are identified with question marks (???), then you might have selected 
+					 <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8D83BC15-4364-455E-943E-552AAA8ABA16">Restore Analyzer</span> inadvertently. Other possibilities are that the NVRAM PCB in the AU is defective or running MFG Cleanup erased the AU NVRAM. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_5612B42B285048C5B25A0564B6563235"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-EACFF044-AE7A-49A0-8537-1762C4C97ED2">In the 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B4CAEC3E-2561-4DB6-9F58-E3BA74E79609">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-7DFF43B5-448E-472A-B29E-D0A63C8F2E4C"><span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-6398E39F-76FC-41C1-AEB9-5665F3180295">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-49559CFA-5A61-49C0-878C-26C127FBDCE5">Initialize</span></span>. Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-7430575D-01B5-4B7F-B1EB-79D2DC5E4B52">Clear all Positions</span> and 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-3852CDDF-DDC8-46C5-92C7-E0A9D7911402">Remap</span> the reagent storage. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-71EA4E65-FAC6-4281-A2B0-F22552AA183C"><span class="note__title">Caution:</span> If there are on-board deleted or expired reagents (marked with question marks) after restoration, then unload all the reagents and confirm that the unopened reagents on the reagent supply display are actually unopened. Reload the reagent packs that are not marked with question marks (???). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_F57699A602774726B7FE67064F40D472"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9146A5E5-93FD-4BB5-8A8D-25D6B1534F0F">Confirm that the following items are configured correctly and are functional: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_20A7032FC043412F98A79BEF6C93D9D1"> 
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_3739F94037E64B55B1F81E8F5420D2F7">Printer setup 
+					 </li> 
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_81351E18F3DF4916A09B8A55C69A478F">Auto Delete setup 
+					 </li> 
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_0F3798A5F2E14EBAAE33E09440976953">Scheduled Backup 
+					 </li> 
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_7BF73B305C0B48E8855923F7517FE81D">LIS 
+					 </li>
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_75AD63DD40CA4B81BEEB24DD2D2BE147">PROService
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_C286DE3FBABD4537B4A6698FB7383120"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-35BFD8F5-869C-48E2-B931-C2DCF2334505">Perform QC and ensure that the results are within customer specifications and that there are no problems posting results to the restored database. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+  <nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><article aria-labelledby="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A2E21905-4C5C-4C4E-80E8-B30B60FA0064" class="topic task nested1" id="TASK_20E148F3A4A343DFB7D025E1C92E2625"> 
+	 <h2 class="title topictitle2" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A2E21905-4C5C-4C4E-80E8-B30B60FA0064"><a id="GUID-A2E21905-4C5C-4C4E-80E8-B30B60FA0064"></a></h2> 
+	 <div class="body taskbody"> 
+		<section class="section context" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__CONTEXT_FB70F9FF54744006903BD19737E694A2"> 
+		  <div class="p"><strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-B5F14D8E-0623-442A-8B21-5A81EEA16E6A">Restore the database of a Windows 8 Mini PC with DxI Software 5.3.1 and above from a backup when: 
+			 </strong> 
+			 <div class="note caution note_caution" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-8D613767-F26D-4F34-B3E1-88B38D660E8A"><span class="note__title">Caution:</span> Restore from backup &gt;&gt; Restore Supplies from Analyzer does not work in SW V 5.3.1 where the AU NVRAM is simulated. All punctured reagents will need to be discarded if restoring from a previous backup (or immediate backup if the system was running when the issue occurred). 
+			 </div> 
+			 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6C9B8E02-14EF-4E4D-8D22-82A869615581"><span class="note__title">Note:</span> DxI Software 5.3.1 is compatible to Windows XP console PC. If the software was installed on Windows XP console PC, then follow the Windows XP section to restore the database. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  <ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_0FD2F52373DD44ADB1DF52E80AEFA4B7"> 
+			 <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_C13EDA0E6E7A4A16958B98F9E4C162E7">Swapping a functioning, but suspect, PC with a new PC. 
+			 </li> 
+			 <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_686690FCCE944A13877EC0AC010C8EE4">Restoring the database using a backup USB drive. 
+			 </li> 
+		  </ul> 
+		  </div> 
+		</section> 
+		<ol class="ol steps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEPS_781213D7D1624772939672EC170CA8DC"><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_ABAF30CCC04447C1887D468EC09872CE"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6311710B-0953-4F62-87AF-F88DF30A0D1E">Load the backup media. 
+			 </span> 
+			 <ol class="ol substeps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEPS_CA3C72317FE149358BB769329D9FE53F" type="a"> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_C1E2CDA9DFFD49D6BE88A5D2D9841885"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F3B06D18-EBDA-4A9E-93A6-7984665C3FFC">In the 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-7407EC76-FA8E-4529-A3BD-317F42550FAD">Main Menu</span> screen, press 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A95E0B01-A6DE-4383-9F1F-F3897D32F98B">[Alt] + [F4]</span>, and then enter the password 
+					 <kbd class="ph userinput" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-389CEC5F-422A-4D5C-B2D3-C023176C735B">Access2Support</kbd> to exit the user interface. 
+				  </span> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_F993B00EADE74725837785F787B868C3"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A80CA652-F238-4A7E-B4C8-3FBA3871CEF5">Exit the Fast Objects Server, if present. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_9BF89F02AEA94C02837F69272EA40A00"> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_8AB4FAE8A6EF4257904B67A700AB639A">Press 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-1FC9E64D-1C5B-4B5F-B0D8-DB01603DB3D2">Ctrl + Alt + Delete</strong> and select 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-4606CAB2-FC53-477E-9DB2-9389F9441753">Task Manager</strong> or right click on the task bar and select 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-B48CE971-C1E9-48CF-916D-524D999F6557">Task Manager</strong>. 
+						</li> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_02D9E15ED4284C39B63172CB100CFBE7">In the 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-99E9DFF8-5FDA-4B75-890C-F1DD852B5647">Task Manager</strong> box, click on 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-887AD746-0B9E-4CE2-A502-495A75A51B0A">Processes</strong>, select 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-28AAE15E-381A-4466-B087-87235F82BD76">FastObjects Server</strong> and click on 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-E39BE0BE-734C-44B4-88CA-922306B0ECDE">End Task</strong> in the bottom corner of the box. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_70D81E49A5D240F58AE6CBCC360F02EE"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-CC03C5C7-8B34-4277-9C48-CDE130D1AA1C"> Insert the USB drive into a USB port on the PC. 
+				  </span> 
+				</li> 
+			 </ol> 
+		  </li><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_F12D4D9ECB8E4F468746D39B20C12BFF"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-8928CE55-4A39-4E89-ABFB-B483AC17F377">Determine the files to use for backup. The two options are: 
+			 </span> 
+			 <div class="itemgroup info"> 
+				<ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_77E80A39F290496B98F02148EB11DD96"> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_61F91E0F4DE6466E97C5B36C2F4723C5">Load files from the USB drive. 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_42E42401C3A64AA3A731D9E877D446C8">Loads files from the old hard drive. 
+				  </li> 
+				</ul> 
+			 </div> 
+			 <div class="itemgroup info"> 
+				<div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6D48CDA6-83CF-405F-B911-D5B71387C192"><span class="note__title">Note:</span> The backup folder on the PC hard drive always contains the most recent backup file. If there is a backup folder, then copying the files from the USB backup drive might not be necessary. 
+				</div> 
+			 </div> 
+			 <div class="itemgroup info"> 
+				<div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-66532EA1-42ED-47A6-AB25-D004097B02DB"><span class="note__title">Note:</span> If the database is not available for restoration from the USB drive, then attempt to copy the database from the hard drive of the old PC. 
+				</div> 
+			 </div> 
+		  </li><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_67104884807849D1A766F19FCEA2DFEF"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-BFDCEE03-A26D-4F8F-B574-33C602A02B11"> To load files from the USB drive: 
+			 </span> 
+			 <ol class="ol substeps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEPS_4A3E5D4D305744D9BCE3266E54426EC8" type="a"> 
+				<li class="li substep" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_91FC0A02D326491EA39D643CC1D9F27A"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-9A1C7515-EE95-4757-B517-BFA5411ABCE7">Press 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-DB463EA1-9F8A-4CBF-A5AA-77F30605AD0A">Windows</strong> key and select 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F4783508-5AD8-48B7-8F05-039A14EFBB20">File Explorer</strong> icon or type 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-0DCD6CE9-4320-419F-B612-301300C2E292">file explorer</strong> and open the program. 
+				  </span> 
+				</li> 
+				<li class="li substep" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_5657E513B6CB4852A6F6390040763B25"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-5D27F37F-FF55-4691-8369-3323C1516659">Browse to and open the USB BACKUPDRIVE. 
+				  </span> 
+				</li> 
+				<li class="li substep" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_51D33FFB30BD4D0999ECE11D0957DA0D"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-56F41561-D7BE-4FE3-8662-155FC3ABF60F">Copy the most recently saved backup folder found in the BACKUPDRIVE, and then paste the backup folder into the 
+					 <span class="ph filepath" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-25673B9D-080D-4DB6-8D57-155737222AE1">C:\NexGen\Console</span> folder on the PC hard drive (replace existing files). 
+				  </span> 
+				</li> 
+				<li class="li substep" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_AF76F330453E40B5AA4BBD79B55AB7AC"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-266E8AA6-7012-4524-8EBD-10C0978FAB6A">Exit File Explorer. 
+				  </span> 
+				</li> 
+			 </ol> 
+		  </li><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_E22B03ED4F8343339DA98583338D6357"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-875608BE-32BC-415E-91FA-CB02AB127FFD">Restore the backup files. 
+			 </span> 
+			 <div class="itemgroup info"> 
+				<strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-5543AAEB-27A5-4F25-9116-05E8F301B828">Option 1: Restore the database by manually replacing the database folders. 
+				</strong> 
+				<ol class="ol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__OL_516275C3D687430899C4BD8A16143F67" type="a"> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_043006F4C1C344089A1628A3BC1CB9BD"> Open 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F3917B98-A5A3-4CD9-8DF5-234E939FCBBD">File Explorer</strong>. 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_01B837D5F6AD43B68305F93456393E40"> Browse to C:\NexGen\Console folder and open the 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-53DBEED5-4E77-44DD-9DF0-858CDB528535">Backup</strong> folder. 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-24CA55BE-FB75-42C3-91E9-26272240ECEB"><span class="note__title">Note:</span>  Make sure the Backup folder was copied properly from the USB flash drive and has the latest data or information. 
+					 </div> 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_24DD78F2193D4C879336E134D65BB447"> Open 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C5037894-FAB1-4A53-9A70-95F1907DC454">DRW</strong> folder in the Backup folder and then 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-AF7F5F16-0FDB-441A-8AA6-3A6E60606AB2">Copy NexStepBase</strong> and 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-3DAEBA34-DF11-4EF5-A695-06DB9EB99C93">EventBase</strong> folders. 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_B90A41B819E048DFA5FEABA724EC4BF4"> Browse back to C:\NexGen\Console folder, open 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F7AE663F-25DE-4029-8F56-7BBD0EABF965">DRW</strong> folder, then 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-64DA6CBF-C62A-421E-8AB0-16DD8281A336">Paste NexStepBase 
+					 </strong>and 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-D109D44D-9F4C-429B-B3BC-08BBD7A42BB5">EventBase</strong> folders to replace the existing folders. 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_076339694B7D4C47A7C97A294338D0D6"> Exit 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-719EFAB6-176C-4F3C-A959-D8C4682428F9">File Explorer</strong> and restart the user interface. 
+				  </li> 
+				</ol> 
+			 </div> 
+			 <div class="itemgroup info"><strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-4D4B0993-4D80-445E-96DC-A065D13F84E8"> Option 2: Restore the database using the Restore Utility.</strong> 
+			 </div> 
+			 <ol class="ol substeps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEPS_C3812840E2F341E9B4331A82CEB27D9B" type="a"> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_88F9F4B570A6456B9E2D51F524EE6C49"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-69988844-C79C-4CAA-BAD2-7C824F27123C">Press the 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-2BB91276-269E-4DBF-A747-DB2070D67A04">[Windows]</span> key, and then select 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-B26B1DDF-1799-40DE-9608-86182A9DBE48">Restore Utility</strong> icon or type 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6A673241-F2D8-4145-969C-F3FDEABB4071">restore utility</strong> and open the program. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-BE7F10C6-378F-400F-99E9-C88E6C282D56"><span class="note__title">Note:</span>  
+						<ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_7E587DEBA2A64CAAB62D8D6E211707BD"> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_E5A381F91D674327AFAE5C1AE19D3EAF">When restoring onto a new PC or a new PC hard drive, the software must be loaded first because the software contains the Restore Utility. 
+						  </li> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_82F814878CCC4B86B5B4B9BF082DB062">Before starting the restoration, exit the user interface. Keep the instrument powered on. 
+						  </li> 
+						</ul> 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_CAE7B1F2D2DB44D38C2E903A859320A1"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C071D081-11EC-49EA-90BA-71B716ACED41">In the Restore Utility, select 
+					 <span class="ph menucascade" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-649A9687-34D8-4F92-AE7C-DF8C786D5BDF"><span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-5A0311B0-7002-44CE-A339-9A933A0C3BFF">Next</span> &gt; <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A06A173A-6D75-472A-87BE-ECAF8D818BDC">Restore Console PC</span> &gt; <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-74B96BC8-CF48-4E15-9443-3F2E1A35AE1D">Next</span></span>. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <figure class="fig fignone" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__FIG_72A99570221C4ECA9D097086A761CB90"><br /><img class="image" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__IMAGE_7651F4C009384D52ACA328C852183206" src="GUID-C47D8122-AC59-44A2-9286-3C6E688AF859-default.gif" /><br /> 
+					 </figure> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_FAD9C8B521C0450DBF3C51F17EF670A1"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-370A6366-6045-44BD-B3C9-28159BF0CFD0">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-E746BBCD-0C9A-414A-A60B-CE8A54076C62">Restore Registry and Database</span>. Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A2C89A8D-A9BE-4FB0-9F24-5963F3236C4E">Next</span>. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-32DB9437-9334-4C9E-B434-C16A99EFD3E0"><span class="note__title">Note:</span> If there is an error copying the files, confirm that you have exited the Poet Object Server and then retry restoration. 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_8C47057EBBD84469B12E724CFE19A9BC"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-71174F92-AC8B-4CC1-82FF-65F367DD5A71">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6D920F86-1905-4D45-97A9-95D009515473">Next</span> to the IP address information. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-87E20ED4-963B-4BC8-8FE6-8B975092CD31"><span class="note__title">Note:</span> Typically the IP address for the console is 192.168.2.3, the workgroup server is 192.168.2.3, and the analyzer is 192.168.2.4. For Windows 8 systems, 127.0.0.1 is the typical workgroup server IP address. 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_2130DC69A454407A8150B70F7F6D0767"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-3257180A-AF31-46C9-BDE8-9EB2B653C3EC">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-954DC8A8-B609-4896-803D-C3C632DCC551">Restore Supplies From Analyzer</span>. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-9D81E8E2-1A28-4E3E-A43F-07162978CD99"><span class="note__title">Note:</span>  
+						<ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_4A144C986FCF49CA849D3C317540FD7D"> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_EE3547F3B7044CA28ECD22E725F6CE61">During restoration, the AU must be powered on and must be able to communicate on the TCP/IP network. 
+						  </li> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_8B56E72B051C41A3AE49ACDABAF1475A">An incorrect AU or server IP address in the registry causes an error at this step. 
+						  </li> 
+						</ul> 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_CC3414049E4E4B2ABFE49E43BAB346D3"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-55E707BA-BFD3-406C-A7CF-935B0527D5B1">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C7576148-CF65-4C46-935A-9A90286BCCBD">Next</span>. 
+				  </span> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_1C5824AE7FED4181AA36BEC8D9DCB684"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-9F096FA8-8079-42F4-B3C2-54A7EA9BD1DE">If a 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-11D61C42-6DAD-4618-909E-EB412D25F74D">Delete Reagent</span> dialog window is displayed (reagents are listed as off-board punctured or off-board unpunctured), select and then delete the off-board punctured reagents. Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A1EC75FB-F67E-4C40-A8AF-E5348C135BC3">Next</span>. Select and then delete any off-board confirmed unpunctured reagents (reagents that cannot be found and confirmed to be unpunctured). Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C02F88AE-5E75-4F09-9552-885EBD0C3A5E">Next</span>. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note caution note_caution" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C20F51B7-B193-4A15-BCB3-56C726512387"><span class="note__title">Caution:</span> Any punctured reagents that were used after the backup was made and that were not on-board during the restoration need to be identified and discarded. When reagents are off-board, their status is not stored in instrument memory. 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_81BF90B7B91347D4A79DA4A92AC44F2E"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-762F23EA-2EDD-49A7-A046-5F07F5AC0E63">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-04B57507-7CDC-4525-BA32-F1D492F9619B">Finish 
+					 </span> with 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A725DA12-F911-42AA-B2CE-1223B499608C">Reboot</span> selected. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-2A5CE857-8615-4DA1-BCA2-707BA97A1C93"><span class="note__title">Note:</span>  
+						<ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_18606AE6B2FB4DAD98531473D95B1756"> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_AA1F1BD7E3F64AD2ADABD13B83AEA7F2">When restoration is complete, both the console PC and the AU reboot automatically. 
+						  </li> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_F084CBA400D14C81B1932BB00C3D1DD6">The user interface launches. While the instrument reboots, it might not appear to communicate for up to 5 minutes. 
+						  </li> 
+						</ul> 
+					 </div> 
+				  </div> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-3D86CD2C-2E27-4421-AE75-17EB69EFE733"><span class="note__title">Note:</span> When rebooting the Privacy &amp; Security compliant Windows 8 or Windows 10 PC, you must enter security password &quot;<strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__d29e18">Access2Admin</strong>&quot; when prompted to launch Windows. 
+		<p class="p"> 
+		</p><img class="image" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__d29e23" src="GUID-57B84EB9-A496-4109-A064-4A160B1C8257-default.png" /> 
+		<p class="p"> 
+		</p> 
+	 </div> 
+				  </div> 
+				</li> 
+			 </ol> 
+		  </li><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_A11AE5093EB741EA9EC628C2186E28D4"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-7B80A9CF-D340-491D-AB80-D450FF422378">Verify instrument operation. 
+			 </span> 
+			 <ol class="ol substeps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEPS_7F0B38A6B78B4A299985552EFFFB8C5C" type="a"> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_E3096B95CC56477086E3D68314B7F086"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6741EB8B-A712-47BB-B2FB-220824C63C1B">Confirm that the software version shown at the bottom right of the 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-20A20192-7773-4798-AD6F-645EA2F53529">Main Menu</span> is the current version. 
+				  </span> 
+				  <div class="itemgroup info">If needed, update the software and the APF to the current version. 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_46C4915C339445BA8CC2D5A397A98026"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F10A7521-6943-4F00-A257-31AAD09377DE">In the 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A4114C30-6454-429E-BF6A-6377B5A54196">Main Menu</span>, select 
+					 <span class="ph menucascade" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A184A7B0-50E1-4666-889A-080197C487B2"><span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-20631202-13A0-4073-9954-6518D7355F1F">Supplies</span> &gt; <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-9F989DAE-DC41-4AE8-9708-AF17E32B5EEB">Bulk Supplies</span></span>. Check the status of the supply inventory and load any required supplies. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C69A8ED9-84D5-4DAE-ABF1-48409630AB75"><span class="note__title">Note:</span> The restore process identifies on-board expired or deleted reagent packs with question marks (???). Having one or two on-board packs with question marks might be normal. If the substrate supplies are empty and all on-board reagents are identified with question marks (???), then you might have selected 
+						<span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-AAD4E2CE-754C-49A5-918F-BA4247AF342B">Restore Analyzer</span> inadvertently. Other possibility is that running MFG Cleanup erased the AU test count and run time. 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_182D66563F6B4DE39D0DF907D0CA3392"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-3B4A50D0-6B64-4A8F-826F-7FE533E99CCD">In the 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-CF720C45-21E7-4CA9-90D9-CF4BCE1494D5">Main Menu</span>, select 
+					 <span class="ph menucascade" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-2DD3CAD9-F7D1-4195-AE64-A846E29383BC"><span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-D571DBC4-A3C8-4C2F-AF66-F08A6A8919A0">Diagnostics</span> &gt; <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C2DA7636-D81D-4AFE-B2A0-BB30653748D5">Initialize</span></span>. Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-BC4C1E13-F7D0-41DC-82FB-F082D0E04A1D">Clear all Positions</span> and 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-CDA94ADB-47B0-4C3A-8544-16F15EC1396D">Remap</span> the reagent storage. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note caution note_caution" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-59636E4B-DB9F-4146-B858-21511F985730"><span class="note__title">Caution:</span> If there are on-board deleted or expired reagents (marked with question marks) after restoration, then unload all the reagents and confirm that the unopened reagents on the reagent supply display are actually unopened. Reload the reagent packs that are not marked with question marks (???). 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_0C4CA1ABACD14E7C94FFA98BE67BF001"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-41E4678D-0358-4543-8F3A-1B234814CAB0">Confirm that the following items are configured correctly and are functional: 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_616AD46C467048C4865644E126C7F3A4"> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_D45B2EBBCB5D44589EF2079C93451012">Printer setup 
+						</li> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_F935EA2A66C14C7B99AA260B972B05D9">Auto Delete setup 
+						</li> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_188DDEC6170E4C0295807C87F679A9BF">Scheduled Backup 
+						</li> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_1D9D205711B14555924B7B81479F4F66">LIS 
+						</li>
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_0630EF9EE8E648F89A90701B4EDF40C2">PROService
+						</li> 
+					 </ul> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_71E1940AB95749CEB7ACA8291123C189"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-7C9C50DC-FADC-4C92-B33A-36E55AF179A9">Perform QC and ensure that the results are within customer specifications and that there are no problems posting results to the restored database. 
+				  </span> 
+				</li> 
+			 </ol> 
+		  </li></ol> 
+	 </div> 
+  </article> 
+<div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-4863982E-6513-4543-A4C7-30ED5571FB04.html" lang="en-US" title="23.6.11 Database - Restoring Console PC from Backup"><div><span class="ph num-prefix">23.6.11 </span>Database - Restoring Console PC from Backup</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04" role="article"> 
+  <h1 class="title topictitle1" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Database - Restoring Console PC from Backup</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to restore the database of a DxI console PC from a USB backup drive. 
+  </p> 
+	 <div class="section prereq p" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__PREREQ_BE84BC2760A44C4F833907F93917B892"> 
+		<p class="p">DxI Software must be installed before performing the following procedure. 
+		</p> 
+	 </div> 
+	 <section class="section context" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="p"><strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9390FE24-672C-4311-9051-3BA057403A21">Restore the database of a Windows XP console PC with DxI Software 5.2 and below from a backup when: 
+		  </strong> 
+		<ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_2D4E68CD88B749D59FA0046BE6E00086"> 
+		  <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_68781C171EA646CEAB00D376218388A3"> Replacing a defective or corrupt hard drive. 
+		  </li> 
+		  <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_28F2D08704D94582B5B3791C8C689C10">Swapping a functioning, but suspect, PC with a new PC. 
+		  </li> 
+		  <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_D7C0006C617A4007A416C3C0607A5165">Restoring the database using a USB drive. 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Load the backup media. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEPS_94B25078AD764EF7ADDA4827B5648BDD" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_36136754518044CC9C3ADD0A15928D45"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B401654D-E823-4DA9-BF12-7309541E6156">In the 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-7CC941CF-B607-422B-B4A3-53EDA4D7E31F">Main Menu</span> screen, press 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9B2EE9C4-4591-4C19-9A04-530E755B4658">[Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0BC30801-74D5-4076-B341-4B7A2600D8C5">Access2Support</kbd> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_7431914204D3484386F5CBA81CABE5A8"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-6F69AE5C-D67A-4E92-8D63-EB222C270244">Exit the Poet Object Server, if present. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_778713E4C6174B52B45FCB9BC28179F7"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-72EE1DA2-832C-4535-AFE5-F2A7771EC3B7"> Insert the USB drive into a USB port on the PC. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-6BC41E4B-EC93-4354-ABD1-E5DB281542C0"><span class="note__title">Note:</span> If the database is not available for restoration from the USB drive, then attempt to copy the database from the hard drive of the old PC. 
+					 <p class="p">Refer to the 
+						<a class="xref" href="GUID-135608A4-9F48-4B33-A35B-AB28819E8AF8.html" title="This procedure describes how to transfer files from the old Console PC hard drive to a replacement Console PC hard drive.">Software: Transferring Files Between PC Hard Drives</a> procedure. 
+					 </p> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_74B05B6CA1AB49D29ECA6385DD71EE41"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-371D2645-2605-487C-B8D9-6EB327966DDB">Determine the files to use for backup. The two options are: 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_D7AE8A48CC954160BEB03A3A10056122"> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_41C6361DA2604C06A47700BC59055C89">Load files from the USB drive. 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_0455A95EE00B4E798CECDE543FC70415">Loads files from the old hard drive. 
+				</li> 
+			 </ul> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9589BFF2-2E24-45DE-AFFB-79E7FBA2CDA6"><span class="note__title">Note:</span>  The backup folder on the PC hard drive always contains the most recent backup file. If there is a backup folder, then copying the files from the USB backup drive might not be necessary. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-613434B3-005A-441D-9F75-CBAB050D75D6"><span class="note__title">Note:</span> If the database is not available for restoration from the USB drive, then attempt to copy the database from the hard drive of the old PC. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_699236B0872C48F8B6CFB16021194FFD"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-84E78AB7-40C3-4710-B014-085223269BE5"> To load files from the USB drive: 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEPS_08F5AEF784294956876302983DD3D844" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_4185117E989141D199346D2B3BCC66F1"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8EB76006-CF01-4D71-A60A-AF4C12FF5A72">Press 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-668F4A10-29D6-4E2C-AEB5-1EC25C4E4674">Start &gt; Programs &gt; Windows Explorer</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_09D2EE62A48A43CE9171942E8167E0A0"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-775FB420-A560-4C39-9893-94A0611FE16C">Browse to and open the USB BACKUPDRIVE. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_0D0FD50BEBCF4544981440C5B3E67B41"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8AF3BE55-6D90-4771-8AE2-A1A8F0B1D002">Copy the most recently saved backup folder found in the BACKUPDRIVE, and then paste the backup folder into the 
+				  <span class="ph filepath" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-973136E4-3D98-4135-B03D-D7F01AB13EEC">C:\NexGen\Console</span> folder on the PC hard drive (replace existing files). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_246EC34AFB5746F6819054DF99E1CFB7"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-30A15C63-9D72-4787-BE9C-35B76CEAE4FE">Exit Windows Explorer. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8D23001D-7865-4957-BC1E-8F36BFA5B2B1"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_D2EE4C81A8E74745B1512539C8DB9967"> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_387F43275E4446FAB8955A44A2D1D651">Windows XP is required for support of the USB drive. USB support must be enabled in the PC CMOS. 
+						</li> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_A90EBAC021664D1DA4049A0CF0DB87AC">The immediate or scheduled backup stores the previous five backups in the 
+						  <span class="ph filepath" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-C3635643-F8E3-4737-AEDE-E053D3AE4020">C:\NexGen\Console\</span> directory. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_6B9A41598C1D410FAEDC392CBC1ACFE7"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-EF3BA73D-616A-4AE8-91AD-2882B17C5F40">To load backup files from the old hard drive. 
+		  </span> 
+		  <div class="itemgroup info"> Refer to the 
+			 <a class="xref" href="GUID-135608A4-9F48-4B33-A35B-AB28819E8AF8.html" title="This procedure describes how to transfer files from the old Console PC hard drive to a replacement Console PC hard drive.">Software: Restoring Console PC Database from Files Transferred Between Hard Drives</a> procedure. 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_EA89A77948EB454A8A9F2539174BA35E"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-E211B0ED-588D-4CD7-A6B5-C635951E008D">Restore the backup files. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-DAACA94D-00E6-4909-A337-17C6F804BAC8">Option 1: Restore the database by manually replacing the database folders. 
+			 </strong> 
+			 <ol class="ol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__OL_C4C5992926C043998AB14CEE347C1964" type="a"> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_AABFE02F29E64058B4B1FFFA96925E4B"> Open 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-A6CE0891-568D-4B65-AB50-CA9061CC19FD">Windows Explorer</strong>. 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_5F94F84C313A4678B4F4F0372ABD58BD"> Browse to C:\NexGen\Console folder and open the 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-41E5F5E2-246E-45C4-B065-97FF594C82BE">Backup</strong> folder. 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-462031B8-DC45-436C-AC10-592FD0A11893"><span class="note__title">Note:</span>  Make sure the Backup folder was copied properly from the USB flash drive and has the latest data or information. 
+				  </div> 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_5F317BEC91B44E0F8FA2EE13B6208A21"> Open 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9A7D1A08-6C50-42FA-B1F8-E3C8D847EF00">DRW</strong> folder in the Backup folder and then 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B8440F41-1C92-4C8D-BEDD-37CF41996ED2">Copy NexStepBase</strong> and 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-147EE72A-D797-42AE-9214-4CB7B839681F">EventBase</strong> folders. 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_86CB00DDEE6048F5B883FE63F656B644"> Browse back to C:\NexGen\Console folder, open 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-78F9948A-1F1C-4CD3-830F-79A85CED053B">DRW</strong> folder, then 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-ED5394CF-D4A7-4CF4-81CF-153D8C00C01A">Paste NexStepBase 
+				  </strong>and 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-F2AA1310-19B2-4013-B94E-9EA10C3DF970">EventBase</strong> folders to replace the existing folders. 
+				</li> 
+				<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_AF4351DE1B704639837C60DC3F192060"> Exit 
+				  <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-755DDF5D-61F0-428F-BE80-A1CDF7B517A4">Windows Explorer</strong> and restart th user interface. 
+				</li> 
+			 </ol> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <strong class="ph b" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-094AA47F-9281-46BD-A44C-570C93445CFA"> Option 2: Restore the database using the Restore Utility.</strong> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEPS_2D2BDB525F0344A49561B2A4CC548B98" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_99B75526FB3E4723B2C952E576B38178"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-82C60C98-C869-41E9-A256-C8EFFFC012D6">Press 
+				  <span class="ph menucascade" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-74C99A3E-E924-4DBE-960B-DC659EF0CB2E"><span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-F4980346-2055-4EFB-BF55-49655769F0AB">Start</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-302B9472-0A8B-4E87-AC5B-264E3BD4A0E0">Programs</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-06438816-DF70-441F-A0B0-90E070A342C0">NexGen</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-2346AE04-A20C-4003-AA5A-A6455A6C8EF1">Restore Utility</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-19BB96DF-6B23-4E75-BD2B-A7E5036465C4"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_6F9F8CC1E2A64394BFECBD3E641FC309"> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_7350EE25FC0A476D95A093F552F48405">When restoring onto a new PC or a new PC hard drive, the software must be loaded first because the software contains the Restore Utility. 
+						</li> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_AE4A1EA18845492994D1BB101EAF9C8F">Before starting the restoration, exit the user interface. Keep the instrument powered on. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_2762FC674809430D9F4D43C203A82687"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-052F50AA-56CF-4503-A2EB-1612211F0736">In the Restore Utility, select 
+				  <span class="ph menucascade" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-C251BECD-2A1A-4A39-A6C5-21BCDEA93426"><span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-5855DEE4-8D6D-46F1-B4C4-724BC95AEBC0">Next</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0C10964E-F147-444A-B9D8-AAAFDD93DB90">Restore Console PC</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-33EEACA3-A414-4CC2-AC90-F39100B219ED">Next</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__FIG_92EC2AFCA7AB45EB8D44E9936A1EFD4A"><br /><img class="image" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__IMAGE_0953ADA27AA146058D3F37789082D6B9" src="GUID-C47D8122-AC59-44A2-9286-3C6E688AF859-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_4FD7047D1E5844A78989543088454943"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-198697C6-6267-4152-BE78-2A6DD0BF1CC0">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-ED14B1B8-581E-40F2-88A5-9367D58782A3">Restore Registry and Database</span>. Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-AA06056A-7AB5-46BB-97A0-9D5FEC655E9F">Next</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-C7652B97-7756-46DA-B2BB-36F011B75861"><span class="note__title">Note:</span> If there is an error copying the files, confirm that you have exited the Poet Object Server and then retry restoration. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_1227228DEA2E4263A7EBCAFB2ABA7B86"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-501E56E3-44A0-428D-AFD1-2F90B20152C6">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B591EC81-3FD9-4397-B320-9307FF334A83">Next</span> to the IP address information. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8CC6C859-7891-4935-A1C2-E7837A9E4343"><span class="note__title">Note:</span> Typically the IP address for the console is 192.168.2.3, the workgroup server is 192.168.2.3, and the analyzer is 192.168.2.4. For Windows XP systems, 127.0.0.1 is the typical workgroup server IP address. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_8843E60F36B14981A57D35FAD7C8B03D"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9F5C4463-D474-42CD-8362-3D4546FED8C4">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8D03CF3C-1508-4ADD-8FBE-5AF967FAEB0E">Restore Supplies From Analyzer</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-7713CE1B-9358-4159-AEFB-C32B7DC3C19C"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_B6BE20AEB1B14E01B190204F78942B60"> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_6CEC12D48DCD4BA5AAEF07001605B8E4">During restoration, the AU must be powered on and must be able to communicate on the TCP/IP network. 
+						</li> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_84DC54F378F24254BE9232B0DEE3C024">An incorrect AU or server IP address in the registry causes an error at this step. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_CEF6B7202EF94035B3F0E29E89E6A3F3"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-61D6DFC4-78E9-452B-A064-3467E8F2C6BA">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-6CB2DFF0-CEF2-4124-8DCA-01F1937D570E">Next</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_BB0C8F0D5E2B4F2199A88A1F635487F9"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-78B871E5-0448-487B-B3A4-450A2592B859">If a 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-1184604D-2356-4342-AE8F-885CEEEB85D8">Delete Reagent</span> dialog window is displayed (reagents are listed as off-board punctured or off-board unpunctured), select and then delete the off-board punctured reagents. Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-90C4AD3F-4117-40A7-B453-FAE0CB7667F8">Next</span>. Select and then delete any off-board confirmed unpunctured reagents (reagents that cannot be found and confirmed to be unpunctured). Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9808FBD9-BBDC-4DB1-99B6-426BE49B6FE0">Next</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-DFBDB097-D3F1-42A3-8053-CF3604F7418D"><span class="note__title">Caution:</span> Any punctured reagents that were used after the backup was made and that were not on-board during the restoration need to be identified and discarded. When reagents are off-board, their status is not stored in instrument memory. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_BA9B43E6E27C4BCC8D3CC217640CB9D0"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-86EEEE9C-1B84-4A6A-A3D6-31B944F9B462">Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-778366B4-D9B4-4EAE-8974-0C63A2673E80">Finish 
+				  </span> with 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B4775D5C-3D5C-42ED-AE46-5DE16ABAB9BC">Reboot</span> selected. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-63E6F5A7-B6C4-4573-BC06-617C2734996E"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_8EAB0ACD6ABE41E8817CA1E21BCA982F"> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_228092BD5A4C4F2B941EC3FAFA2FB9B8">When restoration is complete, both the console PC and the AU reboot automatically. 
+						</li> 
+						<li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_6F75E1DD934C4A35B964ACADAAFF7CD2">The user interface launches. While the instrument reboots, it might not appear to communicate for up to 5 minutes. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__STEP_31B23ABDA8C14C73A4845CD6BCC56EB5"> 
+		  <span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0172ECF6-F7FF-471F-B6EA-D1B416BB9B0A">Verify instrument operation. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEPS_537BAD5E54D044D1AEC87211B687E256" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_EA286369AA6D47B7A5268AC1FD46E1CD"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-BBFB41E5-F16B-4D9E-A811-D6C337FF631D">Confirm that the software version shown at the bottom right of the 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-73398188-B488-4FA4-B237-9AE6CEBC3531">Main Menu</span> is the current version. 
+				</span> 
+				<div class="itemgroup info">If needed, update the software and the APF to the current version. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_601C4C3DDB034508884473C103C1FD94"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-11811FC0-F183-44FC-B393-A6B7FB2C72A7">In the 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-FA46E1AA-DF54-423B-B902-27F08532620E">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-2F9E1594-6868-4045-B7F7-038494F41B5C"><span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B724DD1C-D29F-47E3-8BFE-6F2E922DCF67">Supplies</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-A4F73D43-98D6-49A7-9D9C-4CC65632064E">Bulk Supplies</span></span>. Check the status of the supply inventory and load any required supplies. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-0591DCF2-C940-4532-B603-F690D395CE18"><span class="note__title">Note:</span> The restore process identifies on-board expired or deleted reagent packs with question marks (???). Having one or two on-board packs with question marks might be normal. If the substrate supplies are empty and all on-board reagents are identified with question marks (???), then you might have selected 
+					 <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-8D83BC15-4364-455E-943E-552AAA8ABA16">Restore Analyzer</span> inadvertently. Other possibilities are that the NVRAM PCB in the AU is defective or running MFG Cleanup erased the AU NVRAM. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_5612B42B285048C5B25A0564B6563235"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-EACFF044-AE7A-49A0-8537-1762C4C97ED2">In the 
+				  <span class="keyword wintitle" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-B4CAEC3E-2561-4DB6-9F58-E3BA74E79609">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-7DFF43B5-448E-472A-B29E-D0A63C8F2E4C"><span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-6398E39F-76FC-41C1-AEB9-5665F3180295">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-49559CFA-5A61-49C0-878C-26C127FBDCE5">Initialize</span></span>. Select 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-7430575D-01B5-4B7F-B1EB-79D2DC5E4B52">Clear all Positions</span> and 
+				  <span class="ph uicontrol" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-3852CDDF-DDC8-46C5-92C7-E0A9D7911402">Remap</span> the reagent storage. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-71EA4E65-FAC6-4281-A2B0-F22552AA183C"><span class="note__title">Caution:</span> If there are on-board deleted or expired reagents (marked with question marks) after restoration, then unload all the reagents and confirm that the unopened reagents on the reagent supply display are actually unopened. Reload the reagent packs that are not marked with question marks (???). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_F57699A602774726B7FE67064F40D472"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-9146A5E5-93FD-4BB5-8A8D-25D6B1534F0F">Confirm that the following items are configured correctly and are functional: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__UL_20A7032FC043412F98A79BEF6C93D9D1"> 
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_3739F94037E64B55B1F81E8F5420D2F7">Printer setup 
+					 </li> 
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_81351E18F3DF4916A09B8A55C69A478F">Auto Delete setup 
+					 </li> 
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_0F3798A5F2E14EBAAE33E09440976953">Scheduled Backup 
+					 </li> 
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_7BF73B305C0B48E8855923F7517FE81D">LIS 
+					 </li>
+					 <li class="li" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__LI_75AD63DD40CA4B81BEEB24DD2D2BE147">PROService
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__SUBSTEP_C286DE3FBABD4537B4A6698FB7383120"> 
+				<span class="ph cmd" id="GUID-4863982E-6513-4543-A4C7-30ED5571FB04__GUID-35BFD8F5-869C-48E2-B931-C2DCF2334505">Perform QC and ensure that the results are within customer specifications and that there are no problems posting results to the restored database. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+  <nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><article aria-labelledby="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A2E21905-4C5C-4C4E-80E8-B30B60FA0064" class="topic task nested1" id="TASK_20E148F3A4A343DFB7D025E1C92E2625"> 
+	 <h2 class="title topictitle2" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A2E21905-4C5C-4C4E-80E8-B30B60FA0064"><a id="GUID-A2E21905-4C5C-4C4E-80E8-B30B60FA0064"></a></h2> 
+	 <div class="body taskbody"> 
+		<section class="section context" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__CONTEXT_FB70F9FF54744006903BD19737E694A2"> 
+		  <div class="p"><strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-B5F14D8E-0623-442A-8B21-5A81EEA16E6A">Restore the database of a Windows 8 Mini PC with DxI Software 5.3.1 and above from a backup when: 
+			 </strong> 
+			 <div class="note caution note_caution" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-8D613767-F26D-4F34-B3E1-88B38D660E8A"><span class="note__title">Caution:</span> Restore from backup &gt;&gt; Restore Supplies from Analyzer does not work in SW V 5.3.1 where the AU NVRAM is simulated. All punctured reagents will need to be discarded if restoring from a previous backup (or immediate backup if the system was running when the issue occurred). 
+			 </div> 
+			 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6C9B8E02-14EF-4E4D-8D22-82A869615581"><span class="note__title">Note:</span> DxI Software 5.3.1 is compatible to Windows XP console PC. If the software was installed on Windows XP console PC, then follow the Windows XP section to restore the database. Poet database application is replaced by Fast database application. 
+			 </div> 
+		  <ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_0FD2F52373DD44ADB1DF52E80AEFA4B7"> 
+			 <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_C13EDA0E6E7A4A16958B98F9E4C162E7">Swapping a functioning, but suspect, PC with a new PC. 
+			 </li> 
+			 <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_686690FCCE944A13877EC0AC010C8EE4">Restoring the database using a backup USB drive. 
+			 </li> 
+		  </ul> 
+		  </div> 
+		</section> 
+		<ol class="ol steps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEPS_781213D7D1624772939672EC170CA8DC"><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_ABAF30CCC04447C1887D468EC09872CE"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6311710B-0953-4F62-87AF-F88DF30A0D1E">Load the backup media. 
+			 </span> 
+			 <ol class="ol substeps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEPS_CA3C72317FE149358BB769329D9FE53F" type="a"> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_C1E2CDA9DFFD49D6BE88A5D2D9841885"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F3B06D18-EBDA-4A9E-93A6-7984665C3FFC">In the 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-7407EC76-FA8E-4529-A3BD-317F42550FAD">Main Menu</span> screen, press 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A95E0B01-A6DE-4383-9F1F-F3897D32F98B">[Alt] + [F4]</span>, and then enter the password 
+					 <kbd class="ph userinput" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-389CEC5F-422A-4D5C-B2D3-C023176C735B">Access2Support</kbd> to exit the user interface. 
+				  </span> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_F993B00EADE74725837785F787B868C3"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A80CA652-F238-4A7E-B4C8-3FBA3871CEF5">Exit the Fast Objects Server, if present. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_9BF89F02AEA94C02837F69272EA40A00"> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_8AB4FAE8A6EF4257904B67A700AB639A">Press 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-1FC9E64D-1C5B-4B5F-B0D8-DB01603DB3D2">Ctrl + Alt + Delete</strong> and select 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-4606CAB2-FC53-477E-9DB2-9389F9441753">Task Manager</strong> or right click on the task bar and select 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-B48CE971-C1E9-48CF-916D-524D999F6557">Task Manager</strong>. 
+						</li> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_02D9E15ED4284C39B63172CB100CFBE7">In the 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-99E9DFF8-5FDA-4B75-890C-F1DD852B5647">Task Manager</strong> box, click on 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-887AD746-0B9E-4CE2-A502-495A75A51B0A">Processes</strong>, select 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-28AAE15E-381A-4466-B087-87235F82BD76">FastObjects Server</strong> and click on 
+						  <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-E39BE0BE-734C-44B4-88CA-922306B0ECDE">End Task</strong> in the bottom corner of the box. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_70D81E49A5D240F58AE6CBCC360F02EE"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-CC03C5C7-8B34-4277-9C48-CDE130D1AA1C"> Insert the USB drive into a USB port on the PC. 
+				  </span> 
+				</li> 
+			 </ol> 
+		  </li><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_F12D4D9ECB8E4F468746D39B20C12BFF"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-8928CE55-4A39-4E89-ABFB-B483AC17F377">Determine the files to use for backup. The two options are: 
+			 </span> 
+			 <div class="itemgroup info"> 
+				<ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_77E80A39F290496B98F02148EB11DD96"> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_61F91E0F4DE6466E97C5B36C2F4723C5">Load files from the USB drive. 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_42E42401C3A64AA3A731D9E877D446C8">Loads files from the old hard drive. 
+				  </li> 
+				</ul> 
+			 </div> 
+			 <div class="itemgroup info"> 
+				<div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6D48CDA6-83CF-405F-B911-D5B71387C192"><span class="note__title">Note:</span> The backup folder on the PC hard drive always contains the most recent backup file. If there is a backup folder, then copying the files from the USB backup drive might not be necessary. 
+				</div> 
+			 </div> 
+			 <div class="itemgroup info"> 
+				<div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-66532EA1-42ED-47A6-AB25-D004097B02DB"><span class="note__title">Note:</span> If the database is not available for restoration from the USB drive, then attempt to copy the database from the hard drive of the old PC. 
+				</div> 
+			 </div> 
+		  </li><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_67104884807849D1A766F19FCEA2DFEF"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-BFDCEE03-A26D-4F8F-B574-33C602A02B11"> To load files from the USB drive: 
+			 </span> 
+			 <ol class="ol substeps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEPS_4A3E5D4D305744D9BCE3266E54426EC8" type="a"> 
+				<li class="li substep" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_91FC0A02D326491EA39D643CC1D9F27A"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-9A1C7515-EE95-4757-B517-BFA5411ABCE7">Press 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-DB463EA1-9F8A-4CBF-A5AA-77F30605AD0A">Windows</strong> key and select 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F4783508-5AD8-48B7-8F05-039A14EFBB20">File Explorer</strong> icon or type 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-0DCD6CE9-4320-419F-B612-301300C2E292">file explorer</strong> and open the program. 
+				  </span> 
+				</li> 
+				<li class="li substep" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_5657E513B6CB4852A6F6390040763B25"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-5D27F37F-FF55-4691-8369-3323C1516659">Browse to and open the USB BACKUPDRIVE. 
+				  </span> 
+				</li> 
+				<li class="li substep" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_51D33FFB30BD4D0999ECE11D0957DA0D"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-56F41561-D7BE-4FE3-8662-155FC3ABF60F">Copy the most recently saved backup folder found in the BACKUPDRIVE, and then paste the backup folder into the 
+					 <span class="ph filepath" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-25673B9D-080D-4DB6-8D57-155737222AE1">C:\NexGen\Console</span> folder on the PC hard drive (replace existing files). 
+				  </span> 
+				</li> 
+				<li class="li substep" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_AF76F330453E40B5AA4BBD79B55AB7AC"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-266E8AA6-7012-4524-8EBD-10C0978FAB6A">Exit File Explorer. 
+				  </span> 
+				</li> 
+			 </ol> 
+		  </li><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_E22B03ED4F8343339DA98583338D6357"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-875608BE-32BC-415E-91FA-CB02AB127FFD">Restore the backup files. 
+			 </span> 
+			 <div class="itemgroup info"> 
+				<strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-5543AAEB-27A5-4F25-9116-05E8F301B828">Option 1: Restore the database by manually replacing the database folders. 
+				</strong> 
+				<ol class="ol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__OL_516275C3D687430899C4BD8A16143F67" type="a"> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_043006F4C1C344089A1628A3BC1CB9BD"> Open 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F3917B98-A5A3-4CD9-8DF5-234E939FCBBD">File Explorer</strong>. 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_01B837D5F6AD43B68305F93456393E40"> Browse to C:\NexGen\Console folder and open the 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-53DBEED5-4E77-44DD-9DF0-858CDB528535">Backup</strong> folder. 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-24CA55BE-FB75-42C3-91E9-26272240ECEB"><span class="note__title">Note:</span>  Make sure the Backup folder was copied properly from the USB flash drive and has the latest data or information. 
+					 </div> 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_24DD78F2193D4C879336E134D65BB447"> Open 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C5037894-FAB1-4A53-9A70-95F1907DC454">DRW</strong> folder in the Backup folder and then 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-AF7F5F16-0FDB-441A-8AA6-3A6E60606AB2">Copy NexStepBase</strong> and 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-3DAEBA34-DF11-4EF5-A695-06DB9EB99C93">EventBase</strong> folders. 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_B90A41B819E048DFA5FEABA724EC4BF4"> Browse back to C:\NexGen\Console folder, open 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F7AE663F-25DE-4029-8F56-7BBD0EABF965">DRW</strong> folder, then 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-64DA6CBF-C62A-421E-8AB0-16DD8281A336">Paste NexStepBase 
+					 </strong>and 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-D109D44D-9F4C-429B-B3BC-08BBD7A42BB5">EventBase</strong> folders to replace the existing folders. 
+				  </li> 
+				  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_076339694B7D4C47A7C97A294338D0D6"> Exit 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-719EFAB6-176C-4F3C-A959-D8C4682428F9">File Explorer</strong> and restart the user interface. 
+				  </li> 
+				</ol> 
+			 </div> 
+			 <div class="itemgroup info"><strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-4D4B0993-4D80-445E-96DC-A065D13F84E8"> Option 2: Restore the database using the Restore Utility.</strong> 
+			 </div> 
+			 <ol class="ol substeps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEPS_C3812840E2F341E9B4331A82CEB27D9B" type="a"> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_88F9F4B570A6456B9E2D51F524EE6C49"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-69988844-C79C-4CAA-BAD2-7C824F27123C">Press the 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-2BB91276-269E-4DBF-A747-DB2070D67A04">[Windows]</span> key, and then select 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-B26B1DDF-1799-40DE-9608-86182A9DBE48">Restore Utility</strong> icon or type 
+					 <strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6A673241-F2D8-4145-969C-F3FDEABB4071">restore utility</strong> and open the program. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-BE7F10C6-378F-400F-99E9-C88E6C282D56"><span class="note__title">Note:</span>  
+						<ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_7E587DEBA2A64CAAB62D8D6E211707BD"> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_E5A381F91D674327AFAE5C1AE19D3EAF">When restoring onto a new PC or a new PC hard drive, the software must be loaded first because the software contains the Restore Utility. 
+						  </li> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_82F814878CCC4B86B5B4B9BF082DB062">Before starting the restoration, exit the user interface. Keep the instrument powered on. 
+						  </li> 
+						</ul> 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_CAE7B1F2D2DB44D38C2E903A859320A1"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C071D081-11EC-49EA-90BA-71B716ACED41">In the Restore Utility, select 
+					 <span class="ph menucascade" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-649A9687-34D8-4F92-AE7C-DF8C786D5BDF"><span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-5A0311B0-7002-44CE-A339-9A933A0C3BFF">Next</span> &gt; <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A06A173A-6D75-472A-87BE-ECAF8D818BDC">Restore Console PC</span> &gt; <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-74B96BC8-CF48-4E15-9443-3F2E1A35AE1D">Next</span></span>. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <figure class="fig fignone" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__FIG_72A99570221C4ECA9D097086A761CB90"><br /><img class="image" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__IMAGE_7651F4C009384D52ACA328C852183206" src="GUID-C47D8122-AC59-44A2-9286-3C6E688AF859-default.gif" /><br /> 
+					 </figure> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_FAD9C8B521C0450DBF3C51F17EF670A1"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-370A6366-6045-44BD-B3C9-28159BF0CFD0">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-E746BBCD-0C9A-414A-A60B-CE8A54076C62">Restore Registry and Database</span>. Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A2C89A8D-A9BE-4FB0-9F24-5963F3236C4E">Next</span>. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-32DB9437-9334-4C9E-B434-C16A99EFD3E0"><span class="note__title">Note:</span> If there is an error copying the files, confirm that you have exited the Poet Object Server and then retry restoration. 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_8C47057EBBD84469B12E724CFE19A9BC"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-71174F92-AC8B-4CC1-82FF-65F367DD5A71">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6D920F86-1905-4D45-97A9-95D009515473">Next</span> to the IP address information. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-87E20ED4-963B-4BC8-8FE6-8B975092CD31"><span class="note__title">Note:</span> Typically the IP address for the console is 192.168.2.3, the workgroup server is 192.168.2.3, and the analyzer is 192.168.2.4. For Windows 8 systems, 127.0.0.1 is the typical workgroup server IP address. 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_2130DC69A454407A8150B70F7F6D0767"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-3257180A-AF31-46C9-BDE8-9EB2B653C3EC">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-954DC8A8-B609-4896-803D-C3C632DCC551">Restore Supplies From Analyzer</span>. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-9D81E8E2-1A28-4E3E-A43F-07162978CD99"><span class="note__title">Note:</span>  
+						<ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_4A144C986FCF49CA849D3C317540FD7D"> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_EE3547F3B7044CA28ECD22E725F6CE61">During restoration, the AU must be powered on and must be able to communicate on the TCP/IP network. 
+						  </li> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_8B56E72B051C41A3AE49ACDABAF1475A">An incorrect AU or server IP address in the registry causes an error at this step. 
+						  </li> 
+						</ul> 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_CC3414049E4E4B2ABFE49E43BAB346D3"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-55E707BA-BFD3-406C-A7CF-935B0527D5B1">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C7576148-CF65-4C46-935A-9A90286BCCBD">Next</span>. 
+				  </span> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_1C5824AE7FED4181AA36BEC8D9DCB684"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-9F096FA8-8079-42F4-B3C2-54A7EA9BD1DE">If a 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-11D61C42-6DAD-4618-909E-EB412D25F74D">Delete Reagent</span> dialog window is displayed (reagents are listed as off-board punctured or off-board unpunctured), select and then delete the off-board punctured reagents. Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A1EC75FB-F67E-4C40-A8AF-E5348C135BC3">Next</span>. Select and then delete any off-board confirmed unpunctured reagents (reagents that cannot be found and confirmed to be unpunctured). Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C02F88AE-5E75-4F09-9552-885EBD0C3A5E">Next</span>. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note caution note_caution" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C20F51B7-B193-4A15-BCB3-56C726512387"><span class="note__title">Caution:</span> Any punctured reagents that were used after the backup was made and that were not on-board during the restoration need to be identified and discarded. When reagents are off-board, their status is not stored in instrument memory. 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_81BF90B7B91347D4A79DA4A92AC44F2E"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-762F23EA-2EDD-49A7-A046-5F07F5AC0E63">Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-04B57507-7CDC-4525-BA32-F1D492F9619B">Finish 
+					 </span> with 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A725DA12-F911-42AA-B2CE-1223B499608C">Reboot</span> selected. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-2A5CE857-8615-4DA1-BCA2-707BA97A1C93"><span class="note__title">Note:</span>  
+						<ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_18606AE6B2FB4DAD98531473D95B1756"> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_AA1F1BD7E3F64AD2ADABD13B83AEA7F2">When restoration is complete, both the console PC and the AU reboot automatically. 
+						  </li> 
+						  <li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_F084CBA400D14C81B1932BB00C3D1DD6">The user interface launches. While the instrument reboots, it might not appear to communicate for up to 5 minutes. 
+						  </li> 
+						</ul> 
+					 </div> 
+				  </div> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-3D86CD2C-2E27-4421-AE75-17EB69EFE733"><span class="note__title">Note:</span> When rebooting the Privacy &amp; Security compliant Windows 8 or Windows 10 PC, you must enter security password &quot;<strong class="ph b" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__d29e18">Access2Admin</strong>&quot; when prompted to launch Windows. 
+		<p class="p"> 
+		</p><img class="image" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__d29e23" src="GUID-57B84EB9-A496-4109-A064-4A160B1C8257-default.png" /> 
+		<p class="p"> 
+		</p> 
+	 </div> 
+				  </div> 
+				</li> 
+			 </ol> 
+		  </li><li class="li step stepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__STEP_A11AE5093EB741EA9EC628C2186E28D4"> 
+			 <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-7B80A9CF-D340-491D-AB80-D450FF422378">Verify instrument operation. 
+			 </span> 
+			 <ol class="ol substeps" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEPS_7F0B38A6B78B4A299985552EFFFB8C5C" type="a"> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_E3096B95CC56477086E3D68314B7F086"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-6741EB8B-A712-47BB-B2FB-220824C63C1B">Confirm that the software version shown at the bottom right of the 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-20A20192-7773-4798-AD6F-645EA2F53529">Main Menu</span> is the current version. 
+				  </span> 
+				  <div class="itemgroup info">If needed, update the software and the APF to the current version. 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_46C4915C339445BA8CC2D5A397A98026"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-F10A7521-6943-4F00-A257-31AAD09377DE">In the 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A4114C30-6454-429E-BF6A-6377B5A54196">Main Menu</span>, select 
+					 <span class="ph menucascade" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-A184A7B0-50E1-4666-889A-080197C487B2"><span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-20631202-13A0-4073-9954-6518D7355F1F">Supplies</span> &gt; <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-9F989DAE-DC41-4AE8-9708-AF17E32B5EEB">Bulk Supplies</span></span>. Check the status of the supply inventory and load any required supplies. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note note note_note" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C69A8ED9-84D5-4DAE-ABF1-48409630AB75"><span class="note__title">Note:</span> The restore process identifies on-board expired or deleted reagent packs with question marks (???). Having one or two on-board packs with question marks might be normal. If the substrate supplies are empty and all on-board reagents are identified with question marks (???), then you might have selected 
+						<span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-AAD4E2CE-754C-49A5-918F-BA4247AF342B">Restore Analyzer</span> inadvertently. Other possibility is that running MFG Cleanup erased the AU test count and run time. 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_182D66563F6B4DE39D0DF907D0CA3392"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-3B4A50D0-6B64-4A8F-826F-7FE533E99CCD">In the 
+					 <span class="keyword wintitle" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-CF720C45-21E7-4CA9-90D9-CF4BCE1494D5">Main Menu</span>, select 
+					 <span class="ph menucascade" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-2DD3CAD9-F7D1-4195-AE64-A846E29383BC"><span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-D571DBC4-A3C8-4C2F-AF66-F08A6A8919A0">Diagnostics</span> &gt; <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-C2DA7636-D81D-4AFE-B2A0-BB30653748D5">Initialize</span></span>. Select 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-BC4C1E13-F7D0-41DC-82FB-F082D0E04A1D">Clear all Positions</span> and 
+					 <span class="ph uicontrol" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-CDA94ADB-47B0-4C3A-8544-16F15EC1396D">Remap</span> the reagent storage. 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <div class="note caution note_caution" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-59636E4B-DB9F-4146-B858-21511F985730"><span class="note__title">Caution:</span> If there are on-board deleted or expired reagents (marked with question marks) after restoration, then unload all the reagents and confirm that the unopened reagents on the reagent supply display are actually unopened. Reload the reagent packs that are not marked with question marks (???). 
+					 </div> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_0C4CA1ABACD14E7C94FFA98BE67BF001"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-41E4678D-0358-4543-8F3A-1B234814CAB0">Confirm that the following items are configured correctly and are functional: 
+				  </span> 
+				  <div class="itemgroup info"> 
+					 <ul class="ul" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__UL_616AD46C467048C4865644E126C7F3A4"> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_D45B2EBBCB5D44589EF2079C93451012">Printer setup 
+						</li> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_F935EA2A66C14C7B99AA260B972B05D9">Auto Delete setup 
+						</li> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_188DDEC6170E4C0295807C87F679A9BF">Scheduled Backup 
+						</li> 
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_1D9D205711B14555924B7B81479F4F66">LIS 
+						</li>
+						<li class="li" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__LI_0630EF9EE8E648F89A90701B4EDF40C2">PROService
+						</li> 
+					 </ul> 
+				  </div> 
+				</li> 
+				<li class="li substep substepexpand" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__SUBSTEP_71E1940AB95749CEB7ACA8291123C189"> 
+				  <span class="ph cmd" id="TASK_20E148F3A4A343DFB7D025E1C92E2625__GUID-7C9C50DC-FADC-4C92-B33A-36E55AF179A9">Perform QC and ensure that the results are within customer specifications and that there are no problems posting results to the restored database. 
+				  </span> 
+				</li> 
+			 </ol> 
+		  </li></ol> 
+	 </div> 
+  </article> 
+<div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-4863982E-6513-4543-A4C7-30ED5571FB04.html" lang="en-US" title="23.6.11 Database - Restoring Console PC from Backup"><div><span class="ph num-prefix">23.6.11 </span>Database - Restoring Console PC from Backup</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

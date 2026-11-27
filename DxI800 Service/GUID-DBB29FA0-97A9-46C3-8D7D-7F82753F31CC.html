@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to disable and enable process monitoring for devices." name="description" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.6.29 Disabling Process Monitoring</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-0D53118E-AFA3-4B84-BB12-795F5440A53D.html" rel="prev" /><link href="GUID-3AFCD1DD-0BF4-45CB-A9CF-BF405B380DF6.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3088" data-relpath="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Disabling Process Monitoring</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to disable and enable process monitoring for devices. 
+  </p> 
+	 <section class="section context" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="p"> 
+		  <div class="note warning note_warning" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-64F7394D-BFB7-421B-BDC8-D3F6A588383B"><span class="note__title">Warning:</span> Do not allow customers to operate the DxI instrument when any process monitoring function is disabled. This could allow inaccurate and unflagged results to report when hardware is malfunctioning. 
+		  </div> 
+		</div> 
+		<div class="p">Disable process monitoring: 
+		<ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_6BDC292832654EB492E731625C19B00D"> 
+		  <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_15D8EC22148C4B0B930AD000CA2101E3">When procedures require temporary suppression of process monitoring for troubleshooting or repair. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">Enable process monitoring: 
+		<ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_59E0662B4C1F41A4815403CF9BF2B858"> 
+		  <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_194A4E0862C14490A78E6F1DB9AACAB6">immediately following any procedure where process monitoring has been temporarily disabled. 
+		  </li> 
+		  <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_BBD0FD20B8B94C51B1ADCDB24CE9B1F6">when 
+			 <samp class="ph msgph" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-8D687486-96FD-462C-B660-A540E1694578">Some process monitoring features are disabled</samp> warnings appear in the Event Log. Warnings were added in software V2.2 and higher. 
+		  </li> 
+		  <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_E0C943308C83458190EDF684DE83F092">to confirm that all process monitoring devices are enabled. Software prior to V2.2 does not provide warnings in the Event Log when process monitoring devices are disabled. 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Disable process monitoring from the AU. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note warning note_warning" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-8AFA3B61-BC97-4837-927C-95A4633C2988"><span class="note__title">Warning:</span> Process monitoring must be re-enabled before resuming normal operations. Do not allow customers to operate the DxI when process monitoring is disabled, because inaccurate and unflagged results can occur. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEPS_6AE94BD8E82648F8BD2E18AEACDBC1B0" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_7372206EFAB1401C94ADBD48E71AE043"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-900CFF15-1D6A-4030-8CED-6B03F5FA9E56">Connect to the AU using Desktop Sharing. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-E2A526C3-5043-4BC9-82C7-24512F4DAC69"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-22A499F8-9F7E-4C4E-A0F1-66A90AADB213.html" title="This procedure describes how to connect from the console PC to the instrument using desktop sharing on DxI systems running Windows XP and Windows 8 operating system.">Software: Using Desktop Sharing Between Console PC and AU</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_3AF542025D964A239D9198643E23B93B"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-DBB30508-6B39-4287-A540-ADA3486A6EF2">In the AU, right click on the 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-935C4BA4-538A-47E2-A124-556A2804B560">Y</span> icon at the bottom right corner of the display, and then select 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-13DD5D03-657D-4C6D-944C-14C6157098AA">Exit</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_9950F5CA65FE43ECB474CBCC42B01C8C"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-853448C5-CB25-4C48-B744-E26AB92773EF">In the AU 
+				</span> 
+				<div class="itemgroup stepresult">
+				  <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_40D01490FD814BD0BF467D8AA9E11450">
+					 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_00D804356B1144D8AC5C80B9CE582458">For Windows XP, select 
+						<span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-90823D3D-8BDE-47F4-9A1A-23E69D704B6C"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-51635E92-D8FF-4434-9A90-26E2CED1F6EE">Start 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-D713F2E8-441A-415A-AE24-D57E1C03B71A">Programs 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-1D2CC28A-F7E0-4F5A-8A12-BBECB9E16D23">Windows Explorer</span></span>. 
+					 </li>
+					 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_F2D3B579BC724FD4A3DD7C874DF9DE8A">For Windows 8, press 
+						<strong class="ph b" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-2BF2D0F8-DFFB-4C20-BE8C-704C91A77555">Windows</strong> key and select 
+						<strong class="ph b" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-C05E7328-9175-42AF-BC77-2B0749B97D67">File Explorer</strong> in the application menu. 
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_68EF3003E9AB403FB37C3ADD16F87D26"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-DD9B0606-1A6D-4B79-8D75-DCBEF642E1C9">Browse to the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-0F6718E3-0BA5-4767-A223-4E20D67D68D3">C:\AU</span> directory and open the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-A18FEF9C-A73F-4787-B052-CF45D12F8F53">Specific.ini</span> file. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_93F3676846BE4EE5A2825322B217A0BF"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-88BDCA63-B3AF-4880-A1E1-178C7742E325">Scroll down and change the value from 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-B13FD959-49A9-4C62-BB89-BF1FEB375144">Enabled=yes</span> to 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-7EBD78E9-564D-44B5-92CC-43C9E6273B42">Enabled=no</span> for the desired device. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <table class="table" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__TABLE4_C50923B66B02DF8586256D1D00799FE4"><caption><span class="title" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-4DDAA280-E574-4502-A1B9-D9C61753DC95">Table 90: Device Process Monitoring</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody"> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [FluidLevelControl. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Enabled= 
+							 <p class="p"> (monitors the WB fluid detector, if present). Default value = yes regardless of whether the WB bubble detector is present. 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [ReagentPipettor1. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= 
+							 </p> 
+							 <p class="p"> AdaptiveEmptyPackDetection_Enabled= 
+							 </p> 
+							 <p class="p"> Empty Pack Detection= 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [ReagentPipettor2. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= 
+							 </p> 
+							 <p class="p"> AdaptiveEmptyPackDetection_Enabled= 
+							 </p> 
+							 <p class="p"> Empty Pack Detection= 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [ReagentPipettor3. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= 
+							 </p> 
+							 <p class="p"> AdaptiveEmptyPackDetection_Enabled= 
+							 </p> 
+							 <div class="p"> Empty Pack Detection= 
+								<div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-24F8088C-DC04-454F-9874-1BB26B76CC60"><span class="note__title">Note:</span>  On the DXI 600 the default values are: 
+								  <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_41528802362223041528802362223141"> 
+									 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_41528802362223341528802362223441"> no for Pressure Enabled, Vacuum Enabled and PeriPump Flow Enabled. 
+									 </li> 
+									 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_41528802362223641528802362223741"> yes for AdaptiveEmptyPackDetection_Enabled and Empty Pack Detection. 
+									 </li> 
+								  </ul> 
+								</div> 
+							 </div> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [ReagentPipettor4. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= 
+							 </p> 
+							 <p class="p"> AdaptiveEmptyPackDetection_Enabled= 
+							 </p> 
+							 <div class="p"> Empty Pack Detection= 
+								<div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-6BBCEEA7-C011-4A91-B850-9B43C70267D1"><span class="note__title">Note:</span>  On the DXI 600 the default values are: 
+								  <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_41528802362223941528802362224041"> 
+									 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_41528802362224241528802362224341"> no for Pressure Enabled, Vacuum Enabled and PeriPump Flow Enabled. 
+									 </li> 
+									 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_41528802362224541528802362224641"> yes for AdaptiveEmptyPackDetection_Enabled and Empty Pack Detection. 
+									 </li> 
+								  </ul> 
+								</div> 
+							 </div> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [SamplePipettor. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= yes 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [Substrate. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Enabled= 
+							 <p class="p"> (for the drawback / bubble detector) 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [WashWheel. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Enabled= 
+							 <p class="p"> (for the A1 probe collar wash vacuum and pressure sensors) 
+							 </p> 
+						  </td> 
+						</tr> 
+					 </tbody></table> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_82E3B47E77E645B69AE9491CA5CC1D4B"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-CD5D70DF-6301-488E-813A-6DD5941160B1">Select 
+				  <span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-7A5F3F03-2E51-4AA8-9252-6E3E7E19F87C"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F91AC05D-9C57-428D-A082-457015F87146">File</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-AA5F6CA4-3AA4-4F74-8F6D-1692E3F8F173">Save</span></span> to save the changes to the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-53A123C0-3BF0-463C-8343-4807EB5B69A4">Specific.ini</span> file, and then exit Notepad. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_C9B23F9D4E73418A825F0A40ADB7256B"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-01126A11-9A2C-43D8-8119-06D1ED9C9E9B">Restart the AU software by double clicking the large 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-6BF6F937-DAF4-4DF4-9EA3-2957EB46894A">Y</span> icon on the AU display. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_59173A852D3B41B2A7CDE0F130C29CCC"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-4C4B636D-58C7-4730-BD53-0FF17B1EF5EB">Exit Desktop Sharing and return to the user interface. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__STEP_26D23831B43F48E59A2535EED64FCF4F"> 
+		  <span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F8F647E9-E7CA-40D8-B9F1-9EF7CF86355C">Enable process monitoring for any device that is disabled, or to confirm that all devices are enabled. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEPS_1C808CED28AF43E8A3901D8E390FAB28" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_8DEC1CA8DAC944318BF655750DC99500"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F3C7505D-7290-42CC-8E61-F39A8CF508D7">Verify that the pressure sensors and substrate drawback have been successfully calibrated. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-49348D72-2C69-4097-A740-F1F82DFD5150"><span class="note__title">Caution:</span> Enabling process monitoring for a device with an invalid calibration can cause the instrument software to exit when the device is used. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-66953EF2-3C8F-44CF-B22C-AAF7232949FB"><span class="note__title">Note:</span> These non-calibrated sensors have hard-coded error limits: 
+					 <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_859FF7C4DD414E6DAB3A7F881107E8FB"> 
+						<li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_4FF6967B42854971AB6B59085A15E53D">The pressure sensor for the A1 probe wash pump. 
+						</li> 
+						<li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_4D238936F89244CFA7197D819FE0E942">The vacuum sensor for the A1 probe wash collar. 
+						</li> 
+						<li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_3EB8DA2C2B6743EC9C9978A93A7774E5">Vacuum sensors for all pipettor wash towers. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_7857435507F741EBA63C0B687A5591E0"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-AF8B092E-E7CA-4A05-BC79-7218FD79F9B9">Connect to the AU using Desktop Sharing. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-391344CD-5EDB-4A95-B46A-20A63EB5B83A"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-22A499F8-9F7E-4C4E-A0F1-66A90AADB213.html" title="This procedure describes how to connect from the console PC to the instrument using desktop sharing on DxI systems running Windows XP and Windows 8 operating system.">Software: Using Desktop Sharing Between Console PC and AU</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_A350E215A221408B958CDCDC243EEFDB"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-EC6BE845-CA36-4DAC-828D-5ED7D4B435DD">In the AU, right-click on the 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-7588E2A3-915A-4AAA-A5D0-B2E6CD4CE697">Y</span> icon at the bottom right corner of the display, and then select 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-C0601382-1633-4DAC-A52B-9784225F4508">Exit</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_949EA6E035DC46E9B2F5F5E8CD93DA79"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-2E51390A-39FB-45E9-B4C1-C1BB73EC63B7">In the AU
+				</span> 
+				<div class="itemgroup stepresult">
+				  <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_9B789C2203084676A26BBE25B589DEC6">
+					 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_3A0F5B25442F4BB1B5D228FDFB79B4A1">For Windows XP, select 
+						<span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-850F6871-DAB2-4BD6-993C-540997D55B7F"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-4CA6315E-FC83-4274-8C2F-FEE848DF6A6A">Start</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-91BDECE4-A029-44A0-BF59-9844C0091888">Programs</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-2B93C907-4CDB-4C50-B4D9-EFF8494C6E52">Windows Explorer</span></span>. 
+					 </li>
+					 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_EFE5BC87148043E8B0F85A6237E151E3">For Windows 8, press 
+						<strong class="ph b" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-49736919-F147-4A49-A413-02C469E871E4">Windows</strong> key and select 
+						<strong class="ph b" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-D515D7D3-A71E-4EE6-B2EB-BF4F1E1B11E1">File Explorer</strong> in the application menu. 
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_721F95A2E57B41629E09EE9261557ADE"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-E8DBA5E9-A434-4857-9255-54BB77A647CA">Browse to the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-4145C0A8-4547-4FDC-BD72-5F4690B89D69">C:\AU</span> directory and open the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-5716E762-1195-4DF7-AD82-37571E38188C">Specific.ini</span> file. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_0363A7F89AC64DDC9D96843A012D3D4E"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-E3C87FCD-516C-4397-9ADC-2C4AE5B7CB3F">Select 
+				  <span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-FF77BE46-FB94-4B8E-BE64-F1B63546DFD8"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-27CE31C0-11ED-4B70-B80F-E6A1B6334608">Search</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-08B01B5E-44F5-47EF-A562-11FB72917B4E">Find</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_209C101BAC4A422990EF8429DE13CE8A"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-8645FDFB-BF87-4F17-8E56-0FDDBDE70860">Type 
+				  <kbd class="ph userinput" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-1A6DB8AB-21FD-4E94-8AA7-78255FF0DC2C">processmon</kbd> in the text box, and press 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-FF703761-1345-413D-A202-14FBADF1DA7D">[Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_AADB3D5655F849D4A25DDFAAC2965234"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-858543EC-6C8E-431F-B9A5-491DBB53B125">Scroll down and change any 
+				  <span class="keyword option" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-38BB0A87-3203-48DA-ABEC-85AB513C9406">Enabled=no</span> to 
+				  <span class="keyword option" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F4FC0353-E9BA-44DD-9DB4-49C423808E84">Enabled=yes</span> for each device in the Device Process Monitoring table. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-27363F89-55FE-4410-9979-F5780D32FEFA"><span class="note__title">Note:</span> Confirm calibrations for the calibrated sensors by the SensorCalibrated=yes line. 
+				  </div> 
+				</div>  
+				 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_D88BEC9E16364D338B2492412CC223B1"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-B415C0F9-4F34-4C7E-A339-8D0556A834C6">Select 
+				  <span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-DA36673F-A685-4BB8-B889-A0722B65DADB"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-3080FCC7-32E7-4B6E-A183-D4DE078D8372">File</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-598F55D7-EF9B-4D46-AFFF-BE5734FE5A43">Save</span></span>, and then exit Notepad. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_24EEA1458DFC4E1490C6D7DBD68F0827"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-A671296E-1662-4C0F-8906-138287D34BFD">Restart the AU software by double-clicking on the large 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F597B97D-0537-4A23-886E-3D902F0AF0B2">Y</span> icon on the AU display. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_0C06903CB0554BC8BA625C74B9274878"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-1F5567CE-E763-44E5-B3EB-9351E7E1D20C">Exit Desktop Sharing and return to the user interface. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC.html" lang="en-US" title="23.6.29 Disabling Process Monitoring"><div><span class="ph num-prefix">23.6.29 </span>Disabling Process Monitoring</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Disabling Process Monitoring</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to disable and enable process monitoring for devices. 
+  </p> 
+	 <section class="section context" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="p"> 
+		  <div class="note warning note_warning" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-64F7394D-BFB7-421B-BDC8-D3F6A588383B"><span class="note__title">Warning:</span> Do not allow customers to operate the DxI instrument when any process monitoring function is disabled. This could allow inaccurate and unflagged results to report when hardware is malfunctioning. 
+		  </div> 
+		</div> 
+		<div class="p">Disable process monitoring: 
+		<ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_6BDC292832654EB492E731625C19B00D"> 
+		  <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_15D8EC22148C4B0B930AD000CA2101E3">When procedures require temporary suppression of process monitoring for troubleshooting or repair. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">Enable process monitoring: 
+		<ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_59E0662B4C1F41A4815403CF9BF2B858"> 
+		  <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_194A4E0862C14490A78E6F1DB9AACAB6">immediately following any procedure where process monitoring has been temporarily disabled. 
+		  </li> 
+		  <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_BBD0FD20B8B94C51B1ADCDB24CE9B1F6">when 
+			 <samp class="ph msgph" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-8D687486-96FD-462C-B660-A540E1694578">Some process monitoring features are disabled</samp> warnings appear in the Event Log. Warnings were added in software V2.2 and higher. 
+		  </li> 
+		  <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_E0C943308C83458190EDF684DE83F092">to confirm that all process monitoring devices are enabled. Software prior to V2.2 does not provide warnings in the Event Log when process monitoring devices are disabled. 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Disable process monitoring from the AU. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note warning note_warning" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-8AFA3B61-BC97-4837-927C-95A4633C2988"><span class="note__title">Warning:</span> Process monitoring must be re-enabled before resuming normal operations. Do not allow customers to operate the DxI when process monitoring is disabled, because inaccurate and unflagged results can occur. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEPS_6AE94BD8E82648F8BD2E18AEACDBC1B0" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_7372206EFAB1401C94ADBD48E71AE043"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-900CFF15-1D6A-4030-8CED-6B03F5FA9E56">Connect to the AU using Desktop Sharing. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-E2A526C3-5043-4BC9-82C7-24512F4DAC69"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-22A499F8-9F7E-4C4E-A0F1-66A90AADB213.html" title="This procedure describes how to connect from the console PC to the instrument using desktop sharing on DxI systems running Windows XP and Windows 8 operating system.">Software: Using Desktop Sharing Between Console PC and AU</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_3AF542025D964A239D9198643E23B93B"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-DBB30508-6B39-4287-A540-ADA3486A6EF2">In the AU, right click on the 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-935C4BA4-538A-47E2-A124-556A2804B560">Y</span> icon at the bottom right corner of the display, and then select 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-13DD5D03-657D-4C6D-944C-14C6157098AA">Exit</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_9950F5CA65FE43ECB474CBCC42B01C8C"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-853448C5-CB25-4C48-B744-E26AB92773EF">In the AU 
+				</span> 
+				<div class="itemgroup stepresult">
+				  <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_40D01490FD814BD0BF467D8AA9E11450">
+					 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_00D804356B1144D8AC5C80B9CE582458">For Windows XP, select 
+						<span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-90823D3D-8BDE-47F4-9A1A-23E69D704B6C"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-51635E92-D8FF-4434-9A90-26E2CED1F6EE">Start 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-D713F2E8-441A-415A-AE24-D57E1C03B71A">Programs 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-1D2CC28A-F7E0-4F5A-8A12-BBECB9E16D23">Windows Explorer</span></span>. 
+					 </li>
+					 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_F2D3B579BC724FD4A3DD7C874DF9DE8A">For Windows 8, press 
+						<strong class="ph b" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-2BF2D0F8-DFFB-4C20-BE8C-704C91A77555">Windows</strong> key and select 
+						<strong class="ph b" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-C05E7328-9175-42AF-BC77-2B0749B97D67">File Explorer</strong> in the application menu. 
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_68EF3003E9AB403FB37C3ADD16F87D26"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-DD9B0606-1A6D-4B79-8D75-DCBEF642E1C9">Browse to the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-0F6718E3-0BA5-4767-A223-4E20D67D68D3">C:\AU</span> directory and open the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-A18FEF9C-A73F-4787-B052-CF45D12F8F53">Specific.ini</span> file. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_93F3676846BE4EE5A2825322B217A0BF"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-88BDCA63-B3AF-4880-A1E1-178C7742E325">Scroll down and change the value from 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-B13FD959-49A9-4C62-BB89-BF1FEB375144">Enabled=yes</span> to 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-7EBD78E9-564D-44B5-92CC-43C9E6273B42">Enabled=no</span> for the desired device. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <table class="table" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__TABLE4_C50923B66B02DF8586256D1D00799FE4"><caption><span class="title" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-4DDAA280-E574-4502-A1B9-D9C61753DC95">Table 90: Device Process Monitoring</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody"> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [FluidLevelControl. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Enabled= 
+							 <p class="p"> (monitors the WB fluid detector, if present). Default value = yes regardless of whether the WB bubble detector is present. 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [ReagentPipettor1. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= 
+							 </p> 
+							 <p class="p"> AdaptiveEmptyPackDetection_Enabled= 
+							 </p> 
+							 <p class="p"> Empty Pack Detection= 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [ReagentPipettor2. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= 
+							 </p> 
+							 <p class="p"> AdaptiveEmptyPackDetection_Enabled= 
+							 </p> 
+							 <p class="p"> Empty Pack Detection= 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [ReagentPipettor3. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= 
+							 </p> 
+							 <p class="p"> AdaptiveEmptyPackDetection_Enabled= 
+							 </p> 
+							 <div class="p"> Empty Pack Detection= 
+								<div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-24F8088C-DC04-454F-9874-1BB26B76CC60"><span class="note__title">Note:</span>  On the DXI 600 the default values are: 
+								  <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_41528802362223041528802362223141"> 
+									 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_41528802362223341528802362223441"> no for Pressure Enabled, Vacuum Enabled and PeriPump Flow Enabled. 
+									 </li> 
+									 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_41528802362223641528802362223741"> yes for AdaptiveEmptyPackDetection_Enabled and Empty Pack Detection. 
+									 </li> 
+								  </ul> 
+								</div> 
+							 </div> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [ReagentPipettor4. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= 
+							 </p> 
+							 <p class="p"> AdaptiveEmptyPackDetection_Enabled= 
+							 </p> 
+							 <div class="p"> Empty Pack Detection= 
+								<div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-6BBCEEA7-C011-4A91-B850-9B43C70267D1"><span class="note__title">Note:</span>  On the DXI 600 the default values are: 
+								  <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_41528802362223941528802362224041"> 
+									 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_41528802362224241528802362224341"> no for Pressure Enabled, Vacuum Enabled and PeriPump Flow Enabled. 
+									 </li> 
+									 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_41528802362224541528802362224641"> yes for AdaptiveEmptyPackDetection_Enabled and Empty Pack Detection. 
+									 </li> 
+								  </ul> 
+								</div> 
+							 </div> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [SamplePipettor. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Pressure Enabled= 
+							 <p class="p"> Vacuum Enabled= 
+							 </p> 
+							 <p class="p"> PeriPump Flow Enabled= yes 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [Substrate. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Enabled= 
+							 <p class="p"> (for the drawback / bubble detector) 
+							 </p> 
+						  </td> 
+						</tr> 
+						<tr class="row"> 
+						  <td class="entry align-left valign-top"> [WashWheel. ProcessMonitoring] 
+						  </td> 
+						  <td class="entry align-left valign-top"> Enabled= 
+							 <p class="p"> (for the A1 probe collar wash vacuum and pressure sensors) 
+							 </p> 
+						  </td> 
+						</tr> 
+					 </tbody></table> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_82E3B47E77E645B69AE9491CA5CC1D4B"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-CD5D70DF-6301-488E-813A-6DD5941160B1">Select 
+				  <span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-7A5F3F03-2E51-4AA8-9252-6E3E7E19F87C"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F91AC05D-9C57-428D-A082-457015F87146">File</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-AA5F6CA4-3AA4-4F74-8F6D-1692E3F8F173">Save</span></span> to save the changes to the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-53A123C0-3BF0-463C-8343-4807EB5B69A4">Specific.ini</span> file, and then exit Notepad. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_C9B23F9D4E73418A825F0A40ADB7256B"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-01126A11-9A2C-43D8-8119-06D1ED9C9E9B">Restart the AU software by double clicking the large 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-6BF6F937-DAF4-4DF4-9EA3-2957EB46894A">Y</span> icon on the AU display. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_59173A852D3B41B2A7CDE0F130C29CCC"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-4C4B636D-58C7-4730-BD53-0FF17B1EF5EB">Exit Desktop Sharing and return to the user interface. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__STEP_26D23831B43F48E59A2535EED64FCF4F"> 
+		  <span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F8F647E9-E7CA-40D8-B9F1-9EF7CF86355C">Enable process monitoring for any device that is disabled, or to confirm that all devices are enabled. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEPS_1C808CED28AF43E8A3901D8E390FAB28" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_8DEC1CA8DAC944318BF655750DC99500"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F3C7505D-7290-42CC-8E61-F39A8CF508D7">Verify that the pressure sensors and substrate drawback have been successfully calibrated. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-49348D72-2C69-4097-A740-F1F82DFD5150"><span class="note__title">Caution:</span> Enabling process monitoring for a device with an invalid calibration can cause the instrument software to exit when the device is used. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-66953EF2-3C8F-44CF-B22C-AAF7232949FB"><span class="note__title">Note:</span> These non-calibrated sensors have hard-coded error limits: 
+					 <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_859FF7C4DD414E6DAB3A7F881107E8FB"> 
+						<li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_4FF6967B42854971AB6B59085A15E53D">The pressure sensor for the A1 probe wash pump. 
+						</li> 
+						<li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_4D238936F89244CFA7197D819FE0E942">The vacuum sensor for the A1 probe wash collar. 
+						</li> 
+						<li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_3EB8DA2C2B6743EC9C9978A93A7774E5">Vacuum sensors for all pipettor wash towers. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_7857435507F741EBA63C0B687A5591E0"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-AF8B092E-E7CA-4A05-BC79-7218FD79F9B9">Connect to the AU using Desktop Sharing. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-391344CD-5EDB-4A95-B46A-20A63EB5B83A"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-22A499F8-9F7E-4C4E-A0F1-66A90AADB213.html" title="This procedure describes how to connect from the console PC to the instrument using desktop sharing on DxI systems running Windows XP and Windows 8 operating system.">Software: Using Desktop Sharing Between Console PC and AU</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_A350E215A221408B958CDCDC243EEFDB"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-EC6BE845-CA36-4DAC-828D-5ED7D4B435DD">In the AU, right-click on the 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-7588E2A3-915A-4AAA-A5D0-B2E6CD4CE697">Y</span> icon at the bottom right corner of the display, and then select 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-C0601382-1633-4DAC-A52B-9784225F4508">Exit</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_949EA6E035DC46E9B2F5F5E8CD93DA79"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-2E51390A-39FB-45E9-B4C1-C1BB73EC63B7">In the AU
+				</span> 
+				<div class="itemgroup stepresult">
+				  <ul class="ul" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__UL_9B789C2203084676A26BBE25B589DEC6">
+					 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_3A0F5B25442F4BB1B5D228FDFB79B4A1">For Windows XP, select 
+						<span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-850F6871-DAB2-4BD6-993C-540997D55B7F"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-4CA6315E-FC83-4274-8C2F-FEE848DF6A6A">Start</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-91BDECE4-A029-44A0-BF59-9844C0091888">Programs</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-2B93C907-4CDB-4C50-B4D9-EFF8494C6E52">Windows Explorer</span></span>. 
+					 </li>
+					 <li class="li" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__LI_EFE5BC87148043E8B0F85A6237E151E3">For Windows 8, press 
+						<strong class="ph b" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-49736919-F147-4A49-A413-02C469E871E4">Windows</strong> key and select 
+						<strong class="ph b" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-D515D7D3-A71E-4EE6-B2EB-BF4F1E1B11E1">File Explorer</strong> in the application menu. 
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_721F95A2E57B41629E09EE9261557ADE"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-E8DBA5E9-A434-4857-9255-54BB77A647CA">Browse to the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-4145C0A8-4547-4FDC-BD72-5F4690B89D69">C:\AU</span> directory and open the 
+				  <span class="ph filepath" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-5716E762-1195-4DF7-AD82-37571E38188C">Specific.ini</span> file. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_0363A7F89AC64DDC9D96843A012D3D4E"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-E3C87FCD-516C-4397-9ADC-2C4AE5B7CB3F">Select 
+				  <span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-FF77BE46-FB94-4B8E-BE64-F1B63546DFD8"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-27CE31C0-11ED-4B70-B80F-E6A1B6334608">Search</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-08B01B5E-44F5-47EF-A562-11FB72917B4E">Find</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_209C101BAC4A422990EF8429DE13CE8A"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-8645FDFB-BF87-4F17-8E56-0FDDBDE70860">Type 
+				  <kbd class="ph userinput" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-1A6DB8AB-21FD-4E94-8AA7-78255FF0DC2C">processmon</kbd> in the text box, and press 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-FF703761-1345-413D-A202-14FBADF1DA7D">[Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_AADB3D5655F849D4A25DDFAAC2965234"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-858543EC-6C8E-431F-B9A5-491DBB53B125">Scroll down and change any 
+				  <span class="keyword option" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-38BB0A87-3203-48DA-ABEC-85AB513C9406">Enabled=no</span> to 
+				  <span class="keyword option" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F4FC0353-E9BA-44DD-9DB4-49C423808E84">Enabled=yes</span> for each device in the Device Process Monitoring table. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-27363F89-55FE-4410-9979-F5780D32FEFA"><span class="note__title">Note:</span> Confirm calibrations for the calibrated sensors by the SensorCalibrated=yes line. 
+				  </div> 
+				</div>  
+				 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_D88BEC9E16364D338B2492412CC223B1"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-B415C0F9-4F34-4C7E-A339-8D0556A834C6">Select 
+				  <span class="ph menucascade" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-DA36673F-A685-4BB8-B889-A0722B65DADB"><span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-3080FCC7-32E7-4B6E-A183-D4DE078D8372">File</span> &gt; <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-598F55D7-EF9B-4D46-AFFF-BE5734FE5A43">Save</span></span>, and then exit Notepad. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_24EEA1458DFC4E1490C6D7DBD68F0827"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-A671296E-1662-4C0F-8906-138287D34BFD">Restart the AU software by double-clicking on the large 
+				  <span class="ph uicontrol" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-F597B97D-0537-4A23-886E-3D902F0AF0B2">Y</span> icon on the AU display. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__SUBSTEP_0C06903CB0554BC8BA625C74B9274878"> 
+				<span class="ph cmd" id="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC__GUID-1F5567CE-E763-44E5-B3EB-9351E7E1D20C">Exit Desktop Sharing and return to the user interface. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-DBB29FA0-97A9-46C3-8D7D-7F82753F31CC.html" lang="en-US" title="23.6.29 Disabling Process Monitoring"><div><span class="ph num-prefix">23.6.29 </span>Disabling Process Monitoring</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

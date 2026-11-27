@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to use the SMCTest.exe program for troubleshooting motor motion errors." name="description" /><meta content="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html" name="DC.Relation" scheme="URI" /><meta content="GUID-A5665163-1B1C-4CA9-9580-81C8E5C11110.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>4.7.21 Troubleshooting Motors - SMCTest.exe</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-1AB5D7B7-0ED4-470A-A996-C878E009BBDB.html" rel="prev" /><link href="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3738" data-relpath="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8" role="article"> 
+  <h1 class="title topictitle1" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Troubleshooting Motors - SMCTest.exe</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to use the SMCTest.exe program for troubleshooting motor motion errors. 
+  </p> 
+	 <section class="section context" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p">Use the SMCtest.exe program to move any stepper motor by direct input to the associated MCC PCB channel. 
+		</p> 
+		<div class="note note note_note" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-0E33A197-D113-4CE2-9CB9-474F18B39156"><span class="note__title">Note:</span> For a list of the motor channels listed in the SMCTest.exe, refer to the 
+		  <a class="xref" href="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC.html">Instrument: Motor Channels in SMCTest.exe</a> document. 
+		</div> 
+		<div class="p"> 
+		<table class="table" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__TABLE_A3929070F4DD4C0A8F2BDD3727E993B3"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry"><br /><img class="image" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__IMAGE_63C92B841804421EBB964E25468AAA1E" src="GUID-BB480022-27E1-4EB3-B96E-F9321B92E759-default.gif" /><br /> 
+				  </td> 
+				  <td class="entry"><br /><img class="image" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__IMAGE_BF090D5AC0C240348056A674E8BEE362" src="GUID-8F974FAA-6F70-4E03-A2B2-598E5644CCDB-default.gif" /><br /> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__STEP_F614B76EB6EE450FABD85FBFEA4E4D93"> 
+		  <span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-560AAFE4-046A-47B1-BF0B-968F2E7FABF9">Perform the SMC Test. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEPS_17390B1A7559411A9E1555398386F82C" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_5BE6800401D7443A95BCEE6CC65B1775"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-2124DED6-0524-44D3-BFFC-068A06CD122B">Select 
+				  <span class="ph menucascade" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-918B9E58-2AD2-4BD9-9C22-B0B298907EA6"><span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-F851860D-0D9B-4F96-B7B5-0C3FD261F9D2">Start</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-F67D849E-CF50-4604-834B-E096DFC167FB">Programs</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-D070B3FE-4CC6-4AF5-A4F0-AEAB50F48349">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-233CEA61-E3E0-4EEF-A87B-2982189E1573"> Remote Connection to AU</span></span> to establish a Desktop Sharing connection to the AU. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_96711F4EE1604412A828E0434511A3E4"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-2A8B6A5C-FC96-40F6-A784-067B86B989B9">Select the 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-60F872E2-00E5-4CB1-A177-4CB83E88320A">SMCtest.exe</span> shortcut located on the AU desktop, 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_B1B23DDD02CC4C55984B82DAC793B01B"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-47EBD310-9174-47EF-807C-3247FFE48638">Select the motor from the list in the 
+				  <span class="keyword wintitle" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-BC3CB8A6-78F5-432D-9A8B-69039B913316">SMC Test</span> pop-up window. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_A4CBDD51CACF4AEEA7DD6EC84E6E765C"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-CF856E7B-98EF-457B-A640-69CA9806226D">In the 
+				  <span class="keyword wintitle" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-5CA804E8-2BC8-4AFB-99C7-89170CE013A5">SMC Test</span> pop-up window, select 
+				  <span class="ph menucascade" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-CD8B8D79-E944-4756-97CA-38915664C150"><span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-AA7BC4F8-B58A-4A3E-87C9-E35E4F078F3C">Enable</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-DFAB5DEC-9524-406F-8896-8DB69211BF7E">Home</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-E8BBB0F1-3A87-47AA-9B32-8EA70EFFCC7C"><span class="note__title">Caution:</span> Avoid hardware crashes. The SMC Test homes devices without consideration of any intersecting devices that are in the way. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-D766C547-E6FD-4B5E-B760-7B82FBE90F3B"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__UL_91496A23626A4F0D8F8F17D46FF822B8"> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_86745EEDE30D4DFC83684C357A8BD617">Home Slippage will be displayed after each Home operation. The initial distance to home can be a large number. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_800E954B2CCD4AB7AFA2264FF510570E">The MCC PCB and channel for the selected motor is shown in the SMC test display. Selecting the MCC # and Channel # also identifies the associated motor. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_E6541303B2BE44C98E962084CF930BF5">Some motors do not move when their interlock switch is open. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_177E56E48FA14407BDCFF35FE2D3F31A">Homing the bulk feeder often causes a jam. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_DBD84EAADE56452CBD940E77DE3B9766">Homing any of the peristaltic pump wash motors causes the SMC Test to exit and can cause a wash tower to overflow (although the motors generally run in the opposite direction from normal when homed). 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_F67F33BE421048AA88D5C16AA33E3085"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-51C61691-C09D-445D-AE41-0D8185809966">Select 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-839EE3E8-C009-46DA-8A8E-11BBF09F9665">Home 
+				  </span> several times and monitor the slippage to identify home-sensor or motor-motion issues. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_125BC374DAD143009EE93CE5C8874923"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-6F670E67-E1C2-4F7A-8489-4D516DBF6F26">To move the motor a set number of steps, enter a number in the box and select the 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-DD27C138-A056-449B-A077-7FA5A31F5491">+</span> or 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-2DE78237-0A62-4F7C-A9BD-55B908B0688F">-</span> direction button. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <br /><img class="image" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__IMAGE_99AF1195928147209870FFF934183100" src="GUID-795ED7F1-4185-4148-B3AD-856B9A1E0F7B-default.gif" /><br /> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-C25B1CFB-5C2A-4D49-AD54-20337CA9BA9F"><span class="note__title">Note:</span> The number of motor steps required to move to an intersecting device position can be found in the 
+					 <span class="ph filepath" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-8D73FD34-331D-4B6E-86C3-28CA7242F579">specific.ini</span> file or displayed on the 
+					 <span class="keyword wintitle" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-AAEEC198-DCB4-4042-93CB-FCB32A72F296">Alignments</span> screen in the Current Position field when moved to that position. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_9978DB6092944EDB92CAF1274E78CB57"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-265385F3-8F82-46A0-AE42-99C397DD67D6">Exit 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-8DDC2F5D-BCA6-4A23-A9B7-0B766E310FE3">SMC Test</span> when finished. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_5B6DB77C1315410B9ABEB5E31C7616F7"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-4EB482ED-F48E-40D6-8C90-E34791992B8A">Close the instrument covers 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_DADFC0ED099140B3B89823234AA3F675"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-97AF560A-CA0D-42B4-B401-2D04D04D03A3">Exit Desktop Sharing. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_5C888D2B8895482CA2E391F6D565AB01"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-AC5AF988-F1F0-400D-9F30-B5FFC69AC890">Restart the NexGen Machine Control program to ensure that the MCC PCBs initialize properly. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__STEP_88EE1736B16F4D4F8C675BE165F2FC24"> 
+		  <span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-C83A2493-75A8-4D66-9DD5-ED8996A3313D">Troubleshoot motors with encoders. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEPS_442150DA38C34D60B6445F348DE7F4DD" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_A03E6DB3351F456685B9922CAF4F670D"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-A8343F4A-40F9-4B10-B175-B6D51B74708F">Move the suspect motor in 
+				  <span class="ph menucascade" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-FDA8323A-E692-4013-9057-6FE01B35679F"><span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-6A462C81-D47A-4DD9-9597-8C821EBAD34F">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-80A9B2F8-5B00-4F13-B2CA-D2454B8FE9D6">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-3419FC17-98F8-4CA4-B3BF-D1DF1C4104EC">Mechanics</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-1EF502E4-0B58-45FB-BFCB-B7EB4D82AE5C">Alignments</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_B9B89A812E2E4E2EBA9FF65B03EDC35F"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-995BF496-0210-40F4-BF47-9ECDDB2EB648">Confirm that the encoder step count is within one step of the motor step count. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-F727F8C6-AE20-4A06-9547-82693D5EDABB"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__UL_D970CFEE27C5429DB127829FC0B85E99"> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_0C7CE2213A3D49388EBB829ABD06C1F6">The only display for encoder counts is in the 
+						  <span class="keyword wintitle" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-10BDF65C-1607-4DFD-99C5-ED4732BE8D74">Diagnostics</span> window. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_836F82593258440F8E3E09CA48BAC141">Manually moving the device should result in an encoder count change. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_F20E45FD63C94067A825AACA7E591B96">If motor moves in the user interface create errors, but the motor moves correctly in SMCTest.exe, then the problem is likely the encoder or the encoder cables. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_E2410E6D63BE47DBAE98DE997BC41B5D">Sometimes the encoder displays a large number at home due to counting steps for a full revolution and not quite wrapping back around to zero. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-A5665163-1B1C-4CA9-9580-81C8E5C11110.html" title="4 Instrument / System"><div><span class="ph num-prefix">4 </span>Instrument / System</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html" title="4.7 Troubleshooting / Testing"><div><span class="ph num-prefix">4.7 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8.html" lang="en-US" title="4.7.21 Troubleshooting Motors - SMCTest.exe"><div><span class="ph num-prefix">4.7.21 </span>Troubleshooting Motors - SMCTest.exe</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8" role="article"> 
+  <h1 class="title topictitle1" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Troubleshooting Motors - SMCTest.exe</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to use the SMCTest.exe program for troubleshooting motor motion errors. 
+  </p> 
+	 <section class="section context" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p">Use the SMCtest.exe program to move any stepper motor by direct input to the associated MCC PCB channel. 
+		</p> 
+		<div class="note note note_note" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-0E33A197-D113-4CE2-9CB9-474F18B39156"><span class="note__title">Note:</span> For a list of the motor channels listed in the SMCTest.exe, refer to the 
+		  <a class="xref" href="GUID-E7EA012D-E4B1-4DEF-A7D7-C2CEFAB167DC.html">Instrument: Motor Channels in SMCTest.exe</a> document. 
+		</div> 
+		<div class="p"> 
+		<table class="table" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__TABLE_A3929070F4DD4C0A8F2BDD3727E993B3"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry"><br /><img class="image" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__IMAGE_63C92B841804421EBB964E25468AAA1E" src="GUID-BB480022-27E1-4EB3-B96E-F9321B92E759-default.gif" /><br /> 
+				  </td> 
+				  <td class="entry"><br /><img class="image" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__IMAGE_BF090D5AC0C240348056A674E8BEE362" src="GUID-8F974FAA-6F70-4E03-A2B2-598E5644CCDB-default.gif" /><br /> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__STEP_F614B76EB6EE450FABD85FBFEA4E4D93"> 
+		  <span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-560AAFE4-046A-47B1-BF0B-968F2E7FABF9">Perform the SMC Test. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEPS_17390B1A7559411A9E1555398386F82C" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_5BE6800401D7443A95BCEE6CC65B1775"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-2124DED6-0524-44D3-BFFC-068A06CD122B">Select 
+				  <span class="ph menucascade" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-918B9E58-2AD2-4BD9-9C22-B0B298907EA6"><span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-F851860D-0D9B-4F96-B7B5-0C3FD261F9D2">Start</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-F67D849E-CF50-4604-834B-E096DFC167FB">Programs</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-D070B3FE-4CC6-4AF5-A4F0-AEAB50F48349">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-233CEA61-E3E0-4EEF-A87B-2982189E1573"> Remote Connection to AU</span></span> to establish a Desktop Sharing connection to the AU. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_96711F4EE1604412A828E0434511A3E4"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-2A8B6A5C-FC96-40F6-A784-067B86B989B9">Select the 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-60F872E2-00E5-4CB1-A177-4CB83E88320A">SMCtest.exe</span> shortcut located on the AU desktop, 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_B1B23DDD02CC4C55984B82DAC793B01B"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-47EBD310-9174-47EF-807C-3247FFE48638">Select the motor from the list in the 
+				  <span class="keyword wintitle" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-BC3CB8A6-78F5-432D-9A8B-69039B913316">SMC Test</span> pop-up window. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_A4CBDD51CACF4AEEA7DD6EC84E6E765C"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-CF856E7B-98EF-457B-A640-69CA9806226D">In the 
+				  <span class="keyword wintitle" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-5CA804E8-2BC8-4AFB-99C7-89170CE013A5">SMC Test</span> pop-up window, select 
+				  <span class="ph menucascade" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-CD8B8D79-E944-4756-97CA-38915664C150"><span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-AA7BC4F8-B58A-4A3E-87C9-E35E4F078F3C">Enable</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-DFAB5DEC-9524-406F-8896-8DB69211BF7E">Home</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-E8BBB0F1-3A87-47AA-9B32-8EA70EFFCC7C"><span class="note__title">Caution:</span> Avoid hardware crashes. The SMC Test homes devices without consideration of any intersecting devices that are in the way. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-D766C547-E6FD-4B5E-B760-7B82FBE90F3B"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__UL_91496A23626A4F0D8F8F17D46FF822B8"> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_86745EEDE30D4DFC83684C357A8BD617">Home Slippage will be displayed after each Home operation. The initial distance to home can be a large number. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_800E954B2CCD4AB7AFA2264FF510570E">The MCC PCB and channel for the selected motor is shown in the SMC test display. Selecting the MCC # and Channel # also identifies the associated motor. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_E6541303B2BE44C98E962084CF930BF5">Some motors do not move when their interlock switch is open. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_177E56E48FA14407BDCFF35FE2D3F31A">Homing the bulk feeder often causes a jam. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_DBD84EAADE56452CBD940E77DE3B9766">Homing any of the peristaltic pump wash motors causes the SMC Test to exit and can cause a wash tower to overflow (although the motors generally run in the opposite direction from normal when homed). 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_F67F33BE421048AA88D5C16AA33E3085"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-51C61691-C09D-445D-AE41-0D8185809966">Select 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-839EE3E8-C009-46DA-8A8E-11BBF09F9665">Home 
+				  </span> several times and monitor the slippage to identify home-sensor or motor-motion issues. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_125BC374DAD143009EE93CE5C8874923"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-6F670E67-E1C2-4F7A-8489-4D516DBF6F26">To move the motor a set number of steps, enter a number in the box and select the 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-DD27C138-A056-449B-A077-7FA5A31F5491">+</span> or 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-2DE78237-0A62-4F7C-A9BD-55B908B0688F">-</span> direction button. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <br /><img class="image" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__IMAGE_99AF1195928147209870FFF934183100" src="GUID-795ED7F1-4185-4148-B3AD-856B9A1E0F7B-default.gif" /><br /> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-C25B1CFB-5C2A-4D49-AD54-20337CA9BA9F"><span class="note__title">Note:</span> The number of motor steps required to move to an intersecting device position can be found in the 
+					 <span class="ph filepath" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-8D73FD34-331D-4B6E-86C3-28CA7242F579">specific.ini</span> file or displayed on the 
+					 <span class="keyword wintitle" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-AAEEC198-DCB4-4042-93CB-FCB32A72F296">Alignments</span> screen in the Current Position field when moved to that position. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_9978DB6092944EDB92CAF1274E78CB57"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-265385F3-8F82-46A0-AE42-99C397DD67D6">Exit 
+				  <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-8DDC2F5D-BCA6-4A23-A9B7-0B766E310FE3">SMC Test</span> when finished. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_5B6DB77C1315410B9ABEB5E31C7616F7"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-4EB482ED-F48E-40D6-8C90-E34791992B8A">Close the instrument covers 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_DADFC0ED099140B3B89823234AA3F675"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-97AF560A-CA0D-42B4-B401-2D04D04D03A3">Exit Desktop Sharing. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_5C888D2B8895482CA2E391F6D565AB01"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-AC5AF988-F1F0-400D-9F30-B5FFC69AC890">Restart the NexGen Machine Control program to ensure that the MCC PCBs initialize properly. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__STEP_88EE1736B16F4D4F8C675BE165F2FC24"> 
+		  <span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-C83A2493-75A8-4D66-9DD5-ED8996A3313D">Troubleshoot motors with encoders. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEPS_442150DA38C34D60B6445F348DE7F4DD" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_A03E6DB3351F456685B9922CAF4F670D"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-A8343F4A-40F9-4B10-B175-B6D51B74708F">Move the suspect motor in 
+				  <span class="ph menucascade" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-FDA8323A-E692-4013-9057-6FE01B35679F"><span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-6A462C81-D47A-4DD9-9597-8C821EBAD34F">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-80A9B2F8-5B00-4F13-B2CA-D2454B8FE9D6">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-3419FC17-98F8-4CA4-B3BF-D1DF1C4104EC">Mechanics</span> &gt; <span class="ph uicontrol" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-1EF502E4-0B58-45FB-BFCB-B7EB4D82AE5C">Alignments</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__SUBSTEP_B9B89A812E2E4E2EBA9FF65B03EDC35F"> 
+				<span class="ph cmd" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-995BF496-0210-40F4-BF47-9ECDDB2EB648">Confirm that the encoder step count is within one step of the motor step count. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-F727F8C6-AE20-4A06-9547-82693D5EDABB"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__UL_D970CFEE27C5429DB127829FC0B85E99"> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_0C7CE2213A3D49388EBB829ABD06C1F6">The only display for encoder counts is in the 
+						  <span class="keyword wintitle" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__GUID-10BDF65C-1607-4DFD-99C5-ED4732BE8D74">Diagnostics</span> window. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_836F82593258440F8E3E09CA48BAC141">Manually moving the device should result in an encoder count change. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_F20E45FD63C94067A825AACA7E591B96">If motor moves in the user interface create errors, but the motor moves correctly in SMCTest.exe, then the problem is likely the encoder or the encoder cables. 
+						</li> 
+						<li class="li" id="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8__LI_E2410E6D63BE47DBAE98DE997BC41B5D">Sometimes the encoder displays a large number at home due to counting steps for a full revolution and not quite wrapping back around to zero. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-A5665163-1B1C-4CA9-9580-81C8E5C11110.html" title="4 Instrument / System"><div><span class="ph num-prefix">4 </span>Instrument / System</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1D4FA703-12FD-41E6-BB9C-A6A7516FE702.html" title="4.7 Troubleshooting / Testing"><div><span class="ph num-prefix">4.7 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-F496FD45-18C7-48DC-BE03-08B0E9FCE9C8.html" lang="en-US" title="4.7.21 Troubleshooting Motors - SMCTest.exe"><div><span class="ph num-prefix">4.7.21 </span>Troubleshooting Motors - SMCTest.exe</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

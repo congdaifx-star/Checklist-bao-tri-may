@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to configure the LIS to send fatally flagged results to the host or to accept duplicate test requests from the host." name="description" /><meta content="GUID-33EB910A-106C-4811-8E80-77D05D726210.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-33EB910A-106C-4811-8E80-77D05D726210.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.1.5 Configuring LIS to Send Fatal Results or Accept Duplicate Requests</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-53786125-8982-4C17-8D62-7AB338E86E0E.html" rel="prev" /><link href="GUID-9D80ED46-E3FB-43E4-8D0F-936DB581B193.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1134" data-relpath="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Configuring LIS to Send Fatal Results or Accept Duplicate Requests</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to configure the LIS to send fatally flagged results to the host or to accept duplicate test requests from the host. 
+  </p> 
+	 <section class="section context" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p">Use this procedure when the customer desires fatally flagged results to be sent to the host. 
+		</p> 
+		<p class="p">The result message can be interpreted by the host software to reorder tests or have the LAS system reintroduce the sample tubes containing the canceled tests (LIS or LAS vendor programming required). The feature might be added to the user interface 
+		  <span class="keyword wintitle" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-9BD10E6A-FAE2-4FC6-901F-F09AB2A6A672">LIS Setup</span> screen in a future software release. 
+		</p> 
+		<div class="p"> 
+		<table class="table" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__TABLE_D31B02F22CF74B8A943A52F2D8AC4D14"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry"><strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F790A6D2-1F4F-44FC-A48F-7692C4A699FB">For the following action...</strong> 
+				  </td> 
+				  <td class="entry"><strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-678E3E8A-65A2-4BF8-AFD8-EE582824D5B8">Refer to...</strong> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Configure LIS to Send Fatal Results or Accept Duplicate Requests on Windows 8 or Windows 10 system. 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__STEP_F0D0E654A00046FF977A2E860798514A">Step 1</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Configure LIS to Send Fatal Results or Accept Duplicate Requests on Windows XP system. 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA">Step 2</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Verify LIS to Send Fatal Results. 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__STEP_5B7F54E251A7495A963089D2E48D6E31">Step 3</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__STEP_F0D0E654A00046FF977A2E860798514A"> 
+		  <span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-B440EFDD-43F7-4489-ACAC-C5E91D4BEEC5">Configure LIS to Send Fatal Results or Accept Duplicate Requests on Windows 8 or Windows 10 system. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEPS_2D6441F6EAEE42A8844A852FAB121D65" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_9A7353AB5B954B03A9B979102760BD66"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-5E10C671-AFCF-4922-B1C4-211AF8FA29BC">Configure the LIS interface to send fatal results to the host. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__OL_97E3AAD179A64B8B86B3F84CF5C8091D" type="i"> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_29DC6153F04849448FADE95C36F9DE1B">Press 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-FE83EBF3-6531-45A8-A4CD-C3C9EB8C98FC">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7FAF7DF8-5A32-47B6-81CC-1E5A015997F7">regedit</strong> and open the program. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_70AE903F8DDE4275BDC8FFABABC026DC">In the registry editor, navigate to the System Setup folder.
+						<ul class="ul" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__UL_9C0DD683E65C45F6B983ED8BD808055A">
+						  <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_7DD2878CEA6E4B44AB13D220D8BB917C">For Windows 8: 
+							 <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E2483136-E483-4103-9064-5120D2424D27">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; Beckman &gt; NexStep &gt; Console &gt; System Setup.</strong>
+						  </li>
+						  <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_B50DE8354B9F4986A8EC957FA1372597">For Windows 10: 
+							 <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7AE011B4-A451-4E3F-B361-002B0A0491FF">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; WOW6432Node &gt; Beckman &gt; NexStep &gt; Console &gt; System Setup</strong> 
+						  </li>
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_25DD391288754AA6B8AA144CBF7FEA62">Right-click on the 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F965E115-6F7B-453B-A4A5-15AC2B8C36A8">LIS Send Cancel</strong> entry, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-4DCFF8DD-04EE-467A-8916-6655FBBAF9C9">Modify</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_11144FB5EA0E4C2ABC74D74CCAC8B42F">Enter 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-5DC7223D-A4BF-42D1-AFB8-DEF69B20F748">1</strong> for the value data, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-76D9F3CB-FF58-4A29-A48A-34FB98EB4F18">OK</strong>. 
+						<p class="p">If there is no 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-79A726EC-CBC2-4CAE-8164-9AD84625F5F4">LIS Send Cancel</strong> entry, then select 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-25D1E125-9086-4B22-8D43-3A9781ED5DD8">Edit &gt; New &gt; DWORD Value</strong>. Enter 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-CBB95C2F-9D25-4539-8D9F-F706A10827EC">LIS Send Cancel</strong> for the name. After the entry is added, change the value data from 0 to 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E0A64F8F-1F46-499E-9B62-858836FA9727">1</strong>. 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_8F15A376AC8748C5AD787023A6788977"> Exit the registry editor, and return to the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_1287B0E7431E45FAAB2AC3FAE004698F"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-1E6971C9-F7D2-40AF-B7D6-A7D85B52D68F">Configure the user interface LIS connection to accept duplicate test requests from the host. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__OL_DEB58F4628E74C08BC4341C23B7A9088" type="i"> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_3CA0F0F9A335489BBE4D3D9452E08820">Press 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-CEC2AD19-8842-468C-AE89-2A1643A3D321">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7F6CB9E0-A67B-4B18-81E6-8B805F89A441">regedit</strong> and open the program. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_7E83483395EC443BB599FD2A79BC2616">In the registry editor, navigate to the System Setup folder.
+						<ul class="ul" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__UL_B1481D43A592452F96422F28DEAECA96">
+						  <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_6040BB73D7CB4F69A64283DF07118F10">For Windows 8: 
+							 <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-798A8523-A84B-49D1-9751-7B46A51C1361">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; Beckman &gt; NexStep &gt; Console &gt; System Setup</strong>
+						  </li>
+						  <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_79B59FE18B784370B1751D06E4802591">For Windows 10: 
+							 <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-C37C9BF5-0B83-43A6-A804-504FB9F9B514">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; WOW6432Node &gt; Beckman &gt; NexStep &gt; Console &gt; System Setup</strong> 
+						  </li>
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_478234286AD44CFE9D91EE3C9DFE8907">Right-click on<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E8C8D5F1-DF59-4AA4-A7EB-7E18607E3A35"> Ignore Duplicate LIS Test Order</strong>, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F802CF45-4C9C-4583-8BEA-BCE830897403">Modify</strong>. Change the data value from 1 to 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-846E3DDD-CE5C-4789-A7DA-08CDADB6E965">0</strong>, then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7843AE0B-5D4F-438B-9EF6-9B49DC04EFE4">OK</strong>. 
+						<div class="note note note_note" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-496D8838-4E6D-4FFA-9B9A-FFB6729AF83D"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__UL_B7376E15D0294DA88BFEB1D8F947D069"> 
+							 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_8159D4B7D09D48F4835D6BDC5D6603C9">Setting the value to 0 will enable the system to accept duplicate test requests from the LIS host. 
+							 </li> 
+							 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_9BBB6C2B43704CCA9EC8139AD1178FB8">The value 0 is the default setting, so normally it does not need to be modified. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_F092CC064DE04B5A8E5EF5D82BD197A6">Exit the registry editor, and return to the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Configure LIS to Send Fatal Results or Accept Duplicate Requests on Windows XP system. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEPS_C62FD1753BA8476787F5EDA7A41579C5" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_6E3B40F7F0D5422EAB7EEF19DBA2EE8F"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-A256D238-E7B7-436B-95E4-DDD0442D7D89"> Configure the LIS interface to send fatal results to the host. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__OL_EDA14C04599B4993B0E388C2E02C482C" type="i"> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_20FF2EFDB9FD4B608D39A3612EDE53AF">Press the 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-D28E3AB9-A21E-4CDD-AB4A-B05DAF22AD05">Windows</span> key, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-53718499-1B4F-4BE0-A7AA-46B97385FEFF">Run</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_CD18FD7B127C45F59AF8A74C980E1A57">Enter 
+						<kbd class="ph userinput" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-D2DE2B2C-07B7-4438-BE25-5CB3DE560A5C">regedit</kbd>, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-548F22C5-1BDD-467D-8450-FD35D22ED3D8">OK</span>. 
+						<figure class="fig fignone" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__FIG_151308BBD302463BB04B84C7FFB552C1"><br /><img class="image" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__IMAGE_32E59C2F6A314EFBB7962FA16881F7A7" src="GUID-F1553EB9-D392-4D0A-AAE6-05C73C4EE918-default.gif" /><br /> 
+						</figure> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_0B7BF7F0C08A4BC9B9B3F9F6F9A8310D">In the registry editor, navigate to 
+						<span class="ph menucascade" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-EEC07837-2864-43F9-9271-09EB973F781B"><span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-BF636CD7-1688-4868-9A01-6A12E6B1BFFB">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-B11BC47A-BA5D-41A0-81CF-3839F6BC965F">SOFTWARE 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-69E6FE42-4447-4AEC-92DC-22B03ECBAD6F">Beckman</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-D44F2F4F-F403-4E24-8CDB-C58B5606CE74">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-53E4634C-7FD5-4BDE-8BC6-8906AB9C4120">Console</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-1C91F950-E8AA-4BDC-9557-8F58B75382CB">System Setup</span></span>. 
+						<figure class="fig fignone" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__FIG_5A77476568574AA4915BF17161EFA3C5"><br /><img class="image" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__IMAGE_13447584A8554A94A2B6C8F78176A718" src="GUID-5253300A-81BD-4F15-B7DA-6952FAA4FDF0-default.gif" /><br /> 
+						</figure> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_278C64DDFE664FA4990120483B9DE989">Right-click on the 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-34D103BF-3B4E-4055-ABF6-61830CF141B6">LIS Send Cancel</span> entry, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-5633411C-FEAC-4784-A3D0-D2CDA68B6BC6">Modify</span>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_82B6BAC4AC794E13B2653EF8D9870426">Enter 
+						<kbd class="ph userinput" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-6BCE8294-51BA-4388-95B9-57F656D74B7F">1</kbd> for the value data, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-9208B4F5-8982-4C82-9649-8CFD159ACCD6">OK</span>. 
+						<p class="p">If there is no 
+						  <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-768E83D8-93D4-4F40-87C9-564127C9D678">LIS Send Cancel</span> entry, then select 
+						  <span class="ph menucascade" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-84D1F369-0237-405F-AFDC-D3647587CE1B"><span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-0DECC7AD-FE24-434C-9A90-A11AEB9CEE82">Edit</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-810D2815-7806-4FF9-AFE6-5D53FF86FDE3">New</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-DE7B85A2-CE4E-476F-B1FD-84499CA19D16">DWORD Value</span></span>. Enter 
+						  <kbd class="ph userinput" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7060046F-3422-4C42-9FAE-0B53E5212E8F">LIS Send Cancel</kbd> for the name. After the entry is added, change the value data from 0 to 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-FFEC96FB-15FF-4905-B73E-0F3324DB1BFA">1</strong>. 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_CDE53939FB33470C9BB60E4A33871B49">Exit the registry editor, and return to the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_5730AB92B1CD4890A337900942D3FE4E"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-2A180B16-2986-4A74-B230-CDD7B23D1176">Configure the user interface LIS connection to accept duplicate test requests from the host. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__OL_FBA9D487D97F46EEAF66586A57244D00" type="i"> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_8DD7ABFFBAE843C1B079838BEB90BA6B">Press the 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-8DF50583-7D41-4B8C-A293-20BA127ABD8D">Windows</span> key, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E110F648-5BEB-4E82-B62F-64AD8A528C33">Run</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_76C65D1D4D3B42909E86AA0B259A3E20">Type 
+						<kbd class="ph userinput" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-DC8A6BD0-0220-4AE1-BC25-A111C4DAA6D0">regedit</kbd>, and select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-8E8DA80E-306A-4C51-96B0-787E65D17C32">OK</span>. 
+						<figure class="fig fignone" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__FIG_AEC94D99E82D45289AFACF51D450FFF3"><br /><img class="image" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__IMAGE_8969525FE8A247C8B9682D0B06298712" src="GUID-F1553EB9-D392-4D0A-AAE6-05C73C4EE918-default.gif" /><br /> 
+						</figure> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_CF1A49DB799B410EAAF87C66520D52DA">In the registry editor, navigate to 
+						<span class="ph menucascade" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-CAC29FE0-6CF3-49E8-A4F2-7D0D7339E7F3"><span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-0DEDBE86-FA60-4D7C-A10F-5EA8BCACDFF5">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-A61C2188-B638-4793-BAD3-C3B2C2F86CCD">SOFTWARE 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E04DB7D1-3E78-49B9-A045-0E227A655A9C">Beckman</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E4418BA0-9B80-477F-9D6B-851CF4CF0CB0">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-C5E4672B-824E-43A5-8552-E1D0962D122A">Console</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F3F692B2-9C21-45C4-8D8D-EA2D2182C151">System Setup</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_2BFE811D0C504673898C783CBD887229">Right-click on 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7555C23C-9D4C-4106-9E22-FADD1C6D8F83">Ignore Duplicate LIS Test Order</span>, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F4200EB0-7B4B-4345-A05B-FF98875BA955">Modify</span>. Change the value date from 1 to 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-51C4C1ED-B94F-4828-A4CF-D70A12421833">0</strong>, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E1BA58A4-2D19-4F03-A7E5-E76B0C7CA757">OK</span>. 
+						<div class="note note note_note" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F7143DF4-C12E-469E-96DE-3F0BBDA21B65"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__UL_93A4D985C42147C0AD62DD25279EB4B9"> 
+							 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_BB54328E2F8E4AE4BE14E940DF85D009">Setting the value to 0 will enable the system to accept duplicate test requests from the LIS host. 
+							 </li> 
+							 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_E3A3CAD960C04C4A9446BD972F7F69B5">The value 0 is the default setting, so normally it does not need to be modified. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_3BA14B6DD4BE43B582D6D94AE657D7F2">Exit the registry editor, and return to the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__STEP_5B7F54E251A7495A963089D2E48D6E31"> 
+		  <span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-3BBD2C63-3623-4E4B-92CB-45D7B7716794">Verify that the LIS interface sends fatal results to the host. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEPS_647E7F00C8E8464BB8076342C91A0219" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_186B129886E849EB8E2432DCB98F3F1D"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-926EAC1E-F5AC-4B8B-A810-EAEC05B77A84">Navigate to the 
+				  <span class="keyword wintitle" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-29E29EE9-5831-42CB-8847-8A2C4D4CF32D">LIS Diagnostics</span> window in the user interface to begin automatically logging LIS transmissions. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_7B21BE5A155E4B64A345AC1BA07F65D3"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-14AB2D86-D46C-433B-87A7-B7F07B654B95">Select a fatally flagged test result in the 
+				  <span class="keyword wintitle" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-DAA90687-1A46-405D-B218-159E8012AC59">Test Results</span> display, and select 
+				  <span class="ph menucascade" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-371EBBCB-B5FC-41AE-BCE7-9623B939A61D"><span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-BCAC89F2-A1B9-4546-B5C4-19DB88715C5F">Send to LIS</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-ED0F6398-B424-458F-95C5-C15041888DFA">Current Result</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-476105DC-3EB2-486F-9A21-FD805292DFE2">OK</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-3DEAF06B-3E22-4261-87B4-1486C30A57F3"><span class="note__title">Note:</span>  The LIS status for the result should progress to Accepted. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_CE8A596921C34138BC3D806D63805613"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-91396D03-0FD1-46EE-B14D-BE9CE401CE8D">If desired, navigate to the 
+				  <span class="keyword wintitle" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-14EC2237-E40E-4472-ADC0-66C549DD2FAF">LIS Diagnostics</span> window, and view the results LIS transmission. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p">This is a sample of a LIS transmission for two fatally flagged samples (SYS &amp; NCR, LIS Send Mode “By Test”): 
+				  </p> 
+				  <p class="p">&lt;STX&gt;1H|\^&amp;|||ACCESS^123|||||LIS||P|1|20040701132804&lt;CR&gt;&lt;ETX&gt;84&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;2P|1|&lt;CR&gt;&lt;ETX&gt;BB&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;3O|1|Sa2|^100^1|^^^cTnI^1|||||||||||Serum||||||||||X&lt;CR&gt;&lt;ETX&gt;17&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;4R|1|^^^cTnI^1||||||X||||20040701132727&lt;CR&gt;&lt;ETX&gt;CA&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;5C|1|I|SYS|I&lt;CR&gt;&lt;ETX&gt;3A&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;6L|1|F&lt;CR&gt;&lt;ETX&gt;01&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;1H|\^&amp;|||ACCESS^123|||||LIS||P|1|20040701132212&lt;CR&gt;&lt;ETX&gt;7D&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;2P|1|&lt;CR&gt;&lt;ETX&gt;BB&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;3O|1|Sa1|^100^1|^^^TBhCG2^1|||||||||||Serum||||||||||X&lt;CR&gt;&lt;ETX&gt;09&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;4R|1|^^^TBhCG2^1||||||X||||20040701132022&lt;CR&gt;&lt;ETX&gt;0A&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;5C|1|I|NCR|I&lt;CR&gt;&lt;ETX&gt;1E&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;6L|1|F&lt;CR&gt;&lt;ETX&gt;01&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-33EB910A-106C-4811-8E80-77D05D726210.html">Communications - LIS / pcAnywhere / Desktop Sharing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-33EB910A-106C-4811-8E80-77D05D726210.html" title="23.1 Communications - LIS / pcAnywhere / Desktop Sharing"><div><span class="ph num-prefix">23.1 </span>Communications - LIS / pcAnywhere / Desktop Sharing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC.html" lang="en-US" title="23.1.5 Configuring LIS to Send Fatal Results or Accept Duplicate Requests"><div><span class="ph num-prefix">23.1.5 </span>Configuring LIS to Send Fatal Results or Accept Duplicate Requests</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Configuring LIS to Send Fatal Results or Accept Duplicate Requests</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to configure the LIS to send fatally flagged results to the host or to accept duplicate test requests from the host. 
+  </p> 
+	 <section class="section context" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p">Use this procedure when the customer desires fatally flagged results to be sent to the host. 
+		</p> 
+		<p class="p">The result message can be interpreted by the host software to reorder tests or have the LAS system reintroduce the sample tubes containing the canceled tests (LIS or LAS vendor programming required). The feature might be added to the user interface 
+		  <span class="keyword wintitle" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-9BD10E6A-FAE2-4FC6-901F-F09AB2A6A672">LIS Setup</span> screen in a future software release. 
+		</p> 
+		<div class="p"> 
+		<table class="table" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__TABLE_D31B02F22CF74B8A943A52F2D8AC4D14"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry"><strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F790A6D2-1F4F-44FC-A48F-7692C4A699FB">For the following action...</strong> 
+				  </td> 
+				  <td class="entry"><strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-678E3E8A-65A2-4BF8-AFD8-EE582824D5B8">Refer to...</strong> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Configure LIS to Send Fatal Results or Accept Duplicate Requests on Windows 8 or Windows 10 system. 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__STEP_F0D0E654A00046FF977A2E860798514A">Step 1</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Configure LIS to Send Fatal Results or Accept Duplicate Requests on Windows XP system. 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA">Step 2</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Verify LIS to Send Fatal Results. 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__STEP_5B7F54E251A7495A963089D2E48D6E31">Step 3</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__STEP_F0D0E654A00046FF977A2E860798514A"> 
+		  <span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-B440EFDD-43F7-4489-ACAC-C5E91D4BEEC5">Configure LIS to Send Fatal Results or Accept Duplicate Requests on Windows 8 or Windows 10 system. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEPS_2D6441F6EAEE42A8844A852FAB121D65" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_9A7353AB5B954B03A9B979102760BD66"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-5E10C671-AFCF-4922-B1C4-211AF8FA29BC">Configure the LIS interface to send fatal results to the host. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__OL_97E3AAD179A64B8B86B3F84CF5C8091D" type="i"> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_29DC6153F04849448FADE95C36F9DE1B">Press 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-FE83EBF3-6531-45A8-A4CD-C3C9EB8C98FC">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7FAF7DF8-5A32-47B6-81CC-1E5A015997F7">regedit</strong> and open the program. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_70AE903F8DDE4275BDC8FFABABC026DC">In the registry editor, navigate to the System Setup folder.
+						<ul class="ul" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__UL_9C0DD683E65C45F6B983ED8BD808055A">
+						  <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_7DD2878CEA6E4B44AB13D220D8BB917C">For Windows 8: 
+							 <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E2483136-E483-4103-9064-5120D2424D27">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; Beckman &gt; NexStep &gt; Console &gt; System Setup.</strong>
+						  </li>
+						  <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_B50DE8354B9F4986A8EC957FA1372597">For Windows 10: 
+							 <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7AE011B4-A451-4E3F-B361-002B0A0491FF">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; WOW6432Node &gt; Beckman &gt; NexStep &gt; Console &gt; System Setup</strong> 
+						  </li>
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_25DD391288754AA6B8AA144CBF7FEA62">Right-click on the 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F965E115-6F7B-453B-A4A5-15AC2B8C36A8">LIS Send Cancel</strong> entry, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-4DCFF8DD-04EE-467A-8916-6655FBBAF9C9">Modify</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_11144FB5EA0E4C2ABC74D74CCAC8B42F">Enter 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-5DC7223D-A4BF-42D1-AFB8-DEF69B20F748">1</strong> for the value data, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-76D9F3CB-FF58-4A29-A48A-34FB98EB4F18">OK</strong>. 
+						<p class="p">If there is no 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-79A726EC-CBC2-4CAE-8164-9AD84625F5F4">LIS Send Cancel</strong> entry, then select 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-25D1E125-9086-4B22-8D43-3A9781ED5DD8">Edit &gt; New &gt; DWORD Value</strong>. Enter 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-CBB95C2F-9D25-4539-8D9F-F706A10827EC">LIS Send Cancel</strong> for the name. After the entry is added, change the value data from 0 to 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E0A64F8F-1F46-499E-9B62-858836FA9727">1</strong>. 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_8F15A376AC8748C5AD787023A6788977"> Exit the registry editor, and return to the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_1287B0E7431E45FAAB2AC3FAE004698F"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-1E6971C9-F7D2-40AF-B7D6-A7D85B52D68F">Configure the user interface LIS connection to accept duplicate test requests from the host. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__OL_DEB58F4628E74C08BC4341C23B7A9088" type="i"> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_3CA0F0F9A335489BBE4D3D9452E08820">Press 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-CEC2AD19-8842-468C-AE89-2A1643A3D321">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7F6CB9E0-A67B-4B18-81E6-8B805F89A441">regedit</strong> and open the program. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_7E83483395EC443BB599FD2A79BC2616">In the registry editor, navigate to the System Setup folder.
+						<ul class="ul" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__UL_B1481D43A592452F96422F28DEAECA96">
+						  <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_6040BB73D7CB4F69A64283DF07118F10">For Windows 8: 
+							 <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-798A8523-A84B-49D1-9751-7B46A51C1361">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; Beckman &gt; NexStep &gt; Console &gt; System Setup</strong>
+						  </li>
+						  <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_79B59FE18B784370B1751D06E4802591">For Windows 10: 
+							 <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-C37C9BF5-0B83-43A6-A804-504FB9F9B514">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; WOW6432Node &gt; Beckman &gt; NexStep &gt; Console &gt; System Setup</strong> 
+						  </li>
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_478234286AD44CFE9D91EE3C9DFE8907">Right-click on<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E8C8D5F1-DF59-4AA4-A7EB-7E18607E3A35"> Ignore Duplicate LIS Test Order</strong>, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F802CF45-4C9C-4583-8BEA-BCE830897403">Modify</strong>. Change the data value from 1 to 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-846E3DDD-CE5C-4789-A7DA-08CDADB6E965">0</strong>, then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7843AE0B-5D4F-438B-9EF6-9B49DC04EFE4">OK</strong>. 
+						<div class="note note note_note" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-496D8838-4E6D-4FFA-9B9A-FFB6729AF83D"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__UL_B7376E15D0294DA88BFEB1D8F947D069"> 
+							 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_8159D4B7D09D48F4835D6BDC5D6603C9">Setting the value to 0 will enable the system to accept duplicate test requests from the LIS host. 
+							 </li> 
+							 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_9BBB6C2B43704CCA9EC8139AD1178FB8">The value 0 is the default setting, so normally it does not need to be modified. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_F092CC064DE04B5A8E5EF5D82BD197A6">Exit the registry editor, and return to the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Configure LIS to Send Fatal Results or Accept Duplicate Requests on Windows XP system. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEPS_C62FD1753BA8476787F5EDA7A41579C5" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_6E3B40F7F0D5422EAB7EEF19DBA2EE8F"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-A256D238-E7B7-436B-95E4-DDD0442D7D89"> Configure the LIS interface to send fatal results to the host. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__OL_EDA14C04599B4993B0E388C2E02C482C" type="i"> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_20FF2EFDB9FD4B608D39A3612EDE53AF">Press the 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-D28E3AB9-A21E-4CDD-AB4A-B05DAF22AD05">Windows</span> key, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-53718499-1B4F-4BE0-A7AA-46B97385FEFF">Run</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_CD18FD7B127C45F59AF8A74C980E1A57">Enter 
+						<kbd class="ph userinput" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-D2DE2B2C-07B7-4438-BE25-5CB3DE560A5C">regedit</kbd>, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-548F22C5-1BDD-467D-8450-FD35D22ED3D8">OK</span>. 
+						<figure class="fig fignone" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__FIG_151308BBD302463BB04B84C7FFB552C1"><br /><img class="image" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__IMAGE_32E59C2F6A314EFBB7962FA16881F7A7" src="GUID-F1553EB9-D392-4D0A-AAE6-05C73C4EE918-default.gif" /><br /> 
+						</figure> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_0B7BF7F0C08A4BC9B9B3F9F6F9A8310D">In the registry editor, navigate to 
+						<span class="ph menucascade" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-EEC07837-2864-43F9-9271-09EB973F781B"><span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-BF636CD7-1688-4868-9A01-6A12E6B1BFFB">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-B11BC47A-BA5D-41A0-81CF-3839F6BC965F">SOFTWARE 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-69E6FE42-4447-4AEC-92DC-22B03ECBAD6F">Beckman</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-D44F2F4F-F403-4E24-8CDB-C58B5606CE74">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-53E4634C-7FD5-4BDE-8BC6-8906AB9C4120">Console</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-1C91F950-E8AA-4BDC-9557-8F58B75382CB">System Setup</span></span>. 
+						<figure class="fig fignone" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__FIG_5A77476568574AA4915BF17161EFA3C5"><br /><img class="image" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__IMAGE_13447584A8554A94A2B6C8F78176A718" src="GUID-5253300A-81BD-4F15-B7DA-6952FAA4FDF0-default.gif" /><br /> 
+						</figure> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_278C64DDFE664FA4990120483B9DE989">Right-click on the 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-34D103BF-3B4E-4055-ABF6-61830CF141B6">LIS Send Cancel</span> entry, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-5633411C-FEAC-4784-A3D0-D2CDA68B6BC6">Modify</span>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_82B6BAC4AC794E13B2653EF8D9870426">Enter 
+						<kbd class="ph userinput" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-6BCE8294-51BA-4388-95B9-57F656D74B7F">1</kbd> for the value data, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-9208B4F5-8982-4C82-9649-8CFD159ACCD6">OK</span>. 
+						<p class="p">If there is no 
+						  <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-768E83D8-93D4-4F40-87C9-564127C9D678">LIS Send Cancel</span> entry, then select 
+						  <span class="ph menucascade" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-84D1F369-0237-405F-AFDC-D3647587CE1B"><span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-0DECC7AD-FE24-434C-9A90-A11AEB9CEE82">Edit</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-810D2815-7806-4FF9-AFE6-5D53FF86FDE3">New</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-DE7B85A2-CE4E-476F-B1FD-84499CA19D16">DWORD Value</span></span>. Enter 
+						  <kbd class="ph userinput" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7060046F-3422-4C42-9FAE-0B53E5212E8F">LIS Send Cancel</kbd> for the name. After the entry is added, change the value data from 0 to 
+						  <strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-FFEC96FB-15FF-4905-B73E-0F3324DB1BFA">1</strong>. 
+						</p> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_CDE53939FB33470C9BB60E4A33871B49">Exit the registry editor, and return to the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_5730AB92B1CD4890A337900942D3FE4E"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-2A180B16-2986-4A74-B230-CDD7B23D1176">Configure the user interface LIS connection to accept duplicate test requests from the host. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__OL_FBA9D487D97F46EEAF66586A57244D00" type="i"> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_8DD7ABFFBAE843C1B079838BEB90BA6B">Press the 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-8DF50583-7D41-4B8C-A293-20BA127ABD8D">Windows</span> key, and then select 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E110F648-5BEB-4E82-B62F-64AD8A528C33">Run</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_76C65D1D4D3B42909E86AA0B259A3E20">Type 
+						<kbd class="ph userinput" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-DC8A6BD0-0220-4AE1-BC25-A111C4DAA6D0">regedit</kbd>, and select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-8E8DA80E-306A-4C51-96B0-787E65D17C32">OK</span>. 
+						<figure class="fig fignone" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__FIG_AEC94D99E82D45289AFACF51D450FFF3"><br /><img class="image" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__IMAGE_8969525FE8A247C8B9682D0B06298712" src="GUID-F1553EB9-D392-4D0A-AAE6-05C73C4EE918-default.gif" /><br /> 
+						</figure> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_CF1A49DB799B410EAAF87C66520D52DA">In the registry editor, navigate to 
+						<span class="ph menucascade" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-CAC29FE0-6CF3-49E8-A4F2-7D0D7339E7F3"><span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-0DEDBE86-FA60-4D7C-A10F-5EA8BCACDFF5">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-A61C2188-B638-4793-BAD3-C3B2C2F86CCD">SOFTWARE 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E04DB7D1-3E78-49B9-A045-0E227A655A9C">Beckman</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E4418BA0-9B80-477F-9D6B-851CF4CF0CB0">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-C5E4672B-824E-43A5-8552-E1D0962D122A">Console</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F3F692B2-9C21-45C4-8D8D-EA2D2182C151">System Setup</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_2BFE811D0C504673898C783CBD887229">Right-click on 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-7555C23C-9D4C-4106-9E22-FADD1C6D8F83">Ignore Duplicate LIS Test Order</span>, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F4200EB0-7B4B-4345-A05B-FF98875BA955">Modify</span>. Change the value date from 1 to 
+						<strong class="ph b" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-51C4C1ED-B94F-4828-A4CF-D70A12421833">0</strong>, and then select 
+						<span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-E1BA58A4-2D19-4F03-A7E5-E76B0C7CA757">OK</span>. 
+						<div class="note note note_note" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-F7143DF4-C12E-469E-96DE-3F0BBDA21B65"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__UL_93A4D985C42147C0AD62DD25279EB4B9"> 
+							 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_BB54328E2F8E4AE4BE14E940DF85D009">Setting the value to 0 will enable the system to accept duplicate test requests from the LIS host. 
+							 </li> 
+							 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_E3A3CAD960C04C4A9446BD972F7F69B5">The value 0 is the default setting, so normally it does not need to be modified. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__LI_3BA14B6DD4BE43B582D6D94AE657D7F2">Exit the registry editor, and return to the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__STEP_5B7F54E251A7495A963089D2E48D6E31"> 
+		  <span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-3BBD2C63-3623-4E4B-92CB-45D7B7716794">Verify that the LIS interface sends fatal results to the host. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEPS_647E7F00C8E8464BB8076342C91A0219" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_186B129886E849EB8E2432DCB98F3F1D"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-926EAC1E-F5AC-4B8B-A810-EAEC05B77A84">Navigate to the 
+				  <span class="keyword wintitle" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-29E29EE9-5831-42CB-8847-8A2C4D4CF32D">LIS Diagnostics</span> window in the user interface to begin automatically logging LIS transmissions. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_7B21BE5A155E4B64A345AC1BA07F65D3"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-14AB2D86-D46C-433B-87A7-B7F07B654B95">Select a fatally flagged test result in the 
+				  <span class="keyword wintitle" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-DAA90687-1A46-405D-B218-159E8012AC59">Test Results</span> display, and select 
+				  <span class="ph menucascade" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-371EBBCB-B5FC-41AE-BCE7-9623B939A61D"><span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-BCAC89F2-A1B9-4546-B5C4-19DB88715C5F">Send to LIS</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-ED0F6398-B424-458F-95C5-C15041888DFA">Current Result</span> &gt; <span class="ph uicontrol" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-476105DC-3EB2-486F-9A21-FD805292DFE2">OK</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-3DEAF06B-3E22-4261-87B4-1486C30A57F3"><span class="note__title">Note:</span>  The LIS status for the result should progress to Accepted. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__SUBSTEP_CE8A596921C34138BC3D806D63805613"> 
+				<span class="ph cmd" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-91396D03-0FD1-46EE-B14D-BE9CE401CE8D">If desired, navigate to the 
+				  <span class="keyword wintitle" id="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC__GUID-14EC2237-E40E-4472-ADC0-66C549DD2FAF">LIS Diagnostics</span> window, and view the results LIS transmission. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p">This is a sample of a LIS transmission for two fatally flagged samples (SYS &amp; NCR, LIS Send Mode “By Test”): 
+				  </p> 
+				  <p class="p">&lt;STX&gt;1H|\^&amp;|||ACCESS^123|||||LIS||P|1|20040701132804&lt;CR&gt;&lt;ETX&gt;84&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;2P|1|&lt;CR&gt;&lt;ETX&gt;BB&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;3O|1|Sa2|^100^1|^^^cTnI^1|||||||||||Serum||||||||||X&lt;CR&gt;&lt;ETX&gt;17&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;4R|1|^^^cTnI^1||||||X||||20040701132727&lt;CR&gt;&lt;ETX&gt;CA&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;5C|1|I|SYS|I&lt;CR&gt;&lt;ETX&gt;3A&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;6L|1|F&lt;CR&gt;&lt;ETX&gt;01&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;1H|\^&amp;|||ACCESS^123|||||LIS||P|1|20040701132212&lt;CR&gt;&lt;ETX&gt;7D&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;2P|1|&lt;CR&gt;&lt;ETX&gt;BB&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;3O|1|Sa1|^100^1|^^^TBhCG2^1|||||||||||Serum||||||||||X&lt;CR&gt;&lt;ETX&gt;09&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;4R|1|^^^TBhCG2^1||||||X||||20040701132022&lt;CR&gt;&lt;ETX&gt;0A&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;5C|1|I|NCR|I&lt;CR&gt;&lt;ETX&gt;1E&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				  <p class="p">&lt;STX&gt;6L|1|F&lt;CR&gt;&lt;ETX&gt;01&lt;CR&gt;&lt;LF&gt;&lt;ACK&gt; 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-33EB910A-106C-4811-8E80-77D05D726210.html">Communications - LIS / pcAnywhere / Desktop Sharing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-33EB910A-106C-4811-8E80-77D05D726210.html" title="23.1 Communications - LIS / pcAnywhere / Desktop Sharing"><div><span class="ph num-prefix">23.1 </span>Communications - LIS / pcAnywhere / Desktop Sharing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-F8BA6D39-CA6C-4181-A3C7-126538E12CEC.html" lang="en-US" title="23.1.5 Configuring LIS to Send Fatal Results or Accept Duplicate Requests"><div><span class="ph num-prefix">23.1.5 </span>Configuring LIS to Send Fatal Results or Accept Duplicate Requests</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

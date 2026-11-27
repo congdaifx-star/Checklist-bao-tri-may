@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to load a previous APF version (a lower revision number) on a DxI instrument and how to delete UDRs on an integrated DxI instrument." name="description" /><meta content="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.4.1 Installing Previous APF Version</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html" rel="prev" /><link href="GUID-C48D8D5F-AC5C-4CF0-83EA-4CE2B78B2A13.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3010" data-relpath="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Installing Previous APF Version</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to load a previous APF version (a lower revision number) on a DxI instrument and how to delete UDRs on an integrated DxI instrument. 
+  </p> 
+	 <section class="section context" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p">For integrated DxI instruments only: Recently released APFs have multiple dilution assays in preparation for the release of the DxI on-board dilution feature. The DxC instrument has a UDR (user-defined reagent) feature that allows the customer to set up and configure non-BCI tests. If the DxC software is lower than V5.0 and the UDRs are enabled, then the AAF load fails if the limit of 350 chemistries is exceeded. This happens after a successful APF load on the DxI, when attempting the AAF upgrade on the DxC. Before proceeding with the AAF upgrade, delete the UDRs from the DxC or restore the APF to the previous version. The system will not process samples until the APF and AAF versions of the DxI and DxC match. 
+		</p> 
+		<div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-033C3FBA-E9E1-4AA5-8D93-BACD6E39D5C4"><span class="note__title">Note:</span> DxC software V5.0 and above increases the chemistry limit from 350 to 600 (500 BCI chemistries and 100 UDRs). 
+		</div> 
+		<div class="p">When to Perform 
+		<table class="table" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__1">Instrument 
+				  </th> 
+				  <th class="entry" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__2">When to Perform 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__1 ">Integrated DxI (660i, 680i, 860i, 880i) 
+				  </td> 
+				  <td class="entry" headers="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__2 ">A 
+					 <samp class="ph msgph" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-004E575F-0429-4A81-A713-D4183BB15BF8">Chemistry update aborted, too many UDR chemistries, delete and retry update</samp> error message is received on the DxC console while attempting to update the AAF and these conditions are true: 
+					 <ul class="ul" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__UL_5C37B1D256EF477DAEDB02CD2F70A5B5"> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_7AC6F920553941198C687B205D734127">DxC software V5.0 or above is not available. 
+						</li> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_2B5C2E02A9004C7C857010854E2FA0C0">The customer is unwilling to delete the required number of UDRs. 
+						  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-6D4CECC3-9C6A-43FE-A6E1-2F615347BFE5"><span class="note__title">Note:</span>  If the customer is willing to delete UDRs, then proceed to the 
+							 <a class="xref" href="GUID-73FC5E15-4FAA-47D2-A973-DAFB96B5F0C2.html" title="This procedure describes how to delete UDRs.">Software: Deleting UDRs</a> procedure. 
+						  </div> 
+						</li> 
+					 </ul> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__1 ">Non-integrated DxI 
+				  </td> 
+				  <td class="entry" headers="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__2 ">A customer wants a previous APF version loaded. Examples include: 
+					 <ul class="ul" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__UL_38E0DB3D8A1C4EAB806569B3CA943BBF"> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_4A3017CC812E42D4871140D987B65AF0">RUO (Research Use Only) APF overwritten by IVD APF. 
+						</li> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_DD268EB3BF0F4A9AA05829715C87CF28">RUO APF does not load because the version is lower than the APF version currently installed. 
+						</li> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_D9504C5A5D604EB49CCCE4F456F9DEE3">To restore a deleted assay. 
+						</li> 
+					 </ul> 
+					 <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-AA864CBE-CAD8-4FC4-9C66-829A0DF7BDA4"><span class="note__title">Note:</span> A backup made prior to loading the APF can also be used to restore the system to a prior APF version. 
+					 </div> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Delete UDRs (if applicable) 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <a class="xref" href="./Attachments/Deconfigure%20UDR.pdf" target="_blank"> Deconfigure UDR.pdf 
+			 </a> 
+			 <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F44FE2B8-C931-4AFD-928A-9B9390B03ABD"><span class="note__title">Note:</span> If this section is performed, then this procedure is complete. It is not necessary to reload the previous APF version. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__STEP_42639102F4C94F289DEE61CAF4D1F581"> 
+		  <span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-8946D032-DF85-4EFA-904F-C9A93EF13F75"> Install the previous APF version. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-087CFC38-E620-4608-B497-509DBA8055D1">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-33F14FEF-18A8-47ED-AD81-C7226DC81EEC"><span class="note__title">Note:</span> Software V4.5 or higher does not allow installation of a previous APF version without changing a registry setting. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEPS_8CF77E757AEE4781AEBDEE8B1F8D0422" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_A29885A370F04B94B2E3ED405558BAB6"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-5338603F-5F3B-489A-AE42-34721F67BF95">Select 
+				  <span class="ph menucascade" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F15DC5E4-8A0A-40D7-9700-33E5D65A4996"><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-223E8FE4-4ED8-4B55-AE99-70A775B4E021">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-BDBFFB8D-678E-4C14-BB0C-33C20AC218CF">Run</span></span>, type 
+				  <kbd class="ph userinput" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-AFD053C8-0966-4145-838D-D311DF920364">regedit</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-80452E64-CC04-47F1-AA06-21D0209EA216">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_8E8F5614EEC34D4D8C70B7CC2F9B159C"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-2A8744B6-E853-4A0C-9011-F176598EA18F">Select 
+				  <span class="ph menucascade" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-A3273949-F4C5-49DD-8BC4-F1D3F192B3D5"><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-BADBFEA5-0AD0-483D-AB09-DAC380AD8BDF">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-60B69238-9EA6-4452-B837-96483B147BD1">SOFTWARE</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-61684167-28E4-44EB-8298-3394D60F4C24">Beckman</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-EF6269D9-1886-4453-8E01-C197F64C2B98">NexStep</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_8D68B5E3016244D8BFB5987BBFAB9D6C"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_DD2342509241403783B5C071D2347005" src="GUID-356ED457-49F2-478D-97DF-0F6408856A96-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_930FACD716DE4068BE525E1D544BAE52"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-0A0AA13C-777F-49A0-A3AC-D4E1C27CFBBA">Right-click on the right side of the split screen, select 
+				  <span class="ph menucascade" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-13D36209-96AF-4D43-A96D-60F7608B60AD"><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-0C5346ED-C19D-4FEF-BAEA-A1BB3A256F68">New</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-FFC930E1-DC8C-4010-879B-530EA3E39FBB">DWORD Value</span></span>, and change the name of the new entry to 
+				  <kbd class="ph userinput" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-953FE455-491B-445A-A787-16DF91788415">AllowAllAPFsToLoad</kbd>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-2DB02BB5-833E-43D3-9395-6B43A5070AA6"><span class="note__title">Note:</span> The name is case-sensitive. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_EBD9BB70F81E4BE0B17CC786417AFC62"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_E7D5C4497A224F969548404C596A050F" src="GUID-FDD96E42-20C3-4C03-97ED-BD5E066D6D68-default.gif" /><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_56CB242A6B6B48EA8E1923F551FFB311" src="GUID-B72C34A0-F445-49E4-91D6-FF1186F27510-default.gif" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_713D19C5ECE54B119A52381B31801F68"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-8B092269-356F-41A6-A6BA-8A0C2AC9E4E7">Right-click the 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F68227A9-1AD5-46CB-B0CB-C265C0DA2EBA">AllowAllAPFsToLoad</span> entry, select 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-93FE7788-3CE6-40DF-A80E-A3B872E09D42">Modify</span>, change the entry to 
+				  <kbd class="ph userinput" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-662F7ECA-0250-4679-B5C2-B747879541E7">1</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-9E5A226D-62AE-4C68-801C-24F038A240A0">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_381F235C27CE491784A2C96F9E14CBD9"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_0A9EC41062A940C4BF809218E83D33B1" src="GUID-2C6E9B6F-6B5A-4960-A181-CB3C96D7035B-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_4FCC97F2FE914E16ACC17BCC2D21969B"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-6810FE5D-C227-40D2-B8FA-FB1C0DA4F0B6">Load the desired APF version. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F28067FD-71D7-4735-B038-951029A8748A"><span class="note__title">Note:</span> If the user interface is not launched, then select 
+					 <span class="ph menucascade" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-31102B98-2CA1-45B1-90D0-1877ADFE39AB"><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-075204A6-0AE3-4CC7-A5A6-27511833DEBF">Start</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-13CD1952-415C-4FBD-99B8-A15802F0D981">Programs</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-055768DA-7A24-48B6-B8B1-C66BA3CC5870">NexGen</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-B195BCC8-43F8-46AF-BD7F-9A912E63C3EE">NexGenUI UD</span></span>. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__UL_EC66D9F20CAA4145B9C8AD1EE2F8C009"> 
+					 <li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_83A1A45572AD4EBD9884BD60D9C63A45">On the user interface Main Menu, select 
+						<span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-3D860706-B62C-46A3-B69A-B1A1C1F8346B">Configure</span><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-AE6554CD-A990-4B73-BAC4-52E75E328554">Tests 
+						</span><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-29C5DF05-86EC-4577-B7C9-98C0A887987B">Update APF</span>, and then follow the instructions. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_CF199414721341F6A188BBF9882449B5"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-08785991-D45A-4C8B-9591-9D2E7A906071">Delete the 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-DA28120F-89E7-4C26-BD67-FD90DB7746C4">AllowAllAPFsToLoad</span> entry or change the entry back to 
+				  <kbd class="ph userinput" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F5E8492C-78E0-4CE6-A755-D232B28928EB">0</kbd>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-17CA58DC-0043-495F-800E-E1D0EABDCB1C"><span class="note__title">Caution:</span> If the entry is not deleted or changed to 0, it is possible to load any APF on the instrument - including APFs for other instrument models. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_F37B61347E834BEDADEACD3EE28084E4"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-93D8A230-1AD8-4990-BD25-98E5C4D7BA1F">Close the registry editor. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_C466AA8B83D8447FAABE21B096484787"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-9E2DF208-1D2A-435D-9EB3-F305880948E5">If this instrument is an integrated DxI, then verify that the APF and AAF versions are compatible. If a 
+				  <samp class="ph msgph" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-A8ECBCBE-F725-41D5-93EA-808FA8CE83D7">DxI tests are not runnable</samp> message is displayed on the DxC console, update the AAF. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p">If this instrument is a stand-alone DxI, then this procedure is complete. 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"><strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-BF8371F0-108D-47FA-A548-621F51D0B58A">For Windows 8: 
+			 </strong> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-BD21C4C9-F151-4469-AB26-81B7740C353C"><span class="note__title">Note:</span> Software V5.3.1 or higher does not allow installation of a previous APF version without changing a registry setting. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEPS_C3F338DA67684FDDA07E2A8BE037EA3A" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_BCAE0C72229946659EE21DB150723C0D"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-0C220864-C7E5-4A10-AEF2-14027E278E1B">Press 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-C78E5837-4DB1-44F2-A935-10BB534717DA">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-8B76747E-527E-4A95-86D7-6AEC1C3E80D6">regedit</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_B0B54A036F08496483FCB1E5C21E8751"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-1676CA7C-FC4B-4BFC-9269-F3280DA2BFBF">In the registry editor, navigate to 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-4FD2FE0F-FECD-4806-AFEA-F0B44E83C805">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; Beckman &gt; NexStep 
+				  </strong> 
+				</span> 
+				<div class="itemgroup info">
+				  <p class="p">
+				  </p><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_ABC46943CBC442628614E1BF0B582D60" src="GUID-356ED457-49F2-478D-97DF-0F6408856A96-default.gif" /><br /> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_5A1BF2111C994685BAB99979246D4E78"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-87333A50-8E40-4F9B-929A-6AD6344F4884">Right-click on the right side of the split screen, select 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-B152F96C-78C7-47C9-A6C4-92D053B87971">New &gt; DWORD Value</strong>, and change the name of the new entry to 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-AD782C4E-8606-4507-99E7-D99F46DBBF25">AllowAllAPFsToLoad</strong>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-65816BE6-9D24-4A7C-BDCA-18A9B2C24BD0"><span class="note__title">Note:</span> The name is case-sensitive. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_BB7AB262AC3C4C9CA93E77E37E3B753E"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_9F33B6B24F5145998A22A0B23DB726F7" src="GUID-FDD96E42-20C3-4C03-97ED-BD5E066D6D68-default.gif" /><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_BD960B25B22C434EB03AA8A12BFDFA5E" src="GUID-B72C34A0-F445-49E4-91D6-FF1186F27510-default.gif" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_FCDFBD5A3F4B47F09C68483975E9524A"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-5B6EA2B9-394A-4CE9-B625-2EBD42C21799">Right-click the 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-08D85444-A4F3-4F33-A573-E754F8DE547D">AllowAllAPFsToLoad</strong> entry, select 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-68D404CB-8FE5-4FE7-9DC6-DC6B19B89FB9">Modify</strong>, change the entry to 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-69EF209D-7B35-4228-ABE0-AEA71EE660B8">1</strong>, and then select 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-179262B9-C509-4827-8075-10D7FD8B01B2">OK</strong>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_903841AC2B2C489699DC5102F48E04F6"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_9775A3EB29934AE187B760039F37A3E0" src="GUID-2C6E9B6F-6B5A-4960-A181-CB3C96D7035B-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_5F5F99689F5C435C98D1EB756E33F9B9"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-1490F6F1-F70B-42FE-9F4E-5154C1DD861B">Load the desired APF version. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-3F288B6F-FC7F-4CE6-BBC3-B186189081FF"><span class="note__title">Note:</span> If the user interface is not launched, then double-click the 
+					 <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-266BCA05-9302-4B51-811B-EABA8CBF6B8F">NexGen Application</strong> short cut on the desktop or press 
+					 <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-09EF368F-D860-462C-B9C5-5FE40CA8D886">Windows</strong> key and select the 
+					 <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-C2FEFB1D-78A7-4092-AAD0-7DB031205AEA">NexGenUI UD</strong> icon. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__UL_EE07795CCE354BA0B686FCE13C04F0B4"> 
+					 <li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_DB0477C6F66C4261A693C927E35C0276">On the user interface Main Menu, select 
+						<strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-A7041BA3-0821-42F4-A46F-6096A33EA0B8">Configure &gt; Tests &gt; Update APF</strong>, and then follow the instructions. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_7A690F5E091D48B5B9FD14BED02A9784"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-D57CC6F4-61C3-4A3A-B758-F5989F89BF41">Delete the 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-19919547-80B2-4288-BB57-A43CF81F8C46">AllowAllAPFsToLoad</strong> entry or change the entry back to 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-5DD215BB-D191-47E4-8D90-B853BCA770DE">0</strong>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-FDAD3720-577D-4C14-BD1D-884C300FD4E7"><span class="note__title">Caution:</span> If the entry is not deleted or changed to 0, it is possible to load any APF on the instrument - including APFs for other instrument models. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_89C104559FEB46BEAFFC4BA5F36EBDF3"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-1E66D63F-021B-455A-A0BB-9F463A5E7AE2"> Close the registry editor. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_46925E69C3DD4F0895FEAFE277DA51A9"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-D51D63DA-8F2D-40D7-8223-9448F88CB360">If this instrument is an integrated DxI, then verify that the APF and AAF versions are compatible. If a DxI tests are not runnable message is displayed on the DxC console, update the AAF. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> If this instrument is a stand-alone DxI, then this procedure is complete. 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html">Installing / Removing / Replacing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html" title="23.4 Installing / Removing / Replacing"><div><span class="ph num-prefix">23.4 </span>Installing / Removing / Replacing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC.html" lang="en-US" title="23.4.1 Installing Previous APF Version"><div><span class="ph num-prefix">23.4.1 </span>Installing Previous APF Version</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Installing Previous APF Version</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to load a previous APF version (a lower revision number) on a DxI instrument and how to delete UDRs on an integrated DxI instrument. 
+  </p> 
+	 <section class="section context" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p">For integrated DxI instruments only: Recently released APFs have multiple dilution assays in preparation for the release of the DxI on-board dilution feature. The DxC instrument has a UDR (user-defined reagent) feature that allows the customer to set up and configure non-BCI tests. If the DxC software is lower than V5.0 and the UDRs are enabled, then the AAF load fails if the limit of 350 chemistries is exceeded. This happens after a successful APF load on the DxI, when attempting the AAF upgrade on the DxC. Before proceeding with the AAF upgrade, delete the UDRs from the DxC or restore the APF to the previous version. The system will not process samples until the APF and AAF versions of the DxI and DxC match. 
+		</p> 
+		<div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-033C3FBA-E9E1-4AA5-8D93-BACD6E39D5C4"><span class="note__title">Note:</span> DxC software V5.0 and above increases the chemistry limit from 350 to 600 (500 BCI chemistries and 100 UDRs). 
+		</div> 
+		<div class="p">When to Perform 
+		<table class="table" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__1">Instrument 
+				  </th> 
+				  <th class="entry" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__2">When to Perform 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__1 ">Integrated DxI (660i, 680i, 860i, 880i) 
+				  </td> 
+				  <td class="entry" headers="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__2 ">A 
+					 <samp class="ph msgph" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-004E575F-0429-4A81-A713-D4183BB15BF8">Chemistry update aborted, too many UDR chemistries, delete and retry update</samp> error message is received on the DxC console while attempting to update the AAF and these conditions are true: 
+					 <ul class="ul" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__UL_5C37B1D256EF477DAEDB02CD2F70A5B5"> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_7AC6F920553941198C687B205D734127">DxC software V5.0 or above is not available. 
+						</li> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_2B5C2E02A9004C7C857010854E2FA0C0">The customer is unwilling to delete the required number of UDRs. 
+						  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-6D4CECC3-9C6A-43FE-A6E1-2F615347BFE5"><span class="note__title">Note:</span>  If the customer is willing to delete UDRs, then proceed to the 
+							 <a class="xref" href="GUID-73FC5E15-4FAA-47D2-A973-DAFB96B5F0C2.html" title="This procedure describes how to delete UDRs.">Software: Deleting UDRs</a> procedure. 
+						  </div> 
+						</li> 
+					 </ul> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__1 ">Non-integrated DxI 
+				  </td> 
+				  <td class="entry" headers="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__TABLE_8E2C52739A4F4D2084D2F0830AEF306D__entry__2 ">A customer wants a previous APF version loaded. Examples include: 
+					 <ul class="ul" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__UL_38E0DB3D8A1C4EAB806569B3CA943BBF"> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_4A3017CC812E42D4871140D987B65AF0">RUO (Research Use Only) APF overwritten by IVD APF. 
+						</li> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_DD268EB3BF0F4A9AA05829715C87CF28">RUO APF does not load because the version is lower than the APF version currently installed. 
+						</li> 
+						<li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_D9504C5A5D604EB49CCCE4F456F9DEE3">To restore a deleted assay. 
+						</li> 
+					 </ul> 
+					 <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-AA864CBE-CAD8-4FC4-9C66-829A0DF7BDA4"><span class="note__title">Note:</span> A backup made prior to loading the APF can also be used to restore the system to a prior APF version. 
+					 </div> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Delete UDRs (if applicable) 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <a class="xref" href="./Attachments/Deconfigure%20UDR.pdf" target="_blank"> Deconfigure UDR.pdf 
+			 </a> 
+			 <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F44FE2B8-C931-4AFD-928A-9B9390B03ABD"><span class="note__title">Note:</span> If this section is performed, then this procedure is complete. It is not necessary to reload the previous APF version. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__STEP_42639102F4C94F289DEE61CAF4D1F581"> 
+		  <span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-8946D032-DF85-4EFA-904F-C9A93EF13F75"> Install the previous APF version. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-087CFC38-E620-4608-B497-509DBA8055D1">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-33F14FEF-18A8-47ED-AD81-C7226DC81EEC"><span class="note__title">Note:</span> Software V4.5 or higher does not allow installation of a previous APF version without changing a registry setting. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEPS_8CF77E757AEE4781AEBDEE8B1F8D0422" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_A29885A370F04B94B2E3ED405558BAB6"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-5338603F-5F3B-489A-AE42-34721F67BF95">Select 
+				  <span class="ph menucascade" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F15DC5E4-8A0A-40D7-9700-33E5D65A4996"><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-223E8FE4-4ED8-4B55-AE99-70A775B4E021">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-BDBFFB8D-678E-4C14-BB0C-33C20AC218CF">Run</span></span>, type 
+				  <kbd class="ph userinput" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-AFD053C8-0966-4145-838D-D311DF920364">regedit</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-80452E64-CC04-47F1-AA06-21D0209EA216">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_8E8F5614EEC34D4D8C70B7CC2F9B159C"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-2A8744B6-E853-4A0C-9011-F176598EA18F">Select 
+				  <span class="ph menucascade" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-A3273949-F4C5-49DD-8BC4-F1D3F192B3D5"><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-BADBFEA5-0AD0-483D-AB09-DAC380AD8BDF">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-60B69238-9EA6-4452-B837-96483B147BD1">SOFTWARE</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-61684167-28E4-44EB-8298-3394D60F4C24">Beckman</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-EF6269D9-1886-4453-8E01-C197F64C2B98">NexStep</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_8D68B5E3016244D8BFB5987BBFAB9D6C"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_DD2342509241403783B5C071D2347005" src="GUID-356ED457-49F2-478D-97DF-0F6408856A96-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_930FACD716DE4068BE525E1D544BAE52"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-0A0AA13C-777F-49A0-A3AC-D4E1C27CFBBA">Right-click on the right side of the split screen, select 
+				  <span class="ph menucascade" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-13D36209-96AF-4D43-A96D-60F7608B60AD"><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-0C5346ED-C19D-4FEF-BAEA-A1BB3A256F68">New</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-FFC930E1-DC8C-4010-879B-530EA3E39FBB">DWORD Value</span></span>, and change the name of the new entry to 
+				  <kbd class="ph userinput" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-953FE455-491B-445A-A787-16DF91788415">AllowAllAPFsToLoad</kbd>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-2DB02BB5-833E-43D3-9395-6B43A5070AA6"><span class="note__title">Note:</span> The name is case-sensitive. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_EBD9BB70F81E4BE0B17CC786417AFC62"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_E7D5C4497A224F969548404C596A050F" src="GUID-FDD96E42-20C3-4C03-97ED-BD5E066D6D68-default.gif" /><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_56CB242A6B6B48EA8E1923F551FFB311" src="GUID-B72C34A0-F445-49E4-91D6-FF1186F27510-default.gif" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_713D19C5ECE54B119A52381B31801F68"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-8B092269-356F-41A6-A6BA-8A0C2AC9E4E7">Right-click the 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F68227A9-1AD5-46CB-B0CB-C265C0DA2EBA">AllowAllAPFsToLoad</span> entry, select 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-93FE7788-3CE6-40DF-A80E-A3B872E09D42">Modify</span>, change the entry to 
+				  <kbd class="ph userinput" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-662F7ECA-0250-4679-B5C2-B747879541E7">1</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-9E5A226D-62AE-4C68-801C-24F038A240A0">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_381F235C27CE491784A2C96F9E14CBD9"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_0A9EC41062A940C4BF809218E83D33B1" src="GUID-2C6E9B6F-6B5A-4960-A181-CB3C96D7035B-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_4FCC97F2FE914E16ACC17BCC2D21969B"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-6810FE5D-C227-40D2-B8FA-FB1C0DA4F0B6">Load the desired APF version. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F28067FD-71D7-4735-B038-951029A8748A"><span class="note__title">Note:</span> If the user interface is not launched, then select 
+					 <span class="ph menucascade" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-31102B98-2CA1-45B1-90D0-1877ADFE39AB"><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-075204A6-0AE3-4CC7-A5A6-27511833DEBF">Start</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-13CD1952-415C-4FBD-99B8-A15802F0D981">Programs</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-055768DA-7A24-48B6-B8B1-C66BA3CC5870">NexGen</span> &gt; <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-B195BCC8-43F8-46AF-BD7F-9A912E63C3EE">NexGenUI UD</span></span>. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__UL_EC66D9F20CAA4145B9C8AD1EE2F8C009"> 
+					 <li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_83A1A45572AD4EBD9884BD60D9C63A45">On the user interface Main Menu, select 
+						<span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-3D860706-B62C-46A3-B69A-B1A1C1F8346B">Configure</span><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-AE6554CD-A990-4B73-BAC4-52E75E328554">Tests 
+						</span><span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-29C5DF05-86EC-4577-B7C9-98C0A887987B">Update APF</span>, and then follow the instructions. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_CF199414721341F6A188BBF9882449B5"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-08785991-D45A-4C8B-9591-9D2E7A906071">Delete the 
+				  <span class="ph uicontrol" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-DA28120F-89E7-4C26-BD67-FD90DB7746C4">AllowAllAPFsToLoad</span> entry or change the entry back to 
+				  <kbd class="ph userinput" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-F5E8492C-78E0-4CE6-A755-D232B28928EB">0</kbd>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-17CA58DC-0043-495F-800E-E1D0EABDCB1C"><span class="note__title">Caution:</span> If the entry is not deleted or changed to 0, it is possible to load any APF on the instrument - including APFs for other instrument models. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_F37B61347E834BEDADEACD3EE28084E4"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-93D8A230-1AD8-4990-BD25-98E5C4D7BA1F">Close the registry editor. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_C466AA8B83D8447FAABE21B096484787"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-9E2DF208-1D2A-435D-9EB3-F305880948E5">If this instrument is an integrated DxI, then verify that the APF and AAF versions are compatible. If a 
+				  <samp class="ph msgph" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-A8ECBCBE-F725-41D5-93EA-808FA8CE83D7">DxI tests are not runnable</samp> message is displayed on the DxC console, update the AAF. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p">If this instrument is a stand-alone DxI, then this procedure is complete. 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"><strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-BF8371F0-108D-47FA-A548-621F51D0B58A">For Windows 8: 
+			 </strong> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-BD21C4C9-F151-4469-AB26-81B7740C353C"><span class="note__title">Note:</span> Software V5.3.1 or higher does not allow installation of a previous APF version without changing a registry setting. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEPS_C3F338DA67684FDDA07E2A8BE037EA3A" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_BCAE0C72229946659EE21DB150723C0D"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-0C220864-C7E5-4A10-AEF2-14027E278E1B">Press 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-C78E5837-4DB1-44F2-A935-10BB534717DA">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-8B76747E-527E-4A95-86D7-6AEC1C3E80D6">regedit</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_B0B54A036F08496483FCB1E5C21E8751"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-1676CA7C-FC4B-4BFC-9269-F3280DA2BFBF">In the registry editor, navigate to 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-4FD2FE0F-FECD-4806-AFEA-F0B44E83C805">HKEY_LOCAL_MACHINE &gt; SOFTWARE &gt; Beckman &gt; NexStep 
+				  </strong> 
+				</span> 
+				<div class="itemgroup info">
+				  <p class="p">
+				  </p><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_ABC46943CBC442628614E1BF0B582D60" src="GUID-356ED457-49F2-478D-97DF-0F6408856A96-default.gif" /><br /> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_5A1BF2111C994685BAB99979246D4E78"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-87333A50-8E40-4F9B-929A-6AD6344F4884">Right-click on the right side of the split screen, select 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-B152F96C-78C7-47C9-A6C4-92D053B87971">New &gt; DWORD Value</strong>, and change the name of the new entry to 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-AD782C4E-8606-4507-99E7-D99F46DBBF25">AllowAllAPFsToLoad</strong>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-65816BE6-9D24-4A7C-BDCA-18A9B2C24BD0"><span class="note__title">Note:</span> The name is case-sensitive. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_BB7AB262AC3C4C9CA93E77E37E3B753E"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_9F33B6B24F5145998A22A0B23DB726F7" src="GUID-FDD96E42-20C3-4C03-97ED-BD5E066D6D68-default.gif" /><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_BD960B25B22C434EB03AA8A12BFDFA5E" src="GUID-B72C34A0-F445-49E4-91D6-FF1186F27510-default.gif" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_FCDFBD5A3F4B47F09C68483975E9524A"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-5B6EA2B9-394A-4CE9-B625-2EBD42C21799">Right-click the 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-08D85444-A4F3-4F33-A573-E754F8DE547D">AllowAllAPFsToLoad</strong> entry, select 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-68D404CB-8FE5-4FE7-9DC6-DC6B19B89FB9">Modify</strong>, change the entry to 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-69EF209D-7B35-4228-ABE0-AEA71EE660B8">1</strong>, and then select 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-179262B9-C509-4827-8075-10D7FD8B01B2">OK</strong>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__FIG_903841AC2B2C489699DC5102F48E04F6"><br /><img class="image" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__IMAGE_9775A3EB29934AE187B760039F37A3E0" src="GUID-2C6E9B6F-6B5A-4960-A181-CB3C96D7035B-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_5F5F99689F5C435C98D1EB756E33F9B9"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-1490F6F1-F70B-42FE-9F4E-5154C1DD861B">Load the desired APF version. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-3F288B6F-FC7F-4CE6-BBC3-B186189081FF"><span class="note__title">Note:</span> If the user interface is not launched, then double-click the 
+					 <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-266BCA05-9302-4B51-811B-EABA8CBF6B8F">NexGen Application</strong> short cut on the desktop or press 
+					 <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-09EF368F-D860-462C-B9C5-5FE40CA8D886">Windows</strong> key and select the 
+					 <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-C2FEFB1D-78A7-4092-AAD0-7DB031205AEA">NexGenUI UD</strong> icon. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__UL_EE07795CCE354BA0B686FCE13C04F0B4"> 
+					 <li class="li" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__LI_DB0477C6F66C4261A693C927E35C0276">On the user interface Main Menu, select 
+						<strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-A7041BA3-0821-42F4-A46F-6096A33EA0B8">Configure &gt; Tests &gt; Update APF</strong>, and then follow the instructions. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_7A690F5E091D48B5B9FD14BED02A9784"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-D57CC6F4-61C3-4A3A-B758-F5989F89BF41">Delete the 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-19919547-80B2-4288-BB57-A43CF81F8C46">AllowAllAPFsToLoad</strong> entry or change the entry back to 
+				  <strong class="ph b" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-5DD215BB-D191-47E4-8D90-B853BCA770DE">0</strong>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-FDAD3720-577D-4C14-BD1D-884C300FD4E7"><span class="note__title">Caution:</span> If the entry is not deleted or changed to 0, it is possible to load any APF on the instrument - including APFs for other instrument models. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_89C104559FEB46BEAFFC4BA5F36EBDF3"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-1E66D63F-021B-455A-A0BB-9F463A5E7AE2"> Close the registry editor. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__SUBSTEP_46925E69C3DD4F0895FEAFE277DA51A9"> 
+				<span class="ph cmd" id="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC__GUID-D51D63DA-8F2D-40D7-8223-9448F88CB360">If this instrument is an integrated DxI, then verify that the APF and AAF versions are compatible. If a DxI tests are not runnable message is displayed on the DxC console, update the AAF. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> If this instrument is a stand-alone DxI, then this procedure is complete. 
+				  </p> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html">Installing / Removing / Replacing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-D6150F7F-36CB-4A56-A354-EB3571D2EECB.html" title="23.4 Installing / Removing / Replacing"><div><span class="ph num-prefix">23.4 </span>Installing / Removing / Replacing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-C476AE81-52F0-49B2-849B-7364DB5F93CC.html" lang="en-US" title="23.4.1 Installing Previous APF Version"><div><span class="ph num-prefix">23.4.1 </span>Installing Previous APF Version</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

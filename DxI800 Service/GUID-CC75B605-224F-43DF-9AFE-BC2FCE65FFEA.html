@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure." name="description" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="GUID-95B6690E-FBE3-42C2-B6CC-7BC787EB379B.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.6.3 Database - Performing Database Consistency Check</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-A9CB1BD5-9989-41C0-A8ED-5830B8774950.html" rel="prev" /><link href="GUID-95B6690E-FBE3-42C2-B6CC-7BC787EB379B.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3162" data-relpath="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA" role="article"> 
+  <h1 class="title topictitle1" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Database - Performing Database Consistency Check</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure. 
+  </p> 
+	 <ol class="ol steps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_0E1F1208BCC74547A919AD2F91707750"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7CBA8B46-82A0-41F1-82BD-E70565439C88">If you have not already done so, exit the console user interface and make a local copy of the database. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-9113E3F2-B942-43CC-800D-A726429435A5"><span class="note__title">Note:</span> Poet Object Server (DxI Software 5.2 and below or Access2 Software 3.4.2 and below ) and Fast Objects Server (DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above) are the same objects server running the database. Fast Objects Server replaces Poet Object Server on the latest DxI and Access2 system software. 
+			 </div> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-64CE550C-3E19-4575-9D68-2E6B0C4F7E56">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-0AD456FA-5603-4661-85E6-050040C8D5D3" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e45"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e47">From the 
+				  <span class="keyword wintitle" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e49">Main Menu</span> in the user interface, select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e52">[Alt] + [F4]</span> 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e57"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e59">Enter the password 
+				  <kbd class="ph userinput" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e61">Access2Support</kbd> observing upper and lower case. The PC will exit to the Windows desktop. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e66"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e68">Select the poet server icon near the clock at the bottom right corner of the display. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e72"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e74">Select the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e76">X</span> at the upper right corner of the poet server window and 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e79">OK</span> to the shutdown server pop-up. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e84"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e86"> Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e88">Start</span><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e90">&gt; Programs</span><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e92">&gt; Windows Explorer</span> to open Windows Explorer. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e98"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e100">Navigate to the 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e102">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e105">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e110"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e112">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e114">DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e117">Copy</span>. 
+				</span> 
+				<div class="itemgroup info">If errors occur during the copy, then: 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e123"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e125">Use the Task Manager to end any applications which may prevent copying the database. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e128">A software error may have locked the database. Select the Poet Object Server icon at the bottom right corner of the display near the system clock. Shut down the server and close any error messages. Restart the server by selecting 
+						<span class="ph menucascade" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e130"><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e131">Start</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e133">Run</span></span>, typing 
+						<kbd class="ph userinput" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e136">ptserv32.exe</kbd> on the text line, and selecting 
+						<span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e139">OK</span>. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e146"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e148">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e150">Console</span> (DxI) or 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e153">PC</span> (Access2) folder, and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e156">Paste</span> to make a Copy of the DRW folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e161"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e163">Close Windows Explorer when finished making the copy. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-EB0B341D-1532-4E16-B188-FD6948AC7FAF">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-84F2BAB8-32A7-48B5-BD6D-AB02CED89F1C"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to make a copy of the database. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-610B052D-9596-4CBB-BD1D-77F6FEFF95D3" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e185"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e187"> From the Main Menu, press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e189">[Alt] + [F4]</strong> and then enter 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e192">Access2Support</strong> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e197"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e199">Shut down the Fast Objects Server. 
+				</span> 
+				<div class="itemgroup stepxmp"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e204"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e206">Press 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e208">Ctrl + Alt + Delete</strong> and select 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e211">Task Manager</strong> or right click on the task bar and select 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e214">Task Manager</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e218">In the 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e220">Task Manager</strong> box, click on 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e223">Processes</strong>, select 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e226">FastObjects Server</strong> and click on 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e229">End Task</strong> in the bottom corner of the box. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e236"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e238">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e240">Windows</strong> key and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e243">File Explorer</strong> icon or type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e246">file explorer</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e251"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e253">Navigate to the 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e255">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e258">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e263"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e265">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e267">DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e270">Copy</span>. 
+				</span> 
+				<div class="itemgroup info">If errors occur during the copy, then: 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e276"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e278">Use the Task Manager to end any applications which may prevent copying the database. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e281">A software error may have locked the database. Shut down the Fast Objects Server and close any error messages. Restart the server by pressing 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e283">Windows</strong> key and select the 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e286">Fast Objects Server</strong> icon or type 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e289">run</strong>, open the Run program, typing 
+						<kbd class="ph userinput" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e292">ptserv32.exe</kbd> on the text line, and selecting 
+						<span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e295">OK</span>. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e303"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e305">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e307">Console</span> (DxI) or 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e310">PC</span> (Access2) folder, and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e313">Paste</span> to make a 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e316">Copy of the DRW</strong> folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e321"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e323">Close File Explorer when finished making the copy. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_28F6E1C66AE1405F9F26013AD893B377"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-CF119766-09FE-4F59-80BC-BBA8BEA465EF">If necessary, use the Task Manager to end any other application that might prevent the consistency check from running. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2D3E95E9-B789-4827-BFBC-E7302A9791C3">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_A39F1158262E49C9B5CCD3668D87FA3C" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_0998D707551042F0A501655E9531225C"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3486FA3A-A960-4761-8CD5-9BB348054D46">Press<span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-826A1AD1-2C60-4E6B-AF04-8E862764B188"> [Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D8B7ED74-220E-4AA5-9984-8468D8D2120A">Access2Support</kbd> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_BDCA0346857E432281ED0C0683A7FAB1"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-04646536-654B-4641-BE4F-93E5699C554A">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-0965DDAC-E8FB-43A3-BECA-C511A9649A15">Ctrl + Alt + Delete 
+				  </strong>keys together and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-AC16A513-5ACB-45F8-BAF0-3288C520C5F6">Task Manager</strong>or select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E9974525-70A7-4380-B098-BE027A8C224F">Start &gt; Run</strong>, type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-FDFB18E9-C882-4A15-AFBD-BBFB0CC45683">taskmgr</strong> in the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-13500F8F-CCA1-4330-8E8B-FAFE0858673C">Run</strong> dialog box, and then seleck 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-FFB6559F-172B-46FD-A865-B604F8940476">OK</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_25667ECD447E43F0BD181C96BD6D11C0"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-9B3D1EC2-0EB5-4741-9BCC-9D3CD4D25354">From the Task Manager window, select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2F364FFF-F0AD-4E4B-BEB3-66864FE08360">Processes</strong> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_C8887652C214426CA7996179C5E6365E"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-310FBDDE-7A8C-44FA-9353-B3C323B020D5">Determine if any of these processes are running in the Task Manager. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_44F73B62B72F4FC8AC1CD4A3AC151292"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_542B361B367F4FB9B70A16D610AF7788"> DbMaintenanceUD 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_2F55C427433C40B896181AEAE4939FCF"> AUCOMM~.EXE 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_86A260AA64B5439E853D0A611BCA3366"> INSTRU~.EXE 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_1EBD27BBD53F46C69BB6EE1B092E44FF"> LISServiceUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_2B3E4126B0804A9791D340C29232509F"> NexGenUIUD.exe or NexStepUIUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_CE031FBA80CF4B518E837068DE0330FF"> ReduceUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_EEDD1B5B298B48C19FB942CFE2180921"> NSWGSVUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_FCD7656868FF4E3AB6515653B81D2502"> POSTOF~.EXE 
+					 </li> 
+				  </ul> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_13CD01B2CBF1432F92C695C210CAE60A"><span class="figcap">Figure 395: Windows XP Task Manager: DxI System </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_5CFFFEF3C8C54BAB82B8C6891E8621EB"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_CFF55FB836CA4048B15CFD884E5DA9A4" src="GUID-5D188721-B28B-47F7-A7BA-2389661D93F7-default.png" /> 
+				  </figure> 
+				  <p class="p"> 
+				  </p> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_1DACFAED0DF1400D81BF2B72F3691115"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D53ED6B1-AE92-43CF-B264-517B4A64BB22">For each process that is running, select the process, and then select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7F05FFA9-916B-4179-B28E-DF92B87ECBD1">End Process &gt; Yes</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_A0476DF698414303B5C4B676BC5511D1"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E85EC3FC-DD28-4301-914E-398F247C9D5C">Close the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D23B2B0B-03BC-459C-8C27-7D26504EB13E">Task Manager</strong> window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-22AFCC70-D491-48DC-AE2C-D951A380693D">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-245D558E-A642-4616-B664-0ABA4AB90A15"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to open Task Manager application. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-BD3A8588-2DB7-4224-9299-8489D76D9B8A" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e28"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e30">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e32">[Alt] + [F4]</strong>, and then enter the password 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e35">Access2Support</strong> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e40"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e42">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e44">Ctrl + Alt + Delete</strong> keys together and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e47">Task Manager</strong> or press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e50">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e53">Task Manager</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e58"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e60">From the Task Manager window, select the<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e62"> Processes</strong> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e67"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e69"> Determine if any of these processes are running in the Task Manager. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e74"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e76">NexGenUI MFC Application or NexStepUI MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e79"> AUCommunicator DLL 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e82"> DbMaintenance DLL 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e85"> InstrumentModel Module 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e88">LISService MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e92">PostOffice DLL 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e95">Reduce MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e98">Screen TransitionTool MFC Application 
+					 </li> 
+				  </ul> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e105"><span class="figcap">Figure 396:  
+					 <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e109">Windows 8 Task Manager: DxI System 
+					 </strong></span> 
+					  
+					 <p class="p"> 
+					 </p><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e114" src="GUID-2B03CC46-A514-4C43-989A-C034E6CC3FF9-default.png" /> 
+					 <p class="p"> 
+					 </p> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e122"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e124">For each process that is running, select the process, and then select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e126">End Task</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e132"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e134">Close the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e136">Task Manager</strong> window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_7DC304E08E184FF18F109F680FF26713"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2C498AE3-984F-4AA4-B3B7-CC7977896D0D">Shut down the database objects server. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-46AE01CE-A13D-4169-9DD4-391385216A7B">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_68BB2A371895471D94DF44ED0DF7E1AD" type="a"> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_9EF1A82FAEB94B808935A32CC727AA48"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-C9101099-EF02-4ED7-98BE-702753639270">Select the poet server icon near the clock at the bottom right corner of the display. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_62E217D8723D457799182D8DF492E43D"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-1FCE6E11-1866-42E7-BA97-49194D48BF1C">Select the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-31A22F40-DF4C-4F49-AA00-FCBEABA413B7">X</span> at the upper right corner of the poet server window and 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-DCEF792C-D555-4C6F-B88F-E3049FA77A40">OK</span> to the shutdown server pop-up. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D9F214A1-CE69-4B85-A023-305962692D05">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-8B5CBF06-9757-48B7-A6CC-EC9D17E318B4"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to exit the Fast Objects Server. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_1D645A3A6BE340CABD8FD5E8088B1380" type="a"> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_F5AD1C7BC8AB4ADEA148D414A3E99722"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-903CD8AB-B720-4381-B14D-9AA777A14393">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-1FC9E64D-1C5B-4B5F-B0D8-DB01603DB3D2">Ctrl + Alt + Delete</strong> and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-4606CAB2-FC53-477E-9DB2-9389F9441753">Task Manager</strong> or right click on the task bar and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-B48CE971-C1E9-48CF-916D-524D999F6557">Task Manager</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_68D8D6B2A6B843FF85AA44A1EF4BBA67"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-79FFA86D-A6F9-4B5A-8EB7-4D0F8CFC1EA2">In the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-99E9DFF8-5FDA-4B75-890C-F1DD852B5647">Task Manager</strong> box, click on 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-887AD746-0B9E-4CE2-A502-495A75A51B0A">Processes</strong>, select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-28AAE15E-381A-4466-B087-87235F82BD76">FastObjects Server</strong> and click on 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E39BE0BE-734C-44B4-88CA-922306B0ECDE">End Task</strong> in the bottom corner of the box. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_ABDC4D8FFF154ACF8297B7652E4D96FD"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-F0607A2C-4887-48BD-91D1-6775067BFD5D">Open the DbTest application and run Consistency Check. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7662310E-3989-4072-BBAB-C3A17307995D">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-8CDE747E-26B1-4C41-BB50-F469CC73511C"><span class="note__title">Note:</span> Launching the DbTest application will automatically restarting the Poet Server. Manually launching the server is not required. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_40EDCFC099D8471A863B5F0C4C9B4D19" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_0F7B672DBEB147B3A82C8DEA26976018"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-01F8D88D-BEB1-46B7-A7B8-491BE4E4976A">Select 
+				  <span class="ph menucascade" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-9DB533D2-8635-471F-BC22-8C701528D05F"><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-51C44D1B-3A89-4F14-9D43-F6420D5A8374">Start</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-157E117E-D3A9-46A6-B899-0EE4C5235C02">Programs</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-BD30DA93-5CBD-444F-9F7B-52BEC0F3E719">NexGen (or Access 2)</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-0B1C8B44-B8F9-4B22-9F4D-48D1B8C2AEA7">DbTest</span></span> to open the DbTest application. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_49DCEE8D12DC456183CBD9C96A1E936B"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D5DC0782-B8CD-4AF8-94A8-1C23B2D1722E">Enable the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-EBBDAC38-6E12-4884-8327-B2BDE6DDEB14">Fix Problems</span> option, and then select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-77348ADC-7030-4F04-B9F4-FFA3FE26E59E">Consistency Check</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_40439C628E634180BABFD822FE037275"><span class="figcap">Figure 397: DxI DbTest: Consistency Check </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_233BE0A4F09F412B80FF40CA5F16B157"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_A5DD374565374A0AA7B304C371621A1E" src="GUID-C04888EB-9384-45A6-B4C5-EBE5A188C5E7-default.png" /> 
+				  </figure> 
+				  <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-1FB0A1D5-8129-4768-9AB3-9EAED880DB3F"><span class="note__title">Note:</span> The consistency check typically takes less than 10 minutes to complete (runs displaying the progress status). 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_536E83AE69B4470884369F4B8F6E09E2"><span class="figcap">Figure 398: Access2 DbTest: Consistency Check </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_78F636DD4A54474D8ED7298C6AA8B80C"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_17CFCFD9E1F84AADBBE897A8E840B793" src="GUID-E1EC170D-44F2-4C45-B46D-B73DBFC74ABC-default.png" /> 
+				  </figure> 
+				  <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-93A07A5E-3937-4E9A-8E00-6F23D2879221"><span class="note__title">Note:</span> The consistency check typically takes less than 10 minutes to complete (runs without displaying the progress status). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_809B2DC3C6EA4DFDB320F29C407EA8F8"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D862D128-BD71-4C44-9713-3D9D2A6EEA9E">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D57FB5FD-C6C0-4286-B6B6-4868503AA14C">OK</span> to the pass or fail message that is displayed at the end of the consistency check. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_23EF17BF07C2407F9729D35BAA42FBCC"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_31B70BCD16864555B9B683730957DF30">If the check fails, then run the consistency check a second time. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_7EF7290F31494B1C9759559DE1E7F60C">If the check fails after running the second consistency check, contact Technical Support as necessary. Review the DxI Event Log for specific failure information. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_37B5D1F98A124B21AD60B152949E8DA1"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-08CAEA06-0611-4510-B99A-D6EC6A8C9BB2">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-57A3A88A-FB0B-4FDA-AA8E-4E1E04A2C85E">Exit</span> to close the DbTest program. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2BF117C4-D798-4465-8A12-0B815DEE5E7F">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-C0F22249-CD75-46D2-90EA-3024E2ED2348"><span class="note__title">Note:</span> Launching the DbTest application will automatically restarting the Fast Objects Server. Manually launching the server is not required. 
+			 </div> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E36DC260-DD33-4BFB-96CD-8EE7E7683EFE"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to run Consistency Check. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_D3D852CE985F4A37A9478780315030F4" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_A6366BEBBA10403484E5A2481F111251"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-B8D3AE98-3541-43D9-8131-90987172A733">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-F89CC708-3D55-484E-975B-04581203A0A6">Windows</strong> key, select<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-499AFD95-741D-4544-9F24-729DB67B4E21"> DbTest UD</strong> icon or type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3172587C-8792-495D-8A61-6121D0C32F4F">DbTest 
+				  </strong>and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_69AAA180B07141288DA2C70C7003AE3D"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-8A1D038A-9A96-464F-A204-1F6D466C3721">Enable the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-623D9FB5-8DDB-43B8-98B4-4CFFE4AA3B23">Fix Problems</span> option, and then select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-4FD58DF4-B9C2-4AC8-9E30-75AB545929D0">Consistency Check</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_BEAAE630605B405882DE7702C9E5E445"><span class="figcap">Figure 399: DxI DbTest: Consistency Check </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_FD6AE4F1230849C499C4AEBE13DEA8CC"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_1BAF2ED4303448B0A564C17EE6FFBE1D" src="GUID-C04888EB-9384-45A6-B4C5-EBE5A188C5E7-default.png" /> 
+				  </figure> 
+				  <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7EECB5D8-E5A2-4FD7-89D2-2D99E0E7561E"><span class="note__title">Note:</span> The consistency check typically takes less than 10 minutes to complete (runs displaying the progress status). 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_43954D8D88C744E08AD6B42BA94CD148"><span class="figcap">Figure 400: Access2 DbTest: Consistency Check </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_D497F25C33EE401DB2663D6EDD87AA72"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_AFF3DE991D6D4E4DB88D0BA111A53DE0" src="GUID-E1EC170D-44F2-4C45-B46D-B73DBFC74ABC-default.png" /> 
+				  </figure> 
+				  <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E486712E-9F94-45E7-A814-A4F616679169"><span class="note__title">Note:</span> The consistency check typically takes less than 10 minutes to complete (runs without displaying the progress status). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_A38B32D0F57C4BE6ADF2E07F228A784F"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-621B1B1F-0C1B-4A15-BD27-F4E87720C503">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-233D23CC-97C7-4D3D-A88A-AE692510C462">OK</span> to the pass or fail message that is displayed at the end of the consistency check. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_CF05D36E7E3449D6812F68E132B545EA"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_EEABA91057BA4588A5910D4635025E0A">If the check fails, then run the consistency check a second time. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_BEF944879DD940A3BEE6164BC483E4E0">If the check fails after running the second consistency check, contact Technical Support as necessary. Review the DxI Event Log for specific failure information. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_7915930FA5DA488690266507AD2FDD28"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-4C6CAE87-89C7-4695-87BC-3A5FF941A552">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-A59D22A7-6D57-4B68-BE07-9C6624F56596">Exit</span> to close the DbTest program. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_AC98EA93EA7E4DD8A720EEC2164C1821"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-09BCF62B-C009-4B76-B1E8-166B72315205">Launch the user interface and verify no database errors are recorded. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E08DC099-D5C6-4EA7-B3AD-1F0767703AC6">For Windows XP console PC with DxI Software 5.2 and below and Access2 Software 3.4.2 and below:</strong> 
+			 </p> 
+			 <div class="p"> 
+			 <ol class="ol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_B0E10C3BE29142F6B739085E631B19CE" type="a"> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_D7EC2B2DCC404DCBB4458113C6D0240D">Select 
+				  <span class="ph menucascade" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2D9AE4ED-8E81-477F-89D8-05640A2C13BF"><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-DD7BF37E-B8B1-4959-AB31-9968C81A4D0F">Start</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-691F6080-231A-42F7-BA49-24455AB49B45">Programs</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-809C78F4-2DE5-40C1-A7D3-D9564D398157">NexGen or Access2</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-07F2DB37-4B44-4519-BA85-7F06D4D6E72D">NexGenUI UD or Access2</span></span> to launch the user interface. 
+				</li> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_19EE0FF90FCD4771B4C821D9D1AA4FEA">Navigate to the 
+				  <span class="keyword wintitle" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2EF438E6-E24B-4801-8865-00C069355D2C">Sample Manager</span> screen, and verify that the test is not running. 
+				</li> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_B3B12307B886411F9E5ACC210990A87A">Verify that there are no database errors recorded in the event log after the consistency check has completed successfully. 
+				</li> 
+			 </ol> 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-A4C3E0D5-4668-45FD-AE30-45BC168FA048"><span class="note__title">Note:</span> If new database errors are posted, refer to software troubleshooting database error messages. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <div class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3572A7E0-6D39-416F-8CCF-C38051E6A36D">For Windows 8 Mini PC with DxI Software 5.3.1 and above and Access2 Software 3.4.3 and above: 
+				</strong> 
+				<div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7BA2B974-DAA1-4B69-A60D-23A3AE53C385"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 3.4.3 are compatible with Windows XP console PC, if either software was installed on the Windows XP console PC, then follow the Windows XP section to launch the user interface. 
+				</div> 
+			 <ol class="ol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_6A999F530E8246D191A4AAB52B464DE3" type="a"> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_D41F103E7C554694A9881C7F9A6DAB41">Double click on the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-228CD89E-1D78-4076-B69A-62BF5EFDAD44">NexGen Application or Access2 Application</strong> shortcut on desktop, or press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-9E838162-562E-48C8-B443-005EE8C93B8D">Windows</strong> key and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-800A0465-8054-479E-9233-3F59555BE831">NexGenUI UD or NexStepUI UD</strong> icon, or type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-6F4C227D-AB41-4AE9-8F15-0E8D72A66D7E">nexgenui or nexstepui</strong> and open the program. 
+				</li> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_DB3E438BBA81473395567CB8E9F04C17">Navigate to the 
+				  <span class="keyword wintitle" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-B8B71482-34DC-448E-81A8-F4A78FA85217">Sample Manager</span> screen, and verify that the test is not running. 
+				</li> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_EDC42DD6AABA4B03BD0451E7DAADD620">Verify that there are no database errors recorded in the event log after the consistency check has completed successfully. 
+				</li> 
+			 </ol> 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3C0D0D32-D52C-4BDC-9722-13B9EAC7948C"><span class="note__title">Note:</span> If new database errors are posted, refer to software troubleshooting database error messages. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_806DD6D3CD70435894E1C9100F8405B9"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-6087D452-468E-4F4B-9C54-479D02A1F955">If the consistency check has completed successfully, delete the local copy of the database. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3366F561-DBFA-44FE-9813-0D1FA9AA86FF">For Windows XP console PC with DxI Software 5.2. and below and Access2 Software 3.4.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D7200330-EE39-4C1A-9D69-D5CFFDC353A9" type="a"> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e347"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e349"> Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e351">Start</span><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e353">&gt; Programs</span><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e355">&gt; Windows Explorer</span> to open Windows Explorer. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e360"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e362">Navigate to the 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e364">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e367">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e372"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e374">Right click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e376">Copy of DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e379">Delete</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e384"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e386">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e388">Yes</span> to confirm deletion. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e393"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e395">Close Windows Explorer when finished deleting. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <div class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-8E462F8A-DC50-4F52-9DE4-9F48CF2CA265">For Windows 8 Mini PC with DxI Software 5.3.1 and above and Access2 Software 3.4.3 and above: 
+				</strong> 
+				<div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-81465A5C-B594-4EB3-BCEB-03F68CCA1D96"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 3.4.3 are compatible with Windows XP console PC, if either software was installed on the Windows XP console PC, then follow the Windows XP section to delete the copy of the database. 
+				</div> 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-62CBB215-FE5A-4188-B9B4-F2B16C502904" type="a"> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e416"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e418">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e420">Windows</strong> key and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e423">File Explorer</strong> icon or type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e426">file explorer</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e431"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e433">Navigate to the 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e435">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e438">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e443"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e445">Right click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e447">Copy of DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e450">Delete</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e455"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e457">Close File Explorer when finished deleting. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><ul class="ullinks"><strong>Child Topics:</strong><li class="link ulchildlink"><strong><a href="GUID-95B6690E-FBE3-42C2-B6CC-7BC787EB379B.html">DbTest Error Message Troubleshooting</a></strong><br /></li></ul><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" lang="en-US" title="23.6.3 Database - Performing Database Consistency Check"><div><span class="ph num-prefix">23.6.3 </span>Database - Performing Database Consistency Check</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA" role="article"> 
+  <h1 class="title topictitle1" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Database - Performing Database Consistency Check</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to check and correct inconsistencies in the DxI and Access2 database. Not all database inconsistencies can be corrected using this procedure. 
+  </p> 
+	 <ol class="ol steps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_0E1F1208BCC74547A919AD2F91707750"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7CBA8B46-82A0-41F1-82BD-E70565439C88">If you have not already done so, exit the console user interface and make a local copy of the database. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-9113E3F2-B942-43CC-800D-A726429435A5"><span class="note__title">Note:</span> Poet Object Server (DxI Software 5.2 and below or Access2 Software 3.4.2 and below ) and Fast Objects Server (DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above) are the same objects server running the database. Fast Objects Server replaces Poet Object Server on the latest DxI and Access2 system software. 
+			 </div> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-64CE550C-3E19-4575-9D68-2E6B0C4F7E56">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-0AD456FA-5603-4661-85E6-050040C8D5D3" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e45"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e47">From the 
+				  <span class="keyword wintitle" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e49">Main Menu</span> in the user interface, select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e52">[Alt] + [F4]</span> 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e57"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e59">Enter the password 
+				  <kbd class="ph userinput" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e61">Access2Support</kbd> observing upper and lower case. The PC will exit to the Windows desktop. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e66"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e68">Select the poet server icon near the clock at the bottom right corner of the display. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e72"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e74">Select the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e76">X</span> at the upper right corner of the poet server window and 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e79">OK</span> to the shutdown server pop-up. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e84"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e86"> Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e88">Start</span><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e90">&gt; Programs</span><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e92">&gt; Windows Explorer</span> to open Windows Explorer. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e98"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e100">Navigate to the 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e102">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e105">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e110"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e112">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e114">DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e117">Copy</span>. 
+				</span> 
+				<div class="itemgroup info">If errors occur during the copy, then: 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e123"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e125">Use the Task Manager to end any applications which may prevent copying the database. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e128">A software error may have locked the database. Select the Poet Object Server icon at the bottom right corner of the display near the system clock. Shut down the server and close any error messages. Restart the server by selecting 
+						<span class="ph menucascade" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e130"><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e131">Start</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e133">Run</span></span>, typing 
+						<kbd class="ph userinput" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e136">ptserv32.exe</kbd> on the text line, and selecting 
+						<span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e139">OK</span>. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e146"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e148">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e150">Console</span> (DxI) or 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e153">PC</span> (Access2) folder, and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e156">Paste</span> to make a Copy of the DRW folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e161"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e163">Close Windows Explorer when finished making the copy. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-EB0B341D-1532-4E16-B188-FD6948AC7FAF">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-84F2BAB8-32A7-48B5-BD6D-AB02CED89F1C"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to make a copy of the database. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-610B052D-9596-4CBB-BD1D-77F6FEFF95D3" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e185"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e187"> From the Main Menu, press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e189">[Alt] + [F4]</strong> and then enter 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e192">Access2Support</strong> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e197"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e199">Shut down the Fast Objects Server. 
+				</span> 
+				<div class="itemgroup stepxmp"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e204"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e206">Press 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e208">Ctrl + Alt + Delete</strong> and select 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e211">Task Manager</strong> or right click on the task bar and select 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e214">Task Manager</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e218">In the 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e220">Task Manager</strong> box, click on 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e223">Processes</strong>, select 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e226">FastObjects Server</strong> and click on 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e229">End Task</strong> in the bottom corner of the box. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e236"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e238">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e240">Windows</strong> key and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e243">File Explorer</strong> icon or type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e246">file explorer</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e251"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e253">Navigate to the 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e255">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e258">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e263"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e265">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e267">DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e270">Copy</span>. 
+				</span> 
+				<div class="itemgroup info">If errors occur during the copy, then: 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e276"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e278">Use the Task Manager to end any applications which may prevent copying the database. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e281">A software error may have locked the database. Shut down the Fast Objects Server and close any error messages. Restart the server by pressing 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e283">Windows</strong> key and select the 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e286">Fast Objects Server</strong> icon or type 
+						<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e289">run</strong>, open the Run program, typing 
+						<kbd class="ph userinput" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e292">ptserv32.exe</kbd> on the text line, and selecting 
+						<span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e295">OK</span>. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e303"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e305">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e307">Console</span> (DxI) or 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e310">PC</span> (Access2) folder, and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e313">Paste</span> to make a 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e316">Copy of the DRW</strong> folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e321"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e323">Close File Explorer when finished making the copy. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_28F6E1C66AE1405F9F26013AD893B377"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-CF119766-09FE-4F59-80BC-BBA8BEA465EF">If necessary, use the Task Manager to end any other application that might prevent the consistency check from running. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2D3E95E9-B789-4827-BFBC-E7302A9791C3">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_A39F1158262E49C9B5CCD3668D87FA3C" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_0998D707551042F0A501655E9531225C"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3486FA3A-A960-4761-8CD5-9BB348054D46">Press<span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-826A1AD1-2C60-4E6B-AF04-8E862764B188"> [Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D8B7ED74-220E-4AA5-9984-8468D8D2120A">Access2Support</kbd> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_BDCA0346857E432281ED0C0683A7FAB1"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-04646536-654B-4641-BE4F-93E5699C554A">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-0965DDAC-E8FB-43A3-BECA-C511A9649A15">Ctrl + Alt + Delete 
+				  </strong>keys together and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-AC16A513-5ACB-45F8-BAF0-3288C520C5F6">Task Manager</strong>or select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E9974525-70A7-4380-B098-BE027A8C224F">Start &gt; Run</strong>, type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-FDFB18E9-C882-4A15-AFBD-BBFB0CC45683">taskmgr</strong> in the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-13500F8F-CCA1-4330-8E8B-FAFE0858673C">Run</strong> dialog box, and then seleck 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-FFB6559F-172B-46FD-A865-B604F8940476">OK</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_25667ECD447E43F0BD181C96BD6D11C0"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-9B3D1EC2-0EB5-4741-9BCC-9D3CD4D25354">From the Task Manager window, select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2F364FFF-F0AD-4E4B-BEB3-66864FE08360">Processes</strong> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_C8887652C214426CA7996179C5E6365E"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-310FBDDE-7A8C-44FA-9353-B3C323B020D5">Determine if any of these processes are running in the Task Manager. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_44F73B62B72F4FC8AC1CD4A3AC151292"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_542B361B367F4FB9B70A16D610AF7788"> DbMaintenanceUD 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_2F55C427433C40B896181AEAE4939FCF"> AUCOMM~.EXE 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_86A260AA64B5439E853D0A611BCA3366"> INSTRU~.EXE 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_1EBD27BBD53F46C69BB6EE1B092E44FF"> LISServiceUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_2B3E4126B0804A9791D340C29232509F"> NexGenUIUD.exe or NexStepUIUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_CE031FBA80CF4B518E837068DE0330FF"> ReduceUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_EEDD1B5B298B48C19FB942CFE2180921"> NSWGSVUD.exe 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_FCD7656868FF4E3AB6515653B81D2502"> POSTOF~.EXE 
+					 </li> 
+				  </ul> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_13CD01B2CBF1432F92C695C210CAE60A"><span class="figcap">Figure 395: Windows XP Task Manager: DxI System </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_5CFFFEF3C8C54BAB82B8C6891E8621EB"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_CFF55FB836CA4048B15CFD884E5DA9A4" src="GUID-5D188721-B28B-47F7-A7BA-2389661D93F7-default.png" /> 
+				  </figure> 
+				  <p class="p"> 
+				  </p> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_1DACFAED0DF1400D81BF2B72F3691115"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D53ED6B1-AE92-43CF-B264-517B4A64BB22">For each process that is running, select the process, and then select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7F05FFA9-916B-4179-B28E-DF92B87ECBD1">End Process &gt; Yes</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_A0476DF698414303B5C4B676BC5511D1"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E85EC3FC-DD28-4301-914E-398F247C9D5C">Close the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D23B2B0B-03BC-459C-8C27-7D26504EB13E">Task Manager</strong> window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-22AFCC70-D491-48DC-AE2C-D951A380693D">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-245D558E-A642-4616-B664-0ABA4AB90A15"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to open Task Manager application. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-BD3A8588-2DB7-4224-9299-8489D76D9B8A" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e28"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e30">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e32">[Alt] + [F4]</strong>, and then enter the password 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e35">Access2Support</strong> to exit the user interface. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e40"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e42">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e44">Ctrl + Alt + Delete</strong> keys together and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e47">Task Manager</strong> or press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e50">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e53">Task Manager</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e58"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e60">From the Task Manager window, select the<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e62"> Processes</strong> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e67"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e69"> Determine if any of these processes are running in the Task Manager. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e74"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e76">NexGenUI MFC Application or NexStepUI MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e79"> AUCommunicator DLL 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e82"> DbMaintenance DLL 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e85"> InstrumentModel Module 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e88">LISService MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e92">PostOffice DLL 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e95">Reduce MFC Application 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e98">Screen TransitionTool MFC Application 
+					 </li> 
+				  </ul> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e105"><span class="figcap">Figure 396:  
+					 <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e109">Windows 8 Task Manager: DxI System 
+					 </strong></span> 
+					  
+					 <p class="p"> 
+					 </p><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e114" src="GUID-2B03CC46-A514-4C43-989A-C034E6CC3FF9-default.png" /> 
+					 <p class="p"> 
+					 </p> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e122"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e124">For each process that is running, select the process, and then select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e126">End Task</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e132"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e134">Close the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d43e136">Task Manager</strong> window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_7DC304E08E184FF18F109F680FF26713"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2C498AE3-984F-4AA4-B3B7-CC7977896D0D">Shut down the database objects server. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-46AE01CE-A13D-4169-9DD4-391385216A7B">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_68BB2A371895471D94DF44ED0DF7E1AD" type="a"> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_9EF1A82FAEB94B808935A32CC727AA48"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-C9101099-EF02-4ED7-98BE-702753639270">Select the poet server icon near the clock at the bottom right corner of the display. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_62E217D8723D457799182D8DF492E43D"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-1FCE6E11-1866-42E7-BA97-49194D48BF1C">Select the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-31A22F40-DF4C-4F49-AA00-FCBEABA413B7">X</span> at the upper right corner of the poet server window and 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-DCEF792C-D555-4C6F-B88F-E3049FA77A40">OK</span> to the shutdown server pop-up. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D9F214A1-CE69-4B85-A023-305962692D05">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-8B5CBF06-9757-48B7-A6CC-EC9D17E318B4"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to exit the Fast Objects Server. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_1D645A3A6BE340CABD8FD5E8088B1380" type="a"> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_F5AD1C7BC8AB4ADEA148D414A3E99722"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-903CD8AB-B720-4381-B14D-9AA777A14393">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-1FC9E64D-1C5B-4B5F-B0D8-DB01603DB3D2">Ctrl + Alt + Delete</strong> and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-4606CAB2-FC53-477E-9DB2-9389F9441753">Task Manager</strong> or right click on the task bar and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-B48CE971-C1E9-48CF-916D-524D999F6557">Task Manager</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_68D8D6B2A6B843FF85AA44A1EF4BBA67"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-79FFA86D-A6F9-4B5A-8EB7-4D0F8CFC1EA2">In the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-99E9DFF8-5FDA-4B75-890C-F1DD852B5647">Task Manager</strong> box, click on 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-887AD746-0B9E-4CE2-A502-495A75A51B0A">Processes</strong>, select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-28AAE15E-381A-4466-B087-87235F82BD76">FastObjects Server</strong> and click on 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E39BE0BE-734C-44B4-88CA-922306B0ECDE">End Task</strong> in the bottom corner of the box. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_ABDC4D8FFF154ACF8297B7652E4D96FD"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-F0607A2C-4887-48BD-91D1-6775067BFD5D">Open the DbTest application and run Consistency Check. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7662310E-3989-4072-BBAB-C3A17307995D">For Windows XP console PC with DxI Software 5.2 and below or Access2 Software 3.4.2 and below: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-8CDE747E-26B1-4C41-BB50-F469CC73511C"><span class="note__title">Note:</span> Launching the DbTest application will automatically restarting the Poet Server. Manually launching the server is not required. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_40EDCFC099D8471A863B5F0C4C9B4D19" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_0F7B672DBEB147B3A82C8DEA26976018"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-01F8D88D-BEB1-46B7-A7B8-491BE4E4976A">Select 
+				  <span class="ph menucascade" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-9DB533D2-8635-471F-BC22-8C701528D05F"><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-51C44D1B-3A89-4F14-9D43-F6420D5A8374">Start</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-157E117E-D3A9-46A6-B899-0EE4C5235C02">Programs</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-BD30DA93-5CBD-444F-9F7B-52BEC0F3E719">NexGen (or Access 2)</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-0B1C8B44-B8F9-4B22-9F4D-48D1B8C2AEA7">DbTest</span></span> to open the DbTest application. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_49DCEE8D12DC456183CBD9C96A1E936B"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D5DC0782-B8CD-4AF8-94A8-1C23B2D1722E">Enable the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-EBBDAC38-6E12-4884-8327-B2BDE6DDEB14">Fix Problems</span> option, and then select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-77348ADC-7030-4F04-B9F4-FFA3FE26E59E">Consistency Check</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_40439C628E634180BABFD822FE037275"><span class="figcap">Figure 397: DxI DbTest: Consistency Check </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_233BE0A4F09F412B80FF40CA5F16B157"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_A5DD374565374A0AA7B304C371621A1E" src="GUID-C04888EB-9384-45A6-B4C5-EBE5A188C5E7-default.png" /> 
+				  </figure> 
+				  <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-1FB0A1D5-8129-4768-9AB3-9EAED880DB3F"><span class="note__title">Note:</span> The consistency check typically takes less than 10 minutes to complete (runs displaying the progress status). 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_536E83AE69B4470884369F4B8F6E09E2"><span class="figcap">Figure 398: Access2 DbTest: Consistency Check </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_78F636DD4A54474D8ED7298C6AA8B80C"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_17CFCFD9E1F84AADBBE897A8E840B793" src="GUID-E1EC170D-44F2-4C45-B46D-B73DBFC74ABC-default.png" /> 
+				  </figure> 
+				  <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-93A07A5E-3937-4E9A-8E00-6F23D2879221"><span class="note__title">Note:</span> The consistency check typically takes less than 10 minutes to complete (runs without displaying the progress status). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_809B2DC3C6EA4DFDB320F29C407EA8F8"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D862D128-BD71-4C44-9713-3D9D2A6EEA9E">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D57FB5FD-C6C0-4286-B6B6-4868503AA14C">OK</span> to the pass or fail message that is displayed at the end of the consistency check. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_23EF17BF07C2407F9729D35BAA42FBCC"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_31B70BCD16864555B9B683730957DF30">If the check fails, then run the consistency check a second time. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_7EF7290F31494B1C9759559DE1E7F60C">If the check fails after running the second consistency check, contact Technical Support as necessary. Review the DxI Event Log for specific failure information. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_37B5D1F98A124B21AD60B152949E8DA1"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-08CAEA06-0611-4510-B99A-D6EC6A8C9BB2">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-57A3A88A-FB0B-4FDA-AA8E-4E1E04A2C85E">Exit</span> to close the DbTest program. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2BF117C4-D798-4465-8A12-0B815DEE5E7F">For Windows 8 Mini PC with DxI Software 5.3.1 and above or Access2 Software 3.4.3 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-C0F22249-CD75-46D2-90EA-3024E2ED2348"><span class="note__title">Note:</span> Launching the DbTest application will automatically restarting the Fast Objects Server. Manually launching the server is not required. 
+			 </div> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E36DC260-DD33-4BFB-96CD-8EE7E7683EFE"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 Software 3.4.3 are compatible with Windows XP console PC. If either software was installed on the Windows XP console PC, then follow the Windows XP section to run Consistency Check. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEPS_D3D852CE985F4A37A9478780315030F4" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_A6366BEBBA10403484E5A2481F111251"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-B8D3AE98-3541-43D9-8131-90987172A733">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-F89CC708-3D55-484E-975B-04581203A0A6">Windows</strong> key, select<strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-499AFD95-741D-4544-9F24-729DB67B4E21"> DbTest UD</strong> icon or type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3172587C-8792-495D-8A61-6121D0C32F4F">DbTest 
+				  </strong>and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_69AAA180B07141288DA2C70C7003AE3D"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-8A1D038A-9A96-464F-A204-1F6D466C3721">Enable the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-623D9FB5-8DDB-43B8-98B4-4CFFE4AA3B23">Fix Problems</span> option, and then select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-4FD58DF4-B9C2-4AC8-9E30-75AB545929D0">Consistency Check</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_BEAAE630605B405882DE7702C9E5E445"><span class="figcap">Figure 399: DxI DbTest: Consistency Check </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_FD6AE4F1230849C499C4AEBE13DEA8CC"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_1BAF2ED4303448B0A564C17EE6FFBE1D" src="GUID-C04888EB-9384-45A6-B4C5-EBE5A188C5E7-default.png" /> 
+				  </figure> 
+				  <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7EECB5D8-E5A2-4FD7-89D2-2D99E0E7561E"><span class="note__title">Note:</span> The consistency check typically takes less than 10 minutes to complete (runs displaying the progress status). 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_43954D8D88C744E08AD6B42BA94CD148"><span class="figcap">Figure 400: Access2 DbTest: Consistency Check </span> 
+					  
+				  </figure> 
+				  <figure class="fig fignone" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__FIG_D497F25C33EE401DB2663D6EDD87AA72"><img class="image" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__IMAGE_AFF3DE991D6D4E4DB88D0BA111A53DE0" src="GUID-E1EC170D-44F2-4C45-B46D-B73DBFC74ABC-default.png" /> 
+				  </figure> 
+				  <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E486712E-9F94-45E7-A814-A4F616679169"><span class="note__title">Note:</span> The consistency check typically takes less than 10 minutes to complete (runs without displaying the progress status). 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_A38B32D0F57C4BE6ADF2E07F228A784F"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-621B1B1F-0C1B-4A15-BD27-F4E87720C503">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-233D23CC-97C7-4D3D-A88A-AE692510C462">OK</span> to the pass or fail message that is displayed at the end of the consistency check. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_CF05D36E7E3449D6812F68E132B545EA"> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_EEABA91057BA4588A5910D4635025E0A">If the check fails, then run the consistency check a second time. 
+					 </li> 
+					 <li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_BEF944879DD940A3BEE6164BC483E4E0">If the check fails after running the second consistency check, contact Technical Support as necessary. Review the DxI Event Log for specific failure information. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__SUBSTEP_7915930FA5DA488690266507AD2FDD28"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-4C6CAE87-89C7-4695-87BC-3A5FF941A552">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-A59D22A7-6D57-4B68-BE07-9C6624F56596">Exit</span> to close the DbTest program. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_AC98EA93EA7E4DD8A720EEC2164C1821"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-09BCF62B-C009-4B76-B1E8-166B72315205">Launch the user interface and verify no database errors are recorded. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-E08DC099-D5C6-4EA7-B3AD-1F0767703AC6">For Windows XP console PC with DxI Software 5.2 and below and Access2 Software 3.4.2 and below:</strong> 
+			 </p> 
+			 <div class="p"> 
+			 <ol class="ol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_B0E10C3BE29142F6B739085E631B19CE" type="a"> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_D7EC2B2DCC404DCBB4458113C6D0240D">Select 
+				  <span class="ph menucascade" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2D9AE4ED-8E81-477F-89D8-05640A2C13BF"><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-DD7BF37E-B8B1-4959-AB31-9968C81A4D0F">Start</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-691F6080-231A-42F7-BA49-24455AB49B45">Programs</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-809C78F4-2DE5-40C1-A7D3-D9564D398157">NexGen or Access2</span> &gt; <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-07F2DB37-4B44-4519-BA85-7F06D4D6E72D">NexGenUI UD or Access2</span></span> to launch the user interface. 
+				</li> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_19EE0FF90FCD4771B4C821D9D1AA4FEA">Navigate to the 
+				  <span class="keyword wintitle" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-2EF438E6-E24B-4801-8865-00C069355D2C">Sample Manager</span> screen, and verify that the test is not running. 
+				</li> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_B3B12307B886411F9E5ACC210990A87A">Verify that there are no database errors recorded in the event log after the consistency check has completed successfully. 
+				</li> 
+			 </ol> 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-A4C3E0D5-4668-45FD-AE30-45BC168FA048"><span class="note__title">Note:</span> If new database errors are posted, refer to software troubleshooting database error messages. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <div class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3572A7E0-6D39-416F-8CCF-C38051E6A36D">For Windows 8 Mini PC with DxI Software 5.3.1 and above and Access2 Software 3.4.3 and above: 
+				</strong> 
+				<div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-7BA2B974-DAA1-4B69-A60D-23A3AE53C385"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 3.4.3 are compatible with Windows XP console PC, if either software was installed on the Windows XP console PC, then follow the Windows XP section to launch the user interface. 
+				</div> 
+			 <ol class="ol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__UL_6A999F530E8246D191A4AAB52B464DE3" type="a"> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_D41F103E7C554694A9881C7F9A6DAB41">Double click on the 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-228CD89E-1D78-4076-B69A-62BF5EFDAD44">NexGen Application or Access2 Application</strong> shortcut on desktop, or press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-9E838162-562E-48C8-B443-005EE8C93B8D">Windows</strong> key and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-800A0465-8054-479E-9233-3F59555BE831">NexGenUI UD or NexStepUI UD</strong> icon, or type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-6F4C227D-AB41-4AE9-8F15-0E8D72A66D7E">nexgenui or nexstepui</strong> and open the program. 
+				</li> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_DB3E438BBA81473395567CB8E9F04C17">Navigate to the 
+				  <span class="keyword wintitle" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-B8B71482-34DC-448E-81A8-F4A78FA85217">Sample Manager</span> screen, and verify that the test is not running. 
+				</li> 
+				<li class="li" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__LI_EDC42DD6AABA4B03BD0451E7DAADD620">Verify that there are no database errors recorded in the event log after the consistency check has completed successfully. 
+				</li> 
+			 </ol> 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3C0D0D32-D52C-4BDC-9722-13B9EAC7948C"><span class="note__title">Note:</span> If new database errors are posted, refer to software troubleshooting database error messages. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__STEP_806DD6D3CD70435894E1C9100F8405B9"> 
+		  <span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-6087D452-468E-4F4B-9C54-479D02A1F955">If the consistency check has completed successfully, delete the local copy of the database. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-3366F561-DBFA-44FE-9813-0D1FA9AA86FF">For Windows XP console PC with DxI Software 5.2. and below and Access2 Software 3.4.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-D7200330-EE39-4C1A-9D69-D5CFFDC353A9" type="a"> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e347"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e349"> Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e351">Start</span><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e353">&gt; Programs</span><span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e355">&gt; Windows Explorer</span> to open Windows Explorer. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e360"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e362">Navigate to the 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e364">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e367">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e372"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e374">Right click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e376">Copy of DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e379">Delete</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e384"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e386">Select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e388">Yes</span> to confirm deletion. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e393"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e395">Close Windows Explorer when finished deleting. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <div class="p"><strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-8E462F8A-DC50-4F52-9DE4-9F48CF2CA265">For Windows 8 Mini PC with DxI Software 5.3.1 and above and Access2 Software 3.4.3 and above: 
+				</strong> 
+				<div class="note note note_note" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-81465A5C-B594-4EB3-BCEB-03F68CCA1D96"><span class="note__title">Note:</span> DxI Software 5.3.1 and Access2 3.4.3 are compatible with Windows XP console PC, if either software was installed on the Windows XP console PC, then follow the Windows XP section to delete the copy of the database. 
+				</div> 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__GUID-62CBB215-FE5A-4188-B9B4-F2B16C502904" type="a"> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e416"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e418">Press 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e420">Windows</strong> key and select 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e423">File Explorer</strong> icon or type 
+				  <strong class="ph b" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e426">file explorer</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e431"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e433">Navigate to the 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e435">C:\NexGen\Console</span> folder (for DxI) or 
+				  <span class="ph filepath" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e438">C:\NexStep\PC</span> folder (for Access 2). 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e443"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e445">Right click on the 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e447">Copy of DRW</span> folder and select 
+				  <span class="ph uicontrol" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e450">Delete</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e455"> 
+				<span class="ph cmd" id="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA__d91e457">Close File Explorer when finished deleting. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><ul class="ullinks"><strong>Child Topics:</strong><li class="link ulchildlink"><strong><a href="GUID-95B6690E-FBE3-42C2-B6CC-7BC787EB379B.html">DbTest Error Message Troubleshooting</a></strong><br /></li></ul><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-CC75B605-224F-43DF-9AFE-BC2FCE65FFEA.html" lang="en-US" title="23.6.3 Database - Performing Database Consistency Check"><div><span class="ph num-prefix">23.6.3 </span>Database - Performing Database Consistency Check</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

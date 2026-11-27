@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to run the Check Disk function to repair the PC hard drive." name="description" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" name="DC.Relation" scheme="URI" /><meta content="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>23.6.21 Using Check Disk</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-723353BA-B00A-4A13-B739-38682FB6FCE4.html" rel="prev" /><link href="GUID-B69B6E1F-961B-4135-A6F5-B02F6B27B1FE.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1972" data-relpath="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493" role="article"> 
+  <h1 class="title topictitle1" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Using Check Disk</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to run the Check Disk function to repair the PC hard drive. 
+  </p> 
+	 <section class="section context" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">Use the Check Disk function to repair the hard drive when the PC or AU has a corrupt file. A corrupt file generally cannot be copied or deleted. The most common evidence of a corrupt file is the failure of the backup process when attempting to copy the file. 
+	 </section> 
+	 <ol class="ol steps" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Run Check Disk on the PC or AU hard drive. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-CC1655DF-127F-4EF7-9FD9-8090A578136F">For Windows XP System: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEPS_11FD11AB566C4AE88FB96A2BA3D17BBF" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_C1884C3624774FC4912AE41677DBD799"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-64D3AB87-73C6-40FA-BB8B-90BC4F00F87F">Select 
+				  <span class="ph menucascade" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3BF5E0E9-8BEE-428B-B5F9-4E546472B913"><span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-2CFEAAE1-D329-469B-8940-F6C911395071">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-FE9AF7F8-1C03-4628-81CE-8E60AC0F54F6">Run</span></span>, and then type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3608DB40-68D8-487B-BD98-C78EA75FCB3A">CMD</kbd> on the Open text area. Select 
+				  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-71ECD53E-693B-4593-BF70-3856026DD9B8">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-F878DD4B-C776-4F24-926E-6CC28897A50D"><span class="note__title">Note:</span> For the AU, run 
+					 <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-81D3F80A-DB6B-440C-A3D6-7388EF4919E3">chkdsk</kbd> from a remote desktop connection. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_644C94965F3448D4B1D105E3C7A6800E"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-BB3FE581-6CE3-4642-B4DE-3F3CCCA4D662">Type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-4455F580-1B49-4897-B319-666A73428EC2">chkdsk c: /f</kbd> in the DOS command window and press 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-6B95A66F-EC04-431D-B06A-8918D7CC761D">[Enter]</kbd>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_7BEC1D277F5C42A48FB7A55D7C77325C"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-002AA877-07E0-4A82-B536-8A12DD2AB6A0">Type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3278D9E4-5E27-46F3-A6B6-7F53A1EB2EBA">Y</kbd> and press 
+				  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B234C8A4-9C95-42A1-9009-8D087A2C044D">[Enter]</span> at the 
+				  <samp class="ph msgph" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-994C3788-2791-4258-9C74-C35382970FD6">Chkdsk cannot run because the volume is in use by another process. Would you like to schedule this volume to be checked the next time the system restarts? (Y/N)</samp> message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_06C7439D6F5A478E9A2F6846076A924D"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-A6816FE7-2938-4CF3-B0AB-5F898CF4C76E">Reboot the PC or AU to run Check Disk when Windows restarts. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-0C30E01A-4B34-4C54-93CF-9B014E8BA189"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__UL_3B815AC9BC0D43A786BD258BEE8B6AE5"> 
+						<li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_1DD2BE653DDE43C386873EEB0FC731DE">For the AU with older Windows XP image, use the Task Manager and Command Prompt in the remote connection or the power switch to shutdown and restart Windows. 
+						</li> 
+						<li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_4AED77780A6F44839A6EA9C44CA87FEB">For the AU with latest Windows XP image, use Command Prompt in the remote connection or power switch to restart or shutdown Windows. 
+						  <ul class="ul" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__UL_5E349BC5F6824D0B82B7BA08ADA19253"> 
+							 <li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_937390AC677E40C7A7D7AB9E4234935D"> Open 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3104B960-75FD-49B0-9A96-528A1A987C39">Command Prompt</strong>, and type 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-9DA8E2F4-1934-4C67-A8CE-6861D3DA13B0">shutdown.exe /r /t 00</strong> and hit 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-2EAFA912-8CB3-47CF-83C0-A5841D415C17">Enter</strong> to restart Windows. 
+							 </li> 
+							 <li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_D6077CD258684823B07520F5527781F8">Open 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-6162B887-182F-4DFD-A3B5-44599F1C1E63">Command Prompt</strong>, and type 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-CA7B9048-F18C-4210-88FD-C98BC1A7EE2C">shutdown.exe /s /t 00</strong> and hit 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-03D62C1D-5285-4EBD-BFF4-2F7570DBB80C">Enter</strong> to shutdown Windows. 
+							 </li> 
+						  </ul> 
+						</li> 
+						<li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_3C22BF3EB914467F8FF3DD7DE4B3A18A">The results of the Check Disk run are displayed on the monitor and logged in the system events file. To review the Check Disk log, select 
+						  <span class="ph menucascade" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-76E85255-09D2-4D07-AAE2-A9F6F999D43F"><span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-269CC734-1E47-46FB-A423-BE8F24B64A1A">Start</span> &gt; <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D68EE405-DAB7-4168-893C-42ADD62D01DE">Run</span></span>, type 
+						  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-337CC3F2-F6D2-43EC-98D6-09E91F48DD56">eventvwr</kbd>, and then press 
+						  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-70E508B6-4F56-42EA-AD65-BFAA2ED2BD36">[Enter]</span> or 
+						  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-6553F6D1-EBCE-42AE-910E-365B24089B21">OK</span>. When Event Viewer opens, select 
+						  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-883C2A66-600F-4F3E-8111-D1EC11AC521E">Application</span>. Scroll down and double-click on 
+						  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-64C35198-611F-41A6-ADAF-AC42E294D1CD">Winlogon</span>. Winlogon is the log created after running Check Disk. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-9FF12145-3522-4340-A3D8-0C993363254D">For Windows 8 System: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEPS_A1A774B34AAA49ECB7DF9A2DD3C31547" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_BE87EB2F91D849BC8ECF63B1F47482B6"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-070C46C1-15B6-4C82-A71E-778E97A10ACE">Press 
+				  <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-698F1CB9-DA43-472C-9143-0DBE4B67B341">Windows</strong> key, select the 
+				  <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-112A7B22-54E5-42AB-BE2D-BF0C2FF27193">Command Prompt</strong> icon or type 
+				  <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D41F67E9-CD9A-466D-B0DA-347894C7D00C">cmd</strong> and open the program. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-322F2140-1A58-480B-A7DB-A601A68735BF"><span class="note__title">Note:</span> For the AU, run 
+					 <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-E44DA98A-5166-4BCC-9C1C-27B8A5749D43">chkdsk</kbd> from a remote desktop connection. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_178C18DC0A174287AC04B51898B14E17"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-1C649D82-5610-48BD-97E9-2B0CDE1A6D80">Type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-71863578-960A-49C7-B783-9061D47724FA">chkdsk c: /f</kbd> in the DOS command window and press 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B12EFF18-E8CC-4E7E-BD7F-BE59516EACCC">[Enter]</kbd>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_DFE2F9319147455BB6C985A1050366F0"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-080ECD22-040E-43F2-A13C-3E2545D416DC">Type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D5C47378-D964-4DB3-B358-CB7E6FB12887">Y</kbd> and press 
+				  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D789E4AC-B1C0-4ECB-A4C3-9C035357BA6B">[Enter]</span> at the 
+				  <samp class="ph msgph" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B70E5E51-0477-4F00-BB82-9AE70B870A0F">Chkdsk cannot run because the volume is in use by another process. Would you like to schedule this volume to be checked the next time the system restarts? (Y/N)</samp> message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_6FFC6750E10B403E930966B97029FDC9"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-763B2126-B7D4-4A46-863B-61355E6914F3">Reboot the PC or AU to run Check Disk when Windows restarts. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p"><strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-7FA68B23-F3F2-4A90-81A5-910B0281BB3C">For console PC: 
+					 </strong> 
+				  <ul class="ul" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__UL_A0C5B7589E2C435090D434DB29B7A3F5"> 
+					 <li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_94C9088DBF2A4C21885A105CCBE88571">Press 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-33778DA2-B6B7-4996-BA7C-8A6B62F5CCD2">Windows</strong> key, select 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-9D7A0377-BB3D-4A08-9A0F-4864D014D58E">Restart</strong> icon or type in 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-8492E08A-887F-4F0D-AF8C-DCF1612C85C2">restart</strong>, select 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-14F00A33-D999-432F-B132-FABD9624FBC8">settings &gt; Turn off your PC &gt; Power &gt; Restart. 
+						</strong> 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3D86CD2C-2E27-4421-AE75-17EB69EFE733"><span class="note__title">Note:</span> When rebooting the Privacy &amp; Security compliant Windows 8 or Windows 10 PC, you must enter security password &quot;<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__d29e18">Access2Admin</strong>&quot; when prompted to launch Windows. 
+		<p class="p"> 
+		</p><img class="image" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__d29e23" src="GUID-57B84EB9-A496-4109-A064-4A160B1C8257-default.png" /> 
+		<p class="p"> 
+		</p> 
+	 </div>
+				</div>
+				<div class="itemgroup info"> 
+				  <div class="p"><strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-05A2332E-0455-41AE-889A-FDCD0983A4B6">For AU: 
+					 </strong> 
+				  <ul class="ul" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__UL_BDEB0173885848DFBD723008FD597D5E"> 
+					 <li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_23F421C3D2ED4585AC0F0567AC363C3F">Press 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-7B7A8133-8967-4E84-80E6-EB8B48ED48D5">Windows</strong> key, type in 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-6BCE3A9A-1490-4E3F-8240-F91A20A5BF89">restart</strong>, select 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D3D1E8AD-D552-4FB4-8E52-A279C25FA86E">settings &gt; Turn off your PC &gt; Power &gt; Restart. 
+						</strong> 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3E7ED873-309C-48C8-823A-3FC103E7001F"><span class="note__title">Note:</span>  The results of the Check Disk run are displayed on the monitor and logged in the system events file. To review the Check Disk log, Press 
+					 <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-7D191912-2A2F-4D6D-94DB-87C3F6930EC8">Windows</strong> key, type 
+					 <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-16171591-705E-4497-B794-7197E8A58ECB">view event</strong>, select 
+					 <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-0859746E-9749-491D-B576-E62155ABBA17">Settings</strong>, and open the 
+					 <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-BDAFDABC-AB2B-4C83-BB5B-3F28F87F5693">View event logs</strong> program. When Event Viewer opens, select 
+					 <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B8221C37-3D80-4F78-B808-776DA3E9DE6F">Windows Logs</span><span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-1562CF79-2F5D-4F45-8F5F-00FDA666FCA1"> &gt; Application</span>. Scroll down and double-click on 
+					 <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-AB953860-5658-4D6D-B7B2-BBBC81D255C2">Winlogon</span>. Winlogon is the log created after running Check Disk. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__STEP_B391813E7F54466FA3562E6B036E35DA"> 
+		  <span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-A7B159EC-DEEC-42A0-A086-E0718D9A56CA">Review the Check Disk log and take the appropriate action. 
+		  </span> 
+		  <table border="1" cellpadding="4" cellspacing="0" class="simpletable choicetable choicetableborder" frame="hsides" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__CHOICETABLE_705CE9318A6F4FCF8DE739EFDC407876" rules="rows" summary=""><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead><tr class="sthead chhead"><th class="stentry choptionhd" id="d394737e393-option" style="vertical-align:bottom;text-align:left;">Problem 
+				</th><th class="stentry chdeschd" id="d394737e393-desc" style="vertical-align:bottom;text-align:left;">Action to take</th></tr></thead><tbody><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e403" style="vertical-align:top;">Nothing found.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e403" style="vertical-align:top;">No action.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e411" style="vertical-align:top;">A corrupt harmless log file is fixed.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e411" style="vertical-align:top;">No action.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e419" style="vertical-align:top;">UI does not operate.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e419" style="vertical-align:top;">Reload software.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e427" style="vertical-align:top;">UI does not operate.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e427" style="vertical-align:top;">Restore database.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e436" style="vertical-align:top;">Errors running random applications.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e436" style="vertical-align:top;">Reimage HDD / load software / restore database.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e444" style="vertical-align:top;">HDD errors / lockups reoccurring.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e444" style="vertical-align:top;">Replace HDD / load software / restore database.</td> 
+			 </tr></tbody></table> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493.html" lang="en-US" title="23.6.21 Using Check Disk"><div><span class="ph num-prefix">23.6.21 </span>Using Check Disk</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493" role="article"> 
+  <h1 class="title topictitle1" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Using Check Disk</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to run the Check Disk function to repair the PC hard drive. 
+  </p> 
+	 <section class="section context" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">Use the Check Disk function to repair the hard drive when the PC or AU has a corrupt file. A corrupt file generally cannot be copied or deleted. The most common evidence of a corrupt file is the failure of the backup process when attempting to copy the file. 
+	 </section> 
+	 <ol class="ol steps" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Run Check Disk on the PC or AU hard drive. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-CC1655DF-127F-4EF7-9FD9-8090A578136F">For Windows XP System: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEPS_11FD11AB566C4AE88FB96A2BA3D17BBF" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_C1884C3624774FC4912AE41677DBD799"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-64D3AB87-73C6-40FA-BB8B-90BC4F00F87F">Select 
+				  <span class="ph menucascade" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3BF5E0E9-8BEE-428B-B5F9-4E546472B913"><span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-2CFEAAE1-D329-469B-8940-F6C911395071">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-FE9AF7F8-1C03-4628-81CE-8E60AC0F54F6">Run</span></span>, and then type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3608DB40-68D8-487B-BD98-C78EA75FCB3A">CMD</kbd> on the Open text area. Select 
+				  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-71ECD53E-693B-4593-BF70-3856026DD9B8">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-F878DD4B-C776-4F24-926E-6CC28897A50D"><span class="note__title">Note:</span> For the AU, run 
+					 <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-81D3F80A-DB6B-440C-A3D6-7388EF4919E3">chkdsk</kbd> from a remote desktop connection. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_644C94965F3448D4B1D105E3C7A6800E"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-BB3FE581-6CE3-4642-B4DE-3F3CCCA4D662">Type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-4455F580-1B49-4897-B319-666A73428EC2">chkdsk c: /f</kbd> in the DOS command window and press 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-6B95A66F-EC04-431D-B06A-8918D7CC761D">[Enter]</kbd>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_7BEC1D277F5C42A48FB7A55D7C77325C"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-002AA877-07E0-4A82-B536-8A12DD2AB6A0">Type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3278D9E4-5E27-46F3-A6B6-7F53A1EB2EBA">Y</kbd> and press 
+				  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B234C8A4-9C95-42A1-9009-8D087A2C044D">[Enter]</span> at the 
+				  <samp class="ph msgph" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-994C3788-2791-4258-9C74-C35382970FD6">Chkdsk cannot run because the volume is in use by another process. Would you like to schedule this volume to be checked the next time the system restarts? (Y/N)</samp> message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_06C7439D6F5A478E9A2F6846076A924D"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-A6816FE7-2938-4CF3-B0AB-5F898CF4C76E">Reboot the PC or AU to run Check Disk when Windows restarts. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-0C30E01A-4B34-4C54-93CF-9B014E8BA189"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__UL_3B815AC9BC0D43A786BD258BEE8B6AE5"> 
+						<li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_1DD2BE653DDE43C386873EEB0FC731DE">For the AU with older Windows XP image, use the Task Manager and Command Prompt in the remote connection or the power switch to shutdown and restart Windows. 
+						</li> 
+						<li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_4AED77780A6F44839A6EA9C44CA87FEB">For the AU with latest Windows XP image, use Command Prompt in the remote connection or power switch to restart or shutdown Windows. 
+						  <ul class="ul" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__UL_5E349BC5F6824D0B82B7BA08ADA19253"> 
+							 <li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_937390AC677E40C7A7D7AB9E4234935D"> Open 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3104B960-75FD-49B0-9A96-528A1A987C39">Command Prompt</strong>, and type 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-9DA8E2F4-1934-4C67-A8CE-6861D3DA13B0">shutdown.exe /r /t 00</strong> and hit 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-2EAFA912-8CB3-47CF-83C0-A5841D415C17">Enter</strong> to restart Windows. 
+							 </li> 
+							 <li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_D6077CD258684823B07520F5527781F8">Open 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-6162B887-182F-4DFD-A3B5-44599F1C1E63">Command Prompt</strong>, and type 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-CA7B9048-F18C-4210-88FD-C98BC1A7EE2C">shutdown.exe /s /t 00</strong> and hit 
+								<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-03D62C1D-5285-4EBD-BFF4-2F7570DBB80C">Enter</strong> to shutdown Windows. 
+							 </li> 
+						  </ul> 
+						</li> 
+						<li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_3C22BF3EB914467F8FF3DD7DE4B3A18A">The results of the Check Disk run are displayed on the monitor and logged in the system events file. To review the Check Disk log, select 
+						  <span class="ph menucascade" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-76E85255-09D2-4D07-AAE2-A9F6F999D43F"><span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-269CC734-1E47-46FB-A423-BE8F24B64A1A">Start</span> &gt; <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D68EE405-DAB7-4168-893C-42ADD62D01DE">Run</span></span>, type 
+						  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-337CC3F2-F6D2-43EC-98D6-09E91F48DD56">eventvwr</kbd>, and then press 
+						  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-70E508B6-4F56-42EA-AD65-BFAA2ED2BD36">[Enter]</span> or 
+						  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-6553F6D1-EBCE-42AE-910E-365B24089B21">OK</span>. When Event Viewer opens, select 
+						  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-883C2A66-600F-4F3E-8111-D1EC11AC521E">Application</span>. Scroll down and double-click on 
+						  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-64C35198-611F-41A6-ADAF-AC42E294D1CD">Winlogon</span>. Winlogon is the log created after running Check Disk. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-9FF12145-3522-4340-A3D8-0C993363254D">For Windows 8 System: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEPS_A1A774B34AAA49ECB7DF9A2DD3C31547" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_BE87EB2F91D849BC8ECF63B1F47482B6"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-070C46C1-15B6-4C82-A71E-778E97A10ACE">Press 
+				  <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-698F1CB9-DA43-472C-9143-0DBE4B67B341">Windows</strong> key, select the 
+				  <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-112A7B22-54E5-42AB-BE2D-BF0C2FF27193">Command Prompt</strong> icon or type 
+				  <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D41F67E9-CD9A-466D-B0DA-347894C7D00C">cmd</strong> and open the program. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-322F2140-1A58-480B-A7DB-A601A68735BF"><span class="note__title">Note:</span> For the AU, run 
+					 <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-E44DA98A-5166-4BCC-9C1C-27B8A5749D43">chkdsk</kbd> from a remote desktop connection. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_178C18DC0A174287AC04B51898B14E17"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-1C649D82-5610-48BD-97E9-2B0CDE1A6D80">Type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-71863578-960A-49C7-B783-9061D47724FA">chkdsk c: /f</kbd> in the DOS command window and press 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B12EFF18-E8CC-4E7E-BD7F-BE59516EACCC">[Enter]</kbd>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_DFE2F9319147455BB6C985A1050366F0"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-080ECD22-040E-43F2-A13C-3E2545D416DC">Type 
+				  <kbd class="ph userinput" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D5C47378-D964-4DB3-B358-CB7E6FB12887">Y</kbd> and press 
+				  <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D789E4AC-B1C0-4ECB-A4C3-9C035357BA6B">[Enter]</span> at the 
+				  <samp class="ph msgph" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B70E5E51-0477-4F00-BB82-9AE70B870A0F">Chkdsk cannot run because the volume is in use by another process. Would you like to schedule this volume to be checked the next time the system restarts? (Y/N)</samp> message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__SUBSTEP_6FFC6750E10B403E930966B97029FDC9"> 
+				<span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-763B2126-B7D4-4A46-863B-61355E6914F3">Reboot the PC or AU to run Check Disk when Windows restarts. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p"><strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-7FA68B23-F3F2-4A90-81A5-910B0281BB3C">For console PC: 
+					 </strong> 
+				  <ul class="ul" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__UL_A0C5B7589E2C435090D434DB29B7A3F5"> 
+					 <li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_94C9088DBF2A4C21885A105CCBE88571">Press 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-33778DA2-B6B7-4996-BA7C-8A6B62F5CCD2">Windows</strong> key, select 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-9D7A0377-BB3D-4A08-9A0F-4864D014D58E">Restart</strong> icon or type in 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-8492E08A-887F-4F0D-AF8C-DCF1612C85C2">restart</strong>, select 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-14F00A33-D999-432F-B132-FABD9624FBC8">settings &gt; Turn off your PC &gt; Power &gt; Restart. 
+						</strong> 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3D86CD2C-2E27-4421-AE75-17EB69EFE733"><span class="note__title">Note:</span> When rebooting the Privacy &amp; Security compliant Windows 8 or Windows 10 PC, you must enter security password &quot;<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__d29e18">Access2Admin</strong>&quot; when prompted to launch Windows. 
+		<p class="p"> 
+		</p><img class="image" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__d29e23" src="GUID-57B84EB9-A496-4109-A064-4A160B1C8257-default.png" /> 
+		<p class="p"> 
+		</p> 
+	 </div>
+				</div>
+				<div class="itemgroup info"> 
+				  <div class="p"><strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-05A2332E-0455-41AE-889A-FDCD0983A4B6">For AU: 
+					 </strong> 
+				  <ul class="ul" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__UL_BDEB0173885848DFBD723008FD597D5E"> 
+					 <li class="li" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__LI_23F421C3D2ED4585AC0F0567AC363C3F">Press 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-7B7A8133-8967-4E84-80E6-EB8B48ED48D5">Windows</strong> key, type in 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-6BCE3A9A-1490-4E3F-8240-F91A20A5BF89">restart</strong>, select 
+						<strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-D3D1E8AD-D552-4FB4-8E52-A279C25FA86E">settings &gt; Turn off your PC &gt; Power &gt; Restart. 
+						</strong> 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-3E7ED873-309C-48C8-823A-3FC103E7001F"><span class="note__title">Note:</span>  The results of the Check Disk run are displayed on the monitor and logged in the system events file. To review the Check Disk log, Press 
+					 <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-7D191912-2A2F-4D6D-94DB-87C3F6930EC8">Windows</strong> key, type 
+					 <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-16171591-705E-4497-B794-7197E8A58ECB">view event</strong>, select 
+					 <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-0859746E-9749-491D-B576-E62155ABBA17">Settings</strong>, and open the 
+					 <strong class="ph b" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-BDAFDABC-AB2B-4C83-BB5B-3F28F87F5693">View event logs</strong> program. When Event Viewer opens, select 
+					 <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-B8221C37-3D80-4F78-B808-776DA3E9DE6F">Windows Logs</span><span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-1562CF79-2F5D-4F45-8F5F-00FDA666FCA1"> &gt; Application</span>. Scroll down and double-click on 
+					 <span class="ph uicontrol" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-AB953860-5658-4D6D-B7B2-BBBC81D255C2">Winlogon</span>. Winlogon is the log created after running Check Disk. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__STEP_B391813E7F54466FA3562E6B036E35DA"> 
+		  <span class="ph cmd" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__GUID-A7B159EC-DEEC-42A0-A086-E0718D9A56CA">Review the Check Disk log and take the appropriate action. 
+		  </span> 
+		  <table border="1" cellpadding="4" cellspacing="0" class="simpletable choicetable choicetableborder" frame="hsides" id="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493__CHOICETABLE_705CE9318A6F4FCF8DE739EFDC407876" rules="rows" summary=""><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead><tr class="sthead chhead"><th class="stentry choptionhd" id="d394737e393-option" style="vertical-align:bottom;text-align:left;">Problem 
+				</th><th class="stentry chdeschd" id="d394737e393-desc" style="vertical-align:bottom;text-align:left;">Action to take</th></tr></thead><tbody><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e403" style="vertical-align:top;">Nothing found.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e403" style="vertical-align:top;">No action.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e411" style="vertical-align:top;">A corrupt harmless log file is fixed.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e411" style="vertical-align:top;">No action.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e419" style="vertical-align:top;">UI does not operate.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e419" style="vertical-align:top;">Reload software.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e427" style="vertical-align:top;">UI does not operate.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e427" style="vertical-align:top;">Restore database.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e436" style="vertical-align:top;">Errors running random applications.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e436" style="vertical-align:top;">Reimage HDD / load software / restore database.</td> 
+			 </tr><tr class="strow chrow"><th class="stentry choption" headers="d394737e393-option" id="d394737e444" style="vertical-align:top;">HDD errors / lockups reoccurring.</th> 
+				<td class="stentry chdesc" headers="d394737e393-desc d394737e444" style="vertical-align:top;">Replace HDD / load software / restore database.</td> 
+			 </tr></tbody></table> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-1712C55C-F499-4B23-A869-6CD6FECE521C.html" title="23 Software"><div><span class="ph num-prefix">23 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2A70C059-4CE2-42C1-AF62-14F1BC95B971.html" title="23.6 Procedures"><div><span class="ph num-prefix">23.6 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-0FB1E95F-F55F-4F36-B3EF-1DAB506B8493.html" lang="en-US" title="23.6.21 Using Check Disk"><div><span class="ph num-prefix">23.6.21 </span>Using Check Disk</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

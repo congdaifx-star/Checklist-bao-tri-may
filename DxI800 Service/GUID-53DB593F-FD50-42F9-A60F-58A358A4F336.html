@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to save the trace file information for substrate dispense events and search the trace file for percent fluid." name="description" /><meta content="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" name="DC.Relation" scheme="URI" /><meta content="GUID-B284539A-0CBF-4B19-8B6A-EA778B77A193.html" name="DC.Relation" scheme="URI" /><meta content="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>12.6.8 Determining Percent Fluid During Troubleshooting</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-CF5C3B54-D885-479D-B4F6-FE16147F31DB.html" rel="prev" /><link href="GUID-F9DA6AD0-ACBE-4990-A9E3-D391208D8A26.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1611" data-relpath="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336" role="article"> 
+  <h1 class="title topictitle1" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Determining Percent Fluid During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to save the trace file information for substrate dispense events and search the trace file for percent fluid. 
+  </p> 
+	 <ol class="ol steps" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Save the trace file information for substrate dispense events. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEPS_647E6E5F46DF41C0B147F2CE84949177" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_5D9602626ED649838DC3AFD5F1A30D0D"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-A56CEE50-447C-4360-B7CB-CA9B885CB653">Insert a USB memory device into the console. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_7ED1DED995A4481F9497D8E6C127A2FC"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-14EEBB34-6EDB-43F0-9C6D-A068A80999B1">Select the 
+				  <samp class="ph msgph" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-6B876E96-8853-4869-8AE6-E5D9AB4FC379">Substrate Dispense</samp> message in the event log. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-A6A8363E-8D24-4C73-B834-6123A375D835"><span class="note__title">Note:</span> If there are a series of substrate dispense messages, then select the earliest message. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_BC84A5C975DD40BE84D06ED03429DCBA"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-37190C7C-51AA-4A3E-8486-9046FA23AC23">Select 
+				  <span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-7AC6D181-1063-4D11-BD40-FBE02559D129">Copy to Disk</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_DFCAC8F201F94F36A7FC9C51342F0A0B"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-EA96A681-B4C5-42CC-88CE-41D56B353F86">Enter these values in the Copy to Disk screen: 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__UL_41528805546224141528805546224241"> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546224441528805546224541"> Before Event (Sec): 30 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546224741528805546224841"> After Event (Sec): 10 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546225041528805546225141"> Path: Enter the drive where you want to save the file (example E: or C:) 
+					 </li> 
+				  </ul>
+				</div>
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-906E1E2F-C992-4129-A72C-777FE1789392"><span class="note__title">Note:</span> The 
+					 <span class="keyword option" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-5C6A9282-453F-405E-8D40-78CD81BA7FF3">Include Details</span> option is checked by default. 
+				  </div>
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_044E4FB2C261491F82DCC3DAFB56F384"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-7CE6EB9C-BC9B-4FAF-8CED-DD7D4CC3D510">Select 
+				  <span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-39DFC8C2-7705-4B0D-8E41-28CE71CCF2A6">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_AB0576A6260B4B04991F3DDAAEB6539A"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-2E3C38CE-4B97-4970-88C5-1442800B88D6">Repeat these steps for any additional errors to be evaluated. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__STEP_DFC74474B96A497AB88E72C7E1A57289"> 
+		  <span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-6FB305ED-A1ED-47D6-BF7B-3E85921BFBCE">Open the saved trace files from disk on either the console PC or another PC. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-33DBB858-E70E-45FB-ACBD-CB158D09EC40"><span class="note__title">Note:</span> If the PC asks which program to use to open the file, select Notepad. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__STEP_4C5B909950794BA190DB8459BAC21A70"> 
+		  <span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-AD635A9D-0139-4B6A-BCD0-087CEFDBF5F9">Search the trace file for percent fluid. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEPS_14452567B103441C864F5BEAA2776BB2" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_185FCC7B4DFF478B8C905287637962B8"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-11F1F281-E81A-414A-B515-9A16E07C53A6">Select 
+				  <span class="ph menucascade" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-DDDA624E-ED60-4311-97F4-0742720C6C0A"><span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-774D61B4-DB30-4786-A48E-0D691E7C2167">Edit</span> &gt; <span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-2ACDCC14-7076-405C-A783-BF7999CACE41">Find</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_3EFDBF9E5EDF487F8A5381FC25EE4256"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-32CD8F7B-4EF0-4783-8A86-D871ACABDADE">Search down for the substrate dispense exception: 
+				</span>
+				<div class="itemgroup info">
+				  <ol class="ol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__OL_CC04593239D34BDD9CC1873C7749789A" type="i"> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_5465F0171B9246C9912EA5BBE17AD3E2">Type 
+						<kbd class="ph userinput" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-83D027EF-7688-4B47-B06C-4AE88EB4DD36">x00400010</kbd> in the Find What box. 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_000CD604F1DD4BB99573B012EF886E23">Select 
+						<span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-808A08C7-464E-423B-ACB8-BEEA2B6AB04C">Find Next</span>. 
+					 </li> 
+				  </ol>
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-40378F5A-68FA-4F1C-AA1A-AB2FFF5C4765"><span class="note__title">Note:</span> x00400010 is part of the event descriptor code for substrate dispense errors. The code is the fastest way to locate the error in the trace file. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_037B54888C77444DA897F445410EDD8F"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-61B465EE-3B2F-4020-98E1-223D1B6420F9">Search up for the percentage of fluid: 
+				</span>
+				<div class="itemgroup info">
+				  <ol class="ol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__OL_41528805546226241528805546226341" type="i"> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546226541528805546226641"> Type 
+						<kbd class="ph userinput" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-01809263-D4C2-4D7F-B51F-CEA74B85B919">percentage of fluid</kbd> in the Find What box. 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546226841528805546226941"> Select the 
+						<span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-7C8E6A70-FCAD-4A04-A7F9-93166E028DD3">Up</span> option for Direction. 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546227141528805546227241"> Select 
+						<span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-91CBCAC5-0F8D-45A5-AB75-A79707AF2549">Find Next</span>. 
+					 </li> 
+				  </ol>
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_A16C764DE9D34D9EB77B96FD30CCF0B7"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-FC3A5A4E-AFBA-44FE-B9B7-0E4811B6983B">Identify the percentage of fluid detected for the substrate dispense. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> i.e. 
+				  </p> 
+				  <p class="p"> 1805089812, (4810), Substrate:T_Disp200uL id1209760, “Disp200” cleared DrawbackCompromi 
+				  </p> 
+				  <p class="p"> Bubble detector: latest air/fluid transition permitted is 152 samples in data 
+				  </p> 
+				  <p class="p"> Bubble detector: air/fluid edge NOT found 
+				  </p> 
+				  <p class="p"> Bubble detector: counted 0 fluid sample is 122 total samples 
+				  </p> 
+				  <p class="p"> Bubble detector: Percentage of fluid samples 0% 
+				  </p> 
+				  <p class="p"> 1805089812 None. Substrate: T_Disp200uL REPORT: 1805089812 
+				  </p> 
+				  <p class="p"> 1805089813 , Sequencer, 1805089812, Sequencer, CAUGHT EXCEPTION, 0x400010 from Subsystem 
+				  </p> 
+				</div> 
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-09C262D1-3E2D-4829-B424-11ED445FE404"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__UL_41528805546227441528805546227541"> 
+						<li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546227741528805546227841"> The expected percent fluid for a normal substrate dispense is 100%. 
+						</li> 
+						<li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546228041528805546228141"> On software V4.5 and below, a substrate dispense error is generated when the percent fluid is &lt; 75%. 
+						</li> 
+						<li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546228341528805546228441"> On software V4.6 and above or when Mod 11183 is completed, a substrate dispense error is generated when the percent fluid is &lt;60% 
+						</li> 
+						<li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546228641528805546228741"> Percent fluid errors of 0% can indicate an electrical signal issue from the Bubble Detect PCB to the Upper Left Card Cage. 
+						</li> 
+					 </ul> 
+				  </div>
+				</div>
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html">Troubleshooting / Testing / Cleaning</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-B284539A-0CBF-4B19-8B6A-EA778B77A193.html" title="12 Fluidics Module"><div><span class="ph num-prefix">12 </span>Fluidics Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" title="12.6 Troubleshooting / Testing / Cleaning"><div><span class="ph num-prefix">12.6 </span>Troubleshooting / Testing / Cleaning</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336.html" lang="en-US" title="12.6.8 Determining Percent Fluid During Troubleshooting"><div><span class="ph num-prefix">12.6.8 </span>Determining Percent Fluid During Troubleshooting</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336" role="article"> 
+  <h1 class="title topictitle1" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Determining Percent Fluid During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to save the trace file information for substrate dispense events and search the trace file for percent fluid. 
+  </p> 
+	 <ol class="ol steps" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Save the trace file information for substrate dispense events. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEPS_647E6E5F46DF41C0B147F2CE84949177" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_5D9602626ED649838DC3AFD5F1A30D0D"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-A56CEE50-447C-4360-B7CB-CA9B885CB653">Insert a USB memory device into the console. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_7ED1DED995A4481F9497D8E6C127A2FC"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-14EEBB34-6EDB-43F0-9C6D-A068A80999B1">Select the 
+				  <samp class="ph msgph" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-6B876E96-8853-4869-8AE6-E5D9AB4FC379">Substrate Dispense</samp> message in the event log. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-A6A8363E-8D24-4C73-B834-6123A375D835"><span class="note__title">Note:</span> If there are a series of substrate dispense messages, then select the earliest message. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_BC84A5C975DD40BE84D06ED03429DCBA"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-37190C7C-51AA-4A3E-8486-9046FA23AC23">Select 
+				  <span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-7AC6D181-1063-4D11-BD40-FBE02559D129">Copy to Disk</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_DFCAC8F201F94F36A7FC9C51342F0A0B"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-EA96A681-B4C5-42CC-88CE-41D56B353F86">Enter these values in the Copy to Disk screen: 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__UL_41528805546224141528805546224241"> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546224441528805546224541"> Before Event (Sec): 30 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546224741528805546224841"> After Event (Sec): 10 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546225041528805546225141"> Path: Enter the drive where you want to save the file (example E: or C:) 
+					 </li> 
+				  </ul>
+				</div>
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-906E1E2F-C992-4129-A72C-777FE1789392"><span class="note__title">Note:</span> The 
+					 <span class="keyword option" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-5C6A9282-453F-405E-8D40-78CD81BA7FF3">Include Details</span> option is checked by default. 
+				  </div>
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_044E4FB2C261491F82DCC3DAFB56F384"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-7CE6EB9C-BC9B-4FAF-8CED-DD7D4CC3D510">Select 
+				  <span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-39DFC8C2-7705-4B0D-8E41-28CE71CCF2A6">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_AB0576A6260B4B04991F3DDAAEB6539A"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-2E3C38CE-4B97-4970-88C5-1442800B88D6">Repeat these steps for any additional errors to be evaluated. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__STEP_DFC74474B96A497AB88E72C7E1A57289"> 
+		  <span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-6FB305ED-A1ED-47D6-BF7B-3E85921BFBCE">Open the saved trace files from disk on either the console PC or another PC. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-33DBB858-E70E-45FB-ACBD-CB158D09EC40"><span class="note__title">Note:</span> If the PC asks which program to use to open the file, select Notepad. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__STEP_4C5B909950794BA190DB8459BAC21A70"> 
+		  <span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-AD635A9D-0139-4B6A-BCD0-087CEFDBF5F9">Search the trace file for percent fluid. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEPS_14452567B103441C864F5BEAA2776BB2" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_185FCC7B4DFF478B8C905287637962B8"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-11F1F281-E81A-414A-B515-9A16E07C53A6">Select 
+				  <span class="ph menucascade" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-DDDA624E-ED60-4311-97F4-0742720C6C0A"><span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-774D61B4-DB30-4786-A48E-0D691E7C2167">Edit</span> &gt; <span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-2ACDCC14-7076-405C-A783-BF7999CACE41">Find</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_3EFDBF9E5EDF487F8A5381FC25EE4256"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-32CD8F7B-4EF0-4783-8A86-D871ACABDADE">Search down for the substrate dispense exception: 
+				</span>
+				<div class="itemgroup info">
+				  <ol class="ol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__OL_CC04593239D34BDD9CC1873C7749789A" type="i"> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_5465F0171B9246C9912EA5BBE17AD3E2">Type 
+						<kbd class="ph userinput" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-83D027EF-7688-4B47-B06C-4AE88EB4DD36">x00400010</kbd> in the Find What box. 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_000CD604F1DD4BB99573B012EF886E23">Select 
+						<span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-808A08C7-464E-423B-ACB8-BEEA2B6AB04C">Find Next</span>. 
+					 </li> 
+				  </ol>
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-40378F5A-68FA-4F1C-AA1A-AB2FFF5C4765"><span class="note__title">Note:</span> x00400010 is part of the event descriptor code for substrate dispense errors. The code is the fastest way to locate the error in the trace file. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_037B54888C77444DA897F445410EDD8F"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-61B465EE-3B2F-4020-98E1-223D1B6420F9">Search up for the percentage of fluid: 
+				</span>
+				<div class="itemgroup info">
+				  <ol class="ol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__OL_41528805546226241528805546226341" type="i"> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546226541528805546226641"> Type 
+						<kbd class="ph userinput" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-01809263-D4C2-4D7F-B51F-CEA74B85B919">percentage of fluid</kbd> in the Find What box. 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546226841528805546226941"> Select the 
+						<span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-7C8E6A70-FCAD-4A04-A7F9-93166E028DD3">Up</span> option for Direction. 
+					 </li> 
+					 <li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546227141528805546227241"> Select 
+						<span class="ph uicontrol" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-91CBCAC5-0F8D-45A5-AB75-A79707AF2549">Find Next</span>. 
+					 </li> 
+				  </ol>
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__SUBSTEP_A16C764DE9D34D9EB77B96FD30CCF0B7"> 
+				<span class="ph cmd" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-FC3A5A4E-AFBA-44FE-B9B7-0E4811B6983B">Identify the percentage of fluid detected for the substrate dispense. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> i.e. 
+				  </p> 
+				  <p class="p"> 1805089812, (4810), Substrate:T_Disp200uL id1209760, “Disp200” cleared DrawbackCompromi 
+				  </p> 
+				  <p class="p"> Bubble detector: latest air/fluid transition permitted is 152 samples in data 
+				  </p> 
+				  <p class="p"> Bubble detector: air/fluid edge NOT found 
+				  </p> 
+				  <p class="p"> Bubble detector: counted 0 fluid sample is 122 total samples 
+				  </p> 
+				  <p class="p"> Bubble detector: Percentage of fluid samples 0% 
+				  </p> 
+				  <p class="p"> 1805089812 None. Substrate: T_Disp200uL REPORT: 1805089812 
+				  </p> 
+				  <p class="p"> 1805089813 , Sequencer, 1805089812, Sequencer, CAUGHT EXCEPTION, 0x400010 from Subsystem 
+				  </p> 
+				</div> 
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__GUID-09C262D1-3E2D-4829-B424-11ED445FE404"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__UL_41528805546227441528805546227541"> 
+						<li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546227741528805546227841"> The expected percent fluid for a normal substrate dispense is 100%. 
+						</li> 
+						<li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546228041528805546228141"> On software V4.5 and below, a substrate dispense error is generated when the percent fluid is &lt; 75%. 
+						</li> 
+						<li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546228341528805546228441"> On software V4.6 and above or when Mod 11183 is completed, a substrate dispense error is generated when the percent fluid is &lt;60% 
+						</li> 
+						<li class="li" id="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336__LI_41528805546228641528805546228741"> Percent fluid errors of 0% can indicate an electrical signal issue from the Bubble Detect PCB to the Upper Left Card Cage. 
+						</li> 
+					 </ul> 
+				  </div>
+				</div>
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html">Troubleshooting / Testing / Cleaning</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-B284539A-0CBF-4B19-8B6A-EA778B77A193.html" title="12 Fluidics Module"><div><span class="ph num-prefix">12 </span>Fluidics Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-9DDA768C-1FD8-41B9-A0B5-B6C2F6F66141.html" title="12.6 Troubleshooting / Testing / Cleaning"><div><span class="ph num-prefix">12.6 </span>Troubleshooting / Testing / Cleaning</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-53DB593F-FD50-42F9-A60F-58A358A4F336.html" lang="en-US" title="12.6.8 Determining Percent Fluid During Troubleshooting"><div><span class="ph num-prefix">12.6.8 </span>Determining Percent Fluid During Troubleshooting</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

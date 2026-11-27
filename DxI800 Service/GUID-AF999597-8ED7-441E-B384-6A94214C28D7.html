@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to enable the DxI dynamic LAS interface feature with the power processor lab automation system. NOTE: Because the network might include a firewall or might be managed by the customer&#39;s IT department, to configure the IP address for the DxI instrument, see the DxA Service Manual for more information." name="description" /><meta content="GUID-2E5E498C-F631-4822-B74E-C19B2713E877.html" name="DC.Relation" scheme="URI" /><meta content="GUID-0A38E0A8-5886-4340-B4C8-3B781C6452B0.html" name="DC.Relation" scheme="URI" /><meta content="GUID-2E5E498C-F631-4822-B74E-C19B2713E877.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-AF999597-8ED7-441E-B384-6A94214C28D7" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>14.2.2 Enabling DxI Dynamic LAS Interface</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-0CE7AAA6-FD39-4D95-A206-DC7100F83B36.html" rel="prev" /><link href="GUID-B387D4D9-CEE5-401B-AE31-D98BC438214E.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e2110" data-relpath="GUID-AF999597-8ED7-441E-B384-6A94214C28D7.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7" role="article"> 
+  <h1 class="title topictitle1" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Enabling DxI Dynamic LAS Interface</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to enable the DxI dynamic LAS interface feature with the power processor lab automation system. 
+	 <strong class="ph b" id="GUID-A55BC3CB-CD54-4361-BA77-578C0AF59E9E">NOTE:</strong> Because the network might include a firewall or might be managed by the customer&#39;s IT department, to configure the IP address for the DxI instrument, see the DxA Service Manual for more information. 
+  </p> 
+	 <div class="section prereq p" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__PREREQ_D41C3CF84B3C45BBBCC282615DE0559C"> 
+		<div class="p"> Perform this procedure only after confirming these prerequisites: 
+		<ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_BF15B9ACA52D4CD7BB4ED05161756CC0"> 
+		  <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_676998BE193A4A818504605F4B4B2DBC">DxI software V5.1 or higher has been installed. 
+		  </li> 
+		  <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_41FC26BA065F47B49E953DE1C4792C8E">The DxI console has a network port available for LAS or console pre-configured with multiple network ports. 
+		  </li> 
+		  <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_DB781C2B2E564030AD4DCAEEA582D7B9">PrepLink V3.5 software or higher has been installed and configured. 
+		  </li> 
+		  <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_DC053E871F37400BA868672095690099">The lab automation group has prepared the LAS to run with the DxI Dynamic Interface. 
+		  </li> 
+		</ul> 
+		</div> 
+	 </div> 
+	 <section class="section context" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p"> The procedure for enabling the dynamic LAS is different for DxI instruments running different versions of Windows. Use the procedure for the version of Windows running on your DxI instrument. 
+		</p> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7A778C38-9594-49AC-94FA-9E9A1683CEAD"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e20">Pause the LAS sample tube loading. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e25"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e27">On the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e29">PrepLink Console</span>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e32"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e33">Setup</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e35">Instrument Loading</span></span> 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e38"></span>. 
+				</span> 
+				<div class="itemgroup info">
+				  <figure class="fig fignone" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e43"><br /><img class="image" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e44" src="GUID-F09A9656-9F9E-483B-A3A6-20F15BF67C5A-default.gif" /><br />
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e49"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e51">Select the correct 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e53">CONN-X Loading Paused</span> option (X = 1,2,3, or 4). 
+				</span> 
+				<div class="itemgroup info"> The DxI instrument connection units are labeled 
+				  <var class="keyword varname" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e59">CONN-1</var> through 
+				  <var class="keyword varname" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e62">CONN-4</var>, according to how many DxI instruments are connected to the LAS. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e67"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e69">Before proceeding, verify that the selected DxI instrument has completed processing all samples. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__STEP_13AD99793F6E46D1A069A356520B8E40"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A6411D87-F6F9-4E16-AD33-84F59ADC7A53">For DxI instruments running Windows XP with Software 5.2 and below, use this procedure to enable dynamic LAS. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEPS_F212162B084A4490B85202AADEEC84C6" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_81C9F5EFB4F24907BB63B9BC7D54563C"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C2F5050D-1BBD-414D-9D0C-4E045253E8DF">At the DxI console, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-26691536-D4C5-46CA-BF5D-2AFE04DA0436"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D3B6F223-C4CA-43F1-A227-68F518E9DF65">Configure</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C8638352-E12A-479D-9EF8-7A5C5571378E">LIS/LAS</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9A0C5B6F-A045-4761-B1FB-EE746C059DE8">LAS</span></span>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1453617C-8092-4BB7-85AB-374F4FEDD639">Disabled</span> and 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-128C4FDD-B424-4C11-82C5-8478ED0D722B">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_12B9729C8F0146D584F6F2FAEBCF9D6D"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7BCAE720-1AB7-4DD5-9554-5D5D9335445E">Press 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3182DDAC-0A47-4552-A26C-D4B6B5C5108F">[Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F8E29A90-507E-4496-A500-BF01185F720E">Access2Support</kbd> when prompted. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_C9C913DA8C284E109B40E511E2D39E7C"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3ADC2BBB-60AB-409B-A6F1-E0632EDE8F10">Select<span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9C6058DB-5138-4AED-95A5-A1CE54E7B101"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-04FC831E-B67C-4BE8-9DF3-2BE16869B895">Start</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-307ABF6D-CC7F-417D-9358-8796F20040F4">Settings 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-EDE6F362-F0AA-43FB-AA75-99EE67944666">Control Panel</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1A7C5EC9-A292-4CC9-9ECD-3329392D0BE6">Network Connections</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_2C40EC4BD24E4884A6A991590F9A10DF"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F596B8C4-D3AA-4E26-80D2-E6103BA05D62">Select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D9E436B3-AA3B-4F1F-93AB-01F9D0A17E3A"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6AC2D235-FCE4-4AF2-A1CC-1412AF9C0412">Advanced</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-387635F9-454F-4161-A943-97007BAC1083">Network Identification</span></span>. Under 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-28F14FF3-B4EA-4F86-B601-B52984B06A14">Computer Name</span>, select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1F9C883B-AA00-4DF5-9F06-445BDC28A145">Change</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_49DFE1D7FC7649B39D9115EE63F0F42E"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F7F0B426-02CB-4AC8-AE4E-D632B0E48A9B">Enter the DxI instrument serial number followed by PC (example: 600010PC), select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FEDAD08A-EC4B-411C-B500-8981C8B34A4E"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4002B1B0-30D2-43DA-B971-9C51AA25A07E">OK</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4BEF4A79-F170-4C94-9B11-D6CC017A1EE9">OK</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-8C895898-2874-403B-8BCE-B1B982C9A6E4">OK</span></span>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A818DADE-9E00-4A68-B24C-2A9F99977437">No</span> to the 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D5BF4B59-E6E2-47FD-8737-1E840470DE27">Restart</span> option. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_0A7D902FEA744FC5806496C1334FF2C6"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F1ACF074-B4AE-4253-B6EF-BB960DDFBF96">Select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F138FE87-654C-4D28-B5F2-02F968A6F8D7">Local Area Connection 3</span>, choose 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1D7656F5-9C39-448D-96C3-4BC3A29E963F">Internet Protocol (TCP/IP)</span>, and select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3F6D0057-D0CC-45F4-975F-B37328F27165"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-42DC4227-CEA3-4DF9-83EF-CE475CC85445">Protocols</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-67737CC2-5C9A-4388-86A7-DDC736857045">Properties</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_6FA19041FC1F4E65AA640B5230556A7F"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E583881D-B570-4A20-87A5-FDD5ED46F5CF">Select the 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FF8533A1-161F-4E09-A356-509B7CE9C839">Use the following IP address</span> option, change the IP address to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-2F5B6824-D5BB-4499-80AC-A46DDC7E276A">134.217.96.181</kbd>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1A2554AE-8DE5-4AD3-8C61-FCA55FFAB098"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B863C298-2A5C-4A4B-95D8-35286FFA2AEA">Apply</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-18DF19C1-19D5-4327-B1A6-8D52C78B0947">OK 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B2204B87-E761-4F81-B0A1-C7DDFCA08A8A">Close</span></span>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-2326F68C-C2AC-4274-BEE4-0A68F1F2254D">No</span> at the Restart option. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p">If more than one DxI instrument will be connected to the LAS, use these IP addresses: 
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_8744424E0D624911820C9A96D43C6406"> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_84D5B9AB994A4B54821AF3E8E5DD90E8">DxI 1 IP 134.217.96.181 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_C4784EE59FBF477AB1129EE661D35C17">DxI 2 IP 134.217.96.182 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_47C716E244EF4D97ACDAB57641085854">DxI 3 IP 134.217.96.183 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_4E87DF1F3CC24E2C93AE9C32F5D9BA3F">DxI 4 IP 134.217.96.184 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5F41048E-76D4-429D-9C4A-B2192E696063"><span class="note__title">Note:</span> The subnet mask is 255.255.255.0. Change as needed. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_1904B012F8AB40548BAEF2289E09F5AF"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C4D9E51B-F428-46FF-A2C6-D669430C886A">Select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4E3AD25B-66B6-498A-855C-76325C75BB0A"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-EC8BB0A9-EC9E-4670-AC83-3517A938100E">Start</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-ABB56EAA-51B9-447E-804F-9AC721A3C0AF">Run</span></span>, and then type 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B8D09729-8E90-4CD9-A157-594ACA1F8471">regedit</kbd> and press 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-25239128-99C5-4BC6-845D-358A3CE30ED1"> [Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_7C4C2D24937645109DE59B4A280A80DE"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-011D3366-8282-4CCB-9D58-210F47EE8E79">In the Registry Editor, go to the Workgroup folder: 
+				</span> 
+				<div class="itemgroup info"><span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E7CE2AAD-6068-4308-A40B-EEBE2C5870F9"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-76548286-8282-438A-A0A2-1987F0259DDF">My Computer 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D8A030AD-6254-42C4-AB23-71261341E67C">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4F4EB52E-76E9-4BE8-95B0-F10E22D2E920">SOFTWARE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9F3FBAA3-0ADC-47D8-B128-C572A1D5BEAF">Beckman 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E9E8CB00-C311-4836-BD61-A5DCC1B8A2AB">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-677FB389-7F4F-41F8-8F4C-42891C885770">Workgroup</span></span>
+				  <p class="p">
+				  </p>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_29607C5B093F4313926753E9C8130663"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-649D7D81-DD86-4B66-B207-FD0B13D6C8D3">In the right pane, highlight the 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-27CA6648-EEAB-45A5-BF6F-CCDF27EF878E">PWPEnabled</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-41FD3689-C7E3-43DC-A782-FC03CF55A759"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A238A93A-A716-4EC5-8545-BE2A54F9BE57">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9DF03970-19FC-4784-818C-8F3B4F19C21E">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3F77B21A-FA25-42B4-98AC-0B58E13239E3">1</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-801C8B0F-49CD-404C-BB86-0AB4587A574F">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_1799BE0AADA84468B309817C21913F72"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-280A444F-9788-4142-ABFB-9E1EB7EE1A8C">Highlight the<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7BDA7B7C-EE22-4853-842D-EDF79E3EE710"> PWPServerIp</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FA754555-5F00-47C9-9CE7-201AE4B692D2"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B2335375-6AAE-4113-9F99-A64E1B4734B9">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0263E555-9F9E-4D43-AA85-B0A99CB930CA">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C7A180B9-541C-4179-8FE8-ABE36B5DE7C5">134.217.96.181</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0C789A89-38C5-4807-A8AA-458051597EDA">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p">If more than one DxI instrument will be connected to the LAS, use these IP addresses: 
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_567571D993E74C7A9DA171168E21A5C3"> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_0400695FCC1B4FE78062DCBE185D9BBB">DxI 1 IP 134.217.96.181 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_2632060E3C9B40068DD54811048C122B">DxI 2 IP 134.217.96.182 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_4464A4905E744E3D977820818FD57BF4">DxI 3 IP 134.217.96.183 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_15F6FF67084844149B59CDBFCB52DCB1">DxI 4 IP 134.217.96.184 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_7B50E819B1E2486686076E5D33689303"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A31154D1-F83F-4563-8BBE-18EDDF1DE95E">Highlight the 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-54439CA9-C83E-4BD6-8094-4387868A5310">PWPTcpIpPort</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E295D3EF-FFFD-41E5-AC1F-36DA312D375D"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9303761F-D276-4BFC-A220-8B57C81A1CA0">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5DE2A157-A03D-4178-A952-3BE85E57E801">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-82C58A70-DFB2-4BC4-84C6-F875EBE8F3C6">beca</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9FA2BFFF-E6C0-4666-80B9-23D1B22F3844">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_D08B7F3E7683490DBCB51449FEB11066"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-507A3390-37AE-48F2-8EA5-82F11C976600">Exit the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E7595611-F226-4EA6-897A-170045617298">Registry Editor</span> and 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-2E63331E-D498-4811-AACE-674A0698B934">Control Panel</span> windows. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_B4DCBBCD6B1944E7A27F0555AFAE0573"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-ABFCEB7F-608D-43BF-AD07-A541F81886AB">Select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7340383A-593B-4B6B-9450-F938E29790D9"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-2613EF17-8ED7-4BC1-A598-316A2ED3DC87">Start</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B262ABFF-BF83-4F95-B949-0F6B99A19453"> Shut Down 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-99DF777A-1A44-4484-BF45-7AB1B5D88FAD">Restart the computer</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-92409DF1-1135-4DD3-A411-27632D8D7607">Yes</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-164665C4-D1C8-4A1A-9851-68E60E07BB79"><span class="note__title">Note:</span>  Reboot the PC for the changes to take effect. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__STEP_089565B4FF47493C980264B0A9F65F53"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5BB2F447-7371-405B-AF71-F1566EF908C0">For DxI instruments running Windows 8 or 10 with Software 5.3.1 and above, use this procedure to enable dynamic LAS. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEPS_0ECDDD3A1950406E9140D9F9C9768D41" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_4C488B25E4544164A47D23CE1002A1C5"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-56FD8DA1-0F36-413B-B97D-09DA942E6EE3">At the DxI console, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-04239B42-9FA5-4046-919B-39E2434E5363"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-DEE12E20-69E6-4EDF-A854-133A19AF66CB">Configure</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-728A11A6-D481-41B4-AD8B-9A4E997B9389">LIS/LAS</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9E62E9D5-74A6-41FD-8E81-04276F3B9C87">LAS</span></span>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F844FFC3-DE58-4F44-9F2F-EEAB0FC3224E">Disabled</span> and 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E23D5A84-10EC-470F-A72B-DA70EDF5BF75">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_D5ED7A4640F541CB9FEDEF4EF8B3F5B8"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6282919B-B758-4D8A-A9A0-B07C5A4431EA">Press 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-41E7E104-645F-405E-8AD8-70250679DD15">[Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1C4576D3-818C-454D-88E4-7EECB1AD217C">Access2Support</kbd> when prompted. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_432466A41D494C9DA86160DA89582B19"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-38B98822-C2DB-4428-9768-E1E007DB0B8B">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1D91F46A-580B-4EC8-8071-B996A7BD94D0">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B676B660-D067-4127-9893-0B30AB8E495F">Control Panel</strong>icon or type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1F1A6759-B4D6-4717-9635-EFC01EFD37F5">control panel</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_CAED40C68B3643778C193379C86994B1"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1B246F84-A209-43A4-B49D-5C844DFBF2DC">Double click on 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6F31CF85-8A14-44D2-8F51-F4E3764DC3EB">System</strong>, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-20E6F3D6-AB20-4B60-8E69-9891C6B6E672">Change settings</strong> on the middle left side of the System pop-up box. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_6880ECBE28844718A13BA755249E98B5"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-008FD410-824C-49B6-9C62-F0164948DFB7">On the System Properties pop-up box, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-68212BE3-761F-4EC7-8824-957C2B694E36">Computer name</strong> tab and click on the 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-AF602B65-AE24-425B-A54B-3BC72B425DF9">Change</strong> option. Enter the DxI instrument serial number followed by PC (example: 600010PC). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_B0430C103E8D4EC19DEC8218C37C4748"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D8425D35-BFCB-4BCA-A8FC-BBDBCBEC4079">Click 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-442E7302-72A3-4DE3-90CD-2D77F7175869">OK</strong> to save the change, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3093B020-A5DE-48CE-BFBF-127119D9E5E9">Yes</strong> to &quot;Do you want to use this computer name?&quot; prompted message, and select<strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CA79A872-3B39-4ACF-A655-1A8BC198E886">OK</strong> to &quot;You must restart your computer to apply these changes&quot; prompted message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_52E14808EC124919BA899C7424DF3D4E"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-095BA30A-A205-49DB-882A-5FE0625DB536">On the System Properties pop-up box, change the 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-76364847-8D47-4C60-B13A-3CC874416ED1">Computer description</strong> to match the computer name, and select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1EE1D0BE-DD70-471C-82EF-318BDC9F58B3">Apply &gt; Restart Now</strong> to restart the PC. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_4BAA0C41ED1345499D061D1823EE68CD"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A8766607-DC8C-4695-B2C7-04F89CE02AE8">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-85443427-ECF8-4936-97FF-0A2B59E3E783">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F1D444F1-A5C8-430D-88EB-BD9A3FEB5B5C">network connections</strong>, click on 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-AB14AD7B-9440-48A8-893F-C1E4A5F2CAE5">Settings</strong>, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D2AD3256-9D50-443F-9BBE-AAA70D816777">View Network Connections</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_F3A8598D39EB4D7AB12577336857B7D0"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6F552F39-7B1E-43AA-A6D8-B68273967906">Right click on 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-8366964A-8593-40EB-9235-E2D60BB23650">Local Area Connection 3</strong>, choose 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FF90800A-FC57-4D76-9FD3-4605B195BC2D">Properties</strong>, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0CFC7F35-32DA-48F1-B243-0518A1EDA02F">Internet Protocol Version 4 (TCP/IPv4) 
+				  </strong>and choose 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-AF6F3F6B-F9B3-4594-896B-A31BD9DBA2D9">Properties</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_D490E01EC10545689D7DF9A7258BD06A"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-906F8CDD-7D64-4D21-B0EE-FE4A5A74D534">Select the 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CB09675A-BAEE-4E5A-905A-F6CD6ED57B7F">Use the following IP address</span> option, change the IP address to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A18DD3D9-0A8D-4E2E-97F8-03012AC87A87">134.217.96.181</kbd>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-589CE32F-7D7A-4D31-A0E8-25EFAFA430DD"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3D0ECA52-D664-4E24-85B6-625E35BDBC1E">OK 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FE015A01-1EDF-4861-976D-C023842FDC99">Close</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p">If more than one DxI instrument will be connected to the LAS, use these IP addresses: 
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_19ED97E9708D454DAAA8A1908A1ABF3F"> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_8F464E0976894DF489F81F2F87B832B3">DxI 1 IP 134.217.96.181 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_CBB8AEBCC4B3407C83419404A5FF7D57">DxI 2 IP 134.217.96.182 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_787893B80C364DBD8E65709AD27E3FC8">DxI 3 IP 134.217.96.183 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_570807CF572B4FC38A316A47FC9FDDBF">DxI 4 IP 134.217.96.184 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-85F0816F-D100-454C-B63C-B32AA8B54F72"><span class="note__title">Note:</span> The subnet mask is 255.255.255.0. Change as needed. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_6FFBA493FDD74E88A5314876FC435FC8"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C0BE0842-B821-4F9C-9C41-D2FCCCF55B96">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-AA3D7E43-C6FA-4438-9064-295347A27DE5">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-368FF624-CD95-4E07-BC1D-352AF4CE019E">regedit</strong>and open the regedit.exe program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_FEE90A7676D24CD583B99021048C1CC9"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4EF25C73-5623-463E-BE83-C81510C72D2B">In Registry Editor, go to the Workgroup folder:
+				</span> 
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_1DFC483B094D4313BC708478C09DF892">
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_DC82EB4F126047598A818E2C8F96A57E">For Windows 10 go to 
+						<span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-15732642-4C09-4167-A096-6F2BAE7A7F89"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-648F5057-8095-4F4E-8E1E-0ABD1FDEE865">My Computer 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1562596D-A0C2-45E9-8C8A-830D5BBF21F3">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-DFA6DBAE-2B4E-427F-9476-745897116716">SOFTWARE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-58B479B7-1FDD-406B-8A01-656B13ECB1F0">WOW6432Node</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7DA33DE7-C80E-4D30-9D13-9944805CDA1D">Beckman 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FBB5F4B5-7E43-4C9C-95DE-07B059BE50A5">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1E36516D-C9DD-4EB2-BEEE-1BD737BFD690">Workgroup</span></span>
+					 </li>
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_9B0A84DEC9C34BF08D9F134040F1DB64">For Windows 8 go to 
+						<span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__MENUCASCADE_1B78A7C3EC1348319103099A344C0468"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_1EB7C247A37B488C9DF8EC13B3799781">My Computer 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_5578F848842C42F48FDC37F27D1729E1">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_AE8B66EB4E76482191AE9B0014FD6C72">SOFTWARE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_82D18F662CF64F88AA02D5B96129CD75">Beckman 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_55346319A4E54CD2AB6053AB99A715B8">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_AD217DBBD1094A5EA9B4B6C258424C65">Workgroup</span></span>
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_643B93262CA24CDAB68BDFAF43080D3B"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-703C2394-0C97-4245-97F7-4C59A5AE6920">In the right pane, highlight the 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-8BB520D8-2B51-4331-B990-AEA3BDA81F53">PWPEnabled</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0AB95BE1-0154-457C-9C1A-4F642F0084C7"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-BB7B2407-6EFE-49F2-9B87-3E4467CC7EE4">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3B44399C-F8C6-44CD-A838-2FCC60418DFF">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-BAE32044-729B-4217-ACA3-249C6154D407">1</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A757624D-801C-4A97-B9D7-8B53E3039FE2">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_A3A466D125F942DD8083BA4B95AD3BE5"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9CCE3097-451A-44F8-A392-9C7CD4FCA49C">Highlight the<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-218DB78B-CABC-44D8-8A9A-426DDD83B0D6"> PWPServerIp</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-05BA8340-EEDF-49C8-AC04-CF6E4368FB04"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F409E2B5-1E86-4DA6-94E4-4641ADA01B5C">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CEA0AFA9-28A5-4583-A718-C82D5427EC4F">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CCE76999-DB3B-4F36-BEB8-197A4EA708BD">134.217.96.181</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E323A748-95DE-425F-9E77-74FF498A3D76">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p">If more than one DxI instrument will be connected to the LAS, use these IP addresses: 
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_D24EEEEDE636449C8B3D05FA69AFD536"> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_0EC79F05C86040188EAD097943FE2311">DxI 1 IP 134.217.96.181 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_27FBA2A62FE647658818DAA4FB63B535">DxI 2 IP 134.217.96.182 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_2C0EE68A0B594B88BA41452C12491F07">DxI 3 IP 134.217.96.183 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_90B4145939354155970020ADF02D8524">DxI 4 IP 134.217.96.184 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_716C8D5F3E3F4BA0B680DE0BA5A40A9D"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-70667657-F2BF-4171-A965-2A50450E449B">Highlight the 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9CE2663E-9D32-4F6C-9C4A-054D25B477A8">PWPTcpIpPort</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-8C39D529-9144-4087-A794-B9E2544534E9"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4DBBC035-00A6-44B8-98E0-D75B648B0B36">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-43722C1B-1251-460B-9547-6C73078B1C81">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-85552EA8-D45C-4B5C-8757-C9BD01D60D5C">beca</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-31CBD185-EAA7-475B-BEBF-558E74276CC6">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_F59A69C16CE540899064E2042010986A"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-604A9A50-7C87-4B81-920F-BC6C0B27634F">Exit the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FC36972E-151B-4A85-BA26-3ED31097BF12">Registry Editor</span> and 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E1618004-3A8A-4631-9569-8209751418B8">Network Connections</span> windows. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_C38A7C7F7D3349F185C4DC07948057C8"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E698799A-E112-455E-877E-8C0364545D2A">Configure the Privacy &amp; Security firewall. See 
+				  <a class="xref" href="GUID-B387D4D9-CEE5-401B-AE31-D98BC438214E.html">Configuring the Privacy and Security Firewall for the DxI Dynamic LAS Interface</a> for more information. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_D6EDABB32BCB41A79B21E759454FEE4A"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3CA0B6A4-C8A0-486E-80BE-3AF6C3ED7A42">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-DCA01428-D09A-408E-B5BD-200F0F68DCE7">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-587C4B68-0362-4FC2-A0EF-09A2D687F25A">turn off</strong>, and select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0EAFA89E-F5E0-4D7C-A862-08EDCCAF2211">Settings &gt; Power &gt; Restart</strong>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3E44AB68-5AAB-486B-A9E4-D109E713F6E1"><span class="note__title">Note:</span>  Reboot the PC for the changes to take effect. 
+				  </div> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3D86CD2C-2E27-4421-AE75-17EB69EFE733"><span class="note__title">Note:</span> When rebooting the Privacy &amp; Security compliant Windows 8 or Windows 10 PC, you must enter security password &quot;<strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d29e18">Access2Admin</strong>&quot; when prompted to launch Windows. 
+		<p class="p"> 
+		</p><img class="image" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d29e23" src="GUID-57B84EB9-A496-4109-A064-4A160B1C8257-default.png" /> 
+		<p class="p"> 
+		</p> 
+	 </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__STEP_4DEF4F1940354D8C8A12FEE50AD17E06"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5CE563F4-2C7D-4AE4-AE6C-718542A860DB">Verify the IP addresses on the DxI PC console and install network cables. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note caution note_caution" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-44F2ABFF-D1AD-4604-B905-A5D89A75649B"><span class="note__title">Caution:</span> Verify that the DxI instrument consoles have the correct IP addresses before connecting the cables. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"><strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-829731E2-8328-4979-9F50-715F35E2E1EE">For Windows XP System: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEPS_8E3E6FA682844C67ADA453C2CF01696A" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_E7047C89CA3B44C188F60E824CB2E6FF"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-55A4FD1D-5BB3-4EFE-8286-13F8AF366240">Connect a network cable between the DxI console PC port (local area connection 3) and a port on the LAS that can communicate with the PrepLink PC. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-38C31DF8-E660-4203-B564-E51C973F2EA2"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_8283B5A224974BA5ADC80C05768D1739"> 
+						<li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_1CBC20476BBE4776BB264352CB5490F9">Refer to the PC Console, Connector Identification document to determine the location of the local area connection 3 port on the DxI PC. 
+						</li> 
+						<li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_1BCEBA56D32D4C4B8D832C1A22389125">If there are no available ports on the LAS, then install an extra hub. Contact Automation Technical Support for advice on installing an extra hub. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_1B21FA5C02C0489898CBD58271F0D3D2"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-97641BD1-493E-475A-95A4-3081BE6E3DD0">Select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C39B8C74-3A6B-44FD-8879-9DEDA6E34F6C"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5F5F69D8-A39E-459B-9D76-BE82E5B8225A">Start</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9230D354-7000-48EF-A695-6B58D5CD627D">Run</span></span>, type 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4FB7B499-1801-45B3-A5AF-6F17F20AB5D2">cmd</kbd>, and then press the<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9D57DB6B-3421-4900-A92C-208D0C7DE7EF">[Enter]</span> key. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_027C3F53A2914430B4B01D404FA354AC"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F75E5CE3-1059-4A00-9EF3-780D47472455">Type 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-47503BAC-D0C7-4C88-AEB2-69B718308D8E">ipconfig</kbd>, and then press<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-01B91B57-CCFB-4766-A318-C4086E658510"> [Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_744651A65EF343EF8A39D572975A24FE"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-16452E70-28C3-489B-B418-D824817C472D"> Verify the IP address for ethernet adaptor local area connection 3 is 134.217.96.18x, where x = 1, 2, 3, or 4 corresponding to the DxI. 
+				</span> 
+				<div class="itemgroup info">When multiple DxI instruments are connected, each console PC must have a unique IP address on this port. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_52657DF1724C4AC58786769AA9473BEF"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5F57D53C-97CD-49D4-876C-8CC6F344292F">Close the CMD window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"><strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-28037BC1-2E71-41C7-BE90-65A8AA59C0A3">For Windows 8 or 10 System:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEPS_556DCD3293964965BF3FD7D000937552" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_C5D2E58890FE41E2951E37350A9364D7"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-94FC0976-7072-4F19-A489-A4FCD207F6A4">Connect a network cable between the DxI console PC port (local area connection 3) and a port on the LAS that can communicate with the PrepLink PC. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1E99BECC-02C1-4B22-8B7E-3C68346D7686"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_260052D7A12243CFBE517D16DC6400A6"> 
+						<li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_9C97F8FCFE6A493DAF2AD647F073B4A8">Refer to the PC Console, Connector Identification document to determine the location of the local area connection 3 port on the DxI PC. 
+						</li> 
+						<li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_2006D0FA24C144059575B996CC4E1F58">If there are no available ports on the LAS, then install an extra hub. Contact Automation Technical Support for advice on installing an extra hub. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_AD1D2D849C7B484BBA9CA1295FB60C3A"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D782691E-EF4F-472A-A743-DA7EA047E4B2">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-48E7F979-87DE-4EE2-9A70-40C215EA587A">Windows</strong> key, open the 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C999F4EF-00D2-4A75-8A91-7F5BAE7AE40A">Command Prompt</strong> icon or type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-40EFF0FE-A080-4310-AD81-B985E11F4CF5">command prompt</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_06C3ED872E504E688D103C5F469690D8"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7D1222EA-624E-477E-A60D-770FA94C8BB6">Type 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-67811ECD-3D53-41E9-A9CD-BD860A6CCA46">ipconfig</kbd>, and then press<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5F28D512-7AA0-40B2-9EB9-66F869576567"> [Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_C862D3BF3E7B4E32BCF98A97E7EC2AD1"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-DA05F830-BAA0-426D-AFAC-FE12FF98DF7C"> Verify the IP address for ethernet adaptor local area connection 3 is 134.217.96.18x, where x = 1, 2, 3, or 4 corresponding to the DxI. 
+				</span> 
+				<div class="itemgroup info">When multiple DxI instruments are connected, each console PC must have a unique IP address on this port. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_469A2CC1A3744C32AD39F4F73CA32179"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-138F40A1-4461-4C53-9A76-493C0C6AF58C">Close the CMD window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CF2FB5EC-355E-42DE-98FC-C3348865BBC8"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e20">Resume the DxI sample processing. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note warning note_warning" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6A5B2891-2B27-4E77-855D-61F5CD96C066"><span class="note__title">Warning:</span> Performing the steps to resume LAS operation causes the DxI instrument to run LAS samples automatically. 
+		 
+	 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e29" type="a"> 
+			 <li class="li substep" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e31"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e33">If the serial communication cable to the connection unit was disconnected, reconnect it. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e37"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e39">On the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e41">DxI Console</span>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e44"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e45">Menu</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e47">Configure</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e49">LIS/LAS</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e51">LAS</span></span>, and then select 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e54">Online</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e59"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e61">Select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e63">OK</span>. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-73462BC6-63A7-4D50-AD5A-584A66175592"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e20">Resume the LAS sample tube loading. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e25"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e27">On the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e29">PrepLink Console</span>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e32"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e33">Setup</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e35">Instrument Loading</span></span> 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e38"></span> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e42"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e44">Clear the 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e46">CONN-X Loading Paused</span> check box. 
+				</span> 
+				<div class="itemgroup info"> The DxI instrument connection units are labeled 
+				  <var class="keyword varname" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e52">CONN-1</var> through 
+				  <var class="keyword varname" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e55">CONN-4</var>, according to the number of DxI instruments connected to the LAS. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e60"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e62">Observe while the DxI instrument runs a minimum of ten samples from the LAS. Confirm that all tubes are processed correctly through the connection unit and that all samples are aspirated and run correctly by the DxI instrument. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e67"><span class="note__title">Note:</span> If captive tubes were released from the connection unit, then errors will show in the event log, as expected for tubes that had processed beyond the query BCR before release. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__STEP_029B649FB5EE4F32A1A542DDE5720D8D"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B4DBDF64-7DCD-4360-8356-5C16A830BF28">Repeat steps as required (pause loading, enabling, verifying, connecting, or activating) to enable the dynamic LAS operations for all additional DxI systems. 
+		  </span> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2E5E498C-F631-4822-B74E-C19B2713E877.html">Installing / Removing / Replacing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A38E0A8-5886-4340-B4C8-3B781C6452B0.html" title="14 Lab Automation System (LAS)"><div><span class="ph num-prefix">14 </span>Lab Automation System (LAS)</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2E5E498C-F631-4822-B74E-C19B2713E877.html" title="14.2 Installing / Removing / Replacing"><div><span class="ph num-prefix">14.2 </span>Installing / Removing / Replacing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-AF999597-8ED7-441E-B384-6A94214C28D7.html" lang="en-US" title="14.2.2 Enabling DxI Dynamic LAS Interface"><div><span class="ph num-prefix">14.2.2 </span>Enabling DxI Dynamic LAS Interface</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7" role="article"> 
+  <h1 class="title topictitle1" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Enabling DxI Dynamic LAS Interface</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to enable the DxI dynamic LAS interface feature with the power processor lab automation system. 
+	 <strong class="ph b" id="GUID-A55BC3CB-CD54-4361-BA77-578C0AF59E9E">NOTE:</strong> Because the network might include a firewall or might be managed by the customer&#39;s IT department, to configure the IP address for the DxI instrument, see the DxA Service Manual for more information. 
+  </p> 
+	 <div class="section prereq p" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__PREREQ_D41C3CF84B3C45BBBCC282615DE0559C"> 
+		<div class="p"> Perform this procedure only after confirming these prerequisites: 
+		<ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_BF15B9ACA52D4CD7BB4ED05161756CC0"> 
+		  <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_676998BE193A4A818504605F4B4B2DBC">DxI software V5.1 or higher has been installed. 
+		  </li> 
+		  <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_41FC26BA065F47B49E953DE1C4792C8E">The DxI console has a network port available for LAS or console pre-configured with multiple network ports. 
+		  </li> 
+		  <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_DB781C2B2E564030AD4DCAEEA582D7B9">PrepLink V3.5 software or higher has been installed and configured. 
+		  </li> 
+		  <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_DC053E871F37400BA868672095690099">The lab automation group has prepared the LAS to run with the DxI Dynamic Interface. 
+		  </li> 
+		</ul> 
+		</div> 
+	 </div> 
+	 <section class="section context" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p"> The procedure for enabling the dynamic LAS is different for DxI instruments running different versions of Windows. Use the procedure for the version of Windows running on your DxI instrument. 
+		</p> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7A778C38-9594-49AC-94FA-9E9A1683CEAD"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e20">Pause the LAS sample tube loading. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e25"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e27">On the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e29">PrepLink Console</span>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e32"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e33">Setup</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e35">Instrument Loading</span></span> 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e38"></span>. 
+				</span> 
+				<div class="itemgroup info">
+				  <figure class="fig fignone" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e43"><br /><img class="image" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e44" src="GUID-F09A9656-9F9E-483B-A3A6-20F15BF67C5A-default.gif" /><br />
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e49"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e51">Select the correct 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e53">CONN-X Loading Paused</span> option (X = 1,2,3, or 4). 
+				</span> 
+				<div class="itemgroup info"> The DxI instrument connection units are labeled 
+				  <var class="keyword varname" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e59">CONN-1</var> through 
+				  <var class="keyword varname" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e62">CONN-4</var>, according to how many DxI instruments are connected to the LAS. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e67"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d23e69">Before proceeding, verify that the selected DxI instrument has completed processing all samples. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__STEP_13AD99793F6E46D1A069A356520B8E40"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A6411D87-F6F9-4E16-AD33-84F59ADC7A53">For DxI instruments running Windows XP with Software 5.2 and below, use this procedure to enable dynamic LAS. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEPS_F212162B084A4490B85202AADEEC84C6" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_81C9F5EFB4F24907BB63B9BC7D54563C"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C2F5050D-1BBD-414D-9D0C-4E045253E8DF">At the DxI console, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-26691536-D4C5-46CA-BF5D-2AFE04DA0436"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D3B6F223-C4CA-43F1-A227-68F518E9DF65">Configure</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C8638352-E12A-479D-9EF8-7A5C5571378E">LIS/LAS</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9A0C5B6F-A045-4761-B1FB-EE746C059DE8">LAS</span></span>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1453617C-8092-4BB7-85AB-374F4FEDD639">Disabled</span> and 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-128C4FDD-B424-4C11-82C5-8478ED0D722B">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_12B9729C8F0146D584F6F2FAEBCF9D6D"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7BCAE720-1AB7-4DD5-9554-5D5D9335445E">Press 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3182DDAC-0A47-4552-A26C-D4B6B5C5108F">[Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F8E29A90-507E-4496-A500-BF01185F720E">Access2Support</kbd> when prompted. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_C9C913DA8C284E109B40E511E2D39E7C"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3ADC2BBB-60AB-409B-A6F1-E0632EDE8F10">Select<span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9C6058DB-5138-4AED-95A5-A1CE54E7B101"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-04FC831E-B67C-4BE8-9DF3-2BE16869B895">Start</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-307ABF6D-CC7F-417D-9358-8796F20040F4">Settings 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-EDE6F362-F0AA-43FB-AA75-99EE67944666">Control Panel</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1A7C5EC9-A292-4CC9-9ECD-3329392D0BE6">Network Connections</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_2C40EC4BD24E4884A6A991590F9A10DF"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F596B8C4-D3AA-4E26-80D2-E6103BA05D62">Select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D9E436B3-AA3B-4F1F-93AB-01F9D0A17E3A"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6AC2D235-FCE4-4AF2-A1CC-1412AF9C0412">Advanced</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-387635F9-454F-4161-A943-97007BAC1083">Network Identification</span></span>. Under 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-28F14FF3-B4EA-4F86-B601-B52984B06A14">Computer Name</span>, select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1F9C883B-AA00-4DF5-9F06-445BDC28A145">Change</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_49DFE1D7FC7649B39D9115EE63F0F42E"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F7F0B426-02CB-4AC8-AE4E-D632B0E48A9B">Enter the DxI instrument serial number followed by PC (example: 600010PC), select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FEDAD08A-EC4B-411C-B500-8981C8B34A4E"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4002B1B0-30D2-43DA-B971-9C51AA25A07E">OK</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4BEF4A79-F170-4C94-9B11-D6CC017A1EE9">OK</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-8C895898-2874-403B-8BCE-B1B982C9A6E4">OK</span></span>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A818DADE-9E00-4A68-B24C-2A9F99977437">No</span> to the 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D5BF4B59-E6E2-47FD-8737-1E840470DE27">Restart</span> option. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_0A7D902FEA744FC5806496C1334FF2C6"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F1ACF074-B4AE-4253-B6EF-BB960DDFBF96">Select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F138FE87-654C-4D28-B5F2-02F968A6F8D7">Local Area Connection 3</span>, choose 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1D7656F5-9C39-448D-96C3-4BC3A29E963F">Internet Protocol (TCP/IP)</span>, and select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3F6D0057-D0CC-45F4-975F-B37328F27165"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-42DC4227-CEA3-4DF9-83EF-CE475CC85445">Protocols</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-67737CC2-5C9A-4388-86A7-DDC736857045">Properties</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_6FA19041FC1F4E65AA640B5230556A7F"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E583881D-B570-4A20-87A5-FDD5ED46F5CF">Select the 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FF8533A1-161F-4E09-A356-509B7CE9C839">Use the following IP address</span> option, change the IP address to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-2F5B6824-D5BB-4499-80AC-A46DDC7E276A">134.217.96.181</kbd>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1A2554AE-8DE5-4AD3-8C61-FCA55FFAB098"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B863C298-2A5C-4A4B-95D8-35286FFA2AEA">Apply</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-18DF19C1-19D5-4327-B1A6-8D52C78B0947">OK 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B2204B87-E761-4F81-B0A1-C7DDFCA08A8A">Close</span></span>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-2326F68C-C2AC-4274-BEE4-0A68F1F2254D">No</span> at the Restart option. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p">If more than one DxI instrument will be connected to the LAS, use these IP addresses: 
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_8744424E0D624911820C9A96D43C6406"> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_84D5B9AB994A4B54821AF3E8E5DD90E8">DxI 1 IP 134.217.96.181 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_C4784EE59FBF477AB1129EE661D35C17">DxI 2 IP 134.217.96.182 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_47C716E244EF4D97ACDAB57641085854">DxI 3 IP 134.217.96.183 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_4E87DF1F3CC24E2C93AE9C32F5D9BA3F">DxI 4 IP 134.217.96.184 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5F41048E-76D4-429D-9C4A-B2192E696063"><span class="note__title">Note:</span> The subnet mask is 255.255.255.0. Change as needed. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_1904B012F8AB40548BAEF2289E09F5AF"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C4D9E51B-F428-46FF-A2C6-D669430C886A">Select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4E3AD25B-66B6-498A-855C-76325C75BB0A"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-EC8BB0A9-EC9E-4670-AC83-3517A938100E">Start</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-ABB56EAA-51B9-447E-804F-9AC721A3C0AF">Run</span></span>, and then type 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B8D09729-8E90-4CD9-A157-594ACA1F8471">regedit</kbd> and press 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-25239128-99C5-4BC6-845D-358A3CE30ED1"> [Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_7C4C2D24937645109DE59B4A280A80DE"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-011D3366-8282-4CCB-9D58-210F47EE8E79">In the Registry Editor, go to the Workgroup folder: 
+				</span> 
+				<div class="itemgroup info"><span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E7CE2AAD-6068-4308-A40B-EEBE2C5870F9"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-76548286-8282-438A-A0A2-1987F0259DDF">My Computer 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D8A030AD-6254-42C4-AB23-71261341E67C">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4F4EB52E-76E9-4BE8-95B0-F10E22D2E920">SOFTWARE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9F3FBAA3-0ADC-47D8-B128-C572A1D5BEAF">Beckman 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E9E8CB00-C311-4836-BD61-A5DCC1B8A2AB">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-677FB389-7F4F-41F8-8F4C-42891C885770">Workgroup</span></span>
+				  <p class="p">
+				  </p>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_29607C5B093F4313926753E9C8130663"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-649D7D81-DD86-4B66-B207-FD0B13D6C8D3">In the right pane, highlight the 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-27CA6648-EEAB-45A5-BF6F-CCDF27EF878E">PWPEnabled</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-41FD3689-C7E3-43DC-A782-FC03CF55A759"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A238A93A-A716-4EC5-8545-BE2A54F9BE57">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9DF03970-19FC-4784-818C-8F3B4F19C21E">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3F77B21A-FA25-42B4-98AC-0B58E13239E3">1</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-801C8B0F-49CD-404C-BB86-0AB4587A574F">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_1799BE0AADA84468B309817C21913F72"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-280A444F-9788-4142-ABFB-9E1EB7EE1A8C">Highlight the<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7BDA7B7C-EE22-4853-842D-EDF79E3EE710"> PWPServerIp</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FA754555-5F00-47C9-9CE7-201AE4B692D2"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B2335375-6AAE-4113-9F99-A64E1B4734B9">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0263E555-9F9E-4D43-AA85-B0A99CB930CA">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C7A180B9-541C-4179-8FE8-ABE36B5DE7C5">134.217.96.181</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0C789A89-38C5-4807-A8AA-458051597EDA">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p">If more than one DxI instrument will be connected to the LAS, use these IP addresses: 
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_567571D993E74C7A9DA171168E21A5C3"> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_0400695FCC1B4FE78062DCBE185D9BBB">DxI 1 IP 134.217.96.181 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_2632060E3C9B40068DD54811048C122B">DxI 2 IP 134.217.96.182 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_4464A4905E744E3D977820818FD57BF4">DxI 3 IP 134.217.96.183 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_15F6FF67084844149B59CDBFCB52DCB1">DxI 4 IP 134.217.96.184 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_7B50E819B1E2486686076E5D33689303"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A31154D1-F83F-4563-8BBE-18EDDF1DE95E">Highlight the 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-54439CA9-C83E-4BD6-8094-4387868A5310">PWPTcpIpPort</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E295D3EF-FFFD-41E5-AC1F-36DA312D375D"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9303761F-D276-4BFC-A220-8B57C81A1CA0">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5DE2A157-A03D-4178-A952-3BE85E57E801">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-82C58A70-DFB2-4BC4-84C6-F875EBE8F3C6">beca</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9FA2BFFF-E6C0-4666-80B9-23D1B22F3844">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_D08B7F3E7683490DBCB51449FEB11066"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-507A3390-37AE-48F2-8EA5-82F11C976600">Exit the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E7595611-F226-4EA6-897A-170045617298">Registry Editor</span> and 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-2E63331E-D498-4811-AACE-674A0698B934">Control Panel</span> windows. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_B4DCBBCD6B1944E7A27F0555AFAE0573"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-ABFCEB7F-608D-43BF-AD07-A541F81886AB">Select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7340383A-593B-4B6B-9450-F938E29790D9"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-2613EF17-8ED7-4BC1-A598-316A2ED3DC87">Start</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B262ABFF-BF83-4F95-B949-0F6B99A19453"> Shut Down 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-99DF777A-1A44-4484-BF45-7AB1B5D88FAD">Restart the computer</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-92409DF1-1135-4DD3-A411-27632D8D7607">Yes</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-164665C4-D1C8-4A1A-9851-68E60E07BB79"><span class="note__title">Note:</span>  Reboot the PC for the changes to take effect. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__STEP_089565B4FF47493C980264B0A9F65F53"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5BB2F447-7371-405B-AF71-F1566EF908C0">For DxI instruments running Windows 8 or 10 with Software 5.3.1 and above, use this procedure to enable dynamic LAS. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEPS_0ECDDD3A1950406E9140D9F9C9768D41" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_4C488B25E4544164A47D23CE1002A1C5"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-56FD8DA1-0F36-413B-B97D-09DA942E6EE3">At the DxI console, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-04239B42-9FA5-4046-919B-39E2434E5363"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-DEE12E20-69E6-4EDF-A854-133A19AF66CB">Configure</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-728A11A6-D481-41B4-AD8B-9A4E997B9389">LIS/LAS</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9E62E9D5-74A6-41FD-8E81-04276F3B9C87">LAS</span></span>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F844FFC3-DE58-4F44-9F2F-EEAB0FC3224E">Disabled</span> and 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E23D5A84-10EC-470F-A72B-DA70EDF5BF75">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_D5ED7A4640F541CB9FEDEF4EF8B3F5B8"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6282919B-B758-4D8A-A9A0-B07C5A4431EA">Press 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-41E7E104-645F-405E-8AD8-70250679DD15">[Alt] + [F4]</span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1C4576D3-818C-454D-88E4-7EECB1AD217C">Access2Support</kbd> when prompted. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_432466A41D494C9DA86160DA89582B19"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-38B98822-C2DB-4428-9768-E1E007DB0B8B">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1D91F46A-580B-4EC8-8071-B996A7BD94D0">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B676B660-D067-4127-9893-0B30AB8E495F">Control Panel</strong>icon or type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1F1A6759-B4D6-4717-9635-EFC01EFD37F5">control panel</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_CAED40C68B3643778C193379C86994B1"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1B246F84-A209-43A4-B49D-5C844DFBF2DC">Double click on 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6F31CF85-8A14-44D2-8F51-F4E3764DC3EB">System</strong>, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-20E6F3D6-AB20-4B60-8E69-9891C6B6E672">Change settings</strong> on the middle left side of the System pop-up box. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_6880ECBE28844718A13BA755249E98B5"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-008FD410-824C-49B6-9C62-F0164948DFB7">On the System Properties pop-up box, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-68212BE3-761F-4EC7-8824-957C2B694E36">Computer name</strong> tab and click on the 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-AF602B65-AE24-425B-A54B-3BC72B425DF9">Change</strong> option. Enter the DxI instrument serial number followed by PC (example: 600010PC). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_B0430C103E8D4EC19DEC8218C37C4748"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D8425D35-BFCB-4BCA-A8FC-BBDBCBEC4079">Click 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-442E7302-72A3-4DE3-90CD-2D77F7175869">OK</strong> to save the change, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3093B020-A5DE-48CE-BFBF-127119D9E5E9">Yes</strong> to &quot;Do you want to use this computer name?&quot; prompted message, and select<strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CA79A872-3B39-4ACF-A655-1A8BC198E886">OK</strong> to &quot;You must restart your computer to apply these changes&quot; prompted message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_52E14808EC124919BA899C7424DF3D4E"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-095BA30A-A205-49DB-882A-5FE0625DB536">On the System Properties pop-up box, change the 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-76364847-8D47-4C60-B13A-3CC874416ED1">Computer description</strong> to match the computer name, and select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1EE1D0BE-DD70-471C-82EF-318BDC9F58B3">Apply &gt; Restart Now</strong> to restart the PC. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_4BAA0C41ED1345499D061D1823EE68CD"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A8766607-DC8C-4695-B2C7-04F89CE02AE8">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-85443427-ECF8-4936-97FF-0A2B59E3E783">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F1D444F1-A5C8-430D-88EB-BD9A3FEB5B5C">network connections</strong>, click on 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-AB14AD7B-9440-48A8-893F-C1E4A5F2CAE5">Settings</strong>, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D2AD3256-9D50-443F-9BBE-AAA70D816777">View Network Connections</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_F3A8598D39EB4D7AB12577336857B7D0"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6F552F39-7B1E-43AA-A6D8-B68273967906">Right click on 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-8366964A-8593-40EB-9235-E2D60BB23650">Local Area Connection 3</strong>, choose 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FF90800A-FC57-4D76-9FD3-4605B195BC2D">Properties</strong>, select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0CFC7F35-32DA-48F1-B243-0518A1EDA02F">Internet Protocol Version 4 (TCP/IPv4) 
+				  </strong>and choose 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-AF6F3F6B-F9B3-4594-896B-A31BD9DBA2D9">Properties</strong>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_D490E01EC10545689D7DF9A7258BD06A"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-906F8CDD-7D64-4D21-B0EE-FE4A5A74D534">Select the 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CB09675A-BAEE-4E5A-905A-F6CD6ED57B7F">Use the following IP address</span> option, change the IP address to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A18DD3D9-0A8D-4E2E-97F8-03012AC87A87">134.217.96.181</kbd>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-589CE32F-7D7A-4D31-A0E8-25EFAFA430DD"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3D0ECA52-D664-4E24-85B6-625E35BDBC1E">OK 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FE015A01-1EDF-4861-976D-C023842FDC99">Close</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p">If more than one DxI instrument will be connected to the LAS, use these IP addresses: 
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_19ED97E9708D454DAAA8A1908A1ABF3F"> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_8F464E0976894DF489F81F2F87B832B3">DxI 1 IP 134.217.96.181 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_CBB8AEBCC4B3407C83419404A5FF7D57">DxI 2 IP 134.217.96.182 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_787893B80C364DBD8E65709AD27E3FC8">DxI 3 IP 134.217.96.183 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_570807CF572B4FC38A316A47FC9FDDBF">DxI 4 IP 134.217.96.184 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-85F0816F-D100-454C-B63C-B32AA8B54F72"><span class="note__title">Note:</span> The subnet mask is 255.255.255.0. Change as needed. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_6FFBA493FDD74E88A5314876FC435FC8"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C0BE0842-B821-4F9C-9C41-D2FCCCF55B96">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-AA3D7E43-C6FA-4438-9064-295347A27DE5">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-368FF624-CD95-4E07-BC1D-352AF4CE019E">regedit</strong>and open the regedit.exe program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_FEE90A7676D24CD583B99021048C1CC9"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4EF25C73-5623-463E-BE83-C81510C72D2B">In Registry Editor, go to the Workgroup folder:
+				</span> 
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_1DFC483B094D4313BC708478C09DF892">
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_DC82EB4F126047598A818E2C8F96A57E">For Windows 10 go to 
+						<span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-15732642-4C09-4167-A096-6F2BAE7A7F89"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-648F5057-8095-4F4E-8E1E-0ABD1FDEE865">My Computer 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1562596D-A0C2-45E9-8C8A-830D5BBF21F3">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-DFA6DBAE-2B4E-427F-9476-745897116716">SOFTWARE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-58B479B7-1FDD-406B-8A01-656B13ECB1F0">WOW6432Node</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7DA33DE7-C80E-4D30-9D13-9944805CDA1D">Beckman 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FBB5F4B5-7E43-4C9C-95DE-07B059BE50A5">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1E36516D-C9DD-4EB2-BEEE-1BD737BFD690">Workgroup</span></span>
+					 </li>
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_9B0A84DEC9C34BF08D9F134040F1DB64">For Windows 8 go to 
+						<span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__MENUCASCADE_1B78A7C3EC1348319103099A344C0468"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_1EB7C247A37B488C9DF8EC13B3799781">My Computer 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_5578F848842C42F48FDC37F27D1729E1">HKEY_LOCAL_MACHINE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_AE8B66EB4E76482191AE9B0014FD6C72">SOFTWARE</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_82D18F662CF64F88AA02D5B96129CD75">Beckman 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_55346319A4E54CD2AB6053AB99A715B8">NexStep</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UICONTROL_AD217DBBD1094A5EA9B4B6C258424C65">Workgroup</span></span>
+					 </li>
+				  </ul>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_643B93262CA24CDAB68BDFAF43080D3B"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-703C2394-0C97-4245-97F7-4C59A5AE6920">In the right pane, highlight the 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-8BB520D8-2B51-4331-B990-AEA3BDA81F53">PWPEnabled</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0AB95BE1-0154-457C-9C1A-4F642F0084C7"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-BB7B2407-6EFE-49F2-9B87-3E4467CC7EE4">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3B44399C-F8C6-44CD-A838-2FCC60418DFF">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-BAE32044-729B-4217-ACA3-249C6154D407">1</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-A757624D-801C-4A97-B9D7-8B53E3039FE2">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_A3A466D125F942DD8083BA4B95AD3BE5"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9CCE3097-451A-44F8-A392-9C7CD4FCA49C">Highlight the<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-218DB78B-CABC-44D8-8A9A-426DDD83B0D6"> PWPServerIp</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-05BA8340-EEDF-49C8-AC04-CF6E4368FB04"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F409E2B5-1E86-4DA6-94E4-4641ADA01B5C">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CEA0AFA9-28A5-4583-A718-C82D5427EC4F">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CCE76999-DB3B-4F36-BEB8-197A4EA708BD">134.217.96.181</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E323A748-95DE-425F-9E77-74FF498A3D76">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="p">If more than one DxI instrument will be connected to the LAS, use these IP addresses: 
+				  <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_D24EEEEDE636449C8B3D05FA69AFD536"> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_0EC79F05C86040188EAD097943FE2311">DxI 1 IP 134.217.96.181 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_27FBA2A62FE647658818DAA4FB63B535">DxI 2 IP 134.217.96.182 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_2C0EE68A0B594B88BA41452C12491F07">DxI 3 IP 134.217.96.183 
+					 </li> 
+					 <li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_90B4145939354155970020ADF02D8524">DxI 4 IP 134.217.96.184 
+					 </li> 
+				  </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_716C8D5F3E3F4BA0B680DE0BA5A40A9D"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-70667657-F2BF-4171-A965-2A50450E449B">Highlight the 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9CE2663E-9D32-4F6C-9C4A-054D25B477A8">PWPTcpIpPort</span> line, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-8C39D529-9144-4087-A794-B9E2544534E9"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4DBBC035-00A6-44B8-98E0-D75B648B0B36">Edit</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-43722C1B-1251-460B-9547-6C73078B1C81">Modify</span></span>, change the Value data: to 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-85552EA8-D45C-4B5C-8757-C9BD01D60D5C">beca</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-31CBD185-EAA7-475B-BEBF-558E74276CC6">OK</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_F59A69C16CE540899064E2042010986A"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-604A9A50-7C87-4B81-920F-BC6C0B27634F">Exit the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-FC36972E-151B-4A85-BA26-3ED31097BF12">Registry Editor</span> and 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E1618004-3A8A-4631-9569-8209751418B8">Network Connections</span> windows. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_C38A7C7F7D3349F185C4DC07948057C8"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-E698799A-E112-455E-877E-8C0364545D2A">Configure the Privacy &amp; Security firewall. See 
+				  <a class="xref" href="GUID-B387D4D9-CEE5-401B-AE31-D98BC438214E.html">Configuring the Privacy and Security Firewall for the DxI Dynamic LAS Interface</a> for more information. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_D6EDABB32BCB41A79B21E759454FEE4A"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3CA0B6A4-C8A0-486E-80BE-3AF6C3ED7A42">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-DCA01428-D09A-408E-B5BD-200F0F68DCE7">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-587C4B68-0362-4FC2-A0EF-09A2D687F25A">turn off</strong>, and select 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-0EAFA89E-F5E0-4D7C-A862-08EDCCAF2211">Settings &gt; Power &gt; Restart</strong>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3E44AB68-5AAB-486B-A9E4-D109E713F6E1"><span class="note__title">Note:</span>  Reboot the PC for the changes to take effect. 
+				  </div> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-3D86CD2C-2E27-4421-AE75-17EB69EFE733"><span class="note__title">Note:</span> When rebooting the Privacy &amp; Security compliant Windows 8 or Windows 10 PC, you must enter security password &quot;<strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d29e18">Access2Admin</strong>&quot; when prompted to launch Windows. 
+		<p class="p"> 
+		</p><img class="image" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d29e23" src="GUID-57B84EB9-A496-4109-A064-4A160B1C8257-default.png" /> 
+		<p class="p"> 
+		</p> 
+	 </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__STEP_4DEF4F1940354D8C8A12FEE50AD17E06"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5CE563F4-2C7D-4AE4-AE6C-718542A860DB">Verify the IP addresses on the DxI PC console and install network cables. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note caution note_caution" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-44F2ABFF-D1AD-4604-B905-A5D89A75649B"><span class="note__title">Caution:</span> Verify that the DxI instrument consoles have the correct IP addresses before connecting the cables. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"><strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-829731E2-8328-4979-9F50-715F35E2E1EE">For Windows XP System: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEPS_8E3E6FA682844C67ADA453C2CF01696A" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_E7047C89CA3B44C188F60E824CB2E6FF"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-55A4FD1D-5BB3-4EFE-8286-13F8AF366240">Connect a network cable between the DxI console PC port (local area connection 3) and a port on the LAS that can communicate with the PrepLink PC. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-38C31DF8-E660-4203-B564-E51C973F2EA2"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_8283B5A224974BA5ADC80C05768D1739"> 
+						<li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_1CBC20476BBE4776BB264352CB5490F9">Refer to the PC Console, Connector Identification document to determine the location of the local area connection 3 port on the DxI PC. 
+						</li> 
+						<li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_1BCEBA56D32D4C4B8D832C1A22389125">If there are no available ports on the LAS, then install an extra hub. Contact Automation Technical Support for advice on installing an extra hub. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_1B21FA5C02C0489898CBD58271F0D3D2"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-97641BD1-493E-475A-95A4-3081BE6E3DD0">Select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C39B8C74-3A6B-44FD-8879-9DEDA6E34F6C"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5F5F69D8-A39E-459B-9D76-BE82E5B8225A">Start</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9230D354-7000-48EF-A695-6B58D5CD627D">Run</span></span>, type 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-4FB7B499-1801-45B3-A5AF-6F17F20AB5D2">cmd</kbd>, and then press the<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-9D57DB6B-3421-4900-A92C-208D0C7DE7EF">[Enter]</span> key. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_027C3F53A2914430B4B01D404FA354AC"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-F75E5CE3-1059-4A00-9EF3-780D47472455">Type 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-47503BAC-D0C7-4C88-AEB2-69B718308D8E">ipconfig</kbd>, and then press<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-01B91B57-CCFB-4766-A318-C4086E658510"> [Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_744651A65EF343EF8A39D572975A24FE"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-16452E70-28C3-489B-B418-D824817C472D"> Verify the IP address for ethernet adaptor local area connection 3 is 134.217.96.18x, where x = 1, 2, 3, or 4 corresponding to the DxI. 
+				</span> 
+				<div class="itemgroup info">When multiple DxI instruments are connected, each console PC must have a unique IP address on this port. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_52657DF1724C4AC58786769AA9473BEF"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5F57D53C-97CD-49D4-876C-8CC6F344292F">Close the CMD window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"><strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-28037BC1-2E71-41C7-BE90-65A8AA59C0A3">For Windows 8 or 10 System:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEPS_556DCD3293964965BF3FD7D000937552" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_C5D2E58890FE41E2951E37350A9364D7"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-94FC0976-7072-4F19-A489-A4FCD207F6A4">Connect a network cable between the DxI console PC port (local area connection 3) and a port on the LAS that can communicate with the PrepLink PC. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-1E99BECC-02C1-4B22-8B7E-3C68346D7686"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__UL_260052D7A12243CFBE517D16DC6400A6"> 
+						<li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_9C97F8FCFE6A493DAF2AD647F073B4A8">Refer to the PC Console, Connector Identification document to determine the location of the local area connection 3 port on the DxI PC. 
+						</li> 
+						<li class="li" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__LI_2006D0FA24C144059575B996CC4E1F58">If there are no available ports on the LAS, then install an extra hub. Contact Automation Technical Support for advice on installing an extra hub. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_AD1D2D849C7B484BBA9CA1295FB60C3A"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-D782691E-EF4F-472A-A743-DA7EA047E4B2">Press 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-48E7F979-87DE-4EE2-9A70-40C215EA587A">Windows</strong> key, open the 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-C999F4EF-00D2-4A75-8A91-7F5BAE7AE40A">Command Prompt</strong> icon or type 
+				  <strong class="ph b" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-40EFF0FE-A080-4310-AD81-B985E11F4CF5">command prompt</strong> and open the program. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_06C3ED872E504E688D103C5F469690D8"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-7D1222EA-624E-477E-A60D-770FA94C8BB6">Type 
+				  <kbd class="ph userinput" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-67811ECD-3D53-41E9-A9CD-BD860A6CCA46">ipconfig</kbd>, and then press<span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-5F28D512-7AA0-40B2-9EB9-66F869576567"> [Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_C862D3BF3E7B4E32BCF98A97E7EC2AD1"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-DA05F830-BAA0-426D-AFAC-FE12FF98DF7C"> Verify the IP address for ethernet adaptor local area connection 3 is 134.217.96.18x, where x = 1, 2, 3, or 4 corresponding to the DxI. 
+				</span> 
+				<div class="itemgroup info">When multiple DxI instruments are connected, each console PC must have a unique IP address on this port. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__SUBSTEP_469A2CC1A3744C32AD39F4F73CA32179"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-138F40A1-4461-4C53-9A76-493C0C6AF58C">Close the CMD window. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-CF2FB5EC-355E-42DE-98FC-C3348865BBC8"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e20">Resume the DxI sample processing. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note warning note_warning" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-6A5B2891-2B27-4E77-855D-61F5CD96C066"><span class="note__title">Warning:</span> Performing the steps to resume LAS operation causes the DxI instrument to run LAS samples automatically. 
+		 
+	 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e29" type="a"> 
+			 <li class="li substep" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e31"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e33">If the serial communication cable to the connection unit was disconnected, reconnect it. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e37"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e39">On the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e41">DxI Console</span>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e44"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e45">Menu</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e47">Configure</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e49">LIS/LAS</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e51">LAS</span></span>, and then select 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e54">Online</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e59"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e61">Select 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d64e63">OK</span>. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-73462BC6-63A7-4D50-AD5A-584A66175592"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e20">Resume the LAS sample tube loading. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e25"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e27">On the 
+				  <span class="keyword wintitle" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e29">PrepLink Console</span>, select 
+				  <span class="ph menucascade" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e32"><span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e33">Setup</span> &gt; <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e35">Instrument Loading</span></span> 
+				  <span class="ph uicontrol" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e38"></span> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e42"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e44">Clear the 
+				  <span class="keyword option" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e46">CONN-X Loading Paused</span> check box. 
+				</span> 
+				<div class="itemgroup info"> The DxI instrument connection units are labeled 
+				  <var class="keyword varname" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e52">CONN-1</var> through 
+				  <var class="keyword varname" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e55">CONN-4</var>, according to the number of DxI instruments connected to the LAS. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e60"> 
+				<span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e62">Observe while the DxI instrument runs a minimum of ten samples from the LAS. Confirm that all tubes are processed correctly through the connection unit and that all samples are aspirated and run correctly by the DxI instrument. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__d27e67"><span class="note__title">Note:</span> If captive tubes were released from the connection unit, then errors will show in the event log, as expected for tubes that had processed beyond the query BCR before release. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__STEP_029B649FB5EE4F32A1A542DDE5720D8D"> 
+		  <span class="ph cmd" id="GUID-AF999597-8ED7-441E-B384-6A94214C28D7__GUID-B4DBDF64-7DCD-4360-8356-5C16A830BF28">Repeat steps as required (pause loading, enabling, verifying, connecting, or activating) to enable the dynamic LAS operations for all additional DxI systems. 
+		  </span> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-2E5E498C-F631-4822-B74E-C19B2713E877.html">Installing / Removing / Replacing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A38E0A8-5886-4340-B4C8-3B781C6452B0.html" title="14 Lab Automation System (LAS)"><div><span class="ph num-prefix">14 </span>Lab Automation System (LAS)</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-2E5E498C-F631-4822-B74E-C19B2713E877.html" title="14.2 Installing / Removing / Replacing"><div><span class="ph num-prefix">14.2 </span>Installing / Removing / Replacing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-AF999597-8ED7-441E-B384-6A94214C28D7.html" lang="en-US" title="14.2.2 Enabling DxI Dynamic LAS Interface"><div><span class="ph num-prefix">14.2.2 </span>Enabling DxI Dynamic LAS Interface</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="A list of the most commonly observed failure modes and resolution steps for system software versions 1.15." name="description" /><meta content="GUID-D0D85CB2-0A10-439E-9253-7B990933B9AC.html" name="DC.Relation" scheme="URI" /><meta content="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-D0D85CB2-0A10-439E-9253-7B990933B9AC.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="July 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BK" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="10/07/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="C65079" name="FBCPARTNUM" /><meta content="None" name="FBCMANUFACTUREDBY" /><meta content="Service" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="16/06/2026 18:37:18" name="FISHPUBREVIEWENDDATE" /><meta content="10/07/2026 16:28:15" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4" name="FMAPID" /><meta content="07/07/2026 18:25:47" name="MODIFIED-ON" /><meta content="16/06/2026 20:29:13" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-E0B2E065-B380-4B5E-AC7F-13F39D148EBC" name="FISHMASTERREF" /><meta content="DxI 9000 Service Manual-v37-GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4-20260616 20:29:13" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BK" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="37" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI 9000 Service Manual" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="yes" name="print" /><meta content="no" name="printAll" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>25.5.1.3 Software 1.15 Common Failure Troubleshooting</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-27092737-4C99-4907-8848-026827ECD1F5.html" rel="prev" /><link href="GUID-41B1E3A1-5194-4938-B107-672B274BB2E5.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1459" data-relpath="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI 9000 Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI 9000 Service Manual</span><span id="emailpub">Publication: DxI 9000 Service Manual</span><span id="emailpartnum">Part Number: C65079</span><span id="emailrev">Revision: BK</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-E482D24F-5D42-4945-AF48-E8E981B41CB2" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24" role="article"> 
+  <h1 class="title topictitle1" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-E482D24F-5D42-4945-AF48-E8E981B41CB2"><a id="GUID-E482D24F-5D42-4945-AF48-E8E981B41CB2"></a>Software 1.15 Common Failure Troubleshooting</h1> 
+  
+  <div class="body conbody"><p class="shortdesc">A list of the most commonly observed failure modes and resolution steps for system software versions 1.15. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Symptom/Error:</strong> Description fo the symptom, or, when applicable, the error/event message observed during the failure. 
+		</li> 
+		<li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details/Resolution:</strong> Details regarding what may have caused the failure mode and how to recover. 
+		</li> 
+	 </ul>
+	 <div class="note note note_note" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-15FD5685-225E-408E-A6ED-1F7D8A07B88A"><span class="note__title">Note:</span> Some failures may be the same or similar to common failures observed in prior SW versions.
+	 </div> 
+	 <table class="table" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3"><caption></caption><colgroup><col style="width:41.502347417840376%" /><col style="width:58.49765258215963%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1">Symptom/Error 
+				</th> 
+				<th class="entry" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2">Details/Resolution 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Passenger missing / Unsuccessful attempt to keep RV feeder chute full / RV starvation 
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">RV starvation occurs when the RV feeder is unable to output vessels at a rate the instrument is requesting them, typically caused by low level of RV&#39;s remaining in the feeder &quot;hopper&quot;. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_0AD3F9F73F1845F0AC15D8FF87B5ACDF"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_FFDC233DC6BC44D09526537031D82403">Ensure the RV feeder is not &quot;overfilled&quot;. Overfilling can actually lead to starvation. Best practice is to load only 1 bag of RV&#39;s at a time. 
+						<div class="note note note_note" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-B5E98F94-53F9-4290-B79F-48380E9E6B44"><span class="note__title">Note:</span> There is a red &quot;fill line&quot; inside the hopper, but better performance may be observed if the hopper is not filled all the way to this level. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_0A30913032E640A68A1A6626AD027A7F">Inspect RV supply counts and replenish if needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_DB20EEFB8B2C4A93BEB27701A82A2115">If issues persist with sufficient vessels in the feeder, check RV feeder components and alignments. Clean/replace/align as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_ED88077495E641FEA8006AE7BB8E1858">If errors are intermittent, perform vessel exerciser to observe vessel movement and attempt to observe the failure live. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">PnP Unexpected Vessel State 
+				</td>
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">These errors should be treated as missing RV errors. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_8AF4F9BE21B24B47A38C3621EA9B4B56"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_CDBD5F8D8794432EB4933A8A64389575">Review events to understand which PnP/location the errors occur at. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_33AD676BCCE9484F9C3174418897ACE3">Check PnP alignments. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_48A86E6937674E92B5805D08F35676CC">Inspect PnP collet/ejector for damage/debris and replace/clean as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_ADC3ED45157D43C1A168488644F58978">If errors are intermittent, perform vessel exerciser to observe vessel movement and attempt to observe the failure live. 
+					 </li> 
+				  </ol> 
+				</td>
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Tip Detect Failure 
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Aliquot or Precise Sample Pipettor failed to detect a tip after pickup. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_0DC72147CFA94ADFB997C777AE0C455C"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_94B4FD5A261C4F0A9CDE40561A47C12F">Inspect/clean the mandrel and confirm tips are present in the tip tray. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_54DCB8887F054D8B8BA5A96F78AE185E">Check pipettor alignment to tip stocker. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_B4189B3945C84ED09A34E89C2CADC942">If errors are persistent consider re-calibrating the sample pipettor camera. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Destination Slot Occupied
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Destination slot occupied error when PnP is trying to place a vessel. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_08096ED2015E467AA9A8C898C5E86415"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_C9889C9EE7424BB98E079885E130DA37">Open covers and inspect the affected PnP, remove vessel from PnP and any fallen vessels/debris in the area.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_ED8D3620A52041C0B69F7BE46818BD6D">Initialize system (ideally with &quot;consolidation&quot; selected).
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_C56D92DDF5A040C0AC4F21C7EEE8765C">Restart system if issues persist.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_EAD26B6909F74E45BEA1CF5D03F233FD">Check alignments/PnP hall effect sensor operation.
+					 </li> 
+				  </ol>
+				</td> 
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Lumi Dark Count Out of Range
+				</td>
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Luminometer dark count reading was above acceptable limits (&gt;300 RLU) prior to sample read. May be associated with LDCH flags. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_3AD62D1F209C47BD98CB0FB48A44A3AF"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_78E99CAA992E4707BF6960EF88703B59">Inspect Lumi area and analytic PnP for signs of splashing, clean as needed.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_C58951DC6D92436C8652F10BF8DA9613">Perform dark count reads and if values still exceed acceptable limit then consider cleaning luminometer.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_15448D947B294DD5B35FBA7A026250FF">Consider luminometer calibration or replacement.
+					 </li> 
+				  </ol> 
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Precision Sample Pipettor Z-Slippage 
+				</td>
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Precision sample pipettor detected slippage during Z movement. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_916A52031A17448FAAF4D15E6CEF6467"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_44FAAA97175E4170A0AA962CD234DF97">Inspect for debris/obstruction and clear as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_D79FBD6646C049A7BE1B542D8C26C9B1">Reboot the system and repeat. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_1D2EBCBFC77543E6855F28C2D1091BBF">Disable motors and manually move the pipettor to check for binding/snagging. 
+					 </li> 
+				  </ol> 
+				</td>
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Reagent Pipettor Z-Slippage 
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Reagent pipettor detected slippage during Z movement. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_A5A9850D56C64945900D1F8AEC593044"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_8E22DAB37FC6474C8D69941D8D9352DC">Inspect for debris/obstruction and clear as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_EA12188D1E164F75B8F4815DEC813D41">Reboot the system and repeat. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_EADED1E1771A4D409DD95F8C514A4916">Disable motors and manually move the pipettor to check for binding/snagging. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Reagent Storage (RSM) X Slippage 
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Reagent Pack Gripper detected slippage when moving in the X-axis. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_463D387976A34A35993B909BCAF14916"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_99D4B526EBFD489FBFC550AAF55C1668">Open and inspect for/remove any debris or fallen packs. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_6CE50DD785DD4B469D442FE62A7985FF">Manually move gripper to home position. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_392D9B51193446CFAE777E6F8DB94AC1">Initialize with remap selected. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row">
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Sample PnP Z Slippage
+				</td>
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Sample Pick and Place (PnP) detected slippage during Z movement. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_9A639C7BE79F4C33A1CC76A30405E5C4"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_3EA6D07EABB04959A5416808ACF43277">Inspect for debris/obstruction and clear as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_696267489BCE403C869757459CF2A386">Reboot the system and repeat. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_7108B238C9554498BB3CB9C10B0435BD">Disable motors and manually move the pipettor to check for binding/snagging. 
+					 </li> 
+				  </ol>
+				</td>
+			 </tr>
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Substrate Probe Slippage
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Substrate Probe detected slippage during dispense arm movement.
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_ADE7AE13AB594A1DA2AA1CE3129199CD"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_11CE54D271C942D2964644A07D08B4AF">Inspect for debris/obstruction and clear as needed. 
+					 </li>
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_DEA7D70F405646FD8BCDB9B0FEAD3454">Ensure wash wheel cover is fully seated.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_4FCCD28865D145ADA75528891C9826CF">Reboot the system and repeat. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_5C050643403441B09334144A0C7D2CA7">Disable motors and manually move the pipettor to check for binding/snagging. 
+					 </li>
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_8783CC1406B444209DF7EB1662445DB6">Perform wash arm alignments.
+					 </li> 
+				  </ol>
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-D0D85CB2-0A10-439E-9253-7B990933B9AC.html">Common Failures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-D0D85CB2-0A10-439E-9253-7B990933B9AC.html" title="25.5.1 Common Failures"><div><span class="ph num-prefix">25.5.1 </span>Common Failures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24.html" lang="en-US" title="25.5.1.3 Software 1.15 Common Failure Troubleshooting"><div><span class="ph num-prefix">25.5.1.3 </span>Software 1.15 Common Failure Troubleshooting</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">C65079BK</div></li><li><div id="date">July 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-E482D24F-5D42-4945-AF48-E8E981B41CB2" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24" role="article"> 
+  <h1 class="title topictitle1" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-E482D24F-5D42-4945-AF48-E8E981B41CB2"><a id="GUID-E482D24F-5D42-4945-AF48-E8E981B41CB2"></a>Software 1.15 Common Failure Troubleshooting</h1> 
+  
+  <div class="body conbody"><p class="shortdesc">A list of the most commonly observed failure modes and resolution steps for system software versions 1.15. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Symptom/Error:</strong> Description fo the symptom, or, when applicable, the error/event message observed during the failure. 
+		</li> 
+		<li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details/Resolution:</strong> Details regarding what may have caused the failure mode and how to recover. 
+		</li> 
+	 </ul>
+	 <div class="note note note_note" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-15FD5685-225E-408E-A6ED-1F7D8A07B88A"><span class="note__title">Note:</span> Some failures may be the same or similar to common failures observed in prior SW versions.
+	 </div> 
+	 <table class="table" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3"><caption></caption><colgroup><col style="width:41.502347417840376%" /><col style="width:58.49765258215963%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1">Symptom/Error 
+				</th> 
+				<th class="entry" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2">Details/Resolution 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Passenger missing / Unsuccessful attempt to keep RV feeder chute full / RV starvation 
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">RV starvation occurs when the RV feeder is unable to output vessels at a rate the instrument is requesting them, typically caused by low level of RV&#39;s remaining in the feeder &quot;hopper&quot;. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_0AD3F9F73F1845F0AC15D8FF87B5ACDF"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_FFDC233DC6BC44D09526537031D82403">Ensure the RV feeder is not &quot;overfilled&quot;. Overfilling can actually lead to starvation. Best practice is to load only 1 bag of RV&#39;s at a time. 
+						<div class="note note note_note" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__GUID-B5E98F94-53F9-4290-B79F-48380E9E6B44"><span class="note__title">Note:</span> There is a red &quot;fill line&quot; inside the hopper, but better performance may be observed if the hopper is not filled all the way to this level. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_0A30913032E640A68A1A6626AD027A7F">Inspect RV supply counts and replenish if needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_DB20EEFB8B2C4A93BEB27701A82A2115">If issues persist with sufficient vessels in the feeder, check RV feeder components and alignments. Clean/replace/align as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_ED88077495E641FEA8006AE7BB8E1858">If errors are intermittent, perform vessel exerciser to observe vessel movement and attempt to observe the failure live. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">PnP Unexpected Vessel State 
+				</td>
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">These errors should be treated as missing RV errors. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_8AF4F9BE21B24B47A38C3621EA9B4B56"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_CDBD5F8D8794432EB4933A8A64389575">Review events to understand which PnP/location the errors occur at. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_33AD676BCCE9484F9C3174418897ACE3">Check PnP alignments. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_48A86E6937674E92B5805D08F35676CC">Inspect PnP collet/ejector for damage/debris and replace/clean as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_ADC3ED45157D43C1A168488644F58978">If errors are intermittent, perform vessel exerciser to observe vessel movement and attempt to observe the failure live. 
+					 </li> 
+				  </ol> 
+				</td>
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Tip Detect Failure 
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Aliquot or Precise Sample Pipettor failed to detect a tip after pickup. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_0DC72147CFA94ADFB997C777AE0C455C"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_94B4FD5A261C4F0A9CDE40561A47C12F">Inspect/clean the mandrel and confirm tips are present in the tip tray. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_54DCB8887F054D8B8BA5A96F78AE185E">Check pipettor alignment to tip stocker. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_B4189B3945C84ED09A34E89C2CADC942">If errors are persistent consider re-calibrating the sample pipettor camera. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Destination Slot Occupied
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Destination slot occupied error when PnP is trying to place a vessel. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_08096ED2015E467AA9A8C898C5E86415"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_C9889C9EE7424BB98E079885E130DA37">Open covers and inspect the affected PnP, remove vessel from PnP and any fallen vessels/debris in the area.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_ED8D3620A52041C0B69F7BE46818BD6D">Initialize system (ideally with &quot;consolidation&quot; selected).
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_C56D92DDF5A040C0AC4F21C7EEE8765C">Restart system if issues persist.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_EAD26B6909F74E45BEA1CF5D03F233FD">Check alignments/PnP hall effect sensor operation.
+					 </li> 
+				  </ol>
+				</td> 
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Lumi Dark Count Out of Range
+				</td>
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Luminometer dark count reading was above acceptable limits (&gt;300 RLU) prior to sample read. May be associated with LDCH flags. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_3AD62D1F209C47BD98CB0FB48A44A3AF"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_78E99CAA992E4707BF6960EF88703B59">Inspect Lumi area and analytic PnP for signs of splashing, clean as needed.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_C58951DC6D92436C8652F10BF8DA9613">Perform dark count reads and if values still exceed acceptable limit then consider cleaning luminometer.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_15448D947B294DD5B35FBA7A026250FF">Consider luminometer calibration or replacement.
+					 </li> 
+				  </ol> 
+				</td>
+			 </tr>
+			 <tr class="row">
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Precision Sample Pipettor Z-Slippage 
+				</td>
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Precision sample pipettor detected slippage during Z movement. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_916A52031A17448FAAF4D15E6CEF6467"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_44FAAA97175E4170A0AA962CD234DF97">Inspect for debris/obstruction and clear as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_D79FBD6646C049A7BE1B542D8C26C9B1">Reboot the system and repeat. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_1D2EBCBFC77543E6855F28C2D1091BBF">Disable motors and manually move the pipettor to check for binding/snagging. 
+					 </li> 
+				  </ol> 
+				</td>
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Reagent Pipettor Z-Slippage 
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Reagent pipettor detected slippage during Z movement. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_A5A9850D56C64945900D1F8AEC593044"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_8E22DAB37FC6474C8D69941D8D9352DC">Inspect for debris/obstruction and clear as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_EA12188D1E164F75B8F4815DEC813D41">Reboot the system and repeat. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_EADED1E1771A4D409DD95F8C514A4916">Disable motors and manually move the pipettor to check for binding/snagging. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Reagent Storage (RSM) X Slippage 
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Reagent Pack Gripper detected slippage when moving in the X-axis. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_463D387976A34A35993B909BCAF14916"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_99D4B526EBFD489FBFC550AAF55C1668">Open and inspect for/remove any debris or fallen packs. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_6CE50DD785DD4B469D442FE62A7985FF">Manually move gripper to home position. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_392D9B51193446CFAE777E6F8DB94AC1">Initialize with remap selected. 
+					 </li> 
+				  </ol> 
+				</td> 
+			 </tr> 
+			 <tr class="row">
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Sample PnP Z Slippage
+				</td>
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Sample Pick and Place (PnP) detected slippage during Z movement. 
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_9A639C7BE79F4C33A1CC76A30405E5C4"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_3EA6D07EABB04959A5416808ACF43277">Inspect for debris/obstruction and clear as needed. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_696267489BCE403C869757459CF2A386">Reboot the system and repeat. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_7108B238C9554498BB3CB9C10B0435BD">Disable motors and manually move the pipettor to check for binding/snagging. 
+					 </li> 
+				  </ol>
+				</td>
+			 </tr>
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 ">Substrate Probe Slippage
+				</td> 
+				<td class="entry" headers="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 ">Substrate Probe detected slippage during dispense arm movement.
+				  <ol class="ol" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__OL_ADE7AE13AB594A1DA2AA1CE3129199CD"> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_11CE54D271C942D2964644A07D08B4AF">Inspect for debris/obstruction and clear as needed. 
+					 </li>
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_DEA7D70F405646FD8BCDB9B0FEAD3454">Ensure wash wheel cover is fully seated.
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_4FCCD28865D145ADA75528891C9826CF">Reboot the system and repeat. 
+					 </li> 
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_5C050643403441B09334144A0C7D2CA7">Disable motors and manually move the pipettor to check for binding/snagging. 
+					 </li>
+					 <li class="li" id="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24__LI_8783CC1406B444209DF7EB1662445DB6">Perform wash arm alignments.
+					 </li> 
+				  </ol>
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-D0D85CB2-0A10-439E-9253-7B990933B9AC.html">Common Failures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-D0D85CB2-0A10-439E-9253-7B990933B9AC.html" title="25.5.1 Common Failures"><div><span class="ph num-prefix">25.5.1 </span>Common Failures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-7977A9A7-638E-4C2F-93C8-42D54C4CBB24.html" lang="en-US" title="25.5.1.3 Software 1.15 Common Failure Troubleshooting"><div><span class="ph num-prefix">25.5.1.3 </span>Software 1.15 Common Failure Troubleshooting</div></a></div></article></main></div></noscript><script src="static/body.js?rJAUfFpk" type="text/javascript"></script></body></html>

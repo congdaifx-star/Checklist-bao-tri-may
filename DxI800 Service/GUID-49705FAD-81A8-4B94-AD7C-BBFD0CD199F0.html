@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="GUID-E04E18C6-258D-432B-B249-FCAB7B7AF750.html" name="DC.Relation" scheme="URI" /><meta content="GUID-826D130F-AAED-47FE-83EB-8CCEBD077056.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E04E18C6-258D-432B-B249-FCAB7B7AF750.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>9.4.4 Data Acquisition PCB (DAQC) Operating Principles</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-33E4B164-88CD-499C-AC47-09E53DEBF420.html" rel="prev" /><link href="GUID-79C04845-65F7-4090-91C5-A79EEA70540C.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3426" data-relpath="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-114C2453-2CE7-4F55-8FE7-8092E876E312" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0" role="article"> 
+  <h1 class="title topictitle1" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-114C2453-2CE7-4F55-8FE7-8092E876E312"><a id="GUID-114C2453-2CE7-4F55-8FE7-8092E876E312"></a>Data Acquisition PCB (DAQC) Operating Principles</h1> 
+  <div class="body conbody"> 
+	 <p class="p">This document details the operating principles for the DAQC PCB 
+	 </p> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_23A36205AE694A3E8CD50CD1E32724A6"><h2 class="title sectiontitle">PCB Function</h2> 
+		 
+		<div class="note caution note_caution" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-BCF58214-B83B-4A89-BA95-FF3E6C5C6822"><span class="note__title">Caution:</span> The DAQC PCB supplies ±12 volts to the substrate bubble detector, lower cabinet interface, pressure interface, vacuum sensor interface, and buffer and waste fluids drawer interface PCBs. The PCB also provides power to the luminometer and LED reference. These devices, along with the CPU card cage, do not lose power when the covers are opened. 
+		</div> 
+		 
+		<div class="p">The data acquisition and control PCB (DAQC) PCB performs these functions: 
+		<ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_B13D5D6FFDCE494C8E3F6B1738FBEE62"> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_58F6D032D92B4467AB85A9D1C4EDB927"> Data acquisition luminometer (pulse counting). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1D94850388F849D8B6CBE65C792B1886"> Controls luminometer high-voltage power supply. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_26C5A0DA36B147EE9F6970EE2EA4EFF3"> Controls LED reference. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_3FA62CBEE0D145C3B42DDFE937B114F8"> Powers luminometer and LED reference. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_78CF915D606B49E59213AB39D2717405"> Monitors power supply voltages. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1B1BDF7545314D488C047F1F69E29250"> Receives temperature inputs (twelve thermistors). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_9E091B7DF6224EEF9E83757C195CA3EF"> Receives bulk fluid level inputs (two waste, two buffer). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_78577A9581F24A7695B27A2ACCA433F4"> Receives system air pressure input. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_3F32EC51BB3B4BA6BBD0BD826325C797"> Receives fluid pressure inputs (six). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_D5D626C6263E40D3BE91B11FCCFAF278"> Receives system vacuum sensor inputs (six). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A136F246A0114C9095987A5D69437D0D"> Receives substrate bubble detector input. 
+		  </li> 
+		</ul> 
+		</div> 
+		<figure class="fig fignone" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__FIG_119C4F5A87AF41CCBE5E49C75D78FF96"><span class="figcap">Figure 152: DAQC function diagram </span> 
+		  <br /><img class="image" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__IMAGE_88E0F2822B8147A58D6628076EF5709C" src="GUID-9517F3FA-9A39-4EF6-B36E-1E5962FCE6B5-default.gif" /><br /> 
+		</figure> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_3106A73C481C44098C07644369014E2D"><h2 class="title sectiontitle">PCB Location</h2> 
+		 
+		<figure class="fig fignone" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__FIG_5E785D2ABA014022A61CEFDE6C01B867"><span class="figcap">Figure 153: Location of DAQC PCB in upper left card cage</span> 
+		  <br /><img class="image" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__IMAGE_F84C0659E78946698759081120B55D40" src="GUID-4B087606-B23F-4F65-892B-B1CAE7385CC4-default.gif" /><br /> 
+		</figure> 
+		<div class="note note note_note" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-B72D97F2-7878-4D59-A11A-6B5B1AFE45AA"><span class="note__title">Note:</span> The DxI 600 and DxI 800 instruments use the same DAQC PCB located in the same position. 
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_D7C71D36D87547EBB0054215FE15B636"><h2 class="title sectiontitle">Operational Overview</h2> 
+		 
+		<ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_3E9F936C670D4D0A85BEB2803059C227"> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_80A00E4A04164A758A57D7376F9861F7"> The DAQC PCB provides an interface for instrument: 
+			 <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_5DAA4BEAB6B043CF81B04E41612B7CAE"> 
+				<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_4D40A49CBB754F3D9CC7D80F7ED04455"> Analog measurements. 
+				</li> 
+				<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_978EC491686947A2A214BE2EC8959334"> Digital measurements. 
+				</li> 
+				<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_48C698F0369C49ABAF459348A24DA643"> Analog control. 
+				</li> 
+				<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A9AFA7819E9A40BD91543BA5B81FFCC4"> Digital control. 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_688207E568BA4CCBB866FF52234877E4"> The DAQC PCB logic is based on a RAM-based EPLD device. This provides the ability to load new logic into the PCB during development and into the final product through the JTAG standard test access port. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_958A3CCEEF9B46628EA59DDD6ACB1856"> All devices on this PCB are accessed and controlled via direct I/O from the host processor over the ISA bus. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_539F0BF5226C4B05B0DB46E43D1651DF"> The DAQC PCB supplies ±12 volts to the substrate bubble detector, lower cabinet interface, pressure interface, vacuum sensor interface, and buffer and waste fluids drawer interface PCBs. It also provides power to the luminometer and LED reference. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_742E205BFB264CC98DEC3DD1E6E91129"><h2 class="title sectiontitle">Component Locations</h2> 
+		 
+		<p class="p">Specific information regarding the components for this PCB is not provided. Service personnel are advised not to change or repair any PCB unless directed to do so by STS Chaska. 
+		</p> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_538A969BCACB4E24AFEA5DC74B0A0E63"><h2 class="title sectiontitle">PCB Features and Functions</h2> 
+		 
+		<table class="table" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97"><caption><span class="title" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-538D7756-721E-4C16-ABD9-687084341F32">Table 54: DAQC PCB functional components and descriptions</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1">Component 
+				</th> 
+				<th class="entry" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2">Function and Description 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Luminometer Interface 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">The luminometer interface includes: 
+				  <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_FDE1B81CCBDD4219B28D1D79442C67F8"> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_0E8A5761DC0E4BF8B0B3A44575BB676B"> High-speed 24-bit luminometer counter (for determining RLUs). 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_59CE3FABBD3F417CB5034C2A6E747689"> Software controlled high-voltage power supply. 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_C5B07E6B321C41BF85ECBE393A77681A"> High-voltage power supply voltage monitor. 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_F958240A32854EF3AD85AA31613BB120"> Control of luminometer LED reference. 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_98BAE263F1464C6E8B90B9586CE189D1"> Power supply for luminometer ECL logic. 
+					 </li> 
+				  </ul> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Temperature Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">Thermistors provide twelve inputs to DAQC PCB: 
+				  <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_5FC334823CBD4460921D4E7F1A14D4AD"> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_9477C9232C0C445FBE29598904BA1970"> Reagent storage peltiers (three) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A7CBA7D4D564411599403439DDA2726B"> Reagent storage air (one) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1F513A43B7204725924E88E1631FB440"> Sample storage (one) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_C0C73DE59961473FAF874428695CEC6F"> Analytical module (two, but one is not used*) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_CF6F4F0DAE4A4C29AE2A3147632E458E"> Substrate (one) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_0E5557A054C3459A91D4CB7A6A2A735B"> Case temperature (four) 
+					 </li> 
+				  </ul> 
+				  <div class="note note note_note" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-AA42F69F-BB5B-4758-B380-AB232DF95CDB"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_D31DA7E8C81242A4863BC70FCCE8913A"> 
+						<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_623E4E80682143EF8BB0C5266A4EDF58"> Temperature measurement uses a radiometric method to remove the effects of offset and gain variations in the A/D converters, analog switches, and voltage reference. 
+						</li> 
+						<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_04135CB85885497895F3E1F5B8412511">System has a ±0.05 °C accuracy at 37 °C. 
+						</li> 
+						<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_06F8EF85100B4A60AE651312F8AAF297"> *Incubator thermistor, even though present, is not monitored by the system. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Static Pressure Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 "> 
+				  <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_356A7E9614834663AD1B84960A133358"> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_FDA7D2A58B7243168490E82EF3DF9FE0"> Static measurements are read at a low sample rate (for example, once per second). 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1170242C39594652944D9AFC80CB89DB">Compressed air reservoir pressure is monitored with one static analog input channels. 
+					 </li> 
+				  </ul> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Dynamic Pressure Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">Dynamic pressure measurement is used for obstruction detection pressure measurement. Repetitive measurements at high rates (0.1 to 4000 Hz) throughout a pump cycle are required with the raw data stored in a buffer for analysis by the CPU. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Power Supply Voltage Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">The measured power supply voltages are: 
+				  <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_765D7DF3146D4D7E8270ADE9DB508F97"> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_0ACCF615ED0049C4BB0759E8D3648177"> +5 V DC 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_4C21E5265FEB4071A97CB29782DDE2A5"> +3.3 V DC (not used) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1C7FF650775C45B4BA95FB4FA4869E43"> +12 V DC 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_0969ECBB18FC44A884B5C9F6A91605E0"> -12 V DC 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A7A2DA8577C540F9998BB96308F1ACDE"> +24 V DC 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_527F79CA5BE5416A9414BD1F3338C3BC"> +12 V hard drive 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_CCDC9F47CEA04A03ADFF31C49B412A55"> +12 V network hub 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_17571F09D7774372A3385BDD129CC56B"> -5.2 V DC luminometer ECL logic 
+					 </li> 
+				  </ul> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Static Bulk Fluid Weight Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">Buffer fluid and waste fluid levels are measured by weighing the bottles or boxes using analog hall effect sensors. The DAQC PCB converts these analog voltages to digital values. 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_CA0C8D2E0F684F92A21E7E486DDE0A60"><h2 class="title sectiontitle">Interacting Devices</h2> 
+		 
+		<div class="p">The data acquisition and control PCB interacts with these devices: 
+		<ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_A03F47E8FF7D47C2B6F62D541B981856"> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_71F31A920C4A49D39EDC7F4ED4F07A6A"> CPU backplane 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_2FEC4F524607483CA2B0E082B92F974D"> Luminometer 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_CBCB71BAB21049E1B6865B093EA7792F"> LED reference 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_B768A4D1B05E4659909294A19A4FAE83"> Thermistors 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_8CC6BCB7F33A4AC48717D73CAE3BD838"> Fluid level weight sensors 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_98299D28DC204805B26615DC7B2EA81C"> Air pressure sensor 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_7F3165A7B62F4154885E5F42831FC7FB"> Reagent and sample pipettor pressure sensors 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_3128251408CC4AA6BA19EC4C678FF8F2"> Aspirate probe 1 pressure sensor 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_739E5E16A07247DAAD499120A20F01E0"> Vacuum pump pressure sensors 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A54F2F292CED43E2AF9372D8AAD923EA"> Substrate bubble detector 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-E04E18C6-258D-432B-B249-FCAB7B7AF750.html">Operating Principles</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-826D130F-AAED-47FE-83EB-8CCEBD077056.html" title="9 Upper Left Electronic Module"><div><span class="ph num-prefix">9 </span>Upper Left Electronic Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E04E18C6-258D-432B-B249-FCAB7B7AF750.html" title="9.4 Operating Principles"><div><span class="ph num-prefix">9.4 </span>Operating Principles</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0.html" lang="en-US" title="9.4.4 Data Acquisition PCB (DAQC) Operating Principles"><div><span class="ph num-prefix">9.4.4 </span>Data Acquisition PCB (DAQC) Operating Principles</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-114C2453-2CE7-4F55-8FE7-8092E876E312" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0" role="article"> 
+  <h1 class="title topictitle1" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-114C2453-2CE7-4F55-8FE7-8092E876E312"><a id="GUID-114C2453-2CE7-4F55-8FE7-8092E876E312"></a>Data Acquisition PCB (DAQC) Operating Principles</h1> 
+  <div class="body conbody"> 
+	 <p class="p">This document details the operating principles for the DAQC PCB 
+	 </p> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_23A36205AE694A3E8CD50CD1E32724A6"><h2 class="title sectiontitle">PCB Function</h2> 
+		 
+		<div class="note caution note_caution" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-BCF58214-B83B-4A89-BA95-FF3E6C5C6822"><span class="note__title">Caution:</span> The DAQC PCB supplies ±12 volts to the substrate bubble detector, lower cabinet interface, pressure interface, vacuum sensor interface, and buffer and waste fluids drawer interface PCBs. The PCB also provides power to the luminometer and LED reference. These devices, along with the CPU card cage, do not lose power when the covers are opened. 
+		</div> 
+		 
+		<div class="p">The data acquisition and control PCB (DAQC) PCB performs these functions: 
+		<ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_B13D5D6FFDCE494C8E3F6B1738FBEE62"> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_58F6D032D92B4467AB85A9D1C4EDB927"> Data acquisition luminometer (pulse counting). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1D94850388F849D8B6CBE65C792B1886"> Controls luminometer high-voltage power supply. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_26C5A0DA36B147EE9F6970EE2EA4EFF3"> Controls LED reference. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_3FA62CBEE0D145C3B42DDFE937B114F8"> Powers luminometer and LED reference. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_78CF915D606B49E59213AB39D2717405"> Monitors power supply voltages. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1B1BDF7545314D488C047F1F69E29250"> Receives temperature inputs (twelve thermistors). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_9E091B7DF6224EEF9E83757C195CA3EF"> Receives bulk fluid level inputs (two waste, two buffer). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_78577A9581F24A7695B27A2ACCA433F4"> Receives system air pressure input. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_3F32EC51BB3B4BA6BBD0BD826325C797"> Receives fluid pressure inputs (six). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_D5D626C6263E40D3BE91B11FCCFAF278"> Receives system vacuum sensor inputs (six). 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A136F246A0114C9095987A5D69437D0D"> Receives substrate bubble detector input. 
+		  </li> 
+		</ul> 
+		</div> 
+		<figure class="fig fignone" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__FIG_119C4F5A87AF41CCBE5E49C75D78FF96"><span class="figcap">Figure 152: DAQC function diagram </span> 
+		  <br /><img class="image" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__IMAGE_88E0F2822B8147A58D6628076EF5709C" src="GUID-9517F3FA-9A39-4EF6-B36E-1E5962FCE6B5-default.gif" /><br /> 
+		</figure> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_3106A73C481C44098C07644369014E2D"><h2 class="title sectiontitle">PCB Location</h2> 
+		 
+		<figure class="fig fignone" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__FIG_5E785D2ABA014022A61CEFDE6C01B867"><span class="figcap">Figure 153: Location of DAQC PCB in upper left card cage</span> 
+		  <br /><img class="image" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__IMAGE_F84C0659E78946698759081120B55D40" src="GUID-4B087606-B23F-4F65-892B-B1CAE7385CC4-default.gif" /><br /> 
+		</figure> 
+		<div class="note note note_note" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-B72D97F2-7878-4D59-A11A-6B5B1AFE45AA"><span class="note__title">Note:</span> The DxI 600 and DxI 800 instruments use the same DAQC PCB located in the same position. 
+		</div> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_D7C71D36D87547EBB0054215FE15B636"><h2 class="title sectiontitle">Operational Overview</h2> 
+		 
+		<ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_3E9F936C670D4D0A85BEB2803059C227"> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_80A00E4A04164A758A57D7376F9861F7"> The DAQC PCB provides an interface for instrument: 
+			 <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_5DAA4BEAB6B043CF81B04E41612B7CAE"> 
+				<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_4D40A49CBB754F3D9CC7D80F7ED04455"> Analog measurements. 
+				</li> 
+				<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_978EC491686947A2A214BE2EC8959334"> Digital measurements. 
+				</li> 
+				<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_48C698F0369C49ABAF459348A24DA643"> Analog control. 
+				</li> 
+				<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A9AFA7819E9A40BD91543BA5B81FFCC4"> Digital control. 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_688207E568BA4CCBB866FF52234877E4"> The DAQC PCB logic is based on a RAM-based EPLD device. This provides the ability to load new logic into the PCB during development and into the final product through the JTAG standard test access port. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_958A3CCEEF9B46628EA59DDD6ACB1856"> All devices on this PCB are accessed and controlled via direct I/O from the host processor over the ISA bus. 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_539F0BF5226C4B05B0DB46E43D1651DF"> The DAQC PCB supplies ±12 volts to the substrate bubble detector, lower cabinet interface, pressure interface, vacuum sensor interface, and buffer and waste fluids drawer interface PCBs. It also provides power to the luminometer and LED reference. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_742E205BFB264CC98DEC3DD1E6E91129"><h2 class="title sectiontitle">Component Locations</h2> 
+		 
+		<p class="p">Specific information regarding the components for this PCB is not provided. Service personnel are advised not to change or repair any PCB unless directed to do so by STS Chaska. 
+		</p> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_538A969BCACB4E24AFEA5DC74B0A0E63"><h2 class="title sectiontitle">PCB Features and Functions</h2> 
+		 
+		<table class="table" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97"><caption><span class="title" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-538D7756-721E-4C16-ABD9-687084341F32">Table 54: DAQC PCB functional components and descriptions</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1">Component 
+				</th> 
+				<th class="entry" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2">Function and Description 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Luminometer Interface 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">The luminometer interface includes: 
+				  <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_FDE1B81CCBDD4219B28D1D79442C67F8"> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_0E8A5761DC0E4BF8B0B3A44575BB676B"> High-speed 24-bit luminometer counter (for determining RLUs). 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_59CE3FABBD3F417CB5034C2A6E747689"> Software controlled high-voltage power supply. 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_C5B07E6B321C41BF85ECBE393A77681A"> High-voltage power supply voltage monitor. 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_F958240A32854EF3AD85AA31613BB120"> Control of luminometer LED reference. 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_98BAE263F1464C6E8B90B9586CE189D1"> Power supply for luminometer ECL logic. 
+					 </li> 
+				  </ul> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Temperature Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">Thermistors provide twelve inputs to DAQC PCB: 
+				  <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_5FC334823CBD4460921D4E7F1A14D4AD"> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_9477C9232C0C445FBE29598904BA1970"> Reagent storage peltiers (three) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A7CBA7D4D564411599403439DDA2726B"> Reagent storage air (one) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1F513A43B7204725924E88E1631FB440"> Sample storage (one) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_C0C73DE59961473FAF874428695CEC6F"> Analytical module (two, but one is not used*) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_CF6F4F0DAE4A4C29AE2A3147632E458E"> Substrate (one) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_0E5557A054C3459A91D4CB7A6A2A735B"> Case temperature (four) 
+					 </li> 
+				  </ul> 
+				  <div class="note note note_note" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__GUID-AA42F69F-BB5B-4758-B380-AB232DF95CDB"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_D31DA7E8C81242A4863BC70FCCE8913A"> 
+						<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_623E4E80682143EF8BB0C5266A4EDF58"> Temperature measurement uses a radiometric method to remove the effects of offset and gain variations in the A/D converters, analog switches, and voltage reference. 
+						</li> 
+						<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_04135CB85885497895F3E1F5B8412511">System has a ±0.05 °C accuracy at 37 °C. 
+						</li> 
+						<li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_06F8EF85100B4A60AE651312F8AAF297"> *Incubator thermistor, even though present, is not monitored by the system. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Static Pressure Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 "> 
+				  <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_356A7E9614834663AD1B84960A133358"> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_FDA7D2A58B7243168490E82EF3DF9FE0"> Static measurements are read at a low sample rate (for example, once per second). 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1170242C39594652944D9AFC80CB89DB">Compressed air reservoir pressure is monitored with one static analog input channels. 
+					 </li> 
+				  </ul> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Dynamic Pressure Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">Dynamic pressure measurement is used for obstruction detection pressure measurement. Repetitive measurements at high rates (0.1 to 4000 Hz) throughout a pump cycle are required with the raw data stored in a buffer for analysis by the CPU. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Power Supply Voltage Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">The measured power supply voltages are: 
+				  <ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_765D7DF3146D4D7E8270ADE9DB508F97"> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_0ACCF615ED0049C4BB0759E8D3648177"> +5 V DC 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_4C21E5265FEB4071A97CB29782DDE2A5"> +3.3 V DC (not used) 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_1C7FF650775C45B4BA95FB4FA4869E43"> +12 V DC 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_0969ECBB18FC44A884B5C9F6A91605E0"> -12 V DC 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A7A2DA8577C540F9998BB96308F1ACDE"> +24 V DC 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_527F79CA5BE5416A9414BD1F3338C3BC"> +12 V hard drive 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_CCDC9F47CEA04A03ADFF31C49B412A55"> +12 V network hub 
+					 </li> 
+					 <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_17571F09D7774372A3385BDD129CC56B"> -5.2 V DC luminometer ECL logic 
+					 </li> 
+				  </ul> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__1 ">Static Bulk Fluid Weight Measurement 
+				</td> 
+				<td class="entry" headers="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__TABLE_B8DC408BA80E4E1499AC712A1AD58E97__entry__2 ">Buffer fluid and waste fluid levels are measured by weighing the bottles or boxes using analog hall effect sensors. The DAQC PCB converts these analog voltages to digital values. 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </section> 
+	 <section class="section" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__SECTION_CA0C8D2E0F684F92A21E7E486DDE0A60"><h2 class="title sectiontitle">Interacting Devices</h2> 
+		 
+		<div class="p">The data acquisition and control PCB interacts with these devices: 
+		<ul class="ul" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__UL_A03F47E8FF7D47C2B6F62D541B981856"> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_71F31A920C4A49D39EDC7F4ED4F07A6A"> CPU backplane 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_2FEC4F524607483CA2B0E082B92F974D"> Luminometer 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_CBCB71BAB21049E1B6865B093EA7792F"> LED reference 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_B768A4D1B05E4659909294A19A4FAE83"> Thermistors 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_8CC6BCB7F33A4AC48717D73CAE3BD838"> Fluid level weight sensors 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_98299D28DC204805B26615DC7B2EA81C"> Air pressure sensor 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_7F3165A7B62F4154885E5F42831FC7FB"> Reagent and sample pipettor pressure sensors 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_3128251408CC4AA6BA19EC4C678FF8F2"> Aspirate probe 1 pressure sensor 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_739E5E16A07247DAAD499120A20F01E0"> Vacuum pump pressure sensors 
+		  </li> 
+		  <li class="li" id="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0__LI_A54F2F292CED43E2AF9372D8AAD923EA"> Substrate bubble detector 
+		  </li> 
+		</ul> 
+		</div> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-E04E18C6-258D-432B-B249-FCAB7B7AF750.html">Operating Principles</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-826D130F-AAED-47FE-83EB-8CCEBD077056.html" title="9 Upper Left Electronic Module"><div><span class="ph num-prefix">9 </span>Upper Left Electronic Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E04E18C6-258D-432B-B249-FCAB7B7AF750.html" title="9.4 Operating Principles"><div><span class="ph num-prefix">9.4 </span>Operating Principles</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-49705FAD-81A8-4B94-AD7C-BBFD0CD199F0.html" lang="en-US" title="9.4.4 Data Acquisition PCB (DAQC) Operating Principles"><div><span class="ph num-prefix">9.4.4 </span>Data Acquisition PCB (DAQC) Operating Principles</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

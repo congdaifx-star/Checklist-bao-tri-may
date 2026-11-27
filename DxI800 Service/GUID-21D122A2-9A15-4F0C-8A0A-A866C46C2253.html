@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to reconfigure an integrated DxI instrument to a stand-alone instrument." name="description" /><meta content="GUID-EB5271EA-1F87-4F68-AA00-72BBEF7AD680.html" name="DC.Relation" scheme="URI" /><meta content="GUID-6DAE9997-625A-477F-BFD3-EA5C49880C33.html" name="DC.Relation" scheme="URI" /><meta content="GUID-EB5271EA-1F87-4F68-AA00-72BBEF7AD680.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>13.3.7 Reconfiguring Integrated System to Stand Alone</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-41A66735-9D15-4732-A779-EF399F2FA0A7.html" rel="prev" /><link href="GUID-70D2492E-DEF4-42E8-8717-4E2379579F35.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e2472" data-relpath="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253" role="article"> 
+  <h1 class="title topictitle1" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Reconfiguring Integrated System to Stand Alone</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to reconfigure an integrated DxI instrument to a stand-alone instrument. 
+  </p> 
+	 <div class="section prereq p" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C37A77C9-F213-447D-B09A-0A3F2C794C81">Pre-Requisites: 
+		<div class="p">If the customer wants to retain the DxI database settings after reconfiguring, you must capture all the required database information from the DxC and DxI screens. The customer might request the following types of information: 
+		<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_775E2A91CC674408AD614B9107AF60D2"> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_0DD4B47FEF1E4DAA8EFD208D8A5B17B7">Quality Control Ranges 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_3F8FBF15D5464C1EBF01633F63FA205B">Enabled Tests 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_DC05BD4406684CC2808E2FDEE762CA0E">LIS Settings 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_1AAFE5EB1A074AC59A1F12C09914BED9">Rack Configurations 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_CB788D27AE0C489AB3C4495846C8447B">Dil-Assay Correction Factors 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_63C8B974803D4F86AEB9AC0E16DF237F">Pipettors Enabled by Test 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_509A993C0A324151893AF97260A134B4">Any Customer Configured Ranges 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="note warning note_warning" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A77A9068-AAC6-4EDE-998E-FA0C98C1CDCF"><span class="note__title">Warning:</span> The DxI database is not retained when reconfiguring the system. Capture any required information before proceeding. 
+		</div> 
+	 </div> 
+	 <ol class="ol steps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C"> Configure the instrument. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_39C297212DBB4205B755758848253D01" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_5309BBD8C9D54AB2BD092B6148D69619"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E0EF5B73-C75B-4D26-B2CC-976217262D02">Select 
+				  <span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-DB27114E-D5D6-4221-A7A9-CF6FFEB823F2"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-94A87261-054C-4A56-95B5-A9062D1A6936">Configure</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-B6E5F1F2-B964-461C-8AA5-6604F95141C5">PC Admin</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8B6B8EE8-EFAB-4241-BC0F-1A06DBB5E892">System Admin</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9FE98067-2CB6-4037-B531-9092521C8694">Integrated System Setup</span></span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5F001C8F-1D72-47F4-95B5-B950833A9E22">Access2Support</kbd>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_8B07A2864BD14279884E0318F4582DF0"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A407A5F4-BB8C-4E5B-B609-A6A8E5725AAA">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9A6BC14A-7BF7-4E7F-AD28-CEE42D260AAD">DxI 800</span> or 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BDFF4C27-BBE8-4429-9CAA-2F6FAABD14D8">DxI 600</span>, and then select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9B25D398-1661-43E0-976E-6B3B0044DAAC">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FA9E9909-794F-4FA2-B12A-CC3A14745450"><span class="note__title">Note:</span> When complete, the console PC and the instrument reboot. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_30ED101A081E4ACA8F2C10309585A92A"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D4CD32E4-61A5-41BE-AB09-F6CCDD5F8951">Remove the integrated hardware. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_874DAAD26ED340A8ABDCE3E3F47B1BEA" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_271D1F7F9C5141B2BA234B4091FA3373"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-742C15C4-D1E4-4BAC-93C7-57A82D93B12E">Open the UCTA pick-and-place cover. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_378D679132A2494A8B9969003D621B05"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_4402A13A26F64D1F86FF6F5F134A822B" src="GUID-12B27621-94EE-44D2-8883-9113E16F0624-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_DA0203FC930E4A57B10ECEEE3A675441"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3B18A2DD-B8E0-44D5-AB8F-E803D62089CE">Remove the housing from the DxI instrument upper rear cover. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_701CEFD3AE2D4561BEA69F95D89D6672"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_89E00B2F40A9468BBC5576307B11767B" src="GUID-BF195051-E3FD-428F-8BAE-D833CA992C02-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_BA31A300CA15457F9EDF21DAC98CB4EF"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8B15BB98-1686-4E23-BBDE-6EA709E10E19">Remove the three brackets from the upper rear cover. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_5FAE8FA381D64BB083FE2D762DC8D1F3"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_8DB2596DFF074A2D86DE578F27423FC2" src="GUID-9982DB6F-FB3D-4FB7-9C3F-212E24E57994-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_9974667DF7DB4D9A88D16C5EAE9BF7CE"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8F4456CC-01CE-4DB0-AB95-9F8F6CE418D4">Remove the two screws securing the transfer shuttle top and lower covers. Remove both covers. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_E8657714A8804CDEB71947BF1C311756"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_F31D4D2B84DC4CB3A28D921E670F7CD0" src="GUID-FF32FC60-F565-49D8-B08E-9AC2D4351164-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_AF199CE0C3B64E91918060A774B7FBFC"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-67BFE6F9-DBEC-44C3-A1F7-10762433F950">Disconnect the following connectors from the interconnect PCB for the UCTA transfer shuttle. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_0639D348B5EE4CDC95CE1A3260FA4A3A"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_20F041A785E2416FA5552F7C394CF3A5" src="GUID-01C1002D-2C0F-4CBC-AEDC-2DC3ABBD9861-default.gif" /><br /> 
+				  </figure> 
+				  <ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_41528813939758841528813939758941"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813939759141528813939759241"> J33 (Motor) 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813939759441528813939759541"> J34 (Encoder) 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813939759741528813939759841"> J32 (Sensor) 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_74B916DF098A464187D618FDC7EB9438"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CCC7B531-B977-4339-82D7-446858F5E972">Remove the UCTA transfer shuttle (two screws on each of the three cover supports). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_6FF27E6FD7C348AD963411D2EA363099"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E0C40C21-1903-44CF-82D1-21C2B509F221">Remove the upper rear cover from the instrument, and attach the upper rear access panel to the cover if a standard sample pipettor is being installed. If an LAS sample pipettor is being installed, then do not attach the upper rear access panel to the cover. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_DA50927758C04EAEB5A6F78041D4B5DC"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_3B602ED89D6C4977900AAC619B690460" src="GUID-8EE406FA-1020-42ED-8C14-D0397B595F0C-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_5C9A20D7A86E40C1AC5C510E308A0C46"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1297AF25-DE97-4C66-9F14-A321C1A5372B">Remove the rear shuttle panel from the cover supports (three screws). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_D8F30E32DC8E4657979B67E43C308295"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_0EBADBC044FD427D8632210E2E379757" src="GUID-9C1A2840-6031-4889-BBA1-BCA8988E0EDE-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_AC39A7CB03AB401B8FD978590179D25F"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_D8E977445A994017852B4DCF751A7F1E" src="GUID-CE300764-11C5-4C85-B428-ECD5954ACBE1-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_556882E297744212B764B9FF400B49FC"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-DA24229A-9E38-464F-8722-7A3764F0DF6A">Remove the three integrated cover supports and replace them with the original cover supports (two screws each). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_4E4F609979AE4FABB12B6A2FFBDECCCD"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_261677B33A934C4898251F66DE423424" src="GUID-F6FDB266-A9B0-4AF0-9943-27D68C0CF027-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_6C23DA8F2B464BD888DCBFBB9580644F"><span class="figcap">Figure 282: Original cover supports installed (rear view)</span> 
+					 <br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_4D7675FB89D149949BCE2130B2943E67" src="GUID-1395C3C6-9E06-4BE6-8427-F2E6DD9D5D04-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_376AA3B5E93D413393C9B78B0CCDB8E0"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2C2B48C7-7C56-4E9C-9967-CC98F1AC541E">Remove the network cables. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_07F515BCCACB432CBC39E544149ED322" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_C6050AD495064D8497445FBF65D371C5"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-011A8195-4117-4B4F-8F69-C43B4BF2250F">Remove the network cable connecting the AU to the DxC hub. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_1E8A27A4A79C4A18880587D1FCD2B11E"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_23C06F5D33D84A1B869DAFEB3264D92A">If the serial number is less than 601433 for DxI 800 instruments or less than 900097 for DxI 600 instruments, 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_A3DED21036E74DCE8D16E93C8AD35BEB"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_3BD71CDAFDA247F89F973C1C13D29597">Disconnect the DxI AU network cable from the DxC hub. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_FCCADF3F6BA847EF82F80812E276C0A6">Disconnect the other end of this cable from the CPU PCB. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_F1426C64BA884CB19C4CC23E164D7A41">Remove the cable from the instrument or coil it up and store it on the instrument baseplate behind the analytical module. 
+							 <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_8D12BC48722E4948A6353277A52596AA"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_B6641C8EB4B64DEBA7A798019832EBDA" src="GUID-B5E08C56-3F39-4CF0-8C3D-594FF7E6C36D-default.gif" /><br /> 
+							 </figure> 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_42EB6955631F49CD9F3092C97059733C">If the serial number is 601433 and above for DxI 800 instruments or 900097 and above for DxI 600 instruments, 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_045990E938C64A138F7DC6C9160C0B26"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_4AD295FC7C254AA3921C7612BAAD5050">Disconnect the cable from the port labeled UCTA on the back of the instrument by the power cord. Disconnect the other end of the cable from the DxC hub. 
+							 <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_A56DA573E865489092671A835F0F22D2"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_634B549E5FA846E4B00FB1059E99A3F7" src="GUID-0E51154E-DDC7-4CEC-BDE8-1859C2A4C025-default.gif" /><br /> 
+							 </figure> 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_6C76EF1EE77E46D596CC6555BCD1898E"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-12153B1A-D819-4311-93D8-7B1B30087F6C">Disconnect the network cable from port 3 of the NIC card on the DxI PC. Disconnect the other end of this cable from the DxC hub. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_6676453ED9134F2EB33E23620414F30C"><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_83AB517E0AB2404981CBE39CF1547ADA" src="GUID-469E2434-CAB0-4981-A820-E68922D1235F-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_CF4D51BABCF342A89077FA669BE54508"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BFA0B2DC-B98D-4B2E-B7DF-C771BB72064D">Disconnect the printer from the switch box (if applicable), and reconnect the printer directly to the DxI PC. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_6C03C5826C8944C482DC374FFC8CD7AD"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-B3872738-7B78-4957-ACFA-C0FC7DE39EC1">Open the SPU. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FCB78B02-CD0A-452B-8720-4948BFB96EA9" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e41"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e43">Open the upper left cover of the instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e47"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e49">Loosen the locking screw. 
+				</span> 
+				<div class="itemgroup info">The locking screw prevents the SPU from swinging outward from the instrument. It is not necessary to remove the screw because the SPU plate is slotted. 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e57"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e58" src="GUID-03C73438-896A-465B-8F20-B46D90317175-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e63"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e65">Remove the 3/16-in hex bolt located near the right end of the SPU cover. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e69"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e71">Open the lower right access panel on the front of the instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e75"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e77">Pull the spring-loaded captive pin that holds the panel (located under the SPU) to the frame. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e82"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e83" src="GUID-7CB249C2-479F-4318-9163-0198ED6A4B34-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e89"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e91">Grasping the SPU near the right end, swing the right end away from the instrument. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note warning note_warning" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-346DE220-8964-4D01-BAC2-1F3FB73671FA"><span class="note__title">Warning:</span> The SPU off-load area slides forward and rearward as the SPU is swung in and out. To prevent damage to the SPU or the off-load area, confirm that nothing obstructs the movement of the off-load area as the SPU is moved. 
+		 
+	 </div> 
+				</div> 
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e101">
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e103"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e104">(For China and Canada Only.)</strong> On the front facing the edge of the Framus assembly, install the Chinese and French labels adjacent to the existing English label.
+				</span>
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e110"><span class="note__title">Note:</span> The labels are in the DxI Installation Kit.
+				  </div>
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e113"><img alt="" class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e114" src="GUID-F6E1B4CC-D418-4512-A3DD-AFEC040F3CA0-default.png" />
+				  </figure>
+				  <p class="p">
+				  </p>
+				</div>
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_ECD7E42EDEAD4F278002D83502E79F14"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8CD4B8EB-616E-48FB-88BB-881C802A1C29">Separate the DxI instrument from the UCTA. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_62D1B630654C4FCDB2FD327F7767B648" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_3B6F3EBE4DAF49BAA274A5D448CF196C"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-78449C7C-DDC2-4831-912C-0F40C58CCAFD">Remove the cover from the reagent storage module to access the front tie-plate. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_CA068393335F488C8E7F11B7FFA9465F"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-77019D37-400D-4498-84E2-41919D9D99E9">Remove the connecting pins from the front and rear tie-plates connecting the UCTA to the DxI. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-416E3230-E681-4A05-9B5E-BA491F2A9189"><span class="note__title">Note:</span> Now the DxI instrument can be separated from the UCTA. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_F34CB1932C994AD19F8B86DD1D47486F"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A8269930-03C8-4691-8460-7C951E6C6B4C">Remove the front and rear tie-plates (two bolts each) from the DxI instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_9E716EECB956400F89E1D9D8B9C24E84"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3B422BFF-F24A-4719-97CA-404FED41DCDE">Insert the cleaving plug from the outside of the instrument into the hole in the side panel where the front tie-plate was located. Secure the plug to the baseplate with the slotted washer and screw. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_F3C8AC7A8A024D9F8A2FC2723D623244"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_50AB3A8D0C1544AB8591FF7AF56B4EED" src="GUID-3DA09BF2-E19D-488E-A117-C1D13C698CF2-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_DB0E6CA1F0F8403B99DEA3EAA62622E7"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_CA01E0C1DE7248C2835847C6D92DA8E6" src="GUID-BD89D140-AA84-447E-9CF1-EFD571AA6CB7-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_7CF5E1EC45D0440DB9F0D9029B4C9B2E"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-38169CD1-F6D5-4796-908C-F1BCB465C5EA">Replace the cover on the reagent storage module. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5958CE4C-0108-4C6C-AB70-209EC0C236F0"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e129">Close the SPU. 
+		  </span> 
+		  <div class="itemgroup info">The SPU is hinged on the left side. The right side is released and can be swung out from the instrument to approximately 45 degrees. 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note warning note_warning" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9296105C-7A61-41DF-8B4D-F5708B51949E"><span class="note__title">Warning:</span> The SPU off-load area slides forward and rearward as the SPU is swung in and out. To prevent damage to the SPU or the off-load area, confirm that nothing obstructs the movement of the off-load area as the SPU is moved. 
+		 
+	 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e141" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e143"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e145">Grasping the SPU near the right end, swing the right end toward the instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e149"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e151">Pull the spring-loaded captive pin to attach the panel (located under the SPU) to the frame. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e156"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e157" src="GUID-7CB249C2-479F-4318-9163-0198ED6A4B34-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e162"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e164">Close the lower right access panel on the front of the instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e168"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e170">Insert the 3/16-in hex bolt. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e174"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e176"> Tighten the bolt that holds the SPU from swinging outward from the instrument (locking screw). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e181"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e182" src="GUID-6A09B60F-8F8D-426A-9EE5-C56B18A847DF-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e188"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e190">Close the upper left cover of the instrument. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e195"><span class="note__title">Note:</span> Initialize the instrument after opening and closing the SPU, because a switch is actuated when the SPU is opened. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_C23115615CD44255999D6C3E96A0E09C"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BA30ADE0-0E8E-4CC2-AA09-16D0605CF37E">Remove the dual-gantry sample pipettor. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E3585E87-ADAC-44C9-9412-983E8B2F4B92"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-70D2492E-DEF4-42E8-8717-4E2379579F35.html" title="This procedure describes how to remove the dual-gantry sample pipettor on integrated DxI instruments.">IP: Removing Dual-Gantry Sample Pipettor</a> procedure. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_2C6E0C0AAAFB41C98ED28BF3C62CB968"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-58B4E743-DEE9-412A-A335-7191C1A28100">Rotate the mounting brackets on the universal towers to the standard configuration. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_3913FDBAE13B4E7FAA196F6E9075F56B"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_F7F0CACF904C435297B1D1EA9339DDFF" src="GUID-3501AD47-E17A-4D7F-BE81-65C20C1AFB9F-default.gif" /><br /> 
+			 </figure> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_AAE10E099CAF4EBBA0AA97AEBE2D3AB7"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_5BC910B280364B4A9EB7ECD45357918A" src="GUID-E26DB185-039B-48B0-9E25-7C7C19B11CC8-default.gif" /><br /> 
+			 </figure> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_4BE097A8DB7747DE8B53D68D5AA8B42F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_C2B57FEB115546B0A2CBC1CF32AD3ADB"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-255A841E-A292-4C9F-8A76-F7BEFDB5CA0A">Remove the screws that secure the gantry mounting brackets to the front and rear universal towers (two screws on the front, one screw on the rear). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_663DC3999B7F426788E06D499E7DF070"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CCD8C485-3B74-4448-8FEF-9615C3F10C15">Rotate the brackets on the universal towers to the standard configuration, and secure the brackets to the towers. 
+				</span> 
+				<div class="itemgroup info">Two screws are used to secure the gantry mounting bracket to the rear universal tower in the standard configuration. 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_2F5345A65D864572A42A0B0518AD3571"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FD3E2AAC-5132-4B87-9D2E-1C060C8C9A6E">Install the sample pipettor gantry. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_9965A3D738E04D309FD89AD2266C8CFB" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_BE3C39FDA3A6476E80B33792D537AA44"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3C20490B-0F12-42D7-A190-DA35DCF4FB06">Grasp the gantry with both hands, insert it into the instrument from the back, and attach it to the locating pins on the towers. Tighten the two captive screws on the gantry to secure it to the towers (one screw on each tower). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5853C2EC-DAB8-4503-BCA6-2CE55B2C4688"><span class="note__title">Caution:</span> To avoid bending the spline shafts, do not use the spline shafts to lift the dual-gantry sample pipettor. Bent spline shafts restrict movement and cause motion errors. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_00C0D8BC8CD54AFAA3D7288598DEEF6A"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7D15379A-3B87-46C5-A258-50F13B9FB26F">Reconnect these connectors to the sample pipettor interface PCB. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0583B809-F0BE-4783-8881-5ACF99A2AD80"><span class="note__title">Caution:</span> Verify cables are not pinched between the towers and the gantry. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_765F32C4BE48461B825E461EA4DCA1C1"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_3D84E8FC1F314227A868C48FA5F8415A" src="GUID-FB5D8D93-0872-446A-820A-E590B913535B-default.gif" /><br /> 
+				  </figure> 
+				  <ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_41528813986057541528813986057641"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813986057841528813986057941"> J1 - Ribbon Cable 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813986058141528813986058241"> J3 - Sample Pipettor Motor 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_88052A5C37CD4248B88922E00FC1F36E"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-439A108F-EDFB-4A5C-AEDC-E20F3BCFCECF">Connect the pipettor supply tubing to the in-line fitting and route the tubing through the tubing clamps. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_815687DCE9294388A951BD1629C22928"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-45CA4895-CA8B-4508-9A3B-93749FF4862B">Perform a manufacturing cleanup. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9BC015EB-6C37-4937-AA9D-27BADFE11C88"><span class="note__title">Note:</span> Manufacturing cleanup must be performed to eliminate potential database issues caused by incompatible Quality Control expiration dates from the integrated system. 
+			 </div> 
+			 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D6BE8C0F-8AFE-442E-88AE-F2D214876C2E"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD.html" title="This procedure describes how to use the NS Utility to restore factory settings on a DxI system.">Software: Restoring Factory Settings Using NS Utility</a> procedure. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-343BBC87-BC3C-4B44-B718-32270BA6620B"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e20">Install the DxI system software. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note caution note_caution" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e25"><span class="note__title">Caution:</span> Open the reagent load tray door to prevent the system from initializing after loading the software. Sample pipettor alignments are not correct, and if the sample pipettor attempts to enter the wash tower at the end of initialization, the probe could be damaged. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e35">For Windows XP System and Software 5.2 or below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e40" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e42"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e44">Open the reagent load tray door so that the instrument does not initialize when the software is loaded. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e48"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e50">Insert the UniCel DxI system software CD into the CD-ROM drive on the PC. 
+				</span> 
+				<div class="itemgroup info">The installation software starts automatically. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e57"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e59">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e61">Next</span> to display the software license agreement, and then select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e64">Yes</span> to continue. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e69"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e71">At the prompt, enter the IP address 
+				  <kbd class="ph userinput" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e73">192.168.2.2</kbd>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e78"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e80"> If prompted, enter the instrument serial number. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e85"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e87">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e89">OK</span> to update the instrument software. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e94"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e96">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e98">OK</span> to clear the installation successful message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e103"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e105">Remove the CD from the drive when the 
+				  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e107">Setup Complete</span> window displays, and then select the 
+				  <span class="keyword option" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e110">Yes, I want to restart my computer</span> option. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e115"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e117">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e119">Finish</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e124"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e126">After the PC restarts, remove the software CD from the CD-ROM drive, and insert the APF CD into the drive when prompted. 
+				</span> 
+				<div class="itemgroup info">If the<span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e131">Unknown Processes Running</span> window displays after the PC restarts, select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e134">OK</span> to continue. 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <div class="p"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e146">For Windows 8 System and Software 5.3.1 or above:</strong> 
+				<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e149"><span class="note__title">Note:</span> DxI Software 5.3.1 is also compatible with Windows XP console PC. 
+				</div> 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e155" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e157"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e159">Insert the software CD into the CD-ROM drive and press install button to load software. Press the finish button when complete to restart the console and AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e164"><span class="note__title">Note:</span>  The software install program should start automatically. It may take up to 3 minutes for the program to launch. If the program doesn&#39;t auto launch, it can be manually started by selecting the Computer icon on the desktop and then double clicking on the D: DVD drive. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e169"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e171">If the Unknown Processes Running message occurs after the PC restarts, select 
+				  <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e173">OK</strong> to continue. 
+				</span> 
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-650783EE-ABDA-441C-818F-D4E909BF7B42"><span class="note__title">Note:</span> When rebooting the Privacy &amp; Security compliant Windows 8 or Windows 10 PC, you must enter security password &quot;<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d29e18">Access2Admin</strong>&quot; when prompted to launch Windows. 
+		<p class="p"> 
+		</p><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d29e23" src="GUID-57B84EB9-A496-4109-A064-4A160B1C8257-default.png" /> 
+		<p class="p"> 
+		</p> 
+	 </div>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e184"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e186"> Insert the combined APF CD into the DxI drive when prompted. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_4DBC434D187D449C8933F0A54F1DC7D7"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EFE481CE-E71A-4772-8641-A711C4D65F0F">Load the supplies. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_C959D37F0F0C4DD1AEA1F5F8442785C9" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_3B2A8EC2A11C4F28AE7EEAC5A6E7C9E2"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-554E52C1-CD66-4ED6-A0AB-23F13634EC26">Remove and discard all punctured reagent packs. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note warning note_warning" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7647C5F8-333F-41D4-B5FB-FEEAB05F60AD"><span class="note__title">Warning:</span> Failure to remove and discard punctured packs causes incorrect pack counts and could affect results. Do not initialize after removing packs, because alignments are not correct and the probe could be damaged. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_174CF93AFD124F08B885DEAEA54F68EF"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2962F1C8-4C02-4AAF-8040-FEAD9BAFA0A4">Load two new bottles of substrate. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_34A0C9DD6146463E9EB17F201C35C0BC"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D42251CE-989E-449B-BEBF-D651FE7BEAAB">Install a waste bag into the solid waste container. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_4B34BADD7B2C44D2AFBB2C89F33DB63C"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C3ACDA3A-F08B-4712-9051-A0D7E3D2CFA6">Setup the instrument. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_38CC7C685D5E45368BEF7E1A4C9A383F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_4F1818B1D0904DB38B6E26F618DEFEA4"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EDB89B67-947C-4265-B482-77889C130B8F">Install the printer. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9C1FF8CD-75AC-45F5-8250-F5C9CBC7BC66"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-203C2EF9-A39C-4E0A-B6ED-D9661391E63C.html" title="This procedure describes how to install a Laserjet printer when installing a new system, installing a new printer, or connecting to a network printer. The Laserjet printer is used for both patient result reports and Help system reports within the user interface.">Peripherals: Installing Printer</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_66CA6378457444878DCDD4FD58FFDD78"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2079E33A-D5E5-404D-8598-B2150917F4FF">Configure these instrument settings. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_86B9656CB3694845B75B6A4D123D3532"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_ED2B9E067CD84207AD9A5921B46B0411">Scheduled Backup Time 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_AA439DBBA3C24AB68F167C4BA8D59D34">Auto Delete Setup 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_2B343ACDBC474978B1AE2DDB4CD93BA9">Quality Control Ranges 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_FEA50A5AE75F4EF88FF2AB4896882AAE">Enabled Tests 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_A47D7A05B3E44E209BE3E2D65ECC060A">LIS Settings 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_8FA4F32959DE4E59B3875116014FB1C1">Rack Configurations 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_0FBA6ED9B9E04564B2AE059F6604F203">Dil-Assay Correction Factors 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_B0C661AC4A0840ED8E6AEBCB7300BA57">Pipettors Enabled by Test 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_46575BC283BA4B1F9B87CB730402BBAE">Any Customer Configured Ranges 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_0D4808C6068648EB8FD02A753C8C84F3"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-919ACCF7-8337-4FC3-8F70-4F0F73301FFC">Close and replace all covers. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_8F3630FAD87342DE91C0475963C73CF8"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-726C147D-4AD0-41D3-86FC-7AE64CD46F80">If an LAS sample pipettor has been installed, then complete MOD 6303 LAS option upgrade and all installation and verification tasks, to complete this installation. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-83F54236-3429-4AA1-A8B7-F4071DC08181"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-0CE7AAA6-FD39-4D95-A206-DC7100F83B36.html" title="This procedure provides instructions for the initial installation of a DxI instrument into a lab automation system (LAS).">LAS: Installing DxI Instrument into LAS</a> procedure. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup stepresult"> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_D20940DA2F824789AE682277E32A5D00"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EE42A325-39BD-40E9-8640-DB7328DF250D">If a standard sample pipettor has been installed, then follow the remainder of this procedure to verify system operation after reconfiguration. 
+		  </span> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_D05286A3A15D4E8384949894138E7593"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FFBC04F5-177E-47F5-8037-3FD3377A90F6">Perform alignments. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_7D7AB4E3361941A7ADDDFF847CF864A9" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_4A15550D611042778551D87CB24CA962"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-F00AE994-E881-4BF0-B234-3E401868690C">Perform sample pipettor mechanical adjustments. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-318E0729-524D-42F3-8671-A70BE1D7AB56"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-371ABC7C-5BDE-4823-A7E8-FB02D780AD7A.html" title="This procedure describes how to adjust the position of the sample pipettor probe relative to the wash tower, the sample storage module, and the sample presentation unit (SPU) before performing alignments on the sample pipettor.">SP: Adjusting Sample Pipettor</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_6AAB4DD2A79A4C9B924954F1175765F7"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-F62FE700-5331-49F9-881F-E7085F25349A">Change the manufacturing alignments to Not Done. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <p class="p"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2C2E7E73-CB3D-4BA8-957B-DBCED2C8FAB6">For Windows XP System with Software 5.2 and below:</strong> 
+				  </p> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <ol class="ol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__OL_4FF7798C38AE4269A8592518375A3DC7" type="i"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_02428B9A62DA411C852A22FE58484A9D">Select 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D296755D-AE97-4FA8-BA7E-48D3CDC3E002"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3689B7EC-C31C-437A-B144-F6C9C8944875">Programs</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E9E356B6-C883-482A-9633-D8E2253EDC95">Administrative Tools 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0278AF62-B63A-4232-B741-1CB575E0F608">Remote Desktop Connection to AU PC</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_8EC42616639E46FBA8FCB010368E9568">Locate the 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FC0F1C7C-E3FF-406A-ACA9-18BB4504BED1">AuObj.exe</strong> icon (small y-shaped icon) on the bottom right of the Windows desktop. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_C6B8771CDC92490B952436005AEE536C"> Right-click 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-F5D32AFF-518F-450C-BD23-B74D561B50F5">AuObj.exe</strong>, and select 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2B1A050B-7C4B-4B19-8E56-8B8CD0A831D1">Exit</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_8B2277C4CEA44F3A80CF9960AEA5F305">On the desktop, open My Computer. Select 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1F57C1E3-AC47-45DE-8CEE-A5B8A0EF9ABB">Local C: Drive or AU_PC(C:) &gt;&gt; AU</span>. 
+					 </li>
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_BCD43832B3B94001B39BA082C2B85D78">Locate the specific.ini file, right-click on the file, and then select 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FAB0BEB1-8FAB-4B18-8ADC-09362453D740">Copy</strong>. 
+					 </li>
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_93E5CE9320014F1BA1998752C465C9E0">Right-click on 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8B668B83-9734-4DCB-996A-F417B8F97E02">Local C: Drive or AU_PC(C:)</strong>, and then select Paste. A copy of the specific.ini file is placed on C: drive.
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_EF138C7866D146DDA12EFA896F4CBF6F">Double-click to open the specific.ini file in the 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C32BEA3B-AADD-4007-934D-AC3847AAAACB">C: &gt;&gt; AU folder</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_68E67D4B40F8467BBB33AEB8DB097A40">Select 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-565D30EE-C6A7-4218-AAD1-7502501B0444"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A7976B84-7B14-4ECB-A32C-38118F45E885">Edit</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-09571999-3A66-4A29-A369-3E28F966E527">Find</span></span>, type 
+						<kbd class="ph userinput" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-92063E50-74F7-49AA-A744-E56C569C9CAD">mfgalign</kbd>, and select 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-79E35AB2-92D5-4CD9-BD7F-94F0E7A2E442">Find Next</span>. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1F6579DB-F19C-4F3F-996F-DCD2A9F93F16"><span class="note__title">Note:</span>  
+						</div>The search finds the text MFGAlignmentsDone=Yes entry in the specific.ini file. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_AF2278B19D5649BB8E9D1AF4BA290887">Change Yes to No, and then save the changes by selecting 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CD404B02-1B62-4862-B1DA-01BDCAF74B4B"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8063AB30-73E9-49AC-831C-915AD565CBC3">File</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7800136C-E37E-4638-A256-9B8D5D4A1509">Save</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_D3A4303EA74649028D39CD8F1967A7D4">Select the X in the upper right corner to close the specific.ini file. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_65A6C4E9E3494DE89412413A502E7431">Open the reagent load tray door. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0A2F07FB-12F1-486A-A08A-9F2AAC440018"><span class="note__title">Note:</span> The reagent load tray door is opened to prevent the system from initializing and damaging the probe. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_15BD934BA45049DEB5635DF4E1E9EA83">Double-click the 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8BABD052-3943-4F1C-9EB7-55CDF47F4DA5">AUObj.exe</span> icon on the desktop to restart the AU program. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A829C566-9830-4773-A8BD-3D2B66B50709"><span class="note__title">Note:</span> The user interface displays 
+						  <samp class="ph msgph" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-157AC631-412D-4352-80E8-6AA39D73DC94">Manufacturing Not Aligned</samp> under the 
+						  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-501769AA-3B69-4165-8366-052BCAD8A11E">Main Menu</span> or in the 
+						  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-181E2128-9BAE-4E83-B6A1-79A66909C988">Diagnostics 
+						  </span>screen. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_12056628C2454B9F821CDD911819480A">Close the reagent load tray door. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_785FE9DB4263441981515EA1BE037BED">Close the remote desktop connection to the instrument. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_D43F104DA49E41728686B9CD605B6DC2"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_E005AC04DBA94C50A15C15621299C489"> From the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-612E3A5F-41B7-47AF-B22E-CAB645909AA2">AU Desktop</strong>, select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2BCA0B36-7080-4DDB-816B-9AA1A36334C4">Start &gt; Disconnect</strong> or select the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-DA3E5787-FE5F-4C50-BE81-F96A23023BFA">X</strong> in the upper right corner. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_697C41C42ED04C72803450CD52F0E96D"> Select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-478D6354-F481-4D80-938B-A5137849743C">OK</strong> at the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BDA447DA-E6B2-462B-BC93-B3F6232EA37E">Your remote session will be disconnected</strong> pop-up. 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ol> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <div class="p"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-98685695-5AC6-416F-9820-750D2D4D9186">For Windows 8 System with Software 5.3.1 and above:</strong> 
+					 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A20DFACA-4D88-47DB-90BD-963BBEC400AA"><span class="note__title">Note:</span> DxI Software 5.3.1 is compatible with Windows XP console PC. If the software was installed on the Windows XP console PC, then follow the Windows XP section to configure the AU software settings. 
+					 </div> 
+				  </div> 
+				  <ol class="ol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__OL_60DA32E05A2A4E139843E68365863204" type="i"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_6C891ED668ED40E781230F183504320B">Open a remote desktop connection to the AU. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_FC2EBDBBD8874E9183A0BE2001DB6B1F"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_4C730DF2A0B0483794A2211418A62B76">Press the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CA826AD8-209C-4017-B896-CDBE61226D73">Windows</strong> key, select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3A48775C-FE09-4C35-B096-7314CFB17C3F">Remote Desktop Connection</strong> icon or type 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-94A96654-5025-40A1-8E35-A7647F9F0717">remote</strong> and open the Remote Desktop Connection program. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_A334DAF450BC4998A1F980E32ABB22BA">Type 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BE247A95-F3A8-483E-B3A9-E2DB7A550C0C">192.168.2.4</strong> into the Computer field and select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C8A01A02-46B1-4EE9-8B6B-BC01D5509052">Connect</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_4120A79BCFF4498C91FD28E40A726E32">Enter 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FA62BE9E-7688-499A-8701-E5B1C8BE8D61">user</strong> for the User Name and 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7C1D2EC8-1877-4A1D-8C01-3F6078C72D99">tech</strong> for the password if prompted. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_D8196143CF1E473FB7A060D48D0A91C5">If prompted at the RDS warning screen, check the box for &quot;Don&#39;t ask me again for connections to this computer&quot; and select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-F304398F-0B90-4633-8A6D-93F6F27DB7FB">Yes</strong>. 
+							 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8EA3C945-3377-41D6-BD2A-3A6BBBB6DAB7"><span class="note__title">Note:</span>  For Windows 8, the default console IP address is 192.168.2.3 and the AU IP address is 192.168.2.4. Neither IP address changes during the software load process. 
+							 </div> 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_D5FC0D61C4E24101B465801E10426660"> Shut down the AU Object program. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_2F4FB1AD775F496483C37187C4E26594"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_E8E27E48B3D446598BB87079CBE2AD87">Right click on the task bar and select Task Manager. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_6C9AABFB83CF4754B13D1FAD05BD038C">In the Task Manager box, click on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FF3207B5-B4F1-4821-81D1-C07C8CE0CC96">Processes</strong>, select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-AB5E5B3F-7295-4620-889E-F96B23F5D791">AUobj Module</strong>, and click on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-270E30D0-900F-44FB-94ED-5EE53B3F06DA">End Task</strong> in the bottom corner of the box. 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_E54AB62F1E0345C2927E0E935EA7A324">In the AU desktop, find the specific.ini file and make a copy of the file. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_D2613AFE2E6E4506964D5ABDD69A876E"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_B23598EF2B7C4A37935FFF3093347D51">Double click on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-4C55E460-CD30-4369-9466-54617C548DFA">Computer</strong> or 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8BDBFBB3-5D57-4540-8E96-F5B5CEE01AE9">File Explore</strong> and select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-6D59D696-BC48-4B44-93BA-FB483E81BFD3">Local C: drive or AU_PC (C:) &gt; AU &gt; specific.ini</strong>, right-click on the specific.ini file, and then select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7F7AE0F7-862F-46C5-9A9A-3AAA0F6EE051">Copy</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_8101C6EAF5ED40339BB2D0A1B6657E07"> Right-click 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C5EEF1B4-60C7-42D6-BAAC-A52AA72168BD">Local C: Drive or AU_PC(C:)</strong>, and then select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0CB6D2B8-AF79-4B65-974C-61ABCD283AC0">Paste</strong>. A copy of the specific.ini file is placed on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E2C0C32E-8AED-4EF8-805D-3BB766623280">AU_PC(C:)</strong>. 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_358044244569487C81E0719B704F1BC3">Double click on the specific.ini file to open the file in Notepad program. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_AA3FCA378D59464C8BCEAEEA651011AB">Select 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-68A848DE-3D55-4117-9B90-F95BBD7FC7E1"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8437B178-5567-4C38-8CF8-BC1AE1EA9929">Edit</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E92E36A6-0CBC-431B-A53F-69A5B778095A">Find</span></span>, type 
+						<kbd class="ph userinput" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FBBE10C8-FEFD-4A02-AB1C-73AF0BCA1F8E">mfgalign</kbd>, and select 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-DE61B9A5-1302-473C-AD6E-8B29C1D32984">Find Next</span>. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7BEB7A91-36B1-42DB-B59D-1131EB43829B"><span class="note__title">Note:</span>  
+						</div>The search finds the text MFGAlignmentsDone=Yes entry in the specific.ini file. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_2ADBB405F27C4F16827F8AD176AC0C31">Change Yes to No, and then save the changes by selecting 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-080B48B9-0233-4978-A545-9C4DCF12D782"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7BD6922C-8DCD-4444-AF85-5130C8253886">File</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BAC6F96D-FA92-4822-96D1-80B9BAE3887E">Save</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_04F600027A294D27BF5B3C748887B9B7"> Close the specific.ini file and the 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-276B014E-5ED8-4B3D-AAE3-F658EBBB7F61">Explorer</strong> window. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_716852D15DE845279943F3AE54EE49F5">Open the reagent load tray door. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-AE316824-02F1-4B38-A2C1-E94140E7EBCF"><span class="note__title">Note:</span> The reagent load tray door is opened to prevent the system from initializing and damaging the probe. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_03B42A8D486B44D39A54E751CC4EA43C"> Double-click the 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CD27C56B-7FDC-4900-9987-856A518C7E89">AUObj.exe</strong> icon on the desktop to restart the AU program. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EA4D52B0-7C23-4808-86DA-71C4003F1454"><span class="note__title">Note:</span> The user interface displays 
+						  <samp class="ph msgph" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EFD3E4FD-8794-4D6F-872F-9C6E4DC15D06">Manufacturing Not Aligned</samp> under the 
+						  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C863EDF8-A559-4EE5-B349-F32A279230B4">Main Menu</span> or in the 
+						  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D372F190-F2E1-4BCF-AFEB-1A41E6445688">Diagnostics 
+						  </span>screen. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_BEC8A516426B4B51B683F0242BAB83BB">Close the reagent load tray door. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_C4DA9B614A8D4B768AF5147DABCDEBA7"> Close the remote desktop connection to the instrument. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_D133668F87774FCFA545CE76773F7194"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_778DFEEDB6FC4DFFBE84778B15F79620">From the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C733D28D-BF41-4FF1-80C5-9D698CC39651">AU Desktop</strong>, right click on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-34931893-2147-46EF-853A-D77E5BD1700C"> Remote Desktop Connection icon on the upper left corner or on the task bar &gt; Close</strong> or select the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-6FF23CB4-F3C6-4AD3-94D1-06B137756D04">X</strong> in the upper right corner. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_F9685FF7AD154729857F25A8F3A62369">Select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-595326A7-E9D7-499C-8872-44E4E42370D2">OK</strong> at the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9C65B6FD-3C83-481A-BDFF-2C2DA3882888">Your remote session will be disconnected</strong> pop-up. 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_6FDB9715C8CB49B9BE1927A2ADFB2F62"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5C74217B-68D6-458E-89D4-5524F45043F3">Perform sample pipettor alignments. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-52A4E05C-F89A-4D06-BF36-66561544712C"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-BA7DAA09-05EC-4CAF-9B93-BB4340C7F9A0.html" title="This procedure describes how to align the sample pipettor to the wash tower, the inner and outer wheels of the sample storage modules, and the sample presentation unit (SPU) tray.">SP: Aligning Sample Pipettor</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-6473E275-3EF7-4535-879D-56DAE1A1F671"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e20">Change the manufacturing alignments to done. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e23" type="a"> 
+			 <li class="li substep" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e25"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e27">Select 
+				  <span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e29"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e30">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e32">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e34">Mechanics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e36">Alignments</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e38">Alignments/Offsets</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e40"> Manufacture Align Done</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e45"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e47">Select 
+				  <span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e49"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e50">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e52"> Initialize</span></span> in the user interface with 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e55">All Positions</span> and 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e58">Remap</span> selected. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_7979A6BBDC4D4D66963E8D40A63968D5"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-68CE2F07-BD86-4B1D-85EF-38FE571E74C4">Verify system operation. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_819548045B5341DDA7CCE0CAF738E32B" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_1F9E844494254F6D81B7BC3F56A6ADA4"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-91377A8E-7018-4AE5-A0F9-A5B474113A6C">Prime the sample pipettor ten times and check for leaks. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_82E78585F72F4529AFEC27BCE6A587AB"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-AB72D57B-E347-40AC-AD6F-3943A0AA9E4B">Calibrate the sample pipettor pressure sensor. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ol class="ol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__OL_46491F4F566547B1BD2280533CA9FBF2" type="i"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_FCACC4BF4A3A4227A1B5940E292CA720">Select 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-651647D9-80B0-4AC3-A095-F0762DCF7A3A"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1AA1BC5F-40B7-4731-94D4-61E46849B7F9">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1C159BF4-FDA7-49B0-8BD7-E8D332175FA1">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-B5746816-D7BE-4053-81D6-02A1A09C9CF3">Analog Devices</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A248FD0E-E612-4180-982F-9A9B68E1E285">Sensor Calibration</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-13DCC0D5-EE6D-403E-A24A-5C4B0A9353B7">Pressure</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_9A9BD7E611984ACEAB7B517AF9B7F5D3">Select 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-63363622-1E33-4796-87CB-62D3F813790B">Sample Pipettor</span> and 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5F1B8D6E-7E6C-4BAF-A8B1-EDF854F3DA8A">Determine Curve</span>. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_9CE320FE3A0C4F67AE568844D4B6045D"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-ED465929-3E30-4C45-8DCB-DDE94C70C130">Perform five reps each of the RF level sense test for wet and dry test modes. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-6733BFDD-6DEF-46D4-A422-D7E88D06D80C"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-FCAEAFB4-D0D3-462C-9F4E-0FA030A81D27.html" title="This procedure describes how to perform an RF level sense test for samples loaded on the SPU.">Tests: Performing SPU RF Level Sense Test</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_34541387BC484ED5B4F6FD67596CDFF1"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-46126E19-8115-46C1-894B-C00142DEB8FE">Perform the automated DxI carryover test. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-357068E1-E001-43D8-AAAC-F3AF80C0BA9C"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-3F04D5C2-EC38-4AA7-8B6E-6AD46E485301.html" title="This procedure describes how to perform an automated carryover test and how to interpret the results.">Tests - Performing Automated Carryover Test</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_C0F2EE0F6A8A482CA874899D6BB63494"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D7521E16-EB9D-44EF-9E41-B0723EE0E242">Calibrate all required assays and run QC to verify results are within customer specifications. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-EB5271EA-1F87-4F68-AA00-72BBEF7AD680.html">Installing/Removing/Replacing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-6DAE9997-625A-477F-BFD3-EA5C49880C33.html" title="13 Integrated Platforms"><div><span class="ph num-prefix">13 </span>Integrated Platforms</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-EB5271EA-1F87-4F68-AA00-72BBEF7AD680.html" title="13.3 Installing/Removing/Replacing"><div><span class="ph num-prefix">13.3 </span>Installing/Removing/Replacing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253.html" lang="en-US" title="13.3.7 Reconfiguring Integrated System to Stand Alone"><div><span class="ph num-prefix">13.3.7 </span>Reconfiguring Integrated System to Stand Alone</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253" role="article"> 
+  <h1 class="title topictitle1" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Reconfiguring Integrated System to Stand Alone</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to reconfigure an integrated DxI instrument to a stand-alone instrument. 
+  </p> 
+	 <div class="section prereq p" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C37A77C9-F213-447D-B09A-0A3F2C794C81">Pre-Requisites: 
+		<div class="p">If the customer wants to retain the DxI database settings after reconfiguring, you must capture all the required database information from the DxC and DxI screens. The customer might request the following types of information: 
+		<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_775E2A91CC674408AD614B9107AF60D2"> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_0DD4B47FEF1E4DAA8EFD208D8A5B17B7">Quality Control Ranges 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_3F8FBF15D5464C1EBF01633F63FA205B">Enabled Tests 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_DC05BD4406684CC2808E2FDEE762CA0E">LIS Settings 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_1AAFE5EB1A074AC59A1F12C09914BED9">Rack Configurations 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_CB788D27AE0C489AB3C4495846C8447B">Dil-Assay Correction Factors 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_63C8B974803D4F86AEB9AC0E16DF237F">Pipettors Enabled by Test 
+		  </li> 
+		  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_509A993C0A324151893AF97260A134B4">Any Customer Configured Ranges 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="note warning note_warning" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A77A9068-AAC6-4EDE-998E-FA0C98C1CDCF"><span class="note__title">Warning:</span> The DxI database is not retained when reconfiguring the system. Capture any required information before proceeding. 
+		</div> 
+	 </div> 
+	 <ol class="ol steps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C"> Configure the instrument. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_39C297212DBB4205B755758848253D01" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_5309BBD8C9D54AB2BD092B6148D69619"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E0EF5B73-C75B-4D26-B2CC-976217262D02">Select 
+				  <span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-DB27114E-D5D6-4221-A7A9-CF6FFEB823F2"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-94A87261-054C-4A56-95B5-A9062D1A6936">Configure</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-B6E5F1F2-B964-461C-8AA5-6604F95141C5">PC Admin</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8B6B8EE8-EFAB-4241-BC0F-1A06DBB5E892">System Admin</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9FE98067-2CB6-4037-B531-9092521C8694">Integrated System Setup</span></span>, and then enter the password 
+				  <kbd class="ph userinput" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5F001C8F-1D72-47F4-95B5-B950833A9E22">Access2Support</kbd>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_8B07A2864BD14279884E0318F4582DF0"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A407A5F4-BB8C-4E5B-B609-A6A8E5725AAA">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9A6BC14A-7BF7-4E7F-AD28-CEE42D260AAD">DxI 800</span> or 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BDFF4C27-BBE8-4429-9CAA-2F6FAABD14D8">DxI 600</span>, and then select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9B25D398-1661-43E0-976E-6B3B0044DAAC">OK</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FA9E9909-794F-4FA2-B12A-CC3A14745450"><span class="note__title">Note:</span> When complete, the console PC and the instrument reboot. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_30ED101A081E4ACA8F2C10309585A92A"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D4CD32E4-61A5-41BE-AB09-F6CCDD5F8951">Remove the integrated hardware. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_874DAAD26ED340A8ABDCE3E3F47B1BEA" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_271D1F7F9C5141B2BA234B4091FA3373"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-742C15C4-D1E4-4BAC-93C7-57A82D93B12E">Open the UCTA pick-and-place cover. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_378D679132A2494A8B9969003D621B05"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_4402A13A26F64D1F86FF6F5F134A822B" src="GUID-12B27621-94EE-44D2-8883-9113E16F0624-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_DA0203FC930E4A57B10ECEEE3A675441"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3B18A2DD-B8E0-44D5-AB8F-E803D62089CE">Remove the housing from the DxI instrument upper rear cover. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_701CEFD3AE2D4561BEA69F95D89D6672"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_89E00B2F40A9468BBC5576307B11767B" src="GUID-BF195051-E3FD-428F-8BAE-D833CA992C02-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_BA31A300CA15457F9EDF21DAC98CB4EF"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8B15BB98-1686-4E23-BBDE-6EA709E10E19">Remove the three brackets from the upper rear cover. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_5FAE8FA381D64BB083FE2D762DC8D1F3"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_8DB2596DFF074A2D86DE578F27423FC2" src="GUID-9982DB6F-FB3D-4FB7-9C3F-212E24E57994-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_9974667DF7DB4D9A88D16C5EAE9BF7CE"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8F4456CC-01CE-4DB0-AB95-9F8F6CE418D4">Remove the two screws securing the transfer shuttle top and lower covers. Remove both covers. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_E8657714A8804CDEB71947BF1C311756"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_F31D4D2B84DC4CB3A28D921E670F7CD0" src="GUID-FF32FC60-F565-49D8-B08E-9AC2D4351164-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_AF199CE0C3B64E91918060A774B7FBFC"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-67BFE6F9-DBEC-44C3-A1F7-10762433F950">Disconnect the following connectors from the interconnect PCB for the UCTA transfer shuttle. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_0639D348B5EE4CDC95CE1A3260FA4A3A"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_20F041A785E2416FA5552F7C394CF3A5" src="GUID-01C1002D-2C0F-4CBC-AEDC-2DC3ABBD9861-default.gif" /><br /> 
+				  </figure> 
+				  <ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_41528813939758841528813939758941"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813939759141528813939759241"> J33 (Motor) 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813939759441528813939759541"> J34 (Encoder) 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813939759741528813939759841"> J32 (Sensor) 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_74B916DF098A464187D618FDC7EB9438"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CCC7B531-B977-4339-82D7-446858F5E972">Remove the UCTA transfer shuttle (two screws on each of the three cover supports). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_6FF27E6FD7C348AD963411D2EA363099"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E0C40C21-1903-44CF-82D1-21C2B509F221">Remove the upper rear cover from the instrument, and attach the upper rear access panel to the cover if a standard sample pipettor is being installed. If an LAS sample pipettor is being installed, then do not attach the upper rear access panel to the cover. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_DA50927758C04EAEB5A6F78041D4B5DC"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_3B602ED89D6C4977900AAC619B690460" src="GUID-8EE406FA-1020-42ED-8C14-D0397B595F0C-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_5C9A20D7A86E40C1AC5C510E308A0C46"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1297AF25-DE97-4C66-9F14-A321C1A5372B">Remove the rear shuttle panel from the cover supports (three screws). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_D8F30E32DC8E4657979B67E43C308295"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_0EBADBC044FD427D8632210E2E379757" src="GUID-9C1A2840-6031-4889-BBA1-BCA8988E0EDE-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_AC39A7CB03AB401B8FD978590179D25F"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_D8E977445A994017852B4DCF751A7F1E" src="GUID-CE300764-11C5-4C85-B428-ECD5954ACBE1-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_556882E297744212B764B9FF400B49FC"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-DA24229A-9E38-464F-8722-7A3764F0DF6A">Remove the three integrated cover supports and replace them with the original cover supports (two screws each). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_4E4F609979AE4FABB12B6A2FFBDECCCD"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_261677B33A934C4898251F66DE423424" src="GUID-F6FDB266-A9B0-4AF0-9943-27D68C0CF027-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_6C23DA8F2B464BD888DCBFBB9580644F"><span class="figcap">Figure 282: Original cover supports installed (rear view)</span> 
+					 <br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_4D7675FB89D149949BCE2130B2943E67" src="GUID-1395C3C6-9E06-4BE6-8427-F2E6DD9D5D04-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_376AA3B5E93D413393C9B78B0CCDB8E0"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2C2B48C7-7C56-4E9C-9967-CC98F1AC541E">Remove the network cables. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_07F515BCCACB432CBC39E544149ED322" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_C6050AD495064D8497445FBF65D371C5"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-011A8195-4117-4B4F-8F69-C43B4BF2250F">Remove the network cable connecting the AU to the DxC hub. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_1E8A27A4A79C4A18880587D1FCD2B11E"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_23C06F5D33D84A1B869DAFEB3264D92A">If the serial number is less than 601433 for DxI 800 instruments or less than 900097 for DxI 600 instruments, 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_A3DED21036E74DCE8D16E93C8AD35BEB"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_3BD71CDAFDA247F89F973C1C13D29597">Disconnect the DxI AU network cable from the DxC hub. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_FCCADF3F6BA847EF82F80812E276C0A6">Disconnect the other end of this cable from the CPU PCB. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_F1426C64BA884CB19C4CC23E164D7A41">Remove the cable from the instrument or coil it up and store it on the instrument baseplate behind the analytical module. 
+							 <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_8D12BC48722E4948A6353277A52596AA"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_B6641C8EB4B64DEBA7A798019832EBDA" src="GUID-B5E08C56-3F39-4CF0-8C3D-594FF7E6C36D-default.gif" /><br /> 
+							 </figure> 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_42EB6955631F49CD9F3092C97059733C">If the serial number is 601433 and above for DxI 800 instruments or 900097 and above for DxI 600 instruments, 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_045990E938C64A138F7DC6C9160C0B26"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_4AD295FC7C254AA3921C7612BAAD5050">Disconnect the cable from the port labeled UCTA on the back of the instrument by the power cord. Disconnect the other end of the cable from the DxC hub. 
+							 <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_A56DA573E865489092671A835F0F22D2"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_634B549E5FA846E4B00FB1059E99A3F7" src="GUID-0E51154E-DDC7-4CEC-BDE8-1859C2A4C025-default.gif" /><br /> 
+							 </figure> 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_6C76EF1EE77E46D596CC6555BCD1898E"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-12153B1A-D819-4311-93D8-7B1B30087F6C">Disconnect the network cable from port 3 of the NIC card on the DxI PC. Disconnect the other end of this cable from the DxC hub. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_6676453ED9134F2EB33E23620414F30C"><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_83AB517E0AB2404981CBE39CF1547ADA" src="GUID-469E2434-CAB0-4981-A820-E68922D1235F-default.png" /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_CF4D51BABCF342A89077FA669BE54508"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BFA0B2DC-B98D-4B2E-B7DF-C771BB72064D">Disconnect the printer from the switch box (if applicable), and reconnect the printer directly to the DxI PC. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_6C03C5826C8944C482DC374FFC8CD7AD"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-B3872738-7B78-4957-ACFA-C0FC7DE39EC1">Open the SPU. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FCB78B02-CD0A-452B-8720-4948BFB96EA9" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e41"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e43">Open the upper left cover of the instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e47"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e49">Loosen the locking screw. 
+				</span> 
+				<div class="itemgroup info">The locking screw prevents the SPU from swinging outward from the instrument. It is not necessary to remove the screw because the SPU plate is slotted. 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e57"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e58" src="GUID-03C73438-896A-465B-8F20-B46D90317175-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e63"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e65">Remove the 3/16-in hex bolt located near the right end of the SPU cover. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e69"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e71">Open the lower right access panel on the front of the instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e75"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e77">Pull the spring-loaded captive pin that holds the panel (located under the SPU) to the frame. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e82"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e83" src="GUID-7CB249C2-479F-4318-9163-0198ED6A4B34-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e89"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e91">Grasping the SPU near the right end, swing the right end away from the instrument. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note warning note_warning" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-346DE220-8964-4D01-BAC2-1F3FB73671FA"><span class="note__title">Warning:</span> The SPU off-load area slides forward and rearward as the SPU is swung in and out. To prevent damage to the SPU or the off-load area, confirm that nothing obstructs the movement of the off-load area as the SPU is moved. 
+		 
+	 </div> 
+				</div> 
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e101">
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e103"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e104">(For China and Canada Only.)</strong> On the front facing the edge of the Framus assembly, install the Chinese and French labels adjacent to the existing English label.
+				</span>
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e110"><span class="note__title">Note:</span> The labels are in the DxI Installation Kit.
+				  </div>
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e113"><img alt="" class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e114" src="GUID-F6E1B4CC-D418-4512-A3DD-AFEC040F3CA0-default.png" />
+				  </figure>
+				  <p class="p">
+				  </p>
+				</div>
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_ECD7E42EDEAD4F278002D83502E79F14"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8CD4B8EB-616E-48FB-88BB-881C802A1C29">Separate the DxI instrument from the UCTA. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_62D1B630654C4FCDB2FD327F7767B648" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_3B6F3EBE4DAF49BAA274A5D448CF196C"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-78449C7C-DDC2-4831-912C-0F40C58CCAFD">Remove the cover from the reagent storage module to access the front tie-plate. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_CA068393335F488C8E7F11B7FFA9465F"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-77019D37-400D-4498-84E2-41919D9D99E9">Remove the connecting pins from the front and rear tie-plates connecting the UCTA to the DxI. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-416E3230-E681-4A05-9B5E-BA491F2A9189"><span class="note__title">Note:</span> Now the DxI instrument can be separated from the UCTA. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_F34CB1932C994AD19F8B86DD1D47486F"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A8269930-03C8-4691-8460-7C951E6C6B4C">Remove the front and rear tie-plates (two bolts each) from the DxI instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_9E716EECB956400F89E1D9D8B9C24E84"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3B422BFF-F24A-4719-97CA-404FED41DCDE">Insert the cleaving plug from the outside of the instrument into the hole in the side panel where the front tie-plate was located. Secure the plug to the baseplate with the slotted washer and screw. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_F3C8AC7A8A024D9F8A2FC2723D623244"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_50AB3A8D0C1544AB8591FF7AF56B4EED" src="GUID-3DA09BF2-E19D-488E-A117-C1D13C698CF2-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_DB0E6CA1F0F8403B99DEA3EAA62622E7"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_CA01E0C1DE7248C2835847C6D92DA8E6" src="GUID-BD89D140-AA84-447E-9CF1-EFD571AA6CB7-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_7CF5E1EC45D0440DB9F0D9029B4C9B2E"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-38169CD1-F6D5-4796-908C-F1BCB465C5EA">Replace the cover on the reagent storage module. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5958CE4C-0108-4C6C-AB70-209EC0C236F0"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e129">Close the SPU. 
+		  </span> 
+		  <div class="itemgroup info">The SPU is hinged on the left side. The right side is released and can be swung out from the instrument to approximately 45 degrees. 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <div class="note warning note_warning" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9296105C-7A61-41DF-8B4D-F5708B51949E"><span class="note__title">Warning:</span> The SPU off-load area slides forward and rearward as the SPU is swung in and out. To prevent damage to the SPU or the off-load area, confirm that nothing obstructs the movement of the off-load area as the SPU is moved. 
+		 
+	 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e141" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e143"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e145">Grasping the SPU near the right end, swing the right end toward the instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e149"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e151">Pull the spring-loaded captive pin to attach the panel (located under the SPU) to the frame. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e156"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e157" src="GUID-7CB249C2-479F-4318-9163-0198ED6A4B34-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e162"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e164">Close the lower right access panel on the front of the instrument. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e168"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e170">Insert the 3/16-in hex bolt. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e174"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e176"> Tighten the bolt that holds the SPU from swinging outward from the instrument (locking screw). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e181"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e182" src="GUID-6A09B60F-8F8D-426A-9EE5-C56B18A847DF-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e188"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e190">Close the upper left cover of the instrument. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d195e195"><span class="note__title">Note:</span> Initialize the instrument after opening and closing the SPU, because a switch is actuated when the SPU is opened. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_C23115615CD44255999D6C3E96A0E09C"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BA30ADE0-0E8E-4CC2-AA09-16D0605CF37E">Remove the dual-gantry sample pipettor. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E3585E87-ADAC-44C9-9412-983E8B2F4B92"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-70D2492E-DEF4-42E8-8717-4E2379579F35.html" title="This procedure describes how to remove the dual-gantry sample pipettor on integrated DxI instruments.">IP: Removing Dual-Gantry Sample Pipettor</a> procedure. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_2C6E0C0AAAFB41C98ED28BF3C62CB968"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-58B4E743-DEE9-412A-A335-7191C1A28100">Rotate the mounting brackets on the universal towers to the standard configuration. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_3913FDBAE13B4E7FAA196F6E9075F56B"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_F7F0CACF904C435297B1D1EA9339DDFF" src="GUID-3501AD47-E17A-4D7F-BE81-65C20C1AFB9F-default.gif" /><br /> 
+			 </figure> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_AAE10E099CAF4EBBA0AA97AEBE2D3AB7"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_5BC910B280364B4A9EB7ECD45357918A" src="GUID-E26DB185-039B-48B0-9E25-7C7C19B11CC8-default.gif" /><br /> 
+			 </figure> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_4BE097A8DB7747DE8B53D68D5AA8B42F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_C2B57FEB115546B0A2CBC1CF32AD3ADB"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-255A841E-A292-4C9F-8A76-F7BEFDB5CA0A">Remove the screws that secure the gantry mounting brackets to the front and rear universal towers (two screws on the front, one screw on the rear). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_663DC3999B7F426788E06D499E7DF070"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CCD8C485-3B74-4448-8FEF-9615C3F10C15">Rotate the brackets on the universal towers to the standard configuration, and secure the brackets to the towers. 
+				</span> 
+				<div class="itemgroup info">Two screws are used to secure the gantry mounting bracket to the rear universal tower in the standard configuration. 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_2F5345A65D864572A42A0B0518AD3571"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FD3E2AAC-5132-4B87-9D2E-1C060C8C9A6E">Install the sample pipettor gantry. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_9965A3D738E04D309FD89AD2266C8CFB" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_BE3C39FDA3A6476E80B33792D537AA44"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3C20490B-0F12-42D7-A190-DA35DCF4FB06">Grasp the gantry with both hands, insert it into the instrument from the back, and attach it to the locating pins on the towers. Tighten the two captive screws on the gantry to secure it to the towers (one screw on each tower). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5853C2EC-DAB8-4503-BCA6-2CE55B2C4688"><span class="note__title">Caution:</span> To avoid bending the spline shafts, do not use the spline shafts to lift the dual-gantry sample pipettor. Bent spline shafts restrict movement and cause motion errors. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_00C0D8BC8CD54AFAA3D7288598DEEF6A"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7D15379A-3B87-46C5-A258-50F13B9FB26F">Reconnect these connectors to the sample pipettor interface PCB. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0583B809-F0BE-4783-8881-5ACF99A2AD80"><span class="note__title">Caution:</span> Verify cables are not pinched between the towers and the gantry. 
+				  </div> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__FIG_765F32C4BE48461B825E461EA4DCA1C1"><br /><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__IMAGE_3D84E8FC1F314227A868C48FA5F8415A" src="GUID-FB5D8D93-0872-446A-820A-E590B913535B-default.gif" /><br /> 
+				  </figure> 
+				  <ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_41528813986057541528813986057641"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813986057841528813986057941"> J1 - Ribbon Cable 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_41528813986058141528813986058241"> J3 - Sample Pipettor Motor 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_88052A5C37CD4248B88922E00FC1F36E"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-439A108F-EDFB-4A5C-AEDC-E20F3BCFCECF">Connect the pipettor supply tubing to the in-line fitting and route the tubing through the tubing clamps. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_815687DCE9294388A951BD1629C22928"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-45CA4895-CA8B-4508-9A3B-93749FF4862B">Perform a manufacturing cleanup. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9BC015EB-6C37-4937-AA9D-27BADFE11C88"><span class="note__title">Note:</span> Manufacturing cleanup must be performed to eliminate potential database issues caused by incompatible Quality Control expiration dates from the integrated system. 
+			 </div> 
+			 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D6BE8C0F-8AFE-442E-88AE-F2D214876C2E"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-6C756F99-EE10-4239-814B-426E3D69E9CD.html" title="This procedure describes how to use the NS Utility to restore factory settings on a DxI system.">Software: Restoring Factory Settings Using NS Utility</a> procedure. 
+			 </div> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-343BBC87-BC3C-4B44-B718-32270BA6620B"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e20">Install the DxI system software. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note caution note_caution" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e25"><span class="note__title">Caution:</span> Open the reagent load tray door to prevent the system from initializing after loading the software. Sample pipettor alignments are not correct, and if the sample pipettor attempts to enter the wash tower at the end of initialization, the probe could be damaged. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e35">For Windows XP System and Software 5.2 or below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e40" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e42"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e44">Open the reagent load tray door so that the instrument does not initialize when the software is loaded. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e48"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e50">Insert the UniCel DxI system software CD into the CD-ROM drive on the PC. 
+				</span> 
+				<div class="itemgroup info">The installation software starts automatically. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e57"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e59">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e61">Next</span> to display the software license agreement, and then select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e64">Yes</span> to continue. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e69"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e71">At the prompt, enter the IP address 
+				  <kbd class="ph userinput" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e73">192.168.2.2</kbd>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e78"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e80"> If prompted, enter the instrument serial number. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e85"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e87">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e89">OK</span> to update the instrument software. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e94"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e96">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e98">OK</span> to clear the installation successful message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e103"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e105">Remove the CD from the drive when the 
+				  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e107">Setup Complete</span> window displays, and then select the 
+				  <span class="keyword option" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e110">Yes, I want to restart my computer</span> option. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e115"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e117">Select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e119">Finish</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e124"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e126">After the PC restarts, remove the software CD from the CD-ROM drive, and insert the APF CD into the drive when prompted. 
+				</span> 
+				<div class="itemgroup info">If the<span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e131">Unknown Processes Running</span> window displays after the PC restarts, select 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e134">OK</span> to continue. 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <div class="p"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e146">For Windows 8 System and Software 5.3.1 or above:</strong> 
+				<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e149"><span class="note__title">Note:</span> DxI Software 5.3.1 is also compatible with Windows XP console PC. 
+				</div> 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e155" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e157"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e159">Insert the software CD into the CD-ROM drive and press install button to load software. Press the finish button when complete to restart the console and AU. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e164"><span class="note__title">Note:</span>  The software install program should start automatically. It may take up to 3 minutes for the program to launch. If the program doesn&#39;t auto launch, it can be manually started by selecting the Computer icon on the desktop and then double clicking on the D: DVD drive. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e169"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e171">If the Unknown Processes Running message occurs after the PC restarts, select 
+				  <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e173">OK</strong> to continue. 
+				</span> 
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-650783EE-ABDA-441C-818F-D4E909BF7B42"><span class="note__title">Note:</span> When rebooting the Privacy &amp; Security compliant Windows 8 or Windows 10 PC, you must enter security password &quot;<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d29e18">Access2Admin</strong>&quot; when prompted to launch Windows. 
+		<p class="p"> 
+		</p><img class="image" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d29e23" src="GUID-57B84EB9-A496-4109-A064-4A160B1C8257-default.png" /> 
+		<p class="p"> 
+		</p> 
+	 </div>
+				</div>
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e184"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d212e186"> Insert the combined APF CD into the DxI drive when prompted. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_4DBC434D187D449C8933F0A54F1DC7D7"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EFE481CE-E71A-4772-8641-A711C4D65F0F">Load the supplies. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_C959D37F0F0C4DD1AEA1F5F8442785C9" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_3B2A8EC2A11C4F28AE7EEAC5A6E7C9E2"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-554E52C1-CD66-4ED6-A0AB-23F13634EC26">Remove and discard all punctured reagent packs. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note warning note_warning" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7647C5F8-333F-41D4-B5FB-FEEAB05F60AD"><span class="note__title">Warning:</span> Failure to remove and discard punctured packs causes incorrect pack counts and could affect results. Do not initialize after removing packs, because alignments are not correct and the probe could be damaged. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_174CF93AFD124F08B885DEAEA54F68EF"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2962F1C8-4C02-4AAF-8040-FEAD9BAFA0A4">Load two new bottles of substrate. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_34A0C9DD6146463E9EB17F201C35C0BC"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D42251CE-989E-449B-BEBF-D651FE7BEAAB">Install a waste bag into the solid waste container. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_4B34BADD7B2C44D2AFBB2C89F33DB63C"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C3ACDA3A-F08B-4712-9051-A0D7E3D2CFA6">Setup the instrument. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_38CC7C685D5E45368BEF7E1A4C9A383F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_4F1818B1D0904DB38B6E26F618DEFEA4"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EDB89B67-947C-4265-B482-77889C130B8F">Install the printer. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9C1FF8CD-75AC-45F5-8250-F5C9CBC7BC66"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-203C2EF9-A39C-4E0A-B6ED-D9661391E63C.html" title="This procedure describes how to install a Laserjet printer when installing a new system, installing a new printer, or connecting to a network printer. The Laserjet printer is used for both patient result reports and Help system reports within the user interface.">Peripherals: Installing Printer</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_66CA6378457444878DCDD4FD58FFDD78"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2079E33A-D5E5-404D-8598-B2150917F4FF">Configure these instrument settings. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_86B9656CB3694845B75B6A4D123D3532"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_ED2B9E067CD84207AD9A5921B46B0411">Scheduled Backup Time 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_AA439DBBA3C24AB68F167C4BA8D59D34">Auto Delete Setup 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_2B343ACDBC474978B1AE2DDB4CD93BA9">Quality Control Ranges 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_FEA50A5AE75F4EF88FF2AB4896882AAE">Enabled Tests 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_A47D7A05B3E44E209BE3E2D65ECC060A">LIS Settings 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_8FA4F32959DE4E59B3875116014FB1C1">Rack Configurations 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_0FBA6ED9B9E04564B2AE059F6604F203">Dil-Assay Correction Factors 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_B0C661AC4A0840ED8E6AEBCB7300BA57">Pipettors Enabled by Test 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_46575BC283BA4B1F9B87CB730402BBAE">Any Customer Configured Ranges 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_0D4808C6068648EB8FD02A753C8C84F3"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-919ACCF7-8337-4FC3-8F70-4F0F73301FFC">Close and replace all covers. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_8F3630FAD87342DE91C0475963C73CF8"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-726C147D-4AD0-41D3-86FC-7AE64CD46F80">If an LAS sample pipettor has been installed, then complete MOD 6303 LAS option upgrade and all installation and verification tasks, to complete this installation. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-83F54236-3429-4AA1-A8B7-F4071DC08181"><span class="note__title">Note:</span> Refer to the 
+				<a class="xref" href="GUID-0CE7AAA6-FD39-4D95-A206-DC7100F83B36.html" title="This procedure provides instructions for the initial installation of a DxI instrument into a lab automation system (LAS).">LAS: Installing DxI Instrument into LAS</a> procedure. 
+			 </div> 
+		  </div> 
+		  <div class="itemgroup stepresult"> 
+		  </div> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_D20940DA2F824789AE682277E32A5D00"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EE42A325-39BD-40E9-8640-DB7328DF250D">If a standard sample pipettor has been installed, then follow the remainder of this procedure to verify system operation after reconfiguration. 
+		  </span> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_D05286A3A15D4E8384949894138E7593"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FFBC04F5-177E-47F5-8037-3FD3377A90F6">Perform alignments. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_7D7AB4E3361941A7ADDDFF847CF864A9" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_4A15550D611042778551D87CB24CA962"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-F00AE994-E881-4BF0-B234-3E401868690C">Perform sample pipettor mechanical adjustments. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-318E0729-524D-42F3-8671-A70BE1D7AB56"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-371ABC7C-5BDE-4823-A7E8-FB02D780AD7A.html" title="This procedure describes how to adjust the position of the sample pipettor probe relative to the wash tower, the sample storage module, and the sample presentation unit (SPU) before performing alignments on the sample pipettor.">SP: Adjusting Sample Pipettor</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_6AAB4DD2A79A4C9B924954F1175765F7"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-F62FE700-5331-49F9-881F-E7085F25349A">Change the manufacturing alignments to Not Done. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <p class="p"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2C2E7E73-CB3D-4BA8-957B-DBCED2C8FAB6">For Windows XP System with Software 5.2 and below:</strong> 
+				  </p> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <ol class="ol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__OL_4FF7798C38AE4269A8592518375A3DC7" type="i"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_02428B9A62DA411C852A22FE58484A9D">Select 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D296755D-AE97-4FA8-BA7E-48D3CDC3E002"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3689B7EC-C31C-437A-B144-F6C9C8944875">Programs</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E9E356B6-C883-482A-9633-D8E2253EDC95">Administrative Tools 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0278AF62-B63A-4232-B741-1CB575E0F608">Remote Desktop Connection to AU PC</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_8EC42616639E46FBA8FCB010368E9568">Locate the 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FC0F1C7C-E3FF-406A-ACA9-18BB4504BED1">AuObj.exe</strong> icon (small y-shaped icon) on the bottom right of the Windows desktop. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_C6B8771CDC92490B952436005AEE536C"> Right-click 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-F5D32AFF-518F-450C-BD23-B74D561B50F5">AuObj.exe</strong>, and select 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2B1A050B-7C4B-4B19-8E56-8B8CD0A831D1">Exit</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_8B2277C4CEA44F3A80CF9960AEA5F305">On the desktop, open My Computer. Select 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1F57C1E3-AC47-45DE-8CEE-A5B8A0EF9ABB">Local C: Drive or AU_PC(C:) &gt;&gt; AU</span>. 
+					 </li>
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_BCD43832B3B94001B39BA082C2B85D78">Locate the specific.ini file, right-click on the file, and then select 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FAB0BEB1-8FAB-4B18-8ADC-09362453D740">Copy</strong>. 
+					 </li>
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_93E5CE9320014F1BA1998752C465C9E0">Right-click on 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8B668B83-9734-4DCB-996A-F417B8F97E02">Local C: Drive or AU_PC(C:)</strong>, and then select Paste. A copy of the specific.ini file is placed on C: drive.
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_EF138C7866D146DDA12EFA896F4CBF6F">Double-click to open the specific.ini file in the 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C32BEA3B-AADD-4007-934D-AC3847AAAACB">C: &gt;&gt; AU folder</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_68E67D4B40F8467BBB33AEB8DB097A40">Select 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-565D30EE-C6A7-4218-AAD1-7502501B0444"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A7976B84-7B14-4ECB-A32C-38118F45E885">Edit</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-09571999-3A66-4A29-A369-3E28F966E527">Find</span></span>, type 
+						<kbd class="ph userinput" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-92063E50-74F7-49AA-A744-E56C569C9CAD">mfgalign</kbd>, and select 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-79E35AB2-92D5-4CD9-BD7F-94F0E7A2E442">Find Next</span>. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1F6579DB-F19C-4F3F-996F-DCD2A9F93F16"><span class="note__title">Note:</span>  
+						</div>The search finds the text MFGAlignmentsDone=Yes entry in the specific.ini file. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_AF2278B19D5649BB8E9D1AF4BA290887">Change Yes to No, and then save the changes by selecting 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CD404B02-1B62-4862-B1DA-01BDCAF74B4B"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8063AB30-73E9-49AC-831C-915AD565CBC3">File</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7800136C-E37E-4638-A256-9B8D5D4A1509">Save</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_D3A4303EA74649028D39CD8F1967A7D4">Select the X in the upper right corner to close the specific.ini file. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_65A6C4E9E3494DE89412413A502E7431">Open the reagent load tray door. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0A2F07FB-12F1-486A-A08A-9F2AAC440018"><span class="note__title">Note:</span> The reagent load tray door is opened to prevent the system from initializing and damaging the probe. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_15BD934BA45049DEB5635DF4E1E9EA83">Double-click the 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8BABD052-3943-4F1C-9EB7-55CDF47F4DA5">AUObj.exe</span> icon on the desktop to restart the AU program. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A829C566-9830-4773-A8BD-3D2B66B50709"><span class="note__title">Note:</span> The user interface displays 
+						  <samp class="ph msgph" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-157AC631-412D-4352-80E8-6AA39D73DC94">Manufacturing Not Aligned</samp> under the 
+						  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-501769AA-3B69-4165-8366-052BCAD8A11E">Main Menu</span> or in the 
+						  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-181E2128-9BAE-4E83-B6A1-79A66909C988">Diagnostics 
+						  </span>screen. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_12056628C2454B9F821CDD911819480A">Close the reagent load tray door. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_785FE9DB4263441981515EA1BE037BED">Close the remote desktop connection to the instrument. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_D43F104DA49E41728686B9CD605B6DC2"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_E005AC04DBA94C50A15C15621299C489"> From the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-612E3A5F-41B7-47AF-B22E-CAB645909AA2">AU Desktop</strong>, select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-2BCA0B36-7080-4DDB-816B-9AA1A36334C4">Start &gt; Disconnect</strong> or select the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-DA3E5787-FE5F-4C50-BE81-F96A23023BFA">X</strong> in the upper right corner. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_697C41C42ED04C72803450CD52F0E96D"> Select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-478D6354-F481-4D80-938B-A5137849743C">OK</strong> at the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BDA447DA-E6B2-462B-BC93-B3F6232EA37E">Your remote session will be disconnected</strong> pop-up. 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ol> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <p class="p"> 
+				  </p> 
+				  <div class="p"><strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-98685695-5AC6-416F-9820-750D2D4D9186">For Windows 8 System with Software 5.3.1 and above:</strong> 
+					 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A20DFACA-4D88-47DB-90BD-963BBEC400AA"><span class="note__title">Note:</span> DxI Software 5.3.1 is compatible with Windows XP console PC. If the software was installed on the Windows XP console PC, then follow the Windows XP section to configure the AU software settings. 
+					 </div> 
+				  </div> 
+				  <ol class="ol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__OL_60DA32E05A2A4E139843E68365863204" type="i"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_6C891ED668ED40E781230F183504320B">Open a remote desktop connection to the AU. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_FC2EBDBBD8874E9183A0BE2001DB6B1F"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_4C730DF2A0B0483794A2211418A62B76">Press the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CA826AD8-209C-4017-B896-CDBE61226D73">Windows</strong> key, select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-3A48775C-FE09-4C35-B096-7314CFB17C3F">Remote Desktop Connection</strong> icon or type 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-94A96654-5025-40A1-8E35-A7647F9F0717">remote</strong> and open the Remote Desktop Connection program. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_A334DAF450BC4998A1F980E32ABB22BA">Type 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BE247A95-F3A8-483E-B3A9-E2DB7A550C0C">192.168.2.4</strong> into the Computer field and select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C8A01A02-46B1-4EE9-8B6B-BC01D5509052">Connect</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_4120A79BCFF4498C91FD28E40A726E32">Enter 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FA62BE9E-7688-499A-8701-E5B1C8BE8D61">user</strong> for the User Name and 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7C1D2EC8-1877-4A1D-8C01-3F6078C72D99">tech</strong> for the password if prompted. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_D8196143CF1E473FB7A060D48D0A91C5">If prompted at the RDS warning screen, check the box for &quot;Don&#39;t ask me again for connections to this computer&quot; and select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-F304398F-0B90-4633-8A6D-93F6F27DB7FB">Yes</strong>. 
+							 <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8EA3C945-3377-41D6-BD2A-3A6BBBB6DAB7"><span class="note__title">Note:</span>  For Windows 8, the default console IP address is 192.168.2.3 and the AU IP address is 192.168.2.4. Neither IP address changes during the software load process. 
+							 </div> 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_D5FC0D61C4E24101B465801E10426660"> Shut down the AU Object program. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_2F4FB1AD775F496483C37187C4E26594"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_E8E27E48B3D446598BB87079CBE2AD87">Right click on the task bar and select Task Manager. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_6C9AABFB83CF4754B13D1FAD05BD038C">In the Task Manager box, click on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FF3207B5-B4F1-4821-81D1-C07C8CE0CC96">Processes</strong>, select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-AB5E5B3F-7295-4620-889E-F96B23F5D791">AUobj Module</strong>, and click on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-270E30D0-900F-44FB-94ED-5EE53B3F06DA">End Task</strong> in the bottom corner of the box. 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_E54AB62F1E0345C2927E0E935EA7A324">In the AU desktop, find the specific.ini file and make a copy of the file. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_D2613AFE2E6E4506964D5ABDD69A876E"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_B23598EF2B7C4A37935FFF3093347D51">Double click on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-4C55E460-CD30-4369-9466-54617C548DFA">Computer</strong> or 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8BDBFBB3-5D57-4540-8E96-F5B5CEE01AE9">File Explore</strong> and select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-6D59D696-BC48-4B44-93BA-FB483E81BFD3">Local C: drive or AU_PC (C:) &gt; AU &gt; specific.ini</strong>, right-click on the specific.ini file, and then select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7F7AE0F7-862F-46C5-9A9A-3AAA0F6EE051">Copy</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_8101C6EAF5ED40339BB2D0A1B6657E07"> Right-click 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C5EEF1B4-60C7-42D6-BAAC-A52AA72168BD">Local C: Drive or AU_PC(C:)</strong>, and then select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-0CB6D2B8-AF79-4B65-974C-61ABCD283AC0">Paste</strong>. A copy of the specific.ini file is placed on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E2C0C32E-8AED-4EF8-805D-3BB766623280">AU_PC(C:)</strong>. 
+						  </li> 
+						</ul> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_358044244569487C81E0719B704F1BC3">Double click on the specific.ini file to open the file in Notepad program. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_AA3FCA378D59464C8BCEAEEA651011AB">Select 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-68A848DE-3D55-4117-9B90-F95BBD7FC7E1"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-8437B178-5567-4C38-8CF8-BC1AE1EA9929">Edit</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-E92E36A6-0CBC-431B-A53F-69A5B778095A">Find</span></span>, type 
+						<kbd class="ph userinput" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-FBBE10C8-FEFD-4A02-AB1C-73AF0BCA1F8E">mfgalign</kbd>, and select 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-DE61B9A5-1302-473C-AD6E-8B29C1D32984">Find Next</span>. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7BEB7A91-36B1-42DB-B59D-1131EB43829B"><span class="note__title">Note:</span>  
+						</div>The search finds the text MFGAlignmentsDone=Yes entry in the specific.ini file. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_2ADBB405F27C4F16827F8AD176AC0C31">Change Yes to No, and then save the changes by selecting 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-080B48B9-0233-4978-A545-9C4DCF12D782"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-7BD6922C-8DCD-4444-AF85-5130C8253886">File</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-BAC6F96D-FA92-4822-96D1-80B9BAE3887E">Save</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_04F600027A294D27BF5B3C748887B9B7"> Close the specific.ini file and the 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-276B014E-5ED8-4B3D-AAE3-F658EBBB7F61">Explorer</strong> window. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_716852D15DE845279943F3AE54EE49F5">Open the reagent load tray door. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-AE316824-02F1-4B38-A2C1-E94140E7EBCF"><span class="note__title">Note:</span> The reagent load tray door is opened to prevent the system from initializing and damaging the probe. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_03B42A8D486B44D39A54E751CC4EA43C"> Double-click the 
+						<strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-CD27C56B-7FDC-4900-9987-856A518C7E89">AUObj.exe</strong> icon on the desktop to restart the AU program. 
+						<div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EA4D52B0-7C23-4808-86DA-71C4003F1454"><span class="note__title">Note:</span> The user interface displays 
+						  <samp class="ph msgph" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-EFD3E4FD-8794-4D6F-872F-9C6E4DC15D06">Manufacturing Not Aligned</samp> under the 
+						  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C863EDF8-A559-4EE5-B349-F32A279230B4">Main Menu</span> or in the 
+						  <span class="keyword wintitle" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D372F190-F2E1-4BCF-AFEB-1A41E6445688">Diagnostics 
+						  </span>screen. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_BEC8A516426B4B51B683F0242BAB83BB">Close the reagent load tray door. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_C4DA9B614A8D4B768AF5147DABCDEBA7"> Close the remote desktop connection to the instrument. 
+						<ul class="ul" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__UL_D133668F87774FCFA545CE76773F7194"> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_778DFEEDB6FC4DFFBE84778B15F79620">From the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-C733D28D-BF41-4FF1-80C5-9D698CC39651">AU Desktop</strong>, right click on 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-34931893-2147-46EF-853A-D77E5BD1700C"> Remote Desktop Connection icon on the upper left corner or on the task bar &gt; Close</strong> or select the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-6FF23CB4-F3C6-4AD3-94D1-06B137756D04">X</strong> in the upper right corner. 
+						  </li> 
+						  <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_F9685FF7AD154729857F25A8F3A62369">Select 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-595326A7-E9D7-499C-8872-44E4E42370D2">OK</strong> at the 
+							 <strong class="ph b" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-9C65B6FD-3C83-481A-BDFF-2C2DA3882888">Your remote session will be disconnected</strong> pop-up. 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_6FDB9715C8CB49B9BE1927A2ADFB2F62"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5C74217B-68D6-458E-89D4-5524F45043F3">Perform sample pipettor alignments. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-52A4E05C-F89A-4D06-BF36-66561544712C"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-BA7DAA09-05EC-4CAF-9B93-BB4340C7F9A0.html" title="This procedure describes how to align the sample pipettor to the wash tower, the inner and outer wheels of the sample storage modules, and the sample presentation unit (SPU) tray.">SP: Aligning Sample Pipettor</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-6473E275-3EF7-4535-879D-56DAE1A1F671"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e20">Change the manufacturing alignments to done. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e23" type="a"> 
+			 <li class="li substep" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e25"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e27">Select 
+				  <span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e29"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e30">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e32">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e34">Mechanics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e36">Alignments</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e38">Alignments/Offsets</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e40"> Manufacture Align Done</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e45"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e47">Select 
+				  <span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e49"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e50">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e52"> Initialize</span></span> in the user interface with 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e55">All Positions</span> and 
+				  <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__d213e58">Remap</span> selected. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__STEP_7979A6BBDC4D4D66963E8D40A63968D5"> 
+		  <span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-68CE2F07-BD86-4B1D-85EF-38FE571E74C4">Verify system operation. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEPS_819548045B5341DDA7CCE0CAF738E32B" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_1F9E844494254F6D81B7BC3F56A6ADA4"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-91377A8E-7018-4AE5-A0F9-A5B474113A6C">Prime the sample pipettor ten times and check for leaks. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_82E78585F72F4529AFEC27BCE6A587AB"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-AB72D57B-E347-40AC-AD6F-3943A0AA9E4B">Calibrate the sample pipettor pressure sensor. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ol class="ol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__OL_46491F4F566547B1BD2280533CA9FBF2" type="i"> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_FCACC4BF4A3A4227A1B5940E292CA720">Select 
+						<span class="ph menucascade" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-651647D9-80B0-4AC3-A095-F0762DCF7A3A"><span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1AA1BC5F-40B7-4731-94D4-61E46849B7F9">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-1C159BF4-FDA7-49B0-8BD7-E8D332175FA1">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-B5746816-D7BE-4053-81D6-02A1A09C9CF3">Analog Devices</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-A248FD0E-E612-4180-982F-9A9B68E1E285">Sensor Calibration</span> &gt; <span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-13DCC0D5-EE6D-403E-A24A-5C4B0A9353B7">Pressure</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__LI_9A9BD7E611984ACEAB7B517AF9B7F5D3">Select 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-63363622-1E33-4796-87CB-62D3F813790B">Sample Pipettor</span> and 
+						<span class="ph uicontrol" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-5F1B8D6E-7E6C-4BAF-A8B1-EDF854F3DA8A">Determine Curve</span>. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_9CE320FE3A0C4F67AE568844D4B6045D"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-ED465929-3E30-4C45-8DCB-DDE94C70C130">Perform five reps each of the RF level sense test for wet and dry test modes. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-6733BFDD-6DEF-46D4-A422-D7E88D06D80C"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-FCAEAFB4-D0D3-462C-9F4E-0FA030A81D27.html" title="This procedure describes how to perform an RF level sense test for samples loaded on the SPU.">Tests: Performing SPU RF Level Sense Test</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_34541387BC484ED5B4F6FD67596CDFF1"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-46126E19-8115-46C1-894B-C00142DEB8FE">Perform the automated DxI carryover test. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-357068E1-E001-43D8-AAAC-F3AF80C0BA9C"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-3F04D5C2-EC38-4AA7-8B6E-6AD46E485301.html" title="This procedure describes how to perform an automated carryover test and how to interpret the results.">Tests - Performing Automated Carryover Test</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__SUBSTEP_C0F2EE0F6A8A482CA874899D6BB63494"> 
+				<span class="ph cmd" id="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253__GUID-D7521E16-EB9D-44EF-9E41-B0723EE0E242">Calibrate all required assays and run QC to verify results are within customer specifications. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-EB5271EA-1F87-4F68-AA00-72BBEF7AD680.html">Installing/Removing/Replacing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-6DAE9997-625A-477F-BFD3-EA5C49880C33.html" title="13 Integrated Platforms"><div><span class="ph num-prefix">13 </span>Integrated Platforms</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-EB5271EA-1F87-4F68-AA00-72BBEF7AD680.html" title="13.3 Installing/Removing/Replacing"><div><span class="ph num-prefix">13.3 </span>Installing/Removing/Replacing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-21D122A2-9A15-4F0C-8A0A-A866C46C2253.html" lang="en-US" title="13.3.7 Reconfiguring Integrated System to Stand Alone"><div><span class="ph num-prefix">13.3.7 </span>Reconfiguring Integrated System to Stand Alone</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

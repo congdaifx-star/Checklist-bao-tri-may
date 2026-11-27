@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to use TestUltrasonic.exe to adjust ultrasonics." name="description" /><meta content="GUID-EE0494A7-49B7-45FF-B657-3CE8E6B2865B.html" name="DC.Relation" scheme="URI" /><meta content="GUID-02D7374B-507D-40D3-9A72-84D3D676794F.html" name="DC.Relation" scheme="URI" /><meta content="GUID-EE0494A7-49B7-45FF-B657-3CE8E6B2865B.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>18.6.6 Using TestUltrasonic.exe</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-DE28D48F-6B20-44A7-A892-403A129B9A82.html" rel="prev" /><link href="GUID-DEB4002D-AE12-4D90-8D04-44165F8B8D8C.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e3552" data-relpath="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Using TestUltrasonic.exe </h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to use TestUltrasonic.exe to adjust ultrasonics. 
+  </p> 
+	 <section class="section context" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">If the AU fails to initialize ultrasonics during initialization, the reagent pipettor is disabled and adjustments cannot be run in the 
+		<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-34EE83BA-000A-4937-9618-D4EF577A44A1">Ultrasonics Adjustment</span> screen. Until the software is updated to prevent this scenario, use the TestUltrasonic.exe program on the AU. 
+		<p class="p"> TestUltrasonic.exe is located in the C:\AU folder on the AU. 
+		</p> 
+		<div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-907A3343-9BAF-4009-8FF2-E784C2F5451F"><span class="note__title">Caution:</span>  The ultrasonics adjustment must be performed through the user interface after performing the adjustment using TestUltrasonics.exe. 
+		</div> 
+		 
+		<figure class="fig fignone" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__FIG_1C0EE5320E9D437E81C4D425E7186C19"><br /><img class="image" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__IMAGE_9F65A8504C3E49558CC5148E22EB7FB5" src="GUID-DD6F61D3-01FE-42EF-BB0A-9B0C96BFE44A-default.gif" /><br /> 
+		</figure> 
+		<table class="table" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32"><caption><span class="title" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-DFEBBB0C-B418-4B4C-8DC9-0FF3F05C4189">Table 83: Typical Power Levels for the Ultrasonics Adjustment</span><span class="desc tabledesc"> 
+		  <div class="note note note_note" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-03B0D61B-8548-4529-B335-B3676EE904ED"><span class="note__title">Note:</span> A power level 4 above 825 can indicate a hardware problem. Contact tech support for further assistance. 
+		  </div> 
+		</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry align-left valign-top" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1"> Power Level 
+				</th> 
+				<th class="entry align-left valign-top" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2"> Expected 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1 "> 1 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2 "> approximately 200 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1 "> 2 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2 "> approximately 500 to 600 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1 "> 3 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2 "> approximately 600 to 700 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1 "> 4 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2 "> approximately 700 to 800 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0EA387C3-009D-4CE0-A3CB-EE6CD3234245"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e20">Drain the tubing. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e25"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e27">From the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e29">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e32"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e33">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e35"> Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e37">Digital Devices 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e39">Peristaltic and Vacuum Pumps</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e44"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e46">Enable the vacuum pump for the pipettor being serviced. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e50"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e52">Verify that the pipettor is directly over the wash tower. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e56"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e58">Remove the fitting from the pipettor precision pump and allow the wash buffer to drain into the wash tower. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e63"><span class="note__title">Caution:</span> When draining wash buffer from the tubing, do not let fluid leak onto the instrument or any of the instrument components. When disconnecting the tubing, hold a dry towel at the in-line fitting. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e68"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e70">After the tubing is drained, disable the vacuum pump and exit the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e72">Digital Devices</span> screen. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-46FFEE3A-A79E-4AA6-A55D-ABB525FE8CC5"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e23">Open a connection between the console PC and the AU. 
+		  </span> 
+		  <div class="itemgroup info">
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e29">For Windows XP: 
+				</strong>
+			 </p>
+		  </div>
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e34" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e36"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e38">Press the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e40">[Windows]</span> key, and then select 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e43"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e44">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e46">Programs</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e48">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e50">Remote Desktop Connection to AU PC</span></span> to start desktop sharing. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p">The remote desktop connects to the instrument computer and allows remote control of the instrument and applications. When connected, the 
+					 <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e58">Remote Desktop</span> window displays the Windows XP desktop of the instrument. 
+				  </p> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e64"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e66">To navigate the AU desktop: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e71"> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e73">Use the scroll bars on the right and bottom of the window. 
+					 </li> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e76">Move down the scroll bar on the right to see the AU desktop toolbar, 
+					 </li> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e79">The PC toolbar is at the bottom of the screen. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e85"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e87"> To switch between the console PC display and the AU display: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e92"> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e94">To return to the console PC display, use the minimize button at the top of the 
+						<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e96"> AUSETUPPC</span> screen. 
+					 </li> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e100">To restore the 
+						<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e102">AU Windows</span> screen, select 
+						<span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e105">AUSETUPPC Remote Desktop Connection</span> in the toolbar at the bottom of the console PC display. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info">
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e116">For Windows 8: 
+				</strong>
+			 </p>
+		  </div>
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e121" type="a">
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e123">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e125">Press the 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e127">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e130">remote</strong>, and open the Remote Desktop Connection program. 
+				</span>
+				<div class="itemgroup info">
+				  <p class="p">The remote desktop connects to the instrument computer and allows remote control of the instrument and applications. When connected, the 
+					 <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e138">Remote Desktop</span> window displays the Windows 8 desktop of the instrument. 
+				  </p>
+				</div>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e144">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e146">Type in 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e148">192.168.2.4</strong> into the Computer field and select Connect. 
+				</span>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e153">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e155">Enter 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e157">user</strong> for User Name and 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e160">tech</strong> for the password if prompted. 
+				</span>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e165">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e167">If prompted at the RDS warning screen, check the box for &quot;Don&#39;t ask me again for connections to this computer&quot; and select 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e169">Yes</strong>. 
+				</span>
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e175"><span class="note__title">Note:</span> For Windows 8, the default console IP address is 192.168.2.3 and the AU IP address is 192.168.2.4. Neither IP address changes during the software load process. 
+				  </div>
+				</div>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e180">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e182">To switch between the console PC display and the AU display: 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e187">
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e189">To return to the console PC display, use the minimize button at the top of the 
+						<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e191"> AU Desktop</span> screen.
+					 </li>
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e195">To restore the 
+						<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e197">AU Desktop</span> screen, press the 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e200">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e203">remote</strong>, and open the Remote Desktop Connection program. 
+					 </li>
+				  </ul>
+				</div>
+			 </li>
+		  </ol>
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Prepare for the ultrasonics adjustment. 
+		  </span> 
+		  <div class="itemgroup info">
+			 <p class="p">
+			 </p>
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-B5983E99-AD39-46A3-B9C9-1267D347168C">For Windows XP AU with Software 5.2 and below: 
+				</strong>
+			 </p>
+		  </div>
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEPS_41DC0D8B3E3844A7BDACDAA23F2D1A30" type="a"> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_E3366404611F4707986F680C448BD20A"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-1837C40F-DFA9-4755-B61D-8928FF725A63">Right-click on the AU application icon located on the task bar (large Y icon), and select 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-A49A77BC-98CF-4ABE-90E1-AF38A05ACB3C">Exit</span> to exit the AU application. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_89B14B5370154127B8E2D13D992EB818"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-63296696-2091-4D5E-92D1-677C1CB78C2F">Select 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-82E244E6-D0B0-43E5-A3B7-A827FD4F02CC"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AA06C593-6CED-4D31-8307-B6B33B173CFE">Start</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AB824F30-161E-484B-B6E7-071C5A5CB278">All Programs</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-5F780513-108A-4586-9866-CCDF161E17D3">Windows Explorer 
+					 </span></span> or double-click the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-602FF0D5-47A1-4C1B-9011-E25E0A1F9ED5">Windows Explorer</span> icon on the desktop to open Windows Explorer. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_7C3C34B3EAC24282BDCF2A7407FBEFAE"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-2679DC7E-97C1-452C-8F45-CF81765F29AB">Navigate to the C:\AU folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_4AFEAE5D709E46EB9C0CEEC64579C7A6"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-A294621F-8A37-4F92-A5D4-837642323497">Locate and open TestUltrasonic.exe. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info">
+			 <p class="p">
+			 </p>
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-494B9D3A-844A-461E-AF72-5E21192320A5">For Windows 8 AU with Software 5.3.1 and above: 
+				</strong>
+			 </p>
+		  </div>
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEPS_4D46B6A7939E478CAB802BBDC232E4AF" type="a">
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_FBA4B73AEC3F4ADD87643B679A200D5A">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-6CB799F8-8B43-4752-838E-A5C2A85AA01C">Shut down the AU Object program. 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_06B63ACBCB864D10A10995A0B02E0AC1">
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_046464B7730F4DE9A52F67EFEB806400">Right click on the task bar and select 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-E44F3BA7-AA47-4018-A40F-F56AB8BEE779">Task Manager</strong>. 
+					 </li>
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_AD2F797894B343BA8B2E4B008C50BB32">In the 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-48DBD892-3151-4079-9E63-8633976EBC42">Task Manager 
+						</strong>box, click on 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-C57CAB70-2501-4181-97E5-8270484DC54E">Processes</strong>, select 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-28D8CC48-EBEB-4633-AABC-9319EDBB9A17">AUobj Module</strong>, and click on 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-A7684551-31EB-43BF-B746-8A759BCE36A0">End Task</strong> in the bottom corner of the box.
+					 </li>
+				  </ul>
+				</div>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_C7938CB2030840538F6A7CC2AF5C5143">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-6500274D-A894-4CDB-B1D3-2FA11DD4E136">Navigate to 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-6F34C997-7A73-489C-A7B5-33CB5D2AC78E">Computer &gt; Local Disk (C:) or AU_PC &gt; AU</strong>. 
+				</span>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_7DC6E665D0D349428D750FC4C27916D8">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0001227F-A89F-4D8B-8ECE-E7B2AE4E6A1F">Locate and open TestUltrasonic.exe. 
+				</span>
+			 </li>
+		  </ol>
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__STEP_B6E0AB63974A4BEC8295AE064D827681"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-1156CD25-300E-442E-AF73-F88C9248BCAC">Adjust ultrasonics using TestUltrasonic.exe. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-BD14E8F1-198E-4E4E-9EF7-2CF77B05103E"><span class="note__title">Caution:</span>  Perform these steps precisely as listed to ensure the TestUltrasonic.exe program functions correctly. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEPS_238320A8CC774B368AAF2629CA6EAEE0" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_6C60EF473B3A4F70B1B4537D4DD02484"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AC050D87-24B5-4031-9C7C-6364A8E2042B">Use the arrow keys next to the reagent pipettor list to display the desired pipettor, and then left-click on the pipettor display to highlight the selection. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-1840A04B-3A32-4A52-A55D-51F406271E0B"><span class="note__title">Caution:</span>  
+					 <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_41528802454933241528802454933341"> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454933541528802454933641"> Do not left-click more than once on the pipettor display. 
+						</li> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454933841528802454933941"> Do not select the 
+						  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-5C57D0DA-38D3-4F28-8812-2F35B1110613">Open</span> button. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_1F3A61267DE6466D93EF51F04D51916D"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-EA7DED96-09CA-4602-9AAD-76FFD1DA5CDB">Select the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0BE1100B-C7E0-4602-84EB-B68E77980D96">Set Sweep</span> button. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-81957307-2573-4341-A211-79476D3A108F"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_41528802454934141528802454934241"> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454934441528802454934541">The Sweep window should be between 500 and 1000. 
+						</li> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454934741528802454934841"> If the Set Sweep failed, then the Sweep window displays a large and erratic number. 
+						</li> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454935041528802454935141"> During Set Sweep, the Probe Voltage and Output Frequency Status windows seem to be locked. When Set Sweep is finished, these numbers begin to drop steadily and are the only indication that Set Sweep is finished. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_87DD2EF6934B4117A3319D729ED180C8"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0B0CEE03-153F-4574-BB8A-2AE680603FD7">In the automatic section of the Test Ultrasonics screen (bottom right), set: 
+				</span> 
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_41528802454935341528802454935441"> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454935641528802454935741"> Voltage to 197. 
+					 </li> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454935941528802454936041"> Probe frequency (depends on the transducer version): 
+						<ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_41528802454936241528802454936341"> 
+						  <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454936541528802454936641"> CnS transducer to 36200. 
+						  </li> 
+						  <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454936841528802454936941"> Non-CnS transducer to the setting from the label on the pipettor gantry. 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ul> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_530983661350454E8799F2467345554F"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AAC5664D-CF1D-40E0-9B60-1AAC8169C39E">Select the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-134BDD29-F85F-409F-A435-8C115DF88FF3">Single Point Cal</span> button to start the adjustment. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_4B4F89AE98C34541BF687179B56744B5"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-EB894B19-B7A2-49D1-88C0-ADB0AC35C301">Select 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AC0A7A5B-835E-4A68-B562-B3A4D2EB0DEC"><span class="keyword apiname" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0EC7743E-9676-4462-89B6-E6B19E907832">OK</span></span> at the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-D9E30ACD-80AC-49A6-ABCC-32D4F7840E5F">Power Levels</span> popup window. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-25437D17-E98F-41AA-BF98-66BD063F7C4A"><span class="note__title">Note:</span> During the single point cal function, the Probe Voltage and Output Frequency Status windows seem to be locked. When the single point cal function is finished, these numbers begin to drop steadily and the Power Level 4 windows are updated. These changes are the only indications that the single point cal function is finished. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_BB3D8B786669448286E99B6A305F2F0B"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-3E38D510-B5BF-4145-BD99-9AA30A538936">Exit the TestUltrasonic.exe screen when finished. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-DD1972D9-52F5-4485-9F02-F21F211124DB"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e214">Close the desktop sharing connection. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e220">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e225" type="a"> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e227"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e229">From the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e231">AU Desktop</span>, select 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e234"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e235">Start</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e237">Disconnect</span></span> or select the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e240">X</span> in the upper right corner. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e245"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e247">Select 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e249">OK</span> at the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e252">Disconnect Windows Session</span> pop-up.<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e255"></strong> 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e263">For Windows 8: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e268" type="a"> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e270"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e272">From the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e274">AU Desktop</span>, right click on 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e277"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e278">Remote Desktop Connection icon on the upper left corner or on the task bar</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e280">Close</span></span> or select the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e283">X</span> in the upper right corner. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e288"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e290">Select 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e292">OK</span> at the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e295">Your remote session will be disconnected</span> pop-up.<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e298"></strong> 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__STEP_27225CEA0ED741C884FDD54E9BC87860"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-9DF9EC2F-CADD-44E9-83A9-56D4241826CF">Always perform the following steps after successfully adjusting the ultrasonics from the TestUltrasonics.exe program. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEPS_7E96DD46337B457F813E5F717224673C" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_C6DACF8D8B4546D3867664336DE89579"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-B0F74274-0189-48A9-BC01-F4B2B49CC308">Relaunch the AU (double-click on the desktop shortcut). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-71064C52-D762-480B-BDED-4A39D7AA53C6"><span class="note__title">Caution:</span>  Confirm that pipettor tubing has been reconnected after draining. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_865366203DAA4A5987FDB61DA1E82BA5"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-D6F4F17C-3CDC-42DF-9519-96AA709A72B2">Confirm that all pipettors are enabled in the Supplies screen. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_A23B5308A24E49B7A420BF868A1EA8BC"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-02178512-C570-4B95-A9C7-C46E51594DAE">Navigate to the Ultrasonics Adjustment screen and perform the adjustment on the desired pipettors. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-C6328B7A-9C1E-4046-94A8-886F2A0D6C9E"><span class="note__title">Caution:</span>  Confirm that the pipettor tubing is drained before the adjustment. The tubing will contain buffer after relaunching the AU. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-EE0494A7-49B7-45FF-B657-3CE8E6B2865B.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-02D7374B-507D-40D3-9A72-84D3D676794F.html" title="18 Reagent Pipettor Module"><div><span class="ph num-prefix">18 </span>Reagent Pipettor Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-EE0494A7-49B7-45FF-B657-3CE8E6B2865B.html" title="18.6 Troubleshooting / Testing"><div><span class="ph num-prefix">18.6 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC.html" lang="en-US" title="18.6.6 Using TestUltrasonic.exe "><div><span class="ph num-prefix">18.6.6 </span>Using TestUltrasonic.exe </div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Using TestUltrasonic.exe </h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to use TestUltrasonic.exe to adjust ultrasonics. 
+  </p> 
+	 <section class="section context" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">If the AU fails to initialize ultrasonics during initialization, the reagent pipettor is disabled and adjustments cannot be run in the 
+		<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-34EE83BA-000A-4937-9618-D4EF577A44A1">Ultrasonics Adjustment</span> screen. Until the software is updated to prevent this scenario, use the TestUltrasonic.exe program on the AU. 
+		<p class="p"> TestUltrasonic.exe is located in the C:\AU folder on the AU. 
+		</p> 
+		<div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-907A3343-9BAF-4009-8FF2-E784C2F5451F"><span class="note__title">Caution:</span>  The ultrasonics adjustment must be performed through the user interface after performing the adjustment using TestUltrasonics.exe. 
+		</div> 
+		 
+		<figure class="fig fignone" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__FIG_1C0EE5320E9D437E81C4D425E7186C19"><br /><img class="image" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__IMAGE_9F65A8504C3E49558CC5148E22EB7FB5" src="GUID-DD6F61D3-01FE-42EF-BB0A-9B0C96BFE44A-default.gif" /><br /> 
+		</figure> 
+		<table class="table" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32"><caption><span class="title" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-DFEBBB0C-B418-4B4C-8DC9-0FF3F05C4189">Table 83: Typical Power Levels for the Ultrasonics Adjustment</span><span class="desc tabledesc"> 
+		  <div class="note note note_note" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-03B0D61B-8548-4529-B335-B3676EE904ED"><span class="note__title">Note:</span> A power level 4 above 825 can indicate a hardware problem. Contact tech support for further assistance. 
+		  </div> 
+		</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry align-left valign-top" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1"> Power Level 
+				</th> 
+				<th class="entry align-left valign-top" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2"> Expected 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1 "> 1 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2 "> approximately 200 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1 "> 2 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2 "> approximately 500 to 600 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1 "> 3 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2 "> approximately 600 to 700 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__1 "> 4 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__TABLE11_508D87C459C5F5998625701A004D7E32__entry__2 "> approximately 700 to 800 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0EA387C3-009D-4CE0-A3CB-EE6CD3234245"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e20">Drain the tubing. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e25"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e27">From the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e29">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e32"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e33">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e35"> Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e37">Digital Devices 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e39">Peristaltic and Vacuum Pumps</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e44"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e46">Enable the vacuum pump for the pipettor being serviced. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e50"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e52">Verify that the pipettor is directly over the wash tower. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e56"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e58">Remove the fitting from the pipettor precision pump and allow the wash buffer to drain into the wash tower. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e63"><span class="note__title">Caution:</span> When draining wash buffer from the tubing, do not let fluid leak onto the instrument or any of the instrument components. When disconnecting the tubing, hold a dry towel at the in-line fitting. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e68"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e70">After the tubing is drained, disable the vacuum pump and exit the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d71e72">Digital Devices</span> screen. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-46FFEE3A-A79E-4AA6-A55D-ABB525FE8CC5"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e23">Open a connection between the console PC and the AU. 
+		  </span> 
+		  <div class="itemgroup info">
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e29">For Windows XP: 
+				</strong>
+			 </p>
+		  </div>
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e34" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e36"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e38">Press the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e40">[Windows]</span> key, and then select 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e43"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e44">Start 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e46">Programs</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e48">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e50">Remote Desktop Connection to AU PC</span></span> to start desktop sharing. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <p class="p">The remote desktop connects to the instrument computer and allows remote control of the instrument and applications. When connected, the 
+					 <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e58">Remote Desktop</span> window displays the Windows XP desktop of the instrument. 
+				  </p> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e64"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e66">To navigate the AU desktop: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e71"> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e73">Use the scroll bars on the right and bottom of the window. 
+					 </li> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e76">Move down the scroll bar on the right to see the AU desktop toolbar, 
+					 </li> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e79">The PC toolbar is at the bottom of the screen. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e85"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e87"> To switch between the console PC display and the AU display: 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e92"> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e94">To return to the console PC display, use the minimize button at the top of the 
+						<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e96"> AUSETUPPC</span> screen. 
+					 </li> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e100">To restore the 
+						<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e102">AU Windows</span> screen, select 
+						<span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e105">AUSETUPPC Remote Desktop Connection</span> in the toolbar at the bottom of the console PC display. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info">
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e116">For Windows 8: 
+				</strong>
+			 </p>
+		  </div>
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e121" type="a">
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e123">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e125">Press the 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e127">Windows</strong> key, type 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e130">remote</strong>, and open the Remote Desktop Connection program. 
+				</span>
+				<div class="itemgroup info">
+				  <p class="p">The remote desktop connects to the instrument computer and allows remote control of the instrument and applications. When connected, the 
+					 <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e138">Remote Desktop</span> window displays the Windows 8 desktop of the instrument. 
+				  </p>
+				</div>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e144">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e146">Type in 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e148">192.168.2.4</strong> into the Computer field and select Connect. 
+				</span>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e153">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e155">Enter 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e157">user</strong> for User Name and 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e160">tech</strong> for the password if prompted. 
+				</span>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e165">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e167">If prompted at the RDS warning screen, check the box for &quot;Don&#39;t ask me again for connections to this computer&quot; and select 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e169">Yes</strong>. 
+				</span>
+				<div class="itemgroup info">
+				  <div class="note note note_note" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e175"><span class="note__title">Note:</span> For Windows 8, the default console IP address is 192.168.2.3 and the AU IP address is 192.168.2.4. Neither IP address changes during the software load process. 
+				  </div>
+				</div>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e180">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e182">To switch between the console PC display and the AU display: 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e187">
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e189">To return to the console PC display, use the minimize button at the top of the 
+						<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e191"> AU Desktop</span> screen.
+					 </li>
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e195">To restore the 
+						<span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e197">AU Desktop</span> screen, press the 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e200">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e203">remote</strong>, and open the Remote Desktop Connection program. 
+					 </li>
+				  </ul>
+				</div>
+			 </li>
+		  </ol>
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Prepare for the ultrasonics adjustment. 
+		  </span> 
+		  <div class="itemgroup info">
+			 <p class="p">
+			 </p>
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-B5983E99-AD39-46A3-B9C9-1267D347168C">For Windows XP AU with Software 5.2 and below: 
+				</strong>
+			 </p>
+		  </div>
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEPS_41DC0D8B3E3844A7BDACDAA23F2D1A30" type="a"> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_E3366404611F4707986F680C448BD20A"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-1837C40F-DFA9-4755-B61D-8928FF725A63">Right-click on the AU application icon located on the task bar (large Y icon), and select 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-A49A77BC-98CF-4ABE-90E1-AF38A05ACB3C">Exit</span> to exit the AU application. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_89B14B5370154127B8E2D13D992EB818"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-63296696-2091-4D5E-92D1-677C1CB78C2F">Select 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-82E244E6-D0B0-43E5-A3B7-A827FD4F02CC"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AA06C593-6CED-4D31-8307-B6B33B173CFE">Start</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AB824F30-161E-484B-B6E7-071C5A5CB278">All Programs</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-5F780513-108A-4586-9866-CCDF161E17D3">Windows Explorer 
+					 </span></span> or double-click the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-602FF0D5-47A1-4C1B-9011-E25E0A1F9ED5">Windows Explorer</span> icon on the desktop to open Windows Explorer. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_7C3C34B3EAC24282BDCF2A7407FBEFAE"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-2679DC7E-97C1-452C-8F45-CF81765F29AB">Navigate to the C:\AU folder. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_4AFEAE5D709E46EB9C0CEEC64579C7A6"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-A294621F-8A37-4F92-A5D4-837642323497">Locate and open TestUltrasonic.exe. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info">
+			 <p class="p">
+			 </p>
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-494B9D3A-844A-461E-AF72-5E21192320A5">For Windows 8 AU with Software 5.3.1 and above: 
+				</strong>
+			 </p>
+		  </div>
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEPS_4D46B6A7939E478CAB802BBDC232E4AF" type="a">
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_FBA4B73AEC3F4ADD87643B679A200D5A">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-6CB799F8-8B43-4752-838E-A5C2A85AA01C">Shut down the AU Object program. 
+				</span>
+				<div class="itemgroup info">
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_06B63ACBCB864D10A10995A0B02E0AC1">
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_046464B7730F4DE9A52F67EFEB806400">Right click on the task bar and select 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-E44F3BA7-AA47-4018-A40F-F56AB8BEE779">Task Manager</strong>. 
+					 </li>
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_AD2F797894B343BA8B2E4B008C50BB32">In the 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-48DBD892-3151-4079-9E63-8633976EBC42">Task Manager 
+						</strong>box, click on 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-C57CAB70-2501-4181-97E5-8270484DC54E">Processes</strong>, select 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-28D8CC48-EBEB-4633-AABC-9319EDBB9A17">AUobj Module</strong>, and click on 
+						<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-A7684551-31EB-43BF-B746-8A759BCE36A0">End Task</strong> in the bottom corner of the box.
+					 </li>
+				  </ul>
+				</div>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_C7938CB2030840538F6A7CC2AF5C5143">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-6500274D-A894-4CDB-B1D3-2FA11DD4E136">Navigate to 
+				  <strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-6F34C997-7A73-489C-A7B5-33CB5D2AC78E">Computer &gt; Local Disk (C:) or AU_PC &gt; AU</strong>. 
+				</span>
+			 </li>
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_7DC6E665D0D349428D750FC4C27916D8">
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0001227F-A89F-4D8B-8ECE-E7B2AE4E6A1F">Locate and open TestUltrasonic.exe. 
+				</span>
+			 </li>
+		  </ol>
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__STEP_B6E0AB63974A4BEC8295AE064D827681"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-1156CD25-300E-442E-AF73-F88C9248BCAC">Adjust ultrasonics using TestUltrasonic.exe. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-BD14E8F1-198E-4E4E-9EF7-2CF77B05103E"><span class="note__title">Caution:</span>  Perform these steps precisely as listed to ensure the TestUltrasonic.exe program functions correctly. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEPS_238320A8CC774B368AAF2629CA6EAEE0" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_6C60EF473B3A4F70B1B4537D4DD02484"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AC050D87-24B5-4031-9C7C-6364A8E2042B">Use the arrow keys next to the reagent pipettor list to display the desired pipettor, and then left-click on the pipettor display to highlight the selection. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-1840A04B-3A32-4A52-A55D-51F406271E0B"><span class="note__title">Caution:</span>  
+					 <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_41528802454933241528802454933341"> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454933541528802454933641"> Do not left-click more than once on the pipettor display. 
+						</li> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454933841528802454933941"> Do not select the 
+						  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-5C57D0DA-38D3-4F28-8812-2F35B1110613">Open</span> button. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_1F3A61267DE6466D93EF51F04D51916D"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-EA7DED96-09CA-4602-9AAD-76FFD1DA5CDB">Select the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0BE1100B-C7E0-4602-84EB-B68E77980D96">Set Sweep</span> button. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-81957307-2573-4341-A211-79476D3A108F"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_41528802454934141528802454934241"> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454934441528802454934541">The Sweep window should be between 500 and 1000. 
+						</li> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454934741528802454934841"> If the Set Sweep failed, then the Sweep window displays a large and erratic number. 
+						</li> 
+						<li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454935041528802454935141"> During Set Sweep, the Probe Voltage and Output Frequency Status windows seem to be locked. When Set Sweep is finished, these numbers begin to drop steadily and are the only indication that Set Sweep is finished. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_87DD2EF6934B4117A3319D729ED180C8"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0B0CEE03-153F-4574-BB8A-2AE680603FD7">In the automatic section of the Test Ultrasonics screen (bottom right), set: 
+				</span> 
+				  <ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_41528802454935341528802454935441"> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454935641528802454935741"> Voltage to 197. 
+					 </li> 
+					 <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454935941528802454936041"> Probe frequency (depends on the transducer version): 
+						<ul class="ul" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__UL_41528802454936241528802454936341"> 
+						  <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454936541528802454936641"> CnS transducer to 36200. 
+						  </li> 
+						  <li class="li" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__LI_41528802454936841528802454936941"> Non-CnS transducer to the setting from the label on the pipettor gantry. 
+						  </li> 
+						</ul> 
+					 </li> 
+				  </ul> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_530983661350454E8799F2467345554F"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AAC5664D-CF1D-40E0-9B60-1AAC8169C39E">Select the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-134BDD29-F85F-409F-A435-8C115DF88FF3">Single Point Cal</span> button to start the adjustment. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_4B4F89AE98C34541BF687179B56744B5"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-EB894B19-B7A2-49D1-88C0-ADB0AC35C301">Select 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-AC0A7A5B-835E-4A68-B562-B3A4D2EB0DEC"><span class="keyword apiname" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-0EC7743E-9676-4462-89B6-E6B19E907832">OK</span></span> at the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-D9E30ACD-80AC-49A6-ABCC-32D4F7840E5F">Power Levels</span> popup window. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-25437D17-E98F-41AA-BF98-66BD063F7C4A"><span class="note__title">Note:</span> During the single point cal function, the Probe Voltage and Output Frequency Status windows seem to be locked. When the single point cal function is finished, these numbers begin to drop steadily and the Power Level 4 windows are updated. These changes are the only indications that the single point cal function is finished. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_BB3D8B786669448286E99B6A305F2F0B"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-3E38D510-B5BF-4145-BD99-9AA30A538936">Exit the TestUltrasonic.exe screen when finished. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-DD1972D9-52F5-4485-9F02-F21F211124DB"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e214">Close the desktop sharing connection. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e220">For Windows XP: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e225" type="a"> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e227"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e229">From the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e231">AU Desktop</span>, select 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e234"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e235">Start</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e237">Disconnect</span></span> or select the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e240">X</span> in the upper right corner. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e245"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e247">Select 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e249">OK</span> at the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e252">Disconnect Windows Session</span> pop-up.<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e255"></strong> 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"><strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e263">For Windows 8: 
+				</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e268" type="a"> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e270"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e272">From the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e274">AU Desktop</span>, right click on 
+				  <span class="ph menucascade" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e277"><span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e278">Remote Desktop Connection icon on the upper left corner or on the task bar</span> &gt; <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e280">Close</span></span> or select the 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e283">X</span> in the upper right corner. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e288"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e290">Select 
+				  <span class="ph uicontrol" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e292">OK</span> at the 
+				  <span class="keyword wintitle" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e295">Your remote session will be disconnected</span> pop-up.<strong class="ph b" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__d86e298"></strong> 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__STEP_27225CEA0ED741C884FDD54E9BC87860"> 
+		  <span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-9DF9EC2F-CADD-44E9-83A9-56D4241826CF">Always perform the following steps after successfully adjusting the ultrasonics from the TestUltrasonics.exe program. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEPS_7E96DD46337B457F813E5F717224673C" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_C6DACF8D8B4546D3867664336DE89579"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-B0F74274-0189-48A9-BC01-F4B2B49CC308">Relaunch the AU (double-click on the desktop shortcut). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-71064C52-D762-480B-BDED-4A39D7AA53C6"><span class="note__title">Caution:</span>  Confirm that pipettor tubing has been reconnected after draining. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_865366203DAA4A5987FDB61DA1E82BA5"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-D6F4F17C-3CDC-42DF-9519-96AA709A72B2">Confirm that all pipettors are enabled in the Supplies screen. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__SUBSTEP_A23B5308A24E49B7A420BF868A1EA8BC"> 
+				<span class="ph cmd" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-02178512-C570-4B95-A9C7-C46E51594DAE">Navigate to the Ultrasonics Adjustment screen and perform the adjustment on the desired pipettors. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note caution note_caution" id="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC__GUID-C6328B7A-9C1E-4046-94A8-886F2A0D6C9E"><span class="note__title">Caution:</span>  Confirm that the pipettor tubing is drained before the adjustment. The tubing will contain buffer after relaunching the AU. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-EE0494A7-49B7-45FF-B657-3CE8E6B2865B.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-02D7374B-507D-40D3-9A72-84D3D676794F.html" title="18 Reagent Pipettor Module"><div><span class="ph num-prefix">18 </span>Reagent Pipettor Module</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-EE0494A7-49B7-45FF-B657-3CE8E6B2865B.html" title="18.6 Troubleshooting / Testing"><div><span class="ph num-prefix">18.6 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-459ECFC9-A0F2-40E0-9B8C-D29D7224ADDC.html" lang="en-US" title="18.6.6 Using TestUltrasonic.exe "><div><span class="ph num-prefix">18.6.6 </span>Using TestUltrasonic.exe </div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

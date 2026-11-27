@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" name="DC.Relation" scheme="URI" /><meta content="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" name="DC.Relation" scheme="URI" /><meta content="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="July 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BK" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="10/07/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="C65079" name="FBCPARTNUM" /><meta content="None" name="FBCMANUFACTUREDBY" /><meta content="Service" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="16/06/2026 18:37:18" name="FISHPUBREVIEWENDDATE" /><meta content="10/07/2026 16:28:15" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4" name="FMAPID" /><meta content="07/07/2026 18:25:47" name="MODIFIED-ON" /><meta content="16/06/2026 20:29:13" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-E0B2E065-B380-4B5E-AC7F-13F39D148EBC" name="FISHMASTERREF" /><meta content="DxI 9000 Service Manual-v37-GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4-20260616 20:29:13" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BK" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="37" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI 9000 Service Manual" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="yes" name="print" /><meta content="no" name="printAll" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>25.3.13 Analyzing Log Files</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-302A92BC-8E8B-451E-BEEF-58C2F1851338.html" rel="prev" /><link href="GUID-C63A3235-52F0-45A6-A9DE-CCF7B423698C.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e298" data-relpath="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI 9000 Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI 9000 Service Manual</span><span id="emailpub">Publication: DxI 9000 Service Manual</span><span id="emailpartnum">Part Number: C65079</span><span id="emailrev">Revision: BK</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-559E1B5A-4958-4CE9-8ADA-18309B966659" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8" role="article"> 
+  <h1 class="title topictitle1" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-559E1B5A-4958-4CE9-8ADA-18309B966659"><a id="GUID-559E1B5A-4958-4CE9-8ADA-18309B966659"></a>Analyzing Log Files</h1> 
+  <div class="body taskbody"> 
+	 <section class="section context" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-67CB364A-A431-4393-A4A0-51AB71915B33"> 
+		<p class="p">This topic includes information about how to analyze DxI 9000 log files. 
+		</p> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12"><caption></caption><colgroup><col style="width:100%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1">Table of Contents 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-66573C78-0DA9-4CF9-9BA2-E53D197C16CE">Log Locations</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-5A368AD2-74E9-4366-82D5-3B7FA37C30F4">Log File Types</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-9EF88A0E-DCE8-49E0-B385-45D317C55604">Log Entry Structure</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-507A7F7D-9FD3-4528-A5C0-740C6C6720F8">Machine Control Log Command Execution</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-F504896A-2494-47FC-9CB9-D18BA4DCEA6E">Elements of Troubleshooting an Error Using Log Files</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E109A8B2-5AAB-4269-BA24-5A9CDFAA8238">Concepts of Log File Examination</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-4F27DDB4-CE0C-4F6D-9646-13C91C5B9DA4">Summary</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-66573C78-0DA9-4CF9-9BA2-E53D197C16CE">Log Locations</strong> 
+		</p> 
+		<p class="p"> All Logs are found in their respective folders on the instrument in 
+		  <span class="ph filepath" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E4A0EFDB-80A7-4CF6-AF2F-39CC36ADD8A8">D:\ProgramData\Beckman Coulter\Logs</span>. 
+		</p> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-5A368AD2-74E9-4366-82D5-3B7FA37C30F4">Log File Types</strong> 
+		</p> 
+		<p class="p">Log files are in plain text. 
+		</p> 
+		<div class="p"> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1">Name 
+				  </th> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2">Details 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1 ">Falcon Machine Control 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2 "> Records all hardware instructions. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1 "> Dolphin.Falcon.Application.ConsoleApp 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2 ">Records all interactions with the console interface. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1 "> DACs: 
+					 <ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_B989A7A2D29345ACBADB9645C40859B0"> 
+						<li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_04AB02A2BE3B45FCA9062AB304287F3E">SampleDAC 
+						</li> 
+						<li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_4B0CE3DE57FB49FB80D418949F125EB8">SupplyDAC 
+						</li> 
+						<li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_08A0F757E8414088ACB081741C01912E">CalibrationDAC 
+						</li> 
+						<li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_ADC40C8E58EC48E4A40BFF0D31814BDA">RMSConnectorDAC 
+						</li> 
+					 </ul> 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2 "> 
+					 <p class="p">Record all interactions with the console interface. 
+					 </p> 
+					 <div class="p"> 
+						<div class="note note note_note" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-52DC2123-4D13-425B-9A95-8F5D575FDC23"><span class="note__title">Note:</span> Mostly used by software developers for indepth troubleshooting. 
+						</div> 
+					 </div> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1 ">Agents 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2 ">Records interaction with background processes. 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-9EF88A0E-DCE8-49E0-B385-45D317C55604">Log Entry Structure</strong> 
+		</p> 
+		<p class="p">Log: 
+		</p> 
+		<p class="p"> 
+		  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-5847BE56-628D-4FB2-9E7D-3B672EC3D40D">2020-04-08 16:01:00.764</strong>|5|<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-800756A5-A44F-453E-B242-2799A68FA087">Info</strong>||Trace|StepperMotor.cs|<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-34C2DC6E-321D-444F-85D6-0917C9BCCDA3">MoveRelativeAsync</strong>|600|<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-67DF899A-E606-4CFD-B10E-8895AC5F0DF8">AliquotSamplePipettor.ZAxis.Motor</strong>|DeviceActionStart(MoveRelativeAsync):Data(-711,8):<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-4D728A17-AA72-4C8D-AB84-8ECB66024873">Phase(Passenger transfer phase</strong>):Cycle(20234):<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-2EEC057F-758B-4F3E-A70B-203FB0D42337">TimeInCycle(1263)</strong>:Status(Ok)|2020-04-08 16:01:00.764830 
+		</p> 
+		<div class="p"> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1">Entry 
+				  </th> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2">Details 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">Times 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> 
+					 <p class="p"> 2020-04-08 16:01:00.764 - when this log statement was added to the log file. 
+					 </p> 
+					 <p class="p"> 2020-04-08 16:01:00.764830 - when this actually happen. 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">Info 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> Severity (Info. Warning, Error, Critical) 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">MoveRelativeAsync 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> What instrument was doing. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">Data(-711,8) 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> Motor was moved from position -711 to position 8. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">Phase(Passenger transfer phase) 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> At what phase in the process this happen. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">TimeInCycle (1263) 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> This happen at 1263 milliseconds during 8 seconds Instrument Cycle 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_3EF0C8E3A25A4DC48EC92FC598F17C4B"><caption><span class="title" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-6762A03E-2326-4D38-B463-903FC7BF279B">Table 30: UTC Conversion Table</span></caption><colgroup><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /></colgroup><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-05DA958C-8528-4911-A3EE-707746F87D4E"> UTC Time</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-DFAFEA03-78F7-4E7D-A97C-1F17CBDF5EDC"> PST (UTC-8)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-CB820CC2-B0A3-4CF4-B6A9-31D180E831E5"> MST (UTC-7)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-F0509AD8-85DA-4BE3-91DE-AFB07C1DE37D"> CST (UTC-6)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-BA652EF7-36F3-4D7B-970D-93F8F6D4FDE1"> EST (UTC-5)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-9939F02F-4AD5-4FE0-B171-0906A30D5124"> GMT (UTC+0)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-82B8D6D2-765D-4BAE-8A31-F06FBB72F86B"> CET (UTC+1)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E2D3F60B-F47D-4C9B-9764-8AE7A330E32E"> EET (UTC+2)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-DB0F9C9F-A32E-4684-A6F7-E5279FAB30C4"> MSK (UTC+3)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-06CC767C-E3CF-4DF1-91F7-B37B4F526090"> IST (UTC+5:30)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E05F0995-16BD-4CC4-90DC-8E0B3C9272FB"> CST (UTC+8)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-FDB274F9-047D-4C6E-A9E4-382E17752FAB"> JST (UTC+9)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-2D45CF9D-2C41-420C-8D01-07597C446CCC"> AEDT (UTC+11)</strong> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 16:00 (Prev) 
+				</td> 
+				<td class="entry"> 17:00 (Prev) 
+				</td> 
+				<td class="entry"> 18:00 (Prev) 
+				</td> 
+				<td class="entry"> 19:00 (Prev) 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 05:30 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 17:00 (Prev) 
+				</td> 
+				<td class="entry"> 18:00 (Prev) 
+				</td> 
+				<td class="entry"> 19:00 (Prev) 
+				</td> 
+				<td class="entry"> 20:00 (Prev) 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 06:30 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 18:00 (Prev) 
+				</td> 
+				<td class="entry"> 19:00 (Prev) 
+				</td> 
+				<td class="entry"> 20:00 (Prev) 
+				</td> 
+				<td class="entry"> 21:00 (Prev) 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 07:30 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 19:00 (Prev) 
+				</td> 
+				<td class="entry"> 20:00 (Prev) 
+				</td> 
+				<td class="entry"> 21:00 (Prev) 
+				</td> 
+				<td class="entry"> 22:00 (Prev) 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 08:30 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 20:00 (Prev) 
+				</td> 
+				<td class="entry"> 21:00 (Prev) 
+				</td> 
+				<td class="entry"> 22:00 (Prev) 
+				</td> 
+				<td class="entry"> 23:00 (Prev) 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 09:30 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 21:00 (Prev) 
+				</td> 
+				<td class="entry"> 22:00 (Prev) 
+				</td> 
+				<td class="entry"> 23:00 (Prev) 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 10:30 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 22:00 (Prev) 
+				</td> 
+				<td class="entry"> 23:00 (Prev) 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 11:30 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 23:00 (Prev) 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 12:30 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 13:30 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 14:30 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 15:30 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 16:30 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 17:30 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 18:30 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 19:30 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 01:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 20:30 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+				<td class="entry"> 02:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 21:30 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+				<td class="entry"> 01:00 (Next) 
+				</td> 
+				<td class="entry"> 03:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 22:30 
+				</td> 
+				<td class="entry"> 01:00 (Next) 
+				</td> 
+				<td class="entry"> 02:00 (Next) 
+				</td> 
+				<td class="entry"> 04:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 23:30 
+				</td> 
+				<td class="entry"> 02:00 (Next) 
+				</td> 
+				<td class="entry"> 03:00 (Next) 
+				</td> 
+				<td class="entry"> 05:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 00:30 (Next) 
+				</td> 
+				<td class="entry"> 03:00 (Next) 
+				</td> 
+				<td class="entry"> 04:00 (Next) 
+				</td> 
+				<td class="entry"> 06:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 01:30 (Next) 
+				</td> 
+				<td class="entry"> 04:00 (Next) 
+				</td> 
+				<td class="entry"> 05:00 (Next) 
+				</td> 
+				<td class="entry"> 07:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+				<td class="entry"> 02:30 (Next) 
+				</td> 
+				<td class="entry"> 05:00 (Next) 
+				</td> 
+				<td class="entry"> 06:00 (Next) 
+				</td> 
+				<td class="entry"> 08:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+				<td class="entry"> 01:00 (Next) 
+				</td> 
+				<td class="entry"> 03:30 (Next) 
+				</td> 
+				<td class="entry"> 06:00 (Next) 
+				</td> 
+				<td class="entry"> 07:00 (Next) 
+				</td> 
+				<td class="entry"> 09:00 (Next) 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+		</div> 
+		<div class="p">(Prev) and (Next) defined: 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_E57D2748B87745E1B3CB5274E3F6EADE"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_172D5AE96EA94FE79274EBED74FBCDBE"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-A1E0C65C-D852-44FF-B37F-2E872E10D480">(Prev)</strong> indicates the previous day. For example, if it&#39;s 00:00 UTC and the corresponding time in PST is 16:00 (Prev), it means 16:00 on the previous day. 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_CB5E4FD68B8842638399BEDF20B30BC7"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-B949B9FE-98B1-4DF5-96E2-E2B43863D1F3">(Next)</strong> indicates the next day. For example, if it&#39;s 18:00 UTC and the corresponding time in AEDT is 05:00 (Next), it means 05:00 on the following day. 
+		  </li> 
+		</ul> 
+		</div> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-507A7F7D-9FD3-4528-A5C0-740C6C6720F8">Machine Control Log Command Execution</strong> 
+		</p> 
+		<div class="p">All commands have a start command and an end command. Commands will be bested based: 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_9004EF3F1B644701A31B9F38EC11219F"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_259B22C224AD47E79BBACBDCEE1CFC75">Subsystem 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_1E0D2001312549F098F15C345A3FBB8E">Assembly 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_405B0169545C4987BE0E6584A267FA71">Subassembly 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_D77E996B514049F2A357FF75372F455F">Device 
+		  </li> 
+		</ul> 
+		</div> 
+		<p class="p">Commands: 
+		</p> 
+		<p class="p"> AliquotSamplePipettor|SubsystemActionStart (RendezvousAndLockPosition):Data(0,TipSupply,82):Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.Assembly|AssemblyActionStart ( PreMoveMotor ):Data( AliquotSamplePipettor.ZAxis,Give_Tip,ZAxisDown ):Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.ZAxis.Motor|DeviceActionStart ( GetCurrentPosition ):Data():Phase(Sample Aliquot Action phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.ZAxis.Motor|DeviceActionEnd ( GetCurrentPosition ):Data(-428):Phase(Sample Aliquot Action phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.ZAxis.Encoder|DeviceActionStart ( GetRawPosition ):Data():Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.ZAxis.Encoder|DeviceActionEnd ( GetRawPosition ):Data(31):Phase(Passenger transfer phase):Cycle(20234) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.Assembly|AssemblyActionEnd ( PreMoveMotor ):Data( AliquotSamplePipettor.ZAxis,Give_Tip,ZAxisDown ):Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor|SubsystemActionEnd (RendezvousAndLockPosition):Data(0,TipSupply,82):Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-F504896A-2494-47FC-9CB9-D18BA4DCEA6E">Elements of Troubleshooting an Error Using Log Files</strong> 
+		</p> 
+		<div class="p"> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1">Elements 
+				  </th> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2">Details 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 ">System Event 
+					 <p class="p"><img alt="" class="image" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__IMAGE_C7B81232010C4AFEACB9275E59D18200" src="GUID-CB8F6899-7988-4942-A8AD-8427611556A0-default.png" /> 
+					 </p> 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> The system event is key to quickly finding the proper location with in the log files. If you do not have the actual system event with the time stamp, then use Intelliserve dashboard to find the time stamp of the incident you are investigating. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Log Files 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> Obtain the proper log files for issues being investigated. Points to remember Event Messages are in Local (System Time) Log files are named using UTC. You may have to obtain the full day of files which will be in a Zip archive named for the day created. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Text Editor or Viewer 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> 
+					 <p class="p"> You can use any text editor to investigate the log files. Notepad, WordPad are on the instruments. Text Editors like Notepad++ are very effective and easy to use. 
+					 </p> 
+					 <p class="p"> 
+						<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-B2B352CD-2866-4D4C-B3E2-2F889BF06201">Note:</strong> Notepad is slow with large files and is not recommended and Wordpad be used instead. When analyzing log files on the instrument is done under BeckmanAdmin and when instrument is in not running tests. 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Process doesn&#39;t matter on type of error 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> Whether the error is a movement error, sample detection error, communication error the process is the same for investigating the log files. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Process can span multiple files 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> When investigating log files remember that the investigation may span across multiple log files to find root cause 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Subsystem indicated in system event may not be the initial failure 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> Due to the complexity and speed at which the DXI 9000 operates, cascade errors may cause the subsystem indicated by the system event to be different than the actual root cause. 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E109A8B2-5AAB-4269-BA24-5A9CDFAA8238">Concepts of Log File Examination</strong> 
+		</p> 
+		<div class="p">Examine appropriate log file. 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_514844DF5B164C02BC451B467785C82B"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_7D739AA72A884F53B53B92EDC802276E"> Using the system event indicated earlier &quot;The z-axis of the RSM gripper is out of tolerance&quot; Search the appropriate log file using the editors search function to search for the system event. This will be your starting point. 
+		  </li> 
+		</ul> 
+		</div> 
+		<p class="p">Log: 
+		</p> 
+		<p class="p"><img alt="" class="image" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__IMAGE_6BC2DD4D8B2B4F5C9A285C2D3735DC92" src="GUID-BA9C81E8-2BE5-4F97-9396-148B1D83592C-default.png" /> 
+		</p> 
+		<div class="p"> Work back through time in the log file. 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_8CC8DCC4EF9244DEB0F7BEEDD22415A3"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_7BD4BDDA6154470FAE046C106BF2E153">From the error event work back in reverse order of time stamps until you no longer see messages about error handling. Once you find beginning of error handling, That is where you will find the First error and root cause. 
+		  </li> 
+		</ul> 
+		</div> 
+		<p class="p">Log: 
+		</p> 
+		<p class="p"><img alt="" class="image" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__IMAGE_28140AE6B5A7428BAFA633DEBD50CA96" src="GUID-85CFF6FD-E408-43A1-B452-0F58CAD17931-default.png" /> 
+		</p> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-4F27DDB4-CE0C-4F6D-9646-13C91C5B9DA4">Summary</strong> 
+		</p> 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_CFC1B51F842E40A0A2B3147D231DBF5F"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_FFCC8C03861A49E08B9E919749DCEB72">Use the System Event message and time stamp as a search starting point. 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_3D75B0BCEB47415C8C9D7FFE9129451B">Look for the error message from system event. 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_EEBA7CFE9B8145ED930771003A1659DF">Working backwards through the log file to look for point where error handling began. 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_F158CD626B134D8EA6741AAC71C13FF5">Search multiple log files as event may span multiple files. 
+			 <div class="note note note_note" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__NOTE_1C2850DC25574D219D2B93058C5B0EA4"><span class="note__title">Note:</span> It doesn&#39;t matter the type of event as you can search for a Rack ID, Event, Severity Flag the same method works for all the events. 
+			 </div> 
+		  </li> 
+		</ul> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" title="This section includes information about procedures for servicing software.">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" title="25.3 Procedures"><div><span class="ph num-prefix">25.3 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8.html" lang="en-US" title="25.3.13 Analyzing Log Files"><div><span class="ph num-prefix">25.3.13 </span>Analyzing Log Files</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">C65079BK</div></li><li><div id="date">July 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-559E1B5A-4958-4CE9-8ADA-18309B966659" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8" role="article"> 
+  <h1 class="title topictitle1" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-559E1B5A-4958-4CE9-8ADA-18309B966659"><a id="GUID-559E1B5A-4958-4CE9-8ADA-18309B966659"></a>Analyzing Log Files</h1> 
+  <div class="body taskbody"> 
+	 <section class="section context" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-67CB364A-A431-4393-A4A0-51AB71915B33"> 
+		<p class="p">This topic includes information about how to analyze DxI 9000 log files. 
+		</p> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12"><caption></caption><colgroup><col style="width:100%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1">Table of Contents 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-66573C78-0DA9-4CF9-9BA2-E53D197C16CE">Log Locations</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-5A368AD2-74E9-4366-82D5-3B7FA37C30F4">Log File Types</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-9EF88A0E-DCE8-49E0-B385-45D317C55604">Log Entry Structure</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-507A7F7D-9FD3-4528-A5C0-740C6C6720F8">Machine Control Log Command Execution</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-F504896A-2494-47FC-9CB9-D18BA4DCEA6E">Elements of Troubleshooting an Error Using Log Files</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E109A8B2-5AAB-4269-BA24-5A9CDFAA8238">Concepts of Log File Examination</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_261C8CE8AECD4CA286057A5D89066F12__entry__1 "><a class="xref" href="#GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-4F27DDB4-CE0C-4F6D-9646-13C91C5B9DA4">Summary</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-66573C78-0DA9-4CF9-9BA2-E53D197C16CE">Log Locations</strong> 
+		</p> 
+		<p class="p"> All Logs are found in their respective folders on the instrument in 
+		  <span class="ph filepath" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E4A0EFDB-80A7-4CF6-AF2F-39CC36ADD8A8">D:\ProgramData\Beckman Coulter\Logs</span>. 
+		</p> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-5A368AD2-74E9-4366-82D5-3B7FA37C30F4">Log File Types</strong> 
+		</p> 
+		<p class="p">Log files are in plain text. 
+		</p> 
+		<div class="p"> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1">Name 
+				  </th> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2">Details 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1 ">Falcon Machine Control 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2 "> Records all hardware instructions. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1 "> Dolphin.Falcon.Application.ConsoleApp 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2 ">Records all interactions with the console interface. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1 "> DACs: 
+					 <ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_B989A7A2D29345ACBADB9645C40859B0"> 
+						<li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_04AB02A2BE3B45FCA9062AB304287F3E">SampleDAC 
+						</li> 
+						<li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_4B0CE3DE57FB49FB80D418949F125EB8">SupplyDAC 
+						</li> 
+						<li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_08A0F757E8414088ACB081741C01912E">CalibrationDAC 
+						</li> 
+						<li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_ADC40C8E58EC48E4A40BFF0D31814BDA">RMSConnectorDAC 
+						</li> 
+					 </ul> 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2 "> 
+					 <p class="p">Record all interactions with the console interface. 
+					 </p> 
+					 <div class="p"> 
+						<div class="note note note_note" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-52DC2123-4D13-425B-9A95-8F5D575FDC23"><span class="note__title">Note:</span> Mostly used by software developers for indepth troubleshooting. 
+						</div> 
+					 </div> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__1 ">Agents 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_AAEB2D99890E44E7B4E5086B35093DED__entry__2 ">Records interaction with background processes. 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-9EF88A0E-DCE8-49E0-B385-45D317C55604">Log Entry Structure</strong> 
+		</p> 
+		<p class="p">Log: 
+		</p> 
+		<p class="p"> 
+		  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-5847BE56-628D-4FB2-9E7D-3B672EC3D40D">2020-04-08 16:01:00.764</strong>|5|<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-800756A5-A44F-453E-B242-2799A68FA087">Info</strong>||Trace|StepperMotor.cs|<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-34C2DC6E-321D-444F-85D6-0917C9BCCDA3">MoveRelativeAsync</strong>|600|<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-67DF899A-E606-4CFD-B10E-8895AC5F0DF8">AliquotSamplePipettor.ZAxis.Motor</strong>|DeviceActionStart(MoveRelativeAsync):Data(-711,8):<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-4D728A17-AA72-4C8D-AB84-8ECB66024873">Phase(Passenger transfer phase</strong>):Cycle(20234):<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-2EEC057F-758B-4F3E-A70B-203FB0D42337">TimeInCycle(1263)</strong>:Status(Ok)|2020-04-08 16:01:00.764830 
+		</p> 
+		<div class="p"> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1">Entry 
+				  </th> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2">Details 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">Times 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> 
+					 <p class="p"> 2020-04-08 16:01:00.764 - when this log statement was added to the log file. 
+					 </p> 
+					 <p class="p"> 2020-04-08 16:01:00.764830 - when this actually happen. 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">Info 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> Severity (Info. Warning, Error, Critical) 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">MoveRelativeAsync 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> What instrument was doing. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">Data(-711,8) 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> Motor was moved from position -711 to position 8. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">Phase(Passenger transfer phase) 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> At what phase in the process this happen. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__1 ">TimeInCycle (1263) 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_D332BE3D8DE44A8CA9B70922026AE0C7__entry__2 "> This happen at 1263 milliseconds during 8 seconds Instrument Cycle 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_3EF0C8E3A25A4DC48EC92FC598F17C4B"><caption><span class="title" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-6762A03E-2326-4D38-B463-903FC7BF279B">Table 30: UTC Conversion Table</span></caption><colgroup><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /><col style="width:7.6923076923076925%" /></colgroup><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-05DA958C-8528-4911-A3EE-707746F87D4E"> UTC Time</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-DFAFEA03-78F7-4E7D-A97C-1F17CBDF5EDC"> PST (UTC-8)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-CB820CC2-B0A3-4CF4-B6A9-31D180E831E5"> MST (UTC-7)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-F0509AD8-85DA-4BE3-91DE-AFB07C1DE37D"> CST (UTC-6)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-BA652EF7-36F3-4D7B-970D-93F8F6D4FDE1"> EST (UTC-5)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-9939F02F-4AD5-4FE0-B171-0906A30D5124"> GMT (UTC+0)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-82B8D6D2-765D-4BAE-8A31-F06FBB72F86B"> CET (UTC+1)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E2D3F60B-F47D-4C9B-9764-8AE7A330E32E"> EET (UTC+2)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-DB0F9C9F-A32E-4684-A6F7-E5279FAB30C4"> MSK (UTC+3)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-06CC767C-E3CF-4DF1-91F7-B37B4F526090"> IST (UTC+5:30)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E05F0995-16BD-4CC4-90DC-8E0B3C9272FB"> CST (UTC+8)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-FDB274F9-047D-4C6E-A9E4-382E17752FAB"> JST (UTC+9)</strong> 
+				</td> 
+				<td class="entry"> 
+				  <strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-2D45CF9D-2C41-420C-8D01-07597C446CCC"> AEDT (UTC+11)</strong> 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 16:00 (Prev) 
+				</td> 
+				<td class="entry"> 17:00 (Prev) 
+				</td> 
+				<td class="entry"> 18:00 (Prev) 
+				</td> 
+				<td class="entry"> 19:00 (Prev) 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 05:30 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 17:00 (Prev) 
+				</td> 
+				<td class="entry"> 18:00 (Prev) 
+				</td> 
+				<td class="entry"> 19:00 (Prev) 
+				</td> 
+				<td class="entry"> 20:00 (Prev) 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 06:30 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 18:00 (Prev) 
+				</td> 
+				<td class="entry"> 19:00 (Prev) 
+				</td> 
+				<td class="entry"> 20:00 (Prev) 
+				</td> 
+				<td class="entry"> 21:00 (Prev) 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 07:30 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 19:00 (Prev) 
+				</td> 
+				<td class="entry"> 20:00 (Prev) 
+				</td> 
+				<td class="entry"> 21:00 (Prev) 
+				</td> 
+				<td class="entry"> 22:00 (Prev) 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 08:30 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 20:00 (Prev) 
+				</td> 
+				<td class="entry"> 21:00 (Prev) 
+				</td> 
+				<td class="entry"> 22:00 (Prev) 
+				</td> 
+				<td class="entry"> 23:00 (Prev) 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 09:30 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 21:00 (Prev) 
+				</td> 
+				<td class="entry"> 22:00 (Prev) 
+				</td> 
+				<td class="entry"> 23:00 (Prev) 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 10:30 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 22:00 (Prev) 
+				</td> 
+				<td class="entry"> 23:00 (Prev) 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 11:30 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 23:00 (Prev) 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 12:30 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 00:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 13:30 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 01:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 14:30 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 02:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 15:30 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 03:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 16:30 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 04:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 17:30 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 05:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 18:30 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 06:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 19:30 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 01:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 07:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 20:30 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+				<td class="entry"> 02:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 08:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 21:30 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+				<td class="entry"> 01:00 (Next) 
+				</td> 
+				<td class="entry"> 03:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 09:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 22:30 
+				</td> 
+				<td class="entry"> 01:00 (Next) 
+				</td> 
+				<td class="entry"> 02:00 (Next) 
+				</td> 
+				<td class="entry"> 04:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 10:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 18:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 23:30 
+				</td> 
+				<td class="entry"> 02:00 (Next) 
+				</td> 
+				<td class="entry"> 03:00 (Next) 
+				</td> 
+				<td class="entry"> 05:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 11:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 19:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 00:30 (Next) 
+				</td> 
+				<td class="entry"> 03:00 (Next) 
+				</td> 
+				<td class="entry"> 04:00 (Next) 
+				</td> 
+				<td class="entry"> 06:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 12:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 20:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 01:30 (Next) 
+				</td> 
+				<td class="entry"> 04:00 (Next) 
+				</td> 
+				<td class="entry"> 05:00 (Next) 
+				</td> 
+				<td class="entry"> 07:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 13:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 21:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+				<td class="entry"> 02:30 (Next) 
+				</td> 
+				<td class="entry"> 05:00 (Next) 
+				</td> 
+				<td class="entry"> 06:00 (Next) 
+				</td> 
+				<td class="entry"> 08:00 (Next) 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 14:00 
+				</td> 
+				<td class="entry"> 15:00 
+				</td> 
+				<td class="entry"> 16:00 
+				</td> 
+				<td class="entry"> 17:00 
+				</td> 
+				<td class="entry"> 22:00 
+				</td> 
+				<td class="entry"> 23:00 
+				</td> 
+				<td class="entry"> 00:00 (Next) 
+				</td> 
+				<td class="entry"> 01:00 (Next) 
+				</td> 
+				<td class="entry"> 03:30 (Next) 
+				</td> 
+				<td class="entry"> 06:00 (Next) 
+				</td> 
+				<td class="entry"> 07:00 (Next) 
+				</td> 
+				<td class="entry"> 09:00 (Next) 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+		</div> 
+		<div class="p">(Prev) and (Next) defined: 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_E57D2748B87745E1B3CB5274E3F6EADE"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_172D5AE96EA94FE79274EBED74FBCDBE"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-A1E0C65C-D852-44FF-B37F-2E872E10D480">(Prev)</strong> indicates the previous day. For example, if it&#39;s 00:00 UTC and the corresponding time in PST is 16:00 (Prev), it means 16:00 on the previous day. 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_CB5E4FD68B8842638399BEDF20B30BC7"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-B949B9FE-98B1-4DF5-96E2-E2B43863D1F3">(Next)</strong> indicates the next day. For example, if it&#39;s 18:00 UTC and the corresponding time in AEDT is 05:00 (Next), it means 05:00 on the following day. 
+		  </li> 
+		</ul> 
+		</div> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-507A7F7D-9FD3-4528-A5C0-740C6C6720F8">Machine Control Log Command Execution</strong> 
+		</p> 
+		<div class="p">All commands have a start command and an end command. Commands will be bested based: 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_9004EF3F1B644701A31B9F38EC11219F"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_259B22C224AD47E79BBACBDCEE1CFC75">Subsystem 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_1E0D2001312549F098F15C345A3FBB8E">Assembly 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_405B0169545C4987BE0E6584A267FA71">Subassembly 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_D77E996B514049F2A357FF75372F455F">Device 
+		  </li> 
+		</ul> 
+		</div> 
+		<p class="p">Commands: 
+		</p> 
+		<p class="p"> AliquotSamplePipettor|SubsystemActionStart (RendezvousAndLockPosition):Data(0,TipSupply,82):Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.Assembly|AssemblyActionStart ( PreMoveMotor ):Data( AliquotSamplePipettor.ZAxis,Give_Tip,ZAxisDown ):Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.ZAxis.Motor|DeviceActionStart ( GetCurrentPosition ):Data():Phase(Sample Aliquot Action phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.ZAxis.Motor|DeviceActionEnd ( GetCurrentPosition ):Data(-428):Phase(Sample Aliquot Action phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.ZAxis.Encoder|DeviceActionStart ( GetRawPosition ):Data():Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.ZAxis.Encoder|DeviceActionEnd ( GetRawPosition ):Data(31):Phase(Passenger transfer phase):Cycle(20234) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor.Assembly|AssemblyActionEnd ( PreMoveMotor ):Data( AliquotSamplePipettor.ZAxis,Give_Tip,ZAxisDown ):Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"> AliquotSamplePipettor|SubsystemActionEnd (RendezvousAndLockPosition):Data(0,TipSupply,82):Phase(Passenger transfer phase) 
+		</p> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-F504896A-2494-47FC-9CB9-D18BA4DCEA6E">Elements of Troubleshooting an Error Using Log Files</strong> 
+		</p> 
+		<div class="p"> 
+		<table class="table" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead"> 
+				<tr class="row"> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1">Elements 
+				  </th> 
+				  <th class="entry" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2">Details 
+				  </th> 
+				</tr></thead><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 ">System Event 
+					 <p class="p"><img alt="" class="image" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__IMAGE_C7B81232010C4AFEACB9275E59D18200" src="GUID-CB8F6899-7988-4942-A8AD-8427611556A0-default.png" /> 
+					 </p> 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> The system event is key to quickly finding the proper location with in the log files. If you do not have the actual system event with the time stamp, then use Intelliserve dashboard to find the time stamp of the incident you are investigating. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Log Files 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> Obtain the proper log files for issues being investigated. Points to remember Event Messages are in Local (System Time) Log files are named using UTC. You may have to obtain the full day of files which will be in a Zip archive named for the day created. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Text Editor or Viewer 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> 
+					 <p class="p"> You can use any text editor to investigate the log files. Notepad, WordPad are on the instruments. Text Editors like Notepad++ are very effective and easy to use. 
+					 </p> 
+					 <p class="p"> 
+						<strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-B2B352CD-2866-4D4C-B3E2-2F889BF06201">Note:</strong> Notepad is slow with large files and is not recommended and Wordpad be used instead. When analyzing log files on the instrument is done under BeckmanAdmin and when instrument is in not running tests. 
+					 </p> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Process doesn&#39;t matter on type of error 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> Whether the error is a movement error, sample detection error, communication error the process is the same for investigating the log files. 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Process can span multiple files 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> When investigating log files remember that the investigation may span across multiple log files to find root cause 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__1 "> Subsystem indicated in system event may not be the initial failure 
+				  </td> 
+				  <td class="entry" headers="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__TABLE_F7F670ED15DA47E5B16707C54A77C6A8__entry__2 "> Due to the complexity and speed at which the DXI 9000 operates, cascade errors may cause the subsystem indicated by the system event to be different than the actual root cause. 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-E109A8B2-5AAB-4269-BA24-5A9CDFAA8238">Concepts of Log File Examination</strong> 
+		</p> 
+		<div class="p">Examine appropriate log file. 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_514844DF5B164C02BC451B467785C82B"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_7D739AA72A884F53B53B92EDC802276E"> Using the system event indicated earlier &quot;The z-axis of the RSM gripper is out of tolerance&quot; Search the appropriate log file using the editors search function to search for the system event. This will be your starting point. 
+		  </li> 
+		</ul> 
+		</div> 
+		<p class="p">Log: 
+		</p> 
+		<p class="p"><img alt="" class="image" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__IMAGE_6BC2DD4D8B2B4F5C9A285C2D3735DC92" src="GUID-BA9C81E8-2BE5-4F97-9396-148B1D83592C-default.png" /> 
+		</p> 
+		<div class="p"> Work back through time in the log file. 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_8CC8DCC4EF9244DEB0F7BEEDD22415A3"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_7BD4BDDA6154470FAE046C106BF2E153">From the error event work back in reverse order of time stamps until you no longer see messages about error handling. Once you find beginning of error handling, That is where you will find the First error and root cause. 
+		  </li> 
+		</ul> 
+		</div> 
+		<p class="p">Log: 
+		</p> 
+		<p class="p"><img alt="" class="image" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__IMAGE_28140AE6B5A7428BAFA633DEBD50CA96" src="GUID-85CFF6FD-E408-43A1-B452-0F58CAD17931-default.png" /> 
+		</p> 
+		<p class="p"><strong class="ph b" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__GUID-4F27DDB4-CE0C-4F6D-9646-13C91C5B9DA4">Summary</strong> 
+		</p> 
+		<ul class="ul" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__UL_CFC1B51F842E40A0A2B3147D231DBF5F"> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_FFCC8C03861A49E08B9E919749DCEB72">Use the System Event message and time stamp as a search starting point. 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_3D75B0BCEB47415C8C9D7FFE9129451B">Look for the error message from system event. 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_EEBA7CFE9B8145ED930771003A1659DF">Working backwards through the log file to look for point where error handling began. 
+		  </li> 
+		  <li class="li" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__LI_F158CD626B134D8EA6741AAC71C13FF5">Search multiple log files as event may span multiple files. 
+			 <div class="note note note_note" id="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8__NOTE_1C2850DC25574D219D2B93058C5B0EA4"><span class="note__title">Note:</span> It doesn&#39;t matter the type of event as you can search for a Rack ID, Event, Severity Flag the same method works for all the events. 
+			 </div> 
+		  </li> 
+		</ul> 
+	 </section> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" title="This section includes information about procedures for servicing software.">Procedures</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A181301-CC39-4029-9A39-93C4E48A7294.html" title="25.3 Procedures"><div><span class="ph num-prefix">25.3 </span>Procedures</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-E5427469-6DCB-4C64-ABF4-349355FD8DC8.html" lang="en-US" title="25.3.13 Analyzing Log Files"><div><span class="ph num-prefix">25.3.13 </span>Analyzing Log Files</div></a></div></article></main></div></noscript><script src="static/body.js?rJAUfFpk" type="text/javascript"></script></body></html>

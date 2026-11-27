@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="concept" name="DC.Type" /><meta content="A list of known bugs or behaviors for system software versions 1.13, and countermeasures for recovery." name="description" /><meta content="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" name="DC.Relation" scheme="URI" /><meta content="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="July 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BK" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="10/07/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="C65079" name="FBCPARTNUM" /><meta content="None" name="FBCMANUFACTUREDBY" /><meta content="Service" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="16/06/2026 18:37:18" name="FISHPUBREVIEWENDDATE" /><meta content="10/07/2026 16:28:15" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4" name="FMAPID" /><meta content="07/07/2026 18:25:47" name="MODIFIED-ON" /><meta content="16/06/2026 20:29:13" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-E0B2E065-B380-4B5E-AC7F-13F39D148EBC" name="FISHMASTERREF" /><meta content="DxI 9000 Service Manual-v37-GUID-1F99B0A5-C9E7-4E35-967C-8B5419568AB4-20260616 20:29:13" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BK" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="37" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI 9000 Service Manual" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="yes" name="print" /><meta content="no" name="printAll" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>25.5.2.1 Software 1.13 Known Bugs and Behaviors</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" rel="prev" /><link href="GUID-0449FE98-7C28-4B76-B9D5-4BD67F58AB18.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1519" data-relpath="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI 9000 Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI 9000 Service Manual</span><span id="emailpub">Publication: DxI 9000 Service Manual</span><span id="emailpartnum">Part Number: C65079</span><span id="emailrev">Revision: BK</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-CFB7EA81-8A46-4B02-9570-C85598ADD01C" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-CFB7EA81-8A46-4B02-9570-C85598ADD01C"><a id="GUID-CFB7EA81-8A46-4B02-9570-C85598ADD01C"></a>Software 1.13 Known Bugs and Behaviors</h1> 
+   
+  <div class="body conbody"><p class="shortdesc">A list of known bugs or behaviors for system software versions 1.13, and countermeasures for recovery. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Bug/Behavior:</strong> Summary of the software bug or system behavior. 
+		</li> 
+		<li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details:</strong> Explanation of the bug/behavior and how it may impact the system/user. 
+		</li> 
+		<li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_84FFD9541F4D4ADFB828455CD74C731A"><strong class="ph b" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-C972260E-1848-47E9-A5BB-282CA0EB0015">Countermeasure:</strong> If applicable, countermeasure to resolve the condition inflicted by the bug/behavior. 
+		</li> 
+	 </ul> 
+	 <table class="table" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3"><caption></caption><colgroup><col style="width:29.6989966555184%" /><col style="width:29.76588628762542%" /><col style="width:40.53511705685619%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1">Bug/Behavior 
+				</th> 
+				<th class="entry" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2">Details 
+				</th> 
+				<th class="entry" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3">Countermeasure 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Customer-Initiated Emergency Stop Recovery Requires Software Restart 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> After a user-initiated emergency stop command from the user interface, the system cannot be returned to an operational state simply by re-initializing the system. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-start the system PC to recover. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Expected Vessel Missing Before Move Makes Passenger Consolidation Fail 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Initialization fails if the system expects to find a vessel which is no longer physically present. This is only expected to occur if a user has physically removed vessels, or as a secondary failure mode after a mechanical error. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-start the system PC to recover. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Performing Monthly Maintenance Causes System Error When Following Instructions With Interlocks Enabled 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> After opening the analyzer cover and triggering the interlocks during routine maintenance, the analyzer returns &quot;SmcSeekFail&quot; errors that can only be resolved by rebooting the PC. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-start the system PC to recover. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Diagnostic Backup/Restore Process Does Not Preserve the Luminometer Drift Data 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> The diagnostic backup/restore process does not preserve the luminometer drift data. The luminometer must be reset after the database is restored. This typically only occurs at software updates and is built in to the software Mod procedure. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Backup and restore Luminometer Drift data per latest software Mod procedure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Reagent Storage Module Alignment: Incorrect Rotational Correction 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Incorrectly applied rotational alignment correction creates difficulties aligning the reagent storage module. Individual nest offsets are aligned during instrument manufacturing and can be updated in the field as needed. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Adjust alignments of the 
+				  <a class="xref" href="GUID-70CC9A17-FD89-4F06-A1C2-9819945283CD.html">individual reagent storage</a> nests as needed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Calibrations Fail When Running Wash Wheel Camera Dispense and Residual Calibration Together 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Unable to run residual volume and substrate dispense wash wheel camera calibrations together (both boxes checked). 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Perform camera calibrations independently (one at a time) to prevent failures or loss of time. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> System Skips Aliquot With Unknown Tests 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> The system won&#39;t aliquot samples that include an unknown test. The system should aliquot the known tests and skip the unknown tests. This applies only to test orders received via LIS. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Check system test configurations (enabled/disabled) to ensure they match what is being requested by the LIS. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Tests Not Run as Pick-And-Place Is Reserved After Hard Stop Followed With Initialization 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Following a failed sample Pick-and-Place discard operation and subsequent hard stop, a successful system initialization does not clear reservations from the failed discard operation and leaves the sample Pick-And-Place in an indefinitely reserved state. Machine control must be restarted. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-start the system PC to recover. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> QC Does Not Complete Do to Result Processing Error 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> If the final result processing step fails, affected QC results are stuck In-Progress. The rack used for QC can&#39;t be used for other tests. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Perform 
+				  <a class="xref" href="GUID-41481ACD-C644-4F90-9A72-585361E0CC40.html">ServiceApp Script</a> to complete in-progress QC&#39;s. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> The Period Between Idle Substrate Prime Operations Is Too Long 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> The period between idle substrate prime operations is 24 minutes and 40 seconds, which exceeds the 24 minute time limit, which could cause up to 3 tests to be cancelled and flagged &quot;STO&quot;. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Repeat any tests which are cancelled. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> SPU Camera Calibration Does Not Complete if Unable to Read Barcode on Rack 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> In the event of a camera mechanical issue with the issue with the rack barcode itself, the SPU camera calibration fails with no indication of why the operation was unable to complete. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">If camera calibration fails with no root cause, inspect the camera lens for debris/obstruction, as well as the rack barcode label. Clean or replace as needed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Cancelling ASD While Utilities Are in Progress Results in System Error 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> While a probe wash utility is running on the system, cancelling ASD results in a system error rather than transitioning to a paused state. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-initialize the system and repeat any tests as needed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Tray Gripper Tries to Throw Away a Non-Existent Tray Causing System to Stop Processing 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> During initialization, the system checks for a tray at the tray supply. When the system reaches a &quot;Running&quot; (green) state, it tries to throw away a tray that is not there, causing the system to stop processing tests. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-initialize the system. 
+				   
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Dedicated Rack (None Sample ID) QC Results are Not Exported to CSV output (Results to Disk) 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> If the QC order was not registered associating a sample ID, the results to disk routine won&#39;t output any result that does not have the sample ID. This scenario should be able to output does not have the sample ID data also. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">QC results should be manually recorded if the user chooses to utilize a dedicated rack with no Sample ID for QC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Software Exception Prevents Service Diagnostic from Completing 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Service diagnostics which use ASD packs may fail to complete due to a software design error. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Repeat any automated ASD tests if they fail. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Maintenance Due Notification is Removed Prematurely if Weekly Clean Routine Fails 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> If there is an error starting the weekly clean routine task, the &#39;due now&#39; notification for the task will be removed instead of remaining visible until the routine completes successfully. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Repeat weekly clean if it fails. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> ASD Packs/Sample Diluent A Consumable Tiles Incorrectly Displayed on Consumables Page 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> There are three scenarios that are causing the ASD Packs and Sample Diluent A consumable tiles to display incorrectly on the UI for the Consumables page. 
+				  <ul class="ul" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__UL_18E007FFA74E4A968E581E79EE636D53"> 
+					 <li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_B8B30005563841B38507088F76A8739C">Sample Diluent A is showing multiple tiles instead of just one tile. 
+					 </li> 
+					 <li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_B889F8251BAB4879BE97A5183B85524F">Sample Diluent A/ASD Packs should be empty if unloaded. 
+					 </li> 
+					 <li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_87D562FED9014098BE35D30616E07662">Sample Diluent A/ASD Packs availability does not refresh to empty in the consumable page when deleted. 
+					 </li> 
+				  </ul> 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">This has no impact to system performance and should be ignored, as it will be resolved in a future software version. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Exception on Navigating to Curve Details from Completed QC and Patient Records for Assays with Shared Curves 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> For FOLW &amp; RBCW, there is an exception on navigating to the Calibration Curve Details page from a completed QC or Patient Result Details page. This error message may be dismissed with no further issue. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Dismiss the error message and view calibration details from the calibration screen rather than through QC/patient result screen. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> UTC Date/Time Not Consistently Used 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Software is not always using the UTC Date/Time for comparisons to check if a calibration is expired. It can be off by the difference between local time and Universal Time, which could be several hours. This affects the order completion time stamp but does not impact the performance of the instrument. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">No action needed, this does not impact system performance. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Duplicate Entries of Substrate Bottle in Materials Screen 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Materials page contains duplicate entries for substrate when substrate is Due Soon or Due Now. This only happens during initial installation in manufacturing or field installation. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Loading new substrate bottles should clear this condition, so it may be ignored until substrate is replaced. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Console Application (DxI 9000) is Unable to Start 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> In the event that the system is unable to interpret the configuration data on startup, the user interface application will fail to start. This will likely only occur during software update if there are issues. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Review software update instructions (service Mod) and ensure system configuration is set/restored appropriately. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Report Is Not Printing to Network Printer in Windows 10 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Reports are not printing when using a network printer in the Windows 10 OS environment. The report can still be saved to be printed from elsewhere or a local printer may be connected to the system. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Network printer configurations are not yet supported by the system. Users should print to PDF and transfer to external PC for printing. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Poor UI Performance When Ordering Large Numbers of Samples in Batch Order Entry 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> When a user tries to place a batch order from the batch order entry screen by entering the number of samples and then the starting sample ID, the performance of the application is slow. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Reduce number of sample ordered through batch entry when possible. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> An Error Message Is Not Shown When the User Loads an Existing Sample for Editing in Manual Test Order Entry and Changes the Sample ID 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> When the user loads an existing sample for editing in the manual test order entry screen and changes the sample ID, an error message is not shown when the sample is not accepted. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Avoid changing Sample ID of already entered samples. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> No Information Displayed After User Attempts to Filter Test List After APF Update 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> After importing the APF files using the import feature from the test configuration page, test information is not displayed when using search filtering test. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Close and re-open the test config screen to refresh the search test filter. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Completed Orders Are Getting Updated After Modifying the QC Control Materials 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> After a QC run is completed, updating the control material status from &quot;In Use&quot; to &quot;Not Used&quot; causes previously completed sample statuses to update from Pass/Fail to Unknown on the Sample List screen. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">QC results may be managed external to the system, or if possible, avoid modifying QC material. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> System Reports Failed QC to IntelliServe When the Instrument Says It Passed 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> When transmitting the QC telemetry data to IntelliServe, QC results are transmitted as failed when the instrument says it passed. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">There is no impact on users and results as IntelliServe is only used for remote diagnostics for Beckman Coulter service and support teams. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Tests Stuck In Progress when Instrument Reports Results after Result Timeout Triggered 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> The system will &#39;time out&#39; results if a completed result is not received from the system after a pre-configured unit of time. In rare cases where a test result takes more than three hours to complete, this timeout is triggered prematurely and the affected test result(s) will be stuck in an in-progress state. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-order affected samples and repeat the tests. 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html">Known Bugs and Behaviors</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" title="25.5.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2 </span>Known Bugs and Behaviors</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC.html" lang="en-US" title="25.5.2.1 Software 1.13 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2.1 </span>Software 1.13 Known Bugs and Behaviors</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">C65079BK</div></li><li><div id="date">July 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-CFB7EA81-8A46-4B02-9570-C85598ADD01C" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-CFB7EA81-8A46-4B02-9570-C85598ADD01C"><a id="GUID-CFB7EA81-8A46-4B02-9570-C85598ADD01C"></a>Software 1.13 Known Bugs and Behaviors</h1> 
+   
+  <div class="body conbody"><p class="shortdesc">A list of known bugs or behaviors for system software versions 1.13, and countermeasures for recovery. 
+  </p> 
+	 <div class="p"> 
+	 <ul class="ul" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__UL_0DC5992D830E4FB698293C4DA8A2D9FB"> 
+		<li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_42AD38EF466040EDB6F9E4EA34F768FE"><strong class="ph b" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-A31D6AA5-E508-4878-A1F0-5D546782A0A2">Bug/Behavior:</strong> Summary of the software bug or system behavior. 
+		</li> 
+		<li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_BF2E57C3C6254AA39F24A539CDDEEEAB"><strong class="ph b" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-EC3DF526-762D-49BE-9BA8-7A8C4B1FBCDA">Details:</strong> Explanation of the bug/behavior and how it may impact the system/user. 
+		</li> 
+		<li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_84FFD9541F4D4ADFB828455CD74C731A"><strong class="ph b" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__GUID-C972260E-1848-47E9-A5BB-282CA0EB0015">Countermeasure:</strong> If applicable, countermeasure to resolve the condition inflicted by the bug/behavior. 
+		</li> 
+	 </ul> 
+	 <table class="table" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3"><caption></caption><colgroup><col style="width:29.6989966555184%" /><col style="width:29.76588628762542%" /><col style="width:40.53511705685619%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1">Bug/Behavior 
+				</th> 
+				<th class="entry" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2">Details 
+				</th> 
+				<th class="entry" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3">Countermeasure 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Customer-Initiated Emergency Stop Recovery Requires Software Restart 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> After a user-initiated emergency stop command from the user interface, the system cannot be returned to an operational state simply by re-initializing the system. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-start the system PC to recover. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Expected Vessel Missing Before Move Makes Passenger Consolidation Fail 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Initialization fails if the system expects to find a vessel which is no longer physically present. This is only expected to occur if a user has physically removed vessels, or as a secondary failure mode after a mechanical error. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-start the system PC to recover. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Performing Monthly Maintenance Causes System Error When Following Instructions With Interlocks Enabled 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> After opening the analyzer cover and triggering the interlocks during routine maintenance, the analyzer returns &quot;SmcSeekFail&quot; errors that can only be resolved by rebooting the PC. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-start the system PC to recover. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Diagnostic Backup/Restore Process Does Not Preserve the Luminometer Drift Data 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> The diagnostic backup/restore process does not preserve the luminometer drift data. The luminometer must be reset after the database is restored. This typically only occurs at software updates and is built in to the software Mod procedure. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Backup and restore Luminometer Drift data per latest software Mod procedure. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Reagent Storage Module Alignment: Incorrect Rotational Correction 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Incorrectly applied rotational alignment correction creates difficulties aligning the reagent storage module. Individual nest offsets are aligned during instrument manufacturing and can be updated in the field as needed. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Adjust alignments of the 
+				  <a class="xref" href="GUID-70CC9A17-FD89-4F06-A1C2-9819945283CD.html">individual reagent storage</a> nests as needed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Calibrations Fail When Running Wash Wheel Camera Dispense and Residual Calibration Together 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Unable to run residual volume and substrate dispense wash wheel camera calibrations together (both boxes checked). 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Perform camera calibrations independently (one at a time) to prevent failures or loss of time. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> System Skips Aliquot With Unknown Tests 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> The system won&#39;t aliquot samples that include an unknown test. The system should aliquot the known tests and skip the unknown tests. This applies only to test orders received via LIS. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Check system test configurations (enabled/disabled) to ensure they match what is being requested by the LIS. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Tests Not Run as Pick-And-Place Is Reserved After Hard Stop Followed With Initialization 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Following a failed sample Pick-and-Place discard operation and subsequent hard stop, a successful system initialization does not clear reservations from the failed discard operation and leaves the sample Pick-And-Place in an indefinitely reserved state. Machine control must be restarted. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-start the system PC to recover. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> QC Does Not Complete Do to Result Processing Error 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> If the final result processing step fails, affected QC results are stuck In-Progress. The rack used for QC can&#39;t be used for other tests. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Perform 
+				  <a class="xref" href="GUID-41481ACD-C644-4F90-9A72-585361E0CC40.html">ServiceApp Script</a> to complete in-progress QC&#39;s. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> The Period Between Idle Substrate Prime Operations Is Too Long 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> The period between idle substrate prime operations is 24 minutes and 40 seconds, which exceeds the 24 minute time limit, which could cause up to 3 tests to be cancelled and flagged &quot;STO&quot;. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Repeat any tests which are cancelled. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> SPU Camera Calibration Does Not Complete if Unable to Read Barcode on Rack 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> In the event of a camera mechanical issue with the issue with the rack barcode itself, the SPU camera calibration fails with no indication of why the operation was unable to complete. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">If camera calibration fails with no root cause, inspect the camera lens for debris/obstruction, as well as the rack barcode label. Clean or replace as needed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Cancelling ASD While Utilities Are in Progress Results in System Error 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> While a probe wash utility is running on the system, cancelling ASD results in a system error rather than transitioning to a paused state. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-initialize the system and repeat any tests as needed. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Tray Gripper Tries to Throw Away a Non-Existent Tray Causing System to Stop Processing 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> During initialization, the system checks for a tray at the tray supply. When the system reaches a &quot;Running&quot; (green) state, it tries to throw away a tray that is not there, causing the system to stop processing tests. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-initialize the system. 
+				   
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Dedicated Rack (None Sample ID) QC Results are Not Exported to CSV output (Results to Disk) 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> If the QC order was not registered associating a sample ID, the results to disk routine won&#39;t output any result that does not have the sample ID. This scenario should be able to output does not have the sample ID data also. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">QC results should be manually recorded if the user chooses to utilize a dedicated rack with no Sample ID for QC. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Software Exception Prevents Service Diagnostic from Completing 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Service diagnostics which use ASD packs may fail to complete due to a software design error. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Repeat any automated ASD tests if they fail. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Maintenance Due Notification is Removed Prematurely if Weekly Clean Routine Fails 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> If there is an error starting the weekly clean routine task, the &#39;due now&#39; notification for the task will be removed instead of remaining visible until the routine completes successfully. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Repeat weekly clean if it fails. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> ASD Packs/Sample Diluent A Consumable Tiles Incorrectly Displayed on Consumables Page 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> There are three scenarios that are causing the ASD Packs and Sample Diluent A consumable tiles to display incorrectly on the UI for the Consumables page. 
+				  <ul class="ul" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__UL_18E007FFA74E4A968E581E79EE636D53"> 
+					 <li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_B8B30005563841B38507088F76A8739C">Sample Diluent A is showing multiple tiles instead of just one tile. 
+					 </li> 
+					 <li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_B889F8251BAB4879BE97A5183B85524F">Sample Diluent A/ASD Packs should be empty if unloaded. 
+					 </li> 
+					 <li class="li" id="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__LI_87D562FED9014098BE35D30616E07662">Sample Diluent A/ASD Packs availability does not refresh to empty in the consumable page when deleted. 
+					 </li> 
+				  </ul> 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">This has no impact to system performance and should be ignored, as it will be resolved in a future software version. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Exception on Navigating to Curve Details from Completed QC and Patient Records for Assays with Shared Curves 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> For FOLW &amp; RBCW, there is an exception on navigating to the Calibration Curve Details page from a completed QC or Patient Result Details page. This error message may be dismissed with no further issue. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Dismiss the error message and view calibration details from the calibration screen rather than through QC/patient result screen. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> UTC Date/Time Not Consistently Used 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Software is not always using the UTC Date/Time for comparisons to check if a calibration is expired. It can be off by the difference between local time and Universal Time, which could be several hours. This affects the order completion time stamp but does not impact the performance of the instrument. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">No action needed, this does not impact system performance. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Duplicate Entries of Substrate Bottle in Materials Screen 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Materials page contains duplicate entries for substrate when substrate is Due Soon or Due Now. This only happens during initial installation in manufacturing or field installation. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Loading new substrate bottles should clear this condition, so it may be ignored until substrate is replaced. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Console Application (DxI 9000) is Unable to Start 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> In the event that the system is unable to interpret the configuration data on startup, the user interface application will fail to start. This will likely only occur during software update if there are issues. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Review software update instructions (service Mod) and ensure system configuration is set/restored appropriately. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Report Is Not Printing to Network Printer in Windows 10 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> Reports are not printing when using a network printer in the Windows 10 OS environment. The report can still be saved to be printed from elsewhere or a local printer may be connected to the system. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Network printer configurations are not yet supported by the system. Users should print to PDF and transfer to external PC for printing. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Poor UI Performance When Ordering Large Numbers of Samples in Batch Order Entry 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> When a user tries to place a batch order from the batch order entry screen by entering the number of samples and then the starting sample ID, the performance of the application is slow. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Reduce number of sample ordered through batch entry when possible. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> An Error Message Is Not Shown When the User Loads an Existing Sample for Editing in Manual Test Order Entry and Changes the Sample ID 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> When the user loads an existing sample for editing in the manual test order entry screen and changes the sample ID, an error message is not shown when the sample is not accepted. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Avoid changing Sample ID of already entered samples. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> No Information Displayed After User Attempts to Filter Test List After APF Update 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> After importing the APF files using the import feature from the test configuration page, test information is not displayed when using search filtering test. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Close and re-open the test config screen to refresh the search test filter. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Completed Orders Are Getting Updated After Modifying the QC Control Materials 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> After a QC run is completed, updating the control material status from &quot;In Use&quot; to &quot;Not Used&quot; causes previously completed sample statuses to update from Pass/Fail to Unknown on the Sample List screen. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">QC results may be managed external to the system, or if possible, avoid modifying QC material. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> System Reports Failed QC to IntelliServe When the Instrument Says It Passed 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> When transmitting the QC telemetry data to IntelliServe, QC results are transmitted as failed when the instrument says it passed. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">There is no impact on users and results as IntelliServe is only used for remote diagnostics for Beckman Coulter service and support teams. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__1 "> Tests Stuck In Progress when Instrument Reports Results after Result Timeout Triggered 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__2 "> The system will &#39;time out&#39; results if a completed result is not received from the system after a pre-configured unit of time. In rare cases where a test result takes more than three hours to complete, this timeout is triggered prematurely and the affected test result(s) will be stuck in an in-progress state. 
+				</td> 
+				<td class="entry" headers="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC__TABLE_D4AB42CFB9CF41C79D46AC1AE0B07AA3__entry__3 ">Re-order affected samples and repeat the tests. 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+	 </div> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html">Known Bugs and Behaviors</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-49DEC6BB-6E31-4E28-A9DE-C8CF901C3267.html" title="25 Software"><div><span class="ph num-prefix">25 </span>Software</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E1DFBCD7-E952-4C83-A949-8F0A70D8DB0D.html" title="25.5 Troubleshooting"><div><span class="ph num-prefix">25.5 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-F98D97A1-8FFC-4563-8295-DEA8EA07008D.html" title="25.5.2 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2 </span>Known Bugs and Behaviors</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-47E66DFB-2C8F-4D6F-A656-D21DB227E0CC.html" lang="en-US" title="25.5.2.1 Software 1.13 Known Bugs and Behaviors"><div><span class="ph num-prefix">25.5.2.1 </span>Software 1.13 Known Bugs and Behaviors</div></a></div></article></main></div></noscript><script src="static/body.js?rJAUfFpk" type="text/javascript"></script></body></html>

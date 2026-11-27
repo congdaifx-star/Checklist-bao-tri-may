@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to Use the Debug Analyzer macro to analyze DxI trace files." name="description" /><meta content="GUID-E3B77B67-92CA-4662-AB07-54C13CA53209.html" name="DC.Relation" scheme="URI" /><meta content="GUID-D608EDFF-00D3-460F-9D32-724176DC0205.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E3B77B67-92CA-4662-AB07-54C13CA53209.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>16.5.3 Using Debug Analyzer During Troubleshooting</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-B77C568D-E8EC-4675-A3DB-1CCAB7E4A622.html" rel="prev" /><link href="GUID-E04C99D2-288C-4D1F-810A-0297568BBE3C.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e2370" data-relpath="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328" role="article"> 
+  <h1 class="title topictitle1" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Using Debug Analyzer During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to Use the Debug Analyzer macro to analyze DxI trace files. 
+  </p> 
+	 <section class="section context" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__CONTEXT_0DB75336E7594B83890ECB5DDFBD70DB"> 
+		<div class="p">Perform this procedure when troubleshooting intermittent sample, incubator, wash, or dual-gantry pick-and-place errors. 
+		  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-DF538E9E-5C44-4242-B178-8109277074DE"><span class="note__title">Note:</span> For troubleshooting information, refer to the 
+			 <a class="xref" href="GUID-90B59CBD-75B7-4647-9BF1-85B2E2C85415.html">P&amp;P: Troubleshooting Pick-and-Place Errors</a> procedure. 
+		  </div> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Locate and save the trace file or files with pick-and-place errors. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEPS_CA3679BF214C4D9F811546058C5E6692" type="a"> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_16DD197864DD4216AF92F33E3B82F9D8"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-01A1B6DB-FE28-4C63-BAA6-FE042AE13FA0">Review the Event Log for errors (pick-and-place errors). 
+				</span> 
+				  <ol class="ol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__OL_669A5B3B164B496EAF3AB692DAFAB453" type="i"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_89A1E5794EDF49469CF53B05AF453B6A">On the DxI user interface, select the 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-73DE6BA1-CB53-4B18-8E17-E596807E061B">Event Log</span> screen. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_D569B1137262453596ED9180A380E190">Select an error message (pick-and-place error), and then select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C0048115-0222-4826-833F-7CF4A2FFA413">Details</span> button. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_AD0FC5EE9D1F4434B7173B9156B1F6B7">Write down the information from the Date/Time field. This date and time is the date and time the error occurred. (example: Date/Time: 4/03/13 03:06 PM) 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_6CE89718973E4CBD98C9C09AB49F0178">Repeat for all errors (pick-and-place) to determine the date and time the errors occurred. 
+					 </li> 
+				  </ol> 
+			 </li> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_8ADDF93726FC4F3FA689DB27E8BE6FF7"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-661E478B-02BE-4A8B-9D8C-B418296317D3">Create a folder on the console PC C: drive. 
+				</span> 
+				  <ol class="ol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__OL_E776B34D08504BE98BDD7437139E8224" type="i"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_D75FD2150C084FF99D21A365963A9C67"> Select 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-6277AB66-555D-447E-A131-E5CF0769E180"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-4466DCE5-92C5-4661-A639-A43D5C45BFF2">Start</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-198BA4DF-A6C5-4FFC-8896-D9A96694D580">Programs</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-0BF8A473-7210-4E88-919F-946EDA8B72B2">Windows</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C3995960-248D-413A-9BC9-D79D5520699B">Explorer</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_0286DFA486864916B231A54E56F17A1C">Navigate to Local Disk (C:). 
+						<br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_2B996AE96F564EAA8BFFA626120DDB8E" src="GUID-211E0936-E524-4536-B4F9-81BF6F25EBC5-default.jpg" /><br /> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_EB85C3573B894E80B9A4F4BDBC72C668">Select 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AB367D83-8D60-4825-8019-AEF2FEB6A5A4"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-D4937FCC-EB15-4C94-AD14-2A8399196D69">File</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-2B29398C-DA0B-4B86-82E7-9A61BAC082C0">New</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-4FA0D0A8-AF79-439F-9FA3-412816500AB0">Folder</span></span>. Rename the folder Trace Files. 
+						<br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_C7E0AC824E7546EC9CD071C3E7A9037A" src="GUID-16FD8B6A-621E-4EF3-A1AF-34441941DC7A-default.jpg" /><br /> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_3B646CC746AA4C86BD93AA09038D04F7">Close Windows Explorer. 
+					 </li> 
+				  </ol> 
+			 </li> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_01F3C3E3314642B8A187EEC8E86AF694"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-58EF783C-B190-4BC6-A6F6-3AA97F2F1B15">Copy trace files from the AU to the console PC. 
+				</span> 
+				  <ol class="ol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__OL_FF75FD833CE2417183931693EA68B221" type="i"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_C44EF948425D4FC0A86ADCCF862C25CF">Press the 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-2807DC04-0521-4FC4-B390-0358C61F0A99">[Windows]</span> key at the bottom left corner of the keyboard, then select 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AA457378-1D27-44B1-9593-4EA9C023A75F"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-4A6AC4FD-4944-48D8-B3DE-65BF56566006">Start 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-2B76C93F-0B42-40B1-8FFB-27DB8AF5177A">Programs</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-7E58F070-572F-4805-91DF-F5D5705DB2FA">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-D8C8D99D-5F5C-4D9F-88AB-1A8A211FA972">Remote Desktop Connection to AU PC</span></span> to launch the Desktop Sharing. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_2F7EF74056E745339B2EE2E3E7BF1955">Remote Desktop will connect to the instrument computer allowing remote control of the instrument and applications. 
+						<div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-23C77FAB-4B12-43E8-A5ED-6116BEC7D995"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__UL_72F1DD18328C4B31B75B1CC7E39CAD9F"> 
+							 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_3220389590A74591BD0F1C80BB4A3CF4">When connected, the Remote Desktop window will show the Windows XP desktop display of the instrument. 
+							 </li> 
+							 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_4DCDD50CB8CF4FCB96E7D54554072FA4">The AU desktop will have scroll bars on the right and bottom of the window. The Windows toolbar at the very bottom of the screen is the PC toolbar. To see the AU desktop toolbar the scroll bar on the right will have to be moved down. 
+							 </li> 
+							 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_A7865BC603D440BCAEF216300404592A">To return to the console PC display use the minimize button at the top of the AUSETUPPC screen. To restore the AU Windows screen select the AUSETUPPC Remote Desktop Connection in the console PC display bottom toolbar. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_E59CDECFC44149C0A242CF321509CB6A">Open a Windows Explorer on the AU by selecting the 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AB470BCC-A8CD-4B78-B176-C4B7148695D9">Windows Explorer</span> icon on the desktop or selecting 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-9C442B23-9B42-42DE-9EFE-5C608D3FAE3C"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-D1F691CC-E536-4BAE-89F4-508E40849B6A">Start</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-8846D1D4-7091-4522-9160-9D33402F3CF3">All Programs</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-F0793C9B-96E0-4CC6-A0CF-5F810AD66DDF">Windows Explorer</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_885715474FA14ECCA8214E0A9E9A62C8">Select to 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-6F8A9ED9-0750-404E-BCFE-FEC75632928A"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C5C3C045-5241-4A28-827B-6A834D0A0228">Local Disk (C:)</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-505A890E-F94E-4144-9031-53290192679D">AU Folder</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-8B3C5806-8BF6-42CB-8B68-364D6B1BAADC">Log Folder</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_93A68AEEA5CB4C85A25BE5FF858A6E04">Select the Name column to sort the files from Z to A. Now, trace files are at the top of the list with the newest file on top. 
+						<br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_E09D841A5DD743F198B29D5EC7FA5CE7" src="GUID-1AE72422-8E7D-43CE-86C4-39715717B2C7-default.jpg" /><br /> 
+						<div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-191EE0DB-7F7D-4913-9418-02542D98CFE9"><span class="note__title">Note:</span> Trace files are named as follows: 
+						  <p class="p">YYMMDD-TTTT.txt Y = year, M = month, D = day and T = time (24 hour clock) 
+						  </p> 
+						  <p class="p">Example: 130403-0325 = 04/03/2013 3:25 am and Trace-130403-1715 = 04/03/13 5:15 pm 
+						  </p> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_53087C6C28A444989282328CBE4D46FB">Determine which file to copy from the date-time stamp noted during the review of the Event Log earlier. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_349636CF51AC495D91D0DC18326FC4E4">Right-click on the trace file and select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-A91EED11-180A-447F-A641-7049150A212B">Copy</span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_47B157B5327B4FF1BD0FD6F0C97C4A83">Select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-E06B8F97-0EE1-44D2-AE58-FCE30C2A7979">C on CONSOLE_PC</span> in the folder list on the left side. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_35607144BE3F4370B777CADADF1B2ADF">Open the Trace File folder. Right-click inside the folder and select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-144C511B-A85A-4083-A9AC-9FFE8FFF3A16">Paste</span> to paste the trace file into the folder. 
+						<br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_2685E3414D8A4D618DC63D58914CEEB7" src="GUID-E38F0914-99EE-459B-8421-F431664FB754-default.jpg" /><br /> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_591A1BFADF834B5DA0E10CBFB6981B45">Repeat the steps to Copy trace files from the AU to the console PC for all the trace files with errors that have been copied. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_DF46B95D9A7240B4A2D1177BA390E077">Close Windows Explorer. 
+					 </li> 
+				  </ol> 
+			 </li> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_B4B19298CFF74749A131B705DF531707"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-A9BA7AB3-7525-49F4-A3B5-356006A15564">Exit Remote Desktop Sharing. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_CAB9D0C22B9240F683248BB789CFE723"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-3546FC76-021C-43F0-9BFD-E16533EFF711">Copy the trace files from the console PC to the USB drive. 
+				</span> 
+				  <ol class="ol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__OL_664CB658C6274483BB114C85B197590E" type="i"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_DE2CA7A93812429C9AB7E4BF92FD87A9">Open a Windows Explorer by selecting 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-FBACB313-DF71-4DC0-BAEC-B06333972710"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-5F88C0B7-D725-4ED8-BBBF-1583919B1571">Start</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-14D96190-1178-4356-B5B7-17B98D87AAC9">All Programs</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-757AEB3A-0663-45EB-A22F-AA869C5492E2">Windows Explorer</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_BAB515DD218946A8A75C7BD0CE28E9B1">Select 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-7DE08A2C-432A-40C2-B03A-703AE0D1DB4C"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-2B1F54C2-16C2-46AA-BBC9-22DF7EE921E1">Local Disk (C:)</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-070E2CB7-6208-4D7F-A4A1-A23AFA98DC0E">Trace Files</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_9311F95FC54F4F4DA49E3D28D92C6D70">Select all files in the folder, right-click, and select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C6FC1EEF-BF0E-4C14-9F16-6FAD331CF487">Copy</span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_FADBB6530D2E461BB50D980DCC1170E9">Navigate to 
+						<span class="ph filepath" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-6AB7A3F8-1738-4F32-AD45-17E96DDA14B1">BACKUPDRIVE (E:)</span>, right-click, and select<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-412B8105-FD7C-43E5-864A-528BF97819DE">Paste</span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_E3CF443B5EC440B78A7FBA7DA579B9FF">Disconnect the USB drive from the console PC. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_5940992859DD49148A4C1926D7FE84E3">Insert a USB drive on the service laptop and scan the drive for viruses. See 
+						<a class="xref" href="GUID-0B74F271-3C22-489B-8E95-9134F0BD70BD.html">USB Drive Malware Scan and Removal</a> for more information.
+					 </li> 
+				  </ol> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__STEP_9AFF7ACA85274D238FDFE569B486463D"> 
+		  <span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-6DDDFDC7-5A58-4FFE-86A6-51500AA7FC21">Search a trace file for pick-and-place errors. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEPS_CA45B418B8DF4DC1BD1C9E41894AFC73" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_ADCF7F8C22E54D47A37814CA0F6BAA68"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-BF7C1A1E-4724-4698-B0B5-9EEAF826F651">Use this macro to parse a trace file for pick-and-place errors. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <a class="xref" href="./Attachments/Debug%20Analyzer.xls" target="_blank"> Debug Analyzer.xls 
+				  </a> 
+				  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-46C129E3-1A4C-4B17-AB98-E78494964C7E"><span class="note__title">Note:</span> When using the macro, change either the Windows or the Excel language setting to English or there will be an error message. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_A36EEEA2F3124A3388371E916606765F"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-3D9A133D-5E21-48C6-ABF4-BD63FE8B6965">Select the 
+				  <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-CCC98DF2-B40F-40D0-A968-4D0DDBC2253F">Enable Content</span> button. 
+				</span> 
+				<div class="itemgroup info"><br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_906BC6FC64F7428DBF7F3187B1CEC96A" src="GUID-D1974600-B8E4-4197-A73D-462025E6D14A-default.jpg" /><br /> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_4987940E50A64249B5F757A138D8B0EB"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AC4B5C14-6EB5-422F-A06E-1AF94F1B2569">Select the pick-and-place device that had the error: Sample PnP, Incubator PnP, or Wash PnP. 
+				</span> 
+				<div class="itemgroup info"><br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_846307A4A29B471CBDFCF2F151DD14AC" src="GUID-D9CEB508-59EF-42CF-81C6-7EA5A42A8BA9-default.jpg" /><br /> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_BD53F9FC662E4A48B33044A398586495"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-9F51CCE1-39A2-4D63-A933-B95510136D8B">Select the 
+				  <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-348BD716-97EB-4DC4-8EE1-29C3805417B0">Open Trace File</span> button. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_C08DBDB0086C4B06A3B4328C4A9D1AF3"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C7657509-6FEC-4805-9471-26359BFC4086">Locate the trace file that was saved to the USB drive, and then select 
+				  <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-35F09487-5DB2-4176-9C0F-D3D5EDFC8ABC">Open</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_63A20490E9E741B1A3C9E00ADD0F4D3B"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-5EE21522-B480-4ACC-9049-CFB00F395EF8">The instrument reads through the trace file and shows the results in about 20 seconds. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__STEP_45AECF01C1424282970E5681CB7B1B90"> 
+		  <span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-BC63CFD1-80EF-4518-A037-FD6808B13CF4">Interpret the macro results. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEPS_7CA6C0865C0144D585588F3ACCD3290E" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_11D8944A68F7474B90DFE1B5D38B0FCD"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-54422062-0327-4139-865D-5DD0BBD6651A">After the Debug Analyzer has finished running, start scrolling down in the file looking for red or pink text. Red or pink text means that the text appears in an Event Log message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_450B6D14D3134CBE8A5ADB58D8038EC6"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-80613DA3-6277-430F-A5D1-792078C0F14D">Locate and make note of which module is named in the text from the Event Log message. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__UL_F6DC8E80B7384076A3CDD24CBF2E411A"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_55D6E8CBC27C4708BAE9F898F292B061">If the module named is not the pick-and-place, continue scrolling. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_36C78B2966C348B683EF1E721A4CD22C">If the module named is the pick-and-place, proceed to the next step. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_2BFF75102DC842F09FD82E3303ECFC18"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-E0FD76A6-7928-4BCC-ADAF-6BA819978E47">Start to read up in the file, looking for the last module that the pick-and-place interfaced with before the pick-and-place failed. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-13300157-7F8B-406D-8EF3-BE27FF0889E0"><span class="note__title">Note:</span> For example text in a trace file, refer to the 
+					 <a class="xref" href="GUID-90B59CBD-75B7-4647-9BF1-85B2E2C85415.html">P&amp;P: Troubleshooting Pick-and-Place Errors</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_B13C58030D50419AAF7379C173FBB805"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-422FED9F-E93B-4123-B791-1D69EFF2B951">Make a note of the intersecting device to determine if there is a trend. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-85078AD0-1CC7-4A80-AA50-FD8EDFCDC242"><span class="note__title">Note:</span> For troubleshooting information, refer to the 
+					 <a class="xref" href="GUID-90B59CBD-75B7-4647-9BF1-85B2E2C85415.html">P&amp;P: Troubleshooting Pick-and-Place Errors</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_E9B3CE69A333485CB1F09B71E5B9154A"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-CF61847F-9D4A-4AB5-B593-91002C3562F0">Repeat these steps for all red or pink text in the trace file to determine if there is a trend. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AC15A5F8-C282-4FDA-983F-DE993F2C94CD"><span class="note__title">Note:</span> To determine if there is a trend, parse more then one trace file. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__STEP_4190155A277544838D10C1777D9C03A1"> 
+		  <span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-8B990FF1-3618-43D9-85F0-C12E3DE36109">Once all trace files have been analyzed, remove the USB drive from the laptop and connect to the DxI console PC. 
+		  </span> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-E3B77B67-92CA-4662-AB07-54C13CA53209.html">Troubleshootng/Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-D608EDFF-00D3-460F-9D32-724176DC0205.html" title="16 Pick and Place Modules"><div><span class="ph num-prefix">16 </span>Pick and Place Modules</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E3B77B67-92CA-4662-AB07-54C13CA53209.html" title="16.5 Troubleshootng/Testing"><div><span class="ph num-prefix">16.5 </span>Troubleshootng/Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328.html" lang="en-US" title="16.5.3 Using Debug Analyzer During Troubleshooting"><div><span class="ph num-prefix">16.5.3 </span>Using Debug Analyzer During Troubleshooting</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328" role="article"> 
+  <h1 class="title topictitle1" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Using Debug Analyzer During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to Use the Debug Analyzer macro to analyze DxI trace files. 
+  </p> 
+	 <section class="section context" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__CONTEXT_0DB75336E7594B83890ECB5DDFBD70DB"> 
+		<div class="p">Perform this procedure when troubleshooting intermittent sample, incubator, wash, or dual-gantry pick-and-place errors. 
+		  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-DF538E9E-5C44-4242-B178-8109277074DE"><span class="note__title">Note:</span> For troubleshooting information, refer to the 
+			 <a class="xref" href="GUID-90B59CBD-75B7-4647-9BF1-85B2E2C85415.html">P&amp;P: Troubleshooting Pick-and-Place Errors</a> procedure. 
+		  </div> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Locate and save the trace file or files with pick-and-place errors. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEPS_CA3679BF214C4D9F811546058C5E6692" type="a"> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_16DD197864DD4216AF92F33E3B82F9D8"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-01A1B6DB-FE28-4C63-BAA6-FE042AE13FA0">Review the Event Log for errors (pick-and-place errors). 
+				</span> 
+				  <ol class="ol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__OL_669A5B3B164B496EAF3AB692DAFAB453" type="i"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_89A1E5794EDF49469CF53B05AF453B6A">On the DxI user interface, select the 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-73DE6BA1-CB53-4B18-8E17-E596807E061B">Event Log</span> screen. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_D569B1137262453596ED9180A380E190">Select an error message (pick-and-place error), and then select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C0048115-0222-4826-833F-7CF4A2FFA413">Details</span> button. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_AD0FC5EE9D1F4434B7173B9156B1F6B7">Write down the information from the Date/Time field. This date and time is the date and time the error occurred. (example: Date/Time: 4/03/13 03:06 PM) 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_6CE89718973E4CBD98C9C09AB49F0178">Repeat for all errors (pick-and-place) to determine the date and time the errors occurred. 
+					 </li> 
+				  </ol> 
+			 </li> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_8ADDF93726FC4F3FA689DB27E8BE6FF7"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-661E478B-02BE-4A8B-9D8C-B418296317D3">Create a folder on the console PC C: drive. 
+				</span> 
+				  <ol class="ol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__OL_E776B34D08504BE98BDD7437139E8224" type="i"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_D75FD2150C084FF99D21A365963A9C67"> Select 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-6277AB66-555D-447E-A131-E5CF0769E180"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-4466DCE5-92C5-4661-A639-A43D5C45BFF2">Start</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-198BA4DF-A6C5-4FFC-8896-D9A96694D580">Programs</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-0BF8A473-7210-4E88-919F-946EDA8B72B2">Windows</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C3995960-248D-413A-9BC9-D79D5520699B">Explorer</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_0286DFA486864916B231A54E56F17A1C">Navigate to Local Disk (C:). 
+						<br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_2B996AE96F564EAA8BFFA626120DDB8E" src="GUID-211E0936-E524-4536-B4F9-81BF6F25EBC5-default.jpg" /><br /> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_EB85C3573B894E80B9A4F4BDBC72C668">Select 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AB367D83-8D60-4825-8019-AEF2FEB6A5A4"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-D4937FCC-EB15-4C94-AD14-2A8399196D69">File</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-2B29398C-DA0B-4B86-82E7-9A61BAC082C0">New</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-4FA0D0A8-AF79-439F-9FA3-412816500AB0">Folder</span></span>. Rename the folder Trace Files. 
+						<br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_C7E0AC824E7546EC9CD071C3E7A9037A" src="GUID-16FD8B6A-621E-4EF3-A1AF-34441941DC7A-default.jpg" /><br /> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_3B646CC746AA4C86BD93AA09038D04F7">Close Windows Explorer. 
+					 </li> 
+				  </ol> 
+			 </li> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_01F3C3E3314642B8A187EEC8E86AF694"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-58EF783C-B190-4BC6-A6F6-3AA97F2F1B15">Copy trace files from the AU to the console PC. 
+				</span> 
+				  <ol class="ol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__OL_FF75FD833CE2417183931693EA68B221" type="i"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_C44EF948425D4FC0A86ADCCF862C25CF">Press the 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-2807DC04-0521-4FC4-B390-0358C61F0A99">[Windows]</span> key at the bottom left corner of the keyboard, then select 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AA457378-1D27-44B1-9593-4EA9C023A75F"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-4A6AC4FD-4944-48D8-B3DE-65BF56566006">Start 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-2B76C93F-0B42-40B1-8FFB-27DB8AF5177A">Programs</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-7E58F070-572F-4805-91DF-F5D5705DB2FA">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-D8C8D99D-5F5C-4D9F-88AB-1A8A211FA972">Remote Desktop Connection to AU PC</span></span> to launch the Desktop Sharing. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_2F7EF74056E745339B2EE2E3E7BF1955">Remote Desktop will connect to the instrument computer allowing remote control of the instrument and applications. 
+						<div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-23C77FAB-4B12-43E8-A5ED-6116BEC7D995"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__UL_72F1DD18328C4B31B75B1CC7E39CAD9F"> 
+							 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_3220389590A74591BD0F1C80BB4A3CF4">When connected, the Remote Desktop window will show the Windows XP desktop display of the instrument. 
+							 </li> 
+							 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_4DCDD50CB8CF4FCB96E7D54554072FA4">The AU desktop will have scroll bars on the right and bottom of the window. The Windows toolbar at the very bottom of the screen is the PC toolbar. To see the AU desktop toolbar the scroll bar on the right will have to be moved down. 
+							 </li> 
+							 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_A7865BC603D440BCAEF216300404592A">To return to the console PC display use the minimize button at the top of the AUSETUPPC screen. To restore the AU Windows screen select the AUSETUPPC Remote Desktop Connection in the console PC display bottom toolbar. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_E59CDECFC44149C0A242CF321509CB6A">Open a Windows Explorer on the AU by selecting the 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AB470BCC-A8CD-4B78-B176-C4B7148695D9">Windows Explorer</span> icon on the desktop or selecting 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-9C442B23-9B42-42DE-9EFE-5C608D3FAE3C"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-D1F691CC-E536-4BAE-89F4-508E40849B6A">Start</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-8846D1D4-7091-4522-9160-9D33402F3CF3">All Programs</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-F0793C9B-96E0-4CC6-A0CF-5F810AD66DDF">Windows Explorer</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_885715474FA14ECCA8214E0A9E9A62C8">Select to 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-6F8A9ED9-0750-404E-BCFE-FEC75632928A"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C5C3C045-5241-4A28-827B-6A834D0A0228">Local Disk (C:)</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-505A890E-F94E-4144-9031-53290192679D">AU Folder</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-8B3C5806-8BF6-42CB-8B68-364D6B1BAADC">Log Folder</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_93A68AEEA5CB4C85A25BE5FF858A6E04">Select the Name column to sort the files from Z to A. Now, trace files are at the top of the list with the newest file on top. 
+						<br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_E09D841A5DD743F198B29D5EC7FA5CE7" src="GUID-1AE72422-8E7D-43CE-86C4-39715717B2C7-default.jpg" /><br /> 
+						<div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-191EE0DB-7F7D-4913-9418-02542D98CFE9"><span class="note__title">Note:</span> Trace files are named as follows: 
+						  <p class="p">YYMMDD-TTTT.txt Y = year, M = month, D = day and T = time (24 hour clock) 
+						  </p> 
+						  <p class="p">Example: 130403-0325 = 04/03/2013 3:25 am and Trace-130403-1715 = 04/03/13 5:15 pm 
+						  </p> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_53087C6C28A444989282328CBE4D46FB">Determine which file to copy from the date-time stamp noted during the review of the Event Log earlier. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_349636CF51AC495D91D0DC18326FC4E4">Right-click on the trace file and select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-A91EED11-180A-447F-A641-7049150A212B">Copy</span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_47B157B5327B4FF1BD0FD6F0C97C4A83">Select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-E06B8F97-0EE1-44D2-AE58-FCE30C2A7979">C on CONSOLE_PC</span> in the folder list on the left side. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_35607144BE3F4370B777CADADF1B2ADF">Open the Trace File folder. Right-click inside the folder and select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-144C511B-A85A-4083-A9AC-9FFE8FFF3A16">Paste</span> to paste the trace file into the folder. 
+						<br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_2685E3414D8A4D618DC63D58914CEEB7" src="GUID-E38F0914-99EE-459B-8421-F431664FB754-default.jpg" /><br /> 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_591A1BFADF834B5DA0E10CBFB6981B45">Repeat the steps to Copy trace files from the AU to the console PC for all the trace files with errors that have been copied. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_DF46B95D9A7240B4A2D1177BA390E077">Close Windows Explorer. 
+					 </li> 
+				  </ol> 
+			 </li> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_B4B19298CFF74749A131B705DF531707"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-A9BA7AB3-7525-49F4-A3B5-356006A15564">Exit Remote Desktop Sharing. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_CAB9D0C22B9240F683248BB789CFE723"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-3546FC76-021C-43F0-9BFD-E16533EFF711">Copy the trace files from the console PC to the USB drive. 
+				</span> 
+				  <ol class="ol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__OL_664CB658C6274483BB114C85B197590E" type="i"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_DE2CA7A93812429C9AB7E4BF92FD87A9">Open a Windows Explorer by selecting 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-FBACB313-DF71-4DC0-BAEC-B06333972710"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-5F88C0B7-D725-4ED8-BBBF-1583919B1571">Start</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-14D96190-1178-4356-B5B7-17B98D87AAC9">All Programs</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-757AEB3A-0663-45EB-A22F-AA869C5492E2">Windows Explorer</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_BAB515DD218946A8A75C7BD0CE28E9B1">Select 
+						<span class="ph menucascade" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-7DE08A2C-432A-40C2-B03A-703AE0D1DB4C"><span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-2B1F54C2-16C2-46AA-BBC9-22DF7EE921E1">Local Disk (C:)</span> &gt; <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-070E2CB7-6208-4D7F-A4A1-A23AFA98DC0E">Trace Files</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_9311F95FC54F4F4DA49E3D28D92C6D70">Select all files in the folder, right-click, and select 
+						<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C6FC1EEF-BF0E-4C14-9F16-6FAD331CF487">Copy</span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_FADBB6530D2E461BB50D980DCC1170E9">Navigate to 
+						<span class="ph filepath" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-6AB7A3F8-1738-4F32-AD45-17E96DDA14B1">BACKUPDRIVE (E:)</span>, right-click, and select<span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-412B8105-FD7C-43E5-864A-528BF97819DE">Paste</span>. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_E3CF443B5EC440B78A7FBA7DA579B9FF">Disconnect the USB drive from the console PC. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_5940992859DD49148A4C1926D7FE84E3">Insert a USB drive on the service laptop and scan the drive for viruses. See 
+						<a class="xref" href="GUID-0B74F271-3C22-489B-8E95-9134F0BD70BD.html">USB Drive Malware Scan and Removal</a> for more information.
+					 </li> 
+				  </ol> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__STEP_9AFF7ACA85274D238FDFE569B486463D"> 
+		  <span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-6DDDFDC7-5A58-4FFE-86A6-51500AA7FC21">Search a trace file for pick-and-place errors. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEPS_CA45B418B8DF4DC1BD1C9E41894AFC73" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_ADCF7F8C22E54D47A37814CA0F6BAA68"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-BF7C1A1E-4724-4698-B0B5-9EEAF826F651">Use this macro to parse a trace file for pick-and-place errors. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <a class="xref" href="./Attachments/Debug%20Analyzer.xls" target="_blank"> Debug Analyzer.xls 
+				  </a> 
+				  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-46C129E3-1A4C-4B17-AB98-E78494964C7E"><span class="note__title">Note:</span> When using the macro, change either the Windows or the Excel language setting to English or there will be an error message. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_A36EEEA2F3124A3388371E916606765F"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-3D9A133D-5E21-48C6-ABF4-BD63FE8B6965">Select the 
+				  <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-CCC98DF2-B40F-40D0-A968-4D0DDBC2253F">Enable Content</span> button. 
+				</span> 
+				<div class="itemgroup info"><br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_906BC6FC64F7428DBF7F3187B1CEC96A" src="GUID-D1974600-B8E4-4197-A73D-462025E6D14A-default.jpg" /><br /> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_4987940E50A64249B5F757A138D8B0EB"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AC4B5C14-6EB5-422F-A06E-1AF94F1B2569">Select the pick-and-place device that had the error: Sample PnP, Incubator PnP, or Wash PnP. 
+				</span> 
+				<div class="itemgroup info"><br /><img class="image" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__IMAGE_846307A4A29B471CBDFCF2F151DD14AC" src="GUID-D9CEB508-59EF-42CF-81C6-7EA5A42A8BA9-default.jpg" /><br /> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_BD53F9FC662E4A48B33044A398586495"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-9F51CCE1-39A2-4D63-A933-B95510136D8B">Select the 
+				  <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-348BD716-97EB-4DC4-8EE1-29C3805417B0">Open Trace File</span> button. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_C08DBDB0086C4B06A3B4328C4A9D1AF3"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-C7657509-6FEC-4805-9471-26359BFC4086">Locate the trace file that was saved to the USB drive, and then select 
+				  <span class="ph uicontrol" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-35F09487-5DB2-4176-9C0F-D3D5EDFC8ABC">Open</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_63A20490E9E741B1A3C9E00ADD0F4D3B"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-5EE21522-B480-4ACC-9049-CFB00F395EF8">The instrument reads through the trace file and shows the results in about 20 seconds. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__STEP_45AECF01C1424282970E5681CB7B1B90"> 
+		  <span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-BC63CFD1-80EF-4518-A037-FD6808B13CF4">Interpret the macro results. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEPS_7CA6C0865C0144D585588F3ACCD3290E" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_11D8944A68F7474B90DFE1B5D38B0FCD"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-54422062-0327-4139-865D-5DD0BBD6651A">After the Debug Analyzer has finished running, start scrolling down in the file looking for red or pink text. Red or pink text means that the text appears in an Event Log message. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_450B6D14D3134CBE8A5ADB58D8038EC6"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-80613DA3-6277-430F-A5D1-792078C0F14D">Locate and make note of which module is named in the text from the Event Log message. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__UL_F6DC8E80B7384076A3CDD24CBF2E411A"> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_55D6E8CBC27C4708BAE9F898F292B061">If the module named is not the pick-and-place, continue scrolling. 
+					 </li> 
+					 <li class="li" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__LI_36C78B2966C348B683EF1E721A4CD22C">If the module named is the pick-and-place, proceed to the next step. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_2BFF75102DC842F09FD82E3303ECFC18"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-E0FD76A6-7928-4BCC-ADAF-6BA819978E47">Start to read up in the file, looking for the last module that the pick-and-place interfaced with before the pick-and-place failed. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-13300157-7F8B-406D-8EF3-BE27FF0889E0"><span class="note__title">Note:</span> For example text in a trace file, refer to the 
+					 <a class="xref" href="GUID-90B59CBD-75B7-4647-9BF1-85B2E2C85415.html">P&amp;P: Troubleshooting Pick-and-Place Errors</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_B13C58030D50419AAF7379C173FBB805"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-422FED9F-E93B-4123-B791-1D69EFF2B951">Make a note of the intersecting device to determine if there is a trend. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-85078AD0-1CC7-4A80-AA50-FD8EDFCDC242"><span class="note__title">Note:</span> For troubleshooting information, refer to the 
+					 <a class="xref" href="GUID-90B59CBD-75B7-4647-9BF1-85B2E2C85415.html">P&amp;P: Troubleshooting Pick-and-Place Errors</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__SUBSTEP_E9B3CE69A333485CB1F09B71E5B9154A"> 
+				<span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-CF61847F-9D4A-4AB5-B593-91002C3562F0">Repeat these steps for all red or pink text in the trace file to determine if there is a trend. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-AC15A5F8-C282-4FDA-983F-DE993F2C94CD"><span class="note__title">Note:</span> To determine if there is a trend, parse more then one trace file. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__STEP_4190155A277544838D10C1777D9C03A1"> 
+		  <span class="ph cmd" id="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328__GUID-8B990FF1-3618-43D9-85F0-C12E3DE36109">Once all trace files have been analyzed, remove the USB drive from the laptop and connect to the DxI console PC. 
+		  </span> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-E3B77B67-92CA-4662-AB07-54C13CA53209.html">Troubleshootng/Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-D608EDFF-00D3-460F-9D32-724176DC0205.html" title="16 Pick and Place Modules"><div><span class="ph num-prefix">16 </span>Pick and Place Modules</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E3B77B67-92CA-4662-AB07-54C13CA53209.html" title="16.5 Troubleshootng/Testing"><div><span class="ph num-prefix">16.5 </span>Troubleshootng/Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-1E5F6948-B291-46E3-A729-9AC8584F3328.html" lang="en-US" title="16.5.3 Using Debug Analyzer During Troubleshooting"><div><span class="ph num-prefix">16.5.3 </span>Using Debug Analyzer During Troubleshooting</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

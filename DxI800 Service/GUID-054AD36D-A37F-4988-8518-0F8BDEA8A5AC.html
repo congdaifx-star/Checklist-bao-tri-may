@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to capture RF noise data generated during the sample aliquot from the LAS track." name="description" /><meta content="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html" name="DC.Relation" scheme="URI" /><meta content="GUID-0A38E0A8-5886-4340-B4C8-3B781C6452B0.html" name="DC.Relation" scheme="URI" /><meta content="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="March 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BW" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="20/03/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13861" name="FBCPARTNUM" /><meta content="Brea" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="20/01/2026 17:40:12" name="FISHPUBREVIEWENDDATE" /><meta content="20/03/2026 15:49:34" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573" name="FMAPID" /><meta content="20/01/2026 18:01:17" name="MODIFIED-ON" /><meta content="20/01/2026 18:00:42" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-4F70D6B1-1AC1-42AE-B4C8-48EF41989170" name="FISHMASTERREF" /><meta content="DxI Service Manual PN B13861-v50-GUID-ED2B43CB-83B6-401C-912D-C94E6DC1A573-2026/01/20 18:00:42" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BW" name="FCHANGES" /><meta content="" name="FREQUESTEDLANGUAGES" /><meta content="50" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="User Manual" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="DxI Service Manual PN B13861" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>14.3.4 Capturing RF Noise Data During Troubleshooting</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-32A5D5C0-A919-41A1-9B7C-BF866283C3C6.html" rel="prev" /><link href="GUID-3B52CF85-D002-4A17-B366-C3B0AA94CB9B.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1898" data-relpath="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>DxI Service Manual</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for DxI Service Manual</span><span id="emailpub">Publication: DxI Service Manual</span><span id="emailpartnum">Part Number: B13861</span><span id="emailrev">Revision: BW</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Capturing RF Noise Data During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to capture RF noise data generated during the sample aliquot from the LAS track. 
+  </p> 
+	 <section class="section context" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">This procedure is part of troubleshooting excessive RF noise from the connection unit track that has been found to interfere with DxI level-sensing on LAS track samples. 
+		<div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7F128640-7589-45A3-BB0F-7AD8BC9C7A93"><span class="note__title">Note:</span> Refer to the 
+		  <a class="xref" href="GUID-32A5D5C0-A919-41A1-9B7C-BF866283C3C6.html">LAS: RF Level Sense and Sampling Problems</a> document for more information. 
+		</div> 
+		<p class="p">Perform the steps in this procedure to capture RF noise data from the sample probe. 
+		</p> 
+		<div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-6903AF22-A33A-4380-9D0E-33BC7350B461"><span class="note__title">Note:</span> Troubleshoot other possible causes before checking the RF noise. 
+		</div> 
+		 
+	 </section> 
+	 <ol class="ol steps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0BDE5403-2480-444B-83AD-75701E5336B7"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e20">Pause the LAS sample tube loading. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e25"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e27">On the 
+				  <span class="keyword wintitle" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e29">PrepLink Console</span>, select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e32"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e33">Setup</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e35">Instrument Loading</span></span> 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e38"></span>. 
+				</span> 
+				<div class="itemgroup info">
+				  <figure class="fig fignone" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e43"><br /><img class="image" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e44" src="GUID-F09A9656-9F9E-483B-A3A6-20F15BF67C5A-default.gif" /><br />
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e49"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e51">Select the correct 
+				  <span class="keyword option" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e53">CONN-X Loading Paused</span> option (X = 1,2,3, or 4). 
+				</span> 
+				<div class="itemgroup info"> The DxI instrument connection units are labeled 
+				  <var class="keyword varname" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e59">CONN-1</var> through 
+				  <var class="keyword varname" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e62">CONN-4</var>, according to how many DxI instruments are connected to the LAS. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e67"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e69">Before proceeding, verify that the selected DxI instrument has completed processing all samples. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__STEP_E0B7297F0A4C420BBF7089247F924DFD"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4146F12F-3FA2-4DC1-8292-59AC566B7ACB">Enable Debug Logging to capture data from the sample pipettor. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-53A180A9-297A-43D5-8FAB-4A58BF98E0A5">For Windows XP System with Software 5.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_3B419451BC8E490BBFDD7F05B98F2840" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_2D14CA42BC7740AE8D94DC58CB8FEDD2"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-81012474-EB60-4DE2-AFB5-B17996033DDB">Select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4F53FFCA-9AE2-49B9-8607-A98F4B53A71D"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-EE44E89A-A872-465C-A8F4-2F22B7D660A4">Start</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B395FDB1-715F-43E0-B9AD-08D14AA0644D">Programs</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-CC1BBB54-ABCD-48A8-ABAC-3C6AFBCE121C">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-C0F76205-8D17-419C-A597-996131053E56"> Remote Desktop Connection to AU PC</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-50329CAC-1E82-4B39-B2C0-A1175A6C3D71"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-22A499F8-9F7E-4C4E-A0F1-66A90AADB213.html" title="This procedure describes how to connect from the console PC to the instrument using desktop sharing on DxI systems running Windows XP and Windows 8 operating system.">Software: Using Desktop Sharing Between Console PC and AU</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_B822EB461FDA47378C14EF77C3B0E620"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-9E79B4D6-6EB9-47D0-A0DF-15A2CAB1D86F">Open the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-99C9336B-8A94-43B4-88A3-AFCF461FBB57">Specific.ini</span> file (in the C:\AU directory), and then perform a search for [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_9A6E5F25E4EC4FA78381A70EE4FAF9E1"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-148039B6-9045-4E40-9A12-E2A0EC57050C">Find the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-40AF510E-9143-4EDA-B442-DAA1B84A7F97">Enable Debug Logging=no</span> entry in the [SamplePipettor] section. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_8749A94B5C3F46E2A8F2033A09979245"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4FD23C8B-B25D-4AA3-9104-0660F190BF8D">Change the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D6B428D8-6BC9-4327-A809-8F2D5B9ACC64">=no</span> to 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-16CCA2D9-B6DD-447C-BCE7-C7D7143114C7">=yes</span>, then select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4777E848-0E38-40B6-95F3-E0CB3BB3AF10"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B7B465D8-C178-4FAF-969D-76407695A359">File</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0B6817C3-E692-4D03-9D2F-D9B62CB6A619">Save</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_5549C764EFE94373B8662D5FCF1CDD4E"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-90917B01-D3E5-44E0-869A-7B2FD27B1F3F">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1762824D-6386-4EEA-80F5-9FC05A747121">AUObj</span> icon (small Y at the lower right corner of the screen), and then select 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3A9D4C0E-FFEC-43AD-A346-AAD023FBC0E9">Exit</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_239B2A57A5834F599016659E9CCE97C5"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-2EB1E564-1F54-46DE-92DD-4B52548AA3FB">Select the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8B44D45C-4E53-4EB4-A478-A1772523260C">AUobj.exe</span> icon (large Y on the left edge of the AU desktop). This action starts a new 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8D0DFDEC-8DE2-455E-9F73-4EC4DA6188E3">Debug.txt</span> file in the C:\AU directory, erasing any previous 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7C8D2264-D41E-474C-ACDF-2DBE6F801F1E">Debug.txt</span> file. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-207FA6B7-C3CC-4181-87B2-1EB0DF93DC69">For Windows 8 System with Software 5.3.1 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-31A81079-2C7E-4435-8FBA-7FDFD0A4CE1F"><span class="note__title">Note:</span> DxI Software 5.3.1 is compatible with Windows XP console PC. If the software was installed on the Windows XP console PC, then follow the Windows XP section to enable debug logging. 
+			 </div>
+		  </div> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_D4D63B0F18DC4F42B9FBB451315A135A" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_804FD50DEF17454DBA51B0BF3780E1CB"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7CF949C9-39ED-4009-850F-270BC5AECB34">Press 
+				  <strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-BE30CDB2-34C7-478C-A0C2-A30A29006734">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F223C98B-FAD7-4E33-B0A9-DB63FA1E9806">Remote Desktop Connection</strong> icon or type 
+				  <strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0BB2DFED-DEC0-424B-9815-1B4657BBAA6A">remote</strong> and open the Remote Desktop Connection program. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-575C767D-F955-4D50-A234-E98AABA46EDC"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-22A499F8-9F7E-4C4E-A0F1-66A90AADB213.html" title="This procedure describes how to connect from the console PC to the instrument using desktop sharing on DxI systems running Windows XP and Windows 8 operating system.">Software: Using Desktop Sharing Between Console PC and AU</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_BD96DF35439946B2AD5B3344921B6A6C"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-85ECD8B9-F524-440C-B3E7-B69F436455DB">Open the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3588B1FA-4278-4876-BD21-23A165D16F27">Specific.ini</span> file (in the C:\AU directory), and then perform a search for [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_BB076CD3EDEF41E3B81CAE99E5FF9528"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-88CF1630-A4FF-4267-B31F-437327323F23">Find the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-5D16EF5B-3EA1-4B5D-81E5-EF1E9752A937">Enable Debug Logging=no</span> entry in the [SamplePipettor] section. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_520583F3D2C843CF899849DDF55CA941"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1D628FE9-8225-4478-B0EC-E4A1D5C0FD78">Change the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-BC0017A4-50E3-4A9C-9DC3-816C4EF34976">=no</span> to 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B4B3441A-E326-4128-80A7-601E16C202F3">=yes</span>, then select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-918E82F7-E060-4CFB-B8E7-00E87C010512"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-454E227E-4024-4C75-81E4-89E729E541C3">File</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D6963199-882C-451C-8505-5BAB9B3A02F0">Save</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_B60CB49703264761974956A94B104BD9"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-68F2B7FF-CDAA-4630-9A70-C4C3B99E09E8">Shut down the AU Object program. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ul class="ul" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__UL_F611C816BF294429A63904A24770DC92"> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__LI_108C4A11BBB0465B94CF2BA7F65C217E">Right click on the task bar and select 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-2F2A9CF6-CE59-4C05-A638-323CDCEE88FB">Task Manager</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__LI_77D40A3ACE8D4D16877E46D605E5F219">In the 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7E5B6A50-A7E1-42C9-9588-310164A8C1FB">Task Manager</strong> box, click on 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-207CB3BA-A82D-4BA7-8D51-9C5438EA9CDE">Processes</strong>, select 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-209BB11D-29C0-46A7-8F27-BB563AA00331">AUobj Module</strong>, and click on 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-75F7E20A-C363-4CF9-9E3C-D161A96743C7">End Task</strong> in the bottom corner of the box. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_56B20AE442AC456F8EBC4C6EC2879845"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0A2B1CCE-FB91-4C45-96BC-3CA178A91ED9">Select the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-5DB67B68-2B28-484E-AF2A-6F04D817EC65">AUobj.exe</span> icon (large Y on the left edge of the AU desktop). This action starts a new 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8D8E5364-7622-4CF4-893C-6BE219B8D16B">Debug.txt</span> file in the C:\AU directory, erasing any previous 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-887E9921-C880-4EF7-9407-5839C547EA5A">Debug.txt</span> file. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-2F5290E0-41A3-4CD5-BF04-CF2D1D7B2416"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e20">Perform the LAS RF Level Sense Test. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e25"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e27">From the 
+				  <span class="keyword wintitle" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e29">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e32"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e33">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e35">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e37">RF Level Sense 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e39">LAS</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e44"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e46">Run a dry test. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ol class="ol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e51" type="i"> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e53">Select 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e55">20 repetitions</span> for Dry Test and 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e58">LAS Autoaliquot Tube</span> for Container Type. 
+						<div class="note caution note_caution" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e61"><span class="note__title">Caution:</span> If a gel tube is used in the dry test or the selected option for container type does not match the actual container type, the sample probe can be damaged. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e65">Confirm that the carrier and tube are in the aspiration position. Select 
+						<span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e67"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e68">Load a Carrier 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e70">OK</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e72">Start Test</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e76">Select the 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e78">Print Report at End of Test</span> option. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e82">When the test is complete, select 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e84">Release Carrier</span>. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e91"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e93">Run a wet test. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ol class="ol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e98" type="i"> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e100">Select 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e102">20 repetitions</span> for Wet Test and 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e105">LAS Autoaliquot Tube</span> for Container Type. 
+						<div class="note caution note_caution" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e108"><span class="note__title">Caution:</span> If a gel tube is used in the dry test or the selected option for container type does not match the actual container type, the sample probe can be damaged. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e112">Fill the auto-aliquot tube with 200 µL of wash buffer. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e115">Select the 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e117">Print Report at End of Test</span> option. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e121">Confirm that the carrier and tube are in the aspiration position. Select 
+						<span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e123"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e124">Load a Carrier 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e126">OK</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e128">Start Test</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e132">When the test is complete, select 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e134">Release Carrier</span>. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e141"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e143">Verify that the failure count is zero for both the dry test and the wet test runs. If failures occur, perform repairs and repeat tests. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__STEP_1B53584092514414BC34CDF9127476EC"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-72171D08-6F2E-4978-A59B-D21159B7D802">Move the 
+			 <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F3DEB938-1154-498E-B23E-9E6E4EBAA179">Debug.txt</span> file to a local PC for printing or sharing. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_AEBEF0C6D0394826923FBA4E0681F900" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_60C911E61FD94221B947EF3FCEC8159E"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-95F8F823-47B3-48BB-BCB7-BEA461D4FE0C">Return to the remote connection to the AU, and locate the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B72ED7F4-3616-41BC-8CB8-9DF5552D5AB6">Debug.txt</span> file in the C:\AU directory 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_FB9FA8D430774A1D9BB4C920E1CF77CD"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-E159A85C-95C0-499F-B249-8B700934FCF7">Select the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-214BE390-1E3C-4A18-8354-C989FE8B44D1">Debug.txt</span> file, select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8AB4A2F4-06D2-4FB2-A016-64ADAE027F2E"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8E8B8FE3-6C1C-4109-A817-A1D3BB19FE97">Edit</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7F724CE1-47D7-4284-A716-80F8A5A4EEFB">Copy</span></span>, and then 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-EC6F0703-97F6-45F0-8914-1CC0F3031A85"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-35277DC8-41A6-41CF-9CA7-242697734C9F">Edit</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-CEF66589-81E1-42E0-A018-B9E5D61FEA60">Paste</span></span>. 
+				</span> 
+				<div class="itemgroup info"> This action creates a copy of 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4CACD334-3F10-47B7-AA52-91F6F611B87F">Debug.txt</span> file in the C:\AU directory. 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4B26E074-DE09-4996-A155-BE58ECD52953"><span class="note__title">Note:</span> The 
+					 <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7D8DD179-F764-4ACC-9CF2-076FE31FBB0C">Debug.txt</span> file itself cannot be transferred because it is still in use by the instrument software. Therefore, it is necessary to make a copy of it. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_67D4A21B780E49D8B40B70668CC44407"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F1E900B4-B957-4F0B-99C6-A150656865B7">Copy and paste the copy of 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-83E4CF91-4706-441F-ADAF-86049FD69EEB">Debug.txt</span> file in the C:\AU directory into the C:\ drive on the PC. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_E495EB892A2D48C5B06FEF75DEE891E2"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-92301B88-6685-4767-9A28-E0202202E00F">Move the file from the console PC to the laptop PC, using the USB backup drive. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_3CE74774507941A1BB674CE81524177A"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7A451688-9362-4C85-ADF7-4C5BD4E11997">Rename the file to include information about the source and time of the data capture. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__STEP_55BF229DD73B47C3943A18186FD19B5B"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8BA6F039-F314-4DE8-AC50-77802B6F8AB2">Disable Debug Logging for the sample pipettor. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-A3F3667B-4348-4C09-B9C1-A3576502BEA0">For Windows XP System with Software 5.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_2987ADD43FAD47C98CF0349A11A3D619" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_3846740750854552B4D17229253ED8EB"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-CE2D0351-E217-4902-A56D-981891C55C3B">In the remote connection to the AU, open the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-9912EC03-DD7E-4838-93D1-8C1FE9C45D57">specific.ini</span> file, and then perform a search for [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_F1992E2C61E742D8AC90FC9EDFF9C332"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-735A5C32-35D1-4C16-A79A-67C950BA8D7A">Find the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-910BC811-F135-42F4-870E-189CA051BB72">Enable Debug Logging=yes</span> entry, which is the final line under [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_12103E067C864AB0917CF4DFA237E5BC"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-ACA22311-3AB2-4F57-B314-8D4293333F93">Change the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3CF924E6-0439-41A8-A88D-44894D893DDB">=yes</span> to 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1B405A58-F93D-4FF6-B92C-7628FE2FC095">=no</span>, and then select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3E45065D-1F8D-4F9F-9AF5-ED3AC05E54B1"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D3808786-89D0-4155-8E69-2BE53FCA57E5">File</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3F391DC5-1DB8-4E9D-9B6E-A3CEB95AF913">Save</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_B5DA499E3194478F9469BE8899F40631"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-9506766D-533F-4A77-959E-476DD5BCD065">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F327CF98-FE21-47CE-8F53-BA5896606BF3">AUObj</span> icon (small Y at the lower right corner of the screen), and then select 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-5F62E61E-E3C2-41AA-8789-3619604D36D9">Exit</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_A1FD105899564157956142E052DB4DFC"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-A74FCF23-5755-4E8E-BE3C-D3B44E298862">Select the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-38F446AD-2212-4FAE-AB76-1A6461AB7691">AUobj.exe</span> icon (large Y on the left edge of the AU desktop). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8EACC8E2-5AEF-487A-9424-D6BA2451AE7F"><span class="note__title">Note:</span> This action starts the machine control program with Debug Logging disabled. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info">
+			 <p class="p">
+			 </p>
+			 <p class="p"><strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1175636E-A264-40C9-89EC-7156E31165CD">For Windows 8 System with Software 5.3.1 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-45016D5E-129C-4D73-AC05-330AA68F88EE"><span class="note__title">Note:</span> DxI Software 5.3.1 is compatible with Windows XP console PC. If the software was installed on the Windows XP console PC, then follow the Windows XP section to disable debug logging. 
+			 </div>
+		  </div>
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_6CE729B734664121A2B9793AC5A7A0C0" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_55137B44468C44EA9504F0D2C66F528B"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8514E486-8557-4854-B542-6C0791D98F29">In the remote connection to the AU, open the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8A764BD2-2C34-41C6-83AE-24FBC5B017CF">specific.ini</span> file, and then perform a search for [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_006B738BD25F41CA9BC7AF44506E9763"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-6798DDF9-BE77-40E5-B2EB-BB807B8632CC">Find the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8F38A9AE-73A0-4B2C-8E21-748BE654B296">Enable Debug Logging=yes</span> entry, which is the final line under [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_4777D3AEF0874307BD4182B735083401"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-EE83C7B0-37D3-47DE-BCCB-97AB96159D96">Change the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3140F51C-FE40-4809-B7ED-74E9398DB772">=yes</span> to 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-83DAC687-FF77-4348-BFCF-23B7F50C63C2">=no</span>, and then select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D604ADB9-36EB-406D-A27B-15B5B73E9EF2"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1385F238-661C-4E30-832F-2401DDC9B3FE">File</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0A2DEB97-9F90-48FD-B64D-4EF16E02A3BE">Save</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_201D4A18637340E8BA4707727BF0A16E"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-627F4A32-A2BF-4468-BA75-F219C481773A">Shut down the AU Object program. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ul class="ul" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__UL_681D22C74EF04FFDA406EF89859FA67F"> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__LI_1921B7D1CE514C338EF7802F1B52835E">Right click on the task bar and select 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-C8618CCD-DE3B-4558-97BD-B88E2FD946BE">Task Manager</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__LI_165B7B30300D4912A309496B8A87D758">In the 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-66B5CC11-C04A-41A5-AEAC-376B6E6E6C8C">Task Manager</strong> box, click on 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D716D3D7-EC79-4D83-B844-D7013A3260E5">Processes</strong>, select 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4D24F3AD-9577-4883-9E5F-9AAC0F8FDF7E">AUobj Module</strong>, and click on 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F98F8045-F3EB-4B6F-AE5D-53FEDCFA9533">End Task</strong> in the bottom corner of the box. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_29A2A390C04D4CD7A17EE5EFDE8D3DD5"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F106A0F4-3DCA-4CAD-8D72-1ED47D209E05">Select the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0A665D7F-A764-4513-8FAD-CB7F4E1AF20A">AUobj.exe</span> icon (large Y on the left edge of the AU desktop). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0B46B3B7-A1D7-4F6B-9C74-1A4BC8597FA5"><span class="note__title">Note:</span> This action starts the machine control program with Debug Logging disabled. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-C74C912F-13B9-4BC0-9C3E-0860D53B4B47"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e20">Reset the connection unit. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note caution note_caution" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e25"><span class="note__title">Caution:</span> If the connection unit is not reset to normal mode following usage of the 50 and 51 codes for manually loading tubes, the connection unit will not operate correctly. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e29" type="a"> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e31"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e33">Remove the access panel from the rear of the connection unit. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e37"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e39">Locate the green power switch inside the connection unit (on the lower left). 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e43"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e45">Power off the connection unit for 15 seconds, and then power on the connection unit. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e49"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e51">Press the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e53">[Auto / Manual]</span> key on the connection keypad twice, to return to auto mode. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e58"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e60">Press the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e62">[Auto / Manual]</span> key on the track keypad twice, to return to auto mode. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e68"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e70">Reinstall the access panel on the connection unit. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-514F604B-D710-46DA-AB14-D60990B6B22C"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e20">Resume the LAS sample tube loading. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e25"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e27">On the 
+				  <span class="keyword wintitle" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e29">PrepLink Console</span>, select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e32"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e33">Setup</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e35">Instrument Loading</span></span> 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e38"></span> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e42"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e44">Clear the 
+				  <span class="keyword option" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e46">CONN-X Loading Paused</span> check box. 
+				</span> 
+				<div class="itemgroup info"> The DxI instrument connection units are labeled 
+				  <var class="keyword varname" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e52">CONN-1</var> through 
+				  <var class="keyword varname" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e55">CONN-4</var>, according to the number of DxI instruments connected to the LAS. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e60"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e62">Observe while the DxI instrument runs a minimum of ten samples from the LAS. Confirm that all tubes are processed correctly through the connection unit and that all samples are aspirated and run correctly by the DxI instrument. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e67"><span class="note__title">Note:</span> If captive tubes were released from the connection unit, then errors will show in the event log, as expected for tubes that had processed beyond the query BCR before release. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__STEP_5B3E9DDF62514C9686BFC57213BE96C4"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-E1D3B509-4051-44DE-A8E7-309887AF06D5">Analyze the data for the sample pipettor RF noise count. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_A92F166A6D7E4F638CA66F177D292B34" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_CF26099CADDF45699EC69B6158E888F5"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8F3AD756-A983-4D9C-93C2-87B8218B7B07">Locate the copy of 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7234EA69-A0FD-4981-B2A5-B0CEB568C03A">Debug.txt</span> in the directory on the PC, and then double-click on it to open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_37CE9158BF1548658620EA2700C0D723"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-2E8300CB-6ABD-4100-B6E8-AB22AD644F6C">Select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-85125DFD-A9BB-441D-BBC0-45241589B6EE"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-100C6E54-40BF-4B5F-A453-B6DEABAFBD4A">Edit</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-81D358FE-2AC2-4A96-9E8D-21A134DDF687">Find</span></span>, enter 
+				  <kbd class="ph userinput" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8440448A-DD6D-45ED-9C11-BEDFD56453A3">Maximum</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7EB7309F-B23E-4F2F-9B13-2E70D3D13FDB">Find Next</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_0F1F8D839D1F45A58401690A48982468"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-6C96C836-0A7A-4FF9-95BF-8323BD68929F">Record the maximum, and then record the minimum (one line above maximum). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_DAE4CC7B7FC442EE8679781091AD7976"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F4C00E4D-45B6-45E0-81FF-793302C82E5D">Subtract the minimum from the maximum to get the RF noise count. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-AB61B8CF-8007-466F-8757-6EC61D4C7CFC"><span class="note__title">Note:</span> Typical RF noise counts are around 10. Problem systems have had counts above 50. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_C6885912474B4EF7AE1364A3FB26B6B6"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-09D62A16-5E0C-4336-9B22-A42DF780FA3A">Select 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B0DE705F-8458-4F86-BB26-5B2619A9ED27">Find Next</span>, and then repeat to record RF noise counts for all replicates. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_6AE8070DDC72408E897B886F2BF8078D"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-AFE198F4-A2ED-421E-866C-EF0BDEF1F42A">If any of the RF noise counts are higher than 50, then excessive RF noise is an issue and requires further investigation. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A38E0A8-5886-4340-B4C8-3B781C6452B0.html" title="14 Lab Automation System (LAS)"><div><span class="ph num-prefix">14 </span>Lab Automation System (LAS)</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html" title="14.3 Troubleshooting / Testing"><div><span class="ph num-prefix">14.3 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC.html" lang="en-US" title="14.3.4 Capturing RF Noise Data During Troubleshooting"><div><span class="ph num-prefix">14.3.4 </span>Capturing RF Noise Data During Troubleshooting</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13861BW</div></li><li><div id="date">March 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC" role="article"> 
+  <h1 class="title topictitle1" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Capturing RF Noise Data During Troubleshooting</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to capture RF noise data generated during the sample aliquot from the LAS track. 
+  </p> 
+	 <section class="section context" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E">This procedure is part of troubleshooting excessive RF noise from the connection unit track that has been found to interfere with DxI level-sensing on LAS track samples. 
+		<div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7F128640-7589-45A3-BB0F-7AD8BC9C7A93"><span class="note__title">Note:</span> Refer to the 
+		  <a class="xref" href="GUID-32A5D5C0-A919-41A1-9B7C-BF866283C3C6.html">LAS: RF Level Sense and Sampling Problems</a> document for more information. 
+		</div> 
+		<p class="p">Perform the steps in this procedure to capture RF noise data from the sample probe. 
+		</p> 
+		<div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-6903AF22-A33A-4380-9D0E-33BC7350B461"><span class="note__title">Note:</span> Troubleshoot other possible causes before checking the RF noise. 
+		</div> 
+		 
+	 </section> 
+	 <ol class="ol steps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0BDE5403-2480-444B-83AD-75701E5336B7"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e20">Pause the LAS sample tube loading. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e25"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e27">On the 
+				  <span class="keyword wintitle" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e29">PrepLink Console</span>, select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e32"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e33">Setup</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e35">Instrument Loading</span></span> 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e38"></span>. 
+				</span> 
+				<div class="itemgroup info">
+				  <figure class="fig fignone" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e43"><br /><img class="image" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e44" src="GUID-F09A9656-9F9E-483B-A3A6-20F15BF67C5A-default.gif" /><br />
+				  </figure> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e49"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e51">Select the correct 
+				  <span class="keyword option" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e53">CONN-X Loading Paused</span> option (X = 1,2,3, or 4). 
+				</span> 
+				<div class="itemgroup info"> The DxI instrument connection units are labeled 
+				  <var class="keyword varname" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e59">CONN-1</var> through 
+				  <var class="keyword varname" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e62">CONN-4</var>, according to how many DxI instruments are connected to the LAS. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e67"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d23e69">Before proceeding, verify that the selected DxI instrument has completed processing all samples. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__STEP_E0B7297F0A4C420BBF7089247F924DFD"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4146F12F-3FA2-4DC1-8292-59AC566B7ACB">Enable Debug Logging to capture data from the sample pipettor. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-53A180A9-297A-43D5-8FAB-4A58BF98E0A5">For Windows XP System with Software 5.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_3B419451BC8E490BBFDD7F05B98F2840" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_2D14CA42BC7740AE8D94DC58CB8FEDD2"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-81012474-EB60-4DE2-AFB5-B17996033DDB">Select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4F53FFCA-9AE2-49B9-8607-A98F4B53A71D"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-EE44E89A-A872-465C-A8F4-2F22B7D660A4">Start</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B395FDB1-715F-43E0-B9AD-08D14AA0644D">Programs</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-CC1BBB54-ABCD-48A8-ABAC-3C6AFBCE121C">Administrative Tools</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-C0F76205-8D17-419C-A597-996131053E56"> Remote Desktop Connection to AU PC</span></span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-50329CAC-1E82-4B39-B2C0-A1175A6C3D71"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-22A499F8-9F7E-4C4E-A0F1-66A90AADB213.html" title="This procedure describes how to connect from the console PC to the instrument using desktop sharing on DxI systems running Windows XP and Windows 8 operating system.">Software: Using Desktop Sharing Between Console PC and AU</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_B822EB461FDA47378C14EF77C3B0E620"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-9E79B4D6-6EB9-47D0-A0DF-15A2CAB1D86F">Open the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-99C9336B-8A94-43B4-88A3-AFCF461FBB57">Specific.ini</span> file (in the C:\AU directory), and then perform a search for [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_9A6E5F25E4EC4FA78381A70EE4FAF9E1"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-148039B6-9045-4E40-9A12-E2A0EC57050C">Find the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-40AF510E-9143-4EDA-B442-DAA1B84A7F97">Enable Debug Logging=no</span> entry in the [SamplePipettor] section. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_8749A94B5C3F46E2A8F2033A09979245"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4FD23C8B-B25D-4AA3-9104-0660F190BF8D">Change the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D6B428D8-6BC9-4327-A809-8F2D5B9ACC64">=no</span> to 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-16CCA2D9-B6DD-447C-BCE7-C7D7143114C7">=yes</span>, then select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4777E848-0E38-40B6-95F3-E0CB3BB3AF10"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B7B465D8-C178-4FAF-969D-76407695A359">File</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0B6817C3-E692-4D03-9D2F-D9B62CB6A619">Save</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_5549C764EFE94373B8662D5FCF1CDD4E"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-90917B01-D3E5-44E0-869A-7B2FD27B1F3F">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1762824D-6386-4EEA-80F5-9FC05A747121">AUObj</span> icon (small Y at the lower right corner of the screen), and then select 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3A9D4C0E-FFEC-43AD-A346-AAD023FBC0E9">Exit</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_239B2A57A5834F599016659E9CCE97C5"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-2EB1E564-1F54-46DE-92DD-4B52548AA3FB">Select the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8B44D45C-4E53-4EB4-A478-A1772523260C">AUobj.exe</span> icon (large Y on the left edge of the AU desktop). This action starts a new 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8D0DFDEC-8DE2-455E-9F73-4EC4DA6188E3">Debug.txt</span> file in the C:\AU directory, erasing any previous 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7C8D2264-D41E-474C-ACDF-2DBE6F801F1E">Debug.txt</span> file. 
+				</span> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-207FA6B7-C3CC-4181-87B2-1EB0DF93DC69">For Windows 8 System with Software 5.3.1 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-31A81079-2C7E-4435-8FBA-7FDFD0A4CE1F"><span class="note__title">Note:</span> DxI Software 5.3.1 is compatible with Windows XP console PC. If the software was installed on the Windows XP console PC, then follow the Windows XP section to enable debug logging. 
+			 </div>
+		  </div> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_D4D63B0F18DC4F42B9FBB451315A135A" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_804FD50DEF17454DBA51B0BF3780E1CB"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7CF949C9-39ED-4009-850F-270BC5AECB34">Press 
+				  <strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-BE30CDB2-34C7-478C-A0C2-A30A29006734">Windows</strong> key, select 
+				  <strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F223C98B-FAD7-4E33-B0A9-DB63FA1E9806">Remote Desktop Connection</strong> icon or type 
+				  <strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0BB2DFED-DEC0-424B-9815-1B4657BBAA6A">remote</strong> and open the Remote Desktop Connection program. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-575C767D-F955-4D50-A234-E98AABA46EDC"><span class="note__title">Note:</span> Refer to the 
+					 <a class="xref" href="GUID-22A499F8-9F7E-4C4E-A0F1-66A90AADB213.html" title="This procedure describes how to connect from the console PC to the instrument using desktop sharing on DxI systems running Windows XP and Windows 8 operating system.">Software: Using Desktop Sharing Between Console PC and AU</a> procedure. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_BD96DF35439946B2AD5B3344921B6A6C"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-85ECD8B9-F524-440C-B3E7-B69F436455DB">Open the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3588B1FA-4278-4876-BD21-23A165D16F27">Specific.ini</span> file (in the C:\AU directory), and then perform a search for [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_BB076CD3EDEF41E3B81CAE99E5FF9528"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-88CF1630-A4FF-4267-B31F-437327323F23">Find the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-5D16EF5B-3EA1-4B5D-81E5-EF1E9752A937">Enable Debug Logging=no</span> entry in the [SamplePipettor] section. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_520583F3D2C843CF899849DDF55CA941"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1D628FE9-8225-4478-B0EC-E4A1D5C0FD78">Change the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-BC0017A4-50E3-4A9C-9DC3-816C4EF34976">=no</span> to 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B4B3441A-E326-4128-80A7-601E16C202F3">=yes</span>, then select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-918E82F7-E060-4CFB-B8E7-00E87C010512"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-454E227E-4024-4C75-81E4-89E729E541C3">File</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D6963199-882C-451C-8505-5BAB9B3A02F0">Save</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_B60CB49703264761974956A94B104BD9"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-68F2B7FF-CDAA-4630-9A70-C4C3B99E09E8">Shut down the AU Object program. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ul class="ul" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__UL_F611C816BF294429A63904A24770DC92"> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__LI_108C4A11BBB0465B94CF2BA7F65C217E">Right click on the task bar and select 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-2F2A9CF6-CE59-4C05-A638-323CDCEE88FB">Task Manager</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__LI_77D40A3ACE8D4D16877E46D605E5F219">In the 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7E5B6A50-A7E1-42C9-9588-310164A8C1FB">Task Manager</strong> box, click on 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-207CB3BA-A82D-4BA7-8D51-9C5438EA9CDE">Processes</strong>, select 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-209BB11D-29C0-46A7-8F27-BB563AA00331">AUobj Module</strong>, and click on 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-75F7E20A-C363-4CF9-9E3C-D161A96743C7">End Task</strong> in the bottom corner of the box. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_56B20AE442AC456F8EBC4C6EC2879845"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0A2B1CCE-FB91-4C45-96BC-3CA178A91ED9">Select the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-5DB67B68-2B28-484E-AF2A-6F04D817EC65">AUobj.exe</span> icon (large Y on the left edge of the AU desktop). This action starts a new 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8D8E5364-7622-4CF4-893C-6BE219B8D16B">Debug.txt</span> file in the C:\AU directory, erasing any previous 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-887E9921-C880-4EF7-9407-5839C547EA5A">Debug.txt</span> file. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-2F5290E0-41A3-4CD5-BF04-CF2D1D7B2416"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e20">Perform the LAS RF Level Sense Test. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e25"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e27">From the 
+				  <span class="keyword wintitle" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e29">Main Menu</span>, select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e32"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e33">Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e35">Device Diagnostics</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e37">RF Level Sense 
+					 </span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e39">LAS</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e44"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e46">Run a dry test. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ol class="ol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e51" type="i"> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e53">Select 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e55">20 repetitions</span> for Dry Test and 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e58">LAS Autoaliquot Tube</span> for Container Type. 
+						<div class="note caution note_caution" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e61"><span class="note__title">Caution:</span> If a gel tube is used in the dry test or the selected option for container type does not match the actual container type, the sample probe can be damaged. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e65">Confirm that the carrier and tube are in the aspiration position. Select 
+						<span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e67"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e68">Load a Carrier 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e70">OK</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e72">Start Test</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e76">Select the 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e78">Print Report at End of Test</span> option. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e82">When the test is complete, select 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e84">Release Carrier</span>. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e91"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e93">Run a wet test. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ol class="ol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e98" type="i"> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e100">Select 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e102">20 repetitions</span> for Wet Test and 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e105">LAS Autoaliquot Tube</span> for Container Type. 
+						<div class="note caution note_caution" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e108"><span class="note__title">Caution:</span> If a gel tube is used in the dry test or the selected option for container type does not match the actual container type, the sample probe can be damaged. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e112">Fill the auto-aliquot tube with 200 µL of wash buffer. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e115">Select the 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e117">Print Report at End of Test</span> option. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e121">Confirm that the carrier and tube are in the aspiration position. Select 
+						<span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e123"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e124">Load a Carrier 
+						  </span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e126">OK</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e128">Start Test</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e132">When the test is complete, select 
+						<span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e134">Release Carrier</span>. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e141"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d104e143">Verify that the failure count is zero for both the dry test and the wet test runs. If failures occur, perform repairs and repeat tests. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__STEP_1B53584092514414BC34CDF9127476EC"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-72171D08-6F2E-4978-A59B-D21159B7D802">Move the 
+			 <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F3DEB938-1154-498E-B23E-9E6E4EBAA179">Debug.txt</span> file to a local PC for printing or sharing. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_AEBEF0C6D0394826923FBA4E0681F900" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_60C911E61FD94221B947EF3FCEC8159E"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-95F8F823-47B3-48BB-BCB7-BEA461D4FE0C">Return to the remote connection to the AU, and locate the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B72ED7F4-3616-41BC-8CB8-9DF5552D5AB6">Debug.txt</span> file in the C:\AU directory 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_FB9FA8D430774A1D9BB4C920E1CF77CD"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-E159A85C-95C0-499F-B249-8B700934FCF7">Select the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-214BE390-1E3C-4A18-8354-C989FE8B44D1">Debug.txt</span> file, select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8AB4A2F4-06D2-4FB2-A016-64ADAE027F2E"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8E8B8FE3-6C1C-4109-A817-A1D3BB19FE97">Edit</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7F724CE1-47D7-4284-A716-80F8A5A4EEFB">Copy</span></span>, and then 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-EC6F0703-97F6-45F0-8914-1CC0F3031A85"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-35277DC8-41A6-41CF-9CA7-242697734C9F">Edit</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-CEF66589-81E1-42E0-A018-B9E5D61FEA60">Paste</span></span>. 
+				</span> 
+				<div class="itemgroup info"> This action creates a copy of 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4CACD334-3F10-47B7-AA52-91F6F611B87F">Debug.txt</span> file in the C:\AU directory. 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4B26E074-DE09-4996-A155-BE58ECD52953"><span class="note__title">Note:</span> The 
+					 <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7D8DD179-F764-4ACC-9CF2-076FE31FBB0C">Debug.txt</span> file itself cannot be transferred because it is still in use by the instrument software. Therefore, it is necessary to make a copy of it. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_67D4A21B780E49D8B40B70668CC44407"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F1E900B4-B957-4F0B-99C6-A150656865B7">Copy and paste the copy of 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-83E4CF91-4706-441F-ADAF-86049FD69EEB">Debug.txt</span> file in the C:\AU directory into the C:\ drive on the PC. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_E495EB892A2D48C5B06FEF75DEE891E2"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-92301B88-6685-4767-9A28-E0202202E00F">Move the file from the console PC to the laptop PC, using the USB backup drive. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_3CE74774507941A1BB674CE81524177A"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7A451688-9362-4C85-ADF7-4C5BD4E11997">Rename the file to include information about the source and time of the data capture. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__STEP_55BF229DD73B47C3943A18186FD19B5B"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8BA6F039-F314-4DE8-AC50-77802B6F8AB2">Disable Debug Logging for the sample pipettor. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <p class="p"> 
+			 </p> 
+			 <p class="p"><strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-A3F3667B-4348-4C09-B9C1-A3576502BEA0">For Windows XP System with Software 5.2 and below:</strong> 
+			 </p> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_2987ADD43FAD47C98CF0349A11A3D619" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_3846740750854552B4D17229253ED8EB"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-CE2D0351-E217-4902-A56D-981891C55C3B">In the remote connection to the AU, open the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-9912EC03-DD7E-4838-93D1-8C1FE9C45D57">specific.ini</span> file, and then perform a search for [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_F1992E2C61E742D8AC90FC9EDFF9C332"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-735A5C32-35D1-4C16-A79A-67C950BA8D7A">Find the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-910BC811-F135-42F4-870E-189CA051BB72">Enable Debug Logging=yes</span> entry, which is the final line under [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_12103E067C864AB0917CF4DFA237E5BC"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-ACA22311-3AB2-4F57-B314-8D4293333F93">Change the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3CF924E6-0439-41A8-A88D-44894D893DDB">=yes</span> to 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1B405A58-F93D-4FF6-B92C-7628FE2FC095">=no</span>, and then select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3E45065D-1F8D-4F9F-9AF5-ED3AC05E54B1"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D3808786-89D0-4155-8E69-2BE53FCA57E5">File</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3F391DC5-1DB8-4E9D-9B6E-A3CEB95AF913">Save</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_B5DA499E3194478F9469BE8899F40631"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-9506766D-533F-4A77-959E-476DD5BCD065">Right-click on the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F327CF98-FE21-47CE-8F53-BA5896606BF3">AUObj</span> icon (small Y at the lower right corner of the screen), and then select 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-5F62E61E-E3C2-41AA-8789-3619604D36D9">Exit</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_A1FD105899564157956142E052DB4DFC"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-A74FCF23-5755-4E8E-BE3C-D3B44E298862">Select the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-38F446AD-2212-4FAE-AB76-1A6461AB7691">AUobj.exe</span> icon (large Y on the left edge of the AU desktop). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8EACC8E2-5AEF-487A-9424-D6BA2451AE7F"><span class="note__title">Note:</span> This action starts the machine control program with Debug Logging disabled. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		  <div class="itemgroup info">
+			 <p class="p">
+			 </p>
+			 <p class="p"><strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1175636E-A264-40C9-89EC-7156E31165CD">For Windows 8 System with Software 5.3.1 and above: 
+				</strong> 
+			 </p> 
+			 <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-45016D5E-129C-4D73-AC05-330AA68F88EE"><span class="note__title">Note:</span> DxI Software 5.3.1 is compatible with Windows XP console PC. If the software was installed on the Windows XP console PC, then follow the Windows XP section to disable debug logging. 
+			 </div>
+		  </div>
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_6CE729B734664121A2B9793AC5A7A0C0" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_55137B44468C44EA9504F0D2C66F528B"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8514E486-8557-4854-B542-6C0791D98F29">In the remote connection to the AU, open the 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8A764BD2-2C34-41C6-83AE-24FBC5B017CF">specific.ini</span> file, and then perform a search for [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_006B738BD25F41CA9BC7AF44506E9763"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-6798DDF9-BE77-40E5-B2EB-BB807B8632CC">Find the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8F38A9AE-73A0-4B2C-8E21-748BE654B296">Enable Debug Logging=yes</span> entry, which is the final line under [SamplePipettor]. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_4777D3AEF0874307BD4182B735083401"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-EE83C7B0-37D3-47DE-BCCB-97AB96159D96">Change the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-3140F51C-FE40-4809-B7ED-74E9398DB772">=yes</span> to 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-83DAC687-FF77-4348-BFCF-23B7F50C63C2">=no</span>, and then select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D604ADB9-36EB-406D-A27B-15B5B73E9EF2"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-1385F238-661C-4E30-832F-2401DDC9B3FE">File</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0A2DEB97-9F90-48FD-B64D-4EF16E02A3BE">Save</span></span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_201D4A18637340E8BA4707727BF0A16E"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-627F4A32-A2BF-4468-BA75-F219C481773A">Shut down the AU Object program. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ul class="ul" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__UL_681D22C74EF04FFDA406EF89859FA67F"> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__LI_1921B7D1CE514C338EF7802F1B52835E">Right click on the task bar and select 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-C8618CCD-DE3B-4558-97BD-B88E2FD946BE">Task Manager</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__LI_165B7B30300D4912A309496B8A87D758">In the 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-66B5CC11-C04A-41A5-AEAC-376B6E6E6C8C">Task Manager</strong> box, click on 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-D716D3D7-EC79-4D83-B844-D7013A3260E5">Processes</strong>, select 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-4D24F3AD-9577-4883-9E5F-9AAC0F8FDF7E">AUobj Module</strong>, and click on 
+						<strong class="ph b" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F98F8045-F3EB-4B6F-AE5D-53FEDCFA9533">End Task</strong> in the bottom corner of the box. 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_29A2A390C04D4CD7A17EE5EFDE8D3DD5"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F106A0F4-3DCA-4CAD-8D72-1ED47D209E05">Select the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0A665D7F-A764-4513-8FAD-CB7F4E1AF20A">AUobj.exe</span> icon (large Y on the left edge of the AU desktop). 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-0B46B3B7-A1D7-4F6B-9C74-1A4BC8597FA5"><span class="note__title">Note:</span> This action starts the machine control program with Debug Logging disabled. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-C74C912F-13B9-4BC0-9C3E-0860D53B4B47"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e20">Reset the connection unit. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note caution note_caution" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e25"><span class="note__title">Caution:</span> If the connection unit is not reset to normal mode following usage of the 50 and 51 codes for manually loading tubes, the connection unit will not operate correctly. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e29" type="a"> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e31"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e33">Remove the access panel from the rear of the connection unit. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e37"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e39">Locate the green power switch inside the connection unit (on the lower left). 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e43"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e45">Power off the connection unit for 15 seconds, and then power on the connection unit. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e49"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e51">Press the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e53">[Auto / Manual]</span> key on the connection keypad twice, to return to auto mode. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e58"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e60">Press the 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e62">[Auto / Manual]</span> key on the track keypad twice, to return to auto mode. 
+				</span> 
+			 </li> 
+			 <li class="li substep" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e68"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d26e70">Reinstall the access panel on the connection unit. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-514F604B-D710-46DA-AB14-D60990B6B22C"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e20">Resume the LAS sample tube loading. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e23" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e25"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e27">On the 
+				  <span class="keyword wintitle" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e29">PrepLink Console</span>, select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e32"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e33">Setup</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e35">Instrument Loading</span></span> 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e38"></span> tab. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e42"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e44">Clear the 
+				  <span class="keyword option" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e46">CONN-X Loading Paused</span> check box. 
+				</span> 
+				<div class="itemgroup info"> The DxI instrument connection units are labeled 
+				  <var class="keyword varname" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e52">CONN-1</var> through 
+				  <var class="keyword varname" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e55">CONN-4</var>, according to the number of DxI instruments connected to the LAS. 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e60"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e62">Observe while the DxI instrument runs a minimum of ten samples from the LAS. Confirm that all tubes are processed correctly through the connection unit and that all samples are aspirated and run correctly by the DxI instrument. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__d27e67"><span class="note__title">Note:</span> If captive tubes were released from the connection unit, then errors will show in the event log, as expected for tubes that had processed beyond the query BCR before release. 
+				  </div> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__STEP_5B3E9DDF62514C9686BFC57213BE96C4"> 
+		  <span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-E1D3B509-4051-44DE-A8E7-309887AF06D5">Analyze the data for the sample pipettor RF noise count. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEPS_A92F166A6D7E4F638CA66F177D292B34" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_CF26099CADDF45699EC69B6158E888F5"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8F3AD756-A983-4D9C-93C2-87B8218B7B07">Locate the copy of 
+				  <span class="ph filepath" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7234EA69-A0FD-4981-B2A5-B0CEB568C03A">Debug.txt</span> in the directory on the PC, and then double-click on it to open it. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_37CE9158BF1548658620EA2700C0D723"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-2E8300CB-6ABD-4100-B6E8-AB22AD644F6C">Select 
+				  <span class="ph menucascade" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-85125DFD-A9BB-441D-BBC0-45241589B6EE"><span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-100C6E54-40BF-4B5F-A453-B6DEABAFBD4A">Edit</span> &gt; <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-81D358FE-2AC2-4A96-9E8D-21A134DDF687">Find</span></span>, enter 
+				  <kbd class="ph userinput" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-8440448A-DD6D-45ED-9C11-BEDFD56453A3">Maximum</kbd>, and then select 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-7EB7309F-B23E-4F2F-9B13-2E70D3D13FDB">Find Next</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_0F1F8D839D1F45A58401690A48982468"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-6C96C836-0A7A-4FF9-95BF-8323BD68929F">Record the maximum, and then record the minimum (one line above maximum). 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_DAE4CC7B7FC442EE8679781091AD7976"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-F4C00E4D-45B6-45E0-81FF-793302C82E5D">Subtract the minimum from the maximum to get the RF noise count. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-AB61B8CF-8007-466F-8757-6EC61D4C7CFC"><span class="note__title">Note:</span> Typical RF noise counts are around 10. Problem systems have had counts above 50. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_C6885912474B4EF7AE1364A3FB26B6B6"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-09D62A16-5E0C-4336-9B22-A42DF780FA3A">Select 
+				  <span class="ph uicontrol" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-B0DE705F-8458-4F86-BB26-5B2619A9ED27">Find Next</span>, and then repeat to record RF noise counts for all replicates. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__SUBSTEP_6AE8070DDC72408E897B886F2BF8078D"> 
+				<span class="ph cmd" id="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC__GUID-AFE198F4-A2ED-421E-866C-EF0BDEF1F42A">If any of the RF noise counts are higher than 50, then excessive RF noise is an issue and requires further investigation. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html">Troubleshooting / Testing</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt4" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-0A38E0A8-5886-4340-B4C8-3B781C6452B0.html" title="14 Lab Automation System (LAS)"><div><span class="ph num-prefix">14 </span>Lab Automation System (LAS)</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-465C3C6C-EFBE-4D19-AB4E-86CBE0BE366B.html" title="14.3 Troubleshooting / Testing"><div><span class="ph num-prefix">14.3 </span>Troubleshooting / Testing</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-054AD36D-A37F-4988-8518-0F8BDEA8A5AC.html" lang="en-US" title="14.3.4 Capturing RF Noise Data During Troubleshooting"><div><span class="ph num-prefix">14.3.4 </span>Capturing RF Noise Data During Troubleshooting</div></a></div></article></main></div></noscript><script src="static/body.js?JQXURZfK" type="text/javascript"></script></body></html>

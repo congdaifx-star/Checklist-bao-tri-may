@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This document describes how to update the NIC driver." name="description" /><meta content="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="February 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BN" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="03/09/2014 19:00:00" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="23/02/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13860" name="FBCPARTNUM" /><meta content="Manufactured for" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="19/11/2025 19:56:48" name="FISHPUBREVIEWENDDATE" /><meta content="23/02/2026 14:39:32" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-D5163292-63FA-449B-AC80-6E4FB4F92F44" name="FMAPID" /><meta content="19/11/2025 20:16:00" name="MODIFIED-ON" /><meta content="19/11/2025 20:15:33" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-7F93B284-E572-4BED-8BE7-6E14611D6699" name="FISHMASTERREF" /><meta content="Access Service Manual PN B13860-v45-GUID-D5163292-63FA-449B-AC80-6E4FB4F92F44-2025/11/19 20:15:33" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BN" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="45" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="Service Documentation" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="Access Service Manual PN B13860" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>10.8 Updating NIC Driver</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-787FC80A-CE5A-48B8-B61C-5F64B89001F3.html" rel="prev" /><link href="GUID-299F2DC8-0D83-480B-98F4-A447C0A916A5.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e740" data-relpath="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>Access Service Manual PN B13860</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for Access Service Manual PN B13860</span><span id="emailpub">Publication: Access Service Manual PN B13860</span><span id="emailpartnum">Part Number: B13860</span><span id="emailrev">Revision: BN</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685" role="article"> 
+  <h1 class="title topictitle1" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Updating NIC Driver</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This document describes how to update the NIC driver. 
+	 <strong class="ph b" id="GUID-8BE0B93E-C47A-449D-BF08-F8FB5ABB03B2"></strong> 
+  </p> 
+	 <div class="section prereq p" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-C37A77C9-F213-447D-B09A-0A3F2C794C81">Required Materials: 
+		<p class="p"> The NIC update requires disks from Service Disk Kit PN 973141. 
+		</p> 
+	 </div> 
+	 <section class="section context" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-7849DFE0-62BF-462B-A92B-666267F612D8"><span class="note__title">Note:</span> If the instrument connection to the system network hub has a green connection indication on the hub, then the correct NIC driver is loaded already. 
+		</div> 
+		<div class="p"> Perform this procedure to update the software on the AU HDD when: 
+		<ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_41675629098729841675629098729941"> 
+		  <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629098730141675629098730241"> Troubleshooting network errors following AU HDD or NIC replacement. 
+		  </li> 
+		  <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629098730441675629098730541"> An old style NIC is replaced with the newer NIC. 
+		  </li> 
+		  <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629098730741675629098730841"> The AU hard drive is replaced and an old style NIC is present. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-525F1EB1-2345-4545-991F-BB9354E3B39F"><span class="note__title">Note:</span> New hard drives come configured to work with the newer NIC card. 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Identify the NIC version. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEPS_07202F239A6E40FFA006F6F5F0F6775F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_F3ED578A1A2248DC9D4D603E57971F63"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-32EC5423-55D3-48ED-96CE-9764B0BA8A56">Locate the NIC in the instrument card cage. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__FIG_D30D60951E3C4D3ABD2836FEC880DAC8"><br /><img class="image" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__IMAGE_837642CBEA284FAA8CEF742674E6B673" src="GUID-4A01EBB1-856C-42EA-91C2-FD9CAFE22BED-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-BE0F633F-29C0-4A0B-B68B-E29AF36C2739"><span class="note__title">Note:</span>  The NIC is the short card closest to the back of the instrument behind the I/O PCB. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_FA8089DD517F46E7A6F499D86D5D2661"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-83287499-5BF5-4E63-A20C-A8023694E394">Identify the NIC version. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-E8D77EFA-F103-482E-A0D7-AA9891019990"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_4CC3E70C47FE4F679D4043A066425B4D"> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629110305441675629110305541"> The latest version has a jumper connector along the top edge of the PCB. The older NIC does not have a jumper connector. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_FBDE3BE2DE0040819F4474A635A3CA9B"> If jumpers on the jumper pins of the connector, then the PCB might not be configured correctly. Contact Tech Support for assistance in configuring the NIC. The AU must have a floppy drive and the jumpers must remain on the pins for the configuration to proceed. Otherwise, order another PCB. 
+						</li> 
+					 </ul> 
+				  </div> 
+				  <figure class="fig fignone" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__FIG_F45134081FD040CBA533C850AA717BF6"><br /><img class="image" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__IMAGE_1C34FAE594904EABB74EAB7219AE5E65" src="GUID-1BF12D31-2E37-4030-B80E-C28D3D388403-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__STEP_E3645F9B9E6E4790B84D2987B4544D42"> 
+		  <span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-679515E7-6FEB-4A1B-AEB1-F6F12503189C">Update the NIC driver on the AU HDD to match the NIC version installed in the AU. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-8CF20D07-34CD-4BD6-8459-455E6749DB0A"><span class="note__title">Note:</span>  Newer Access 2 instruments, without a floppy drive, have the newer version NIC installed. New replacement hard drives are configured to use the newer NIC, so it is not necessary to update the NIC driver when replacing the hard drive on these systems. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEPS_3A62B11B96D74BC499A1EF0658AC3401" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_7999EC62721F4B6B9C127DB4AE255BAF"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-7AE558AF-02FF-4973-8CD9-40CCD6787BF3">Connect the monitor and keyboard to the AU. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_FF327F93AE1447539D9673E810FE5BC9"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-414FE88D-32C9-41FB-AA59-68396C920F7A">Boot the Analytical Unit (AU) with Access2 Boot Disk II, PN A59577 or Master Boot 1 Disk, PN 973143 inserted in the AU floppy drive. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-C7AF3069-5624-4E42-8C64-7B49D8F02696"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_41675629191324241675629191324341"> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191324541675629191324641"> The AU will boot to a $ prompt using the floppy disk. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191324841675629191324941"> Newer AU hard drives are configured for the newer NIC. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191325141675629191325241"> The newer NIC comes with floppy disks for loading the new NIC software into older AU hard drives. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_28DF8D7834164A11BEFC99EA7D7E676D"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-1AC53899-94BF-422E-B057-2B70862BCC8D">Type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-ACD1F2C0-15FB-40E3-AEB4-F7053A2DAE0A">login</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-CF435D9C-F8E5-46D7-B9FE-12AC68C6F81F">[Enter]</span>. Type the user name 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-EF56FFFF-3CCD-45D0-B845-1544220BD579">super</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-88C594EA-09DE-403C-A601-7D5628066D34">[Enter]</span>. Type the password 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-EC9B3B51-7336-4D8E-AD61-F302B2183345">user</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-77174909-EDA3-44D1-8782-20ED12FF0B82">[Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_F0511644927C46D59E5C0D3215DE384D"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-0FBDD382-B43F-43D3-A185-7F3550441831">After the AU has booted, insert the install disk into the AU floppy drive. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_41675629191325741675629191325841"> 
+					 <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191326041675629191326141"> For the newer NIC use Access2 Install Disk II, PN A59578 (new NIC driver). 
+					 </li> 
+					 <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191326341675629191326441"> For the older NIC use Master Boot 2 Install Disk, PN 973144 (old NIC driver). 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_F515443F987F42B1801E9A88294FBF1D"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-341C88BA-3BFA-414C-AC2C-4EA015B9D330">Type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-71F8C20F-A4E4-406D-BAB3-869BC1E77233">chd /d0</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-81E3C611-8BF5-4FDD-96C9-B7125173D22A">[Enter]</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-AB4A1560-12DF-4E69-BF24-AF2F370595EE"><span class="note__title">Note:</span> Typing 
+					 <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-40C8D4F2-930C-4C6D-86A9-87E0CF9A74BA">dir</kbd> and pressing 
+					 <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-4361ECC7-08D3-40ED-A1B1-A714D46BEA26">[Enter]</span> displays 
+					 <samp class="ph msgph" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-B9D27326-6BFF-4E91-A202-398EC5D55BDE">update.sh</samp> in the directory listing. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_F640C5A12C1C44AABC69E816C3A060CB"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-299990D1-A586-4BA3-BBB9-A1544B033471">Type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-096A3C7A-33E7-4D18-9A17-221246EA367D">update.sh</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-55EE071E-9E6A-4760-B0A7-A279D9D14438">[Enter]</span> on the AU keyboard to update the AU hard drive NIC driver software. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-AE4E35A9-2939-474A-B322-A82776FE1A3A"><span class="note__title">Note:</span> If a 
+					 <samp class="ph msgph" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-67F246FA-DAE9-4244-BCE7-3D29F3DCB0D3">chd /hc1fmt error</samp> occurs, then the system is not recognizing the hard drive (Test this by removing the boot floppy and rebooting the AU. The system boots to an OS9000 prompt when the hard drive is recognized). Verify bios is set correctly for the hard drive type, and that hard drive is connected to the CPU correctly. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_A2E8E46CD2FB4131853CDA107504BC3C"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-80D9902A-ED6C-474E-8FFA-3001ADE8707A">Allow the driver to update. When the 
+				  <samp class="ph msgph" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-AF249CEA-CA4A-4873-9B14-76873D8C1141">Super</samp> prompt is displayed, the update is complete. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_708BD4F058F1449898CA5F5E448F5A14"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-08F0566D-7655-4F05-9C8A-B5E7E0874478">Remove the floppy disk, and then reboot the analytical unit. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__STEP_6F84390391E343809DDCB3EE45DC83C2"> 
+		  <span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-08D372B0-1048-4F3D-8099-5DB2FD42B5C3">Verify communication between the AU and PC with the new NIC. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEPS_780B8004F1B94EDFBBBDD63D53655E90" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_2A350E0A41C444B193E954254B37AF06"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-16BA1D5E-453F-490B-AC52-6960CF0D9C1B">Connect the keyboard and monitor to the PC. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_4D8CECBCC1EC4F9EBB160D3CD29A6730"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-EEA1EDAA-2B1B-4234-A16F-DE61ED15E9B6">Press the 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-F1335845-9029-470D-AD69-B7C01CB8FFDA">Windows</span> key, and then select 
+				  <span class="ph menucascade" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-25C6816E-FC5B-4146-91B4-FB19EE7A5217"><span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-83FE285A-E310-493F-9A11-995234C9621B">Start</span> &gt; <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-1211B4DC-7FA4-464B-BB23-56F6034FE9EE">Run</span></span>, type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-EAF6ADE7-2BAB-4BE6-B077-3693B4A76F8D">cmd</kbd>, and then press<span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-63DEBECA-CF67-4A8D-B0BE-1C376E5038DC">[Enter]</span> to open a DOS command window. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_BC7B6B0DF7404E9AB69DFD8780FF0B5D"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-3B824694-B456-4FD4-B3DE-DEDB60FD3BE5">Type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-BB8148CF-8E54-4FA6-B9B8-33BC145BA276">ping 192.168.2.2</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-5981981C-9F21-4959-9249-73AAC1CCFB77">[Enter]</span> to verify communication between the PC and the instrument (for a new hard drive). For installed systems, use the IP address ending in usually 2.4 for a server or 2.6 for a client. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-9DD1B087-B252-4037-9171-17D1A25817F2"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_41675629191326641675629191326741"> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191326941675629191327041"> Ensure the network cables are connected correctly, and then reboot the AU and repeat the ping. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191327241675629191327341">For additional instructions on pinging the AU, refer to the 
+						  <a class="xref" href="GUID-FEB3AD39-E5C4-D8D1-8625-6B43006DE9E3.html">Troubleshooting Network Errors Access 2</a> document. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191327541675629191327641"> If the instrument connection to the system network hub has a green connection indication on the hub, then the system has the correct NIC driver loaded and the communication issue may be caused by some other problem (I/O PCB, QSMC PCB, AU HDD, ultrasonic card, network hub, network cable). 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_862032E04BAD49FA8BA5B3CBDC3129DA"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-3A36FCC4-5A6F-472F-A510-F6662B168E42">When finished, close the CMD dialog box. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html">Software</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt3" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" title="10 Software "><div><span class="ph num-prefix">10 </span>Software </div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685.html" lang="en-US" title="10.8 Updating NIC Driver"><div><span class="ph num-prefix">10.8 </span>Updating NIC Driver</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13860BN</div></li><li><div id="date">February 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685" role="article"> 
+  <h1 class="title topictitle1" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Updating NIC Driver</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This document describes how to update the NIC driver. 
+	 <strong class="ph b" id="GUID-8BE0B93E-C47A-449D-BF08-F8FB5ABB03B2"></strong> 
+  </p> 
+	 <div class="section prereq p" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-C37A77C9-F213-447D-B09A-0A3F2C794C81">Required Materials: 
+		<p class="p"> The NIC update requires disks from Service Disk Kit PN 973141. 
+		</p> 
+	 </div> 
+	 <section class="section context" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-7849DFE0-62BF-462B-A92B-666267F612D8"><span class="note__title">Note:</span> If the instrument connection to the system network hub has a green connection indication on the hub, then the correct NIC driver is loaded already. 
+		</div> 
+		<div class="p"> Perform this procedure to update the software on the AU HDD when: 
+		<ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_41675629098729841675629098729941"> 
+		  <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629098730141675629098730241"> Troubleshooting network errors following AU HDD or NIC replacement. 
+		  </li> 
+		  <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629098730441675629098730541"> An old style NIC is replaced with the newer NIC. 
+		  </li> 
+		  <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629098730741675629098730841"> The AU hard drive is replaced and an old style NIC is present. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-525F1EB1-2345-4545-991F-BB9354E3B39F"><span class="note__title">Note:</span> New hard drives come configured to work with the newer NIC card. 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step stepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-B4964B4A-D267-4A22-B481-7791BB8AEDCA"> 
+		  <span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-0785874A-AF9D-49C3-B8C0-C87C25C8164C">Identify the NIC version. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEPS_07202F239A6E40FFA006F6F5F0F6775F" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_F3ED578A1A2248DC9D4D603E57971F63"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-32EC5423-55D3-48ED-96CE-9764B0BA8A56">Locate the NIC in the instrument card cage. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <figure class="fig fignone" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__FIG_D30D60951E3C4D3ABD2836FEC880DAC8"><br /><img class="image" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__IMAGE_837642CBEA284FAA8CEF742674E6B673" src="GUID-4A01EBB1-856C-42EA-91C2-FD9CAFE22BED-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-BE0F633F-29C0-4A0B-B68B-E29AF36C2739"><span class="note__title">Note:</span>  The NIC is the short card closest to the back of the instrument behind the I/O PCB. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_FA8089DD517F46E7A6F499D86D5D2661"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-83287499-5BF5-4E63-A20C-A8023694E394">Identify the NIC version. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-E8D77EFA-F103-482E-A0D7-AA9891019990"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_4CC3E70C47FE4F679D4043A066425B4D"> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629110305441675629110305541"> The latest version has a jumper connector along the top edge of the PCB. The older NIC does not have a jumper connector. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_FBDE3BE2DE0040819F4474A635A3CA9B"> If jumpers on the jumper pins of the connector, then the PCB might not be configured correctly. Contact Tech Support for assistance in configuring the NIC. The AU must have a floppy drive and the jumpers must remain on the pins for the configuration to proceed. Otherwise, order another PCB. 
+						</li> 
+					 </ul> 
+				  </div> 
+				  <figure class="fig fignone" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__FIG_F45134081FD040CBA533C850AA717BF6"><br /><img class="image" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__IMAGE_1C34FAE594904EABB74EAB7219AE5E65" src="GUID-1BF12D31-2E37-4030-B80E-C28D3D388403-default.gif" /><br /> 
+				  </figure> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__STEP_E3645F9B9E6E4790B84D2987B4544D42"> 
+		  <span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-679515E7-6FEB-4A1B-AEB1-F6F12503189C">Update the NIC driver on the AU HDD to match the NIC version installed in the AU. 
+		  </span> 
+		  <div class="itemgroup info"> 
+			 <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-8CF20D07-34CD-4BD6-8459-455E6749DB0A"><span class="note__title">Note:</span>  Newer Access 2 instruments, without a floppy drive, have the newer version NIC installed. New replacement hard drives are configured to use the newer NIC, so it is not necessary to update the NIC driver when replacing the hard drive on these systems. 
+			 </div> 
+		  </div> 
+		  <ol class="ol substeps" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEPS_3A62B11B96D74BC499A1EF0658AC3401" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_7999EC62721F4B6B9C127DB4AE255BAF"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-7AE558AF-02FF-4973-8CD9-40CCD6787BF3">Connect the monitor and keyboard to the AU. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_FF327F93AE1447539D9673E810FE5BC9"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-414FE88D-32C9-41FB-AA59-68396C920F7A">Boot the Analytical Unit (AU) with Access2 Boot Disk II, PN A59577 or Master Boot 1 Disk, PN 973143 inserted in the AU floppy drive. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-C7AF3069-5624-4E42-8C64-7B49D8F02696"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_41675629191324241675629191324341"> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191324541675629191324641"> The AU will boot to a $ prompt using the floppy disk. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191324841675629191324941"> Newer AU hard drives are configured for the newer NIC. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191325141675629191325241"> The newer NIC comes with floppy disks for loading the new NIC software into older AU hard drives. 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_28DF8D7834164A11BEFC99EA7D7E676D"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-1AC53899-94BF-422E-B057-2B70862BCC8D">Type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-ACD1F2C0-15FB-40E3-AEB4-F7053A2DAE0A">login</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-CF435D9C-F8E5-46D7-B9FE-12AC68C6F81F">[Enter]</span>. Type the user name 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-EF56FFFF-3CCD-45D0-B845-1544220BD579">super</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-88C594EA-09DE-403C-A601-7D5628066D34">[Enter]</span>. Type the password 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-EC9B3B51-7336-4D8E-AD61-F302B2183345">user</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-77174909-EDA3-44D1-8782-20ED12FF0B82">[Enter]</span>. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_F0511644927C46D59E5C0D3215DE384D"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-0FBDD382-B43F-43D3-A185-7F3550441831">After the AU has booted, insert the install disk into the AU floppy drive. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_41675629191325741675629191325841"> 
+					 <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191326041675629191326141"> For the newer NIC use Access2 Install Disk II, PN A59578 (new NIC driver). 
+					 </li> 
+					 <li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191326341675629191326441"> For the older NIC use Master Boot 2 Install Disk, PN 973144 (old NIC driver). 
+					 </li> 
+				  </ul> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_F515443F987F42B1801E9A88294FBF1D"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-341C88BA-3BFA-414C-AC2C-4EA015B9D330">Type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-71F8C20F-A4E4-406D-BAB3-869BC1E77233">chd /d0</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-81E3C611-8BF5-4FDD-96C9-B7125173D22A">[Enter]</span>. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-AB4A1560-12DF-4E69-BF24-AF2F370595EE"><span class="note__title">Note:</span> Typing 
+					 <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-40C8D4F2-930C-4C6D-86A9-87E0CF9A74BA">dir</kbd> and pressing 
+					 <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-4361ECC7-08D3-40ED-A1B1-A714D46BEA26">[Enter]</span> displays 
+					 <samp class="ph msgph" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-B9D27326-6BFF-4E91-A202-398EC5D55BDE">update.sh</samp> in the directory listing. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_F640C5A12C1C44AABC69E816C3A060CB"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-299990D1-A586-4BA3-BBB9-A1544B033471">Type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-096A3C7A-33E7-4D18-9A17-221246EA367D">update.sh</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-55EE071E-9E6A-4760-B0A7-A279D9D14438">[Enter]</span> on the AU keyboard to update the AU hard drive NIC driver software. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-AE4E35A9-2939-474A-B322-A82776FE1A3A"><span class="note__title">Note:</span> If a 
+					 <samp class="ph msgph" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-67F246FA-DAE9-4244-BCE7-3D29F3DCB0D3">chd /hc1fmt error</samp> occurs, then the system is not recognizing the hard drive (Test this by removing the boot floppy and rebooting the AU. The system boots to an OS9000 prompt when the hard drive is recognized). Verify bios is set correctly for the hard drive type, and that hard drive is connected to the CPU correctly. 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_A2E8E46CD2FB4131853CDA107504BC3C"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-80D9902A-ED6C-474E-8FFA-3001ADE8707A">Allow the driver to update. When the 
+				  <samp class="ph msgph" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-AF249CEA-CA4A-4873-9B14-76873D8C1141">Super</samp> prompt is displayed, the update is complete. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_708BD4F058F1449898CA5F5E448F5A14"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-08F0566D-7655-4F05-9C8A-B5E7E0874478">Remove the floppy disk, and then reboot the analytical unit. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step stepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__STEP_6F84390391E343809DDCB3EE45DC83C2"> 
+		  <span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-08D372B0-1048-4F3D-8099-5DB2FD42B5C3">Verify communication between the AU and PC with the new NIC. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEPS_780B8004F1B94EDFBBBDD63D53655E90" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_2A350E0A41C444B193E954254B37AF06"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-16BA1D5E-453F-490B-AC52-6960CF0D9C1B">Connect the keyboard and monitor to the PC. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_4D8CECBCC1EC4F9EBB160D3CD29A6730"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-EEA1EDAA-2B1B-4234-A16F-DE61ED15E9B6">Press the 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-F1335845-9029-470D-AD69-B7C01CB8FFDA">Windows</span> key, and then select 
+				  <span class="ph menucascade" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-25C6816E-FC5B-4146-91B4-FB19EE7A5217"><span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-83FE285A-E310-493F-9A11-995234C9621B">Start</span> &gt; <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-1211B4DC-7FA4-464B-BB23-56F6034FE9EE">Run</span></span>, type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-EAF6ADE7-2BAB-4BE6-B077-3693B4A76F8D">cmd</kbd>, and then press<span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-63DEBECA-CF67-4A8D-B0BE-1C376E5038DC">[Enter]</span> to open a DOS command window. 
+				</span> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_BC7B6B0DF7404E9AB69DFD8780FF0B5D"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-3B824694-B456-4FD4-B3DE-DEDB60FD3BE5">Type 
+				  <kbd class="ph userinput" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-BB8148CF-8E54-4FA6-B9B8-33BC145BA276">ping 192.168.2.2</kbd>, and then press 
+				  <span class="ph uicontrol" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-5981981C-9F21-4959-9249-73AAC1CCFB77">[Enter]</span> to verify communication between the PC and the instrument (for a new hard drive). For installed systems, use the IP address ending in usually 2.4 for a server or 2.6 for a client. 
+				</span> 
+				<div class="itemgroup info"> 
+				  <div class="note note note_note" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-9DD1B087-B252-4037-9171-17D1A25817F2"><span class="note__title">Note:</span>  
+					 <ul class="ul" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__UL_41675629191326641675629191326741"> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191326941675629191327041"> Ensure the network cables are connected correctly, and then reboot the AU and repeat the ping. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191327241675629191327341">For additional instructions on pinging the AU, refer to the 
+						  <a class="xref" href="GUID-FEB3AD39-E5C4-D8D1-8625-6B43006DE9E3.html">Troubleshooting Network Errors Access 2</a> document. 
+						</li> 
+						<li class="li" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__LI_41675629191327541675629191327641"> If the instrument connection to the system network hub has a green connection indication on the hub, then the system has the correct NIC driver loaded and the communication issue may be caused by some other problem (I/O PCB, QSMC PCB, AU HDD, ultrasonic card, network hub, network cable). 
+						</li> 
+					 </ul> 
+				  </div> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__SUBSTEP_862032E04BAD49FA8BA5B3CBDC3129DA"> 
+				<span class="ph cmd" id="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685__GUID-3A36FCC4-5A6F-472F-A510-F6662B168E42">When finished, close the CMD dialog box. 
+				</span> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html">Software</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt3" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" title="10 Software "><div><span class="ph num-prefix">10 </span>Software </div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-EED379E3-47E0-4CAC-90FE-8FE3BE359685.html" lang="en-US" title="10.8 Updating NIC Driver"><div><span class="ph num-prefix">10.8 </span>Updating NIC Driver</div></a></div></article></main></div></noscript><script src="static/body.js?Ahtiv8QK" type="text/javascript"></script></body></html>

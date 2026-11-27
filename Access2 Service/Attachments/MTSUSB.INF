@@ -1,0 +1,101 @@
+; MtsUsb.inf
+; 
+; This file loads MicroTouch USB Touch Screen driver for Win2K/XP or Win9x
+;
+; Copyright 1991-2004 3M. All rights reserved.
+;
+
+[Version]
+Signature="$Chicago$"
+Class=MOUSE
+Provider=%Provider%
+ClassGUID={4D36E96F-E325-11CE-BFC1-08002BE10318}
+DriverVer=08/19/2004,5.64.5.1
+catalogfile.NTx86=MtsUSB2KXP.cat
+
+;--------- Manufacturer and Models Sections ----------------------------------
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+WinDirSys32Drivers = 11
+WinDirSys32Drivers.NTx86 = 12
+
+[SourceDisksNames]
+51 = %Floppy_Desc%,,,
+
+[SourceDisksFiles]
+MtsUsb1.sys = 51,
+
+[SourceDisksFiles.x86]
+MtsUsb.sys = 51,
+
+[Manufacturer]
+%Provider%=Mfg0
+
+[Mfg0]
+%DeviceDesc%=MtsTch_Inst, USB\VID_0596&PID_0001
+%DeviceDesc%=MtsTch_Inst, USB\VID_0596&PID_0002
+
+[NODRIVER]
+
+[ControlFlags]
+ExcludeFromSelect=USB\VID_0596&PID_0001
+ExcludeFromSelect=USB\VID_0596&PID_0002
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Windows 98
+
+[MtsTch_Inst]
+CopyFiles = WinDirSys32Drivers
+AddReg = MtsTch_Inst_AddReg
+
+; The following is added to
+; HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\TouchScreen\0000.
+[MtsTch_Inst_AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,mtsusb1.sys
+
+[WinDirSys32Drivers]
+MtsUsb1.sys
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Windows 2000
+
+[MtsTch_Inst.NTx86]
+CopyFiles = WinDirSys32Drivers.NTx86
+
+[MtsTch_Inst.NTx86.Services]
+Addservice = MtsTch, 0x00000002, MtsTch_AddService, MtsTch_Eventlog_Inst.NTx86
+
+[MtsTch_AddService]
+DisplayName    = %SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\MtsUsb.sys
+LoadOrderGroup = Pointer Port
+
+[MtsTch_Eventlog_Inst.NTx86]
+AddReg = MtsTch_Eventlog_AddReg.NTx86
+
+[MtsTch_Eventlog_AddReg.NTx86]
+; --------- Files (common) -------------
+HKR,, EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\MtsResrc.dll;%%SystemRoot%%\System32\Drivers\Mtsusb.sys"
+HKR,, TypesSupported, 0x00010001, 7
+
+[WinDirSys32Drivers.NTx86]
+MtsUsb.sys,MtsUsb.sys,,0x00000002	;Do not allow user to skip file
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;--------- Strings Section ---------------------------------------------------
+
+[Strings]
+MtsTch			= "Touch Screen"
+Provider		= "3M Touch Systems, Inc."
+DeviceDesc		= "MicroTouch(tm) USB Touch Screen Controller"
+SvcDesc			= "TouchWare Service"
+Floppy_Desc		= "TouchWare Disk 1"

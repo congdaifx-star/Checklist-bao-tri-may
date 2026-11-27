@@ -1,0 +1,283 @@
+  
+  <SampleRackType>
+
+    <TubeRack>
+      <TubeDetectionInfoList>
+        <TubeThreshold Name="12x75 mm tube">
+          <Height Min="90" Max="145" Enable="true" />
+          <Width Min="127" Max="154" Enable="true" />
+          <Histogram Min="70" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+
+        <!--Need to do-->
+        <TubeThreshold Name="12x75 mm tube + cap">
+          <Height Min="30000" Max="30001" Enable="false" />
+          <Width Min="137" Max="156" Enable="false" />
+          <Histogram Min="3" Max="10" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="13x100 mm tube">
+          <Height Min="388" Max="457" Enable="true" />
+          <Width Min="139" Max="150" Enable="true" />
+          <Histogram Min="70" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="1 mL insert (pediatric cup, 81916) into PED adapter (1270013000)">
+          <Height Min="277" Max="304" Enable="true" />
+          <Width Min="145" Max="160" Enable="true" />
+          <Histogram Min="5" Max="115" Enable="true" />
+          <CupBrightCount Min="0" Max="3000" Enable="true" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="13x100 mm tube + 1 mL insert cup (81915)">
+          <Height Min="388" Max="453" Enable="true" />
+          <Width Min="136" Max="154" Enable="true" />
+          <Histogram Min="5" Max="65" Enable="true" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="12x75 mm tube + 1 mL insert cup (81915)">
+          <Height Min="90" Max="145" Enable="true" />
+          <Width Min="127" Max="154" Enable="true" />
+          <Histogram Min="5" Max="65" Enable="true" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+
+        <!--Need to do-->
+        <TubeThreshold Name="13x100 mm tube + cap">
+          <Height Min="31000" Max="31001" Enable="false" />
+          <Width Min="137" Max="156" Enable="false" />
+          <Histogram Min="3" Max="10" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="16x100 mm tube">
+          <Height Min="388" Max="453" Enable="true" />
+          <Width Min="170" Max="205" Enable="true" />
+          <Histogram Min="70" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="12x100 mm tube">
+          <Height Min="388" Max="453" Enable="true" />
+          <Width Min="127" Max="138" Enable="true" />
+          <Histogram Min="70" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="16x75 mm tube">
+          <Height Min="90" Max="137" Enable="true" />
+          <Width Min="179" Max="205" Enable="true" />
+          <Histogram Min="70" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="16x100 mm tube + Beckman 0.5 mL cup">
+          <Height Min="454" Max="504" Enable="true" />
+          <Width Min="170" Max="205" Enable="true" />
+          <Histogram Min="6" Max="30" Enable="false" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+          <CupType Enable="true">
+            <MatchValues>
+              <int>0</int>
+              <int>3</int>
+            </MatchValues>
+          </CupType>
+        </TubeThreshold>
+
+        <TubeThreshold Name="16x100 mm tube + Beckman 2 mL cup">
+          <Height Min="454" Max="496" Enable="true" />
+          <Width Min="170" Max="205" Enable="true" />
+          <Histogram Min="31" Max="100" Enable="false" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+          <CupType Enable="true">
+            <MatchValues>
+              <int>1</int>
+              <int>4</int>
+            </MatchValues>
+          </CupType>
+        </TubeThreshold>
+
+        <TubeThreshold Name="16x100 mm tube + Hitachi 2 mL cup">
+          <Height Min="515" Max="550" Enable="true" />
+          <Width Min="170" Max="250" Enable="true" />
+          <Histogram Min="9" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+
+        <!--Need to do-->
+        <TubeThreshold Name="16x100 mm tube + cap">
+          <Height Min="1262" Max="1274" Enable="false" />
+          <Width Min="182" Max="194" Enable="false" />
+          <Histogram Min="3" Max="10" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="S-Monovette 4.9 mL">
+          <Height Min="305" Max="340" Enable="true" />
+          <Width Min="135" Max="170" Enable="true" />
+          <Histogram Min="51" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="S-Monovette 5.5 mL">
+          <Height Min="140" Max="165" Enable="true" />
+          <Width Min="161" Max="190" Enable="true" />
+          <Histogram Min="30" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="S-Monovette 7.5 mL">
+          <Height Min="341" Max="370" Enable="true" />
+          <Width Min="161" Max="185" Enable="true" />
+          <Histogram Min="30" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="S-Monovette 9.0 mL">
+          <Height Min="340" Max="374" Enable="true" />
+          <Width Min="186" Max="210" Enable="true" />
+          <Histogram Min="30" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="15x92 mm">
+          <Height Min="305" Max="340" Enable="true" />
+          <Width Min="171" Max="185" Enable="true" />
+          <Histogram Min="30" Max="300" Enable="true" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+      </TubeDetectionInfoList>
+
+      <!-- When not going into a Tube threshold value, it is an threshold value for retry. -->
+      <RetryTubeDetectionInfoList>
+        <TubeThreshold Name="12x75 mm tube">
+          <Height Min="70" Max="155" Enable="true" />
+          <Width Min="137" Max="154" Enable="false" />
+          <Histogram Min="0" Max="0" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <!--Not in use, set all Enable attributes to false-->
+        <TubeThreshold Name="12x75 mm tube + cap">
+          <Height Min="30000" Max="30001" Enable="false" />
+          <Width Min="137" Max="156" Enable="false" />
+          <Histogram Min="0" Max="0" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="13x100 mm tube">
+          <Height Min="375" Max="458" Enable="true" />
+          <Width Min="130" Max="165" Enable="true" />
+          <Histogram Min="0" Max="0" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="16x100 mm tube">
+          <Height Min="375" Max="458" Enable="true" />
+          <Width Min="166" Max="250" Enable="true" />
+          <Histogram Min="0" Max="0" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="16x100 mm tube + Hitachi 2 mL cup">
+          <Height Min="515" Max="585" Enable="true" />
+          <Width Min="166" Max="250" Enable="true" />
+          <Histogram Min="0" Max="0" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <!--Not in use, set all Enable attributes to false-->
+        <TubeThreshold Name="16x100 mm tube + cap">
+          <Height Min="1262" Max="1274" Enable="false" />
+          <Width Min="182" Max="194" Enable="false" />
+          <Histogram Min="0" Max="0" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="S-Monovette 4.9 mL">
+          <Height Min="295" Max="329" Enable="true" />
+          <Width Min="135" Max="170" Enable="false" />
+          <Histogram Min="51" Max="300" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="S-Monovette 7.5 mL">
+          <Height Min="330" Max="370" Enable="true" />
+          <Width Min="161" Max="185" Enable="false" />
+          <Histogram Min="30" Max="300" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+      </RetryTubeDetectionInfoList>
+
+    </TubeRack>
+
+    <CupRack>
+      <TubeDetectionInfoList>
+
+        <TubeThreshold Name="Beckman 0.5 mL cup">
+          <Height Min="5" Max="54" Enable="true" />
+          <Width Min="0" Max="2000" Enable="false" />
+          <Histogram Min="3" Max="30" Enable="false" />
+          <CupBrightCount Min="0" Max="650" Enable="false" />
+          <CupType Enable="true">
+            <MatchValues>
+              <int>0</int>
+              <int>3</int>
+            </MatchValues>
+          </CupType>
+        </TubeThreshold>
+
+        <TubeThreshold Name="Beckman 2 mL cup">
+          <Height Min="5" Max="54" Enable="true" />
+          <Width Min="0" Max="2000" Enable="false" />
+          <Histogram Min="31" Max="200" Enable="false" />
+          <CupBrightCount Min="651" Max="1926" Enable="false" />
+          <CupType Enable="true">
+            <MatchValues>
+              <int>1</int>
+              <int>4</int>
+            </MatchValues>
+          </CupType>
+        </TubeThreshold>
+
+        <TubeThreshold Name="Beckman 3 mL cup">
+          <Height Min="300" Max="378" Enable="true" />
+          <Width Min="157" Max="177" Enable="false" />
+          <Histogram Min="0" Max="300" Enable="false" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="Hitachi 2 mL cup">
+          <Height Min="0" Max="0" Enable="true" />
+          <Width Min="185" Max="210" Enable="true" />
+          <Histogram Min="0" Max="300" Enable="false" />
+          <CupBrightCount Min="0" Max="3000" Enable="false" />
+        </TubeThreshold>
+      </TubeDetectionInfoList>
+
+      <!-- When not going into a Cup threshold value, it is an threshold value for retry. -->
+      <RetryTubeDetectionInfoList>
+        <TubeThreshold Name="Beckman 3 mL cup">
+          <Height Min="300" Max="400" Enable="true" />
+          <Width Min="0" Max="0" Enable="false" />
+          <Histogram Min="0" Max="0" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+
+        <TubeThreshold Name="Hitachi 2 mL cup">
+          <Height Min="55" Max="200" Enable="true" />
+          <Width Min="165" Max="225" Enable="true" />
+          <Histogram Min="0" Max="0" Enable="false" />
+          <CupBrightCount Min="0" Max="0" Enable="false" />
+        </TubeThreshold>
+      </RetryTubeDetectionInfoList>
+
+    </CupRack>
+
+  </SampleRackType>
