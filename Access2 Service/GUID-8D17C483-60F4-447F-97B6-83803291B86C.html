@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en-US"><head data-approot-head=""><!-- saved from url=(0016)http://localhost --><meta charset="utf-8" /><meta name="viewport" content="initial-scale=1, maximum-scale=1" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta content="(C) Copyright 2026" name="copyright" /><meta content="(C) Copyright 2026" name="DC.rights.owner" /><meta content="task" name="DC.Type" /><meta content="This procedure describes how to edit the Access 2 instrument NVRAM file, repair the instrument serial number information, or modify the run time." name="description" /><meta content="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html" name="DC.Relation" scheme="URI" /><meta content="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" name="DC.Relation" scheme="URI" /><meta content="GUID-504FF1CA-E20E-4B39-B92A-991098A09952.html" name="DC.Relation" scheme="URI" /><meta content="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html" name="DC.Relation" scheme="URI" /><meta content="static/logo.png" name="logoPath" /><meta content="inline" name="email" /><meta content="© 2026 
+				Beckman Coulter, Inc." name="COPYRIGHTLINKTEXT" /><meta content="February 2026" name="RELEASEDDATELOCALIZED" /><meta content="None" name="FBCUSE" /><meta content="BN" name="FBCREVISION" /><meta content="DxServiceManualFeedback@beckman.com" name="FBCCONTACT" /><meta content="" name="FBCMINITOC" /><meta content="" name="FBCMIRNUMBERS" /><meta content="03/09/2014 19:00:00" name="FBCDUEDATE" /><meta content="" name="FBCCHARGENUMBER" /><meta content="23/02/2026 00:00:00" name="FBCSYSTEMRELEASEDATE" /><meta content="B13860" name="FBCPARTNUM" /><meta content="Manufactured for" name="FBCMANUFACTUREDBY" /><meta content="Galway" name="FBCECREPSTATEMENT" /><meta content="Service Manual" name="FBCDOCUMENTCLASSIFICATION" /><meta content="Yes" name="FBCINVITRO" /><meta content="Yes" name="FBCCEMARK" /><meta content="Red" name="FBCWAVECOLOR" /><meta content="Chaska" name="FBCSITECODE" /><meta content="rchristiansen" name="FISHPUBLISHER" /><meta content="VPUBSTATUSPUBLISHING" name="FISHPUBSTATUS" /><meta content="VOUTPUTFORMATSUITEHELP" name="FISHOUTPUTFORMATREF" /><meta content="SuiteHelp" name="FISHOUTPUTFORMATREF" /><meta content="en-US" name="FISHPUBLNGCOMBINATION" /><meta content="19/11/2025 19:56:48" name="FISHPUBREVIEWENDDATE" /><meta content="23/02/2026 14:39:32" name="MODIFIED-ON" /><meta content="" name="FPUBWATERMARK" /><meta content="" name="FPUBINCLUDEMETADATA" /><meta content="" name="FPUBINCLUDECOMMENTS" /><meta content="GUID-D5163292-63FA-449B-AC80-6E4FB4F92F44" name="FMAPID" /><meta content="19/11/2025 20:16:00" name="MODIFIED-ON" /><meta content="19/11/2025 20:15:33" name="CREATED-ON" /><meta content="Default" name="FISHREQUIREDRESOLUTIONS" /><meta content="" name="FISHRESOURCES" /><meta content="GUID-7F93B284-E572-4BED-8BE7-6E14611D6699" name="FISHMASTERREF" /><meta content="Access Service Manual PN B13860-v45-GUID-D5163292-63FA-449B-AC80-6E4FB4F92F44-2025/11/19 20:15:33" name="FISHBASELINE" /><meta content="en-US" name="FISHPUBSOURCELANGUAGES" /><meta content="Version BN" name="FCHANGES" /><meta content="en-US" name="FREQUESTEDLANGUAGES" /><meta content="45" name="VERSION" /><meta content="" name="FUSERGROUP" /><meta content="Service Documentation" name="FISHPUBLICATIONTYPE" /><meta content="" name="FDESCRIPTION" /><meta content="Access Service Manual PN B13860" name="FTITLE" /><meta content="true" name="IncludeTocNumbering" /><meta content="XHTML" name="DC.Format" /><meta content="GUID-8D17C483-60F4-447F-97B6-83803291B86C" name="DC.Identifier" /><meta content="en-US" name="DC.Language" /><title>10.10.1.17 Modifying AU NVRAM</title><link href="static/screen.css?mc4iNRyY" rel="stylesheet" /><link href="static/print.css?f8jqUYfi" media="print" rel="stylesheet" /><script src="static/head.js?pI0/L1iT" type="text/javascript"></script><link href="static/overrides.css" rel="stylesheet" /><link href="GUID-BD1665E0-BAFE-489F-943F-B6B62C633A29.html" rel="prev" /><link href="GUID-496E6DA8-38F2-48B5-9FA9-42C8CB0B24D1.html" rel="next" /><link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" /></head><body class="fixed" id="d9e1314" data-relpath="GUID-8D17C483-60F4-447F-97B6-83803291B86C.html" data-approot="" relatedLinks="block">    <div class="wrapper"><header class="header"> <div class="container"><div class="row"><a class="btn-burger" href="#" title="Show menu"></a><a class="logo header__logo" href="index.html"></a></div></div></header><section class="section-search section-search--secondary"><div class="container"><div class="row"><div class="col-md-8"><div class="col__inner"><h1>Access Service Manual PN B13860</h1><div id="newBreadcrumbs"></div></div></div><div class="col-md-4"><div class="col__inner"><div class="search search--small"><form action="?" method="get" id="search_form"><label class="hidden" for="f_search"></label><input class="search__field" id="search_textbox" type="search" name="q" value="" placeholder="Enter search terms"><button class="search__btn" type="submit"><i class="ico-search" title="Search"></i></button></input></form></div></div></div></div></div></section><div class="main"><div class="container container--flex"><div class="row"><div class="container__inner"><div class="sidebar" id="leftbar"><nav class="accordion-nav" id="toc_container"><div class="accordion__section"><div class="accordion__head"><h5>Contents</h5></div><div class="toc-actions"><span class="link-expand" title="Expand All" href="#"></span><span class="link-collapse" title="Collapse All" href="#"></span></div><div class="accordion__body" id="toc_pane"><nav class="nav-secondary" id="toc_nav"></nav></div></div><div class="accordion__section" id="index_container" style="display:none"><div class="accordion__head"><h5>Index</h5></div><div class="accordion__body" id="index_pane"><div class="search-primary"><form action="?" method="get"><label class="hidden" for="f_search1">Search</label><input class="search__field" type="search" name="f_search1" id="f_search1" placeholder="Search Index" /><input class="search__btn" type="submit" value="GO" title="Search" /></form></div><nav class="nav-secondary" id="index_nav"> </nav></div></div><div class="accordion__section" id="glossary_container" style="display:none"><div class="accordion__head"><h5>Glossary</h5></div><div class="accordion__body" id="glossary_pane"><nav class="nav-secondary nav-secondary--primary" id="glossary_nav" data-breadcrumbtext="BreadCrumb Glossary"></nav></div></div><div class="accordion__section" id="search_container"><div class="accordion__head"><h5>Search</h5><span class="badge pull-right" id="search_count"></span></div><div class="accordion__body" id="search_pane"><nav class="nav-secondary" id="search_nav">       <div id="search_message">No search has been performed.</div></nav></div></div></nav></div><div class="content"><a class="resizeTab" id="TopOP" title="Top of the page">                         </a><section class="section"><header class="section__head"><i class="btn-burger btn-burger--small" title="Hide menu"></i><ul class="list-actions"><li><a href="#" id="button_back" title="Previous topic"><i class="ico-arrow-prev"></i></a></li><li><a href="#" id="button_forward" title="Next Topic"><i class="ico-arrow-next"></i></a></li><li><a href="#" id="button_highlighting" title="Toggle search highlighting"><i class="ico-a"></i></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><i class="ico-share"></i><span id="subject">Feedback for Access Service Manual PN B13860</span><span id="emailpub">Publication: Access Service Manual PN B13860</span><span id="emailpartnum">Part Number: B13860</span><span id="emailrev">Revision: BN</span><span id="emailtopic">Topic: </span><span id="emailguid">CCM GUID: </span><span id="emailmsg1">********* DO NOT WRITE ABOVE THIS LINE ******************* </span><span id="emailmsg2">Describe your feedback: </span></a></li><li class="button_print yes"><a href="#" id="button_print" title="Print"><i class="ico-print"></i></a></li></ul></header><div class="section__body section__body--primary" id="thumbnailDialog"> <main role="main"><article aria-labelledby="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C" role="article"> 
+  <h1 class="title topictitle1" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Modifying AU NVRAM</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to edit the Access 2 instrument NVRAM file, repair the instrument serial number information, or modify the run time. 
+  </p> 
+	 <section class="section context" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p"> This procedure describes how to edit the Access 2 instrument NVRAM file, repair the instrument serial number information, or modify the run time. The nvsetup.csv file in the instrument hard drive contains the serial number, alignment offset, run time, and luminometer setup values. This procedure is for Access 2 systems only. 
+		</p> 
+		<div class="p"> Perform this procedure ONLY when you have determined that the instrument NVRAM must be edited because of any of these circumstances: 
+		<ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_41675623680899541675623680899641"> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_41675623680899841675623680899941"> A swapped in I/O PCB has overwritten the nvsetup.csv file on the hard drive. 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_41675623680900141675623680900241"> The nvsetup file requires modification beyond what can be adjusted in the user interface. 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_41675623680900441675623680900541"> Software installation on a new AU hard drive has uploaded a blank nvsetup file into the I/O PCB. 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BE4DA0378B234BFCBE387BD65D2E1B85"> Replacing with a new AU hard drive or imaging the AU hard drive has reset the run time to zero. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">This procedure uses: 
+		<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_F288CC1029E4460A939003456A6150B7"> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B7A82ABC5C5F425EB9082E9537946A71"> Notepad or Wordpad to edit a backup copy of the nvsetup.csv file located on the PC. 
+			 <p class="p"> 
+			 </p><img class="image" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__IMAGE_569924339EA8434FAAAD3E4489A38B05" src="GUID-FEF1DC89-62B3-4EFC-BDEA-3282E818BC62-default.gif" /> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B215F3027E5C4741B15DE1027810F5AD"> Ftp to move the nvsetup.csv file to the AU hard drive. 
+			 <p class="p"> 
+			 </p><img class="image" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__IMAGE_5D4315B8951C4D1AA8F2006AE12A4E90" src="GUID-4F980CAE-6304-402E-B671-8C9522209E72-default.gif" /> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_44919F8A23E142CCAD12D706FBF26711"> Telnet to send the nvsetup.csv file to the I/O PCB. 
+			 <p class="p"> 
+			 </p><img class="image" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__IMAGE_58502C9A1B4A446EAF03BEF97C4AC288" src="GUID-08A99953-6034-4B94-AD05-E55050EA4472-default.gif" /> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		</ol> 
+		</div> 
+		<table class="table" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88"><caption><span class="title" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-975B52B9-A286-4FB0-927A-3AA65BD70AC9">Table 138: AU Programs and Commands</span></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry align-left valign-top" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__1"> Program 
+				</th> 
+				<th class="entry align-left valign-top" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__2"> Result 
+				</th> 
+				<th class="entry align-left valign-top" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__3"> Examples 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__1 "> nvinit.sh 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__2 "> Saves NVRAM from hard drive into I/O PCB. 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__3 "> Replacing used I/O PCB. Transfers NVRAM from hard drive. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__1 "> ram2disk.sh 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__2 "> Saves I/O PCB NVRAM to hard drive. 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__3 "> Replacing AU hard drive. Transfers NVRAM from I/O PCB. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__1 "> setserial.sh 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__2 "> Allows modification of instrument serial number and saves nvsetup file from hard drive into I/O PCB. 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__3 "> Instrument has wrong serial number (an uncommon situation). 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+		<div class="p"> 
+		<table class="table" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE_D60977B06C5A4EABA0BB1C39952EEFE6"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0B676AF5-7ABD-4114-928F-485D615EC910">For the following action...</strong> 
+				  </td> 
+				  <td class="entry"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8F350B69-0285-4E22-AA32-65B87C0E2277">Refer to...</strong> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Modifying AU NVRAM on Windows 8/10 system 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-8D17C483-60F4-447F-97B6-83803291B86C__STEP_088C86C477A448C0A39AF7C0A3BD53F9">Step 1</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Modifying AU NVRAM on Windows XP system 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-8D17C483-60F4-447F-97B6-83803291B86C__STEP_4C3A8067CF1E453394981D71381289FD">Step 2</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__STEP_088C86C477A448C0A39AF7C0A3BD53F9"> 
+		  <span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-49EEE17B-EF22-4696-BB82-33893C7A7F45">Modifying AU NVRAM on Windows 8/10 system. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEPS_37E03B7DD8E44F1AA2E9DC24E056FFE5" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_3078D5FBD3A54316AC927FBD899C610E"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0074FA0E-F79D-4345-88F5-463E4BA22F8E">Identify the AU IP address. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-140C11AF-9A30-4393-ACFE-EB9A2C6B007F"><span class="note__title">Note:</span> The AU IP address can be changed by editing the startup file and sending it to the 
+					 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2C869884-6FFD-4AE0-93EE-9F14EEF593FB">AU h0/sys</strong> directory. 
+				  </div> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_F35FB6071CD647DFB63B616B5B1BABDD" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_30A390879E6C48FF89525947A428E106">In 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-855D33F1-B8EC-421B-84CC-F4DD647E9E8D">File Explorer</strong>, navigate to the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-ED6F0ECC-7169-471C-9601-F487E0627740"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FD5FA82B-D3A2-41F8-8F2D-47A1B5B9A99D">c:\nexstep\pc\drw\os9000</span></strong> directory. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9953A52174C24760BB6985EED2ED71DE">Open the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-619E0AF5-BF73-437D-A3B2-1DF008A1F6DC">startup</strong> file using 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CA947D10-C64F-40F8-A1F3-603F7A16519E">Notepad</strong> or 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-AFA030F9-389C-47E8-8A7F-79861014C711">Wordpad</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_DCD5221579454F7A9AD98E0B7F365380">Scroll down to the line that starts with 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7E6EFC26-9238-48C5-9FB9-97C2EF70304E"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9822018B-4711-4AC6-8FB7-3289C237D8CD">ifconfig enet0 192.168.2.x</samp></strong> and identify the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F9D3C0CB-A7A5-438D-AF8D-C64F157F3B62">AU IP address</strong>. (192.168.2.x where x=the address of the AU). 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_8C2862CE5E16479ABEC55FFF7E837EC1">Exit 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-21F62AC1-4F36-485C-A615-8E367259EF54">Notepad</strong> or 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-919ABC5E-6537-432E-ACD2-61EBB252950F">Wordpad</strong>. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_AF81C727525546E1B212FC76ECFFE55F"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4F325A7E-0370-43F9-A318-065DAC9541C0">Edit the nvsetup.csv file as required (run seconds, serial number, system ID, LED counts). 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_DD9E06A57B0F4DFC88A448E287DBE6F3" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_27D7B6B3D4404DA2BAB6C0F101314720"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7B75F012-143E-4751-8E42-273A6DCA57F6">(Option 1)</strong> If the file has no alignments (all zeros), then check the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BA135E9A-A375-4793-9A90-DF4599CF99B0">nvsetup.csv 
+						</strong>copy stored in the backup folder. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_47258DF5F77D4F6FB87C1B95FE52F40B"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_28AC9C1045FD4B0CA7FF5996A37C0DEE">Confirm that the alignment values are present in the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1D062042-4DC4-4207-937C-1974D386FB0F">nvsetup.csv</strong> file. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_8670B1EEC49E42E29EAC746AFFE2C2B6">Exit the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7DC747EB-A483-420A-886F-B9A66F410425">nvsetup.csv</strong> file. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C1450BB5C50A40D79E07EC20C402504E"> Right-click on the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DD8AE8AE-A7A5-47A4-AFF2-5D0A5BCB1E29">nvsetup.csv</strong> file, and select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-07EFA7F3-6B29-42A0-AE54-2EE608A71D96">Copy (xxxxxx)</span>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_043BF5FB7E0145068CF0ABC9C54BDBD2">Navigate to 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CAB0D181-D5EB-48E2-81BD-A550ECCFEB57"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-14D9EE07-8431-48CF-AB80-FE8B3CFBFAE7">c:\nexstep\pc\drw\os9000</span></strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_46D5208119DC41D0A5EB98B60FB8695B">Right-click on the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7D71118A-C183-46A5-BFCA-CB452853FC35">os9000</strong> folder and select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-22175E85-8738-4BAE-B02D-8943FF0EAF95">Paste</span> to paste the nvsetup.csv file into the os9000 folder. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C89023A4E4E040B98D7169FE6A5B6925">At any 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D4EB15E1-DC71-4114-BCE4-89BE794E18F9"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-59A854D0-96F0-40D8-BAF4-D0A8DCC70914">Confirm File Replacement</samp></strong> messages, select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-99788C69-96BE-4878-BA49-C9BA0A302380">Yes</span>. 
+						  </li> 
+						</ol> 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-436CEC4C-A971-4435-BCEE-05C80C4D3B8D"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_A290E92CB9254B959AB25DFC16138860"> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_E31FB532A2A746FEAEC4F86C182A1B23">Each time software is loaded, the copy of the nvsetup file in the PC is saved so the alignments and run seconds might not be current. 
+							 </li> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2BCF2F29BB394A919714A8B4EFDECC22"> Instruments on Windows XP with flash drive backup have multiple backup folders on the PC. If the alignment file in Backup contains all zeros, then check the nvsetup.csv files in Backup1, Backup2, Backup3, Backup4, or Backup5. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C89F31F71767434F8B4EFF1DA947E256"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1D4AF9E1-D437-4EAB-AFDD-413CA8337193">(Option 2)</strong> Modify the Access 2 run time. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_A917CFCE45994D41AC53D489E48F96EA"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_F06A8017B18343C0A1D7061EB02D9CD7">In 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A0366523-16F7-40BA-9080-B613756F6A9F">File Explorer</strong>, navigate to 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4CAF85B5-8E32-4D25-8FF0-A42B028087D6"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5AAC456D-234E-46DB-B811-DC19D8194859">c:\nexstep\pc\drw\os9000</span></strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_4B5C762A52CF40D885A67E7FA61DAEB3">Open the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F718F1F3-F2F3-4EAB-8F2F-BB25EB5A55CF">nvsetup.csv</strong> file using 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E85C85BF-8A44-4F41-A499-190E4905CCB9">Notepad</strong> or 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3429CDF4-E0F0-4990-BE21-624B2844B026">Wordpad</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C92A1C5ABEFA409DBF80462C131994DF">Scroll down until you locate line 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6FE088DB-D8D3-4BEF-880C-59865195B650"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-285D839B-F8CD-4CA6-9F9C-18A01FCE9D77">Run Time (seconds)</samp></strong>. Change the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D3837FDA-3EE8-4372-80AB-DBF09FA35F37">Run Time</strong>, calculated in seconds, to the desired time. For example, to change Run Time to 7 hours, calculate the time in seconds: 3600 sec/hour × 7 hours = 25,200 seconds. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_EB74B2CC97594249938CE4CC3B00B19A">Save the file and exit. 
+						  </li> 
+						</ol> 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_8C148A5466D8439E9C76D822DC3DFAE1"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-149BE4B9-35DB-4C8E-ACFC-FB1B1A96C278">Send the nvsetup.csv file from the PC to the AU hard drive. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_A5A68B5C84314C39B7B5402F05F865BA" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B7EB9C8EF6094514A34BD89BF458446B">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-964C3F84-9DA0-47DC-A451-8F56D2C5B3A4">Windows</strong> desktop, press 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CF6C2077-C4F8-42AA-A28A-2F1A93866526">Windows</strong> key, and open the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-93DD6B4C-9DE9-4780-B4CE-067CA7C2B8FD">Command Prompt</strong> icon or type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2C9DA265-E3F8-4440-84E3-816A45B7BB89">command prompt</strong> and open the program. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_538E80C1D23F48698507DCD569A7F0EB">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2CDBD5FE-EDEA-455E-85D7-1C718A15B59F">CMD</strong> window, at the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BCC6D795-163D-4018-97F9-10A91B1ED7A0">C:&gt;prompt type 
+						  <kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A775CF1F-9E4D-4CDF-8DE6-7C1E5D837598">ftp</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8B69364D-EBB0-4B75-A0C8-93C940D553AB">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_6AE95D4BA7964024B9D2DE52C3AF777D">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-91F42D61-0613-43A6-AB3F-100915DDEDCE">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A4CAF229-958F-47DF-958C-2E001701A6C6"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B9510D87-8AE5-4F04-A94B-38774FDA6E5F">open 192.168.2.x</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-ECA0334C-2A3D-419B-A4C4-91657EFF1CD1">[Enter]</span> (x= the address of the AU). 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8ED66519-2163-44D1-BB3E-6586C03A152C"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_A6F70F31730A4E04A9DFC0AFCFAEADA3"> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C197861DF9734DFCB489314128CB81FE"> The most common AU IP address is 192.168.2.4. Client instruments or instruments with new AU hard drives can have different IP addresses. 
+							 </li> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_683371745EF244C28B773FA3BD87021A"> If the IP address is unknown, then: 
+								<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_68FD0B73A09A40619EAB015E31C37655"> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_1750AABBFFDE48D39753C22AEE2660FE">Press 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-77FDF8F3-10B3-4507-91C6-27CCF193842B">Windows</strong> key, select 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9407A29C-F798-49E0-8FAF-809A59986494">Restore Utility</strong> icon or type 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-188951BB-9D6D-4C53-80F0-583FDDB4C3C1">restore utility</strong> and open the program. 
+								  </li> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_0B4BE2BFAEE54A0191C4A693F98343BB">In the 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-73364322-F830-4805-AF0C-D85F1D6A30D7">Restore Utility</strong>, select 
+									 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6B0F0889-FDDB-4A20-BC83-0D4E3009CE63">Modify PC Specific Registry</span>. 
+								  </li> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_43B1D4A6E805408BA8BE48FF45935A5F">Record the 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B24B37B7-03CD-4323-BEA9-B816A0F90C45">AU IP address</strong> that is shown. 
+								  </li> 
+								</ol> 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C2AEF62D2AF74DDEAB34C493EBE77F8F">At the<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-12624241-4633-4FA4-B96A-76A92964299E"> ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C0E72EF2-AB4D-4AB2-9506-2231F1919686"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8C9D3278-C01A-4252-B273-7AE5ADFD8963">super</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-61022250-B1CF-454D-93B8-B808BFD14BA7">[Enter]</span>. For password, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DAE75F80-934D-4613-84CA-370FAC514944"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7E567B63-F13D-4451-A533-A2D204A29B9B">user</kbd></strong> then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-00FF7246-739B-4E77-BD19-4BB59D447419">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F207168E-D6B3-4303-AE4D-4E4A652CC616"><span class="note__title">Note:</span> The password 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3F515183-644C-470C-9F91-162B8DB68BA1"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BD82EA3D-F1CF-42CB-B05F-D723DCE5A367">user</kbd></strong> is invisible when typed. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CBB8E593144B4798997BCCDB46D4B86B">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B83A35A0-2B4A-41A6-BCCA-52A538C8B2C5">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B0726B54-5482-4B33-BD06-6B2474DA41FE"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6609F9AE-484D-49B2-9AA0-6EE124019693">ascii</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-50D0B27C-59FC-421E-B924-CAE7B056F2CA">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CBFC320CD3794C96ACDF2792694836CA">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7AA0FFDC-07E2-4313-B096-D2BACB64EDFC">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2E1C3576-62A0-4AF4-8E57-84FA8299A8E6"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-57B9A4F2-8AB6-49DD-A64C-A5F6BB23F558">prompt</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C07DBED3-7D44-476E-AC3C-121A6C7B4CD7">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2DEDF8DC398645B788D4FB45B592887C">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D052C345-1F7A-47D1-8C8A-6B498AEABDE8">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3FD8421B-E67F-404B-8987-370EB19A19AB"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-528020EB-9E21-4D50-957E-094BFE9D5E7F">cd /nexstep/drw 
+						  </kbd></strong>and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2B08B4C0-80F3-4663-BB3F-603B0E0D61DB">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-61BFDA84-9FDB-4F63-9CFF-8853A708E541"><span class="note__title">Note:</span> There is a space between 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C92EF191-12F7-4206-9DF6-AC2B4B499C80"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F8EAFBAA-ECE8-4B28-BE24-A59483E0B692">cd</samp></strong> and 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F3BA022F-6D1B-4142-AA8E-12F321B9E45E"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1087EAE5-17D1-486F-88D2-052450F362D8">/nexstep</samp></strong>. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_54CACC825C8747AD9F761B3D047820F5">At the ftp&gt; prompt, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2F8CD89D-B4F0-4C6C-8E75-CD795F17F803"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-80B429BF-9878-4FE5-82A9-1E3A2354F624">mput c:\nexstep\pc\drw\os9000\nvsetup.csv</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4395C947-AEC1-44C1-B49D-D102AB716D4D">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CBB7F096-343C-4CA4-936B-CD735B7E0BA8"><span class="note__title">Note:</span>  If the prompt responds with 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-415E34F0-D6AE-46D2-8CA0-5DA9F79897FE"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B351B519-2365-47AF-8AD9-ADF96EC38301">mput c:\nexstep\pc\drw\os9000\nvsetup.csv?</samp></strong>, then type 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-32BD7493-83BE-46FD-86DA-EAFCF5CC1509"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DBB6AC42-2EE9-41E2-A7B0-F0820070369C">y</kbd></strong> and press 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F6890C02-D21D-4331-848B-CEBA89EEC6CB">[Enter]</span>. This extra question indicates that a previous step was not completed; however, typing 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2758FCC5-E62D-42D0-B0CD-4061322A6DE5"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C997BB36-E83D-45AF-86DB-AF38C0AFD9A7">y</kbd></strong> resolves the issue. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_26A8B7636F7C414984B17EADC3962992">Close the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C34164A3-9D6C-47C7-B865-3420F19087CF">CMD</strong> window. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_B35921BDCEDE4273B0FF014FD189769C"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-89A8B149-D20A-4BC8-AADB-F38F1A037E8D">Send the nvsetup.csv data from the AU hard drive to the I/O PCB. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_C372E19CC4B44B9DAD735F8607100481" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_722C3D70B0E94449951F9340665E3DF4">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6EB4ACF4-D5D4-44B0-9B03-85F2BF17FFA4">Windows</strong> desktop, press 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-307ECA6B-1579-488B-9B4F-E0574DBC823F">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A0EDA141-1C60-4E8E-9709-80D058F1D673">run</strong> and open the program. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_7C55525167734E138F7D108D1EF56AFB">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-805B33EC-A80D-4E98-AEB8-849811BAF28A">Run dialog box</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D9DD861F-E9C4-4EFF-B416-5093FF28BDB4"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-73E1C03F-8F28-4985-8E75-69AFE19F1AD8">telnet 192.168.2.x</kbd></strong> (x= the address of the AU), and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3D24AFEF-33C7-45C3-B231-F60FB45C71A7">Enter</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2737F8DF0CB142459D76BE52090BFEBE">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-22F598E1-B410-4A08-BF55-CB031D24C756">telnet window</strong>, at the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7B5A9420-77BB-4D73-B319-FA6E3EAB1FBE">user name prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4E938B22-5396-4D64-822D-2B83817DA39B"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A01E46EB-0695-4D5E-90FE-AE446CA3BA1A">super</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0F9D16A0-DCA2-456A-8F53-725C0C0EE8B6">[Enter]</span>. For password, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-163F8944-91E2-45DB-9D80-8D1B958B445A"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5C21C421-8486-438C-8E7F-141EF3191C6D">user</kbd></strong> then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A7C36F17-DEF0-48DA-972F-5A4BEF079DB2">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-04DEA5A1-6F7B-4A3F-BCA4-E838E8E34256"><span class="note__title">Note:</span> The password 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-974BEC97-1354-4404-90FD-431D8500753C"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-137F6F70-792A-4A22-B204-3AD0379F9EDE">user</kbd></strong> is invisible when typed. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_6650DC4388EB46B69129F9AC9D792F70">At the<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-17C22822-A8CE-4AB0-8CFB-B25B2273003E"> (super) [/hØ/&gt;] prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BD7A7F04-E993-4977-82B7-D6D066B98DBC"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2469663B-F5D1-48CD-96AC-0D78844D2B2D">cd /hØ/nexstep/scriptutil</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C4556376-5D4E-4766-86CD-56F0E2026E65">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_394DFFF3A14D46BE830D6B18D86E944F">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4699F73E-FCE6-48CD-99EA-0228E9CDA726">(super) [/hØ/nexstep/scriptutil/&gt;] prompt</strong>, type<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1CB3828B-4FBE-4BEE-ACCB-65126A1FCF64"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0C68070B-0A15-47B6-B510-86017D7947B5"> nvinit.sh -d</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B4B3DDD5-11AF-4C52-9290-72A5DF405B3F">[Enter]</span> to send the nvsetup file information to the I/O PCB. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-21014871-8C40-416F-92E0-DA52A0685F1D"><span class="note__title">Note:</span> If the instrument serial number must be changed, then type 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1D895E4D-CAC3-462A-AEC7-3DBA47A138A4"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-676A6546-3DD3-4C20-B838-07B318D8318C">setserial.sh</kbd></strong>, 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BC5EA556-3754-4A1B-B21A-5964D6AE8670">[space]</span>, enter the new serial number, and then press 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6C9EC7DF-CAB5-4FFB-BCDF-8D5D50C826F9">[Enter]</span>. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C3BAE939EC894A1790A667842AF29DCF">Type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B5A87A8E-BB3D-4578-B0E2-AFA25A23AB54"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B33051E5-DE1F-46AF-AEC9-D78952CDD918">break</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-38725AC9-4EDE-4923-AFC5-CEAD1B754FC6">[Enter]</span> to reboot the AU. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_284A91C9637D41AAB6CCA441B31F296A">Close the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D2076161-7D6F-4391-B59B-ED2D9F84652D">telnet</strong> window and any other open windows on the desktop. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_10BC32B2CEB9401E862EE9388F301CEC">Restart the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_BB58B8B265644DD88F2041E583FB053E"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-65409D50-D4AD-4ED5-A2F2-A19BD9768C28">Confirm that the nvsetup.csv file has been modified correctly. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_E53AEA2D6F8B4B27918316301938B711" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_D603B60E9E5B4B34A6A36E50FC0F146E"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9FB59926-E4C0-4461-8A9B-5A472F0E120E">(Option 1)</strong> Modifying alignments: Confirm that the AU alignments have been restored correctly. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_9620816A9017444E96ACFCCC07E83FCD"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_22C9927981144ACF90D3803E0F99F481">Use a previous alignment report to confirm that the LED target is correct in the Luminometer Diagnostics screen and the device alignments are correct. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_F6A8EBBF179847CDB36E1BF9F79B9C4B">If the LED value and alignments do not match the alignment report, then adjust and save the values from the user interface. 
+						  </li> 
+						</ol> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B90D8B5005F34BEFB0CFE39F01222D4C"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FF18FD37-B58A-49FF-A49D-FA87554B7BCD">(Option 2)</strong> Modifying Run Time: If the Run Hours in the Event Log details are still showing the old time, initialize the system to create an event message and refresh the message from the instrument to post the modified (new) time to the PC. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_35FF5B4E15DC4FDE9DBC9D5923265B94"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D764B634-67D4-4A20-911B-08F2DB66E1DC">Verify System operation. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_71FB9EAE69B84480A3B14CBD2FB55CB8" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_8E61EE0F74464681AF542B8086752D5F">Perform the required system verification. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8658DA0C-5BB0-4B87-9E5C-83D0701999AA"><span class="note__title">Note:</span> Refer to the 
+						  <a class="xref" href="GUID-EC094189-97BB-6B98-8625-69BB006E44EE.html" title="This procedure establishes standard protocols for service personnel to verify instrument performance following a service repair.">Instrument Verification Protocol for Access Service Repair</a> document. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_11F03FD7B48B41AAADC6818F9A51AAF0">Contact your local support organization with any questions or concerns. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__STEP_4C3A8067CF1E453394981D71381289FD"> 
+		  <span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4FF5532F-6CC8-45FD-98E8-5699460D1623">Modifying AU NVRAM on Windows XP system. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEPS_7C61A47BDA7A4BE5B43A8039E8FFB6BC" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_27761A441D264540B9A2B312B9E8EE96"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7BAF5A2E-E522-47F6-8063-1892FA1C8A24">Identify the AU IP address. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9E37259D-79CF-4326-944E-282695A3FD3C"><span class="note__title">Note:</span> The AU IP address can be changed by editing the startup file and sending it to the 
+					 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DA00D5F3-146B-4801-B98C-A2DC72161964">AU h0/sys</strong> directory. 
+				  </div> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_A000203025EA4713923C7DC56B289E63" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_A9E2193D2E9940599B1CB1CFD827AF40">In 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-628332FD-CD62-4940-BE86-21C1FC482898">Windows Explorer</strong>, navigate to the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DB3819EB-BAFB-42D5-827D-8E1F98BEC5B6"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A99AF6F2-F369-45E0-A1E9-A39806E2EA4F">c:\nexstep\pc\drw\os9000</span></strong> directory. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_D64D63113D044C4FB0EBA29AE9778FE9">Open the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3FEED331-5378-45E5-8489-806EC3480C76">startup</strong> file using 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E6CF2E57-CE8B-40CB-927E-8F67710608EE">Notepad</strong> or 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-67E41684-4CA0-47E8-95C6-065F7A40C52E">Wordpad</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_16105FBA050E47318C75148148EAD649">Scroll down to the line that starts with 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FE55BAB1-707D-4D3E-9B85-CBC245FE185F"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C2EBCF2A-5ED1-44AF-AEA1-EDCC10404D6B">ifconfig enet0 192.168.2.x</samp></strong> and identify the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4F4F4103-B207-43D2-8E79-1F5243E58344">AU IP address</strong>. (192.168.2.x where x=the address of the AU). 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BAA51C7368EC41AA8C31DE48B76B7BE0">Exit Notepad or Wordpad. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_7112B91D60D248739F8750DE450A26A8"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-70C35014-D2FE-4691-B390-FCDEB8661053">Edit the nvsetup.csv file as required (run seconds, serial number, system ID, LED counts). 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_FFA26F10EBBC49D4A35CF71413811DBC" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_78EF2B9BA9844823A1C0ED074C2F6599"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-923BC27C-E660-4CEA-88D1-F05B58821A45">(Option 1)</strong> If the file has no alignments (all zeros), then check the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-97CA37F3-25BA-432A-8FEE-A28167DBF41A">nvsetup.csv 
+						</strong>copy stored in the backup folder. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_7A70EF1FF29D433D827A11899B7D1DD8"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_D3ECFAC99C5A402C9AAA1014808BCA55">Confirm that the alignment values are present in the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-17A5B04B-E0B8-4902-9BCD-661A7724EEEA">nvsetup.csv</strong> file. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9BAF60362B964F5FACCB14D5A45965C5">Exit the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-31160B3C-42FB-4F01-AAB8-4EAEAEAE66A7">nvsetup.csv</strong> file. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_377A5F9353744F13AB7B67C728AD0A00"> Right-click on the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4F6E4034-1FA6-4D63-87CB-55DD7483E1F4">nvsetup.csv</strong> file, and select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D3539E36-9B6B-496B-B481-2F8FA2B53B38">Copy (xxxxxx)</span>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_34E2B518E31A4F7D9FD5718A855EAEFB">Navigate to 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-30509639-539C-4F5F-BA29-CF63720F9F24"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FD9E3415-FA15-4394-9840-758354D80C6F">c:\nexstep\pc\drw\os9000</span></strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_E1089FD115F247B5BD65A821F3D6B563">Right-click on the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-77A764A8-7980-4019-9028-A8BD76D1DDC9">os9000</strong> folder and select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-836A4102-7490-429A-9119-6E744388C517">Paste</span> to paste the nvsetup.csv file into the os9000 folder. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CC9797D098454E47B7B734C5FC1670CA">At any 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EC824887-1884-45D2-9D97-0DD2EE47523E"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7EBC5817-18AD-40A7-B6AB-2B3AD7C59B0C">Confirm File Replacement</samp></strong> messages, select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-898E6EEB-41E8-42DD-B9D1-9F751D06C81E">Yes</span>. 
+						  </li> 
+						</ol> 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-08DD7AF0-3124-4D75-A16E-0C652F2E3DF6"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_12D62CFA7F02419F971FF827F5328ED6"> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_EAD3322DA7144FF3BAFC772ABE6CE17B">Each time software is loaded, the copy of the nvsetup file in the PC is saved so the alignments and run seconds might not be current. 
+							 </li> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CCFEA70751414ED8ADC156E4288B6778"> Instruments on Windows 8 with flash drive backup have multiple backup folders on the PC. If the alignment file in Backup contains all zeros, then check the nvsetup.csv files in Backup1, Backup2, Backup3, Backup4, or Backup5. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2448B71C3C2B4357B04153B7ACD91B43"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9D7AEAEA-42C3-4BE7-8B40-53FA381D2020">(Option 2)</strong> Modify the Access 2 run time. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_C864D3DC525B4C6299A28B83E7EF38E9"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_E6F057D5B1044BAF967C82EDB6069797">In 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DE263417-1592-4CBD-AB5A-03218A0DAD46">Windows Explorer</strong>, navigate to 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9B0C7268-BF4D-4272-9039-1C5E98F21AD4"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-532A6B74-CCB7-45F2-A889-AFE9CA5F13BD">c:\nexstep\pc\drw\os9000</span></strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BBC3AB7B0B25406DBA43757F79BFBBF7">Open the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-74E1A4C1-33E3-4D52-B752-1F604E7CC6C3">nvsetup.csv</strong> file using 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5A7917DA-5CF9-495C-B0C8-0A97419C4A69">Notepad</strong> or 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1C0D2D0D-E026-46F6-8C37-0639F493F8CC">Wordpad</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B9026943149F4DF3BEE8578570B5CFED">Scroll down until you locate line 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-960AC6D1-99BD-433B-BBC2-1C936FC45612"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6F06C9A9-4270-43FE-BD62-45B1EA5BF67E">Run Time (seconds)</samp></strong>. Change the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-04C48476-3890-4E7C-B741-506612FE165B">Run Time</strong>, calculated in seconds, to the desired time. For example, to change Run Time to 7 hours, calculate the time in seconds: 3600 sec/hour × 7 hours = 25,200 seconds. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_DE71164789A54B379A59BEF1F562B651">Save the file and exit. 
+						  </li> 
+						</ol> 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_030B78304DE346EBB1FBB1609C6226D1"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5F2B7250-8B34-4DE1-A9BB-E94EFC1281CE">Send the nvsetup.csv file from the PC to the AU hard drive. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_7ED7F9CDB106441C93D639A78649B7F6" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_496DEF95BDC74A1395C14F4A5B465FB8">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2C262507-E394-435A-B9B3-E34E3F80F547">Windows</strong> desktop, select 
+						<span class="ph menucascade" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2BB936C7-3800-4140-A647-410B10A1141B"><span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-513EE275-9A99-4458-A791-C26C46BCEE54">Start</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DBCBEDDA-814B-4CBA-8837-AA876AC62C4A">Run</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2A75CF6C356E498CAFA27E03EF4C46C0">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3FD17799-BD07-44F6-AC10-6DCD28BE1CFF">text box</strong> type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CEA88D96-871C-432F-A1DA-36A64CBC6711"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3B9CE64C-4A9E-439B-8E2D-3B7302EE1634">cmd</kbd></strong>, and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BE635769-D711-41D9-A341-52EDC95234EA">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2A5696A21F694416B8B73CBB83066D79">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-13279BAE-6297-472D-A276-3F8F7294C38E">CMD</strong> window, at the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-AC9C9601-10F9-47F1-BBAE-9DE953A52CEC">C:&gt;prompt type 
+						  <kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E9B77880-D722-4E53-AF05-94E2EB7D582B">ftp</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2850BA21-F38C-47BE-90B1-751AD8D0BD1A">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_E3DCADF5B565451CBAF633DB4C4F8F37">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4548C352-8100-4D6E-BFB9-51A804A59B19">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-57A8EF1F-DE7B-4B8E-B19A-A08A9919D457"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0823AE26-1E1E-461F-8161-06DF73CFBA86">open 192.168.2.x</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BDD65123-EE35-4314-9C89-A20A69912ABD">[Enter]</span> (x= the address of the AU). 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4238DBA1-959B-42D7-94B6-9BF0BB3B0513"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_025F75976B14469095BEDAA369D838DE"> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CBACF3DB490343789FE6F5C0C382C8A5"> The most common AU IP address is 192.168.2.4. Client instruments or instruments with new AU hard drives can have different IP addresses. 
+							 </li> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_770AEAB36EC44E039E26D875B837CDDF"> If the IP address is unknown, then: 
+								<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_DB887A5B7FDB4F18B0F1F6E833877CD0"> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_1B5EA8CEB62D4C1498203106EA7C45DC">Select 
+									 <span class="ph menucascade" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-747CF335-84E7-4BF5-9A04-A3B0458F0293"><span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D2ED2C8D-E686-4683-BBEB-A6673A428D76">Start</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0411B726-B1CA-41DE-9979-7BFE5BB08EA8">Programs</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EE15B098-1C27-4200-B27A-86641345AA4C">Access2</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-98E59E17-D186-4C86-93B6-AA2F7F3D176B">Restore Utility</span></span>. 
+								  </li> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_A2A6956C4DFC41A497AC6A747422013F">In the Restore Utility, select 
+									 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8D65A8C4-E781-4CA1-A358-C02CB9962164">Modify PC Specific Registry</span>. 
+								  </li> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_5F5AFCAC73FB4478A85BF38FA629ECD1">Record the AU IP address that is shown. 
+								  </li> 
+								</ol> 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_4DA5E07BBD5F4998AD1B792440C9A8A9">At the<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-838FF781-6827-428F-838A-D9891F7BC477"> ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1E158A18-D95E-499A-8898-96A3D35A47EE"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-28563803-C02C-47C4-A6E3-8BB222040D57">super</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3C782D74-9EDB-49B1-9828-FBBDC79F2DC2">[Enter]</span>. For password, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2ED25C59-BEDC-4BB1-A5A2-5B0023FFC3E4"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5AD148E4-2FE9-4A06-87B0-5D2D56FF9406">user</kbd></strong> then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6E13D75A-4841-4FF0-8519-342EAA8C315C">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FB436B3C-8E21-4C39-AFCC-F9A896B14FA2"><span class="note__title">Note:</span> The password 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EC7265FE-D103-43F6-949B-C2D18207177B"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B7854132-92D4-42C7-A824-07A56A6FADDE">user</kbd></strong> is invisible when typed. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_8F85E44D10DC4B89878AF0F919A76046">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-851B0CE5-6D97-4DA7-94F8-ABCE7D31540A">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EC8E6F62-F15E-481E-82BE-5ED6199074DE"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E7FCA234-20F0-43F8-89FD-004041287445">ascii</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FDE476D0-E485-48DA-A3EE-153C9853AFA3">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_7949DC9E7D5D48C98FE9FDED3904C4C7">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2729289A-37BD-475D-9FBF-9C14A8DD9C5F">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F57BF92C-8604-4D2C-A125-487C46458DC8"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4ECBCF66-E528-405F-93B8-2C0FD6D7DCC2">prompt</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BE540775-C038-4766-884D-4714E5A36793">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BB17AF2BC1CE401F8C807C5B63C4176C">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4265F14F-839F-4105-B4F6-01F0C37E7D4F">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-29183540-AE25-495F-80F6-0DAFFAEAC2E0"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-216F4803-D7A7-4102-A108-6F7B32086896">cd /nexstep/drw 
+						  </kbd></strong>and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-71DE6569-508C-4D0B-9CD6-8B25F2EE2648">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F971104C-BCD2-432F-955D-3915ADC2E2FD"><span class="note__title">Note:</span> There is a space between 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EE6D8552-D1ED-451F-A035-1E9B7B53ED89"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-469EB363-E1AF-4BE9-90DF-B5CF6127CA92">cd</samp></strong> and 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-54EB425B-A910-4178-B3DC-BE84D4234F31"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-234AFEC1-49AC-409F-827C-CD219D57124F">/nexstep</samp></strong>. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9105C466FAF5436A938B786EBE4664D8">At the ftp&gt; prompt, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-AD39D983-2F73-423E-BC19-D6A245E77312"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A72CF77D-8C51-43BE-93CF-DF1618817CB1">mput c:\nexstep\pc\drw\os9000\nvsetup.csv</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4ED56300-0C05-49F2-9BFA-7DEC139807F1">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-53AEDD20-21E8-44A2-9A48-1777EA4D5C27"><span class="note__title">Note:</span>  If the prompt responds with 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B13D0849-D904-47C3-AF12-F90C5053D64B"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0AB6AD20-F4D8-4799-BED2-8CAED4B88F69">mput c:\nexstep\pc\drw\os9000\nvsetup.csv?</samp></strong>, then type 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C7DD6F78-942B-471B-B084-4BA67946E278"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-241BD3A7-BC96-47F9-B293-4C1C35FC7FBC">y</kbd></strong> and press 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F55281F5-D2E8-4504-978D-0C7C6EB71C95">[Enter]</span>. This extra question indicates that a previous step was not completed; however, typing 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B8317E1B-71D9-4DF9-B69E-A3B5E86BDC38"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-533C5FF4-DD45-41B9-B77D-B036D7AB0611">y</kbd></strong> resolves the issue. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_78C0612C819944F0B89C3CFC1471326C">Close the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E1D24BF2-890D-4E02-95DA-A0E444EBAEA2">CMD</strong> window. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_0B7E83DB0B634386B64C8EB77F7B7401"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-48573C95-392F-48F7-ACB1-E83E1D41901F">Send the nvsetup.csv data from the AU hard drive to the I/O PCB. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_0CFD0A21472D4B7CA052A1E97057010A" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_0812B69671A84B52B674501BE053A61B">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EA681151-FC29-463A-8C33-6D4165AB0BA7">Windows</strong> desktop, select 
+						<span class="ph menucascade" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D6955BC8-A77B-42B5-9FB5-4D0A66D0D406"><span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C7150F39-AEE4-4A0C-8A97-08D41271EEEC">Start</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B2DEA41A-19E8-4BE7-B285-D52A878DA371">Run</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_50566473FCEC4E7FA8BA3F115930431D">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-406C6F52-B5A8-4DE4-AA26-0EE6B19D4967">Run dialog box</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A7B15EC6-B94F-4B44-99DA-8FF4A8C22275"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-780B2474-0D3B-42C9-A807-10AB2AB44FB2">telnet 192.168.2.x</kbd></strong> (x= the address of the AU), and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F5553CB2-043F-4A5C-9F96-E60128D5CDC0">Enter</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_056C91A5014D4F8B92CC15E7C6BB4C37">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9C841532-4F21-4D10-84C5-9FBD5FBBA0BF">telnet window</strong>, at the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-44F98864-CFD0-4D6F-9FB2-F51D009669B6">user name prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-790516C1-7ABF-4349-B0A8-0929C8B92DB4"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F7D28F9B-10A8-44F6-B0A0-13E59B541BA1">super</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4187C5A6-04D2-429E-9CAC-380E59DC1DC4">[Enter]</span>. For password, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3FE1D9E9-C054-49F4-A1EF-FE30011C3B6A"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-33FEE686-47DC-4689-A9D9-F835A505A3C5">user</kbd></strong> then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D707EB4A-BAA1-4540-A26E-1CBA269FF70C">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B8FFA41F-9C08-4D85-8CC3-964AF73574C2"><span class="note__title">Note:</span> The password 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0E6BF8A6-BC80-418E-A8CA-9700899F8F9A"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3B506C16-6654-40E2-84A1-4014A5E4A6B9">user</kbd></strong> is invisible when typed. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BC51678AA4BD4A42B239F96305515503">At the<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F1E8A98D-C36D-4010-8EB0-21A63ECC6ED8"> (super) [/hØ/&gt;] prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-336E59C5-AA23-4827-AE8C-87AC8F3D8989"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0732F80B-0E17-431A-8D84-860C8554B2A0">cd /hØ/nexstep/scriptutil</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B6992D05-8AA7-4C20-83DA-FBD518F33D2D">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_999AABA6ADD04D65AA32588BE399EADB">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C8E9832C-9461-4B0A-9119-E969728893D0">(super) [/hØ/nexstep/scriptutil/&gt;] prompt</strong>, type<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A132CE71-B8EC-46CB-91C7-0561C3CB0D53"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2EF5542E-EAB1-4EAB-9368-D334D4620227"> nvinit.sh -d</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1A7DFBB0-3314-449B-AFD4-640CED8BE8E9">[Enter]</span> to send the nvsetup file information to the I/O PCB. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CA12EB4B-AB43-4D84-ABD7-41D07801CEF8"><span class="note__title">Note:</span> If the instrument serial number must be changed, then type 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0E86CC19-EB6E-46C6-99D0-B39A67EAF2D3"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A2DEFF71-2812-43DE-AF4D-CDDC09CA00F6">setserial.sh</kbd></strong>, 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A26360C3-9B20-4878-8806-9396EF3F1129">[space]</span>, enter the new serial number, and then press 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D0E47A81-434A-4A76-A226-459130C98A3E">[Enter]</span>. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9D7F01B034B44EF2BAD0E9A7B4B0D5E6">Type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C1EDDB12-8BD9-4CDF-9B7D-EE1B8DC5FC2F"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4024883D-8504-4041-B8F1-1A8BEC6F32DE">break</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7262CB7A-3733-45E6-B199-DD8123337611">[Enter]</span> to reboot the AU. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9A4E1B71AA5A4B0E80E8B399A68D89A5">Close the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-510240FD-6B17-4270-99BA-22BCF7E98DE0">telnet</strong> window and any other open windows on the desktop. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_36B27CCF42F04F4BA8CBABCC99863A1B">Restart the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_E7BD0F11A7E84D638699295E2BC41ABB"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0CB569C3-6016-4D03-80E1-063DC864751C">Confirm that the nvsetup.csv file has been modified correctly. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_6DC5C6A8C06842838638FE093E29C8D1" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BA6FE55D335F467EAF7895B78437FF4F"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E70ADBA9-A91E-4D9F-97E8-7D63C4FD6E43">(Option 1)</strong> Modifying alignments: Confirm that the AU alignments have been restored correctly. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_B786F162220741F4B10B6A0BF1B491E7"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_0969AAD015574B8FA30C6BF1231D01CD">Use a previous alignment report to confirm that the LED target is correct in the Luminometer Diagnostics screen and the device alignments are correct. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9DCFB27E8A7148898D1EDE851FC9B998">If the LED value and alignments do not match the alignment report, then adjust and save the values from the user interface. 
+						  </li> 
+						</ol> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_A2A7AD23D8FB452EA06EC16099001850"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-47D0AFF2-7B69-4F25-878D-6C9F942BB611">(Option 2)</strong> Modifying Run Time: If the Run Hours in the Event Log details are still showing the old time, initialize the system to create an event message and refresh the message from the instrument to post the modified (new) time to the PC. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_099CC56DC3784491BDE1F0278CF821DE"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-86F0494D-91A2-4172-AC6E-C6E61CFD6DC5">Verify System operation. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_FDFC1B61088441A991B8EAFD73DDD9DB" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_4734711233E3451099C4456CA533EA28">Perform the required system verification. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3C93F38B-62DA-4A7C-AC7A-DFDC9106BAAD"><span class="note__title">Note:</span> Refer to the 
+						  <a class="xref" href="GUID-EC094189-97BB-6B98-8625-69BB006E44EE.html" title="This procedure establishes standard protocols for service personnel to verify instrument performance following a service repair.">Instrument Verification Protocol for Access Service Repair</a> document. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CB95D842A815478A8F6CA6F9B5712A92">Contact your local support organization with any questions or concerns. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html">Database</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" title="10 Software "><div><span class="ph num-prefix">10 </span>Software </div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-504FF1CA-E20E-4B39-B92A-991098A09952.html" title="10.10 Troubleshooting"><div><span class="ph num-prefix">10.10 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html" title="10.10.1 Database"><div><span class="ph num-prefix">10.10.1 </span>Database</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-8D17C483-60F4-447F-97B6-83803291B86C.html" lang="en-US" title="10.10.1.17 Modifying AU NVRAM"><div><span class="ph num-prefix">10.10.1.17 </span>Modifying AU NVRAM</div></a></div></article></main></div><div class="section__actions"><ul><li><a href="#" id="button_back_mobile" title="Previous topic"><span><i class="ico-arrow-prev-white"></i></span></a></li><li><a href="#" id="button_forward_mobile" title="Next Topic"><span><i class="ico-arrow-next-white"></i></span></a></li><li><a href="#" id="button_highlighting_mobile" title="Toggle search highlighting"><span><i class="ico-a-white"></i></span></a></li><li class="share button_share DxServiceManualFeedback@beckman.com"><a href="#" id="button_email_mobile" mailto="DxServiceManualFeedback@beckman.com" title="Email us"><span><i class="ico-share-white"></i></span></a></li><li class="button_print yes"><a class="yes" href="#" id="button_print_mobile" title="Print"><span><i class="ico-print-white"></i></span></a></li></ul></div></section></div></div></div><footer class="section__foot row">                        <div id="footer"><div id="footer_links"><ul><li><div id="partnum">B13860BN</div></li><li><div id="date">February 2026</div></li><li><a href="copyright.html" title="© 2026  Beckman Coulter, Inc.">© 2026  Beckman Coulter, Inc.                                          </a></li></ul></div></div></footer></div></div></div><noscript><p>JavaScript must be enabled in order to use this site.</p><p>Please enable JavaScript in your browser and refresh the page.</p><div id="thumbnailDialog"><main role="main"><article aria-labelledby="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-95170833-16E4-4BDD-94D6-F06424CD407D" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C" role="article"> 
+  <h1 class="title topictitle1" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-95170833-16E4-4BDD-94D6-F06424CD407D"><a id="GUID-95170833-16E4-4BDD-94D6-F06424CD407D"></a>Modifying AU NVRAM</h1> 
+   
+  <div class="body taskbody"><p class="shortdesc">This procedure describes how to edit the Access 2 instrument NVRAM file, repair the instrument serial number information, or modify the run time. 
+  </p> 
+	 <section class="section context" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F1A6028E-5120-4482-A7E1-58714E40D58E"> 
+		<p class="p"> This procedure describes how to edit the Access 2 instrument NVRAM file, repair the instrument serial number information, or modify the run time. The nvsetup.csv file in the instrument hard drive contains the serial number, alignment offset, run time, and luminometer setup values. This procedure is for Access 2 systems only. 
+		</p> 
+		<div class="p"> Perform this procedure ONLY when you have determined that the instrument NVRAM must be edited because of any of these circumstances: 
+		<ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_41675623680899541675623680899641"> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_41675623680899841675623680899941"> A swapped in I/O PCB has overwritten the nvsetup.csv file on the hard drive. 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_41675623680900141675623680900241"> The nvsetup file requires modification beyond what can be adjusted in the user interface. 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_41675623680900441675623680900541"> Software installation on a new AU hard drive has uploaded a blank nvsetup file into the I/O PCB. 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BE4DA0378B234BFCBE387BD65D2E1B85"> Replacing with a new AU hard drive or imaging the AU hard drive has reset the run time to zero. 
+		  </li> 
+		</ul> 
+		</div> 
+		<div class="p">This procedure uses: 
+		<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_F288CC1029E4460A939003456A6150B7"> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B7A82ABC5C5F425EB9082E9537946A71"> Notepad or Wordpad to edit a backup copy of the nvsetup.csv file located on the PC. 
+			 <p class="p"> 
+			 </p><img class="image" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__IMAGE_569924339EA8434FAAAD3E4489A38B05" src="GUID-FEF1DC89-62B3-4EFC-BDEA-3282E818BC62-default.gif" /> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B215F3027E5C4741B15DE1027810F5AD"> Ftp to move the nvsetup.csv file to the AU hard drive. 
+			 <p class="p"> 
+			 </p><img class="image" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__IMAGE_5D4315B8951C4D1AA8F2006AE12A4E90" src="GUID-4F980CAE-6304-402E-B671-8C9522209E72-default.gif" /> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_44919F8A23E142CCAD12D706FBF26711"> Telnet to send the nvsetup.csv file to the I/O PCB. 
+			 <p class="p"> 
+			 </p><img class="image" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__IMAGE_58502C9A1B4A446EAF03BEF97C4AC288" src="GUID-08A99953-6034-4B94-AD05-E55050EA4472-default.gif" /> 
+			 <p class="p"> 
+			 </p> 
+		  </li> 
+		</ol> 
+		</div> 
+		<table class="table" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88"><caption><span class="title" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-975B52B9-A286-4FB0-927A-3AA65BD70AC9">Table 138: AU Programs and Commands</span></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead"> 
+			 <tr class="row"> 
+				<th class="entry align-left valign-top" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__1"> Program 
+				</th> 
+				<th class="entry align-left valign-top" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__2"> Result 
+				</th> 
+				<th class="entry align-left valign-top" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__3"> Examples 
+				</th> 
+			 </tr></thead><tbody class="tbody"> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__1 "> nvinit.sh 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__2 "> Saves NVRAM from hard drive into I/O PCB. 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__3 "> Replacing used I/O PCB. Transfers NVRAM from hard drive. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__1 "> ram2disk.sh 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__2 "> Saves I/O PCB NVRAM to hard drive. 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__3 "> Replacing AU hard drive. Transfers NVRAM from I/O PCB. 
+				</td> 
+			 </tr> 
+			 <tr class="row"> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__1 "> setserial.sh 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__2 "> Allows modification of instrument serial number and saves nvsetup file from hard drive into I/O PCB. 
+				</td> 
+				<td class="entry align-left valign-top" headers="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE3_4014E3BC56EF042D86256CF500830D88__entry__3 "> Instrument has wrong serial number (an uncommon situation). 
+				</td> 
+			 </tr> 
+		  </tbody></table> 
+		<div class="p"> 
+		<table class="table" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__TABLE_D60977B06C5A4EABA0BB1C39952EEFE6"><caption></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><tbody class="tbody"> 
+				<tr class="row"> 
+				  <td class="entry"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0B676AF5-7ABD-4114-928F-485D615EC910">For the following action...</strong> 
+				  </td> 
+				  <td class="entry"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8F350B69-0285-4E22-AA32-65B87C0E2277">Refer to...</strong> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Modifying AU NVRAM on Windows 8/10 system 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-8D17C483-60F4-447F-97B6-83803291B86C__STEP_088C86C477A448C0A39AF7C0A3BD53F9">Step 1</a> 
+				  </td> 
+				</tr> 
+				<tr class="row"> 
+				  <td class="entry">Modifying AU NVRAM on Windows XP system 
+				  </td> 
+				  <td class="entry"><a class="xref" href="#GUID-8D17C483-60F4-447F-97B6-83803291B86C__STEP_4C3A8067CF1E453394981D71381289FD">Step 2</a> 
+				  </td> 
+				</tr> 
+			 </tbody></table> 
+		</div> 
+	 </section> 
+	 <ol class="ol steps" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-14118259-30C8-4C6E-9C55-C345DDBE4114"><li class="li step" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__STEP_088C86C477A448C0A39AF7C0A3BD53F9"> 
+		  <span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-49EEE17B-EF22-4696-BB82-33893C7A7F45">Modifying AU NVRAM on Windows 8/10 system. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEPS_37E03B7DD8E44F1AA2E9DC24E056FFE5" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_3078D5FBD3A54316AC927FBD899C610E"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0074FA0E-F79D-4345-88F5-463E4BA22F8E">Identify the AU IP address. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-140C11AF-9A30-4393-ACFE-EB9A2C6B007F"><span class="note__title">Note:</span> The AU IP address can be changed by editing the startup file and sending it to the 
+					 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2C869884-6FFD-4AE0-93EE-9F14EEF593FB">AU h0/sys</strong> directory. 
+				  </div> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_F35FB6071CD647DFB63B616B5B1BABDD" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_30A390879E6C48FF89525947A428E106">In 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-855D33F1-B8EC-421B-84CC-F4DD647E9E8D">File Explorer</strong>, navigate to the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-ED6F0ECC-7169-471C-9601-F487E0627740"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FD5FA82B-D3A2-41F8-8F2D-47A1B5B9A99D">c:\nexstep\pc\drw\os9000</span></strong> directory. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9953A52174C24760BB6985EED2ED71DE">Open the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-619E0AF5-BF73-437D-A3B2-1DF008A1F6DC">startup</strong> file using 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CA947D10-C64F-40F8-A1F3-603F7A16519E">Notepad</strong> or 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-AFA030F9-389C-47E8-8A7F-79861014C711">Wordpad</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_DCD5221579454F7A9AD98E0B7F365380">Scroll down to the line that starts with 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7E6EFC26-9238-48C5-9FB9-97C2EF70304E"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9822018B-4711-4AC6-8FB7-3289C237D8CD">ifconfig enet0 192.168.2.x</samp></strong> and identify the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F9D3C0CB-A7A5-438D-AF8D-C64F157F3B62">AU IP address</strong>. (192.168.2.x where x=the address of the AU). 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_8C2862CE5E16479ABEC55FFF7E837EC1">Exit 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-21F62AC1-4F36-485C-A615-8E367259EF54">Notepad</strong> or 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-919ABC5E-6537-432E-ACD2-61EBB252950F">Wordpad</strong>. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_AF81C727525546E1B212FC76ECFFE55F"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4F325A7E-0370-43F9-A318-065DAC9541C0">Edit the nvsetup.csv file as required (run seconds, serial number, system ID, LED counts). 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_DD9E06A57B0F4DFC88A448E287DBE6F3" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_27D7B6B3D4404DA2BAB6C0F101314720"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7B75F012-143E-4751-8E42-273A6DCA57F6">(Option 1)</strong> If the file has no alignments (all zeros), then check the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BA135E9A-A375-4793-9A90-DF4599CF99B0">nvsetup.csv 
+						</strong>copy stored in the backup folder. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_47258DF5F77D4F6FB87C1B95FE52F40B"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_28AC9C1045FD4B0CA7FF5996A37C0DEE">Confirm that the alignment values are present in the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1D062042-4DC4-4207-937C-1974D386FB0F">nvsetup.csv</strong> file. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_8670B1EEC49E42E29EAC746AFFE2C2B6">Exit the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7DC747EB-A483-420A-886F-B9A66F410425">nvsetup.csv</strong> file. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C1450BB5C50A40D79E07EC20C402504E"> Right-click on the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DD8AE8AE-A7A5-47A4-AFF2-5D0A5BCB1E29">nvsetup.csv</strong> file, and select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-07EFA7F3-6B29-42A0-AE54-2EE608A71D96">Copy (xxxxxx)</span>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_043BF5FB7E0145068CF0ABC9C54BDBD2">Navigate to 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CAB0D181-D5EB-48E2-81BD-A550ECCFEB57"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-14D9EE07-8431-48CF-AB80-FE8B3CFBFAE7">c:\nexstep\pc\drw\os9000</span></strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_46D5208119DC41D0A5EB98B60FB8695B">Right-click on the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7D71118A-C183-46A5-BFCA-CB452853FC35">os9000</strong> folder and select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-22175E85-8738-4BAE-B02D-8943FF0EAF95">Paste</span> to paste the nvsetup.csv file into the os9000 folder. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C89023A4E4E040B98D7169FE6A5B6925">At any 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D4EB15E1-DC71-4114-BCE4-89BE794E18F9"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-59A854D0-96F0-40D8-BAF4-D0A8DCC70914">Confirm File Replacement</samp></strong> messages, select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-99788C69-96BE-4878-BA49-C9BA0A302380">Yes</span>. 
+						  </li> 
+						</ol> 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-436CEC4C-A971-4435-BCEE-05C80C4D3B8D"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_A290E92CB9254B959AB25DFC16138860"> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_E31FB532A2A746FEAEC4F86C182A1B23">Each time software is loaded, the copy of the nvsetup file in the PC is saved so the alignments and run seconds might not be current. 
+							 </li> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2BCF2F29BB394A919714A8B4EFDECC22"> Instruments on Windows XP with flash drive backup have multiple backup folders on the PC. If the alignment file in Backup contains all zeros, then check the nvsetup.csv files in Backup1, Backup2, Backup3, Backup4, or Backup5. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C89F31F71767434F8B4EFF1DA947E256"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1D4AF9E1-D437-4EAB-AFDD-413CA8337193">(Option 2)</strong> Modify the Access 2 run time. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_A917CFCE45994D41AC53D489E48F96EA"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_F06A8017B18343C0A1D7061EB02D9CD7">In 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A0366523-16F7-40BA-9080-B613756F6A9F">File Explorer</strong>, navigate to 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4CAF85B5-8E32-4D25-8FF0-A42B028087D6"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5AAC456D-234E-46DB-B811-DC19D8194859">c:\nexstep\pc\drw\os9000</span></strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_4B5C762A52CF40D885A67E7FA61DAEB3">Open the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F718F1F3-F2F3-4EAB-8F2F-BB25EB5A55CF">nvsetup.csv</strong> file using 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E85C85BF-8A44-4F41-A499-190E4905CCB9">Notepad</strong> or 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3429CDF4-E0F0-4990-BE21-624B2844B026">Wordpad</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C92A1C5ABEFA409DBF80462C131994DF">Scroll down until you locate line 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6FE088DB-D8D3-4BEF-880C-59865195B650"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-285D839B-F8CD-4CA6-9F9C-18A01FCE9D77">Run Time (seconds)</samp></strong>. Change the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D3837FDA-3EE8-4372-80AB-DBF09FA35F37">Run Time</strong>, calculated in seconds, to the desired time. For example, to change Run Time to 7 hours, calculate the time in seconds: 3600 sec/hour × 7 hours = 25,200 seconds. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_EB74B2CC97594249938CE4CC3B00B19A">Save the file and exit. 
+						  </li> 
+						</ol> 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_8C148A5466D8439E9C76D822DC3DFAE1"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-149BE4B9-35DB-4C8E-ACFC-FB1B1A96C278">Send the nvsetup.csv file from the PC to the AU hard drive. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_A5A68B5C84314C39B7B5402F05F865BA" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B7EB9C8EF6094514A34BD89BF458446B">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-964C3F84-9DA0-47DC-A451-8F56D2C5B3A4">Windows</strong> desktop, press 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CF6C2077-C4F8-42AA-A28A-2F1A93866526">Windows</strong> key, and open the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-93DD6B4C-9DE9-4780-B4CE-067CA7C2B8FD">Command Prompt</strong> icon or type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2C9DA265-E3F8-4440-84E3-816A45B7BB89">command prompt</strong> and open the program. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_538E80C1D23F48698507DCD569A7F0EB">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2CDBD5FE-EDEA-455E-85D7-1C718A15B59F">CMD</strong> window, at the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BCC6D795-163D-4018-97F9-10A91B1ED7A0">C:&gt;prompt type 
+						  <kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A775CF1F-9E4D-4CDF-8DE6-7C1E5D837598">ftp</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8B69364D-EBB0-4B75-A0C8-93C940D553AB">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_6AE95D4BA7964024B9D2DE52C3AF777D">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-91F42D61-0613-43A6-AB3F-100915DDEDCE">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A4CAF229-958F-47DF-958C-2E001701A6C6"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B9510D87-8AE5-4F04-A94B-38774FDA6E5F">open 192.168.2.x</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-ECA0334C-2A3D-419B-A4C4-91657EFF1CD1">[Enter]</span> (x= the address of the AU). 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8ED66519-2163-44D1-BB3E-6586C03A152C"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_A6F70F31730A4E04A9DFC0AFCFAEADA3"> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C197861DF9734DFCB489314128CB81FE"> The most common AU IP address is 192.168.2.4. Client instruments or instruments with new AU hard drives can have different IP addresses. 
+							 </li> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_683371745EF244C28B773FA3BD87021A"> If the IP address is unknown, then: 
+								<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_68FD0B73A09A40619EAB015E31C37655"> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_1750AABBFFDE48D39753C22AEE2660FE">Press 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-77FDF8F3-10B3-4507-91C6-27CCF193842B">Windows</strong> key, select 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9407A29C-F798-49E0-8FAF-809A59986494">Restore Utility</strong> icon or type 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-188951BB-9D6D-4C53-80F0-583FDDB4C3C1">restore utility</strong> and open the program. 
+								  </li> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_0B4BE2BFAEE54A0191C4A693F98343BB">In the 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-73364322-F830-4805-AF0C-D85F1D6A30D7">Restore Utility</strong>, select 
+									 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6B0F0889-FDDB-4A20-BC83-0D4E3009CE63">Modify PC Specific Registry</span>. 
+								  </li> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_43B1D4A6E805408BA8BE48FF45935A5F">Record the 
+									 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B24B37B7-03CD-4323-BEA9-B816A0F90C45">AU IP address</strong> that is shown. 
+								  </li> 
+								</ol> 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C2AEF62D2AF74DDEAB34C493EBE77F8F">At the<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-12624241-4633-4FA4-B96A-76A92964299E"> ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C0E72EF2-AB4D-4AB2-9506-2231F1919686"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8C9D3278-C01A-4252-B273-7AE5ADFD8963">super</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-61022250-B1CF-454D-93B8-B808BFD14BA7">[Enter]</span>. For password, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DAE75F80-934D-4613-84CA-370FAC514944"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7E567B63-F13D-4451-A533-A2D204A29B9B">user</kbd></strong> then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-00FF7246-739B-4E77-BD19-4BB59D447419">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F207168E-D6B3-4303-AE4D-4E4A652CC616"><span class="note__title">Note:</span> The password 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3F515183-644C-470C-9F91-162B8DB68BA1"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BD82EA3D-F1CF-42CB-B05F-D723DCE5A367">user</kbd></strong> is invisible when typed. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CBB8E593144B4798997BCCDB46D4B86B">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B83A35A0-2B4A-41A6-BCCA-52A538C8B2C5">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B0726B54-5482-4B33-BD06-6B2474DA41FE"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6609F9AE-484D-49B2-9AA0-6EE124019693">ascii</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-50D0B27C-59FC-421E-B924-CAE7B056F2CA">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CBFC320CD3794C96ACDF2792694836CA">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7AA0FFDC-07E2-4313-B096-D2BACB64EDFC">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2E1C3576-62A0-4AF4-8E57-84FA8299A8E6"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-57B9A4F2-8AB6-49DD-A64C-A5F6BB23F558">prompt</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C07DBED3-7D44-476E-AC3C-121A6C7B4CD7">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2DEDF8DC398645B788D4FB45B592887C">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D052C345-1F7A-47D1-8C8A-6B498AEABDE8">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3FD8421B-E67F-404B-8987-370EB19A19AB"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-528020EB-9E21-4D50-957E-094BFE9D5E7F">cd /nexstep/drw 
+						  </kbd></strong>and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2B08B4C0-80F3-4663-BB3F-603B0E0D61DB">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-61BFDA84-9FDB-4F63-9CFF-8853A708E541"><span class="note__title">Note:</span> There is a space between 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C92EF191-12F7-4206-9DF6-AC2B4B499C80"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F8EAFBAA-ECE8-4B28-BE24-A59483E0B692">cd</samp></strong> and 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F3BA022F-6D1B-4142-AA8E-12F321B9E45E"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1087EAE5-17D1-486F-88D2-052450F362D8">/nexstep</samp></strong>. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_54CACC825C8747AD9F761B3D047820F5">At the ftp&gt; prompt, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2F8CD89D-B4F0-4C6C-8E75-CD795F17F803"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-80B429BF-9878-4FE5-82A9-1E3A2354F624">mput c:\nexstep\pc\drw\os9000\nvsetup.csv</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4395C947-AEC1-44C1-B49D-D102AB716D4D">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CBB7F096-343C-4CA4-936B-CD735B7E0BA8"><span class="note__title">Note:</span>  If the prompt responds with 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-415E34F0-D6AE-46D2-8CA0-5DA9F79897FE"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B351B519-2365-47AF-8AD9-ADF96EC38301">mput c:\nexstep\pc\drw\os9000\nvsetup.csv?</samp></strong>, then type 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-32BD7493-83BE-46FD-86DA-EAFCF5CC1509"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DBB6AC42-2EE9-41E2-A7B0-F0820070369C">y</kbd></strong> and press 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F6890C02-D21D-4331-848B-CEBA89EEC6CB">[Enter]</span>. This extra question indicates that a previous step was not completed; however, typing 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2758FCC5-E62D-42D0-B0CD-4061322A6DE5"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C997BB36-E83D-45AF-86DB-AF38C0AFD9A7">y</kbd></strong> resolves the issue. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_26A8B7636F7C414984B17EADC3962992">Close the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C34164A3-9D6C-47C7-B865-3420F19087CF">CMD</strong> window. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_B35921BDCEDE4273B0FF014FD189769C"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-89A8B149-D20A-4BC8-AADB-F38F1A037E8D">Send the nvsetup.csv data from the AU hard drive to the I/O PCB. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_C372E19CC4B44B9DAD735F8607100481" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_722C3D70B0E94449951F9340665E3DF4">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6EB4ACF4-D5D4-44B0-9B03-85F2BF17FFA4">Windows</strong> desktop, press 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-307ECA6B-1579-488B-9B4F-E0574DBC823F">Windows</strong> key, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A0EDA141-1C60-4E8E-9709-80D058F1D673">run</strong> and open the program. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_7C55525167734E138F7D108D1EF56AFB">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-805B33EC-A80D-4E98-AEB8-849811BAF28A">Run dialog box</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D9DD861F-E9C4-4EFF-B416-5093FF28BDB4"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-73E1C03F-8F28-4985-8E75-69AFE19F1AD8">telnet 192.168.2.x</kbd></strong> (x= the address of the AU), and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3D24AFEF-33C7-45C3-B231-F60FB45C71A7">Enter</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2737F8DF0CB142459D76BE52090BFEBE">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-22F598E1-B410-4A08-BF55-CB031D24C756">telnet window</strong>, at the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7B5A9420-77BB-4D73-B319-FA6E3EAB1FBE">user name prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4E938B22-5396-4D64-822D-2B83817DA39B"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A01E46EB-0695-4D5E-90FE-AE446CA3BA1A">super</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0F9D16A0-DCA2-456A-8F53-725C0C0EE8B6">[Enter]</span>. For password, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-163F8944-91E2-45DB-9D80-8D1B958B445A"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5C21C421-8486-438C-8E7F-141EF3191C6D">user</kbd></strong> then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A7C36F17-DEF0-48DA-972F-5A4BEF079DB2">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-04DEA5A1-6F7B-4A3F-BCA4-E838E8E34256"><span class="note__title">Note:</span> The password 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-974BEC97-1354-4404-90FD-431D8500753C"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-137F6F70-792A-4A22-B204-3AD0379F9EDE">user</kbd></strong> is invisible when typed. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_6650DC4388EB46B69129F9AC9D792F70">At the<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-17C22822-A8CE-4AB0-8CFB-B25B2273003E"> (super) [/hØ/&gt;] prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BD7A7F04-E993-4977-82B7-D6D066B98DBC"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2469663B-F5D1-48CD-96AC-0D78844D2B2D">cd /hØ/nexstep/scriptutil</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C4556376-5D4E-4766-86CD-56F0E2026E65">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_394DFFF3A14D46BE830D6B18D86E944F">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4699F73E-FCE6-48CD-99EA-0228E9CDA726">(super) [/hØ/nexstep/scriptutil/&gt;] prompt</strong>, type<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1CB3828B-4FBE-4BEE-ACCB-65126A1FCF64"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0C68070B-0A15-47B6-B510-86017D7947B5"> nvinit.sh -d</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B4B3DDD5-11AF-4C52-9290-72A5DF405B3F">[Enter]</span> to send the nvsetup file information to the I/O PCB. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-21014871-8C40-416F-92E0-DA52A0685F1D"><span class="note__title">Note:</span> If the instrument serial number must be changed, then type 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1D895E4D-CAC3-462A-AEC7-3DBA47A138A4"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-676A6546-3DD3-4C20-B838-07B318D8318C">setserial.sh</kbd></strong>, 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BC5EA556-3754-4A1B-B21A-5964D6AE8670">[space]</span>, enter the new serial number, and then press 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6C9EC7DF-CAB5-4FFB-BCDF-8D5D50C826F9">[Enter]</span>. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_C3BAE939EC894A1790A667842AF29DCF">Type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B5A87A8E-BB3D-4578-B0E2-AFA25A23AB54"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B33051E5-DE1F-46AF-AEC9-D78952CDD918">break</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-38725AC9-4EDE-4923-AFC5-CEAD1B754FC6">[Enter]</span> to reboot the AU. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_284A91C9637D41AAB6CCA441B31F296A">Close the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D2076161-7D6F-4391-B59B-ED2D9F84652D">telnet</strong> window and any other open windows on the desktop. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_10BC32B2CEB9401E862EE9388F301CEC">Restart the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_BB58B8B265644DD88F2041E583FB053E"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-65409D50-D4AD-4ED5-A2F2-A19BD9768C28">Confirm that the nvsetup.csv file has been modified correctly. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_E53AEA2D6F8B4B27918316301938B711" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_D603B60E9E5B4B34A6A36E50FC0F146E"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9FB59926-E4C0-4461-8A9B-5A472F0E120E">(Option 1)</strong> Modifying alignments: Confirm that the AU alignments have been restored correctly. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_9620816A9017444E96ACFCCC07E83FCD"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_22C9927981144ACF90D3803E0F99F481">Use a previous alignment report to confirm that the LED target is correct in the Luminometer Diagnostics screen and the device alignments are correct. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_F6A8EBBF179847CDB36E1BF9F79B9C4B">If the LED value and alignments do not match the alignment report, then adjust and save the values from the user interface. 
+						  </li> 
+						</ol> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B90D8B5005F34BEFB0CFE39F01222D4C"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FF18FD37-B58A-49FF-A49D-FA87554B7BCD">(Option 2)</strong> Modifying Run Time: If the Run Hours in the Event Log details are still showing the old time, initialize the system to create an event message and refresh the message from the instrument to post the modified (new) time to the PC. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_35FF5B4E15DC4FDE9DBC9D5923265B94"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D764B634-67D4-4A20-911B-08F2DB66E1DC">Verify System operation. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_71FB9EAE69B84480A3B14CBD2FB55CB8" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_8E61EE0F74464681AF542B8086752D5F">Perform the required system verification. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8658DA0C-5BB0-4B87-9E5C-83D0701999AA"><span class="note__title">Note:</span> Refer to the 
+						  <a class="xref" href="GUID-EC094189-97BB-6B98-8625-69BB006E44EE.html" title="This procedure establishes standard protocols for service personnel to verify instrument performance following a service repair.">Instrument Verification Protocol for Access Service Repair</a> document. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_11F03FD7B48B41AAADC6818F9A51AAF0">Contact your local support organization with any questions or concerns. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li><li class="li step" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__STEP_4C3A8067CF1E453394981D71381289FD"> 
+		  <span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4FF5532F-6CC8-45FD-98E8-5699460D1623">Modifying AU NVRAM on Windows XP system. 
+		  </span> 
+		  <ol class="ol substeps" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEPS_7C61A47BDA7A4BE5B43A8039E8FFB6BC" type="a"> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_27761A441D264540B9A2B312B9E8EE96"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7BAF5A2E-E522-47F6-8063-1892FA1C8A24">Identify the AU IP address. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9E37259D-79CF-4326-944E-282695A3FD3C"><span class="note__title">Note:</span> The AU IP address can be changed by editing the startup file and sending it to the 
+					 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DA00D5F3-146B-4801-B98C-A2DC72161964">AU h0/sys</strong> directory. 
+				  </div> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_A000203025EA4713923C7DC56B289E63" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_A9E2193D2E9940599B1CB1CFD827AF40">In 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-628332FD-CD62-4940-BE86-21C1FC482898">Windows Explorer</strong>, navigate to the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DB3819EB-BAFB-42D5-827D-8E1F98BEC5B6"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A99AF6F2-F369-45E0-A1E9-A39806E2EA4F">c:\nexstep\pc\drw\os9000</span></strong> directory. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_D64D63113D044C4FB0EBA29AE9778FE9">Open the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3FEED331-5378-45E5-8489-806EC3480C76">startup</strong> file using 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E6CF2E57-CE8B-40CB-927E-8F67710608EE">Notepad</strong> or 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-67E41684-4CA0-47E8-95C6-065F7A40C52E">Wordpad</strong>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_16105FBA050E47318C75148148EAD649">Scroll down to the line that starts with 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FE55BAB1-707D-4D3E-9B85-CBC245FE185F"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C2EBCF2A-5ED1-44AF-AEA1-EDCC10404D6B">ifconfig enet0 192.168.2.x</samp></strong> and identify the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4F4F4103-B207-43D2-8E79-1F5243E58344">AU IP address</strong>. (192.168.2.x where x=the address of the AU). 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BAA51C7368EC41AA8C31DE48B76B7BE0">Exit Notepad or Wordpad. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_7112B91D60D248739F8750DE450A26A8"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-70C35014-D2FE-4691-B390-FCDEB8661053">Edit the nvsetup.csv file as required (run seconds, serial number, system ID, LED counts). 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_FFA26F10EBBC49D4A35CF71413811DBC" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_78EF2B9BA9844823A1C0ED074C2F6599"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-923BC27C-E660-4CEA-88D1-F05B58821A45">(Option 1)</strong> If the file has no alignments (all zeros), then check the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-97CA37F3-25BA-432A-8FEE-A28167DBF41A">nvsetup.csv 
+						</strong>copy stored in the backup folder. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_7A70EF1FF29D433D827A11899B7D1DD8"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_D3ECFAC99C5A402C9AAA1014808BCA55">Confirm that the alignment values are present in the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-17A5B04B-E0B8-4902-9BCD-661A7724EEEA">nvsetup.csv</strong> file. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9BAF60362B964F5FACCB14D5A45965C5">Exit the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-31160B3C-42FB-4F01-AAB8-4EAEAEAE66A7">nvsetup.csv</strong> file. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_377A5F9353744F13AB7B67C728AD0A00"> Right-click on the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4F6E4034-1FA6-4D63-87CB-55DD7483E1F4">nvsetup.csv</strong> file, and select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D3539E36-9B6B-496B-B481-2F8FA2B53B38">Copy (xxxxxx)</span>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_34E2B518E31A4F7D9FD5718A855EAEFB">Navigate to 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-30509639-539C-4F5F-BA29-CF63720F9F24"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FD9E3415-FA15-4394-9840-758354D80C6F">c:\nexstep\pc\drw\os9000</span></strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_E1089FD115F247B5BD65A821F3D6B563">Right-click on the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-77A764A8-7980-4019-9028-A8BD76D1DDC9">os9000</strong> folder and select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-836A4102-7490-429A-9119-6E744388C517">Paste</span> to paste the nvsetup.csv file into the os9000 folder. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CC9797D098454E47B7B734C5FC1670CA">At any 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EC824887-1884-45D2-9D97-0DD2EE47523E"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7EBC5817-18AD-40A7-B6AB-2B3AD7C59B0C">Confirm File Replacement</samp></strong> messages, select 
+							 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-898E6EEB-41E8-42DD-B9D1-9F751D06C81E">Yes</span>. 
+						  </li> 
+						</ol> 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-08DD7AF0-3124-4D75-A16E-0C652F2E3DF6"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_12D62CFA7F02419F971FF827F5328ED6"> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_EAD3322DA7144FF3BAFC772ABE6CE17B">Each time software is loaded, the copy of the nvsetup file in the PC is saved so the alignments and run seconds might not be current. 
+							 </li> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CCFEA70751414ED8ADC156E4288B6778"> Instruments on Windows 8 with flash drive backup have multiple backup folders on the PC. If the alignment file in Backup contains all zeros, then check the nvsetup.csv files in Backup1, Backup2, Backup3, Backup4, or Backup5. 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2448B71C3C2B4357B04153B7ACD91B43"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9D7AEAEA-42C3-4BE7-8B40-53FA381D2020">(Option 2)</strong> Modify the Access 2 run time. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_C864D3DC525B4C6299A28B83E7EF38E9"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_E6F057D5B1044BAF967C82EDB6069797">In 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DE263417-1592-4CBD-AB5A-03218A0DAD46">Windows Explorer</strong>, navigate to 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9B0C7268-BF4D-4272-9039-1C5E98F21AD4"><span class="ph filepath" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-532A6B74-CCB7-45F2-A889-AFE9CA5F13BD">c:\nexstep\pc\drw\os9000</span></strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BBC3AB7B0B25406DBA43757F79BFBBF7">Open the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-74E1A4C1-33E3-4D52-B752-1F604E7CC6C3">nvsetup.csv</strong> file using 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5A7917DA-5CF9-495C-B0C8-0A97419C4A69">Notepad</strong> or 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1C0D2D0D-E026-46F6-8C37-0639F493F8CC">Wordpad</strong>. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_B9026943149F4DF3BEE8578570B5CFED">Scroll down until you locate line 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-960AC6D1-99BD-433B-BBC2-1C936FC45612"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6F06C9A9-4270-43FE-BD62-45B1EA5BF67E">Run Time (seconds)</samp></strong>. Change the 
+							 <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-04C48476-3890-4E7C-B741-506612FE165B">Run Time</strong>, calculated in seconds, to the desired time. For example, to change Run Time to 7 hours, calculate the time in seconds: 3600 sec/hour × 7 hours = 25,200 seconds. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_DE71164789A54B379A59BEF1F562B651">Save the file and exit. 
+						  </li> 
+						</ol> 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_030B78304DE346EBB1FBB1609C6226D1"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5F2B7250-8B34-4DE1-A9BB-E94EFC1281CE">Send the nvsetup.csv file from the PC to the AU hard drive. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_7ED7F9CDB106441C93D639A78649B7F6" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_496DEF95BDC74A1395C14F4A5B465FB8">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2C262507-E394-435A-B9B3-E34E3F80F547">Windows</strong> desktop, select 
+						<span class="ph menucascade" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2BB936C7-3800-4140-A647-410B10A1141B"><span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-513EE275-9A99-4458-A791-C26C46BCEE54">Start</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-DBCBEDDA-814B-4CBA-8837-AA876AC62C4A">Run</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2A75CF6C356E498CAFA27E03EF4C46C0">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3FD17799-BD07-44F6-AC10-6DCD28BE1CFF">text box</strong> type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CEA88D96-871C-432F-A1DA-36A64CBC6711"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3B9CE64C-4A9E-439B-8E2D-3B7302EE1634">cmd</kbd></strong>, and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BE635769-D711-41D9-A341-52EDC95234EA">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_2A5696A21F694416B8B73CBB83066D79">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-13279BAE-6297-472D-A276-3F8F7294C38E">CMD</strong> window, at the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-AC9C9601-10F9-47F1-BBAE-9DE953A52CEC">C:&gt;prompt type 
+						  <kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E9B77880-D722-4E53-AF05-94E2EB7D582B">ftp</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2850BA21-F38C-47BE-90B1-751AD8D0BD1A">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_E3DCADF5B565451CBAF633DB4C4F8F37">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4548C352-8100-4D6E-BFB9-51A804A59B19">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-57A8EF1F-DE7B-4B8E-B19A-A08A9919D457"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0823AE26-1E1E-461F-8161-06DF73CFBA86">open 192.168.2.x</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BDD65123-EE35-4314-9C89-A20A69912ABD">[Enter]</span> (x= the address of the AU). 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4238DBA1-959B-42D7-94B6-9BF0BB3B0513"><span class="note__title">Note:</span>  
+						  <ul class="ul" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__UL_025F75976B14469095BEDAA369D838DE"> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CBACF3DB490343789FE6F5C0C382C8A5"> The most common AU IP address is 192.168.2.4. Client instruments or instruments with new AU hard drives can have different IP addresses. 
+							 </li> 
+							 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_770AEAB36EC44E039E26D875B837CDDF"> If the IP address is unknown, then: 
+								<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_DB887A5B7FDB4F18B0F1F6E833877CD0"> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_1B5EA8CEB62D4C1498203106EA7C45DC">Select 
+									 <span class="ph menucascade" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-747CF335-84E7-4BF5-9A04-A3B0458F0293"><span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D2ED2C8D-E686-4683-BBEB-A6673A428D76">Start</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0411B726-B1CA-41DE-9979-7BFE5BB08EA8">Programs</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EE15B098-1C27-4200-B27A-86641345AA4C">Access2</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-98E59E17-D186-4C86-93B6-AA2F7F3D176B">Restore Utility</span></span>. 
+								  </li> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_A2A6956C4DFC41A497AC6A747422013F">In the Restore Utility, select 
+									 <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-8D65A8C4-E781-4CA1-A358-C02CB9962164">Modify PC Specific Registry</span>. 
+								  </li> 
+								  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_5F5AFCAC73FB4478A85BF38FA629ECD1">Record the AU IP address that is shown. 
+								  </li> 
+								</ol> 
+							 </li> 
+						  </ul> 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_4DA5E07BBD5F4998AD1B792440C9A8A9">At the<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-838FF781-6827-428F-838A-D9891F7BC477"> ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1E158A18-D95E-499A-8898-96A3D35A47EE"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-28563803-C02C-47C4-A6E3-8BB222040D57">super</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3C782D74-9EDB-49B1-9828-FBBDC79F2DC2">[Enter]</span>. For password, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2ED25C59-BEDC-4BB1-A5A2-5B0023FFC3E4"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-5AD148E4-2FE9-4A06-87B0-5D2D56FF9406">user</kbd></strong> then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-6E13D75A-4841-4FF0-8519-342EAA8C315C">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FB436B3C-8E21-4C39-AFCC-F9A896B14FA2"><span class="note__title">Note:</span> The password 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EC7265FE-D103-43F6-949B-C2D18207177B"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B7854132-92D4-42C7-A824-07A56A6FADDE">user</kbd></strong> is invisible when typed. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_8F85E44D10DC4B89878AF0F919A76046">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-851B0CE5-6D97-4DA7-94F8-ABCE7D31540A">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EC8E6F62-F15E-481E-82BE-5ED6199074DE"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E7FCA234-20F0-43F8-89FD-004041287445">ascii</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-FDE476D0-E485-48DA-A3EE-153C9853AFA3">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_7949DC9E7D5D48C98FE9FDED3904C4C7">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2729289A-37BD-475D-9FBF-9C14A8DD9C5F">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F57BF92C-8604-4D2C-A125-487C46458DC8"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4ECBCF66-E528-405F-93B8-2C0FD6D7DCC2">prompt</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-BE540775-C038-4766-884D-4714E5A36793">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BB17AF2BC1CE401F8C807C5B63C4176C">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4265F14F-839F-4105-B4F6-01F0C37E7D4F">ftp&gt; prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-29183540-AE25-495F-80F6-0DAFFAEAC2E0"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-216F4803-D7A7-4102-A108-6F7B32086896">cd /nexstep/drw 
+						  </kbd></strong>and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-71DE6569-508C-4D0B-9CD6-8B25F2EE2648">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F971104C-BCD2-432F-955D-3915ADC2E2FD"><span class="note__title">Note:</span> There is a space between 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EE6D8552-D1ED-451F-A035-1E9B7B53ED89"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-469EB363-E1AF-4BE9-90DF-B5CF6127CA92">cd</samp></strong> and 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-54EB425B-A910-4178-B3DC-BE84D4234F31"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-234AFEC1-49AC-409F-827C-CD219D57124F">/nexstep</samp></strong>. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9105C466FAF5436A938B786EBE4664D8">At the ftp&gt; prompt, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-AD39D983-2F73-423E-BC19-D6A245E77312"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A72CF77D-8C51-43BE-93CF-DF1618817CB1">mput c:\nexstep\pc\drw\os9000\nvsetup.csv</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4ED56300-0C05-49F2-9BFA-7DEC139807F1">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-53AEDD20-21E8-44A2-9A48-1777EA4D5C27"><span class="note__title">Note:</span>  If the prompt responds with 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B13D0849-D904-47C3-AF12-F90C5053D64B"><samp class="ph msgph" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0AB6AD20-F4D8-4799-BED2-8CAED4B88F69">mput c:\nexstep\pc\drw\os9000\nvsetup.csv?</samp></strong>, then type 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C7DD6F78-942B-471B-B084-4BA67946E278"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-241BD3A7-BC96-47F9-B293-4C1C35FC7FBC">y</kbd></strong> and press 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F55281F5-D2E8-4504-978D-0C7C6EB71C95">[Enter]</span>. This extra question indicates that a previous step was not completed; however, typing 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B8317E1B-71D9-4DF9-B69E-A3B5E86BDC38"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-533C5FF4-DD45-41B9-B77D-B036D7AB0611">y</kbd></strong> resolves the issue. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_78C0612C819944F0B89C3CFC1471326C">Close the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E1D24BF2-890D-4E02-95DA-A0E444EBAEA2">CMD</strong> window. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_0B7E83DB0B634386B64C8EB77F7B7401"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-48573C95-392F-48F7-ACB1-E83E1D41901F">Send the nvsetup.csv data from the AU hard drive to the I/O PCB. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_0CFD0A21472D4B7CA052A1E97057010A" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_0812B69671A84B52B674501BE053A61B">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-EA681151-FC29-463A-8C33-6D4165AB0BA7">Windows</strong> desktop, select 
+						<span class="ph menucascade" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D6955BC8-A77B-42B5-9FB5-4D0A66D0D406"><span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C7150F39-AEE4-4A0C-8A97-08D41271EEEC">Start</span> &gt; <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B2DEA41A-19E8-4BE7-B285-D52A878DA371">Run</span></span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_50566473FCEC4E7FA8BA3F115930431D">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-406C6F52-B5A8-4DE4-AA26-0EE6B19D4967">Run dialog box</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A7B15EC6-B94F-4B44-99DA-8FF4A8C22275"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-780B2474-0D3B-42C9-A807-10AB2AB44FB2">telnet 192.168.2.x</kbd></strong> (x= the address of the AU), and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F5553CB2-043F-4A5C-9F96-E60128D5CDC0">Enter</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_056C91A5014D4F8B92CC15E7C6BB4C37">In the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-9C841532-4F21-4D10-84C5-9FBD5FBBA0BF">telnet window</strong>, at the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-44F98864-CFD0-4D6F-9FB2-F51D009669B6">user name prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-790516C1-7ABF-4349-B0A8-0929C8B92DB4"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F7D28F9B-10A8-44F6-B0A0-13E59B541BA1">super</kbd></strong> and then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4187C5A6-04D2-429E-9CAC-380E59DC1DC4">[Enter]</span>. For password, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3FE1D9E9-C054-49F4-A1EF-FE30011C3B6A"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-33FEE686-47DC-4689-A9D9-F835A505A3C5">user</kbd></strong> then press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D707EB4A-BAA1-4540-A26E-1CBA269FF70C">[Enter]</span>. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B8FFA41F-9C08-4D85-8CC3-964AF73574C2"><span class="note__title">Note:</span> The password 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0E6BF8A6-BC80-418E-A8CA-9700899F8F9A"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3B506C16-6654-40E2-84A1-4014A5E4A6B9">user</kbd></strong> is invisible when typed. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BC51678AA4BD4A42B239F96305515503">At the<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-F1E8A98D-C36D-4010-8EB0-21A63ECC6ED8"> (super) [/hØ/&gt;] prompt</strong>, type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-336E59C5-AA23-4827-AE8C-87AC8F3D8989"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0732F80B-0E17-431A-8D84-860C8554B2A0">cd /hØ/nexstep/scriptutil</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-B6992D05-8AA7-4C20-83DA-FBD518F33D2D">[Enter]</span>. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_999AABA6ADD04D65AA32588BE399EADB">At the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C8E9832C-9461-4B0A-9119-E969728893D0">(super) [/hØ/nexstep/scriptutil/&gt;] prompt</strong>, type<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A132CE71-B8EC-46CB-91C7-0561C3CB0D53"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-2EF5542E-EAB1-4EAB-9368-D334D4620227"> nvinit.sh -d</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-1A7DFBB0-3314-449B-AFD4-640CED8BE8E9">[Enter]</span> to send the nvsetup file information to the I/O PCB. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-CA12EB4B-AB43-4D84-ABD7-41D07801CEF8"><span class="note__title">Note:</span> If the instrument serial number must be changed, then type 
+						  <strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0E86CC19-EB6E-46C6-99D0-B39A67EAF2D3"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A2DEFF71-2812-43DE-AF4D-CDDC09CA00F6">setserial.sh</kbd></strong>, 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-A26360C3-9B20-4878-8806-9396EF3F1129">[space]</span>, enter the new serial number, and then press 
+						  <span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-D0E47A81-434A-4A76-A226-459130C98A3E">[Enter]</span>. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9D7F01B034B44EF2BAD0E9A7B4B0D5E6">Type 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-C1EDDB12-8BD9-4CDF-9B7D-EE1B8DC5FC2F"><kbd class="ph userinput" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-4024883D-8504-4041-B8F1-1A8BEC6F32DE">break</kbd></strong> and press 
+						<span class="ph uicontrol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-7262CB7A-3733-45E6-B199-DD8123337611">[Enter]</span> to reboot the AU. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9A4E1B71AA5A4B0E80E8B399A68D89A5">Close the 
+						<strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-510240FD-6B17-4270-99BA-22BCF7E98DE0">telnet</strong> window and any other open windows on the desktop. 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_36B27CCF42F04F4BA8CBABCC99863A1B">Restart the user interface. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_E7BD0F11A7E84D638699295E2BC41ABB"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-0CB569C3-6016-4D03-80E1-063DC864751C">Confirm that the nvsetup.csv file has been modified correctly. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_6DC5C6A8C06842838638FE093E29C8D1" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_BA6FE55D335F467EAF7895B78437FF4F"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-E70ADBA9-A91E-4D9F-97E8-7D63C4FD6E43">(Option 1)</strong> Modifying alignments: Confirm that the AU alignments have been restored correctly. 
+						<ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_B786F162220741F4B10B6A0BF1B491E7"> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_0969AAD015574B8FA30C6BF1231D01CD">Use a previous alignment report to confirm that the LED target is correct in the Luminometer Diagnostics screen and the device alignments are correct. 
+						  </li> 
+						  <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_9DCFB27E8A7148898D1EDE851FC9B998">If the LED value and alignments do not match the alignment report, then adjust and save the values from the user interface. 
+						  </li> 
+						</ol> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_A2A7AD23D8FB452EA06EC16099001850"><strong class="ph b" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-47D0AFF2-7B69-4F25-878D-6C9F942BB611">(Option 2)</strong> Modifying Run Time: If the Run Hours in the Event Log details are still showing the old time, initialize the system to create an event message and refresh the message from the instrument to post the modified (new) time to the PC. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+			 <li class="li substep substepexpand" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__SUBSTEP_099CC56DC3784491BDE1F0278CF821DE"> 
+				<span class="ph cmd" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-86F0494D-91A2-4172-AC6E-C6E61CFD6DC5">Verify System operation. 
+				</span> 
+				<div class="itemgroup stepresult"> 
+				  <ol class="ol" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__OL_FDFC1B61088441A991B8EAFD73DDD9DB" type="i"> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_4734711233E3451099C4456CA533EA28">Perform the required system verification. 
+						<div class="note note note_note" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__GUID-3C93F38B-62DA-4A7C-AC7A-DFDC9106BAAD"><span class="note__title">Note:</span> Refer to the 
+						  <a class="xref" href="GUID-EC094189-97BB-6B98-8625-69BB006E44EE.html" title="This procedure establishes standard protocols for service personnel to verify instrument performance following a service repair.">Instrument Verification Protocol for Access Service Repair</a> document. 
+						</div> 
+					 </li> 
+					 <li class="li" id="GUID-8D17C483-60F4-447F-97B6-83803291B86C__LI_CB95D842A815478A8F6CA6F9B5712A92">Contact your local support organization with any questions or concerns. 
+					 </li> 
+				  </ol> 
+				</div> 
+			 </li> 
+		  </ol> 
+		</li></ol> 
+  </div> 
+<nav class="related-links" role="navigation"><div class="familylinks"><div class="parentlink"><strong>Parent Topic:</strong> <a class="link" href="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html">Database</a></div></div></nav><div class="btn-group btn-breadcrumb breadcrumbcnt5" id="breadcrumbs"><a class="crumb" data-suitehelp-page="internal" href="index.html" id="crumb_home" title="Home"><div><i class="glyphicon toc_pane_img" id="crumb_home_image"></i><span id="crumb_home_text">Home</span></div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-E43858E0-CDAD-4EEB-BEC3-29FB2D39DD5F.html" title="10 Software "><div><span class="ph num-prefix">10 </span>Software </div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-504FF1CA-E20E-4B39-B92A-991098A09952.html" title="10.10 Troubleshooting"><div><span class="ph num-prefix">10.10 </span>Troubleshooting</div></a><a class="crum crumb" data-suitehelp-page="internal" href="GUID-70B03CAC-652F-4F34-B631-C98BA6549429.html" title="10.10.1 Database"><div><span class="ph num-prefix">10.10.1 </span>Database</div></a><a class="crum crumb current-breadcrumb" data-suitehelp-page="internal" href="GUID-8D17C483-60F4-447F-97B6-83803291B86C.html" lang="en-US" title="10.10.1.17 Modifying AU NVRAM"><div><span class="ph num-prefix">10.10.1.17 </span>Modifying AU NVRAM</div></a></div></article></main></div></noscript><script src="static/body.js?Ahtiv8QK" type="text/javascript"></script></body></html>
