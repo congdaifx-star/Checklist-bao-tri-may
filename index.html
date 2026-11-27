@@ -1,283 +1,272 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hệ Thống Phiếu Bảo Trì & Tra Cứu Kỹ Thuật</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    body {
-      background-color: #f0f4f8;
-      color: #1e293b;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .container {
-      max-width: 800px;
-      width: 100%;
-      margin-top: 20px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    header h1 {
-      font-size: 28px;
-      color: #0f172a;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      color: #64748b;
-      font-size: 16px;
-    }
-
-    .menu-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 22px 24px;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-      border: 1px solid #e2e8f0;
-      transition: all 0.2s ease;
-      cursor: pointer;
-    }
-
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-      border-color: #3b82f6;
-      background-color: #f8fafc;
-    }
-
-    .card-info h2 {
-      font-size: 20px;
-      color: #1d4ed8;
-      margin-bottom: 6px;
-    }
-
-    .card-info p {
-      font-size: 14px;
-      color: #475569;
-    }
-
-    .arrow {
-      font-size: 22px;
-      color: #3b82f6;
-      font-weight: bold;
-    }
-
-    .back-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #e2e8f0;
-      color: #0f172a;
-      border: none;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
-      margin-bottom: 20px;
-      transition: background 0.2s;
-    }
-
-    .back-btn:hover {
-      background: #cbd5e1;
-    }
-
-    .hidden {
-      display: none !important;
-    }
-
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 13px;
-      color: #94a3b8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Phiếu Bảo Trì & Tra Cứu Kỹ Thuật</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif, Arial, sans-serif;
+            background-color: #f4f6f7;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .main-container {
+            width: 100%;
+            max-width: 600px;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 15px;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+        }
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 1px solid #edf2f7;
+        }
+        .menu-item:hover {
+            background-color: #e9ecef;
+            transform: translateX(5px);
+        }
+        .text-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .title-text {
+            font-weight: bold;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        .desc-text {
+            font-size: 13.5px;
+            color: #7f8c8d;
+        }
+        .arrow {
+            font-size: 18px;
+            font-weight: bold;
+            color: #95a5a6;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 18px;
+            padding: 8px 14px;
+            background-color: #edf2f7;
+            color: #2c3e50;
+            border: none;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background-color: #e2e8f0;
+        }
+        .view-section {
+            display: none;
+        }
+        .view-section.active {
+            display: block;
+        }
+        .footer-note {
+            text-align: center;
+            font-size: 13px;
+            color: #bdc3c7;
+            margin-top: 30px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="container">
-    <header>
-      <h1 id="page-title">Hệ Thống Phiếu Bảo Trì & Tra Cứu</h1>
-      <p id="page-subtitle">Vui lòng chọn danh mục công việc hoặc tài liệu kỹ thuật thiết bị</p>
-    </header>
+<div class="main-container">
+    <h1>Hệ Thống Phiếu Bảo Trì & Tra Cứu</h1>
+    <div class="subtitle">Vui lòng chọn danh mục công việc hoặc tài liệu kỹ thuật thiết bị</div>
 
-    <!-- MÀN HÌNH 1: TRANG CHÍNH CHỈ CÓ 3 NÚT -->
-    <div id="main-view" class="menu-list">
-      
-      <!-- Nút 1: Mở danh sách Checklist -->
-      <div class="card" onclick="showView('checklist')">
-        <div class="card-info">
-          <h2>1. Checklist Bảo Trì Định Kỳ</h2>
-          <p>Danh sách phiếu kiểm tra và bảo dưỡng định kỳ các dòng máy</p>
+    <div id="view-main" class="view-section active">
+        <div class="menu-list">
+            <div class="menu-item" onclick="showSection('view-checklist')">
+                <div class="text-group">
+                    <span class="title-text">1. Checklist Bảo Trì Định Kỳ</span>
+                    <span class="desc-text">Danh sách phiếu kiểm tra và bảo dưỡng định kỳ các dòng máy</span>
+                </div>
+                <div class="arrow">➔</div>
+            </div>
+
+            <div class="menu-item" onclick="showSection('view-parts')">
+                <div class="text-group">
+                    <span class="title-text">2. Tra Cứu Linh Kiện (Parts)</span>
+                    <span class="desc-text">Danh mục và sơ đồ tra cứu mã linh kiện thay thế các dòng máy</span>
+                </div>
+                <div class="arrow">➔</div>
+            </div>
+
+            <div class="menu-item" onclick="showSection('view-service')">
+                <div class="text-group">
+                    <span class="title-text">3. Tra Cứu Service Manual</span>
+                    <span class="desc-text">Tài liệu hướng dẫn sửa chữa, hiệu chuẩn và xử lý lỗi các dòng máy</span>
+                </div>
+                <div class="arrow">➔</div>
+            </div>
         </div>
-        <span class="arrow">➔</span>
-      </div>
-
-      <!-- Nút 2: Mở danh sách Tra cứu linh kiện -->
-      <div class="card" onclick="showView('parts')">
-        <div class="card-info">
-          <h2>2. Tra Cứu Linh Kiện (Parts)</h2>
-          <p>Danh mục và sơ đồ tra cứu mã linh kiện thay thế các dòng máy</p>
-        </div>
-        <span class="arrow">➔</span>
-      </div>
-
-      <!-- Nút 3: Service Manual -->
-      <a href="Service Manual/index.html" class="card">
-        <div class="card-info">
-          <h2>3. Tra Cứu Service Manual</h2>
-          <p>Tài liệu hướng dẫn sửa chữa, hiệu chuẩn và xử lý lỗi các dòng máy</p>
-        </div>
-        <span class="arrow">➔</span>
-      </a>
-
     </div>
 
-    <!-- MÀN HÌNH 2: DANH SÁCH TOÀN BỘ CHECKLIST -->
-    <div id="checklist-view" class="hidden">
-      <button class="back-btn" onclick="showView('main')">← Quay lại trang chính</button>
+    <div id="view-checklist" class="view-section">
+        <button class="back-btn" onclick="showSection('view-main')">← Quay lại trang chính</button>
+        <div class="menu-list">
+            <a href="Checklist_Access2.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">Checklist Access 2</span>
+                    <span class="desc-text">Phiếu bảo dưỡng định kỳ máy miễn dịch Access 2</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
 
-      <div class="menu-list">
-        <a href="Checklist_Access2.html" class="card">
-          <div class="card-info">
-            <h2>Checklist Access 2</h2>
-            <p>Phiếu bảo dưỡng định kỳ máy miễn dịch Access 2</p>
-          </div>
-          <span class="arrow">➔</span>
-        </a>
+            <a href="Checklist_DxI-3thang.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">Checklist DxI800 - 3 tháng</span>
+                    <span class="desc-text">Phiếu bảo dưỡng định kỳ 3 tháng máy miễn dịch DxI800</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
 
-        <a href="Checklist_DxI-3thang.html" class="card">
-          <div class="card-info">
-            <h2>Checklist DxI800 - 3 tháng</h2>
-            <p>Phiếu bảo dưỡng định kỳ 3 tháng máy miễn dịch DxI800</p>
-          </div>
-          <span class="arrow">➔</span>
-        </a>
+            <a href="Checklist_DxI_6tháng.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">Checklist DxI800 - 6 tháng</span>
+                    <span class="desc-text">Phiếu bảo dưỡng định kỳ 6 tháng máy miễn dịch DxI800</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
 
-        <a href="Checklist_DxI_6tháng.html" class="card">
-          <div class="card-info">
-            <h2>Checklist DxI800 - 6 tháng</h2>
-            <p>Phiếu bảo dưỡng định kỳ 6 tháng máy miễn dịch DxI800</p>
-          </div>
-          <span class="arrow">➔</span>
-        </a>
+            <a href="Checklist_DXI9000.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">Checklist DxI9000</span>
+                    <span class="desc-text">Phiếu bảo dưỡng định kỳ máy miễn dịch DxI 9000</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
 
-        <a href="Checklist_DXI9000.html" class="card">
-          <div class="card-info">
-            <h2>Checklist DxI9000</h2>
-            <p>Phiếu bảo dưỡng định kỳ máy miễn dịch DxI 9000</p>
-          </div>
-          <span class="arrow">➔</span>
-        </a>
+            <a href="Checklist_LiaisonXL.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">Checklist Liaison XL</span>
+                    <span class="desc-text">Phiếu bảo dưỡng định kỳ máy miễn dịch LIAISON XL</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
 
-        <a href="Checklist_LiaisonXL.html" class="card">
-          <div class="card-info">
-            <h2>Checklist Liaison XL</h2>
-            <p>Phiếu bảo dưỡng định kỳ máy miễn dịch LIAISON XL</p>
-          </div>
-          <span class="arrow">➔</span>
-        </a>
+            <a href="Checklist_AU.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">Checklist AU Serial</span>
+                    <span class="desc-text">Phiếu kiểm tra bảo trì định kỳ dòng máy AU Serial (Mitalab)</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
+        </div>
+    </div>
+    <div id="view-parts" class="view-section">
+        <button class="back-btn" onclick="showSection('view-main')">← Quay lại trang chính</button>
+        <div class="menu-list">
+            <a href="Access%20Parts/index.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">Access 2 Part</span>
+                    <span class="desc-text">Danh mục và sơ đồ tra cứu linh kiện máy miễn dịch Access 2</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
 
-        <a href="Checklist_AU.html" class="card">
-          <div class="card-info">
-            <h2>Checklist AU Serial</h2>
-            <p>Phiếu kiểm tra bảo trì định kỳ dòng máy AU Serial (Mitalab)</p>
-          </div>
-          <span class="arrow">➔</span>
-        </a>
-      </div>
+            <a href="DxI%20Parts/index.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">DxI 800 Parts</span>
+                    <span class="desc-text">Danh mục và sơ đồ tra cứu linh kiện máy miễn dịch DxI 800</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
+
+            <a href="DxI%209000%20Parts/index.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">DxI 9000 Parts</span>
+                    <span class="desc-text">Danh mục và sơ đồ tra cứu linh kiện máy miễn dịch DxI 9000</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
+        </div>
     </div>
 
-    <!-- MÀN HÌNH 3: DANH SÁCH TRA CỨU LINH KIỆN (3 NÚT) -->
-    <div id="parts-view" class="hidden">
-      <button class="back-btn" onclick="showView('main')">← Quay lại trang chính</button>
+    <div id="view-service" class="view-section">
+        <button class="back-btn" onclick="showSection('view-main')">← Quay lại trang chính</button>
+        <div class="menu-list">
+            <a href="Access2%20Service/index.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">Access2 Service Manual</span>
+                    <span class="desc-text">Tài liệu hướng dẫn sửa chữa, hiệu chuẩn và xử lý lỗi máy Access 2</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
 
-      <div class="menu-list">
-        <!-- Nút Access 2 Part -->
-        <a href="Access Parts/index.html" class="card">
-          <div class="card-info">
-            <h2>Access 2 Part</h2>
-            <p>Danh mục và sơ đồ tra cứu linh kiện máy miễn dịch Access 2</p>
-          </div>
-          <span class="arrow">➔</span>
-        </a>
+            <a href="DxI800%20Service/index.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">DxI800 Service Manual</span>
+                    <span class="desc-text">Tài liệu hướng dẫn sửa chữa, hiệu chuẩn và xử lý lỗi máy DxI 800</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
 
-        <!-- Nút DxI 800 Parts -->
-        <a href="DxI Parts/index.html" class="card">
-          <div class="card-info">
-            <h2>DxI 800 Parts</h2>
-            <p>Danh mục và sơ đồ tra cứu linh kiện máy miễn dịch DxI 800</p>
-          </div>
-          <span class="arrow">➔</span>
-        </a>
-
-        <!-- Nút DxI 9000 Parts -->
-        <a href="DxI 9000 Parts/index.html" class="card">
-          <div class="card-info">
-            <h2>DxI 9000 Parts</h2>
-            <p>Danh mục và sơ đồ tra cứu linh kiện máy miễn dịch DxI 9000</p>
-          </div>
-          <span class="arrow">➔</span>
-        </a>
-      </div>
+            <a href="DxI%209000%20Service/index.html" class="menu-item">
+                <div class="text-group">
+                    <span class="title-text">DxI9000 Service Manual</span>
+                    <span class="desc-text">Tài liệu hướng dẫn sửa chữa, hiệu chuẩn và xử lý lỗi máy DxI 9000</span>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
+        </div>
     </div>
 
-    <footer>
-      Hỗ trợ hiển thị và in ấn tốt trên Máy tính, Máy tính bảng & Điện thoại
-    </footer>
-  </div>
+    <div class="footer-note">
+        Hỗ trợ hiển thị và in ấn tốt trên Máy tính, Máy tính bảng & Điện thoại
+    </div>
+</div>
 
-  <script>
-    function showView(viewName) {
-      document.getElementById('main-view').classList.add('hidden');
-      document.getElementById('checklist-view').classList.add('hidden');
-      document.getElementById('parts-view').classList.add('hidden');
-
-      if (viewName === 'checklist') {
-        document.getElementById('checklist-view').classList.remove('hidden');
-        document.getElementById('page-title').innerText = 'Checklist Bảo Trì Định Kỳ';
-        document.getElementById('page-subtitle').innerText = 'Vui lòng chọn loại phiếu kiểm tra thiết bị định kỳ';
-      } else if (viewName === 'parts') {
-        document.getElementById('parts-view').classList.remove('hidden');
-        document.getElementById('page-title').innerText = 'Tra Cứu Linh Kiện (Parts)';
-        document.getElementById('page-subtitle').innerText = 'Vui lòng chọn dòng máy cần tra cứu linh kiện';
-      } else {
-        document.getElementById('main-view').classList.remove('hidden');
-        document.getElementById('page-title').innerText = 'Hệ Thống Phiếu Bảo Trì & Tra Cứu';
-        document.getElementById('page-subtitle').innerText = 'Vui lòng chọn danh mục công việc hoặc tài liệu kỹ thuật thiết bị';
-      }
-
-      window.scrollTo(0, 0);
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.view-section');
+        sections.forEach(sec => sec.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
     }
-  </script>
+</script>
 
 </body>
 </html>
