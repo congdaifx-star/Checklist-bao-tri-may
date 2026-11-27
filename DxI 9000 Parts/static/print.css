@@ -1,0 +1,87 @@
+#header, #leftbar, #toolbar, #breadcrumbs, .related-links, .section-search--secondary,  li.gadget a ,.hidelink{
+    display: none;
+}
+.fixed {
+    padding-top: 0;
+}
+a.logo{
+    display:none;
+}
+body {
+	overflow: visible;
+}
+html {
+	overflow-y: visible;
+}
+#center {
+	overflow-y: visible;
+}
+article {
+	overflow-y: visible;
+}
+/*article #printall {
+	display: block;
+}*/
+.section__actions {
+    display: none !important;
+}
+.hideelement:not(figure), figure.hideelement > .image
+{
+    display:inline-block;
+}#header, #leftbar, #toolbar, #breadcrumbs, .related-links, .section-search--secondary, .section__foot, .hidelink {
+    display: none !important;
+}
+.fixed {
+    padding-top: 0;
+}
+.content, .section, #thumbnailDialog{
+    border:none !important;
+    height:auto !important;
+    overflow-y:visible;
+    display:compact;
+}
+.wrapper, main{
+    position:relative;
+}
+.section__head
+{
+    border:none;
+}
+body {
+	overflow: visible;
+}
+html {
+	overflow-y: visible;
+}
+#center {
+	overflow-y: visible;
+}
+article {
+	overflow-y: visible;
+}
+.hideelement:not(figure), figure.hideelement > .image
+{
+    display:inline-block;
+}
+/*article #printall {
+	display: block;
+}*/
+.section__actions {
+    display: none !important;
+}
+
+footer {
+	display:block;
+	}
+	
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .footer-link {
+	display:none;
+  }
+  li{
+      page-break-inside:avoid;
+  }
+}
